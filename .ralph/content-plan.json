@@ -1564,8 +1564,11 @@
     "the delay",
     "oral history"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790380234.5570638,
+   "done_at": "2026-09-26T09:57:42"
   },
   {
    "kind": "article",
@@ -1579,8 +1582,11 @@
     "log",
     "eerie"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790380234.5570638,
+   "done_at": "2026-09-26T09:57:42"
   },
   {
    "kind": "article",
@@ -1594,8 +1600,11 @@
     "gentle",
     "chapter 4"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790380234.557065,
+   "done_at": "2026-09-26T09:57:42"
   },
   {
    "kind": "article",
@@ -1609,8 +1618,11 @@
     "chapter 4",
     "factions"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790380234.557065,
+   "done_at": "2026-09-26T09:57:42"
   },
   {
    "kind": "article",
@@ -1624,8 +1636,10 @@
     "scripture",
     "MOTHER"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790380657.190757
   },
   {
    "kind": "article",
@@ -1639,8 +1653,10 @@
     "couriers",
     "driftline"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790380657.190758
   },
   {
    "kind": "article",
@@ -1654,8 +1670,10 @@
     "comedy",
     "minutes"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790380657.190758
   },
   {
    "kind": "article",
@@ -1669,8 +1687,10 @@
     "history",
     "founding"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790380657.190758
   },
   {
    "kind": "article",
