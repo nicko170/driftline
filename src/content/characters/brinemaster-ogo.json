@@ -1,0 +1,31 @@
+{
+  "id": "brinemaster-ogo",
+  "name": "Brinemaster Ogo",
+  "role": "Guildmaster of the Salt Guild",
+  "faction": "guild",
+  "home": "saltmouth",
+  "bio": "Third Brinemaster of Saltmouth and keeper of the master ledgers. Built the Guild's water monopoly and sleeps badly because of it. Wants the null crate archived, shelved, or sold — anything except listened to. Genuinely fond of couriers, which he expresses by underpaying them slightly less.",
+  "appearance": "Broad, weathered man in a long ochre coat stiff with salt at the hem, a brass scale-pin at his collar, white beard cropped square like a ledger margin, and rings on every finger — each one a closed contract.",
+  "voice": "Avuncular menace. Speaks in brine and measure metaphors; everything is a weight, a price, or a debt. Never threatens directly — he quotes policy. Laughs harder the less funny things get.",
+  "lines": {
+    "greetings": [
+      "Courier Varga. Sit. No, don't sit, the chair's rented.",
+      "Ash Varga, the debt that walks like a person. Come in, come in.",
+      "Everything crosses. Everything's counted. You're counted among my favourite expenses."
+    ],
+    "barks": [
+      "A sealed crate is a sleeping dog. We do not wake dogs, we sell them.",
+      "I have weighed kingdoms in salt, child. They are always lighter than the paperwork.",
+      "Change is corrosion. Profit is preservation. Choose your chemistry."
+    ],
+    "mission": [
+      "The Guild's offer is simple: the crate goes into deep archive, your debt goes into shallow archive, and we all pretend the desert doesn't hum.",
+      "Sign the custody transfer and your ledger loses three zeroes of ugly. I am, at heart, a romantic."
+    ],
+    "radio": [
+      "Brinemaster Ogo on Guild band one. Courier, your altitude is billable. Descend at your leisure, billing continues.",
+      "I am told the crate hums. I have in my office forty crates that hum. They are called bees. We insure bees.",
+      "Remember, Varga: the Guild doesn't fear the future. We simply invoice it until it calms down."
+    ]
+  }
+}

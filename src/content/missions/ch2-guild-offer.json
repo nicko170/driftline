@@ -1,0 +1,45 @@
+{
+  "id": "ch2-guild-offer",
+  "title": "The Guild's Offer",
+  "chapter": 2,
+  "type": "deliver",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "Brinemaster Ogo wants the null crate in deep archive, and he's sent custody papers up to the Skydocks to make it legal. Carry the documents to the dockmaster's hut on the mesa — and decide, on the way, whether the Guild gets your word as well as your wheels.",
+  "requires": { "flags": ["ch1-the-hum.done"] },
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:exchange", "label": "Collect the custody papers from the Guild exchange" },
+    { "type": "goto", "target": "skydocks:winch-base", "label": "Take the cargo winch up the mesa" },
+    { "type": "dropoff", "target": "skydocks:dockmaster", "label": "Deliver the papers to the dockmaster's hut" }
+  ],
+  "rewards": {
+    "credits": 220,
+    "rep": { "guild": 8 },
+    "flags": ["ch2-guild-offer.done", "lore:ledger-of-strays"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "Special posting, Varga — from the top. Guildmaster Ogo has drafted custody papers on your nameless friend the crate. The Guild wants it archived: sealed, shelved, and, in Ogo's own words, 'demoted from omen to furniture.'" },
+      { "who": "tamsin-cho", "text": "The papers go to the dockmaster up the mesa for countersigning. What the *crate* gets out of the arrangement is between you and your conscience. My conscience is itemised." }
+    ],
+    "accept": [
+      { "who": "tamsin-cho", "text": "Papers are in the waxed folio. Do not read them. I read them. There's a clause in there that refers to the crate as 'the party of the first part'. The crate, Varga, is *cargo*, and yet here we are." },
+      { "who": "ketch", "text": "Ketch here. Guildmasters only send couriers up to Keel Town when they're nervous. They're nervous, kid. Ride it like a favour, price it like a warning." },
+      { "who": "ash-varga", "text": "Copy. Delivering paperwork to the sky so a box can go to sleep. Normal day on the Driftline." }
+    ],
+    "complete": [
+      { "who": "brinemaster-ogo", "text": "Ogo on Guild band, courier. The dockmaster confirms receipt. You carried those papers beautifully — briskly, incuriously. The Guild values that. The Guild *prices* that." },
+      { "who": "brinemaster-ogo", "text": "Now. Between your ledger and mine: when the crate's road ends, the Guild asks for first look. A sealed archive, a solved problem, a debt quietly forgotten. Everyone sleeps. Even the desert." },
+      { "who": "tamsin-cho", "text": "For the record — because someone has to keep one — whatever you just promised or didn't promise: the Choir sent a letter about the crate too. It's written in green ink and it *hums*. Yours to answer, courier." }
+    ],
+    "choices": [
+      {
+        "prompt": "Ogo is waiting for your answer: does the Guild get first claim on the null crate?",
+        "options": [
+          { "text": "Give your word. A sealed archive is a safe ending for everyone.", "setsFlag": "offer.guild" },
+          { "text": "'My word carries crates, Brinemaster. Not verdicts.'", "setsFlag": "offer.guild.hedged" }
+        ]
+      }
+    ]
+  }
+}

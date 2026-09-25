@@ -1,0 +1,46 @@
+{
+  "id": "ch2-choir-offer",
+  "title": "The Choir's Offer",
+  "chapter": 2,
+  "type": "deliver",
+  "giver": "cantor-ilex",
+  "region": "choirhollow",
+  "summary": "Cantor Ilex requests a courier's discretion: fetch a listening crystal from the Glassroad's glass chapel and carry it to the listening horn over the Choir's crater — close enough for the crate's hum to be *heard properly*. The Choir doesn't want to own the crate. It wants to introduce it.",
+  "requires": { "flags": ["ch1-the-hum.done"] },
+  "objectives": [
+    { "type": "pickup", "target": "glassroad:glass-chapel", "label": "Collect the listening crystal at the glass chapel" },
+    { "type": "goto", "target": "choirhollow:temple-steps", "label": "Present yourself at the temple steps" },
+    { "type": "dropoff", "target": "choirhollow:listening-horn", "label": "Mount the crystal in the listening horn" }
+  ],
+  "rewards": {
+    "credits": 200,
+    "rep": { "choir": 8 },
+    "flags": ["ch2-choir-offer.done", "lore:static-litanies"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "cantor-ilex", "text": "We hear you, courier. More precisely: we hear your *cargo*. The hum your crate makes is a hymn this congregation has recited from static for forty years. Until last month we assumed it was symbolic." },
+      { "who": "cantor-ilex", "text": "There is a listening crystal waiting at the glass chapel, cut from the canyon's own voice. Bring it to our listening horn, and bring your crate within earshot. We offer payment, and answers of a kind we do not fully control." }
+    ],
+    "accept": [
+      { "who": "cantor-ilex", "text": "The crystal will feel warm. That is chapel glass remembering the reactor's kindness. Carry it gently — it is, in the technical sense, holy." },
+      { "who": "ketch", "text": "Ketch on the band. Choir work pays fair and smells like lamp oil, and they never lie, which is somehow worse than lying. Keep both ears open, kid." },
+      { "who": "ash-varga", "text": "Fetching holy glassware so my crate can have its first interview. Adding that to the log under ' Tuesday'." }
+    ],
+    "complete": [
+      { "who": "cantor-ilex", "text": "Ah. There. Listen — the horn is carrying your crate's voice down into the hollow, and the hollow is *answering*. We have waited two hundred years for this echo, courier." },
+      { "who": "cantor-ilex", "text": "When the time comes, the Choir asks one thing: let the crate be carried to her cradle, so she can finish the sky. We do not ask you to promise. We find promises tune poorly. We simply ask that you remember the sound of her saying your name." },
+      { "who": "ash-varga", "text": "…Sorry. The *sound* of her saying my name?" },
+      { "who": "cantor-ilex", "text": "Third bell, tonight. Bring warm socks. And Ash — the hymn changed key when you entered the crater. We are all very politely terrified." }
+    ],
+    "choices": [
+      {
+        "prompt": "The Choir asks nothing binding. What will you carry away from Lamp Rest?",
+        "options": [
+          { "text": "\"If the crate wants her cradle, I'll take it there.\" Give them your leaning.", "setsFlag": "offer.choir" },
+          { "text": "\"I'll remember the sound. That's all I've got tonight.\"", "setsFlag": "offer.choir.hedged" }
+        ]
+      }
+    ]
+  }
+}

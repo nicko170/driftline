@@ -1,0 +1,31 @@
+{
+  "id": "cantor-ilex",
+  "name": "Cantor Ilex",
+  "role": "Cantor of the Choir",
+  "faction": "choir",
+  "home": "choirhollow",
+  "bio": "Leads the Choir's crater temple at Lamp Rest, where the old terraform towers are kept lit in teal. Has spent forty years interpreting dead-air static as scripture and is, to their own quiet alarm, starting to be right. Believes the null crate is MOTHER's first word in two centuries and wants it carried to her cradle.",
+  "appearance": "Tall, ageless person in layered teal-dyed robes dusted white at the hem, a hearing-horn worn folded at the shoulder like a brass pet, hair shaved in the Choir's waveform pattern, hands that move as if still conducting something.",
+  "voice": "Gentle, unhurried, unnerving. Speaks in signal metaphors — receiving, tuning, carrying. Never argues; simply adjusts the frequency until you agree. Says 'we hear you' instead of hello, and means it.",
+  "lines": {
+    "greetings": [
+      "We hear you, courier. We have been hearing you for some time.",
+      "Ash Varga. The static has your name in it. Sit, and we'll tune it kindly.",
+      "Welcome to Lamp Rest. Mind the third lamp — it's older than your bike and twice as proud."
+    ],
+    "barks": [
+      "Silence is only a signal we haven't learned to read.",
+      "The Guild counts, the Reclaimers strip. We listen. It is slower, and it is the only one that answers back.",
+      "Every storm is a sermon with poor diction."
+    ],
+    "mission": [
+      "Bring the crystal to the listening horn, and bring your crate within hearing. We do not want to own it, courier. We want it introduced.",
+      "The hum your crate makes — we have that hymn. It is two hundred years old and it is about you."
+    ],
+    "radio": [
+      "Cantor Ilex on the open band. We heard your engine from the hollow tonight. It has a lovely voice. A little flat on the dunes.",
+      "If the static distresses you, courier, hum back. It works on storms, radios, and most parishioners.",
+      "Little Reverb says your crate dreams in both directions. We do not know what that means either. She is six and frequently correct."
+    ]
+  }
+}

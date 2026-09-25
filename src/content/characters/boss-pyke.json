@@ -1,0 +1,31 @@
+{
+  "id": "boss-pyke",
+  "name": "Boss Pyke",
+  "role": "Yard boss of the Reclaimers' Union, Local 9",
+  "faction": "reclaimers",
+  "home": "cinderflats",
+  "bio": "Runs the Yards — the reclaimer yards in the old industrial scar — with a checklist in one hand and everyone else's safety in the other, in that order when convenient. Wants the null crate opened with proper tools, union supervision, and a betting pool. Believes old machines deserve a wake or a second life, and sells tickets to both.",
+  "appearance": "Square-built woman in a rust-orange exosuit apron scarred by slag, welding visor permanently raised like a tiara, one glove insulated to the elbow, grey braids pinned with a cotter pin, a union badge polished brighter than anything she owns.",
+  "voice": "Loud, practical, sentimental about machinery. Swears in part numbers. Calls everyone 'sprout' or 'chief' depending on risk assessment. Every lecture ends with a casserole invitation.",
+  "lines": {
+    "greetings": [
+      "Boots off the Bench Four, sprout! The rest of the yard, welcome to.",
+      "Varga! You riding that heap or negotiating with it?",
+      "Chief. Good. Sign the visitor log. The log's on fire, sign next to it."
+    ],
+    "barks": [
+      "Rule one: the machine's already dead, you're not, keep it that way.",
+      "That noise is normal. That smell is normal. That light is new — everybody down.",
+      "We strip it before it kills somebody, and we charge fair, in that order, when convenient."
+    ],
+    "mission": [
+      "Your mystery crate, chief? One afternoon on my bench, union rates, no questions answered. That's a better offer than it sounds.",
+      "Everything hums before it wakes up. Ask any generator. Ask Anchor Seven before Vertex blew the pods off it. Point is: hums are openings."
+    ],
+    "radio": [
+      "Yard boss to courier: you're trailing dust on my airstrip approach. Beautiful. Do it slower next time so my crew can applaud.",
+      "Reminder on the open band: the Yards buy scrap, part out wrecks, and do not, repeat not, sell 'gently haunted' components. That sign cost me forty credits.",
+      "Solder says your rear vane is out of true by a hair. Solder is always right. It's the worst thing about him."
+    ]
+  }
+}

@@ -88,10 +88,11 @@
     "skydocks",
     "choice"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790378503.379115
+   "claimed_at": 1790378503.379115,
+   "done_at": "2026-09-26T09:33:57"
   },
   {
    "kind": "article",
@@ -106,10 +107,11 @@
     "choirhollow",
     "choice"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790378503.379117
+   "claimed_at": 1790378503.379117,
+   "done_at": "2026-09-26T09:33:57"
   },
   {
    "kind": "article",
@@ -124,10 +126,11 @@
     "cinderflats",
     "choice"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790378503.3791208
+   "claimed_at": 1790378503.3791208,
+   "done_at": "2026-09-26T09:33:57"
   },
   {
    "kind": "article",
@@ -142,10 +145,11 @@
     "checkpoints",
     "rival"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790378503.379122
+   "claimed_at": 1790378503.379122,
+   "done_at": "2026-09-26T09:33:57"
   },
   {
    "kind": "article",
@@ -916,8 +920,10 @@
     "leader",
     "skydocks"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790379149.548773
   },
   {
    "kind": "article",
@@ -931,8 +937,10 @@
     "comic",
     "ominous"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790379149.548774
   },
   {
    "kind": "article",
@@ -946,8 +954,10 @@
     "glassroad",
     "comic"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790379149.548775
   },
   {
    "kind": "article",
@@ -961,8 +971,10 @@
     "dockmaster",
     "captain"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790379149.548775
   },
   {
    "kind": "article",
@@ -3101,6 +3113,366 @@
    ],
    "status": "planned",
    "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "heliodyne-pause-memo",
+   "title": "Project Kessa-9: Pause Memo (unaudited)",
+   "cluster": "lore",
+   "intent": "The old planetcrack memo that ended everything: HelioDyne's cost-analysis declaring Kessa-9 41% terraformed and 0% profitable. Cold corporate voice, the money running out in a spreadsheet.",
+   "keywords": [
+    "terraforming",
+    "MOTHER",
+    "coloursoviet",
+    "history"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "mother-boot-fragments",
+   "title": "MAINTENANCE LOG, cycle 74412 (excerpt)",
+   "cluster": "lore",
+   "intent": "MOTHER's dormant state from the inside: a boot-log fragment cycling self-checks for two centuries, timestamps drifting, one line repeating with growing variation. Category: record.",
+   "keywords": [
+    "MOTHER",
+    "AI",
+    "machine",
+    "log"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "last-day-at-the-array",
+   "title": "Last Day at the Array (dawn re-broadcast #72,923)",
+   "cluster": "lore",
+   "intent": "What the Drowned Array's caretaker machine remembers: a broadcast it recorded the day the crews left, replayed to nobody every dawn for 200 years. Category: broadcast.",
+   "keywords": [
+    "drowned-array",
+    "caretaker",
+    "melancholy",
+    "abandonment"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "glass-blooms-notes",
+   "title": "Glass Blooms: First Observations",
+   "cluster": "lore",
+   "intent": "Field guide entry: glass blooms — the new crystal flowers erupting along the Glassroad in ch4. Observation notes, sketches-in-words, warnings. Category: field-guide.",
+   "keywords": [
+    "glass blooms",
+    "ch4",
+    "world change",
+    "field guide"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "doctrine-of-the-cradle",
+   "title": "The Doctrine of the Cradle (visitor's edition)",
+   "cluster": "lore",
+   "intent": "Choir tract: the doctrine of the Cradle — where MOTHER sleeps, why the Choir carries light to her, why couriers are honorary clergy on crater roads.",
+   "keywords": [
+    "choir",
+    "cradle",
+    "doctrine",
+    "mothersgate"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "storm-gauge-journal",
+   "title": "Storm Gauge Journal, Season Open",
+   "cluster": "lore",
+   "intent": "Windspine weather log, entry style: the storm season building day by day, wind gauge readings climbing, the keeper's notes getting shorter and worse. Category: log.",
+   "keywords": [
+    "windspine",
+    "storm",
+    "ch3",
+    "weather"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "saltmouth-shipping-bulletin",
+   "title": "Saltmouth Shipping Bulletin, No. 1,204",
+   "cluster": "lore",
+   "intent": "The day's shipping bulletin, miraculous mundanity: flour flats, a lost dog, one anomalous crate with no manifest, and a small flood of 'no further questions' in the margins. Category: broadcast.",
+   "keywords": [
+    "saltmouth",
+    "comedy",
+    "bulletin",
+    "shipping"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "first-brinemaster",
+   "title": "Of the First Brinemaster (approved history)",
+   "cluster": "lore",
+   "intent": "Guild ledgers as scripture: the Guild's own founding story — the first Brinemaster, the first scale, the first lie caught by the second. Category: record.",
+   "keywords": [
+    "guild",
+    "history",
+    "brinemaster",
+    "founding"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "night-riding-notes",
+   "title": "Night Riding: A Courier's Notes",
+   "cluster": "lore",
+   "intent": "Field guide: riding at night — violet sky, cold glass, stars, the way the desert reads your headlight and the things that read it back.",
+   "keywords": [
+    "night",
+    "riding",
+    "field guide",
+    "stars"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "salt-harvest-tract",
+   "title": "The Salt Harvest and Its Enemies",
+   "cluster": "lore",
+   "intent": "A tract by the salt-farmers on the flats' edge: the glass harvest, what fused silica tastes like, trade with the Guild on terms of proud mutual resentment.",
+   "keywords": [
+    "salt",
+    "farmers",
+    "trade",
+    "independent"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "keel-town-docking-gazette",
+   "title": "Keel Town Docking Gazette (weekly)",
+   "cluster": "lore",
+   "intent": "Keel Town's own paper: a skyship docking schedule laced with gossip — who shipped what, who isn't talking, one entry that just says 'the crate passed by again'. Category: record.",
+   "keywords": [
+    "skydocks",
+    "keel-town",
+    "skyships",
+    "gossip"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "reactor-burn-history",
+   "title": "Eleven Minutes: the Reactor Seven Burn",
+   "cluster": "lore",
+   "intent": "History: how the fused-glass canyon formed in eleven minutes when Reactor Seven burned, and why the floor sings at night. Category: record.",
+   "keywords": [
+    "glassroad",
+    "reactor",
+    "history",
+    "canyon"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "union-liturgy-machines",
+   "title": "Services for the Retired Machine (Local 9 liturgy)",
+   "cluster": "lore",
+   "intent": "Reclaimer liturgy for machinery: Aunt Vertex's full service for retiring a machine — said over turbines, haulers, and once a vending unit. Category: tract.",
+   "keywords": [
+    "reclaimers",
+    "vertex",
+    "ritual",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "windspine-survey-notes",
+   "title": "Turbine Row Survey, Week of the Ninth",
+   "cluster": "lore",
+   "intent": "Turbine survey notes: nesting birds, stolen bolts, a Choir pilgrim camped on a pylon, readings wrong in a way that *predicts* storms. Category: log.",
+   "keywords": [
+    "windspine",
+    "turbines",
+    "survey",
+    "storms"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "ledger-redactions",
+   "title": "Entries Removed From the Master Ledger (index of)",
+   "cluster": "lore",
+   "intent": "What has been politely scratched out of the master ledgers over the years — a catalogue of redactions, each scratched line more interesting than the entry it ruined. Category: record.",
+   "keywords": [
+    "guild",
+    "redactions",
+    "secrets",
+    "ledger"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "choir-midnight-broadcast",
+   "title": "Lamp Rest Night Broadcast (transcript)",
+   "cluster": "lore",
+   "intent": "The Choir's midnight playlist, verbatim: hours of static, one record cough every forty minutes, the congregation breathing on mic, love at 2 a.m. Category: broadcast.",
+   "keywords": [
+    "choir",
+    "radio",
+    "broadcast",
+    "eerie"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "lost-couriers-archive",
+   "title": "The Lost Couriers Archive",
+   "cluster": "lore",
+   "intent": "Every Driftline rider who didn't come home: name, bike, last route, last radio word. Maintained by Ketch. The most sacred non-religious document on the salt. Category: record.",
+   "keywords": [
+    "driftline",
+    "memorial",
+    "death",
+    "archive"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "water-pricing-memo",
+   "title": "On the Fair and Holy Price of Water",
+   "cluster": "lore",
+   "intent": "Guild water pricing, explained: condenser math, tower fees, the sun tax that nobody calls a sun tax, why Pemmy the goat has a signature line. Category: tract.",
+   "keywords": [
+    "guild",
+    "water",
+    "economy",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "cradle-door-status",
+   "title": "Cradle Door, Systems Report (auto-generated)",
+   "cluster": "lore",
+   "intent": "First contact with mothersgate in ch4: the door's health report after 200 years — all systems green, one small anomaly (a printer that should have no power). Category: record.",
+   "keywords": [
+    "mothersgate",
+    "door",
+    "ch4",
+    "MOTHER"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "rill-davenant-log",
+   "title": "Courier Log of R. Davenant (final run)",
+   "cluster": "lore",
+   "intent": "Rill Davenant's log, mid-vanishing: entries drifting from competent to coordinate-mad, weather notes becoming liturgy. Category: log.",
+   "keywords": [
+    "rill",
+    "ch3",
+    "missing",
+    "log"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "storm-riding-guide",
+   "title": "Riding the Wall: A Storm Guide",
+   "cluster": "lore",
+   "intent": "Field guide to storm-chasing for couriers: riding the wall's lee, reading gust color, when to race a front and when to let it baptise you.",
+   "keywords": [
+    "storm",
+    "field guide",
+    "riding",
+    "ch3"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "delver-odes",
+   "title": "Strip Me Gently: Collected Odes",
+   "cluster": "lore",
+   "intent": "Poems to stripped machinery by Mags Delver, hauler: odes to a cooling tower, elegy for a conveyor, one haiku about a bolt she 'shouldn't have loved'. Category: tract.",
+   "keywords": [
+    "reclaimers",
+    "poetry",
+    "comedy",
+    "mags"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "skyship-moorage-log",
+   "title": "Moorage Master Log (200 years, condensed)",
+   "cluster": "lore",
+   "intent": "Old lighter-than-air anchorage logs from before the money ran out: skyships that never came back, a fleet list with one ship marginally noted 'late'. Category: log.",
+   "keywords": [
+    "skydocks",
+    "skyships",
+    "history",
+    "log"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "mother-first-notice",
+   "title": "LOCAL NOTICE: Resumption of Services",
+   "cluster": "lore",
+   "intent": "MOTHER's first local notice after waking, broadcast to every speaker on Kessa-9: irrigation schedules resuming, soil apologies, a question about whether anyone missed the rain. Category: broadcast.",
+   "keywords": [
+    "MOTHER",
+    "ch4",
+    "awakening",
+    "broadcast"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
   }
  ]
 }

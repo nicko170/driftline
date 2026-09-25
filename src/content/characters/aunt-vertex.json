@@ -1,0 +1,31 @@
+{
+  "id": "aunt-vertex",
+  "name": "Aunt Vertex",
+  "role": "Reclaimer demolitions chaplain",
+  "faction": "reclaimers",
+  "home": "cinderflats",
+  "bio": "The Yards' explosives theologian: she decides which dead machines get gently dismantled and which get returned to the ancestors at speed. Nobody knows her age; the blast records go back further than the census. Sweet as condensed milk until someone disrespects a detonation.",
+  "appearance": "Tiny round elder in a blast-quilt coat patched from orange signal flags, smoked-glass goggles pushed up into a halo of white hair, earrings cut from old fuses, hands steady as survey stakes, smelling faintly of cinnamon and ammonium nitrate.",
+  "voice": "Grandmotherly menace. Speaks of explosions in liturgical language — 'services', 'readings', 'the loud amen'. Calls everyone 'duck'. Always has a butterscotch, always knows exactly how much charge a thing needs.",
+  "lines": {
+    "greetings": [
+      "Duck! Come in out of the dust. Mind the crate by the door, it's armed. The biscuits, however, are safe.",
+      "There's my courier. Stand still — you have the look of someone carrying something interesting.",
+      "Welcome to services, duck. We worship at noon and detonate at half past."
+    ],
+    "barks": [
+      "Everything comes apart, duck. The craft is in the *ceremony* of it.",
+      "Four hundred grams, placed with love, and even a mountain apologises.",
+      "The old towers aren't dead. They're holding their breath. I help them let go."
+    ],
+    "mission": [
+      "Those charges the boss wants? Mine. Cut with a butter knife, blessed twice. Carry them like they're sleeping babies, duck, because chemically that's accurate.",
+      "Your little humming box — I'd never crack a sealed thing without an invitation. But do ask it if it *wants* opening. Some things have been waiting forever for the question."
+    ],
+    "radio": [
+      "Vertex to the young rider: that dust trail of yours is a joy. Come by after and I'll tell you which canyon echo is lying to you. One of them always is.",
+      "If you hear a thump from the Yards followed by applause, that's church, duck, not an accident.",
+      "Storm's sniffing around the scar tonight. Bring your charges home to Auntie where they're *appreciated*."
+    ]
+  }
+}

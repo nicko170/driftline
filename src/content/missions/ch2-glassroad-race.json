@@ -1,0 +1,36 @@
+{
+  "id": "ch2-glassroad-race",
+  "title": "Run the Glassroad",
+  "chapter": 2,
+  "type": "race",
+  "giver": "jett-marrows",
+  "region": "glassroad",
+  "summary": "Jett Marrows — undefeated* canyon racer — has publicly scheduled your humiliation: one run down the Glassroad, south gate to north, Slick Mile to the shrine. Ketch says take the race. The canyon's grip is slick and the line is everything.",
+  "requires": { "flags": ["ch1-the-hum.done"] },
+  "timeLimit": 240,
+  "objectives": [
+    { "type": "goto", "target": "glassroad:gate-south", "label": "Line up at the Glassroad's south gate" },
+    { "type": "race", "targets": ["glassroad:slick-mile", "glassroad:mid-span", "glassroad:glass-chapel", "glassroad:gate-north"], "label": "Run the canyon: Slick Mile → mid-span → glass chapel → north gate" }
+  ],
+  "rewards": {
+    "credits": 300,
+    "rep": { "driftline": 6 },
+    "flags": ["ch2-glassroad-race.done", "lore:glassroad-surface-notes"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "jett-marrows", "text": "Attention, canyon! This is Jett Marrows, undefeated*, fastest thing on fused glass, and I've entered Varga in a race Varga hasn't agreed to yet. South gate. Sunrise. Be there or be a rumour." },
+      { "who": "ketch", "text": "Marrows has been calling out every courier under thirty for a decade. It's how he socialises. Take the race, kid — the Glassroad'll teach you more than I can, and it'll charge less for the lesson than the hospital would." }
+    ],
+    "accept": [
+      { "who": "jett-marrows", "text": "She says yes! Listen up, Parcel: boost is wasted on the Slick Mile if you can't hold a line through the ripple. Braking distances down there are a *rumour*. Ask the chapel wall what the last rookie's bike looked like." },
+      { "who": "ketch", "text": "Race notes, from someone who built half the bikes on that canyon: ride the ripple like a handshake, boost off the glass not onto it, and never turn inside the shrine's shadow at dusk. It'll grab your skirt like a customs officer." },
+      { "who": "ash-varga", "text": "Copy both. Racing the canyon's loudest resident down the canyon's fastest scar. If I die, tell my debt it's free." }
+    ],
+    "complete": [
+      { "who": "jett-marrows", "text": "…Okay. *Okay.* The drift out of the Slick Mile, that line through the chapel shadow — I'll allow it. Publicly. Once. The asterisk on my record is now doing a lot of work." },
+      { "who": "jett-marrows", "text": "Real talk, Parcel: nobody's run that canyon at your split since Davenant. You want a rematch, you know the gate. You want my respect… you *also* know the gate." },
+      { "who": "ketch", "text": "Nice riding, kid. Flats and a following wind. Now keep the line tidy — the whole Driftline heard that split, and half of them just remembered who taught you." }
+    ]
+  }
+}

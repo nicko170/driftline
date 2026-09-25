@@ -1,0 +1,46 @@
+{
+  "id": "ch2-reclaimer-offer",
+  "title": "The Reclaimers' Offer",
+  "chapter": 2,
+  "type": "fragile",
+  "giver": "boss-pyke",
+  "region": "cinderflats",
+  "summary": "Boss Pyke needs a pallet of cutting charges 'rescued' from the cargo winch at the Skydocks and delivered to Aunt Vertex at the Crusher — gently, because technically fireworks. In exchange, the Yards will quote you a price on opening the null crate. A very, very good price. Suspiciously good.",
+  "requires": { "flags": ["ch1-the-hum.done"] },
+  "objectives": [
+    { "type": "pickup", "target": "skydocks:winch-base", "label": "Collect the charges pallet at the cargo winch base" },
+    { "type": "goto", "target": "cinderflats:yard-gate", "label": "Sign in (next to the burning log) at the yard gate" },
+    { "type": "dropoff", "target": "cinderflats:crusher", "label": "Deliver the charges to Aunt Vertex at the Crusher" }
+  ],
+  "rewards": {
+    "credits": 240,
+    "rep": { "reclaimers": 8 },
+    "flags": ["ch2-reclaimer-offer.done", "lore:yard-rules"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "boss-pyke", "text": "Varga! Chief! Opportunity knockin'. A pallet of premium cutting charges 'fell' off a skyship at the winch base and is presently enjoying salvage law, which is our favourite law. Go get it before the Guild counts it." },
+      { "who": "boss-pyke", "text": "Bring it to Vertex at the Crusher, nice and smooth. And while you're here — that humming crate of yours? One afternoon on my bench, union rates, and we open it like a birthday. Think it over." }
+    ],
+    "accept": [
+      { "who": "aunt-vertex", "text": "Vertex here, duck. Those charges are asleep and I want them to *stay* asleep until services. No hopping, no drifting, no dramatic braking. Pretend you're carrying eggs that yell." },
+      { "who": "ketch", "text": "Kid. Before you fall in love with the idea of Pyke opening your crate: the Yards have never once broken anything they were paid to fix, and never once *not* broken anything they were paid to open. Ask them which your crate is." },
+      { "who": "ash-varga", "text": "Charges acquired. They make a little ticking sound. I'm choosing to believe that's a clock." }
+    ],
+    "complete": [
+      { "who": "aunt-vertex", "text": "Oh, beautifully ridden, duck — I felt every metre from here and you didn't wake a single one. You'd have made a lovely chaplain. The biscuits are by the door." },
+      { "who": "boss-pyke", "text": "Delivery logged, sprout. Now the real business: that crate hums, and on this crew humming means *waking*. A wake-key that old could light half the scar's dead machinery. Open it with us and the Yards stand behind whatever climbs out." },
+      { "who": "boss-pyke", "text": "No pressure. Well. Union-standard pressure: the offer expires when the crate does something worse. They always do something worse." }
+    ],
+    "choices": [
+      {
+        "prompt": "Pyke's bench is ready. Do you give the Reclaimers your leaning on opening the crate?",
+        "options": [
+          { "text": "\"When it's time to open it, you're the crew with the tools.\"", "setsFlag": "offer.reclaimers" },
+          { "text": "\"It's sealed cargo, Boss. Sealed stays sealed until it says otherwise.\"", "setsFlag": "offer.reclaimers.hedged" }
+        ]
+      }
+    ]
+  },
+  "cargo": { "fragile": true, "label": "cutting charges (allegedly fireworks)" }
+}
