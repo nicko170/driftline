@@ -1,0 +1,48 @@
+{
+  "id": "factor-marn-phlox",
+  "name": "Factor Marn Phlox",
+  "faction": "guild",
+  "role": "Junior Guild factor, Glassroad south relay",
+  "home": "glassroad",
+  "bio": "The youngest factor ever posted to the Glassroad's south gate, a promotion achieved entirely by being the only applicant. Perpetually cheerful, catastrophically underqualified, and quietly certain the canyon is looking at him. Famously the relay who 'technically received' the null crate from behind a marker cairn.",
+  "appearance": "Gangly young man drowning in an oversized ochre relay coat with the sleeves rolled four times, a clipboard clutched to his chest like a shield, sun-goggles too big for his face, and an expression of bravery visibly under construction.",
+  "voice": "Breathless, eager, over-prepared for the wrong emergencies. Apologises to inanimate objects. Brags about survival statistics he's inventing. The canyon scares him; the paperwork scares him more; he'd never admit either.",
+  "lines": {
+    "greetings": [
+      "Courier! Hello! Welcome to the south gate relay, finest relay on the Glassroad, only relay on the Glassroad!",
+      "Varga! I have your paperwork pre-filled! I pre-fill everything! It's called initiative!",
+      "Oh thank goodness, a person. The canyon was doing the quiet thing again."
+    ],
+    "barks": [
+      "Statistically, most couriers survive the Slick Mile. That's a real statistic. I made it a statistic by saying it with confidence.",
+      "The glass sings at night, which is fine, because singing is just talking with commitment.",
+      "Everything crosses! Everything's counted! I'm counted! Probably as an asset!"
+    ],
+    "mission": [
+      "The crate? I did receive it. Physically, eventually. It was warm. I'm told crates aren't warm. I filed it under 'warm'.",
+      "If you're going up-canyon, could you tell the mid-span shrine I said hello? It knows my voice. Long story. Short form."
+    ],
+    "radio": [
+      "Relay south gate to all riders: conditions are, um, glassy? The road is glass. That's the whole condition. Good luck!",
+      "Varga, it's Phlox. Small question. Do crates normally hum in key? Asking for a form.",
+      "If anyone asks, the relay post has never been unattended. It was briefly… independently operated."
+    ],
+    "night": [
+      "Night shift at the south gate is very popular. With shadows. The shadows love it here.",
+      "I keep the relay lamp on all night. For visibility. Not for company. The lamp agrees."
+    ],
+    "storm": [
+      "Storm warning posted! I posted it! Then the wind read it and now it's furious!",
+      "They say shelter in place. My place is a tent. Writing to the Guild about 'place'."
+    ],
+    "crate": [
+      "It hummed at me and I hummed back, which I now understand is not Guild procedure.",
+      "I wasn't hiding behind that cairn. I was sheltering strategically near it. There's a form that explains the difference.",
+      "The crate is gone now and the gate feels… promoted? Like the canyon got what it was queueing for."
+    ],
+    "farewells": [
+      "Ride safe! Statistically! Please!",
+      "Bye! I'll log this as a successful interaction, which for me is any interaction!"
+    ]
+  }
+}

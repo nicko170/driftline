@@ -26,6 +26,22 @@
       "Brinemaster Ogo on Guild band one. Courier, your altitude is billable. Descend at your leisure, billing continues.",
       "I am told the crate hums. I have in my office forty crates that hum. They are called bees. We insure bees.",
       "Remember, Varga: the Guild doesn't fear the future. We simply invoice it until it calms down."
+    ],
+    "night": [
+      "The ledgers balance differently after dark. Less honestly. Like everyone.",
+      "Night tariffs apply, courier. Not to goods. To hopes."
+    ],
+    "storm": [
+      "Storm season is the desert's audit season. We all show our books or lose them.",
+      "Wall of sand on the scope, Varga. The Guild advises stillness. The Guild is a building."
+    ],
+    "crate": [
+      "That crate has no weight in any ledger I own, and I own the concept of ledgers.",
+      "Bring me the crate and I'll call your debt a rounding error. I have never once permitted a rounding error. Think on what you're being offered."
+    ],
+    "farewells": [
+      "Flat salt, courier. The counting continues without you. It always does.",
+      "Go. And remember: I liked you slightly before everyone else did. There'll be a fee."
     ]
   }
 }

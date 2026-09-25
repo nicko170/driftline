@@ -1,0 +1,47 @@
+{
+  "id": "dockmaster-devanna",
+  "name": "Dockmaster Devanna Shore",
+  "faction": "guild",
+  "role": "Dockmaster of the Skydocks mesa",
+  "home": "skydocks",
+  "bio": "Ran the skyship Kestrel's Debt for nineteen years before the Guild bought her grudges along with her cargo contracts. Now she runs the moorage masts and winch yards of the skydocks mesa with a bosun's patience and a captain's memory. Handles the Guild's big offers — including the one with a humming crate in it.",
+  "appearance": "Weathered woman of fifty with a forearm tattoo of a ship no longer flying, a long storm-grey coat with brass cleat-buttons, a voice pipe on a lanyard she uses only to point at people's mistakes, and a stride calibrated to decks that no longer pitch.",
+  "voice": "Salt-cured command. Measures distances in knots, debts in favours, and people in how they behave when the wind changes. Never raises her voice; the sky lowers it for her. Sentimental about ships, merciless about knots.",
+  "lines": {
+    "greetings": [
+      "Courier. Mind the winch lines. They mind nothing.",
+      "Varga. You ride like a ship with one sail missing. I mean that as a navigational assessment.",
+      "Keel Town keeps its own hours. You're early, late, or cargo. Choose."
+    ],
+    "barks": [
+      "I've buried crews and masts and exactly one cargo I'd rather not describe. The masts were hardest.",
+      "A knot tied wrong is a promise made to the sea. The desert learned the trick.",
+      "Everything up here is moored to something, child. Even the Guild. Even you."
+    ],
+    "mission": [
+      "The Guild wants that crate lifted to Keel Town and out of circulation. I'm the circulation. Convince me or outrun me, those have always been the options.",
+      "Deliver this offer-wax to Brinemaster Ogo's factor without breaking the seal. If it hums, don't tell me. I'd only want to fly it."
+    ],
+    "radio": [
+      "Skydocks traffic to courier Varga: your approach vector is a rumour. Amend it.",
+      "Wind at the mesa is twelve knots and holding a grudge. Recommend you come in heavy-side first.",
+      "Log note, ship's-band: the desert's humming in a key I'd sail to. Somebody tell the Brinemaster I'm joking."
+    ],
+    "night": [
+      "Night docking is half rope, half faith. Day rates don't apply. Faith surcharges do.",
+      "The masts tick over at night like a slow clock. Keel Town sleeps to it. I don't sleep. Someone counts the ticks."
+    ],
+    "storm": [
+      "Storm's a sea that fell down. Ships handled seas. This mesa will handle the weather.",
+      "All moorings double-rigged. If the season wants my ships, it files an application like everyone else."
+    ],
+    "crate": [
+      "Saw your dust from the crow's mast, courier. Pretty line. The Kestrel's Debt used to cut that corner. Used to.",
+      "A crate that hums in key is a cargo with an opinion. I've thrown opinions overboard for less. Presents ethical difficulties ashore."
+    ],
+    "farewells": [
+      "Fair wind off your stern, courier. You have a stern. Everything does if it moves.",
+      "Go on. The mesa watches you leave. It watches everyone. It gives me the reports."
+    ]
+  }
+}

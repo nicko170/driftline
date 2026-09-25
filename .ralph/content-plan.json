@@ -920,10 +920,11 @@
     "leader",
     "skydocks"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790379149.548773
+   "claimed_at": 1790379149.548773,
+   "done_at": "2026-09-26T09:39:23"
   },
   {
    "kind": "article",
@@ -937,10 +938,11 @@
     "comic",
     "ominous"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790379149.548774
+   "claimed_at": 1790379149.548774,
+   "done_at": "2026-09-26T09:39:23"
   },
   {
    "kind": "article",
@@ -954,10 +956,11 @@
     "glassroad",
     "comic"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790379149.548775
+   "claimed_at": 1790379149.548775,
+   "done_at": "2026-09-26T09:39:23"
   },
   {
    "kind": "article",
@@ -971,10 +974,11 @@
     "dockmaster",
     "captain"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790379149.548775
+   "claimed_at": 1790379149.548775,
+   "done_at": "2026-09-26T09:39:23"
   },
   {
    "kind": "article",
@@ -989,8 +993,10 @@
     "gentle",
     "cult"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790379416.717309
   },
   {
    "kind": "article",
@@ -1004,8 +1010,10 @@
     "static",
     "oracle"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790379416.71731
   },
   {
    "kind": "article",
@@ -1019,8 +1027,10 @@
     "mystic",
     "comic relief"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790379416.717311
   },
   {
    "kind": "article",
@@ -1033,8 +1043,10 @@
     "comic",
     "sound"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790379416.717311
   },
   {
    "kind": "article",
