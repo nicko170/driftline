@@ -1,0 +1,61 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; let an in-progress deploy finish rather than cancel it.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: ${{ hashFiles('package-lock.json') != '' && 'npm' || '' }}
+
+      - uses: actions/configure-pages@v6
+
+      # Until the agent has scaffolded the app, publish a placeholder so the
+      # URL is live from the first push. After that: the real build
+      # (served from https://nicko170.github.io/driftline/ via BASE_PATH).
+      - name: Build
+        env:
+          BASE_PATH: /driftline/
+          SITE_URL: https://nicko170.github.io/driftline
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+            npm run build
+          else
+            mkdir -p dist && touch dist/.nojekyll
+            printf '%s' '<!doctype html><meta charset="utf-8"><title>DRIFTLINE — being built</title><body style="font:600 20px/1.5 system-ui;display:grid;place-items:center;height:100vh;margin:0;background:#111;color:#eee"><p>DRIFTLINE, a 3D hover-bike courier adventure, is being designed and built right now by Kimi K3 on GreenThread. Check back soon.</p>' > dist/index.html
+          fi
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+          include-hidden-files: true # ship .nojekyll
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
