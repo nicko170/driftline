@@ -1,0 +1,38 @@
+{
+  "id": "ch1-the-hum",
+  "title": "The Hum",
+  "chapter": 1,
+  "type": "scout",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "A week after the null crate left town, Saltmouth's radios still catch its frequency — three faint echoes triangulated on the pan, the overlook and the east gate. Ride the triangle, tune in, and find out what a sealed crate wants with a town it already left.",
+  "requires": { "flags": ["ch1-watering.done"] },
+  "objectives": [
+    { "type": "goto", "target": "saltmouth:flats-pan", "label": "Tune in at the old salt pan" },
+    { "type": "goto", "target": "saltmouth:overlook", "label": "Tune in at the dune overlook" },
+    { "type": "goto", "target": "saltmouth:gate-east", "label": "Tune in at the east gate" },
+    { "type": "goto", "target": "saltmouth:garage", "label": "Bring what you heard back to the garage" }
+  ],
+  "rewards": {
+    "credits": 150,
+    "rep": { "guild": 3, "driftline": 5, "choir": 2 },
+    "flags": ["ch1-the-hum.done", "lore:driftline-creed"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "The crate is three settlements away and yet every radio in Saltmouth clears its throat at dusk on the same frequency. I triangulated three echoes. The Guild's official position is 'weather'. My position rides a bike." },
+      { "who": "ash-varga", "text": "You want me to go stand still in three empty places and listen to a box we got rid of." },
+      { "who": "tamsin-cho", "text": "When you put it like that it sounds like faith. I'm paying courier rates, not Choir rates. Go." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Ketch here. Tamsin flagged me the coordinates. Old pan first, then the overlook, then the gate. Kid — if the static starts answering in words, you ride home and we never discuss it. That's protocol I just invented." },
+      { "who": "tamsin-cho", "text": "And Varga — take notes. If something impossible is happening, the Guild would like it documented in triplicate." }
+    ],
+    "complete": [
+      { "who": "ash-varga", "text": "All three echoes, same frequency. They weren't echoes of the crate, Ketch. They were… aimed. Like the crate left a string back to Saltmouth and someone's plucking it." },
+      { "who": "ketch", "text": "Get home, kid. Slow on the last stretch. Whatever's humming, it knows the roads now." },
+      { "who": "tamsin-cho", "text": "Varga. The ledger page from last week — the one no clerk wrote — filled in again tonight. One line, in that same hand nobody owns." },
+      { "who": "tamsin-cho", "text": "It says: 'VARGA, ASH — ROUTE ASSIGNED.' You don't have a route assigned, Ash. Nobody assigns routes but me. Get some sleep. Bar your door. I'll bill someone." }
+    ]
+  }
+}

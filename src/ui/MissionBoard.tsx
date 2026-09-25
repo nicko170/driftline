@@ -1,0 +1,90 @@
+/**
+ * Mission board overlay — available jobs filtered by flags/rep, detail pane,
+ * accept flow with offer dialogue. Data flows from src/content/missions/*.json.
+ */
+import { useMemo, useState } from 'react';
+import { useGameStore, useSaveStore } from '../state/store';
+import { availableMissions, type Mission } from '../missions/library';
+import { character } from '../dialogue/library';
+import { REGIONS } from '../world/registry';
+import { audio } from '../audio/audio';
+
+export default function MissionBoard() {
+  const close = () => useGameStore.getState().setMode('riding');
+  const done = useSaveStore((s) => s.missionsDone);
+  const flags = useSaveStore((s) => s.flags);
+  const rep = useSaveStore((s) => s.rep);
+  const activeId = useGameStore((s) => s.activeMissionId);
+
+  const jobs = useMemo(() => availableMissions(done, flags, rep, activeId), [done, flags, rep, activeId]);
+  const [selected, setSelected] = useState<Mission | null>(jobs[0] ?? null);
+
+  const accept = (m: Mission) => {
+    const g = useGameStore.getState();
+    g.clearMission();
+    g.startMission(m.id, m.timeLimit);
+    audio.chime();
+    if (m.dialogue.accept?.length) g.openDialogue(m.dialogue.accept);
+    else g.setMode('riding');
+  };
+
+  return (
+    <div className="overlay">
+      <div className="sheet board">
+        <header className="sheet-head">
+          <h2>Salt Guild Job Board</h2>
+          <p className="dim">"Everything crosses. Everything's counted." · press <kbd>Esc</kbd> to step away</p>
+        </header>
+        <div className="board-body">
+          <ul className="board-list" role="listbox" aria-label="Available jobs">
+            {jobs.length === 0 && <li className="board-empty">Nothing posted. The desert's quiet today — enjoy it.</li>}
+            {jobs.map((m) => (
+              <li key={m.id}>
+                <button
+                  className={`board-job ${selected?.id === m.id ? 'selected' : ''}`}
+                  onClick={() => { setSelected(m); audio.blip(660, 0.05); }}
+                >
+                  <span className="board-job-type">{m.type}</span>
+                  <span className="board-job-title">{m.title}</span>
+                  <span className="board-job-pay">{m.rewards.credits} cr</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+          <div className="board-detail">
+            {selected ? (
+              <>
+                <h3>{selected.title}</h3>
+                <p className="board-detail-meta">
+                  {selected.chapter === 'side' ? 'Side job' : `Chapter ${selected.chapter}`} ·{' '}
+                  {character(selected.giver)?.name ?? selected.giver} ·{' '}
+                  {REGIONS.get(selected.region)?.meta.name ?? selected.region}
+                </p>
+                <p>{selected.summary}</p>
+                {selected.dialogue.offer?.[0] && (
+                  <blockquote className="board-offer">“{selected.dialogue.offer[0].text}”</blockquote>
+                )}
+                <ul className="board-objectives">
+                  {selected.objectives.map((o, i) => (
+                    <li key={i}>{o.label ?? `${o.type} → ${o.target ?? 'checkpoints'}`}</li>
+                  ))}
+                </ul>
+                <div className="board-rewards">
+                  <span>{selected.rewards.credits} cr</span>
+                  {selected.rewards.rep && Object.entries(selected.rewards.rep).map(([f, n]) => (
+                    <span key={f} className={`rep rep-${f}`}>{n! > 0 ? '+' : ''}{n} {f}</span>
+                  ))}
+                  {selected.cargo?.fragile && <span className="rep rep-fragile">FRAGILE — {selected.cargo.label}</span>}
+                  {selected.timeLimit && <span className="rep">⏱ {selected.timeLimit}s</span>}
+                </div>
+                <button className="btn primary" onClick={() => accept(selected)}>Accept job</button>
+              </>
+            ) : (
+              <p className="dim">Select a posting.</p>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

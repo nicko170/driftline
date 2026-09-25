@@ -1,0 +1,9 @@
+{
+  "slug": "saltmouth",
+  "name": "Saltmouth",
+  "blurb": "Hub town where the salt flats meet the first dunes. Job board, Ketch's garage, the Guild exchange, and the moorage mast. Home.",
+  "center": [0, 300],
+  "radius": 260,
+  "danger": 0,
+  "climate": { "fogDensity": 0.0016 }
+}

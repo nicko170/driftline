@@ -1,0 +1,9 @@
+{
+  "slug": "drowned-array",
+  "name": "The Drowned Array",
+  "blurb": "A solar array sinking into a salt pan, panel by panel. Eerie, beautiful, and full of old caches for couriers who read the cairns.",
+  "center": [-120, -980],
+  "radius": 280,
+  "danger": 2,
+  "climate": { "fogDensity": 0.002 }
+}

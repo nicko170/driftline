@@ -1,0 +1,33 @@
+{
+  "id": "ch1-first-run",
+  "title": "First Run",
+  "chapter": 1,
+  "type": "deliver",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "Standard starter: pick up a sealed parcel at the board and walk it across town to Ketch's garage. Pays insulting-but-honest money. Teaches your bike who you are.",
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:job-board", "label": "Pick up the parcel at the job board" },
+    { "type": "goto", "target": "saltmouth:overlook", "label": "Test the bike — touch the dune overlook beacon" },
+    { "type": "dropoff", "target": "saltmouth:garage", "label": "Deliver the parcel to Ketch's garage" }
+  ],
+  "rewards": {
+    "credits": 80,
+    "rep": { "guild": 3 },
+    "flags": ["ch1-first-run.done", "lore:salt-guild-charter"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "New courier rates apply, which is to say the pay is a rounding error with ambition. But the parcel's real, the route's flat, and Ketch tips in gossip." }
+    ],
+    "accept": [
+      { "who": "tamsin-cho", "text": "Parcel's on the hook behind the board. Wax seal, Guild stamp, very official." },
+      { "who": "ketch", "text": "Ketch on the radio, kid. Take her past the overlook first — I want to see you climb a dune before I let you carry anything breakable. Which is everything. Everything is breakable." },
+      { "who": "ash-varga", "text": "Copy. Any crate, any storm, any extremely gentle hill." }
+    ],
+    "complete": [
+      { "who": "ketch", "text": "There she is. Parcel intact, bike intact, rider mostly intact — a Driftline miracle." },
+      { "who": "ketch", "text": "Now listen. Tamsin's holding something at the exchange with your name on it. Not your name, actually. No name. That's the interesting part." }
+    ]
+  }
+}

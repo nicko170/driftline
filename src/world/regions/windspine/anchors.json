@@ -1,0 +1,7 @@
+{
+  "survey-camp": { "pos": [700, -260], "label": "Survey camp" },
+  "turbine-row": { "pos": [820, -420], "label": "Turbine row" },
+  "ridge-crest": { "pos": [950, -590], "label": "Ridge crest" },
+  "south-foot": { "pos": [620, -120], "label": "Southern foot" },
+  "storm-gauge": { "pos": [1080, -820], "label": "Storm gauge" }
+}

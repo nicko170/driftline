@@ -1,0 +1,31 @@
+{
+  "id": "side-mail-round",
+  "title": "The Morning Round",
+  "chapter": "side",
+  "type": "deliver",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "Saltmouth's mail run: two drops around town — the water tower crew and the moorage mast. Light parcels, gossip-grade cargo, decent warm-up money.",
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:job-board", "label": "Collect the mail bag at the job board" },
+    { "type": "dropoff", "target": "saltmouth:water-tower", "label": "Drop mail at the water tower" },
+    { "type": "dropoff", "target": "saltmouth:moorage", "label": "Drop mail at the moorage mast" }
+  ],
+  "rewards": {
+    "credits": 60,
+    "rep": { "guild": 2 },
+    "flags": ["side-mail-round.done"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "Mail run. The tower crew complain if they're left out of the gossip loop, and the moorage crew complain regardless. Democracy in action." }
+    ],
+    "accept": [
+      { "who": "tamsin-cho", "text": "Light bag, nothing fragile, nothing hums. Refreshingly normal, honestly." }
+    ],
+    "complete": [
+      { "who": "ash-varga", "text": "Both drops done. The tower crew says the water tastes like victory today. That's rust, but I didn't say so." },
+      { "who": "tamsin-cho", "text": "Counted, logged, paid. You see, courier? A job that behaves — cherish it." }
+    ]
+  }
+}

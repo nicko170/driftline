@@ -1,0 +1,38 @@
+{
+  "id": "ch1-watering",
+  "title": "A Fair Price for Water",
+  "chapter": 1,
+  "type": "timed",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "The water tower's condenser coil cracked and the Guild's replacement only holds pressure until the afternoon heat window closes. Exchange to tower, one cracked-but-serviceable coil, before the town drinks air. A small clock, a small panic.",
+  "requires": { "flags": ["ch1-debt-shield.done"] },
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:exchange", "label": "Take the condenser coil from the Guild exchange" },
+    { "type": "dropoff", "target": "saltmouth:water-tower", "label": "Get the coil to the water tower before the window closes" },
+    { "type": "goto", "target": "saltmouth:exchange", "label": "Report back to the exchange" }
+  ],
+  "rewards": {
+    "credits": 110,
+    "rep": { "guild": 5 },
+    "flags": ["ch1-watering.done"]
+  },
+  "timeLimit": 150,
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "Condenser coil's cracked. The replacement loses pressure the moment the sun hits that corner of the tower, which it does in one hundred and fifty very enthusiastic seconds." },
+      { "who": "tamsin-cho", "text": "The Guild's position is that hydration is a right. The Guild's *invoice* position is that rights ride with the fastest courier. That's you. Congratulations on your rights." }
+    ],
+    "accept": [
+      { "who": "tamsin-cho", "text": "Clock starts when the coil leaves my hands. Which is now. Which is immediately. Go. Why are you reading." },
+      { "who": "ash-varga", "text": "Clock's running. Tell the tower to whistle when it sees me." },
+      { "who": "ketch", "text": "Ketch here. Cut the flats at the board corner and mind the laundry line at the mast. Town wasn't built for couriers in a hurry. It wasn't built for couriers at all, honestly." }
+    ],
+    "complete": [
+      { "who": "tamsin-cho", "text": "Installed, pressurised, and holding. The town drinks tonight, and the record will show the Guild graciously permitted it." },
+      { "who": "ash-varga", "text": "The record should show a courier did it." },
+      { "who": "tamsin-cho", "text": "The record shows a *Guild-licensed* courier did it. Count the difference twice — and here's your water-guilt bonus. Spend it at the garage like everyone does." },
+      { "who": "ketch", "text": "Nice line through the flats, kid. Sloppy at the tower, but the tower forgives. Water always does. That's why there's never enough of it." }
+    ]
+  }
+}

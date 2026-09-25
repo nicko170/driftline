@@ -1,0 +1,5 @@
+{
+  "approach": { "pos": [900, 780], "label": "Gate approach" },
+  "the-door": { "pos": [980, 880], "label": "The Door" },
+  "survey-point": { "pos": [1080, 950], "label": "Old survey point" }
+}

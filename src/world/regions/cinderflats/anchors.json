@@ -1,0 +1,6 @@
+{
+  "yard-gate": { "pos": [-430, 640], "label": "Yard gate" },
+  "boss-office": { "pos": [-520, 720], "label": "Pyke's office" },
+  "crusher": { "pos": [-580, 780], "label": "The Crusher" },
+  "parts-pile": { "pos": [-460, 660], "label": "Sorted parts pile" }
+}

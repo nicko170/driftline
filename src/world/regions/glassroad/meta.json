@@ -1,0 +1,9 @@
+{
+  "slug": "glassroad",
+  "name": "The Glassroad",
+  "blurb": "A canyon fused to teal glass by an old reactor burn. Fast, slick, and mean. The quickest way northeast and the quickest way to learn humility.",
+  "center": [380, -260],
+  "radius": 420,
+  "danger": 2,
+  "climate": { "fogDensity": 0.0024, "skyTint": "#2E8C8C" }
+}

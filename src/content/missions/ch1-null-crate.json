@@ -1,0 +1,34 @@
+{
+  "id": "ch1-null-crate",
+  "title": "The Null Crate",
+  "chapter": 1,
+  "type": "fragile",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "A sealed crate with no manifest entry, no sender, and a receipt signed by nobody. Take it to the Glassroad's south gate — a Guild courier relay will meet it there. Handle gently. Nobody will say why.",
+  "requires": { "flags": ["ch1-first-run.done"] },
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:exchange", "label": "Collect the unsigned crate at the Guild exchange" },
+    { "type": "dropoff", "target": "glassroad:gate-south", "label": "Deliver it to the relay at the Glassroad south gate" }
+  ],
+  "rewards": {
+    "credits": 160,
+    "rep": { "guild": 5, "choir": 2 },
+    "flags": ["ch1-null-crate.done", "lore:null-crate", "crate.hums"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "This crate showed up in the exchange overnight. No manifest line, no sender wax, weight listed as 'approximately regret'. The Guild pays triple for things it can't file." }
+    ],
+    "accept": [
+      { "who": "tamsin-cho", "text": "Gently, courier. I measured it for the ledger and it measured *back*. I'm choosing to find that charming." },
+      { "who": "ash-varga", "text": "It's humming. Crates don't hum. I'm putting that in my report." },
+      { "who": "ketch", "text": "Radio check, kid: if a crate hums, you hum louder. Assert dominance. Old courier trick that has never once helped." }
+    ],
+    "complete": [
+      { "who": "ash-varga", "text": "Relay's a no-show. Gate's empty. But the crate… it stopped humming when I set it down. Like it arrived." },
+      { "who": "tamsin-cho", "text": "Logged as delivered. Varga — off the record — your name got entered into a ledger at the exchange tonight. By a hand that wasn't there. Get some sleep." }
+    ]
+  },
+  "cargo": { "fragile": true, "label": "null crate" }
+}

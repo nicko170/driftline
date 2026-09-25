@@ -1,0 +1,9 @@
+{
+  "slug": "choirhollow",
+  "name": "Choir Hollow",
+  "blurb": "A crater temple ringed with teal lamps and listening horns. The Choir interprets static here. Visitors are welcome; radios are examined.",
+  "center": [480, 620],
+  "radius": 240,
+  "danger": 1,
+  "climate": { "fogDensity": 0.0026, "skyTint": "#57C4B8" }
+}

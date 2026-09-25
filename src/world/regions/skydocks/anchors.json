@@ -1,0 +1,6 @@
+{
+  "winch-base": { "pos": [-700, -300], "label": "Cargo winch base" },
+  "mesa-top": { "pos": [-780, -380], "label": "Mesa top", "elev": 40 },
+  "keel-town": { "pos": [-860, -420], "label": "Keel Town", "elev": 38 },
+  "dockmaster": { "pos": [-750, -350], "label": "Dockmaster's hut", "elev": 40 }
+}

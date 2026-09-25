@@ -1,0 +1,38 @@
+{
+  "id": "ch1-paper-trail",
+  "title": "Paper Trail",
+  "chapter": 1,
+  "type": "collect",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "Last night's wind peeled the exchange's drying ledger slips and scattered them across town. Six pieces of Guild paperwork, currently enjoying their freedom. Round them up before the Guild has to admit it lost count of something.",
+  "requires": { "flags": ["ch1-null-crate.done"] },
+  "objectives": [
+    { "type": "collect", "target": "saltmouth:job-board", "count": 2, "label": "Sweep the slips off the board flat" },
+    { "type": "collect", "target": "saltmouth:water-tower", "count": 2, "label": "Catch the two circling the water tower" },
+    { "type": "collect", "target": "saltmouth:moorage", "count": 2, "label": "Peel the last pair off the moorage mast" },
+    { "type": "dropoff", "target": "saltmouth:exchange", "label": "Return the slips to Tamsin at the exchange" }
+  ],
+  "rewards": {
+    "credits": 70,
+    "rep": { "guild": 4 },
+    "flags": ["ch1-paper-trail.done"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "The wind took six ledger slips off my drying rack. Six. The Guild has survived reactor burns, two recessions and a haunted crate, but it will not survive being seen chasing its own paperwork." },
+      { "who": "tamsin-cho", "text": "You, however, are a courier. Chasing things across town is literally the shape of you." }
+    ],
+    "accept": [
+      { "who": "tamsin-cho", "text": "Two blew toward the board, two are orbiting the water tower, and the last pair are glued to the moorage mast like they pay mooring fees." },
+      { "who": "ash-varga", "text": "Hunting loose paper. My eight-thousand-credit bike quivers with purpose." },
+      { "who": "ketch", "text": "Radio check, kid. Guild paper runs downwind, always. It's had two hundred years of practice fleeing accountability." }
+    ],
+    "complete": [
+      { "who": "tamsin-cho", "text": "Six slips, counted twice. You're a credit to the creed, which I will reflect by paying you slightly less than the creed deserves." },
+      { "who": "tamsin-cho", "text": "One thing. This last slip — it was filled in *last night*. Entry, signature, wax. Nobody opened the office, Varga. The ink's fresher than my coffee." },
+      { "who": "ash-varga", "text": "Probably a clerk sleepwalking. Saltmouth's full of people tired enough to work in their sleep." },
+      { "who": "tamsin-cho", "text": "Probably. File it under coffee I no longer trust. You're paid. Go bother Ketch." }
+    ]
+  }
+}

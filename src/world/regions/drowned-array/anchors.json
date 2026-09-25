@@ -1,0 +1,6 @@
+{
+  "pan-edge": { "pos": [-120, -760], "label": "Pan edge" },
+  "substation": { "pos": [-140, -940], "label": "Drowned substation" },
+  "cache-cairn": { "pos": [-60, -1020], "label": "Cache cairn" },
+  "panel-field": { "pos": [-190, -890], "label": "Panel field" }
+}

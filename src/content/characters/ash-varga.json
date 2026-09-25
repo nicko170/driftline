@@ -1,0 +1,30 @@
+{
+  "id": "ash-varga",
+  "name": "Ash Varga",
+  "role": "Driftline courier (you)",
+  "faction": "driftline",
+  "home": "saltmouth",
+  "bio": "New to the Driftline, riding a second-hand hover-bike bought on Guild credit. Owes 8,000 credits, rides like the debt is chasing — because it is. Talks dry, rides kind, and is constitutionally incapable of leaving a sealed crate alone.",
+  "appearance": "Lean courier in a sun-faded rust riding coat, wrap-around amber goggles, scarf over the lower face, hair doing whatever the wind negotiated. The bike: a patched, beloved second-hand hover.",
+  "voice": "Dry internal monologue, understated on the radio. Humor at own expense. Gets quieter, not louder, when things get big.",
+  "lines": {
+    "greetings": [
+      "Varga. I have a bike, a debt, and excellent availability.",
+      "Reporting for whatever pays."
+    ],
+    "barks": [
+      "That was on purpose.",
+      "I meant to hit that. It's a technique.",
+      "Noted. Never again. Probably."
+    ],
+    "mission": [
+      "There's a crate on this manifest that doesn't exist. I checked twice. Then I stopped checking, which felt healthier.",
+      "Any crate, any storm, any door. Somebody woke up ambitious when they wrote the creed."
+    ],
+    "radio": [
+      "Saltmouth, Varga. Traffic is light. Traffic is me.",
+      "Note to self: glass is faster than sand, and twice as smug.",
+      "The desert's doing that thing again where it's beautiful on purpose. Suspicious."
+    ]
+  }
+}

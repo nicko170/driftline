@@ -1,0 +1,7 @@
+{
+  "gate-south": { "pos": [150, 372], "label": "South gate" },
+  "gate-north": { "pos": [1002, -1002], "label": "North gate" },
+  "mid-span": { "pos": [380, -200], "label": "Mid-span shrine" },
+  "glass-chapel": { "pos": [520, -520], "label": "Glass chapel" },
+  "slick-mile": { "pos": [266, 110], "label": "The Slick Mile" }
+}

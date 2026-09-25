@@ -1,0 +1,38 @@
+{
+  "id": "ch1-debt-shield",
+  "title": "Debt Shield",
+  "chapter": 1,
+  "type": "deliver",
+  "giver": "ketch",
+  "region": "saltmouth",
+  "summary": "Ketch ordered second-hand gyro parts off a Reclaimer trader camped outside the east gate — cheap, questionably obtained, exactly what the Wren needs. Fetch the parts, bring them home, get your first taste of garage credit.",
+  "requires": { "flags": ["ch1-paper-trail.done"] },
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:gate-east", "label": "Collect the gyro crate from the trader camp at the east gate" },
+    { "type": "dropoff", "target": "saltmouth:garage", "label": "Haul the parts back to Ketch's garage" }
+  ],
+  "rewards": {
+    "credits": 90,
+    "rep": { "driftline": 4, "reclaimers": 2 },
+    "upgrades": [],
+    "flags": ["ch1-debt-shield.done", "garage.tips"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Good news, kid. I found gyro rings for the Wren at a price that only makes me mildly suspicious. Bad news: the seller's a Reclaimer, camped at the east gate, and she doesn't do house calls." },
+      { "who": "ketch", "text": "Fetch the crate and I'll knock labour off your tab. Not the debt — the Guild owns that like it owns the concept of rain. My labour. That's mine to forgive." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Trader's name's Brinn. Rust colours, big laugh, honest-ish scales. If she offers you a deal on a 'slightly warm' horizon cell, the answer is no, and the answer was always no." },
+      { "who": "ash-varga", "text": "East gate, gyro crate, no warm batteries. Anything else I should be warned about that you'll tell me afterwards?" },
+      { "who": "ketch", "text": "The crate's heavier than it looks. Gyro rings always are. It's the spin they're saving up." }
+    ],
+    "complete": [
+      { "who": "ketch", "text": "That's the stuff. Second-hand, third-hand if we're honest — but these rings outlived the company that made them, and that company outlived the money. Good bones." },
+      { "who": "ash-varga", "text": "She tried to sell me a horizon cell that was 'only a little warm'." },
+      { "who": "ketch", "text": "And?" },
+      { "who": "ash-varga", "text": "I have a debt, Ketch, not a death wish." },
+      { "who": "ketch", "text": "Ha! You'll do, kid. While I'm under the Wren this week, ask me anything — garage advice is free, which, between us, is the correct price for it." }
+    ]
+  }
+}

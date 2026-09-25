@@ -1,0 +1,9 @@
+{
+  "slug": "cinderflats",
+  "name": "The Cinderflats",
+  "blurb": "A half-melted industrial scar the Reclaimers call the Yards. Everything useful gets stripped; everything dangerous gets a flag and a nickname.",
+  "center": [-520, 720],
+  "radius": 280,
+  "danger": 2,
+  "climate": { "fogDensity": 0.0022 }
+}

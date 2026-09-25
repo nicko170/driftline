@@ -1,0 +1,9 @@
+{
+  "slug": "windspine",
+  "name": "Windspine Ridge",
+  "blurb": "A long spine of rust-red rock strung with wind turbines and survey camps. Storm season is born out past the crest.",
+  "center": [820, -420],
+  "radius": 320,
+  "danger": 1,
+  "climate": { "fogDensity": 0.002 }
+}

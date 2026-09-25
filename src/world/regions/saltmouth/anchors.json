@@ -1,0 +1,11 @@
+{
+  "spawn": { "pos": [22, 352], "label": "Courier berth" },
+  "job-board": { "pos": [-14, 292], "label": "Job board" },
+  "garage": { "pos": [44, 318], "label": "Ketch's garage" },
+  "exchange": { "pos": [6, 258], "label": "Guild exchange" },
+  "water-tower": { "pos": [-52, 246], "label": "Water tower" },
+  "moorage": { "pos": [86, 262], "label": "Moorage mast" },
+  "gate-east": { "pos": [132, 336], "label": "East gate" },
+  "flats-pan": { "pos": [-90, 400], "label": "Old salt pan" },
+  "overlook": { "pos": [160, 180], "label": "Dune overlook" }
+}

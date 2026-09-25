@@ -1,3 +1,68 @@
-# Design system
+# DRIFTLINE — Design System
 
-_To be defined by the builder (art direction, tokens, type, components, motion)._
+One-line: **frontier-western solarpunk**, sun-bleached by day, violet + neon-amber by night.
+Stylised low-poly, flat or softly shaded, big readable silhouettes, long shadows, dust and heat haze.
+
+## Palette (CSS custom properties in `src/ui/ui.css`)
+
+Day (salt flats):
+| token | hex | use |
+| --- | --- | --- |
+| `--salt` | `#F3EEE2` | flats, hulls, HUD cards |
+| `--bone` | `#E4D7BE` | secondary surfaces, text on dark |
+| `--sand` | `#D9A45B` | dunes, warm mid-tones |
+| `--ochre` | `#B07C3A` | trims, wayline |
+| `--rust` | `#B3502E` | accents, bikes, roofs |
+| `--rust-deep` | `#7E3320` | shadowed rust, borders |
+| `--teal` | `#2E8C8C` | fused-glass glass, water towers |
+| `--teal-bright` | `#57C4B8` | glow accents, holo markers |
+
+Night:
+| token | hex | use |
+| --- | --- | --- |
+| `--violet` | `#2A2140` | night sky mid |
+| `--space` | `#14101F` | night sky top, panel bg |
+| `--amber` | `#FFB454` | neon signage, waypoint glow, HUD accent |
+| `--amber-hot` | `#FFC969` | boost meter, interact prompts |
+| `--ink` | `#1B1526` | deepest bg |
+| `--danger` | `#E4572E` | storm, warnings |
+
+Faction colors: Salt Guild `ochre #B07C3A`, Choir `teal-bright #57C4B8`, Reclaimers `rust #B3502E`, Driftline (couriers) `amber #FFB454`.
+
+## Typography
+
+- Display: `"Chakra Petch"` (600/700) — logo, titles, HUD numbers.
+- Body/UI: `"Sora"` (400/600) — dialogue, menus.
+- Loaded via Google Fonts `<link>` in index.html with `ui-sans-serif/system-ui` fallback. Numerals tabular in HUD.
+
+## HUD & UI language
+
+- HUD overlays are React DOM, pointer-events none except interactive panels.
+- Panels: 1px rust-deep border, `background: color-mix(in srgb, var(--space) 82%, transparent)`, backdrop-blur 6px, 10px radius, amber corner ticks on primary panels.
+- Waypoint markers: vertical beam (amber) + diamond hoist; colour-blind-safe: waypoint = amber diamond, objective-complete = teal square; shapes differ, never colour alone (accessibility requirement).
+- Buttons: uppercase display font, 2px offset underline on hover, focus-visible outline `var(--amber)`.
+- Camera shake always respects `settings.reducedShake`; subtitles are always on (no toggle).
+
+## 3D style rules
+
+- `flatShading` everywhere; geometry from primitives/extrusions, no textures in-world (vertex colours + emissive only).
+- Terrain: single heightfield, vertex colours by height/slope/region mask (salt white flats → ochre dunes → teal glass canyon floors).
+- Sun: warm `DirectionalLight` with follow shadow camera; hemisphere sky/ground fill. Day→dusk→night palette lerp, stars at night.
+- Fog: `FogExp2`, density rises at night/dust; dust motes + bike dust trail via recycled `Points`.
+- Props: instanced (rocks, salt spires, shrubs, turbines). Everything storm-proof readable at 200m.
+
+## Key art & portraits (`generate_image`)
+
+- Style block for ALL generated images: *"Stylised low-poly 3D illustration, warm flat shading, frontier-western solarpunk; sun-bleached salt-white desert, ochre dunes, teal glass formations, rust-red machinery; long shadows, dusty air; no text, no watermark, no logo."*
+- Title key art: `public/images/title/keyart.jpg` (landscape).
+- Loading/region concept art: `public/images/regions/<slug>.jpg`.
+- Portraits (illustrated, head-and-shoulders, painted-not-photoreal): `public/images/characters/<id>.jpg`. Reference from HUD via the character JSON `portrait` field, loaded with `withBase()`.
+
+## Motion
+
+- UI transitions ≤180ms ease-out; menus fade+4px rise; no layout shift.
+- Bike feel targets: hover bob ~2Hz at idle, drift lean ≤14°, boost FOV 60→74, hop land squash 90ms.
+
+## Performance budgets
+
+- 60fps mid laptop at Medium: pixelRatio ≤1.5, shadow 1024, scatter ≤ ~2k instances, fog-over-draw minimal, no per-frame allocations in the render or physics hot paths (module-level scratch objects only).

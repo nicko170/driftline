@@ -1,0 +1,9 @@
+{
+  "slug": "mothersgate",
+  "name": "MOTHER's Gate",
+  "blurb": "The sealed terraform cradle in the far glass hills. The Driftline maps it; nobody delivers to it. Yet.",
+  "center": [980, 880],
+  "radius": 280,
+  "danger": 3,
+  "climate": { "fogDensity": 0.003, "skyTint": "#57C4B8" }
+}

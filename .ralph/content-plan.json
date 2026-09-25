@@ -1,3 +1,2195 @@
 {
- "items": []
+ "items": [
+  {
+   "kind": "article",
+   "slug": "ch1-paper-trail",
+   "title": "Paper Trail",
+   "cluster": "missions",
+   "intent": "Ch1 story mission. Collect five loose ledger slips blowing around Saltmouth (collect x5 across saltmouth anchors). Teaches the town layout. Ends with Tamsin noticing a ledger page filled in by no living hand. Rewards credits + rep.guild + flag ch1-paper-trail.done.",
+   "keywords": [
+    "chapter 1",
+    "collect",
+    "saltmouth",
+    "guild",
+    "tutorial"
+   ],
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790378473.47646,
+   "done_at": "2026-09-26T09:25:13"
+  },
+  {
+   "kind": "article",
+   "slug": "ch1-debt-shield",
+   "title": "Debt Shield",
+   "cluster": "missions",
+   "intent": "Ch1 story mission. Ketch sends Ash to pick up second-hand gyro parts from the reclaimer trader camped at saltmouth:gate-east and deliver them to the garage — the first upgrade discount. Teaches the garage. Flags ch1-debt-shield.done; unlocks garage tip dialogue.",
+   "keywords": [
+    "chapter 1",
+    "deliver",
+    "garage",
+    "upgrade",
+    "ketch"
+   ],
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790378473.4764612,
+   "done_at": "2026-09-26T09:25:16"
+  },
+  {
+   "kind": "article",
+   "slug": "ch1-watering",
+   "title": "A Fair Price for Water",
+   "cluster": "missions",
+   "intent": "Ch1 story mission (timed). Rush a cracked condenser coil from the Guild exchange to the water tower before the afternoon window. timeLimit ~150s. Introduces timers without stakes. Flags ch1-watering.done.",
+   "keywords": [
+    "chapter 1",
+    "timed",
+    "water tower",
+    "saltmouth"
+   ],
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790378473.4764621,
+   "done_at": "2026-09-26T09:25:16"
+  },
+  {
+   "kind": "article",
+   "slug": "ch1-the-hum",
+   "title": "The Hum",
+   "cluster": "missions",
+   "intent": "Ch1 story finale. Follow the crate's fading signal: goto three beacons (saltmouth:flats-pan, saltmouth:overlook, saltmouth:gate-east). Radio beats with Tamsin/Ketch escalate; final beat: Ash's name appears in the ledger by itself. Flags ch1-the-hum.done + lore:driftline-creed.",
+   "keywords": [
+    "chapter 1",
+    "goto",
+    "investigation",
+    "crate",
+    "story"
+   ],
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790378473.4764621,
+   "done_at": "2026-09-26T09:25:19"
+  },
+  {
+   "kind": "article",
+   "slug": "ch2-guild-offer",
+   "title": "The Guild's Offer",
+   "cluster": "missions",
+   "intent": "Ch2 story. Deliver the null-crate custody papers to skydocks:dockmaster on the mesa — the Guild wants the crate archived. Sets faction offers in motion. Requires ch1-the-hum.done. Dialogue choice: promise the Guild preference (flag offer.guild) or hedge.",
+   "keywords": [
+    "chapter 2",
+    "deliver",
+    "guild",
+    "skydocks",
+    "choice"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790378503.379115
+  },
+  {
+   "kind": "article",
+   "slug": "ch2-choir-offer",
+   "title": "The Choir's Offer",
+   "cluster": "missions",
+   "intent": "Ch2 story. Deliver a listening crystal to choirhollow:listening-horn; Cantor Ilex hears the crate's hum through it. Alternative path to ch2-guild-offer; flags offer.choir. Gentle, eerie dialogue.",
+   "keywords": [
+    "chapter 2",
+    "deliver",
+    "choir",
+    "choirhollow",
+    "choice"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790378503.379117
+  },
+  {
+   "kind": "article",
+   "slug": "ch2-reclaimer-offer",
+   "title": "The Reclaimers' Offer",
+   "cluster": "missions",
+   "intent": "Ch2 story. Haul a crate of 'definitely legal' cutting charges to cinderflats:crusher for Aunt Vertex; Boss Pyke offers to open the null crate. Flags offer.reclaimers. Humor-heavy.",
+   "keywords": [
+    "chapter 2",
+    "deliver",
+    "reclaimers",
+    "cinderflats",
+    "choice"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790378503.3791208
+  },
+  {
+   "kind": "article",
+   "slug": "ch2-glassroad-race",
+   "title": "Run the Glassroad",
+   "cluster": "missions",
+   "intent": "Ch2 story (race). A timed checkpoint race down the glassroad canyon (gate-south → slick-mile → mid-span → glass-chapel → gate-north). Slick grip teaches braking. Jett Marrows taunts on the radio. Flags ch2-glassroad-race.done + rep driftline cred.",
+   "keywords": [
+    "chapter 2",
+    "race",
+    "glassroad",
+    "checkpoints",
+    "rival"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790378503.379122
+  },
+  {
+   "kind": "article",
+   "slug": "ch2-lamp-convoy",
+   "title": "Lamp Convoy",
+   "cluster": "missions",
+   "intent": "Ch2 story (escort). Escort the Choir's lamp relighting procession between lamp ring anchors at choirhollow; keep pace inside a moving radius, lose stragglers if you outrun them. Flags ch2-lamp-convoy.done.",
+   "keywords": [
+    "chapter 2",
+    "escort",
+    "choir",
+    "convoy",
+    "choirhollow"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch2-first-word",
+   "title": "First Word",
+   "cluster": "missions",
+   "intent": "Ch2 finale (scout). Hit three high viewpoints (windspine:ridge-crest, skydocks:mesa-top, glassroad:glass-chapel) tuning the radio; on the third, MOTHER speaks one word: 'ASH.' Flags ch2-first-word.done, mother.speaks, lore:mother-primer.",
+   "keywords": [
+    "chapter 2",
+    "scout",
+    "viewpoints",
+    "MOTHER",
+    "radio",
+    "finale"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch3-first-wall",
+   "title": "The First Wall",
+   "cluster": "missions",
+   "intent": "Ch3 opener (storm). A wall of sand swallows windspine: outrun it from windspine:storm-gauge to saltmouth:gate-east with the storm front chasing (storm type). Introduces storm mechanics. Flags ch3-first-wall.done.",
+   "keywords": [
+    "chapter 3",
+    "storm",
+    "outrun",
+    "windspine"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch3-rill-missing",
+   "title": "Courier Down",
+   "cluster": "missions",
+   "intent": "Ch3 story. Rill Davenant's beacon went dark mid-run. Collect 4 transponder fragments scattered around windspine. Ketch's radio goes uncharacteristically quiet. Sets rill.missing.",
+   "keywords": [
+    "chapter 3",
+    "collect",
+    "search",
+    "rill",
+    "windspine"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch3-into-the-wall",
+   "title": "Into the Wall",
+   "cluster": "missions",
+   "intent": "Ch3 story (storm). Deliberately ride INTO a moving storm front to reach Rill's dropped cache between the ridge and flats. Visibility gameplay (fog spike). Flags rill.cache.",
+   "keywords": [
+    "chapter 3",
+    "storm",
+    "rescue",
+    "visibility"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch3-static-litany",
+   "title": "Static Litany",
+   "cluster": "missions",
+   "intent": "Ch3 story (fragile + timed). Deliver unbroken choir-glass to choirhollow through a storm window; Static-Warden Pem reads storm noise from your cargo. Damage penalty mechanics shine. Flags ch3-static-litany.done.",
+   "keywords": [
+    "chapter 3",
+    "fragile",
+    "timed",
+    "choir",
+    "storm"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch3-salvage-rights",
+   "title": "Salvage Rights",
+   "cluster": "missions",
+   "intent": "Ch3 story. Reclaimers vs Guild dispute over a stranded crawler; courier arbitration: deliver both claim tokens between cinderflats and skydocks and pick who signs first (choice flag salvage.guild / salvage.reclaimers).",
+   "keywords": [
+    "chapter 3",
+    "deliver",
+    "dispute",
+    "choice",
+    "factions"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch3-rill-found",
+   "title": "The Shelter Line",
+   "cluster": "missions",
+   "intent": "Ch3 finale (escort). Find Rill half-mad in an erosion cave, escort him home slow and safe; he recites coordinates in his sleep. Sets rill.found + rill.coordinates; radio beat: the coordinates glow on Ash's map.",
+   "keywords": [
+    "chapter 3",
+    "escort",
+    "rescue",
+    "rill",
+    "finale"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch4-coordinates",
+   "title": "Coordinates",
+   "cluster": "missions",
+   "intent": "Ch4 opener (scout). Rill's sleep-talk coordinates lead to three old survey pylons (mothersgate:approach region). Plot them; they triangulate the Door. Requires rill.found.",
+   "keywords": [
+    "chapter 4",
+    "scout",
+    "coordinates",
+    "mothersgate"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch4-the-key",
+   "title": "The Key",
+   "cluster": "missions",
+   "intent": "Ch4 story (fragile). Recover the null crate from the south-gate relay cache and carry it — humming loud now — to mothersgate:approach. Sprint pacing, storm flanks. Flags crate.at-gate.",
+   "keywords": [
+    "chapter 4",
+    "deliver",
+    "crate",
+    "mothersgate"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch4-three-fires",
+   "title": "Three Fires",
+   "cluster": "missions",
+   "intent": "Ch4 story. Visit all three faction leaders (skydocks, choirhollow, cinderflats) — each makes their final case for the gate combination. Dialogue choice sets gate.ally (guild|choir|reclaimers|none).",
+   "keywords": [
+    "chapter 4",
+    "faction choice",
+    "dialogue",
+    "tour"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch4-glass-blooms",
+   "title": "Glass Blooms",
+   "cluster": "missions",
+   "intent": "Ch4 story. The desert begins to change: glass blossoms erupt along the glassroad. Collect 5 bloom samples for the Choir while the canyon's grip and colours shift. World-state flags start region visual changes. Flags ch4-blooms.done.",
+   "keywords": [
+    "chapter 4",
+    "collect",
+    "world change",
+    "glassroad"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch4-door-opens",
+   "title": "The Door Opens Like a Flower",
+   "cluster": "missions",
+   "intent": "Ch4 finale (goto → dialogue setpiece). Bring the crate to mothersgate:the-door; it opens petal by petal. Long scripted dialogue with MOTHER's first full sentences. Sets gate.open + lore:mother-voice.",
+   "keywords": [
+    "chapter 4",
+    "finale",
+    "MOTHER",
+    "door",
+    "cinematic"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch5-last-deliveries",
+   "title": "Last Deliveries",
+   "cluster": "missions",
+   "intent": "Ch5 opener. Three farewell drops in one run — Ketch's tea, Pemmy's oats, a letter Tamsin never sends. Quiet, warm, deliberately slow before the storm. Unlocks after gate.open.",
+   "keywords": [
+    "chapter 5",
+    "deliver",
+    "farewell",
+    "character beats"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch5-the-core",
+   "title": "The Choice-Core",
+   "cluster": "missions",
+   "intent": "Ch5 story (fragile). MOTHER hands over her choice-core — her waking, held in your hands. Carry it out of the cradle to the rally point; every faction offers escort and arguments.",
+   "keywords": [
+    "chapter 5",
+    "fragile",
+    "MOTHER",
+    "choice-core"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch5-storm-of-storms",
+   "title": "Storm of Storms",
+   "cluster": "missions",
+   "intent": "Ch5 story (storm). The biggest storm on record closes every route; thread canyons and ridge lines from choirhollow to mothersgate against three chasing fronts. Peak mechanics test.",
+   "keywords": [
+    "chapter 5",
+    "storm",
+    "gauntlet",
+    "endgame"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch5-skyship-ballot",
+   "title": "The Skyship Ballot",
+   "cluster": "missions",
+   "intent": "Ch5 story (race/timed). The settlements vote on Kessa-9's future by skyship beacon relay; you're the relay. Checkpoint route linking windspine → skydocks → saltmouth under a hard time limit.",
+   "keywords": [
+    "chapter 5",
+    "race",
+    "relay",
+    "settlements",
+    "vote"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch5-last-delivery",
+   "title": "Last Delivery",
+   "cluster": "missions",
+   "intent": "Ch5 finale (deliver + choice). One final run to the Door carrying the choice-core through whatever the desert has left. At the threshold a dialogue choice: wake MOTHER (flag ending.rain — credit crawl over blooming desert) or return her to sleep (flag ending.quiet — credits over the unchanged hard free land). Both endings fully staged.",
+   "keywords": [
+    "chapter 5",
+    "finale",
+    "endings",
+    "choice",
+    "rain",
+    "quiet"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-dune-mail",
+   "title": "Dune Mail Express",
+   "cluster": "missions",
+   "intent": "Side (deliver). Three-drop mail run linking saltmouth outskirts beacons in a loop; generous pay, no clock. Board staple.",
+   "keywords": [
+    "side",
+    "deliver",
+    "mail",
+    "saltmouth",
+    "loop"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-glassware",
+   "title": "Choir Glassware",
+   "cluster": "missions",
+   "intent": "Side (fragile). Carry singing-glass windchimes from choirhollow:lamp-ring to skydocks:keel-town. High payout scaled by remaining integrity; shield upgrades matter.",
+   "keywords": [
+    "side",
+    "fragile",
+    "choir",
+    "skydocks"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-condenser-clock",
+   "title": "Against the Condenser",
+   "cluster": "missions",
+   "intent": "Side (timed). Water credits expire at dusk: exchange → water tower → moorage in 120s. Teaches town shortcuts; repeatable-feel board filler.",
+   "keywords": [
+    "side",
+    "timed",
+    "saltmouth",
+    "water"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-spark-plugs",
+   "title": "A Pocketful of Spark Plugs",
+   "cluster": "missions",
+   "intent": "Side (collect). Solder lost six ignition plugs along the yard fence; sweep cinderflats anchors collecting them. Reclaimers rep.",
+   "keywords": [
+    "side",
+    "collect",
+    "reclaimers",
+    "parts"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-turbine-audit",
+   "title": "Turbine Audit",
+   "cluster": "missions",
+   "intent": "Side (collect). Windspine survey camp needs 4 birds'-nest debris cleared from turbine anchors. Light platforming hops.",
+   "keywords": [
+    "side",
+    "collect",
+    "windspine",
+    "turbines"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-crests",
+   "title": "Crests and Cairns",
+   "cluster": "missions",
+   "intent": "Side (scout). Photograph-equivalent: visit three high viewpoints (overlook, crater-rim, ridge-crest). Teaches landmarks for later chapters.",
+   "keywords": [
+    "side",
+    "scout",
+    "viewpoints",
+    "exploration"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-vs-jett",
+   "title": "Rematch: Jett Marrows",
+   "cluster": "missions",
+   "intent": "Side (race). Jett challenges you on a salt-flat circuit (3 laps of 4 gates around saltmouth). Taunting radio. Pays well.",
+   "keywords": [
+    "side",
+    "race",
+    "rival",
+    "jett",
+    "salt flats"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-vs-quicklime",
+   "title": "Rematch: The Quicklime Kid",
+   "cluster": "missions",
+   "intent": "Side (race). The Quicklime Kid rides dirt circles around the drowned-array pan; technical slalom gates between sunken panels.",
+   "keywords": [
+    "side",
+    "race",
+    "rival",
+    "drowned-array",
+    "slalom"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-lost-crate-1",
+   "title": "Lost: One (1) Crate, Rustic",
+   "cluster": "missions",
+   "intent": "Side (collect→deliver). A Reclaimer crate bounced off a hauler somewhere on the saltmouth→drowned road; find 3 impact marks, then deliver the crate to the array cairn.",
+   "keywords": [
+    "side",
+    "lost cargo",
+    "search",
+    "deliver"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-lost-crate-2",
+   "title": "Lost: The Usual Crate",
+   "cluster": "missions",
+   "intent": "Side (collect). Same joke, worse outcome: the crate split open. Collect 5 packets of 'agricultural material' (definitely seeds) around choirhollow before the Choir notices/absconds.",
+   "keywords": [
+    "side",
+    "collect",
+    "comedy",
+    "choirhollow"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-sky-mail",
+   "title": "Keel Town Quarterly",
+   "cluster": "missions",
+   "intent": "Side (deliver). Mail bag up the winch to skydocks:keel-town and back down the long way for landing practice. First time many players climb the mesa.",
+   "keywords": [
+    "side",
+    "deliver",
+    "skydocks",
+    "mesa"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-night-supply",
+   "title": "Night Supply Window",
+   "cluster": "missions",
+   "intent": "Side (timed). The storm gauge crew only opens their hatch at night; deliver battery cells saltmouth→windspine:storm-gauge after dark. Teaches day/night awareness.",
+   "keywords": [
+    "side",
+    "timed",
+    "night",
+    "windspine"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-relay-repair",
+   "title": "Relay Repair Round",
+   "cluster": "missions",
+   "intent": "Side (collect). The Driftline's radio relays need new horizon cells: collect 3 battery drops at flats-pan, gate-east and overlook, then goto the mast at moorage to re-sync.",
+   "keywords": [
+    "side",
+    "collect",
+    "radio",
+    "relays"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-canyon-post",
+   "title": "Canyon Post",
+   "cluster": "missions",
+   "intent": "Side (deliver). The mid-span shrine keeper orders books. Yes, books. Deliver a shockproof satchel to glassroad:mid-span without cracking the spines (fragile-lite).",
+   "keywords": [
+    "side",
+    "deliver",
+    "glassroad",
+    "shrine",
+    "books"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-storm-window",
+   "title": "The Weather Goat's Window",
+   "cluster": "missions",
+   "intent": "Side (timed, storm-lite). Pemmy the Guild weather goat predicts a 3-minute clear window; deliver sensor wax to the storm gauge and return before the wall closes. Comic timing mission.",
+   "keywords": [
+    "side",
+    "timed",
+    "storm",
+    "goat",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-beacon-sweep",
+   "title": "Beacon Sweep",
+   "cluster": "missions",
+   "intent": "Side (scout). Driftline obligation: re-light 4 road beacons between saltmouth and glassroad gate-south. Pays little, counts much (driftline flavour).",
+   "keywords": [
+    "side",
+    "scout",
+    "beacons",
+    "driftline"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-crusher-feed",
+   "title": "Feed the Crusher",
+   "cluster": "missions",
+   "intent": "Side (collect). Aunt Vertex pays by the bucket for glass shards blown off the canyon rim; collect 6 at glassroad rim anchors. Danger-adjacent.",
+   "keywords": [
+    "side",
+    "collect",
+    "reclaimers",
+    "glassroad"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-pan-letters",
+   "title": "Letters for the Drowned",
+   "cluster": "missions",
+   "intent": "Side (deliver). The array substation's automated caretaker still answers mail. Deliver 2 bundles to drowned-array:substation; melancholy sci-fi beat.",
+   "keywords": [
+    "side",
+    "deliver",
+    "drowned-array",
+    "melancholy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-crest-dash",
+   "title": "Crest Dash",
+   "cluster": "missions",
+   "intent": "Side (race). Pure speed trial: survey-camp → ridge-crest → south-foot gates with a hard time. Windspine's signature sprint.",
+   "keywords": [
+    "side",
+    "race",
+    "windspine",
+    "time trial"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-mesa-perch",
+   "title": "The Mesa Perch",
+   "cluster": "missions",
+   "intent": "Side (scout). Visit skydocks:mesa-top and dockmaster at golden hour for the Guild's photo survey of 'approachability'. Max views, minimal risk.",
+   "keywords": [
+    "side",
+    "scout",
+    "skydocks",
+    "vista"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-salt-tax",
+   "title": "The Salt Tax",
+   "cluster": "missions",
+   "intent": "Side (deliver, fragile). Sister Counterweight audits the salt piles; carry her impossibly delicate calibration weights Saltmouth loop. Satire of bureaucracy, brutal integrity math.",
+   "keywords": [
+    "side",
+    "fragile",
+    "guild",
+    "comedy",
+    "saltmouth"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-hollow-chimes",
+   "title": "Hollow Chimes",
+   "cluster": "missions",
+   "intent": "Side (collect). Little Reverb heard chimes where no lamps burn; collect 4 resonance pebbles around choirhollow rim at night. Eerie-cute.",
+   "keywords": [
+    "side",
+    "collect",
+    "choir",
+    "night",
+    "mystery"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-long-way-home",
+   "title": "The Long Way Home",
+   "cluster": "missions",
+   "intent": "Side (deliver). An old moorage hand pays you to 'lose' his eviction notice — deliver it to the wrong dock, then back to the exchange with apologies. Warm humor, double-leg route.",
+   "keywords": [
+    "side",
+    "deliver",
+    "comedy",
+    "moorage"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-static-choir",
+   "title": "Static for the Choir",
+   "cluster": "missions",
+   "intent": "Side (collect). Pem wants storm static recordings: hold position near 3 charged glass spires in the canyon until the meter fills (goto with dwell).",
+   "keywords": [
+    "side",
+    "collect",
+    "static",
+    "glassroad",
+    "choir"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-guild-runner",
+   "title": "Guild Runner: Contracts",
+   "cluster": "missions",
+   "intent": "Side (timed). Three Guild contracts, three towns, one afternoon: exchange → dockmaster → boss-office and back. Route-planning exam.",
+   "keywords": [
+    "side",
+    "timed",
+    "guild",
+    "route planning"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-ember-run",
+   "title": "Ember Run",
+   "cluster": "missions",
+   "intent": "Side (deliver, night). Reclaimers pay double for a warm reactor brick cinderflats→choirhollow before it cools (decay timer). Visual: glowing cargo light on the bike.",
+   "keywords": [
+    "side",
+    "timed",
+    "reclaimers",
+    "night cargo"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-paint-primer",
+   "title": "A Favour of Paint",
+   "cluster": "missions",
+   "intent": "Side (deliver). Ketch wants rare ochre pigment from the drowned-array cache; reward is a free paint unlock + garage banter.",
+   "keywords": [
+    "side",
+    "deliver",
+    "garage",
+    "paint",
+    "reward"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-theo-messages",
+   "title": "Messages for Nobody",
+   "cluster": "missions",
+   "intent": "Side (deliver). The substation caretaker's outbound queue: deliver 3 old messages whose recipients are gone; Ketch reads them anyway. Quiet worldbuilding payoff.",
+   "keywords": [
+    "side",
+    "deliver",
+    "lore-heavy",
+    "quiet"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-following-wind",
+   "title": "A Following Wind",
+   "cluster": "missions",
+   "intent": "Side (race). Fun run with Ketch riding shotgun-commentary over the radio: salt flats grand loop, 5 gates. Pure joy baseline mission.",
+   "keywords": [
+    "side",
+    "race",
+    "salt flats",
+    "ketch",
+    "joy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-debt-interest",
+   "title": "Interest Payment",
+   "cluster": "missions",
+   "intent": "Side (collect). The Guild offers debt relief for recovering 6 scattered invoice tags blown off the exchange roof across town. Debt mechanic tie-in.",
+   "keywords": [
+    "side",
+    "collect",
+    "debt",
+    "guild",
+    "town"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch5-old-roads",
+   "title": "Old Roads",
+   "cluster": "missions",
+   "intent": "Ch5 story (scout). Before the final choice, MOTHER asks to see the world she half-made: ride the original terraform survey route (5 overlooks across all regions). She comments on each in radio static-glimpses. Sets up the ending's emotional weight.",
+   "keywords": [
+    "chapter 5",
+    "scout",
+    "MOTHER",
+    "farewell tour",
+    "endgame"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brinemaster-ogo",
+   "title": "Brinemaster Ogo",
+   "cluster": "characters",
+   "intent": "Guildmaster of the Salt Guild, skydocks. Huge patient man who chairs disputes like weather. Wants the crate archived before it 'makes history — history is bad for margins'. 8+ lines incl. radio.",
+   "keywords": [
+    "guild",
+    "leader",
+    "skydocks"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "sister-counterweight",
+   "title": "Sister Counterweight",
+   "cluster": "characters",
+   "intent": "Guild auditor-titular who weighs salt and souls on the same brass scale. Speaks in inventory metaphors. Was forever changed by weighing the null crate. Comic-ominous.",
+   "keywords": [
+    "guild",
+    "auditor",
+    "comic",
+    "ominous"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "factor-marn-phlox",
+   "title": "Factor Marn Phlox",
+   "cluster": "characters",
+   "intent": "Junior Guild factor at the glassroad south gate relay post; perpetually underqualified, cheerful, terrified of the canyon. Relay contact for ch1-null-crate.",
+   "keywords": [
+    "guild",
+    "relay",
+    "glassroad",
+    "comic"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "dockmaster-devanna",
+   "title": "Dockmaster Devanna Shore",
+   "cluster": "characters",
+   "intent": "Runs the skydocks mesa; ex-skyship captain, measures everything in knots and grudges. Handles ch2 guild-offer delivery.",
+   "keywords": [
+    "guild",
+    "skydocks",
+    "dockmaster",
+    "captain"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "cantor-ilex",
+   "title": "Cantor Ilex",
+   "cluster": "characters",
+   "intent": "Voice of the Choir at choirhollow. Gentle, unnerving, genuinely kind; hears the crate through walls. Speaks of MOTHER as 'she who fell asleep mid-sentence'. Central ch2-choir-offer.",
+   "keywords": [
+    "choir",
+    "leader",
+    "choirhollow",
+    "gentle",
+    "cult"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "static-warden-pem",
+   "title": "Static-Warden Pem",
+   "cluster": "characters",
+   "intent": "Choir's listener-in-chief; carries a dead radio that isn't dead. Translates static litanies. About 30% oracle, 70% antenna.",
+   "keywords": [
+    "choir",
+    "radio",
+    "static",
+    "oracle"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "little-reverb",
+   "title": "Little Reverb",
+   "cluster": "characters",
+   "intent": "Nine-year-old Choir kid who hears MOTHER clearest of anyone and is completely unimpressed by it. Collects 'echoes' (side content). Disarms every tense scene.",
+   "keywords": [
+    "choir",
+    "child",
+    "mystic",
+    "comic relief"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brother-decibel",
+   "title": "Brother Decibel",
+   "cluster": "characters",
+   "intent": "Choir's sound-keeper; talks too loud because he listens too hard. Maintains the listening horns. Comic volume-control problem.",
+   "keywords": [
+    "choir",
+    "comic",
+    "sound"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "boss-pyke",
+   "title": "Boss Pyke",
+   "cluster": "characters",
+   "intent": "Reclaimer yard boss at cinderflats. Hands like vices, ledger like a poem. Wants the crate opened 'carefully, with the biggest drill'. Central ch2-reclaimer-offer.",
+   "keywords": [
+    "reclaimers",
+    "leader",
+    "cinderflats"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "solder",
+   "title": "Solder",
+   "cluster": "characters",
+   "intent": "Young reclaimer mechanic who idolizes the Wren ('she's held together with spite, I love her'). Side-mission giver for parts; nervy crush energy aimed at the bike, mostly.",
+   "keywords": [
+    "reclaimers",
+    "mechanic",
+    "young",
+    "parts"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "aunt-vertex",
+   "title": "Aunt Vertex",
+   "cluster": "characters",
+   "intent": "Reclaimer explosives theologian. Believes demolition is a conversation with structure. Pays for glass shards; laughs like gravel in a bucket.",
+   "keywords": [
+    "reclaimers",
+    "explosives",
+    "comic",
+    "dangerous"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "compass",
+   "title": "Compass",
+   "cluster": "characters",
+   "intent": "Reclaimer pathfinder who maps which ruins are 'load-bearing historically'. Dry cartographer humor; gives route tips as radio chatter.",
+   "keywords": [
+    "reclaimers",
+    "navigator",
+    "maps"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "rill-davenant",
+   "title": "Rill Davenant",
+   "cluster": "characters",
+   "intent": "Senior Driftline courier who vanishes in ch3. Warm show-off; owes Ketch money he insists is 'an investment'. Found half-mad reciting coordinates; his rescue arc is the heart of ch3.",
+   "keywords": [
+    "driftline",
+    "courier",
+    "missing",
+    "rescue",
+    "chapter 3"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "jett-marrows",
+   "title": "Jett Marrows",
+   "cluster": "characters",
+   "intent": "Rival courier, salt-flat circuit. Impeccable leathers, insufferable wink, secretly cheers Ash in ch5. Race missions + radio taunts.",
+   "keywords": [
+    "driftline",
+    "rival",
+    "race",
+    "salt flats"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "quicklime-kid",
+   "title": "The Quicklime Kid",
+   "cluster": "characters",
+   "intent": "Masked rival at the drowned array; communicates in engine revs and one-word radio messages. Nobody knows their deal; everyone enjoys the mystery.",
+   "keywords": [
+    "driftline",
+    "rival",
+    "race",
+    "mysterious"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "madame-traction",
+   "title": "Madame Traction",
+   "cluster": "characters",
+   "intent": "Independent fixer in Keel Town (skydocks); sells rumours and grip tape. Knows about the ledger-entry that wrote itself before Ash does. Noir-ish connector.",
+   "keywords": [
+    "independent",
+    "fixer",
+    "rumors",
+    "skydocks"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "old-bahro",
+   "title": "Old Bahro",
+   "cluster": "characters",
+   "intent": "Retired miner at the moorage mast who claims he helped pour the glassroad. Tells contradictory stories; all of them partly true.",
+   "keywords": [
+    "independent",
+    "elder",
+    "stories",
+    "glassroad"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "salt-singer-ila",
+   "title": "Salt Singer Ila",
+   "cluster": "characters",
+   "intent": "Busker who plays the salt flats' resonance with a bowed rail; gives weather hints in verse. Ambient character; her songs telegraph storms.",
+   "keywords": [
+    "independent",
+    "music",
+    "weather",
+    "poet"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ook",
+   "title": "Dusk-Farmer Ook",
+   "cluster": "characters",
+   "intent": "Grows lichen in the shadow of the boundary mountains; trades in 'things that grow where nothing should'. Quest-giver for ember-run style night jobs.",
+   "keywords": [
+    "independent",
+    "farmer",
+    "night",
+    "lichen"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "wisp",
+   "title": "Ferry-Pilot Wisp",
+   "cluster": "characters",
+   "intent": "Skyship ferry pilot between skydocks and the flats; chronically early, cosmically calm. Gives aerial gossip on the radio.",
+   "keywords": [
+    "independent",
+    "skyship",
+    "pilot",
+    "chatter"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "pemmy",
+   "title": "Pemmy (Weather Goat)",
+   "cluster": "characters",
+   "intent": "The Guild weather desk is a goat. Pemmy's bleats are translated by factors with a straight face. Her predictions are alarmingly accurate. Yes she gets 8 lines. Yes they're all bleats with subtitles.",
+   "keywords": [
+    "guild",
+    "goat",
+    "comedy",
+    "weather"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "mother",
+   "title": "MOTHER",
+   "cluster": "characters",
+   "intent": "The dormant terraforming AI waking by degrees. Voice = kind librarian groping out of deep sleep; misunderstandings are enormous and gentle. ch2 first word through ch5 full dialogue. Lines must serve radio (short, staticky) and finale.",
+   "keywords": [
+    "MOTHER",
+    "AI",
+    "story core",
+    "radio"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "shrine-keeper-toll",
+   "title": "Shrine-Keeper Toll",
+   "cluster": "characters",
+   "intent": "Lone keeper of the glassroad mid-span shrine. Orders books. Reads them aloud to the canyon so the echo 'finishes the sentences'. Quiet melancholy host character.",
+   "keywords": [
+    "independent",
+    "shrine",
+    "books",
+    "glassroad"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "surveyor-kest",
+   "title": "Surveyor Kest",
+   "cluster": "characters",
+   "intent": "Windspine survey-camp lead; all blunt edges and meteorology. Storm-mission technical voice; secretly writes terrible love poems about isobars.",
+   "keywords": [
+    "windspine",
+    "survey",
+    "storms",
+    "comic heart"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "marshal-dune",
+   "title": "Marshal Dune",
+   "cluster": "characters",
+   "intent": "Self-appointed (and only) law of the cinderflats approaches; has a badge made from a hubcap and the moral authority of a tired parent. Keeps Reclaimers and Guild honest-ish.",
+   "keywords": [
+    "independent",
+    "law",
+    "cinderflats",
+    "comic"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "evening-standard",
+   "title": "The Evening Standard",
+   "cluster": "characters",
+   "intent": "Radio host of the nightly broadcast heard between regions; dry headlines of your own deeds a day late and slightly wrong. A chorus character — radio-heavy line set.",
+   "keywords": [
+    "radio",
+    "news",
+    "chorus",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "nona-vex",
+   "title": "Nona Vex",
+   "cluster": "characters",
+   "intent": "Skydocks fuel mistress; converts skyships to寺院 no— converts skycranes to run on stormstatic. Sells boost-cell upgrades with minimal eye contact.",
+   "keywords": [
+    "skydocks",
+    "fuel",
+    "upgrades",
+    "independent"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "caretaker-unit-7",
+   "title": "Caretaker Unit 7",
+   "cluster": "characters",
+   "intent": "The drowned array's automated caretaker that still answers mail and requests. Battered speaker mast voice; politeness as programming and as tragedy. Side content heart-string puller.",
+   "keywords": [
+    "drowned-array",
+    "machine",
+    "melancholy",
+    "comic"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "hollis-fenn",
+   "title": "Hollis Fenn",
+   "cluster": "characters",
+   "intent": "Skydocks dockmaster, home skydocks. Runs Keel Town's moorage with a ship's-bell voice and smuggler's discretion. Guild-adjacent but fond of couriers. Needed for ch2-guild-offer completion beats and side-sky-mail.",
+   "keywords": [
+    "skydocks",
+    "guild",
+    "keel-town",
+    "dockmaster"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "warden-of-the-span",
+   "title": "Warden of the Span",
+   "cluster": "characters",
+   "intent": "Keeper of the glassroad:mid-span shrine, home glassroad. A hermit who orders books by courier and annotates the margins of reality. Slow, funny, sad. Needed for side-canyon-post.",
+   "keywords": [
+    "glassroad",
+    "hermit",
+    "books",
+    "shrine"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "caretaker-7",
+   "title": "Caretaker Unit SEVEN",
+   "cluster": "characters",
+   "intent": "The Drowned Array's automated caretaker, home drowned-array. A failing pre-collapse machine that still answers its mail. Polite error messages as personality; quietly heartbreaking. Needed for side-pan-letters and side-theo-messages.",
+   "keywords": [
+    "drowned-array",
+    "machine",
+    "melancholy",
+    "automaton"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "mags-delver",
+   "title": "Mags Delver",
+   "cluster": "characters",
+   "intent": "Reclaimer hauler and poet (yes), home cinderflats. Writes odes to machines she strips. Source of salvage gossip and gentle humour; mentioned in side-lost-crate-1.",
+   "keywords": [
+    "reclaimers",
+    "poet",
+    "hauler",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-windspine-field-guide",
+   "title": "Windspine Ridge: Field Guide Appendix",
+   "cluster": "lore",
+   "intent": "Field-guide entry, 250+ words: turbine lumber no— turbine lore, ridge etiquette, storm-gauge duties, why surveyors tap the towers before dawn.",
+   "keywords": [
+    "field-guide",
+    "windspine",
+    "turbines",
+    "storms"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-glassroad-field-guide",
+   "title": "The Glassroad: Advanced Appendix",
+   "cluster": "lore",
+   "intent": "Field-guide, 250+ words: grip physics of fused glass, vein heat, drift lines, the mid-span shrine, the legend of the first courier to drift the Slick Mile.",
+   "keywords": [
+    "field-guide",
+    "glassroad",
+    "driving"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-skydocks-field-guide",
+   "title": "The Skydocks: Mooring Manual (Public Extract)",
+   "cluster": "lore",
+   "intent": "Field-guide, 250+ words: mesa winds, winch etiquette, skyship classes, why Keel Town hangs off the west rim specifically.",
+   "keywords": [
+    "field-guide",
+    "skydocks",
+    "skyships"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-cinderflats-field-guide",
+   "title": "The Cinderflats: What's Still Hot",
+   "cluster": "lore",
+   "intent": "Field-guide, 250+ words: Reclaimer safety aphorisms, the Crusher, sorted-pile categories, which alarms matter and which are 'just opinions'.",
+   "keywords": [
+    "field-guide",
+    "cinderflats",
+    "reclaimers",
+    "safety"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-choirhollow-field-guide",
+   "title": "Choir Hollow: A Visitor's Manners",
+   "cluster": "lore",
+   "intent": "Field-guide, 250+ words: lamp ring etiquette, why you don't take radios past the steps, listening-horn hours, how to politely decline a static litany.",
+   "keywords": [
+    "field-guide",
+    "choirhollow",
+    "choir",
+    "etiquette"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-drowned-array-field-guide",
+   "title": "The Drowned Array: Reading the Cairns",
+   "cluster": "lore",
+   "intent": "Field-guide, 250+ words: courier cache code in stone cairns, panel-field shortcuts, the caretaker's mail round, why the pan shines at dusk.",
+   "keywords": [
+    "field-guide",
+    "drowned-array",
+    "caches",
+    "cairns"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-boundary-mountains",
+   "title": "The Boundary Mountains: File You Under Weather",
+   "cluster": "lore",
+   "intent": "Field-guide, 250+ words: why no one crosses the violet rim, the three documented attempts, what the air does to radios up there.",
+   "keywords": [
+    "field-guide",
+    "boundary",
+    "mystery",
+    "mountains"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-terraforming-primer",
+   "title": "Terraforming Kessa-9: The Prospectus (Annotated)",
+   "cluster": "lore",
+   "intent": "Machine record, 250+ words: the original corporate pitch for Kessa-9's terraforming, with bitter margin notes from later settlers. 'Phase 3: Rains' never shipped.",
+   "keywords": [
+    "history",
+    "terraforming",
+    "corporate",
+    "MOTHER"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-the-delay",
+   "title": "The Delay: An Oral History",
+   "cluster": "lore",
+   "intent": "Log/oral history, 250+ words: five voices on the day the money ran out — a treasurer, a teacher, a terraforming tech, a child, and the person who pulled the plug.",
+   "keywords": [
+    "history",
+    "the delay",
+    "oral history"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-mother-boot-sequence",
+   "title": "MOTHER: Boot Sequence, Partial Log",
+   "cluster": "lore",
+   "intent": "Machine record, 250+ words: fragmentary boot log from the dormant terraforming AI — checksum errors that read like yawns; the last line timestamps tomorrow.",
+   "keywords": [
+    "MOTHER",
+    "machine",
+    "log",
+    "eerie"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-mother-memoirs",
+   "title": "Things I Meant to Finish (MOTHER, draft 0)",
+   "cluster": "lore",
+   "intent": "Machine record, 250+ words: the AI's half-written design memoir — poems about aquifers, strong opinions on dune spacing, one paragraph that is clearly an apology.",
+   "keywords": [
+    "MOTHER",
+    "memoir",
+    "gentle",
+    "chapter 4"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-mother-voice",
+   "title": "MOTHER's Voice: Transcript of First Sentence",
+   "cluster": "lore",
+   "intent": "Machine record, 250+ words: the Chorus-transcribed first full sentence spoken in ch4, with competing marginalia from Guild, Choir and Reclaimer readers. Unlock flag lore:mother-voice.",
+   "keywords": [
+    "MOTHER",
+    "transcript",
+    "chapter 4",
+    "factions"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-choir-litany-1",
+   "title": "Static Litany I: The Sleeping Garden",
+   "cluster": "lore",
+   "intent": "Choir tract, 250+ words: the foundational litany — MOTHER as gardener asleep mid-sentence; the rain that was promised; a lullaby structure with liturgical jokes.",
+   "keywords": [
+    "choir",
+    "litany",
+    "scripture",
+    "MOTHER"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-choir-litany-2",
+   "title": "Static Litany IX: The Courier's Part",
+   "cluster": "lore",
+   "intent": "Choir tract, 250+ words: a litany about couriers as 'the walking stamens'; the Driftline resents being scripture but the pay metaphor is decent.",
+   "keywords": [
+    "choir",
+    "litany",
+    "couriers",
+    "driftline"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-choir-heretics",
+   "title": "Minutes of the Hollow Disputation",
+   "cluster": "lore",
+   "intent": "Choir log, 250+ words: meeting minutes politely recording a theological schism about whether the null crate's hum is in a major key (it is a cappella heresy).",
+   "keywords": [
+    "choir",
+    "schism",
+    "comedy",
+    "minutes"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-guild-ledger-year-one",
+   "title": "Ledger Excerpts: Year One of the Delay",
+   "cluster": "lore",
+   "intent": "Guild tract, 250+ words: the first year's ledger — ration arithmetic, the birth of the board system, one entry for 'hope, misc., quantity: sufficient'.",
+   "keywords": [
+    "guild",
+    "ledger",
+    "history",
+    "founding"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-guild-form-22b",
+   "title": "A Complete History of Form 22-B",
+   "cluster": "lore",
+   "intent": "Guild tract, 250+ words: the anomalous-cargo form's 214-year evolution, including the intralking— including the incident with the bees, the ghost net, and the crate that filed itself.",
+   "keywords": [
+    "guild",
+    "bureaucracy",
+    "comedy",
+    "22-B"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-guild-debt-doctrine",
+   "title": "On Debt: A Guild Doctrine Pamphlet",
+   "cluster": "lore",
+   "intent": "Guild tract, 250+ words: why the Guild holds debts, why it forgives them at a hundred years, and the famous footnote about Ash Varga-style 'ambition balances'.",
+   "keywords": [
+    "guild",
+    "debt",
+    "economy",
+    "player"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-reclaimer-manual",
+   "title": "The Reclaimer Field Manual (7th Edition, Burnt)",
+   "cluster": "lore",
+   "intent": "Reclaimer tract, 250+ words: extraction rules, the Load-Bearing Historically doctrine, how to retire a turbine politely, Aunt Vertex's foreword ('things fall down, that's physics being honest').",
+   "keywords": [
+    "reclaimers",
+    "manual",
+    "doctrine"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-reclaimer-hymn",
+   "title": "Sparks: A Reclaimer Work Song",
+   "cluster": "lore",
+   "intent": "Reclaimer tract, 250+ words: call-and-response work song for coordinated pulls, with verse annotations about famous salvage jobs and one verse everyone refuses to explain.",
+   "keywords": [
+    "reclaimers",
+    "song",
+    "culture"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-reclaimer-crusher",
+   "title": "The Crusher: Service Record",
+   "cluster": "lore",
+   "intent": "Machine record, 250+ words: the maintenance log of the Yards' beloved crusher — 40 years of 'still operational' entries, each more affectionate than the last.",
+   "keywords": [
+    "reclaimers",
+    "crusher",
+    "machine",
+    "log"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-driftline-creed",
+   "title": "The Driftline Creed (With Commentary)",
+   "cluster": "lore",
+   "intent": "Driftline tract, 250+ words: 'Any crate, any storm, any door' — origins, exceptions, the footnote about the crate that hums. Unlock flag lore:driftline-creed.",
+   "keywords": [
+    "driftline",
+    "creed",
+    "couriers",
+    "core"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-courier-slang",
+   "title": "Courier Slang: A Field Lexicon",
+   "cluster": "lore",
+   "intent": "Driftline log, 250+ words: flat-salt, following wind, knot-happy, glass-sick, hummer (crates that hum), and forty more terms with example sentences.",
+   "keywords": [
+    "driftline",
+    "slang",
+    "language",
+    "humor"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-rill-flight-log-1",
+   "title": "Rill Davenant's Flight Log — Early Entries",
+   "cluster": "lore",
+   "intent": "Personal log, 250+ words: young Rill learning the flats; jokes that stop being jokes when you know what's coming in ch3.",
+   "keywords": [
+    "rill",
+    "log",
+    "foreshadowing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-rill-flight-log-2",
+   "title": "Rill Davenant's Flight Log — The Gap",
+   "cluster": "lore",
+   "intent": "Personal log, 250+ words: entries before the vanishing; route to the survey pylons annotated with 'if you're reading this, wrong, but keep reading'.",
+   "keywords": [
+    "rill",
+    "log",
+    "chapter 3",
+    "clue"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-rill-coordinates",
+   "title": "The Coordinates (Transcribed From Sleep)",
+   "cluster": "lore",
+   "intent": "Personal log, 250+ words: Ketch's bedside transcription of everything Rill recited in his sleep; half numbers, half lullaby; one parenthetical that MOTHER interrupts to correct.",
+   "keywords": [
+    "rill",
+    "coordinates",
+    "chapter 3-4",
+    "mystery"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-broadcast-storm-season",
+   "title": "Evening Standard: Storm Season Special (Transcript)",
+   "cluster": "lore",
+   "intent": "Broadcast, 250+ words: the nightly radio's storm season kickoff — safety tips, goat forecast drama, and one story that is clearly about Ash with the name mispronounced.",
+   "keywords": [
+    "broadcast",
+    "radio",
+    "storm season",
+    "chapter 3"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-broadcast-dispute",
+   "title": "Evening Standard: The Salvage-Rights Summit (Transcript)",
+   "cluster": "lore",
+   "intent": "Broadcast, 250+ words: coverage of the Guild-Reclaimer dispute the player arbitrate in ch3, with post-match punditry and a weather goat exclusive.",
+   "keywords": [
+    "broadcast",
+    "guild",
+    "reclaimers",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-broadcast-finale",
+   "title": "Evening Standard: The Night the Desert Changed",
+   "cluster": "lore",
+   "intent": "Broadcast, 250+ words: the finale broadcast — either the night of first rain or the night of chosen quiet, written to serve both endings with one unreconciled sentence each way.",
+   "keywords": [
+    "broadcast",
+    "ending",
+    "radio",
+    "chapter 5"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-skyship-classes",
+   "title": "Know Your Skyship: A Spotter's Card",
+   "cluster": "lore",
+   "intent": "Record/poster, 250+ words: envelopes, gondolas, moorage classes, famous hulls (the Bureaucratic Reminder, the Following Wind), and spotting etiquette.",
+   "keywords": [
+    "skyships",
+    "skydocks",
+    "spotter",
+    "poster"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-water-rights",
+   "title": "Water Rights and Other Wells",
+   "cluster": "lore",
+   "intent": "Guild tract, 250+ words: condenser law, tower shifts, the concept of 'fair price', and why the moorage crew pays in stories.",
+   "keywords": [
+    "water",
+    "guild",
+    "law",
+    "saltmouth"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-salt-cuisine",
+   "title": "Saltflat Cuisine: Recipes of the Delay",
+   "cluster": "lore",
+   "intent": "Log/recipes, 250+ words: salt-baked lichen, storm bread (baked by static), the Guild's ceremonial 'counted stew'. Warm and funny.",
+   "keywords": [
+    "food",
+    "culture",
+    "recipes",
+    "comfort"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-bike-anatomy",
+   "title": "Your Hover-Bike and You",
+   "cluster": "lore",
+   "intent": "Field-guide, 250+ words: horizon cells, gyro cages, boost cells, cargo shields — a courier's maintenance primer as flat prose.",
+   "keywords": [
+    "bikes",
+    "mechanics",
+    "tutorial-lore"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-first-courier",
+   "title": "The First Courier (Probably)",
+   "cluster": "lore",
+   "intent": "Log/legend, 250+ words: the founding myth of the Driftline — one rider, one crate, one closing storm, and a door that opened. Sister cities dispute every detail.",
+   "keywords": [
+    "legend",
+    "driftline",
+    "origin",
+    "myth"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-salt-guild-audit",
+   "title": "The Long Audit: Sister Counterweight's Memoir",
+   "cluster": "lore",
+   "intent": "Log, 250+ words: excerpts from the auditor's private record — the night she weighed the null crate, and why she now counts backwards.",
+   "keywords": [
+    "guild",
+    "auditor",
+    "null crate",
+    "memoir"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-goat-forecast",
+   "title": "The Goat Forecast: Methodology (Contested)",
+   "cluster": "lore",
+   "intent": "Record/comedy, 250+ words: the Guild weather desk's official defense of Pemmy's methods, with appendices by three scientists and one brave child.",
+   "keywords": [
+    "goat",
+    "weather",
+    "comedy",
+    "guild"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-glass-bloom-bulletin",
+   "title": "Botanical Emergency Bulletin 4: Glass Blooms",
+   "cluster": "lore",
+   "intent": "Record, 250+ words: first official notice of the ch4 glass blooms — four parties' annotations creep steadily from alarm toward wonder.",
+   "keywords": [
+    "glass blooms",
+    "chapter 4",
+    "world change"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-mothersgate-survey",
+   "title": "Survey of the Sealed Cradle (Abandoned)",
+   "cluster": "lore",
+   "intent": "Machine record, 250+ words: the original corporate survey of mothersgate, abandoned mid-form; the form keeps trying to complete itself across the document.",
+   "keywords": [
+    "mothersgate",
+    "survey",
+    "corporate",
+    "eerie"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-door-hymns",
+   "title": "Hymns for a Door",
+   "cluster": "lore",
+   "intent": "Choir tract, 250+ words: verses the Choir keeps by the cradle door, in several meters, one of which is secretly a materials-fatigue manual.",
+   "keywords": [
+    "choir",
+    "door",
+    "mothersgate",
+    "hymns"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-rain-witness",
+   "title": "Accounts of Rain (Pre-Delay)",
+   "cluster": "lore",
+   "intent": "Oral history, 250+ words: what rain was, from people who remember it — smell, noise, invoices for umbrellas, one person who hated it and is now mythologically wrong.",
+   "keywords": [
+    "rain",
+    "history",
+    "memory",
+    "ending setup"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-choice-warrant",
+   "title": "The Choice Warrant (Template, Unused)",
+   "cluster": "lore",
+   "intent": "Machine record, 250+ words: the corporate template authorizing wake/sleep decisions for terraform seeds — with MOTHER's handwritten-in-script note: 'this one is yours now'.",
+   "keywords": [
+    "choice",
+    "MOTHER",
+    "warrant",
+    "ending"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-wren-service-record",
+   "title": "Service Record: One (1) Second-Hand Hover-Bike",
+   "cluster": "lore",
+   "intent": "Log, 250+ words: the Wren's maintenance history — three owners, notable dents, one entry in Ketch's handwriting that just says 'good bike, don't tell her'.",
+   "keywords": [
+    "bike",
+    "wren",
+    "garage",
+    "heart"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-storm-mechanics",
+   "title": "On Walls of Sand: A Meteorology of the Glass Desert",
+   "cluster": "lore",
+   "intent": "Field-guide, 250+ words: how the storms form off windspine, storm-static physics, why radios sing, and the twelve-minute rule.",
+   "keywords": [
+    "storms",
+    "meteorology",
+    "radio",
+    "physics"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-moorage-stories",
+   "title": "Moorage Pay: Collected Stories",
+   "cluster": "lore",
+   "intent": "Log, 250+ words: stories the moorage crew pays water debts with — docked ghosts, a race with the wind, the mailbag that sang.",
+   "keywords": [
+    "moorage",
+    "stories",
+    "saltmouth",
+    "folk"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-keel-town-charter",
+   "title": "Keel Town Hang-Tenants' Agreement",
+   "cluster": "lore",
+   "intent": "Tract, 250+ words: the charter of the town hung off the skydocks rim — weight limits, envy clauses, and the annual 'swing festival'.",
+   "keywords": [
+    "skydocks",
+    "keel town",
+    "charter",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-ash-application",
+   "title": "Driftline Application: A. Varga",
+   "cluster": "lore",
+   "intent": "Record, 250+ words: Ash's own courier application — half-qualified, fully stubborn, annotated by Ketch ('teachable') and Tamsin ('insurable, barely').",
+   "keywords": [
+    "ash",
+    "application",
+    "avatar",
+    "origin"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "hover-playground",
+   "title": "Hover Playground",
+   "cluster": "demos",
+   "intent": "A no-stakes hover-bike physics sandbox on a small bespoke dunes map (not the main world): adjustable hover spring, grip, boost, drift parameters via live sliders so players can literally tune the bike. Product: param play toy for tuning feel between releases. Art direction: lab-clean variant of the salt palette — flattened salt pan, teal grid horizon markers, amber parameter chips. Interactions: WASD/Shift/Space driving, sliders update physics same-frame, reset-to-spawn button, parameter presets (arcade/sim/drift missile). Stack: React + R3F; keep self-contained in src/lab/hover-playground/.",
+   "keywords": [],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo1",
+   "claimed_at": 1790378815.12581
+  },
+  {
+   "kind": "demo",
+   "slug": "canyon-slalom",
+   "title": "Canyon Slalom Time Trial",
+   "cluster": "demos",
+   "intent": "A standalone 45-second time-trial down a tight procedural glass canyon with checkpoint gates and slick grip, local best time in localStorage. Teaches drifting on glass. Art: teal glass walls, amber gates, dusk light. Interactions: drive, gates split-time deltas rendered in HUD, three retry prompts. Stack: R3F + small analytic heightfield; no missions.",
+   "keywords": [],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo2",
+   "claimed_at": 1790378820.371493
+  },
+  {
+   "kind": "demo",
+   "slug": "skybox-tuner",
+   "title": "Skybox & Day Cycle Tuner",
+   "cluster": "demos",
+   "intent": "Design tool: scrub the day/night cycle across the DRIFTLINE palette keyframes (dawn/day/dusk/night) over a bare dune vista, with sliders for fog density, sun intensity, star factor. Exports current settings as JSON to clipboard. Art: cleansing palette, big sky. Stack: R3F + leva-less hand-rolled slider panel.",
+   "keywords": [],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790378825.268146
+  },
+  {
+   "kind": "demo",
+   "slug": "dust-lab",
+   "title": "Dust & Particle Lab",
+   "cluster": "demos",
+   "intent": "Particle sandbox: tune the driftline dust trail (count, size, lifetime, turbulence, surface colours salt/sand/glass) live while a ghost bike auto-laps a test circuit. Purpose: dial in the game's recycled Points emitters. Art: flat test pan, colour-coded particle systems. Stack: R3F, buffer recycling demo.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "radio-static-visualizer",
+   "title": "Radio Static Visualizer",
+   "cluster": "demos",
+   "intent": "Audio-reactive art toy: procedural WebAudio noise tuned through 'stations' (Choir static, Guild dispatch beeps, storm band, MOTHER's sleep-breath), driving a cathode-ray-style line scope. Choir-teal scope glow on ink background. Interactions: dial the frequency, hold to 'listen', occasional ghost-harmonics. Stack: Web Audio + canvas 2D.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "terrain-explorer",
+   "title": "Heightfield Explorer",
+   "cluster": "demos",
+   "intent": "Fly-through of the world heightfield in false colour (height bands, surface-kind tint, region masks overlaid) with toggles for each terrain feature (canyon carve, ridge, mesa, flats). Purpose: worldgen debugging and pretty. Interactions: orbit/fly camera, layer toggles, seed display. Stack: R3F + the real lib/terrain module.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "compass-minimap-lab",
+   "title": "Compass & Minimap Lab",
+   "cluster": "demos",
+   "intent": "UI lab for the HUD navigation: a fake world with draggable anchors to test compass tick positioning, waypoint diamond clamping, minimap contrast at 4 palettes (day/naught no— day/dusk/night/storm). Purpose: prove colour-blind-safe shapes. Stack: pure React + canvas 2D.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "boost-feedback-lab",
+   "title": "Boost Feedback Lab",
+   "cluster": "demos",
+   "intent": "Feel-lab for boost juice: synthetic bike telemetry drives candidate boost feedbacks (FOV curves, screen shake amps, engine pitch curves, boost-bar drain styles) side by side. Interactions: hold-to-boost on a straight track, A/B toggles. Stack: R3F minimal + HUD prototypes.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "storm-front-sandbox",
+   "title": "Storm Front Sandbox",
+   "cluster": "demos",
+   "intent": "A wall-of-sand simulator: rolling storm front as curved fog wall + particle sheet crossing a flat pan; sliders for speed, density, turbulence, wall height; try outrunning it on a simple bike. Purpose: tune ch3/ch5 storm missions. Art: ochre wall over violet dusk. Stack: R3F, custom fog shader-lite via FogExp2 modulation + Points.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "portrait-booth",
+   "title": "Portrait Booth",
+   "cluster": "demos",
+   "intent": "Contact-sheet viewer for all generated character portraits: grid, individual lightbox with the character's voice notes, faction colour framing, and a 'generate prompt' preview of the appearance text (to re-roll art later). Stack: React only, images via withBase.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "codex-reader-lab",
+   "title": "Codex Reader Lab",
+   "cluster": "demos",
+   "intent": "Typography playground for the codex: reads lore markdown live from src/content/lore, with toggles for measure, leading, size, and a 'printed Guild form' decorative mode. Purpose: keep 120+ in-world entries genuinely pleasant to read. Stack: React + the codex library.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "waypoint-glow-up",
+   "title": "Waypoint & Beacon Bench",
+   "cluster": "demos",
+   "intent": "Bench-test mission markers: beam/diamond/ring/collect items/race gates cycling through shapes, colourways and distances on a night-time test range, with colour-blind simulation filters (protan/deutan/tritan) to verify shape-not-colour rule. Stack: R3F + CSS filters.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  }
+ ]
 }

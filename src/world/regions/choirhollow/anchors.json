@@ -1,0 +1,6 @@
+{
+  "temple-steps": { "pos": [480, 620], "label": "Temple steps" },
+  "listening-horn": { "pos": [560, 560], "label": "Listening horn" },
+  "lamp-ring": { "pos": [400, 660], "label": "Lamp ring" },
+  "crater-rim": { "pos": [480, 430], "label": "Crater rim" }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "ketch",
+  "name": "Ketch",
+  "role": "Retired courier, garage keeper",
+  "faction": "driftline",
+  "home": "saltmouth",
+  "bio": "Thirty years on the Driftline before his knees filed for retirement. Now he keeps the Saltmouth garage, teaches new couriers which end of the bike goes forward, and pretends he doesn't worry about them. He worries about them.",
+  "appearance": "Broad, sun-cured man in his sixties with a grey-streaked beard, burn-scarred forearms, a cracked amber visor pushed up on his forehead, and more tools on his belt than the Guild has rules.",
+  "voice": "Gravel and patience. Calls every courier 'kid', including the sixty-year-olds. Never says 'good luck' — says 'flat salt and a following wind'. Lies about not worrying.",
+  "lines": {
+    "greetings": [
+      "Kid. The Wren's been talking about you. Mostly complaints.",
+      "You're back in one piece. The bike too, or did you park the pieces separately?",
+      "Garage's open. Wallet too, I hope."
+    ],
+    "barks": [
+      "Boost is a loan, kid. The meter always collects.",
+      "You drift it, you earned it. You wall it, you bought it.",
+      "Hover height's fine. It's the ground that moves."
+    ],
+    "mission": [
+      "Tamsin's board has your name on it. Don't keep the deserts' only honest bureaucrat waiting.",
+      "Deliveries are just promises with a tracking number. Keep yours.",
+      "Bring the Wren back with all her fins. I like that bike more than most people."
+    ],
+    "radio": [
+      "Ketch here. Saw your dust trail from the water tower. Ambitious line. Terrible, but ambitious.",
+      "Wind's picking up from the spine. If you hear singing on the static, that's the Choir's frequency, not a ghost. Probably.",
+      "Reminder, kid: brake plus steering is a drift, not a crash. The difference is confidence.",
+      "You know the salt remembers every track ever laid on it? Makes the Guild's ledgers look sentimental."
+    ]
+  }
+}

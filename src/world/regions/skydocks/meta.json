@@ -1,0 +1,9 @@
+{
+  "slug": "skydocks",
+  "name": "The Skydocks",
+  "blurb": "Mesa-top moorage where the Guild keeps its skyships. Keel Town hangs off the west rim. Money lives up here; the wind answers to it.",
+  "center": [-780, -380],
+  "radius": 260,
+  "danger": 1,
+  "climate": { "fogDensity": 0.0018 }
+}

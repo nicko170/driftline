@@ -1,0 +1,31 @@
+{
+  "id": "tamsin-cho",
+  "name": "Tamsin Cho",
+  "role": "Salt Guild factor",
+  "faction": "guild",
+  "home": "saltmouth",
+  "bio": "Runs the Saltmouth job board and the Guild's local ledger. Pays on time, counts everything twice, and knows exactly which manifests don't add up — including, lately, one crate that was never entered at all.",
+  "appearance": "Compact, precise woman in a sand-colored Guild vest with pockets for everything, brass-rimmed goggles around her neck, hair pinned up with a tally-stick, and a counting-board worn like a satchel.",
+  "voice": "Clipped, capable, dry. Numbers are a love language. Teases couriers about their weight-to-payout ratio. When she's scared, she gets more polite.",
+  "lines": {
+    "greetings": [
+      "Courier. The board's full and the day's short.",
+      "Ash Varga. Your debt-to-delivery ratio is improving. Marginally.",
+      "Sign here, here, and conceptually here. The Guild likes its paperwork metaphorical."
+    ],
+    "barks": [
+      "Everything crosses. Everything's counted.",
+      "No refunds on storm damage. Read the wax.",
+      "Your bike left a rut in my ledger yard. I'm billing someone."
+    ],
+    "mission": [
+      "This posting pays standard, which is to say insulting, but it's honest.",
+      "Seal's unbroken? Good. Keep it that way. Seals are the only thing holding this desert together."
+    ],
+    "radio": [
+      "Factor Cho to courier Varga: your coordinates wandered through my no-riding zone. Artistic, but logged.",
+      "Guild weather desk says clear skies. Guild weather desk is a goat named Pemmy, so carry water.",
+      "Just so the record shows: I never said the manifest was wrong. I said it was incomplete. Different word, different lawsuit."
+    ]
+  }
+}
