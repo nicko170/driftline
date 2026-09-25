@@ -1,0 +1,9 @@
+{
+  "slug": "canyon-slalom",
+  "name": "The Sluice (Glassroad Slalom)",
+  "blurb": "The couriers' time-trial canyon: eight amber gates strung down the Glass Road's slickest stretch. The betting is in salt; the crashes are free.",
+  "center": [575, -315],
+  "radius": 840,
+  "danger": 1,
+  "climate": { "fogDensity": 0.0024, "skyTint": "#3A2A55" }
+}

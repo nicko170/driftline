@@ -1,0 +1,14 @@
+{
+  "start-gantry": { "pos": [165, 326], "label": "Slalom start gantry" },
+  "marshal-post": { "pos": [206, 344], "label": "Timing marshal's post" },
+  "gate-1": { "pos": [211, 193], "label": "Slalom gate 1" },
+  "gate-2": { "pos": [303, 36], "label": "Slalom gate 2" },
+  "gate-3": { "pos": [333, -144], "label": "Slalom gate 3" },
+  "gate-4": { "pos": [431, -298], "label": "Slalom gate 4" },
+  "gate-5": { "pos": [482, -473], "label": "Slalom gate 5" },
+  "gate-6": { "pos": [610, -603], "label": "Slalom gate 6" },
+  "gate-7": { "pos": [706, -758], "label": "Slalom gate 7" },
+  "gate-8": { "pos": [840, -849], "label": "Slalom gate 8" },
+  "spectator-ledge": { "pos": [433, -497], "label": "Spectator ledge" },
+  "finish-line": { "pos": [954, -963], "label": "Finish line" }
+}

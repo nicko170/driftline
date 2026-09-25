@@ -2132,10 +2132,11 @@
    "cluster": "demos",
    "intent": "A standalone 45-second time-trial down a tight procedural glass canyon with checkpoint gates and slick grip, local best time in localStorage. Teaches drifting on glass. Art: teal glass walls, amber gates, dusk light. Interactions: drive, gates split-time deltas rendered in HUD, three retry prompts. Stack: R3F + small analytic heightfield; no missions.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo2",
-   "claimed_at": 1790378820.371493
+   "claimed_at": 1790378820.371493,
+   "done_at": "2026-09-26T09:46:08"
   },
   {
    "kind": "demo",
