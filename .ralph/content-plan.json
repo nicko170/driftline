@@ -1493,10 +1493,11 @@
     "choir",
     "etiquette"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790379899.44261
+   "claimed_at": 1790379899.44261,
+   "done_at": "2026-09-26T09:48:44"
   },
   {
    "kind": "article",
@@ -1510,10 +1511,11 @@
     "caches",
     "cairns"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790379899.442613
+   "claimed_at": 1790379899.442613,
+   "done_at": "2026-09-26T09:48:47"
   },
   {
    "kind": "article",
@@ -1527,10 +1529,11 @@
     "mystery",
     "mountains"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790379899.442613
+   "claimed_at": 1790379899.442613,
+   "done_at": "2026-09-26T09:48:49"
   },
   {
    "kind": "article",
@@ -1544,10 +1547,11 @@
     "corporate",
     "MOTHER"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790379899.442613
+   "claimed_at": 1790379899.442613,
+   "done_at": "2026-09-26T09:49:31"
   },
   {
    "kind": "article",
@@ -2170,8 +2174,10 @@
    "cluster": "demos",
    "intent": "Audio-reactive art toy: procedural WebAudio noise tuned through 'stations' (Choir static, Guild dispatch beeps, storm band, MOTHER's sleep-breath), driving a cathode-ray-style line scope. Choir-teal scope glow on ink background. Interactions: dial the frequency, hold to 'listen', occasional ghost-harmonics. Stack: Web Audio + canvas 2D.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790380076.4269
   },
   {
    "kind": "demo",
