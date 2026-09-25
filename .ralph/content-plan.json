@@ -2145,10 +2145,11 @@
    "cluster": "demos",
    "intent": "Design tool: scrub the day/night cycle across the DRIFTLINE palette keyframes (dawn/day/dusk/night) over a bare dune vista, with sliders for fog density, sun intensity, star factor. Exports current settings as JSON to clipboard. Art: cleansing palette, big sky. Stack: R3F + leva-less hand-rolled slider panel.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo3",
-   "claimed_at": 1790378825.268146
+   "claimed_at": 1790378825.268146,
+   "done_at": "2026-09-26T09:46:48"
   },
   {
    "kind": "demo",
@@ -2157,8 +2158,10 @@
    "cluster": "demos",
    "intent": "Particle sandbox: tune the driftline dust trail (count, size, lifetime, turbulence, surface colours salt/sand/glass) live while a ghost bike auto-laps a test circuit. Purpose: dial in the game's recycled Points emitters. Art: flat test pan, colour-coded particle systems. Stack: R3F, buffer recycling demo.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo2",
+   "claimed_at": 1790380004.462278
   },
   {
    "kind": "demo",

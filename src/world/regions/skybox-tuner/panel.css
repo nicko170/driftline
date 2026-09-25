@@ -1,0 +1,102 @@
+/* Skybox & Day Cycle Tuner — scoped styles (skt-). Palette tokens come from ui.css. */
+
+.skt-root {
+  position: relative;
+  flex: 1;
+  min-height: 68vh;
+  display: flex;
+  background: var(--space, #14101F);
+}
+.skt-canvas { position: absolute; inset: 0; }
+.skt-canvas canvas { display: block; }
+
+.skt-hint {
+  position: absolute; top: 12px; right: 14px; z-index: 2;
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE); opacity: 0.55; pointer-events: none;
+}
+
+.skt-panel {
+  position: absolute; left: 14px; bottom: 14px; z-index: 2;
+  width: min(380px, calc(100% - 28px));
+  max-height: calc(100% - 28px);
+  overflow-y: auto;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--rust-deep, #7E3320);
+  background: color-mix(in srgb, var(--space, #14101F) 84%, transparent);
+  backdrop-filter: blur(6px);
+  animation: rise 180ms ease-out;
+}
+
+.skt-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 10px; }
+.skt-head h2 {
+  margin: 0; font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--amber, #FFB454);
+}
+.skt-head p { margin: 0; display: flex; gap: 8px; align-items: baseline; }
+.skt-phase { font-size: 12px; color: var(--teal-bright, #57C4B8); text-transform: capitalize; letter-spacing: 0.08em; }
+.skt-clock { font-family: var(--font-display, 'Chakra Petch', sans-serif); font-size: 15px; color: var(--salt, #F3EEE2); font-variant-numeric: tabular-nums; }
+
+.skt-scrub { position: relative; padding-bottom: 12px; }
+.skt-ticks { position: absolute; left: 0; right: 0; top: 24px; height: 6px; pointer-events: none; }
+.skt-ticks span {
+  position: absolute; top: 0; width: 1px; height: 6px;
+  background: var(--bone, #E4D7BE); opacity: 0.45; transform: translateX(-0.5px);
+}
+
+.skt-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+
+.skt-btn, .skt-chip {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE);
+  background: transparent;
+  border: 1px solid var(--rust-deep, #7E3320);
+  border-radius: 8px;
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: border-color 140ms, background 140ms, color 140ms;
+}
+.skt-btn:hover, .skt-chip:hover { border-color: var(--amber, #FFB454); color: var(--amber-hot, #FFC969); }
+.skt-btn:focus-visible, .skt-chip:focus-visible, .skt-slider input:focus-visible { outline: 2px solid var(--amber, #FFB454); outline-offset: 1px; }
+.skt-btn.primary { border-color: var(--amber, #FFB454); color: var(--amber-hot, #FFC969); }
+.skt-btn.primary:hover { background: color-mix(in srgb, var(--amber, #FFB454) 16%, transparent); }
+.skt-chip { padding: 6px 10px; font-size: 10px; }
+.skt-chip.on { border-color: var(--teal-bright, #57C4B8); color: var(--teal-bright, #57C4B8); }
+
+.skt-slider { display: grid; grid-template-columns: 96px 1fr 64px; gap: 10px; align-items: center; margin: 7px 0; }
+.skt-slider-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bone, #E4D7BE); opacity: 0.8; }
+.skt-slider-val { font-size: 12px; text-align: right; color: var(--salt, #F3EEE2); font-variant-numeric: tabular-nums; }
+
+.skt-slider input[type="range"], .skt-scrub input[type="range"] {
+  -webkit-appearance: none; appearance: none;
+  width: 100%; height: 22px; background: transparent; cursor: pointer; margin: 0;
+}
+.skt-slider input::-webkit-slider-runnable-track, .skt-scrub input::-webkit-slider-runnable-track {
+  height: 3px; border-radius: 2px; background: color-mix(in srgb, var(--bone, #E4D7BE) 30%, transparent);
+}
+.skt-slider input::-webkit-slider-thumb, .skt-scrub input::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 13px; height: 13px; margin-top: -5px; border-radius: 3px;
+  background: var(--amber, #FFB454); border: 1px solid var(--rust-deep, #7E3320);
+  transform: rotate(45deg); /* diamond — matches waypoint language */
+}
+.skt-slider input::-moz-range-track, .skt-scrub input::-moz-range-track {
+  height: 3px; border-radius: 2px; background: color-mix(in srgb, var(--bone, #E4D7BE) 30%, transparent);
+}
+.skt-slider input::-moz-range-thumb, .skt-scrub input::-moz-range-thumb {
+  width: 11px; height: 11px; border-radius: 3px; border: 1px solid var(--rust-deep, #7E3320);
+  background: var(--amber, #FFB454); transform: rotate(45deg);
+}
+
+.skt-swatches { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 14px; margin: 12px 0 4px; }
+.skt-swatch { display: flex; align-items: center; gap: 8px; font-size: 11px; }
+.skt-dot { width: 16px; height: 16px; border-radius: 4px; border: 1px solid rgba(0, 0, 0, 0.35); flex: none; }
+.skt-swatch-label { color: var(--bone, #E4D7BE); opacity: 0.75; text-transform: uppercase; letter-spacing: 0.1em; font-size: 10px; }
+.skt-swatch code { color: var(--salt, #F3EEE2); font-size: 11px; margin-left: auto; }
+
+@media (max-width: 720px) {
+  .skt-panel { left: 8px; right: 8px; bottom: 8px; width: auto; }
+  .skt-hint { display: none; }
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "skybox-tuner",
+  "name": "Skybox Tuner Bench",
+  "blurb": "Workshop tool, not a game region: day/night palette keyframes tuned over a bare dune vista. Anchors and center live outside the playable map.",
+  "center": [5000, 5000],
+  "radius": 4,
+  "danger": 0
+}
