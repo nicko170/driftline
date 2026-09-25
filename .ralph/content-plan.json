@@ -2190,6 +2190,917 @@
    "keywords": [],
    "status": "planned",
    "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brinn",
+   "title": "Brinn",
+   "cluster": "characters",
+   "intent": "Reclaimer trader camped at Saltmouth's east gate (introduced in ch1-debt-shield). Rust colours, big laugh, honest-ish scales, perpetually selling 'slightly warm' horizon cells. Recurring side-job flavor and reclaimer rep voice in the hub.",
+   "keywords": [
+    "reclaimers",
+    "trader",
+    "saltmouth",
+    "comedy",
+    "hub"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "dockmaster-vane",
+   "title": "Dockmaster Vane",
+   "cluster": "characters",
+   "intent": "Dockmaster of Keel Town at the skydocks mesa — the Guild's sky port. Runs moorings like a lighthouse keeper who learned accounting. Recipient of ch2-guild-offer custody papers. Voice: airy, clipped, mildly afraid of the ground.",
+   "keywords": [
+    "guild",
+    "skydocks",
+    "dockmaster",
+    "story",
+    "skyship"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "old-ferro",
+   "title": "Old Ferro",
+   "cluster": "characters",
+   "intent": "Ancient moorage hand at the Saltmouth mast; has opinionated friendships with every rope. Pays the player to misfile his eviction notice in side-long-way-home. Warm, rambling, secretly sharp.",
+   "keywords": [
+    "independent",
+    "moorage",
+    "saltmouth",
+    "comedy",
+    "elder"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "keeper-solei",
+   "title": "Keeper Solei",
+   "cluster": "characters",
+   "intent": "Keeper of the mid-span shrine on the Glassroad canyon — a truck-stop chapel for couriers. Orders BOOKS (side-canyon-post). Speaks in weathered proverbs and brews terrible tea loved by all.",
+   "keywords": [
+    "independent",
+    "glassroad",
+    "shrine",
+    "books",
+    "calm"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "tally",
+   "title": "TALLY-9 (Substation Caretaker)",
+   "cluster": "characters",
+   "intent": "The drowned-array substation's automated caretaker, awake 200 years past the end of its funding. Still answers mail (side-pan-letters, side-theo-messages). Polite, literal, heartbreakingly cheerful. Lines read like service tickets written by a ghost with good manners.",
+   "keywords": [
+    "machine",
+    "drowned-array",
+    "melancholy",
+    "caretaker",
+    "lore"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "gauge-keeper-dax",
+   "title": "Gauge-Keeper Dax",
+   "cluster": "characters",
+   "intent": "Chief of the windspine storm-gauge crew; only opens the hatch at night (side-night-supply). Reads pressure charts like tea leaves, distrusts anyone who hasn't been lied to by a barometer. Dry as the flats.",
+   "keywords": [
+    "independent",
+    "windspine",
+    "storm gauge",
+    "night",
+    "weather"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "verger-sann",
+   "title": "Verger Sann",
+   "cluster": "characters",
+   "intent": "Choirmaster-practical: quartermaster of choirhollow who orders the lamp oil and sweeps the crater rim. Grounded counterweight to Ilex's mysticism. Voice: wry, logistical, low-key devout.",
+   "keywords": [
+    "choir",
+    "quartermaster",
+    "choirhollow",
+    "logistics"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "ratchet-june",
+   "title": "Ratchet June",
+   "cluster": "characters",
+   "intent": "Reclaimer long-haul driver; her crawler 'Second Mortgage' features in ch3-salvage-rights. Radio voice: sings to the engine, swears at the weather, tender with machines.",
+   "keywords": [
+    "reclaimers",
+    "driver",
+    "crawler",
+    "radio",
+    "songs"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "mose-adler",
+   "title": "Mose Adler",
+   "cluster": "characters",
+   "intent": "Keeper of Saltmouth's water tower; counts cups, blesses pumps, rigs the laundry line couriers keep nearly dying on. Recipient of ch1-watering coil. Voice: slow, grateful, faintly tyrannical about cups.",
+   "keywords": [
+    "independent",
+    "saltmouth",
+    "water",
+    "tower",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "spence-sorrel",
+   "title": "Espendez 'Spence' Sorrel",
+   "cluster": "characters",
+   "intent": "Semi-retired Driftline veteran who rode with Ketch in the storm years; now races for fun (side-following-wind flavor). Voice: stories that start 'this one time the sky fell sideways'. A living bit of Driftline history for radio chatter.",
+   "keywords": [
+    "driftline",
+    "veteran",
+    "stories",
+    "history",
+    "radio"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "mallow",
+   "title": "Mallow",
+   "cluster": "characters",
+   "intent": "A Saltmouth kid who times the couriers with a broken stopwatch and reports their laps with brutal honesty. Tutorial-adjacent comic relief; unlocks codex gossip. Independent.",
+   "keywords": [
+    "saltmouth",
+    "kid",
+    "independent",
+    "comedy",
+    "hub"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "impa-vell",
+   "title": "Clerk Impa Vell",
+   "cluster": "characters",
+   "intent": "Junior Guild clerk at the exchange; idolizes couriers, files everything, including feelings. Voice: over-correct, earnest, asterisks in spoken form. Source of minor guild jobs and ledger gossip.",
+   "keywords": [
+    "guild",
+    "clerk",
+    "saltmouth",
+    "earnest",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "nyx-ala",
+   "title": "Nyx Ala",
+   "cluster": "characters",
+   "intent": "Independent surveyor camped on windspine mapping dune migration; sells waypoint gossip. Voice: precise cartographer poetry, annoyed the desert keeps moving.",
+   "keywords": [
+    "independent",
+    "windspine",
+    "surveyor",
+    "maps",
+    "side jobs"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "prior-chance",
+   "title": "Prior Chance",
+   "cluster": "characters",
+   "intent": "Choir relic-keeper who watches the mothersgate approach from a hermitage; knows the Door's inscription by heart and not what it means. Appears ch4. Voice: half sentences, long brave silences.",
+   "keywords": [
+    "choir",
+    "mothersgate",
+    "hermit",
+    "story",
+    "door"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "advocate-reyes",
+   "title": "Advocate Reyes",
+   "cluster": "characters",
+   "intent": "Guild advocate in Keel Town who technically owns Ash's debt and sends beautifully worded dunning letters. Not villainous; genuinely thinks the debt gives Ash structure. Comic antagonist energy, ch5 ballot beat.",
+   "keywords": [
+    "guild",
+    "lawyer",
+    "debt",
+    "skydocks",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "sable",
+   "title": "Sable",
+   "cluster": "characters",
+   "intent": "A courier who rides only at night ('the day shift has enough of you people'). Mysterious-ish, actually just likes the stars and the cold. Radio chatter voice for night driving; driftline.",
+   "keywords": [
+    "driftline",
+    "night",
+    "courier",
+    "stars",
+    "radio"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "mother-primer",
+   "title": "A Primer on the Sleeping Gardener (Choirmaster's edition, annotated)",
+   "cluster": "lore",
+   "intent": "Category: record. A Choir primer on MOTHER: what she is (terraforming intelligence), what the Choir believes (sleeping gardener), glossary of litanies. Needed as reward for ch2-first-word (lore:mother-primer). In-world pamphlet voice, annotated by a sceptical reader.",
+   "keywords": [
+    "MOTHER",
+    "choir",
+    "primer",
+    "terraforming",
+    "ch2"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "mother-voice",
+   "title": "Transcript: First Ful Sentences at the Door",
+   "cluster": "lore",
+   "intent": "Category: record. Transcript of MOTHER's first complete sentences at the Door, with timecodes and the transcriber's increasingly unsteady marginalia. Needed as reward for ch4-door-opens (lore:mother-voice). Kind and strange, never menacing.",
+   "keywords": [
+    "MOTHER",
+    "door",
+    "transcript",
+    "ch4",
+    "finale"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "terraforming-report",
+   "title": "Kessa-9 Terraforming Progress Report, Quarter Abandoned",
+   "cluster": "lore",
+   "intent": "Category: record. The official terraforming progress report that was being written when the money ran out — optimistic quarterly language colliding with 'funding suspended' stamps. Explains why Kessa-9 is half a garden.",
+   "keywords": [
+    "terraforming",
+    "history",
+    "funding",
+    "Kessa-9",
+    "old world"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "glassroad-burn-report",
+   "title": "Incident Rept 7-K: The Burn That Made the Road",
+   "cluster": "lore",
+   "intent": "Category: record. Incident report on the reactor burn that fused the Glassroad canyon to teal glass. Written by an engineer who stayed. Explains why the glass is fast, slick, and faintly warm.",
+   "keywords": [
+    "glassroad",
+    "reactor",
+    "history",
+    "glass",
+    "incident"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "windspine-log",
+   "title": "Turbine 9 Maintenance Log (storm season entries)",
+   "cluster": "lore",
+   "intent": "Category: log. A windspine turbine keeper's maintenance log across one storm season: bird nests, vows to quit, aurora nights, the season's first wall of sand. Foreshadows ch3.",
+   "keywords": [
+    "windspine",
+    "turbines",
+    "storms",
+    "log",
+    "ch3"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "keeltown-tariffs",
+   "title": "Keel Town Mooring Tariffs (posted, amended, argued)",
+   "cluster": "lore",
+   "intent": "Category: tract. Keel Town mooring tariff poster with two centuries of handwritten amendments, feuds in the margins, and one fee listed only as 'don't ask'. Skydocks flavor.",
+   "keywords": [
+    "skydocks",
+    "tariffs",
+    "guild",
+    "skyship",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "yard-rules",
+   "title": "Yard Rules, The (Reclaimer Union, local 3)",
+   "cluster": "lore",
+   "intent": "Category: tract. The Reclaimer yard rules of cinderflats: what you may strip, what you may not (list short), how to address Aunt Vertex's charges, funeral etiquette for machines.",
+   "keywords": [
+    "reclaimers",
+    "cinderflats",
+    "rules",
+    "salvage",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "listening-schedule",
+   "title": "Listening Rota, Hollow of the First Note",
+   "cluster": "lore",
+   "intent": "Category: log. Choirhollow's listening schedule: who sits at which horn at which hour, what they've heard, and the column where Little Reverb's notes keep being right.",
+   "keywords": [
+    "choir",
+    "choirhollow",
+    "listening",
+    "schedule",
+    "mystery"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "caretaker-log",
+   "title": "Substation Caretaker Log, years 1 through 203",
+   "cluster": "lore",
+   "intent": "Category: log. TALLY-9's substation log: 200 years of 'all systems nominal' degrading into 'all systems absent, spirits high'. Melancholy centerpiece for drowned-array.",
+   "keywords": [
+    "drowned-array",
+    "caretaker",
+    "machine",
+    "melancholy",
+    "log"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "mothersgate-survey",
+   "title": "Final Survey, Terraform Cradle Approach (sealed)",
+   "cluster": "lore",
+   "intent": "Category: record. The last survey of mothersgate before it was sealed shut: elevations, anomalous readings, and the surveyor's recommendation: 'seal it, bill it, forget it' (two of three completed).",
+   "keywords": [
+    "mothersgate",
+    "survey",
+    "seal",
+    "history",
+    "door"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "storm-almanac",
+   "title": "The Courier's Storm Almanac, 44th edition",
+   "cluster": "lore",
+   "intent": "Category: field-guide. A courier's almanac of storm season: wall types, shelter etiquette, what to do if the wind starts singing (it isn't; if it is, that's the Choir's problem).",
+   "keywords": [
+    "storms",
+    "field guide",
+    "season",
+    "survival",
+    "couriers"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "bike-maintenance-notes",
+   "title": "Ketch's Maintenance Wall: Notes for New Idiots",
+   "cluster": "lore",
+   "intent": "Category: field-guide. Ketch's hover-bike maintenance notes, in his hand: hover spring damping, gyro rings, why the Wren pulls left ('character'). Practical and fond.",
+   "keywords": [
+    "bikes",
+    "maintenance",
+    "ketch",
+    "garage",
+    "hover"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "horizon-cell-care",
+   "title": "Horizon Cell Care: A Field Pamphlet (Salt Guild Press)",
+   "cluster": "lore",
+   "intent": "Category: field-guide. Horizon cell care and feeding: charge cycles, heat warnings, a stern paragraph on buying 'slightly warm' cells from traders (see: incidents, fire, Brinn).",
+   "keywords": [
+    "horizon cell",
+    "battery",
+    "tech",
+    "safety",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "relay-fire-stories",
+   "title": "Stories Swapped at Relay Fires (collected)",
+   "cluster": "lore",
+   "intent": "Category: tract. Driftline ghost stories swapped at relay fires: the Pale Courier, the crate that delivers itself, the beacon that answers. Each story annotated 'true' by someone reliable and 'nonsense' by Ketch.",
+   "keywords": [
+    "ghost stories",
+    "driftline",
+    "folklore",
+    "night",
+    "radio"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "auditor-memos",
+   "title": "Audit Memos, Office of the Counterweight",
+   "cluster": "lore",
+   "intent": "Category: record. A run of Sister Counterweight's audit memos: calibration procedures, the soul-weighing protocol (standard practice), and the one memo shorter than all the others, about the crate.",
+   "keywords": [
+    "guild",
+    "audit",
+    "sister counterweight",
+    "crate",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "frequency-map",
+   "title": "Kessa-9 Frequency Map (unofficial, tattooed on a courier's arm)",
+   "cluster": "lore",
+   "intent": "Category: field-guide. Who talks on which channel: Guild dispatch, Driftline chatter, Choir listening bands, Reclaimer work channels, and the frequency nobody admits to using since the crate.",
+   "keywords": [
+    "radio",
+    "frequencies",
+    "factions",
+    "comms",
+    "field guide"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "night-market-menu",
+   "title": "Night Market Menu Broadcast, Keel Town (with prices)",
+   "cluster": "lore",
+   "intent": "Category: broadcast. Keel Town night-market radio menu read-aloud: spice prices, noodle stall feuds, weather disclaimers courtesy of the goat. Warm slice-of-life.",
+   "keywords": [
+    "keeltown",
+    "food",
+    "broadcast",
+    "night market",
+    "flavor"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "jett-interview",
+   "title": "Air Check: An Interview with Jett Marrows",
+   "cluster": "lore",
+   "intent": "Category: broadcast. A sports-radio interview with Jett Marrows: training regime ('winning'), feelings about the new courier ('who?'), gate ethics ('optimistic').",
+   "keywords": [
+    "jett marrows",
+    "racing",
+    "interview",
+    "broadcast",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "rill-last-route",
+   "title": "Manifest and Route: Davenant, R. (final run)",
+   "cluster": "lore",
+   "intent": "Category: record. Rill Davenant's manifest and route slips from the run he didn't come back from. Everything ordinary, one gap. ch3 foreshadow; should send a chill.",
+   "keywords": [
+    "rill",
+    "ch3",
+    "manifest",
+    "missing courier",
+    "foreshadow"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "static-litanies",
+   "title": "Three Static Litanies, with Translations",
+   "cluster": "lore",
+   "intent": "Category: tract. Excerpts from the Choir's static litanies with translations from the hiss; gentle, strange, occasionally too accurate about tomorrow.",
+   "keywords": [
+    "choir",
+    "litanies",
+    "static",
+    "prayer",
+    "scripture"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "salvage-code",
+   "title": "The Salvage Code (annotated by three feuding editors)",
+   "cluster": "lore",
+   "intent": "Category: tract. The Reclaimer salvage code: first-touch law, hazard shares, what counts as 'abandoned' (definition 4 pages long; item: doors). Underpins ch3-salvage-rights.",
+   "keywords": [
+    "reclaimers",
+    "salvage",
+    "law",
+    "rights",
+    "dispute"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "water-charter",
+   "title": "Saltmouth Water Charter (hydration provisions, amended)",
+   "cluster": "lore",
+   "intent": "Category: record. Saltmouth's water charter: who owns rain, cups, towers, and the concept of thirst. The bit where the Guild graciously permits hydration, cited in ch1-watering.",
+   "keywords": [
+    "water",
+    "guild",
+    "saltmouth",
+    "charter",
+    "ch1"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "weather-goat-methods",
+   "title": "Methods of the Guild Weather Desk (caprine division)",
+   "cluster": "lore",
+   "intent": "Category: field-guide. The Guild weather desk's methodology: one goat, three clerks, prediction accuracy statistics the clerks are afraid to publish. Pemmy's greatest forecasts.",
+   "keywords": [
+    "goat",
+    "weather",
+    "pemmy",
+    "guild",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "glass-physics",
+   "title": "Notes on Riding Glass (learned the fast way)",
+   "cluster": "lore",
+   "intent": "Category: field-guide. Why canyon glass is fast: structure, heat, grip, the smugness problem. A courier's physics for people who learn by crashing.",
+   "keywords": [
+    "glass",
+    "physics",
+    "canyon",
+    "riding",
+    "field guide"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "wake-key-theory",
+   "title": "Working Notes: On Opening What Should Stay Shut",
+   "cluster": "lore",
+   "intent": "Category: record. Reclaimer engineering speculation on the null crate as a wake-key: three disassembly quotes, one casserole recipe, and a warning in Boss Pyke's hand: 'not yet'.",
+   "keywords": [
+    "crate",
+    "wake-key",
+    "reclaimers",
+    "engineering",
+    "ch2"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "oath-history",
+   "title": "A Short History of Holding the Line",
+   "cluster": "lore",
+   "intent": "Category: tract. A short history of the courier oath: who wrote it (disputed), who broke it (list), who died keeping it (longer list, honoured).",
+   "keywords": [
+    "driftline",
+    "creed",
+    "oath",
+    "history",
+    "couriers"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "beacon-manual",
+   "title": "Beacon Tender's Manual, Glass Desert Loop",
+   "cluster": "lore",
+   "intent": "Category: field-guide. Road beacons of the Driftline: spacing, relighting, why beacon 41 is haunted (it is not; it is lonely). Companion to side-beacon-sweep.",
+   "keywords": [
+    "beacons",
+    "roads",
+    "driftline",
+    "nav",
+    "field guide"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "shelter-reviews",
+   "title": "Storm Shelters of the Glass Desert: Critical Notices",
+   "cluster": "lore",
+   "intent": "Category: field-guide. Storm shelter locations and reviews, by couriers: star ratings given in 'minutes of life saved', one shelter reviewed only 'has a dog'.",
+   "keywords": [
+    "shelters",
+    "storms",
+    "survival",
+    "reviews",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "dock-shanties",
+   "title": "Dock Shanties of Keel Town (field transcriptions)",
+   "cluster": "lore",
+   "intent": "Category: tract. Dock shanties of Keel Town, transcribed: hauling songs, mooring songs, the one about the ground ('soft, no rigging, distrusted').",
+   "keywords": [
+    "skydocks",
+    "songs",
+    "shanties",
+    "skyship",
+    "culture"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "weighing-log",
+   "title": "Weighing Log (salt and otherwise), excerpts",
+   "cluster": "lore",
+   "intent": "Category: record. Sister Counterweight's soul-and-salt weighing log: procedure, results, one entry left blank except for a scale reading and a request for transfer.",
+   "keywords": [
+    "counterweight",
+    "scales",
+    "souls",
+    "salt",
+    "crate"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "garage-keepers",
+   "title": "The Keepers of the Door: A Garage Lineage",
+   "cluster": "lore",
+   "intent": "Category: log. The line of Saltmouth garage keepers, two centuries of names painted over the door, with what each added to the creed wall.",
+   "keywords": [
+    "garage",
+    "history",
+    "ketch",
+    "driftline",
+    "saltmouth"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "door-inscription",
+   "title": "The Words Above the Door (copy, worn)",
+   "cluster": "lore",
+   "intent": "Category: record. The inscription over the cradle door at mothersgate, as copied by Prior Chance: text, wear patterns, and her notes on which letters she dreams about.",
+   "keywords": [
+    "mothersgate",
+    "door",
+    "inscription",
+    "choir",
+    "mystery"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "hum-hearings",
+   "title": "Transcripts of the Emergency Manifest Hearings",
+   "cluster": "lore",
+   "intent": "Category: record. Guild hearing transcripts about the humming crate: testimony from the night dog, a ruling that philosophy is uninsurable, adjournment due to humming.",
+   "keywords": [
+    "guild",
+    "hearing",
+    "crate",
+    "hum",
+    "comedy"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "rain-forecasts",
+   "title": "What If It Rained: A Modest Enquiry",
+   "cluster": "lore",
+   "intent": "Category: broadcast. A Keel Town think-piece: what if it rained? Economics, theology, poetry. Both endings quietly foreshadowed; wistful, hopeful.",
+   "keywords": [
+    "rain",
+    "endings",
+    "theology",
+    "hope",
+    "keeltown"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "salt-blooms",
+   "title": "A Childhood Field Guide to Salt Blooms",
+   "cluster": "lore",
+   "intent": "Category: field-guide. Salt-bloom ecology of the flats: crystal gardens, what eats them (nothing), why couriers name the pretty ones.",
+   "keywords": [
+    "salt",
+    "ecology",
+    "flats",
+    "nature",
+    "field guide"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "ballad-of-the-wren",
+   "title": "The Ballad of the Wren (radio play transcript)",
+   "cluster": "lore",
+   "intent": "Category: broadcast. A courier radio play aired for new riders: the ballad of the Wren (the player's bike, before it was the player's). Ketch cameos. Heartbreaker, funny.",
+   "keywords": [
+    "the wren",
+    "bike",
+    "ballad",
+    "radio play",
+    "ketch"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "last-wire",
+   "title": "The Last Wire: How the Money Ran Out",
+   "cluster": "lore",
+   "intent": "Category: record. Why the money ran out: terraforming economics, the last budget hearing on Earth feed-lag, the final wire transfer annotation ('sorry').",
+   "keywords": [
+    "history",
+    "funding",
+    "earth",
+    "economics",
+    "old world"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "chapel-visitor-book",
+   "title": "Visitor's Book, Mid-Span Chapel",
+   "cluster": "lore",
+   "intent": "Category: log. Dedication plaque and visitor's book of the mid-span glass chapel: 200 years of couriers signing in, one entry per storm survived.",
+   "keywords": [
+    "glassroad",
+    "chapel",
+    "shrine",
+    "couriers",
+    "keeper solei"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "dead-channel-lullaby",
+   "title": "Found Static: The Lullaby on the Dead Channel",
+   "cluster": "lore",
+   "intent": "Category: broadcast. Found static: an old terraforming-era lullaby broadcast that loops on a dead channel; the Choir leaves it playing;歌词 unknown, everyone hums along. Wait — no Chinese. Lyrics unknown, everyone hums along.",
+   "keywords": [
+    "lullaby",
+    "broadcast",
+    "static",
+    "terraforming",
+    "eerie"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "night-riding",
+   "title": "Night Lines: A Dark-Hours Riding Guide",
+   "cluster": "lore",
+   "intent": "Category: field-guide. Riding in the dark: night routes, star navigation, who else rides at night (Sable), and why the desert is honest after sunset.",
+   "keywords": [
+    "night",
+    "riding",
+    "stars",
+    "routes",
+    "field guide"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
+  },
+  {
+   "kind": "article",
+   "slug": "rope-tally",
+   "title": "Ferro's Rope Tally (with commentary)",
+   "cluster": "lore",
+   "intent": "Category: log. Moorage Old Ferro's rope tally: every ship he's moored, every storm he's watched, the knot he invented and named after someone he doesn't discuss.",
+   "keywords": [
+    "moorage",
+    "old ferro",
+    "ropes",
+    "skydocks",
+    "memoir"
+   ],
+   "status": "planned",
+   "added_by": "writer1"
   }
  ]
 }
