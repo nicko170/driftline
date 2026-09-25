@@ -1493,8 +1493,10 @@
     "choir",
     "etiquette"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790379899.44261
   },
   {
    "kind": "article",
@@ -1508,8 +1510,10 @@
     "caches",
     "cairns"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790379899.442613
   },
   {
    "kind": "article",
@@ -1523,8 +1527,10 @@
     "mystery",
     "mountains"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790379899.442613
   },
   {
    "kind": "article",
@@ -1538,8 +1544,10 @@
     "corporate",
     "MOTHER"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790379899.442613
   },
   {
    "kind": "article",

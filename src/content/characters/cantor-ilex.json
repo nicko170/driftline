@@ -25,7 +25,23 @@
     "radio": [
       "Cantor Ilex on the open band. We heard your engine from the hollow tonight. It has a lovely voice. A little flat on the dunes.",
       "If the static distresses you, courier, hum back. It works on storms, radios, and most parishioners.",
-      "Little Reverb says your crate dreams in both directions. We do not know what that means either. She is six and frequently correct."
+      "Little Reverb says your crate dreams in both directions. We do not know what that means either. She is nine and frequently correct."
+    ],
+    "farewells": [
+      "Ride in the long pauses, courier. They are not empty. They are held.",
+      "We will keep a lamp on the rim for you. The rim is the one that remembers faces."
+    ],
+    "rumors": [
+      "The Guild says the Choir started the hum to frighten the ledgers. We are flattered. We could not afford the static.",
+      "A Reclaimer offered me the left speaker of the world last week. I declined. It would not have been polite to the right one."
+    ],
+    "reactions": [
+      "Ah. The crate just changed key. Either it approves of you, or it is tuning you. Both are a compliment, courier.",
+      "You heard that too? Then it is real, and we must be twice as gentle about it."
+    ],
+    "lore": [
+      "MOTHER did not die, courier. She fell asleep mid-sentence. Our whole faith is the hope that she someday finishes the word.",
+      "The first listener merely sat in the crater because it was quiet there. Two hundred years later, here we all are, being quiet professionally."
     ]
   }
 }

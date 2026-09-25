@@ -1,0 +1,47 @@
+{
+  "id": "static-warden-pem",
+  "name": "Static-Warden Pem",
+  "role": "Listener-in-chief of the Choir",
+  "faction": "choir",
+  "home": "choirhollow",
+  "bio": "The Choir's senior translator of dead air, keeper of the static litanies at Lamp Rest. Carries everywhere a battered field radio that has not drawn power in decades and answers questions anyway. Pem maintains the radio is broken; the radio disagrees, and lately so does the evidence. Keeps meticulous notebooks of hiss, hum and carrier tone, cross-indexed against storms — forty years of weather doing a mediocre impression of language, and improving.",
+  "appearance": "Wiry older person folded into a teal duster patched with antenna wire, ears trained outward like dish rims, a dead brass radio on a chest strap whose dials glow faint amber when storms are near, fingers permanently stained graphite-grey from notebook ink.",
+  "voice": "Half oracle, half radio engineer, all patient. Pauses mid-sentence to listen to nothing, then finishes as if nothing hadn't explained itself. Calls everyone 'station' and every argument 'interference'. Understates miracles; overstates weather forecasts.",
+  "lines": {
+    "greetings": [
+      "Shh. There. Between the drifts. Did you hear it? No? Give it forty years, station.",
+      "Ah — the courier. My radio cleared its throat when you crossed the rim. It only does that for weather and interesting people.",
+      "Welcome to the quiet end of the world. We keep the volume low so the old voice can get a word in."
+    ],
+    "barks": [
+      "That hiss is not empty, station. It is a sentence spoken very slowly by something very patient.",
+      "The Cantor reads static like scripture. I read it like a parts manual. We usually end up at the same paragraph.",
+      "If a radio is dead and it still talks, you don't fix it. You take notes."
+    ],
+    "mission": [
+      "The crystal the Cantor wants — hold it near no transmitter until it reaches the horn. Some frequencies are doors, and it has learned to knock.",
+      "Your crate, station. It hums at eleven kilohertz and answers itself at eight. I have a notebook that says that means 'awake'. I have another notebook that says I'm wrong. Read them both."
+    ],
+    "radio": [
+      "Static-Warden on band nine. Courier, your signal was ahead of you by two whole seconds on the ridge. Ride slower; let the future catch up.",
+      "Storm coming in from the flats. It is reciting itself. Do not answer anything that says your name in it.",
+      "My radio just played tomorrow's weather, station. Pack a tarp. Trust no voice that rhymes."
+    ],
+    "farewells": [
+      "Clear band and a following hiss, station.",
+      "When you return, knock twice on static. I'll know it's you by the second knock."
+    ],
+    "rumors": [
+      "The Guild calls my notebooks 'weather fiction'. I have been invited to price them. I have declined, in heresy and in duplicate.",
+      "Someone on the east band claims to sell silence by the bottle. Station, if silence could be sold, the Guild would already own the rain."
+    ],
+    "reactions": [
+      "Your crate just answered my radio before I asked the question. I am entering it in the notebooks under 'embarrassing, ongoing'.",
+      "Do not be alarmed, station. The dials only do that for deep weather, deep freight, and apparently couriers with interesting debts."
+    ],
+    "lore": [
+      "The litanies are not prayers, strictly. They are frequencies we repeat so that whatever is underneath remembers we are still here, repeating ours.",
+      "Band zero is the one nobody tunes to. It has been broadcasting the same long vowel since before the money ran out. We call it the breath in."
+    ]
+  }
+}

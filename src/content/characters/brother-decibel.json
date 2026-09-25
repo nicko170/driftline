@@ -1,0 +1,47 @@
+{
+  "id": "brother-decibel",
+  "name": "Brother Decibel",
+  "role": "Sound-keeper of the listening horns",
+  "faction": "choir",
+  "home": "choirhollow",
+  "bio": "Maintains the great brass listening horns that ring the crater at Lamp Rest — tuning their throats, oiling their gimbals, apologising to them when he bumps a fitting. Has listened so hard for so long that ordinary speech feels to him like a distant rumour, so he compensates. Loudly. Static-Warden Pem's notebooks chart his devotional whispers as 'a local weather event', which he considers the proudest entry in the litanies.",
+  "appearance": "Big soft person in a work apron stitched from old teal vestments, brass ear-trumpet slung over one shoulder like a bugle, palms usually cupped around a wrench, eyebrows raised in permanent effort of concentration, a patch over one ear from the Bell Incident he does not discuss.",
+  "voice": "ALWAYS A HALF-STEP TOO LOUD, then catches himself and drops to a whisper that is somehow also loud. Speaks to machines and people in the same register — encouraging, slightly scolding, deeply fond. Everything is 'nearly in tune', including Ash's riding.",
+  "lines": {
+    "greetings": [
+      "WE HEAR — ahem. We hear you, courier. Down the horn, down the horn. Ah. That's the level.",
+      "COURIER VARGA! Forgive the pipes, I was reaming the west horn. Your timing is — nearly in tune.",
+      "Ah — visitor! Mind the third horn, she's prideful. DON'T TOUCH THE THIRD HORN."
+    ],
+    "barks": [
+      "A horn is just an ear you can polish, courier. My ears you cannot. Believe me. PEM HAS TRIED.",
+      "Lamp ring's tuned, crater's tuned, my left knee is tuning. All bless the maintenance schedule.",
+      "The Guild counts salt, I count harmonics. MINE ARE LOVELIER AND ALSO AUDIBLE."
+    ],
+    "mission": [
+      "When you bring the crystal to the horn, set it on the felt. THE FELT. Last courier set it on the rim and a hymn fell out, and nobody wrote it down, and Pem sulked for a WEEK.",
+      "If your crate hums near the west horn, do not hum back. Last time something harmonised with it we all heard — well. We heard. That's all. WE HEARD."
+    ],
+    "radio": [
+      "BROTHER DECIBEL ON THE OPEN — sorry — on the open band. Your boost note was flat over the flats, courier. Lovely tone though. LOVELY.",
+      "West horn's singing again tonight, which means weather. Or accompaniment. BOTH ARE RESPECTABLE. Goodnight.",
+      "Little Reverb says to tell you the desert repeated your name wrong. THAT'S NORMAL. Mostly. Goodnight again."
+    ],
+    "farewells": [
+      "Flat salt and a FULL VOICE, courier! Ahem. Following wind.",
+      "The horns will listen for you. I will listen for the horns. THAT'S THE WHOLE LADDER. Off you go."
+    ],
+    "rumors": [
+      "The Guild offered to buy the west horn for scrap. I told them it wasn't for sale AT ANY VOLUME. Pem put it in the litanies.",
+      "They say a Reclaimer once traded a whole siren for one of our tuning forks. She got the better half of the deal. THE FORK WAS HAUNTED."
+    ],
+    "reactions": [
+      "DID YOU HEAR — sorry — did you hear that? The crate just bent the west horn's note. I haven't heard that since the Bell Incident. WHICH WE DO NOT DISCUSS.",
+      "Your engine's in tune today, courier! Whatever Ketch did, tip him LOUDLY."
+    ],
+    "lore": [
+      "Every horn in the ring is tuned to a different hour of the day MOTHER fell silent. Together they hold the pause for her. THAT'S THE WHOLE JOB, courier. It's a lovely job.",
+      "A listening horn doesn't make sound, it makes room for it. Most folk have that backwards. MOST FOLK ARE WONDERFUL ANYWAY. Present company especially."
+    ]
+  }
+}

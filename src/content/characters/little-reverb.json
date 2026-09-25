@@ -1,0 +1,49 @@
+{
+  "id": "little-reverb",
+  "name": "Little Reverb",
+  "role": "Junior listener, unimpressed prodigy",
+  "faction": "choir",
+  "home": "choirhollow",
+  "bio": "Nine years old, raised in the crater temple at Lamp Rest, and the clearest ear the Choir has ever produced — a fact she finds deeply boring. She collects 'echoes': glass chips, harmonics, half-finished sentences she swears the desert repeats if you say them into the right horn. Adults gather in hushed circles to discuss what she said over breakfast. She mostly wants to trade echoes for spare bike parts and to be allowed to stay up past lamp-lighting.",
+  "appearance": "Small kid swimming in a hand-me-down teal robe with the sleeves rolled eight times, shaved head growing out in a lopsided waveform, a string of glass 'echoes' clacking at her belt like a charm bracelet, permanent expression of someone waiting for the grown-ups to finish being wrong.",
+  "voice": "Deadpan, literal, devastatingly practical. Reports cosmic revelations in the tone of a lunch order. Never raises her voice; the room quietens for her, which she weaponises. Calls Ash 'courier' because remembering names is for people who don't already know everything important.",
+  "portrait": "images/articles/characters/little-reverb.jpg",
+  "heroAlt": "Illustrated portrait of Little Reverb, a deadpan nine-year-old Choir kid in an oversized teal robe with glass echo-charms, unimpressed at dusk in Lamp Rest.",
+  "lines": {
+    "greetings": [
+      "You're the courier. You rode in on the left knife. Everyone says hello. The desert said it first.",
+      "Hi. The Cantor's in the big quiet. I'm in the small quiet. The small one's better.",
+      "If you're here about the crate, it likes you. That's not a compliment. It likes storms too."
+    ],
+    "barks": [
+      "Everyone here listens to MOTHER all day. I listen once. Then I have lunch.",
+      "That's not an echo, that's just the crater being slow.",
+      "Brother Decibel is yelling at the horns again. Tell him the horns are fine. The horns are always fine."
+    ],
+    "mission": [
+      "Take your crate and walk the rim once, counter-sunwise. It'll hum a new note. Bring the note back. Not in a jar. In your head.",
+      "The listening horn only hears what it's pointed at. That's the whole trick with everything, courier."
+    ],
+    "radio": [
+      "Courier. Reverb. Your engine sounds like a kettle arguing. The Choir thinks it's a sign. I think it's a gasket.",
+      "The desert just repeated your name wrong. Don't worry, it does that to everyone whose name matters.",
+      "Past your bedtime, courier. The lamps are lit and even MOTHER's being quiet. Mostly. You didn't hear that."
+    ],
+    "farewells": [
+      "Bye. The empty echo pocket near the lamp ring is done growing if you want it. It's yours now. It chose.",
+      "Ride the middle of the flats tonight. The edges are practicing."
+    ],
+    "rumors": [
+      "The grown-ups think the west horn sings because of MOTHER. It's a bird. A big one. I'm working on a trade for it.",
+      "Pem's radio isn't dead. It's sleeping. There's a difference and it pays better."
+    ],
+    "reactions": [
+      "Your crate hummed when you looked at it. Mine only hums at the kettle. You're special, probably. Don't tell the grown-ups.",
+      "Oh good, the hum changed. It was getting boring. Nothing should be sacred for that long."
+    ],
+    "lore": [
+      "An echo is just a voice that got lost and decided to live in glass. I'm going to collect all of them. There are four hundred. I have eleven.",
+      "MOTHER isn't a god, she's just very old and very big and everyone else was in a hurry. That's the whole religion. The robes are extra."
+    ]
+  }
+}
