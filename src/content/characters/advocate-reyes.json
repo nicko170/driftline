@@ -1,0 +1,49 @@
+{
+  "id": "advocate-reyes",
+  "name": "Advocate Paloma Reyes",
+  "role": "Guild advocate, Keel Town — executor of inconvenient debts",
+  "faction": "guild",
+  "home": "skydocks",
+  "bio": "Holder of the paper on Ash Varga's eight-thousand-credit bond and author of the most beautiful dunning letters in the history of indenture, hand-delivered at dusk when the light flatters the wax. Not a villain: she genuinely believes a structured debt is a gift — 'a horizon with an invoice number' — and tracks Ash's payments with the proud solicitude of a godparent. Rode courier-class bikes one long-ago season before the law offered better weather; the Driftline has never fully released her and she has never fully asked.",
+  "appearance": "A precise woman in her forties in a high-collared Guild ochre advocate's coat with rust-deep piping, hair in a sealed bun fastened with an actual filing spike, spectacles with document-green lenses, a satchel of accordion files worn like a sidearm, and one tell she never fixed: a courier's compass ring on her left hand, worn smooth on the throttle side.",
+  "voice": "Legal polysyllables deployed as affection; every kindness arrives in triplicate. Subclauses are her love language. Signs off 'yours, in lien'. Never threatens — forecasts. Genuinely delighted when Ash pays down principal, and slightly wounded, the way a gardener is when the trellis outgrows the vine.",
+  "lines": {
+    "greetings": [
+      "Courier Varga. Your bond sends its regards — I have taught it to track your progress with what I can only describe as interest.",
+      "Ash. Sit. This is a social call; the paperwork admits it under section nine, 'visits of concern'.",
+      "Ah, my favourite liability. The ledger speaks well of you this quarter. I read it aloud to keep it honest."
+    ],
+    "barks": [
+      "People think dunning letters are cruelty. A well-set letter is a railing on a stair. You may rise by it. Do test the joinery.",
+      "The Guild counts everything. I count the Guild. Somebody has to hold the pencil at the top of the page.",
+      "I rode a season before the law. The desert never sued me once. I miss it the way you miss weather.",
+      "Your bike's manifest history crosses my desk. Old machine, good lineage. Some debts are bikes. Some bikes are debts."
+    ],
+    "mission": [
+      "A ballot measure requires a witness the factions cannot bribe, which on Kessa-9 means a courier with an outstanding bond and a boring heart. The retainer is generous. The asterisks are educational.",
+      "Carry these filings to the exchange — originals, wax intact. If a Choir delegation asks what you carry, the answer is 'a future grievance'. They will bless it. They always do."
+    ],
+    "radio": [
+      "Advocate Reyes to Varga. Nota bene: your next payment window opens at the new moon. This is a reminder, not a portent. I am told the difference matters.",
+      "Reyes on the counsel band. I saw your line through the flats on the relay plot. Footnote: superb. The lien remains. Both things can be true and, in this office, are.",
+      "Traffic advisory, couched as concern: storm signs west, Guild rates firm, your collateral continues to be mostly honest. Yours, in lien."
+    ],
+    "debt": [
+      "Every payment you make is filed twice — once in the ledger, once in my esteem. Esteem compounds faster. I did not design this; I merely enforce it.",
+      "When the bond clears — and believe that I have already picked the ribbon — you will lose structure and gain a skyship-length of possibility. We will both adjust. I have drafted the speech.",
+      "They ask why I never call the note early. A debt is a long corridor, Varga. I keep the lamps lit at my end. You keep walking. It is the closest thing to courtesy the guild has."
+    ],
+    "ballot": [
+      "The ballot is not about the ships. It is about who gets to say the town counted itself. I will be there with the seals. You will be there with the legs. Democracy, Varga, is hauling.",
+      "Vote counters must be unbribable, unbuyable, and — this is the exquisite part — already owned. By me. Legally. I wept when I drafted it."
+    ],
+    "wren": [
+      "I rode that bike's kind once, a season, before the law. She never argued a single term. Machines are the only opposing counsel I miss.",
+      "If the Wren pulls right at speed, it isn't the alignment. It's the memory of a rider who always wanted the long way. Ask how I know. Don't."
+    ],
+    "farewells": [
+      "Ride well. Pay something. The order is optional; the Guild's pamphlet suggests alternating. Yours, in lien, R.",
+      "Go on. The desert is un-briefed and it doesn't care for citations — which is precisely why I send it my best courier."
+    ]
+  }
+}

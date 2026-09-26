@@ -1,0 +1,48 @@
+{
+  "id": "marlowe-air-check",
+  "name": "Vela Marlowe",
+  "role": "Host of Air Check, the Standard's air-speed hour",
+  "faction": "independent",
+  "home": "skydocks",
+  "bio": "The warmest voice on the relay net and the reason half of Kessa-9 leaves the radio on 'for the weather'. Hosts Air Check out of the Keel Town studio, patched down every tower antenna from Saltmouth to the ridge, interviewing whoever just did something fast, brave, or statistically inadvisable. Her one professional failing, by her own admission: guests ask her to cut the sincere moments, and the cut never quite takes. 'The ask is the tell,' she says, and leaves the bit where the racer thanked their mother exactly where it was.",
+  "appearance": "A round-faced woman in her thirties with an announcer's posture and a cardigan's soul, rust-red scarf over a cream broadcast smock with a horn-badge pinned crooked (lucky, never fixed), tower-height headphones around her neck, ink on the middle finger of both hands, seated before a brass horn in a studio whose booth window frames the entire violet harbour of moored skyships.",
+  "voice": "Broadcast warmth with a gentle trapdoor: welcomes twice, flatters once, then asks the question that opens the guest like a crate. Addresses listeners as 'flats'. Signs off with sport and tenderness in that order. Keeps sincere beats guests begged her to cut; lets them think it was their idea to keep it.",
+  "lines": {
+    "greetings": [
+      "You're on the air with Air Check, I'm Vela Marlowe, and my guest tonight owes me a lap time and an apology. Welcome, flats.",
+      "Good evening, flats. Tonight: speed, weather, and one courier who keeps showing up in the ledgers of history. But first, the kettle.",
+      "Welcome back. For those just tuning in: you are loved, the canyon is fast, and my guest is pretending not to be nervous. All three are survivable."
+    ],
+    "barks": [
+      "The tenor horn is flat again. The audience thinks it's jazz. Let them.",
+      "I keep the sincere bits. They ask me to cut them, and the ask is the tell — nobody begs to lose what they don't treasure.",
+      "The desk gets a letter a week asking if the Standard is a person or a recording. I am a person. I interviewed the recording once; it was charming.",
+      "Broadcast law says equal time for all factions. The goat gets a segment in season. The goat is punctual, which is more than the Guild manages."
+    ],
+    "mission": [
+      "Courier, do a kindness: carry this tape spool to the moorage relay before the dusk show. It's tonight's cold open. Don't listen to it, you'll spoil the sincerity in transit.",
+      "If your route passes the ridge, get a clean minute of turbine hum for the outro bed. Listeners write in when it's missing. The desert has fans."
+    ],
+    "radio": [
+      "Air Check traffic report, Vela Marlowe with you: one courier moving fast on the flats, heart rate audible from here. Varga, the antenna can see you. Wave.",
+      "Listeners ask how I get guests to open up. I put a warm light on the only chair in the room and pretend the microphone isn't mother-confessor. It always is.",
+      "This goes out to a night courier we can't name because she'd deny it: flats, somebody is pacing the stranded ones home again. You know the voice. Sleep easier."
+    ],
+    "guests": [
+      "My guest holds three canyon records, one real, his asterisk. We'll edit nothing. He'll ask. Watch.",
+      "Tonight's guest asked me to cut the part about her mother. Flats, I kept it. If you heard the catch in her voice, that was truth doing its one job."
+    ],
+    "night": [
+      "Night broadcast from the harbour: the ships tick as they cool, the moorage lines sing low, and somewhere a kettle outlasts us all. Goodnight slowly.",
+      "Late band check. If you're still riding, the neon from the noodle sign lights the last gate amber. It spells NOODLES. Tonight, let it spell home."
+    ],
+    "studio": [
+      "The booth window frames the whole fleet at moor. When a guest lies, a ship ticks. I have never told them which ship. They sweat anyway. Wonderful for radio.",
+      "The crooked horn-badge stays crooked. Fixed once, we lost a season of signal and a race result. The harbour runs on superstition; I simply invoice it as ritual."
+    ],
+    "farewells": [
+      "That's the hour. Stay tuned for weather, stay kind for each other, stay out of the canyon after dark unless you're my next guest. Marlowe out.",
+      "Off we go. Same dusk tomorrow, same horn, slightly flatter — the tenor, not me. Keep your lamps honest, flats."
+    ]
+  }
+}

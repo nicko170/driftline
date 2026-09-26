@@ -1,0 +1,50 @@
+{
+  "id": "sable",
+  "name": "Sable Urrutta",
+  "role": "Driftline night courier, second grade",
+  "faction": "driftline",
+  "home": "saltmouth",
+  "bio": "Nineteen, and already the answer to a bar-room question — seven crossings through the wall's skirt the night Bitter Flats was taken, forty-two people carried out, and a written refusal of promotion, pension, and statue in favour of one replacement bike and the right to name it. (It is in the levy book: FIFTEEN MAXIMUM.) Rides only the night shift, officially because 'the day has enough of you people', actually because the stars are better charts and the cold keeps the horizon cells honest. The legend built itself out of no lights and no wake; she declines to maintain it, which is maintenance enough.",
+  "appearance": "A slight young woman in a matte-black riding wrap dusted salt-grey to the knees, no reflectors anywhere (a fine, technically), goggles with the left lens smoked darker than the right from years of riding one-eyed into the west wind, hair cropped short and flecked with mica, gloves with the index fingers cut out 'for switches and pointing at stars'.",
+  "voice": "Laconic and dry, younger than her legend and faintly annoyed by it. Counts in stars and minutes. Short sentences, long pauses, sudden warmth she immediately disclaims. Calls the night 'the shift'. Corrects your wayfinding once, gently, and never again — after that she just paces you until you arrive. Hates being thanked mid-run; accepts soup after.",
+  "lines": {
+    "greetings": [
+      "You're the day courier. No offence. The day has enough of you people — it's the literal light, it's a lot.",
+      "Varga. You're out late. Good. The flats at night are the flats with the rough draft scraped off.",
+      "Shift change. Your stars tonight: Anchorbright low east, Three Kettle overhead, and that smudge is a skylift, not fate. Check your cell."
+    ],
+    "barks": [
+      "No, the bike has no running lights. Lights tell you where you've been. I aim to be elsewhere.",
+      "The levy offered a statue. Statues can't lean into a turn. I took the bike. FIFTEEN MAXIMUM says hello.",
+      "Bitter Flats gets a song. Fine. The song skips the part where I was terrified the whole seven crossings. I'd like it on record: terrified, seven times, steadily.",
+      "People say I appear when needed. False. I'm just always out, and needs are common. Arithmetic, not haunting."
+    ],
+    "mission": [
+      "Night supply window is short and the cooler's cranky. You'll run lights-off through the pan — don't chase me, chase the stars. The stars have better brakes.",
+      "Beacon three is lying tonight — flickering a half-beat fast. Ride past it slow and log it. Tender's probably asleep. We'll let it be a mystery with soup."
+    ],
+    "radio": [
+      "Sable on the graveyard band. If you're riding this hour: the pan's quiet, the wind's honest, and you're prettier by headlight. Out.",
+      "Stranded rider at the second cairn — no, I already have them. I was pacing them for an hour. They thought I was a ghost. I let them. Morale.",
+      "Varga, your headlight's two degrees high. You're lighting swallows at altitude. There are no swallows. Aim down, fly low, out.",
+      "The night shift reports: one meteor, one owl, infinite stars. A slow night. Treasure those. Out."
+    ],
+    "night": [
+      "Cold makes the cells hum true, dust settles, glass creaks its little day-dreams off. The desert does its editing at night.",
+      "Rule one of the shift: never outrun your light. Rule two: at night the light lies about distance on purpose, like a good story.",
+      "Day riders chase horizons. Night riders carry them. Yours is six klicks behind and closing, if you want it."
+    ],
+    "storm": [
+      "Walls at night are worse and fairer. You can't see the face. You can hear it — like standing inside a grindstone's opinion.",
+      "If the wall takes the stars, ride the cable-lines of sound: the mast hum, the gauge bells, your own cell whine. It's a map if you listen like a courier, not a listener."
+    ],
+    "legend": [
+      "They say I don't cast a shadow. I cast a shadow. It's just also off-shift.",
+      "Whatever you heard at the relay fire: shorter. The truth is always shorter — seven crossings, forty-two people, one girl freezing. The song leaves out the freezing."
+    ],
+    "farewells": [
+      "Sun's coming — the shift's yours. Ride it like you borrowed it from somebody braver. Because you did. Me. Goodnight, day person.",
+      "Soup at the Last Lamp, you pay for your own. If anyone asks what barely-visible legend paced you home — enjoy the word 'barely'. Out."
+    ]
+  }
+}
