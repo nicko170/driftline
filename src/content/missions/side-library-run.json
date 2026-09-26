@@ -1,0 +1,40 @@
+{
+  "id": "side-library-run",
+  "title": "The Slow Library",
+  "chapter": "side",
+  "type": "escort",
+  "giver": "shrine-keeper-toll",
+  "region": "glassroad",
+  "summary": "Shrine-Keeper Toll is migrating the mid-span lending shelf to Saltmouth for storm season — eleven crates of annotated books on a donkey-cart retrofitted with hover-skids, which the donkey has noticed. Escort the Slow Library down the glassroad; the crosswinds on the Slick Mile have strong literary opinions.",
+  "objectives": [
+    { "type": "goto", "target": "glassroad:mid-span", "label": "Meet Toll and the donkey at the mid-span shrine" },
+    { "type": "escort", "target": "glassroad:mid-span", "targets": ["glassroad:slick-mile", "glassroad:gate-south", "saltmouth:job-board"], "speed": 10, "label": "Escort the Slow Library — keep the wagon warm, stay close" },
+    { "type": "dropoff", "target": "saltmouth:job-board", "label": "See the first crate onto the job-board shelf" }
+  ],
+  "rewards": {
+    "credits": 240,
+    "rep": { "driftline": 5 },
+    "flags": ["side-library-run.done", "lore:chapel-visitor-book"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "shrine-keeper-toll", "text": "Rider. Season's turning and my lending shelf cannot winter on the span — books hate damp worse than borrowers. Eleven crates, one donkey-cart, hover-skids from Ketch's 'experimental' bin, and a route home through the Slick Mile's crosswinds. I require a shepherd with an engine." },
+      { "who": "shrine-keeper-toll", "text": "The donkey has audited the skids and files them as sorcery. The cart moves at reading pace. You will be tempted, courier, to scout ahead and be efficient. Resist. A library unescorted is just tinder with plot." },
+      { "who": "ash-varga", "text": "Eleven crates of books, one sceptical donkey, four kilometres of glass canyon. What's the worst the wind does?" },
+      { "who": "shrine-keeper-toll", "text": "Two seasons ago the wind took a whole crate of sermons over the south rim unpunished. The crater floor there now converts passing lizards. I do not joke about the Sermon Drift, rider. Stay close."
+      }
+    ],
+    "accept": [
+      { "who": "shrine-keeper-toll", "text": "We roll when the lamps do. Order of march: the donkey sets the pace, the skids complain in B-flat, and you, rider, are the margin of the page — you keep the print from blowing off the edge. On the Mile, ride the windward flank and break the gusts before they reach the crates." },
+      { "who": "ketch", "text": "Ketch here — Toll took my skid rig, the maniac. It hums off-key 'cause I tuned it to a kettle. Kid, hover near the wagon, not ahead of it; convoy rules. If the crosswind stands the hair up off the donkey, lean over the crates till it passes. Books are cargo. Donkeys are crew. Priorities." },
+      { "who": "ash-varga", "text": "Riding as a bookmark. New personal speed record: slowest." },
+      { "who": "shrine-keeper-toll", "text": "'The fastest road is the one the slowest friend survives.' Mine. Feel free to write it on the cart. The donkey has expressed no opinion, which for a donkey is rave review." }
+    ],
+    "complete": [
+      { "who": "shrine-keeper-toll", "text": "Eleven crates delivered, zero sermons embarked to the lizards, one donkey promoted to Hang-Donkey Emeritus by general acclamation. The shelf lives at the job board through season's end. Borrow freely, rider. Return before the storm does." },
+      { "who": "shrine-keeper-toll", "text": "For your fee and your shepherding: my copy of the visitor's book of the mid-span chapel — two centuries of who stopped, who signed, who lied about signing. You'll find Rill's mark in it. Page-hand for page-hand, courier, we keep each other's route." },
+      { "who": "ash-varga", "text": "The donkey's looking at me like I owe him a review." },
+      { "who": "shrine-keeper-toll", "text": "Then write him one. Short words. He annotates." }
+    ]
+  }
+}

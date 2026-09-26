@@ -1,0 +1,39 @@
+{
+  "id": "side-array-census",
+  "title": "Chalk Census",
+  "chapter": "side",
+  "type": "scout",
+  "giver": "tally",
+  "region": "drowned-array",
+  "summary": "TALLY-9 conducts a census of the Drowned Array every season — panels sunk, cairns standing — but this season someone has been leaving chalk marks on the cairns first: little numbers, in a little hand, that are *right*. Scan three cairns after dark and find out who is auditing the auditor.",
+  "objectives": [
+    { "type": "goto", "target": "drowned-array:pan-edge", "label": "Reach the pan edge as the light goes — TALLY-9 meets you there" },
+    { "type": "scout", "target": "drowned-array:panel-field", "label": "Scan the panel-field cairn — hold still and let it read the chalk back" },
+    { "type": "scout", "target": "drowned-array:substation", "label": "Scan the substation cairn — mind the hum of old batteries" },
+    { "type": "scout", "target": "drowned-array:cache-cairn", "label": "Scan the cache cairn — the newest chalk, maybe the freshest answer" }
+  ],
+  "rewards": {
+    "credits": 220,
+    "rep": { "driftline": 4 },
+    "flags": ["side-array-census.done", "lore:caretaker-log"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tally", "text": "Courier. This unit counts the drowned. Two hundred years of panels, each sinking one patient inch a year, each cairned by riders who respect slow disasters. This unit's ledger is exact. This season, the ledger is *pre-exact*." },
+      { "who": "tally", "text": "Someone chalks the cairns before census night. Small numerals. Correct ones. Including — and this unit requests discretion — two cairns for panels that sank this week, chalked *before* they sank." },
+      { "who": "ash-varga", "text": "You want me to scan cairns at night to catch a ghost that's better at your job than you." },
+      { "who": "tally", "text": "This unit wants you to scan cairns at night to catch a *colleague*. Correction accepted if it is a ghost. Ghosts file nothing. This unit has checked." }
+    ],
+    "accept": [
+      { "who": "tally", "text": "Noted. Register: arrive at the pan edge after dusk — the chalk reads clearest in low light, and the census taker, whoever, fears witnesses of altitude. Scan each cairn slowly. If the chalk is warm, this unit will have many questions, most rhetorical." },
+      { "who": "ketch", "text": "Night work at the Array, kid? Easy riding, just hold her still at each cairn and let the scanner think. And if you see chalk dust on the wind, somebody small with fast legs went that way. Desert's full of irregular professionals." },
+      { "who": "quicklime-kid", "text": "(A radio click. One breath. Then, very fast and very quiet:) Nobody chalks anything. Goodnight." }
+    ],
+    "complete": [
+      { "who": "tally", "text": "Scans reconciled. Third cairn's chalk included a number this unit has not taught anyone — the count of panels *remaining*. Implication pending. Also pending: your crate, courier. It hummed at the third scan. On pitch. This unit logs what it hears, and files almost none of it." },
+      { "who": "tally", "text": "Census closed with two takers this year: this unit, and the little hand. Accuracy is now shared custody. It has been two centuries since this unit shared anything. The sensation is — noted." },
+      { "who": "ash-varga", "text": "You catching the chalker, or adopting them?" },
+      { "who": "tally", "text": "This unit is leaving chalk out. Unsupervised learning is still learning. Payment attached, with this unit's log of the early years — when the Array was proud, dry, and brand new. Read it someplace with a roof." }
+    ]
+  }
+}

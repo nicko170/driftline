@@ -1,0 +1,47 @@
+{
+  "id": "side-skyship-pilot-exam",
+  "title": "Hang-Tenant's Exam",
+  "chapter": "side",
+  "type": "race",
+  "giver": "madame-traction",
+  "region": "skydocks",
+  "summary": "Madame Traction is examining candidates for a Keel Town hang-tenant's licence — not with paperwork, with gates. Thread her course: off the winch base, round the dockmaster's hut, over the mesa top, and down the Keel Town hairpin before her kettle boils. The kettle is regulation.",
+  "timeLimit": 80,
+  "objectives": [
+    { "type": "goto", "target": "skydocks:winch-base", "label": "Stage at the winch base — between the chalked hooks, facing downhill" },
+    { "type": "race", "targets": ["skydocks:dockmaster", "skydocks:mesa-top", "skydocks:keel-town"], "label": "The exam: dockmaster's hut → mesa top → the Keel Town hairpin, before the kettle" }
+  ],
+  "rewards": {
+    "credits": 260,
+    "rep": { "guild": 4, "driftline": 4 },
+    "flags": ["side-skyship-pilot-exam.done", "lore:skydocks-moorage-rules"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "madame-traction", "text": "Varga. I keep the Keel Ten's pilots flying honest and the examiners retired. A licence from me means the masts trust you with their ropes — but I test on gates, not paper. Paper doesn't banking-turn." },
+      { "who": "madame-traction", "text": "Course, and learn the shape: launch between the winch hooks, thread the dockmaster's hut without waking Vane — you won't; he audits in his sleep — crest the mesa top, and commit to the hairpin down to Keel Town's hanging boards. The kettle is the clock. When it whistles, you're firewood." },
+      { "who": "ash-varga", "text": "What does a courier want with a hang-tenant's licence?" },
+      { "who": "madame-traction", "text": "Landing rights on the boards, winch priority, and the deep comfort of regulation moorage. Also — someday you'll want to land somewhere that isn't sand. I have examined the future, child. It arrives by air." }
+    ],
+    "accept": [
+      { "who": "madame-traction", "text": "Kettle's on. Gate one is authority — take Vane's hut tight; sloppy passes there fail pilots. Gate two is altitude — the mesa takes confidence and repays it. Gate three is the hairpin and it has ended more licences than the Guild has. Dip your nose. Trust the rope-lines. Fly." },
+      { "who": "dockmaster-vane", "text": "Vane on the board. For the record, candidate: my hut post-dates the course and pre-dates your excuses. Moorings close on the whistle. If you clip my washing line, the fine is denominated in rope." },
+      { "who": "ketch", "text": "Traction's kettle exam! Kid, I passed that thing on a bike with one brake and a dream. Short-shift the mesa climb — carry speed in, not throttle — and treat the hairpin like a drift, not a turn. The boards forgive a slide. They do not forgive a straight line." }
+    ],
+    "complete": [
+      { "who": "madame-traction", "text": "Whistle-judged and passed. Note the kettle: still building its voice. You beat it by a mouth and a half. The Keel Ten can count on their fingers, child, and they all saw you land." },
+      { "who": "madame-traction", "text": "Hang-tenant Varga. The boards at Keel Town are yours to land on, the rules of moorage are yours to read — posted, seventh revision, argued hourly — and the kettle is yours to beat again any season you doubt yourself." },
+      { "who": "ash-varga", "text": "And if I fail someday?" },
+      { "who": "madame-traction", "text": "Then you buy the kettle a new whistle and fly again at dawn. Failure, child, is just moorage before the final approach. The Ten have a saying: *the rope is short, the sky is not.* Fly home." }
+    ],
+    "choices": [
+      {
+        "prompt": "Traction asks what to stencil on your licence plate.",
+        "options": [
+          { "text": "\"Rope is short. Sky is not.\"", "setsFlag": "traction.plate.rope" },
+          { "text": "\"Just my name. The landing can do the talking.\"", "setsFlag": "traction.plate.name" }
+        ]
+      }
+    ]
+  }
+}

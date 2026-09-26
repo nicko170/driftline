@@ -1,0 +1,49 @@
+{
+  "id": "side-goat-grooming",
+  "title": "The Sash Incident",
+  "chapter": "side",
+  "type": "collect",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "The weather desk's forecast accuracy has collapsed for a single reason: Pemmy's sash — the official caprine-instrument sash, Guild-stamped, tasselled — has gone missing somewhere on her morning rounds. Retrace the goat. Recover the sash. Do not, under any circumstances, write a report.",
+  "objectives": [
+    { "type": "collect", "target": "saltmouth:water-tower", "count": 3, "label": "Search the water-tower shade for sash parts — tassel count is recorded evidence" },
+    { "type": "collect", "target": "saltmouth:moorage", "count": 3, "label": "Sweep the moorage mast foot — she rubs her horns on the guy-lines" },
+    { "type": "collect", "target": "saltmouth:overlook", "count": 2, "label": "Check the dune overlook, where the goat does her serious staring" },
+    { "type": "dropoff", "target": "saltmouth:job-board", "label": "Return the reassembled sash to the weather desk box" }
+  ],
+  "rewards": {
+    "credits": 110,
+    "rep": { "guild": 4 },
+    "flags": ["side-goat-grooming.done", "lore:weather-goat-methods"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "Courier. The caprine division has suffered what my report calls an Instrument Presentation Event and what the division calls Tuesday. Pemmy's sash is gone. The sash is the instrument — a sashless goat is, Guild-wise, just a goat with opinions." },
+      { "who": "tamsin-cho", "text": "Her rounds: water tower at dawn, moorage lines by mid-morning, the overlook for the long staring. She molts pageantry everywhere she goes. Gather the tassels, the stamp-clasp, and whatever has absorbed the most dignity. Reassembly is optional but encouraged." },
+      { "who": "ash-varga", "text": "You're paying guild rates for me to follow a goat around town collecting sash pieces." },
+      { "who": "tamsin-cho", "text": "The Guild pays for outcomes, Varga, not narrative dignity. Besides — her stare-frequency readings drop eleven percent without the sash. Whether the sash is causal is under review. It has been under review for three years." }
+    ],
+    "accept": [
+      { "who": "tamsin-cho", "text": "Accepted and logged as a *textile-sensitive recovery*. She favours shade she can supervise from. If you find the stamp-clasp near anything edible, assume the edible ate it on purpose." },
+      { "who": "ketch", "text": "Ketch here. You're goat-wrangling for the desk now? Good. That goat has forecast more storms than every gauge I own. Comb the town slow, kid — tassels snag on the line shadows, and Pemmy hides the good parts where the looking is embarrassing." },
+      { "who": "pemmy", "text": "*Maaaa.* (Desk note attached to the job: the instrument has been informed. The instrument declined comment.)" }
+    ],
+    "complete": [
+      { "who": "tamsin-cho", "text": "Sash received: eight tassels of nine, one clasp, a soupçon of someone's lunch. Restored to the instrument —" },
+      { "who": "tamsin-cho", "text": "Update. The instrument has refused the sash. She removed it. Twice. She is currently standing on it, which the desk is logging as *forecast: pressure*. Varga, the payout stands, the sash is now decorative, and the ninth tassel is your problem in perpetuity." },
+      { "who": "ash-varga", "text": "So the Guild pays me in credits, the goat pays in standing-on-things, and nobody files the report?" },
+      { "who": "tamsin-cho", "text": "The weather desk settles its obligations in goat credit — exchangeable for one (1) favourable stare in storm season, redeemable at the overlook, no expiry. Collectors pay double for those. Ask me what they taste like."
+      }
+    ],
+    "choices": [
+      {
+        "prompt": "The desk asks how to close the incident on Form 22-B.",
+        "options": [
+          { "text": "\"Write: instrument self-decommissioned. Goat remains at large.\"", "setsFlag": "goat.sash.report.honest" },
+          { "text": "\"Give me the pen. I'll write 'resolved' and we'll never speak of tassel nine.\"", "setsFlag": "goat.sash.report.quiet" }
+        ]
+      }
+    ]
+  }
+}
