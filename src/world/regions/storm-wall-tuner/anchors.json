@@ -1,0 +1,4 @@
+{
+  "bench": { "pos": [6050, 6050], "label": "Storm wall look-dev bench (off-world)", "elev": 4 },
+  "rail-zero": { "pos": [6050, 6052], "label": "Rider station / rail origin (off-world)", "elev": 4 }
+}

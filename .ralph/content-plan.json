@@ -4237,8 +4237,10 @@
     "Boss Pyke",
     "reclaimer tech"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790404773.915114
   },
   {
    "kind": "article",
@@ -4253,8 +4255,10 @@
     "storm season",
     "foreshadowing"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790404773.915115
   },
   {
    "kind": "article",
@@ -4269,8 +4273,10 @@
     "impossible manifest",
     "MOTHER"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790404773.915115
   },
   {
    "kind": "article",
@@ -4285,8 +4291,10 @@
     "courier humour",
     "maintenance"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790404773.915115
   },
   {
    "kind": "article",
@@ -5343,10 +5351,11 @@
    "cluster": "demos",
    "intent": "Storm wall look-dev bench: stage the shipping storm (nested shells, churn band, fog ramp, screen tint) on rails with scrubbable proximity, time-of-day and quality presets; measure overdraw; export tuned constants JSON for MissionDirector. House palette, shape-glyph legend, CVD check.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo2",
-   "claimed_at": 1790395380.6475031
+   "claimed_at": 1790395380.6475031,
+   "done_at": "2026-09-26T16:43:50"
   },
   {
    "kind": "demo",

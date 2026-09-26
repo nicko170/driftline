@@ -1,0 +1,8 @@
+{
+  "slug": "storm-wall-tuner",
+  "name": "Storm Wall Tuner",
+  "blurb": "Workshop tool, not a game region: a look-dev bench that stages the shipping storm wall on rails — scrub proximity, time-of-day and quality while it measures overdraw and exports tuned constants JSON. Anchors and center live outside the playable map.",
+  "center": [6050, 6050],
+  "radius": 4,
+  "danger": 0
+}
