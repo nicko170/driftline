@@ -1,0 +1,8 @@
+{
+  "slug": "storm-outrun-sandbox",
+  "name": "Storm Outrun Sandbox",
+  "blurb": "Workshop tool, not a game region: a scripted ghost courier outruns (or doesn't) the shipping StormWall on a dusk salt pan while chase, fog, tint and wind-mix parameters tune live. Anchors and center live outside the playable map.",
+  "center": [6850, 5200],
+  "radius": 4,
+  "danger": 0
+}
