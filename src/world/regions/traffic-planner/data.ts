@@ -232,6 +232,9 @@ export function pointAt(pts: [number, number][], s: number): { x: number; z: num
   return _pos;
 }
 
+/** Snap radius (metres) used by the table — pins within this of a named anchor pin to it. */
+export const SNAP_RADIUS_M = 55;
+
 export function nearestAnchor(x: number, z: number, maxM: number): MapAnchor | null {
   let best: MapAnchor | null = null;
   let bd = maxM * maxM;

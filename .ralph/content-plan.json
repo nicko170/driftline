@@ -975,8 +975,10 @@
     "paint",
     "reward"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790390492.3508842
   },
   {
    "kind": "article",
@@ -990,8 +992,10 @@
     "lore-heavy",
     "quiet"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790390492.3508852
   },
   {
    "kind": "article",
@@ -1006,8 +1010,10 @@
     "ketch",
     "joy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790390492.3508859
   },
   {
    "kind": "article",
@@ -1022,8 +1028,10 @@
     "guild",
     "town"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790390492.3508859
   },
   {
    "kind": "article",
