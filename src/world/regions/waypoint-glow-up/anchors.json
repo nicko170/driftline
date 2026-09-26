@@ -1,0 +1,4 @@
+{
+  "bench": { "pos": [5800, 6600], "label": "Beacon workshed bench (off-world)", "elev": 0 },
+  "range": { "pos": [5804, 6596], "label": "Beacon test range (off-world)", "elev": 0 }
+}

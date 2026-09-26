@@ -1,0 +1,8 @@
+{
+  "slug": "waypoint-glow-up",
+  "name": "Waypoint & Beacon Bench",
+  "blurb": "Workshop tool, not a game region: night-range legibility bench for mission markers with colour-blind simulation. Anchors and center live outside the playable map.",
+  "center": [5800, 6600],
+  "radius": 4,
+  "danger": 0
+}
