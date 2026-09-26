@@ -1,0 +1,36 @@
+{
+  "id": "side-beacon-sweep",
+  "title": "Beacon Sweep",
+  "chapter": "side",
+  "type": "scout",
+  "giver": "ketch",
+  "region": "saltmouth",
+  "summary": "Line work, the old kind. Four road beacons between Saltmouth and the Glassroad have gone dark since the last wind, and a dark beacon is how good riders end up in a bad canyon. Ride the sweep, hold station, re-light each one. Pays like charity. Counts like church.",
+  "objectives": [
+    { "type": "scout", "target": "saltmouth:gate-east", "label": "Hold station — re-light beacon one at the east gate" },
+    { "type": "scout", "target": "saltmouth:overlook", "label": "Hold station — re-light beacon two on the dune line" },
+    { "type": "scout", "target": "glassroad:gate-south", "label": "Hold station — re-light beacon three at the south gate" },
+    { "type": "scout", "target": "glassroad:slick-mile", "label": "Hold station — re-light beacon four on the Slick Mile" },
+    { "type": "dropoff", "target": "saltmouth:garage", "label": "Return the charge caddy to Ketch" }
+  ],
+  "rewards": {
+    "credits": 60,
+    "rep": { "driftline": 10 },
+    "flags": ["side-beacon-sweep.done", "lore:lore-driftline-creed"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Four beacons dark between here and the South Gate. Wind got inside the housings again. Before the Driftline had boards and banners, kid, it had this: somebody rides out, stands still in the middle of nowhere, and puts the lights back on for strangers." },
+      { "who": "ketch", "text": "Pays nothing worth the word. But every line you'll ever ride was lit by somebody who took this job, so take it." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Charge caddy's behind the seat. At each beacon, slow right down and hold station while it draws — the coil needs three honest seconds, no faster than prayer. Then bring the caddy home. Even the sweep has paperwork." },
+      { "who": "ash-varga", "text": "Standing still in the middle of the desert. Finally, a mission that matches my braking habits." }
+    ],
+    "complete": [
+      { "who": "ketch", "text": "Four lights burning on the east road. Some hauler you'll never meet gets home tonight because of that, and they'll never know your name. That's the whole job description, kid — the letters between the words." },
+      { "who": "ash-varga", "text": "Sixty credits." },
+      { "who": "ketch", "text": "Told you. Pays like charity, counts like church. The line remembers, even when the ledger doesn't." }
+    ]
+  }
+}

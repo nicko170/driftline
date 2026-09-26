@@ -1,0 +1,33 @@
+{
+  "id": "side-crusher-feed",
+  "title": "Feed the Crusher",
+  "chapter": "side",
+  "type": "collect",
+  "giver": "aunt-vertex",
+  "region": "glassroad",
+  "summary": "Last week's blow shook a whole season of fused glass off the canyon rim, and it is lying out there on the ledges like the desert dropped its good cutlery. Aunt Vertex pays by the bucket for clean shards — the Crusher gets picky when it's hungry, and nobody likes a picky Crusher.",
+  "objectives": [
+    { "type": "collect", "target": "glassroad:gate-south", "count": 3, "label": "Gather rim glass around the south gate ledge (3)" },
+    { "type": "collect", "target": "glassroad:mid-span", "count": 3, "label": "Gather rim glass along the mid-span rim (3)" },
+    { "type": "dropoff", "target": "cinderflats:crusher", "label": "Tip the buckets into the Crusher's feed hopper" }
+  ],
+  "rewards": {
+    "credits": 180,
+    "rep": { "reclaimers": 6 },
+    "flags": ["side-crusher-feed.done", "lore:lore-reclaimer-crusher"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "aunt-vertex", "text": "Duck, the winds did our filing for us — lovely clean glass all over the canyon rim, edges like a sermon. Bucket it up and feed the Crusher, won't you? She's been chewing tailings all month and it makes her melancholy. You can hear it in the amen." },
+      { "who": "aunt-vertex", "text": "Mind the rim on the mid-span, duck. The wind up there reads faster than you do. And take the good gloves — glass that's waited two hundred years to be picked up does hate to be rushed." }
+    ],
+    "accept": [
+      { "who": "aunt-vertex", "text": "Buckets are on your rack, blessed and balanced. Three off the south gate ledge, three along the mid-span rim, then tip the lot into her hopper at the Yards. Do it gentle at the end — first bite of the day is sacred." },
+      { "who": "ash-varga", "text": "I have a degree of uncertainty about feeding a building-sized machine 'gently'." }
+    ],
+    "complete": [
+      { "who": "aunt-vertex", "text": "Oh, listen to her sing! Clean glass, six buckets, taken slow — that's a proper service, duck. The Yards pay your rate with a butterscotch on top, and the Crusher says thank you in the only language she has." },
+      { "who": "aunt-vertex", "text": "Come back when the next blow drops more. The desert prunes, we gather, she eats. Everybody in their liturgy." }
+    ]
+  }
+}

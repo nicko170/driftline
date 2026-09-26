@@ -1,31 +1,34 @@
 {
   "id": "side-storm-window",
-  "title": "Storm Window",
+  "title": "The Weather Goat's Window",
   "chapter": "side",
-  "type": "storm",
-  "giver": "ketch",
+  "type": "timed",
+  "giver": "tamsin-cho",
   "region": "windspine",
-  "summary": "The survey camp's horizon cells are due and the season's first real wall of sand is climbing the flats behind you. Pick up the cells at the east gate cache and beat the storm to the camp.",
+  "summary": "Pemmy the weather goat stamped CLEAR on the brass chart at dawn, which buys exactly one goat-certified window of calm to re-wax the storm gauge's sensors on the far ridge. Three minutes, goat time. The Guild would like its forecast back.",
+  "timeLimit": 210,
   "objectives": [
-    { "type": "pickup", "target": "saltmouth:gate-east", "label": "Grab the horizon cells at the east gate cache" },
-    { "type": "storm", "target": "windspine:survey-camp", "label": "OUTRUN THE WALL — dive into the survey camp" },
-    { "type": "dropoff", "target": "windspine:survey-camp", "label": "Hand the cells to the survey crew" }
+    { "type": "pickup", "target": "saltmouth:water-tower", "label": "Collect the sensor wax from the weather desk loft" },
+    { "type": "dropoff", "target": "windspine:storm-gauge", "label": "Re-wax the storm gauge sensors" },
+    { "type": "dropoff", "target": "saltmouth:water-tower", "label": "Return the stamped slip before the window closes" }
   ],
   "rewards": {
-    "credits": 220,
-    "rep": { "guild": 3, "reclaimers": 2 },
-    "flags": ["side-storm-window.done"]
+    "credits": 260,
+    "rep": { "guild": 5 },
+    "flags": ["side-storm-window.done", "lore:weather-goat-methods"]
   },
   "dialogue": {
     "offer": [
-      { "who": "ketch", "text": "Storm gauge says one hour of window and the gauge is a romantic. Cells are at the east gate cache, camp is up the spine. You'll feel the wall before you see it — the radio goes sad and the light goes the colour of old butter." }
+      { "who": "tamsin-cho", "text": "The weather desk picked a fight with the season again. Pemmy stood on CLEAR this morning and stamped it four times, which the guild reads as a window of exactly three minutes — goat minutes, which run generous but not generous." },
+      { "who": "tamsin-cho", "text": "Storm gauge on the far ridge needs its sensors re-waxed or the whole desk flies blind, and if the desk flies blind, Pemmy retires to a stew pot. Nobody wants that. The goat has seniority." }
     ],
     "accept": [
-      { "who": "ketch", "text": "Route's simple: cells, spine, camp. What the desert adds is up to the desert. If the wall gets close, don't fight it — just be elsewhere." }
+      { "who": "tamsin-cho", "text": "Wax is in the loft by the water tower, next to the brass chart — do not touch the chart, the goat has a union. There and back inside the window. Pemmy has eaten three stopwatches; she knows what three minutes feels like." },
+      { "who": "ash-varga", "text": "Racing a goat's timetable. My career continues its long, dignified arc." }
     ],
     "complete": [
-      { "who": "ketch", "text": "You beat the wall up the spine with cells to spare? That's the run they'll tell at the pumps tonight." },
-      { "who": "ash-varga", "text": "Tell it loud. I'm owed at least one legend against my tab." }
+      { "who": "tamsin-cho", "text": "Back inside the window with the slip stamped. The gauge is singing again and the desk forecasts: dust, wind, and a courier who cuts it fine. Two out of three were already on the chart." },
+      { "who": "ketch", "text": "Ketch here. Tamsin says you outran a goat. Day one at the garage I told you this job had variety." }
     ]
   }
 }

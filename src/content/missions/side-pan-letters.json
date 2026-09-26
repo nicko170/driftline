@@ -1,0 +1,35 @@
+{
+  "id": "side-pan-letters",
+  "title": "Letters for the Drowned",
+  "chapter": "side",
+  "type": "deliver",
+  "giver": "old-bahro",
+  "region": "drowned-array",
+  "summary": "Every month since year one, Saltmouth writes to the crew of the Drowned Array — men and women two centuries gone, whose mail still gets answered by the substation's caretaker machine. Old Bahro's bundle is late. Two sacks west, one stamped reply home.",
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:job-board", "label": "Collect the mail sacks from the board bin" },
+    { "type": "dropoff", "target": "drowned-array:substation", "label": "Leave sack one at the substation mail slot" },
+    { "type": "dropoff", "target": "drowned-array:cache-cairn", "label": "Leave sack two at the cache cairn for the night round" },
+    { "type": "pickup", "target": "drowned-array:substation", "label": "Collect the stamped reply cards" },
+    { "type": "dropoff", "target": "saltmouth:moorage", "label": "Bring the replies back to Old Bahro's bench" }
+  ],
+  "rewards": {
+    "credits": 140,
+    "rep": { "driftline": 4 },
+    "flags": ["side-pan-letters.done", "lore:caretaker-log"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "old-bahro", "text": "Young'un. Sit. No — that crate's spoken for, it's going west. Mail for the Array crews. No, they aren't... no. Two hundred years no. But the substation still keeps the mail slot oiled, and it still answers every letter, and a letter answered is a letter that got somewhere. That's the whole postal creed, that is." },
+      { "who": "old-bahro", "text": "Town writes anyway. Birthdays, scores, who married who. I write to a shift I never met on a panel row that's under three metres of pan water. Started as a joke at the moorage. Stopped being one around year four." }
+    ],
+    "accept": [
+      { "who": "old-bahro", "text": "Two sacks. One in the slot at the substation — the caretaker sorts it at lamp frequency, don't ask me what that means, it's what the man said. Second sack goes on the cache cairn for the night round, and don't— the cairn knows. Bring back whatever's stamped. Mind the boards where it's wet." },
+      { "who": "ash-varga", "text": "Delivering letters to the drowned, answered by a machine that never learned to stop. Sure. That's a Tuesday now." }
+    ],
+    "complete": [
+      { "who": "old-bahro", "text": "Stamped same day. Same hour, look — it answers while you ride. 'Panel Row Eleven, consumption nominal, morale retained. Tell the moorage the light's still on.' Two hundred years, young'un, and that machine still says the light's still on like it's keeping a promise somebody else forgot to make." },
+      { "who": "old-bahro", "text": "Last card's mine. Take it— no. Read it there. It says 'B., shift change Sunday, bring the good flask.' I wrote that in year one and never sent it. Reckon the machine knew before I did. Anyway. Light's still on. Somebody ought to keep writing." }
+    ]
+  }
+}
