@@ -57,20 +57,28 @@ export default function Scope() {
 
       const n = ring.len;
       if (n < 2) return;
-      const x0 = w - n; // newest sample pinned to the right edge
-      const xAt = (i: number) => x0 + (i / RING) * w;
+      // k = 0..n-1 oldest→newest; samples span n/RING of the width,
+      // newest pinned to the right edge, history grows leftwards.
+      const pxPerSample = w / RING;
+      const xOf = (k: number) => w - (n - k) * pxPerSample;
 
-      /* second grid (RING samples = 8 s at 60 fps) */
+      /* second grid (60 samples = 1 s at 60 fps) */
       ctx.strokeStyle = BONE(0.08);
       ctx.lineWidth = 1;
-      for (let s = 1; s < RING / 60; s++) {
-        const idx = (ring.head - s * 60 + RING * 2) % RING;
-        if (idx >= n && ring.len < RING) continue;
-        const order = ring.head - idx <= 0 ? ring.head - idx + n : ring.head - idx;
-        const x = x0 + ((n - order) / RING) * w;
+      for (let s = 1; s * 60 < n; s++) {
+        const x = w - s * 60 * pxPerSample;
         ctx.beginPath();
         ctx.moveTo(x, 0);
         ctx.lineTo(x, plotH);
+        ctx.stroke();
+      }
+      /* quarter-height rulings */
+      ctx.strokeStyle = BONE(0.05);
+      for (let q = 1; q < 4; q++) {
+        const y = (plotH / 4) * q;
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(w, y);
         ctx.stroke();
       }
 
@@ -82,31 +90,26 @@ export default function Scope() {
         width: number,
         fillBelow: string | null,
       ) => {
-        ctx.beginPath();
-        for (let k = 0; k < n; k++) {
-          const idx = (ring.head + RING - n + k) % RING;
-          const x = x0 + (k / RING) * w;
-          const y = plotH - Math.min(1, data[idx] / max) * (plotH - 2 * dpr) - dpr;
-          if (k === 0) ctx.moveTo(x, y);
-          else ctx.lineTo(x, y);
-        }
+        const spine = () => {
+          ctx.beginPath();
+          for (let k = 0; k < n; k++) {
+            const idx = (ring.head + RING - n + k) % RING;
+            const x = xOf(k);
+            const y = plotH - Math.min(1, data[idx] / max) * (plotH - 2 * dpr) - dpr;
+            if (k === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+          }
+        };
+        spine();
         if (fillBelow) {
           ctx.save();
-          ctx.lineTo(x0 + ((n - 1) / RING) * w, plotH);
-          ctx.lineTo(x0, plotH);
+          ctx.lineTo(xOf(n - 1), plotH);
+          ctx.lineTo(xOf(0), plotH);
           ctx.closePath();
           ctx.fillStyle = fillBelow;
           ctx.fill();
           ctx.restore();
-        }
-        // replay the spine as a stroke (path was consumed by the fill)
-        ctx.beginPath();
-        for (let k = 0; k < n; k++) {
-          const idx = (ring.head + RING - n + k) % RING;
-          const x = x0 + (k / RING) * w;
-          const y = plotH - Math.min(1, data[idx] / max) * (plotH - 2 * dpr) - dpr;
-          if (k === 0) ctx.moveTo(x, y);
-          else ctx.lineTo(x, y);
+          spine(); // path was consumed by the fill
         }
         ctx.strokeStyle = color;
         ctx.lineWidth = width;
@@ -127,8 +130,8 @@ export default function Scope() {
       for (let k = 0; k < n; k++) {
         const idx = (ring.head + RING - n + k) % RING;
         ctx.fillStyle = SURF_FILL[ring.surf[idx]];
-        const x = x0 + (k / RING) * w;
-        ctx.fillRect(x, h - lane + dpr, Math.max(1, (w / RING) * dpr) + 0.5, lane - 2 * dpr);
+        const x = xOf(k);
+        ctx.fillRect(x, h - lane + dpr, Math.max(1, pxPerSample) + 0.5, lane - 2 * dpr);
       }
       ctx.strokeStyle = BONE(0.18);
       ctx.beginPath();

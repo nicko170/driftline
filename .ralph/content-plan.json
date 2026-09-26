@@ -4413,10 +4413,11 @@
     "pre-dormancy",
     "secrets"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405716.040191
+   "claimed_at": 1790405716.040191,
+   "done_at": "2026-09-26T16:58:13"
   },
   {
    "kind": "article",
@@ -4431,10 +4432,11 @@
     "hazards",
     "courier skills"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405716.040192
+   "claimed_at": 1790405716.040192,
+   "done_at": "2026-09-26T16:58:13"
   },
   {
    "kind": "article",
@@ -4449,10 +4451,11 @@
     "side characters",
     "youth culture"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405716.040192
+   "claimed_at": 1790405716.040192,
+   "done_at": "2026-09-26T16:58:25"
   },
   {
    "kind": "article",
@@ -4467,10 +4470,11 @@
     "heroism",
     "history"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405716.040192
+   "claimed_at": 1790405716.040192,
+   "done_at": "2026-09-26T16:58:15"
   },
   {
    "kind": "article",
@@ -4701,10 +4705,11 @@
    "cluster": "demos",
    "intent": "An interactive arcade-physics tuning toy for the Driftline hover-bike feel. A figure-eight salt pan with painted grip zones (salt 1.0, sand 0.8, glass 0.5) and a telemetry strip: speed, lateral slip, drift reward window, boost meter curves drawn on a small canvas scope. Live sliders for accel, top speed, grip by surface, drift-exit boost multiplier, hop impulse, boost regen — each instant-applied to a test bike the player drives (reuse the Bike controller constants, don't fork physics). Show upgrade ladder pips (engine/handling/boost 0-3) against the curve graph so designers see headroom. One-click 'baseline' reset and copy-settings-JSON. Stark readable DRIFTLINE visuals: flat shading, big silhouettes, amber/teal colour-shape coding, dust puffs; 60fps, no console errors.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo2",
-   "claimed_at": 1790405058.072432
+   "claimed_at": 1790405058.072432,
+   "done_at": "2026-09-26T17:02:04"
   },
   {
    "kind": "demo",
@@ -4732,8 +4737,11 @@
     "shrine",
     "oil"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405910.6095722,
+   "done_at": "2026-09-26T17:02:18"
   },
   {
    "kind": "article",
@@ -4748,8 +4756,11 @@
     "gauge",
     "pemmy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405910.6095722,
+   "done_at": "2026-09-26T17:02:18"
   },
   {
    "kind": "article",
@@ -4764,8 +4775,10 @@
     "decibel",
     "vespers"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405910.6095722
   },
   {
    "kind": "article",
@@ -4780,8 +4793,10 @@
     "keys",
     "solder"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405910.6095722
   },
   {
    "kind": "article",
