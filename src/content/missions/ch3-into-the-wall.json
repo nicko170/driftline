@@ -1,0 +1,39 @@
+{
+  "id": "ch3-into-the-wall",
+  "title": "Into the Wall",
+  "chapter": 3,
+  "type": "storm",
+  "giver": "ketch",
+  "region": "windspine",
+  "summary": "Rill's transponder fragments triangulated one thing before they died: her cache is down in the murk at the ridge foot, and the storm that took her is squatting on top of it. Somebody has to ride into the wall on purpose. The somebody has a bike, a debt, and no sense.",
+  "requires": { "flags": ["ch3-rill-missing.done"] },
+  "objectives": [
+    { "type": "goto", "target": "windspine:storm-gauge", "label": "Take a bearing at the storm gauge, last honest instrument on the ridge" },
+    { "type": "pickup", "target": "windspine:south-foot", "label": "Into the murk — find Rill's dropped cache at the ridge foot" },
+    { "type": "storm", "target": "saltmouth:gate-east", "label": "THE WALL TURNS — run it home to the east gate" },
+    { "type": "dropoff", "target": "saltmouth:garage", "label": "Put the cache on Ketch's bench" }
+  ],
+  "rewards": {
+    "credits": 320,
+    "rep": { "driftline": 8, "guild": 2 },
+    "flags": ["ch3-into-the-wall.done", "rill.cache", "lore:lore-rill-flight-log-1"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Kid. Sit down. You don't sit down in a garage, fine — lean. The fragments you pulled off the ridge all hum in the same direction, and it isn't toward a grave. It's toward her cache bag. She dropped it running." },
+      { "who": "ketch", "text": "Trouble is the storm's been parked on the ridge foot for two days like it paid rent. Nobody rides into a held wall. It's not done. It's the opposite of done." },
+      { "who": "ash-varga", "text": "Rill rode into it." },
+      { "who": "ketch", "text": "…Rill is an idiot with excellent posture. Bring me her cache, kid. If that bag's got her logbook in it, it'll tell us where she holed up. Gauge first. And kid — thirty years I never said this to a courier: don't be brave. Be *back*." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Storm gauge reads the wall's mood. Take your bearing there, then drop down the south foot into the murk. Visibility will be a rumour. Ride the terrain, not your eyes." },
+      { "who": "static-warden-pem", "text": "Pem on band nine, station. I have been listening to your storm all night. It is not reciting today — it is *counting*. Objects in its path. Ride politely. Do not be counted." },
+      { "who": "ash-varga", "text": "Copy. Into the held wall, grab the bag, don't be counted. Worst shopping list I've ever accepted." }
+    ],
+    "complete": [
+      { "who": "ketch", "text": "That's the bag. That's her logbook — thirty years of her terrible handwriting — and… her spare horizon cell. Cracked clean through, and it's *still holding a bearing*. Cells don't do that, kid. Dead ones especially." },
+      { "who": "ash-varga", "text": "It's pointing east of the ridge. Bearing's weak but it's steady. That's where he went to ground. Ketch — the cell got warmer the closer I held it to the storm side of the room." },
+      { "who": "ketch", "text": "Mm. I'll tell myself that's electronics. Read me Rill's last log page while I open the cell up — and keep the radio on nine. Pem's storm wasn't counting rocks out there. It was counting *us*." }
+    ]
+  }
+}

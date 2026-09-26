@@ -239,10 +239,11 @@
     "rescue",
     "visibility"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790381060.6958668
+   "claimed_at": 1790381060.6958668,
+   "done_at": "2026-09-26T10:26:38"
   },
   {
    "kind": "article",
@@ -257,10 +258,11 @@
     "choir",
     "storm"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790381060.695869
+   "claimed_at": 1790381060.695869,
+   "done_at": "2026-09-26T10:26:41"
   },
   {
    "kind": "article",
@@ -275,10 +277,11 @@
     "choice",
     "factions"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790381060.695869
+   "claimed_at": 1790381060.695869,
+   "done_at": "2026-09-26T10:26:41"
   },
   {
    "kind": "article",
@@ -293,10 +296,11 @@
     "rill",
     "finale"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790381060.695869
+   "claimed_at": 1790381060.695869,
+   "done_at": "2026-09-26T10:26:43"
   },
   {
    "kind": "article",
@@ -310,8 +314,10 @@
     "coordinates",
     "mothersgate"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790382173.310457
   },
   {
    "kind": "article",
@@ -325,8 +331,10 @@
     "crate",
     "mothersgate"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790382173.310457
   },
   {
    "kind": "article",
@@ -340,8 +348,10 @@
     "dialogue",
     "tour"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790382173.3104582
   },
   {
    "kind": "article",
@@ -355,8 +365,10 @@
     "world change",
     "glassroad"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790382173.3104582
   },
   {
    "kind": "article",

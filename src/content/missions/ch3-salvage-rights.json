@@ -1,0 +1,48 @@
+{
+  "id": "ch3-salvage-rights",
+  "title": "Salvage Rights",
+  "chapter": 3,
+  "type": "deliver",
+  "giver": "boss-pyke",
+  "region": "cinderflats",
+  "summary": "The season's first wall ate a Guild crawler out on the pan — and a Reclaimer crew was winching it before the sand settled. Two claims, one wreck, decades of bad manners. By Driftline custom a neutral courier carries both claim tokens to the dockmaster at Keel Town, and the order they cross her desk decides who owns a fortune in stranded steel.",
+  "requires": { "flags": ["ch3-first-wall.done"] },
+  "objectives": [
+    { "type": "pickup", "target": "cinderflats:boss-office", "label": "Take the Union's claim ingot from Pyke's office" },
+    { "type": "pickup", "target": "saltmouth:exchange", "label": "Take the Guild's counter-claim, sealed in manifest wax, from Tamsin" },
+    { "type": "goto", "target": "skydocks:winch-base", "label": "Run both claims up to the winch base" },
+    { "type": "dropoff", "target": "skydocks:dockmaster", "label": "Lay both claims on the dockmaster's desk — order matters" }
+  ],
+  "rewards": {
+    "credits": 280,
+    "rep": { "driftline": 6, "guild": 3, "reclaimers": 3 },
+    "flags": ["ch3-salvage-rights.done", "lore:salvage-code"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "boss-pyke", "text": "Chief! Perfect, a neutral party with a fast bike and no lawyers. Storm dropped a Guild crawler on the pan two nights back. My crew had lines on it before the engines cooled — standard salvage, clearly posted, one hundred percent union-labeller legal." },
+      { "who": "boss-pyke", "text": "Then the Guild arrives with a form that says a crawler 'in distress' is still their property, and suddenly MY winch crew is 'an armed infestation'. We are, at worst, a *polite* infestation." },
+      { "who": "tamsin-cho", "text": "Tamsin Cho, Guild band, since everyone is naming themselves. Courier: the custom is old and both sides honour it. One courier carries both claims to Keel Town. The dockmaster countersigns in the order received. First signature wins the wreck." },
+      { "who": "ash-varga", "text": "So the entire dispute comes down to which piece of metal I hand over first. This is the most honest politics I've ever heard of." }
+    ],
+    "accept": [
+      { "who": "boss-pyke", "text": "Claim ingot's stamped and weighed, chief. Article Three: *we were there first, with tools*. Remember — the Guild wants that crawler shelved next to their conscience. We want it working. One of those is a *life*." },
+      { "who": "tamsin-cho", "text": "The Guild's counter-claim is in manifest wax. Do not read it, do not hum near it, and do not believe the bit where it calls the Reclaimers 'weather-adjacent'. …Personally, courier, I price arguments, not winners. But do ride *fast*." },
+      { "who": "ketch", "text": "Ketch here. Word of advice from the last courier who ran double claims — me, thirty years ago. Both tokens ride in separate panniers. Metal remembers what it's touching, and the desert loves a bribe." }
+    ],
+    "complete": [
+      { "who": "dockmaster-devanna", "text": "Both claims received, weighed, and warm from the road. Pen's ready, courier. Before I sign anything — log note for the record: I ran a crawler like her for six seasons. Whatever I sign, *somebody's* going to remember this order at every mooring from here to the gate. So choose like the desert's watching. It is." },
+      { "who": "ketch", "text": "Signed and witnessed, kid. However it fell — that's the job. The Driftline doesn't pick sides; it picks *up*. Both, mostly, at once." },
+      { "who": "brinemaster-ogo", "text": "Ogo on the Guild band. The Brinemaster has noted the courier's conduct in the crawler matter. Noted it *down*, with a date and a small star. The meaning of the star is Guild business." }
+    ],
+    "choices": [
+      {
+        "prompt": "Dockmaster Shore holds the pen over the manifest. Which claim crosses her desk first?",
+        "options": [
+          { "text": "The Guild's counter-claim. Property is property — the crawler was theirs before the storm.", "setsFlag": "salvage.guild" },
+          { "text": "The Union's claim ingot. They were there first, with tools — salvage is a kind of rescue.", "setsFlag": "salvage.reclaimers" }
+        ]
+      }
+    ]
+  }
+}

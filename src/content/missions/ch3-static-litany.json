@@ -1,0 +1,41 @@
+{
+  "id": "ch3-static-litany",
+  "title": "Static Litany",
+  "chapter": 3,
+  "type": "fragile",
+  "giver": "static-warden-pem",
+  "region": "choirhollow",
+  "summary": "Storm season cracks choir-glass if it rides rough, and the temple's great horn is deaf until its new pane arrives. Pem has annealed a fresh sheet in the glass chapel's old burn and needs it carried down through a closing storm window — unbroken, unhurried, and, ideally, unlistened-to.",
+  "requires": { "flags": ["ch3-first-wall.done"] },
+  "timeLimit": 300,
+  "cargo": { "fragile": true, "label": "the unbroken pane" },
+  "objectives": [
+    { "type": "pickup", "target": "glassroad:glass-chapel", "label": "Lift annealed choir-glass from the glass chapel racks" },
+    { "type": "dropoff", "target": "choirhollow:temple-steps", "label": "Set the pane at the temple steps before the window seals" },
+    { "type": "goto", "target": "choirhollow:listening-horn", "label": "Hold position while Pem reads the storm off the glass" }
+  ],
+  "rewards": {
+    "credits": 300,
+    "rep": { "choir": 8, "driftline": 3 },
+    "flags": ["ch3-static-litany.done", "lore:lore-choir-litany-2"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "static-warden-pem", "text": "Station. The storm season has opinions, and this week it expressed them through our great horn. The pane is *shattered*, and a deaf horn hears nothing. Hearing nothing, station, is worse than it sounds." },
+      { "who": "static-warden-pem", "text": "A new sheet has been annealing in the chapel burn since yesterday. Choir-glass keeps the memory of every vibration of its cooling. If it rides rough, it cools *wrong* — and then it will only ever sing the road, and never the voice." },
+      { "who": "ash-varga", "text": "You want me to carry a six-foot pane of haunted glass across the desert, gently, against the clock, while a storm tries to lean on it." },
+      { "who": "static-warden-pem", "text": "When you say it, it sounds like faith. Good. Carry it like faith, station." }
+    ],
+    "accept": [
+      { "who": "static-warden-pem", "text": "The window between the walls is four, perhaps five minutes of clean air. My radio will count you down in its way. If the glass begins to hum a note you did not give it — do not hum back." },
+      { "who": "cantor-ilex", "text": "The Hollow is lighting every lamp for your road, courier. The glass knows the way home. We merely ask you not to drop home." },
+      { "who": "ketch", "text": "Ketch here. Choir-glass on a hover-bike in storm season. I've seen worse ideas — Rill's full of them — but smooth hands, kid. Drift the bends, don't fight them. Cracks come from *surprise*." }
+    ],
+    "complete": [
+      { "who": "static-warden-pem", "text": "Whole. Not spider-webbed, not sung. Station — do you know how rare it is that anything crosses that desert *whole*? The glass is cooling on the horn now and it is… oh. Oh, listen." },
+      { "who": "static-warden-pem", "text": "It kept a memory of the storm anyway — not the crashing, the *counting*. It cooled with the rhythm in it. Forty years of notebooks, station, and this pane just indexed itself. I shall call it a litany. The Choir will call it a hymn. The storms will call it, eventually, *back*." },
+      { "who": "ash-varga", "text": "It's playing my ride? The brake dip at the chapel gate, the drift over the slick — I can hear my own line in it. That's… keep the volume low, Warden." },
+      { "who": "static-warden-pem", "text": "Low, yes. But never off. The courier's part is written into the glass now, station. Whatever is waking out there — it knows a Driftline engine note when it hears one." }
+    ]
+  }
+}

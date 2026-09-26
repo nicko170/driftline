@@ -1,0 +1,37 @@
+{
+  "id": "rill-davenant",
+  "name": "Rill Davenant",
+  "role": "Senior Driftline courier, currently missing",
+  "faction": "driftline",
+  "home": "saltmouth",
+  "bio": "Twenty-two years on the Driftline and never once on time, always once on target. Rill rides like the desert owes her applause — deep drifts, late brakes, salutes to empty dunes. Owes Ketch four hundred credits she insists are 'an investment in momentum'. Vanished mid-run in the season's first wall and stayed missing long enough for everyone to rehearse a eulogy. Found sleeping rough in an erosion cave, half-mad, reciting coordinates in a voice that wasn't entirely doing the reciting.",
+  "appearance": "Lean, long-armed woman around forty with a sun-crinkled grin built for an audience, copper-brown skin, grey streaks at the temples, cracked amber flight goggles pushed up on his forehead, a frayed amber courier scarf, and a horizon-cell charm on a cord he taps for luck before every bad idea.",
+  "voice": "Warm show-off, all flourish and follow-through. Announces her own entrances, narrates her own drifts. Calls the desert 'the audience' and Ketch 'my sponsor'. Post-cave: same warmth, but the numbers drop out of her mid-sentence, flat and precise, like a second station fading in over his voice.",
+  "portrait": "images/articles/characters/rill-davenant.jpg",
+  "lines": {
+    "greetings": [
+      "Ash Varga! The new one! Excellent posture, terrible racing line, huge future. I said what I said.",
+      "You caught me practising my disappearance. How was it? I took notes on the audience reaction.",
+      "Four hundred credits, Ketch! Plus interest in your *respect*, which compounds."
+    ],
+    "barks": [
+      "The drift isn't late, the *corner* is early.",
+      "Boost is just courage with a meter on it.",
+      "Salute the turbines. They work hard and nobody claps."
+    ],
+    "mission": [
+      "Take the ridge line at full chat — the wall respects commitment. Also insurance. Mostly commitment.",
+      "If the storm says your name, say its name back. Manners, Ash. Then be elsewhere.",
+      "The null crate hums at my pannier, did you know? We've been harmonising. It's dreadful and I love it."
+    ],
+    "radio": [
+      "Rill on the band, outrunning weather and debt simultaneously — a personal record!",
+      "Note for the log: the wall has a seam on the west shoulder. The seam *moved*. Log's closed. Therapy pending.",
+      "Four-one-seven, mark, and the dunes agree — disregard, disregard, that's not a broadcast, that's just how I pray now."
+    ],
+    "post-rescue": [
+      "I slept in a singing cave and all I got was these coordinates and this unshakeable sense of being *expected*.",
+      "The numbers come easier than names now, Ash. I remember the door's address better than my mother's face. That's going to cost me at confession."
+    ]
+  }
+}

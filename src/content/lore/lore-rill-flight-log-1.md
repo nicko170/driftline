@@ -3,29 +3,29 @@ title: "Rill Davenant's Flight Log — Early Entries"
 slug: "lore-rill-flight-log-1"
 cluster: "lore"
 category: "log"
-summary: "A young courier's first seasons on the flats: following-wind jokes, ridge-biting, and the small habits — the knots, the counting, the culverts with biscuits — that read very differently once you know what goes quiet on the north loop."
+summary: "Pages from a young Rill Davenant's courier logbook, recovered with her dropped cache — jokes about storms, debts and saluting turbines that read very differently now that the storms have started talking back."
 ---
 
-*Recovered from the Saltmouth garage's log drawer, where Ketch keeps every courier's first-year logs "for insurance and ammunition." Davenant's is in pencil because, per the first page, "pencil survives the rain we're going to have eventually." Entries abridged from her first two seasons.*
+*Recovered from Rill Davenant's cache bag, ridge foot, during the storm-season search. Water-stained, sand-blasted, and comprehensively annotated by its author, who footnotes himself with no shame. — K.*
 
----
+**Year One, somewhere on the flats.**
 
-## Entries, seasons one and two
+First solo run. Ketch says: keep the terrain closer than your fear. Wrote it on my hand. Lost the hand under a sleeve, kept the fear anyway. Made the drop. Ketch says fear is fine, fear is data. Ketch says a lot of things. Four hundred credits he says I owe him for the vanes. That isn't debt, that's *sponsorship*.
 
-**Day 4.** Ketch says the bike learns your weight before you learn its moods. Mine is second-hand, third-hand if you count the pigeon, and it learned my weight and filed a complaint. Named her anyway. A bike without a name is just debt with a seat. Flat salt.
+**Year Two.**
 
-**Day 19.** First solo run to the turbine row. The survey camp dispatcher radioed "following wind" and then, quieter, "north loop's honest, mostly." Asked Ketch what "mostly" was doing in that sentence. He did the thing where he looks at the horizon like it owes him eight thousand credits. "Mostly is the whole desert, kid," he said. "Log everything."
+Saluted the turbines on the ridge today, full arm, both hands off the bars for almost a second. Nobody saw. Makes it *more* important. Somebody's got to clap for the machines. They were here before the money ran out and they'll be here after we run out, spinning for nobody. Least a courier can do is be an audience.
 
-**Day 40.** Learned to bite the ridge today — high line, save six minutes, spend one (1) stomach. Counted the towers on the way down like Ketch taught: odd count on the way out, even on the way home, and if the numbers ever disagree you've picked up a tower or lost a tower and both of those are above my pay grade. Anyway: eleven out, eleven home, which I'll be reporting to no one.
+**Year Three.**
 
-**Day 88.** Culvert run in storm season training. The creed says any storm; the subtext is biscuits. Sat out a wall of sand in a drainage pipe with half a packet and the best view of my life going past at killing speed. Wrote my name on the culvert wall next to four other couriers', as is custom. One of the older names had the storm-date carved under it and no new names after. Pretended very hard that was a retirement.
+Storm took the east pan road at dusk. I watched it from the overlook like you watch a sea. Funny thing: I keep thinking the fronts have intentions. This one moved like it was *looking* for the road. Under the wind noise there was a rhythm, like counting. Ash, if you ever read this — and you will, junior couriers steal senior logbooks, it's tradition — storms count what crosses them. Cross politely.
 
-**Day 130.** The tall turbines sing when the wind crosses them right — it's almost a voice if you're tired enough, and I am always exactly tired enough. Joked on the radio that the ridge was saying my name. Ketch's response was forty seconds of static and then: "If the desert says your name, Davenant, you say it back WRONG, and you keep riding." He was joking. He was doing the horizon look while he joked.
+**Year Five, the good cave.**
 
-**Day 201.** New habit: tying my jacket to a tower leg at the crest on rest days, watching it flag around. Ketch saw the knot and got quiet — that specific teacher-quiet — then made me retie it facing the hollow side of the line, "so if you're ever quiet, the line can read you from the air." Morbid old man. Morbid, excellent, knot-happy old man. Tied it his way. It looks good. Everything he ties looks good from the air.
+Found the cave under the ridge foot, the one with the acoustic kink. Sat in it an hour. Shouted my name and it came back wrong, lower, slower. Shouted it again and it came back *first*. I know how echoes work. I know how echoes work. Writing it twice doesn't help.
 
-**Day 233.** Little Reverb came by the garage, that Choir kid, stood in the door inverted-print quiet, and said the desert had started saying a tall courier's name. "Wrong," she said, "the way it does." I told her the desert says everyone's name wrong, that's half the fun, ask Ketch. She said: "Rill. It's getting better at it." Then she left, and the radio hissed all evening like a cat that knows the carrier means the vet.
+Note to self, since caves are good listeners: if I ever go missing, check here. Bring my logbook so I can remember being young and wrong. Tell Ketch the four hundred credits are an investment in momentum. Tell the desert I saluted it back.
 
-Following wind, me. Log everything. Eleven out, eleven home.
+*The later pages of the logbook are missing — torn out, not burnt. The bearing Rill's cracked horizon cell held points at exactly this cave system. We found him there four days into the season, asleep, counting. — K.*
 
-*— The log drawer has a second folder now. Ketch added it himself. The pencil survived; the creed says the line goes looking; this is the going-looking.*
+*She says the cave was "a very good listener". I have decided not to ask what it said back. — K.*

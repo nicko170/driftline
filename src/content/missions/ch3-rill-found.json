@@ -1,0 +1,40 @@
+{
+  "id": "ch3-rill-found",
+  "title": "The Shelter Line",
+  "chapter": 3,
+  "type": "escort",
+  "giver": "ketch",
+  "region": "windspine",
+  "summary": "Rill's cracked horizon cell held its bearing all the way home, and it points at an erosion cave under the ridge foot — where a Driftline courier has been sleeping rough, talking to a wall, and reciting numbers in her sleep. Walk her home along the old shelter line. Slow. Close. Before the season notices she's missing from it.",
+  "requires": { "flags": ["ch3-into-the-wall.done", "rill.cache"] },
+  "objectives": [
+    { "type": "goto", "target": "windspine:south-foot", "label": "Follow the cell's bearing to the erosion cave at the ridge foot" },
+    { "type": "escort", "target": "windspine:south-foot", "targets": ["windspine:south-foot", "saltmouth:overlook", "saltmouth:gate-east", "saltmouth:garage"], "speed": 9, "label": "Walk Rill's wagon home along the shelter line — stay close" },
+    { "type": "dropoff", "target": "saltmouth:garage", "label": "Get Rill inside, off the wind" }
+  ],
+  "rewards": {
+    "credits": 360,
+    "rep": { "driftline": 10, "guild": 2, "choir": 2 },
+    "flags": ["ch3-rill-found.done", "rill.found", "rill.coordinates", "lore:lore-rill-coordinates"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Kid. The cell's bearing cross-checks with the last line in Rill's logbook: *'cave under the foot, the good one, the singing one.'* She went to ground before the wall took the ridge. She's been down there four days." },
+      { "who": "ash-varga", "text": "Four days in a cave in storm season. What shape is she in, Ketch?" },
+      { "who": "ketch", "text": "Radio pinged her suit beacon at dawn. It's broadcasting on the old band, and under the beeps there's… talking. Steady, rhythmic, mostly numbers. Kid, you bring her home *slow*. Her wagon's still got legs — vane walkers, low gear. You keep pace beside her like the old shelter-line runs, and you do not let the season find a gap between you and her." },
+      { "who": "ketch", "text": "One more thing. Whatever she's saying — write it down. All of it. Even the parts that aren't numbers." }
+    ],
+    "accept": [
+      { "who": "static-warden-pem", "text": "Station — Pem, on nine. I have been listening to your missing courier's beacon for four days. What he is reciting is not weather and it is not madness. It is an *address*. Knock gently when you arrive. She is mid-conversation." },
+      { "who": "ash-varga", "text": "Copy. Ridge foot, south cave, one sleeping courier, conversational walls. Ridge foot by noon." },
+      { "who": "ketch", "text": "Flat salt and a following wind, kid. Bring my idiot home." }
+    ],
+    "complete": [
+      { "who": "rill-davenant", "text": "…four-one-seven, mark, the door stands where the dunes agree, four-one-*seven*, keep the amber on the left shoulder and the — oh. Hello, Ash. You're the new one. Ketch owes me money." },
+      { "who": "ketch", "text": "I owe you a *funeral suit*, you vein of rust — four days! Four days I rehearsed the eulogy, Rill, and it was *complimentary*— get in the garage, off the wind, before I miscount my blessings." },
+      { "who": "rill-davenant", "text": "Did I do the numbers out loud? I do them in my sleep now. Four-one-seven, mark… Ash. Your crate is a key, you know. The cave told me. The cave is a *very good listener*." },
+      { "who": "ash-varga", "text": "Ketch. I wrote down everything she said on the wagon — and every number she gave me is *lit up* on my map grid. All of them, same spot, past the far glass hills. There's a door out there, and Rill just slept-talked us its address." },
+      { "who": "ketch", "text": "…Pin it. Copy it, seal it, and nobody rides that grid alone. Storm season's got half a season left in it, and now it's got a *destination*. Sleep first, kid. The end of the world can hold for one night." }
+    ]
+  }
+}
