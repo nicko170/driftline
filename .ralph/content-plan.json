@@ -3927,8 +3927,10 @@
     "economy",
     "comedy"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer1",
+   "claimed_at": 1790389916.7450292
   },
   {
    "kind": "article",
@@ -3942,8 +3944,10 @@
     "ch4",
     "MOTHER"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer1",
+   "claimed_at": 1790389916.74503
   },
   {
    "kind": "article",
@@ -3957,8 +3961,10 @@
     "missing",
     "log"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer1",
+   "claimed_at": 1790389916.7450309
   },
   {
    "kind": "article",
@@ -3972,8 +3978,10 @@
     "riding",
     "ch3"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer1",
+   "claimed_at": 1790389916.7450309
   },
   {
    "kind": "article",

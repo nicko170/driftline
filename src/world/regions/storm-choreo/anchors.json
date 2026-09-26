@@ -1,0 +1,4 @@
+{
+  "bench": { "pos": [6600, 6600], "label": "Storm choreo bench (off-world)", "elev": 0 },
+  "board": { "pos": [6606, 6594], "label": "Tactical storm board (off-world)", "elev": 0 }
+}

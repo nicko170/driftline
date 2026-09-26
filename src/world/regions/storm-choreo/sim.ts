@@ -156,6 +156,11 @@ export function runTrial(p: ChoreoParams, rng: () => number, wantTrace = false):
   const topEff = p.bikeTop * (1 - 0.09 * rng() * p.noise);
   const accel = p.accel * (1 - 0.12 * rng() * p.noise);
   let err = (rng() - 0.5) * 1.1 * p.noise;
+  // a far wall isn't scary: the courier lolls at a cruise fraction until the
+  // face closes inside their (noisy) scare distance — the pressure the whole
+  // pursuit curve rides on
+  const scare = 240 + p.noise * (rng() - 0.5) * 140;
+  const cruiseFrac = 0.68 + 0.12 * p.noise * rng() - 0.05 * p.noise;
   let boostLeft = p.boostTime;
   let t = 0;
   let face = Math.hypot(sx, sz) - p.radius;
@@ -174,8 +179,9 @@ export function runTrial(p: ChoreoParams, rng: () => number, wantTrace = false):
       const w = (1 - face / 160) * (0.35 + 0.75 * p.noise);
       err += wrap(dodge - err) * w * 6 * dt;
     }
-    const boosting = face < 220 && boostLeft > 0 && t > tReact;
-    const target = t <= tReact ? 0 : topEff * (boosting ? p.boostKick : 1);
+    const cruising = face > scare && t > tReact && v > 2;
+    const boosting = !cruising && face < 220 && boostLeft > 0 && t > tReact;
+    const target = t <= tReact ? 0 : cruising ? topEff * cruiseFrac : topEff * (boosting ? p.boostKick : 1);
     if (v < target) v = Math.min(target, v + accel * dt);
     else v = Math.max(target, v - accel * 1.6 * dt);
     if (boosting) boostLeft -= dt;
@@ -211,7 +217,7 @@ export interface Verdict {
   note: string;
 }
 
-export function verdictFor(survival: number): Verdict {
+export function verdictFor(survival: number, p10Face: number): Verdict {
   if (survival < 0.45)
     return { glyph: '▲', label: 'Funeral weather', cls: 'bad',
       note: 'The wall wins most runs. Back off spawn distance, speed or radius — or issue faster bikes.' };
@@ -221,9 +227,13 @@ export function verdictFor(survival: number): Verdict {
   if (survival < 0.88)
     return { glyph: '◆', label: 'Tense but fair', cls: 'fair',
       note: 'Heart-rate territory: palms sweat, nobody drowns. Ship it.' };
-  if (survival < 0.97)
+  // nearly everyone survives — grade the tension by how close the face skims
+  if (p10Face <= 160)
+    return { glyph: '◆', label: 'Tense but fair', cls: 'fair',
+      note: 'The face skims close and nobody drowned. The wall has opinions but the door was open.' };
+  if (p10Face <= 300)
     return { glyph: '▣', label: 'Comfortable commute', cls: 'mild',
-      note: 'Tension sags. Shrink the spawn-back or wind the rubber-band up.' };
+      note: 'Everyone lives and the face never truly threatens. Shrink spawn-back or wind the rubber-band up.' };
   return { glyph: '◉', label: 'Postage run', cls: 'flat',
     note: 'The wall is set dressing. Tighten the pursuit curve until it has opinions.' };
 }
@@ -271,17 +281,18 @@ export function runMonteCarlo(p: ChoreoParams): MCResult {
   const q = (arr: number[], f: number) =>
     arr.length === 0 ? 0 : arr[clamp(Math.floor(f * (arr.length - 1)), 0, arr.length - 1)];
   const survival = sheltered / p.trials;
+  const p10Face = q(faces, 0.1);
   return {
     trials: p.trials,
     sheltered, caught, timeouts,
     survival,
     medTime: q(times, 0.5),
     medFace: q(faces, 0.5),
-    p10Face: q(faces, 0.1),
+    p10Face,
     p90Face: q(faces, 0.9),
     hist,
     ms: performance.now() - t0,
-    verdict: verdictFor(survival),
+    verdict: verdictFor(survival, p10Face),
   };
 }
 

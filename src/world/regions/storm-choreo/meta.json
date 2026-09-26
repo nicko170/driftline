@@ -1,0 +1,8 @@
+{
+  "slug": "storm-choreo",
+  "name": "Storm Choreo",
+  "blurb": "Workshop tool, not a game region: storm-wall pursuit tuning bench over a top-down tactical pan with live Monte Carlo survival odds. Anchors and center live outside the playable map.",
+  "center": [6600, 6600],
+  "radius": 4,
+  "danger": 0
+}
