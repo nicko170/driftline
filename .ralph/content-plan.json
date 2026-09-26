@@ -4161,10 +4161,11 @@
     "scripture",
     "initiate voice"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404237.1251562
+   "claimed_at": 1790404237.1251562,
+   "done_at": "2026-09-26T16:37:37"
   },
   {
    "kind": "article",
@@ -4179,10 +4180,11 @@
     "Ash Varga",
     "manifest wax"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404237.125157
+   "claimed_at": 1790404237.125157,
+   "done_at": "2026-09-26T16:37:37"
   },
   {
    "kind": "article",
@@ -4197,10 +4199,11 @@
     "field guide",
     "salt pan"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404237.1251578
+   "claimed_at": 1790404237.1251578,
+   "done_at": "2026-09-26T16:37:37"
   },
   {
    "kind": "article",
@@ -4215,10 +4218,11 @@
     "rules",
     "dockmaster"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404237.1251578
+   "claimed_at": 1790404237.1251578,
+   "done_at": "2026-09-26T16:37:37"
   },
   {
    "kind": "article",
@@ -4425,10 +4429,11 @@
     "windspine",
     "story"
    ],
-   "status": "planned",
+   "status": "done",
    "added_by": "builder",
-   "worker": null,
-   "claimed_at": 1790391113.818193
+   "worker": "writer2",
+   "claimed_at": 1790404390.7569542,
+   "done_at": "2026-09-26T16:38:58"
   },
   {
    "kind": "article",
@@ -4443,10 +4448,11 @@
     "caches",
     "5 items"
    ],
-   "status": "planned",
+   "status": "done",
    "added_by": "builder",
-   "worker": null,
-   "claimed_at": 1790391113.818193
+   "worker": "writer2",
+   "claimed_at": 1790404390.7569559,
+   "done_at": "2026-09-26T16:39:02"
   },
   {
    "kind": "article",
@@ -4461,10 +4467,11 @@
     "choir",
     "lamps"
    ],
-   "status": "planned",
+   "status": "done",
    "added_by": "builder",
-   "worker": null,
-   "claimed_at": 1790391113.818193
+   "worker": "writer2",
+   "claimed_at": 1790404390.7569559,
+   "done_at": "2026-09-26T16:39:02"
   },
   {
    "kind": "article",
@@ -4479,8 +4486,11 @@
     "altitude",
     "window"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790404390.7569568,
+   "done_at": "2026-09-26T16:39:02"
   },
   {
    "kind": "article",
@@ -4495,8 +4505,10 @@
     "crusher",
     "reclaimers"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790404662.1534379
   },
   {
    "kind": "article",
@@ -4511,8 +4523,10 @@
     "survey",
     "three anchors"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790404662.15344
   },
   {
    "kind": "article",
@@ -4527,8 +4541,10 @@
     "rival",
     "jett marrows"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790404662.153441
   },
   {
    "kind": "article",
@@ -4543,8 +4559,10 @@
     "mail",
     "skiff"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790404662.153441
   },
   {
    "kind": "demo",

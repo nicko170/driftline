@@ -1,0 +1,36 @@
+{
+  "id": "side-ladder-and-lamp",
+  "title": "Ladder and Lamp",
+  "chapter": "side",
+  "type": "escort",
+  "giver": "cantor-ilex",
+  "region": "choirhollow",
+  "summary": "The crater's nightly chore: the lamp-lighters' wagon takes the ring at walking pace, one ladder, one long taper, forty lamps that remember being towers. Tonight the regular shadow-rider is sick, and the Choir will not send fire around the rim unaccompanied — bad manners, bad omens, worse insurance. Ride the circle. Be where the ladder isn't.",
+  "objectives": [
+    { "type": "goto", "target": "choirhollow:temple-steps", "label": "Report to the temple steps at dusk" },
+    { "type": "escort", "target": "choirhollow:lamp-ring", "targets": ["choirhollow:lamp-ring", "choirhollow:listening-horn", "choirhollow:crater-rim", "choirhollow:temple-steps"], "speed": 8, "label": "Shadow the lamp-lighters' wagon around the ring — close, slow, unhurried" },
+    { "type": "dropoff", "target": "choirhollow:temple-steps", "label": "Return the ladder and the last taper to the temple steps" }
+  ],
+  "rewards": {
+    "credits": 170,
+    "rep": { "choir": 8 },
+    "flags": ["side-ladder-and-lamp.done", "lore:choir-midnight-broadcast"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "cantor-ilex", "text": "We hear you, courier, and tonight we ask a slow thing. Nessa, our shadow-rider, has a cough the crater has chosen to keep. The lamps still want lighting — forty of them, at walking pace, as it has been done since walking was invented locally." },
+      { "who": "cantor-ilex", "text": "The wagon goes out at dusk. You will ride behind and apart — close enough to catch the ladder if it falls, never close enough to hear the lighters hum. They hum badly on purpose. It keeps tourists humble." },
+      { "who": "little-reverb", "text": "It's the boringest job in the hollow. That's why it matters. Boring is load-bearing." }
+    ],
+    "accept": [
+      { "who": "little-reverb", "text": "Rules. Don't boost — the lamps think it's showing off. Don't sing — the lamps have opinions. If lamp eleven lights before the ladder gets there, that's normal now. Act bored. It hates being noticed." },
+      { "who": "cantor-ilex", "text": "The wagon knows the way; the wagon is older than the way. Simply hold the circle with it, courier, and let the dark arrive in the correct order. We pay in lamp-oil futures, which are exactly what they sound like, and redeemable." },
+      { "who": "ash-varga", "text": "Slowest speed, highest stakes, pay denominated in fire futures. The Choir truly understands the courier economy." }
+    ],
+    "complete": [
+      { "who": "little-reverb", "text": "Lamp eleven lit early again. Lamp twenty-three flickered when you went past, which is new, and everyone saw me not mention it, which is gossip. You did fine. For a fast person." },
+      { "who": "cantor-ilex", "text": "Forty lamps, one circle, no interruptions — the dark arrived in the correct order and the ring remembers your engine by name. A true name, we suspect. The ring is selective. Take the oil futures; they mature in winter and appreciate in value and meaning." },
+      { "who": "static-warden-pem", "text": "Pem on band nine, station. The wavelength of your escort is in tonight's notebooks under 'accompaniment, satisfactory'. Forty years of listening, and the quiet tonight had company. The quiet noticed." }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "side-dock-master-express",
+  "title": "Dockmaster's Express",
+  "chapter": "side",
+  "type": "timed",
+  "giver": "dockmaster-devanna",
+  "region": "skydocks",
+  "summary": "Ballast affidavits for three moored skyships, signed at the winch base and void if they arrive after the evening updraft window — because the captains swear the updraft is when their hulls 'remember weight', and the Guild's lawyers have stopped arguing with captains. Winch base to Keel Town, countersigned, back down to the dockmaster's hut, before the mesa starts breathing upward.",
+  "timeLimit": 150,
+  "objectives": [
+    { "type": "pickup", "target": "skydocks:winch-base", "label": "Sign for the ballast affidavits at the winch base" },
+    { "type": "dropoff", "target": "skydocks:keel-town", "label": "Deliver the affidavits up in Keel Town before the window closes" },
+    { "type": "dropoff", "target": "skydocks:dockmaster", "label": "Return the countersign slip to the dockmaster's hut" }
+  ],
+  "rewards": {
+    "credits": 230,
+    "rep": { "guild": 5, "driftline": 3 },
+    "flags": ["side-dock-master-express.done", "lore:keel-town-docking-gazette"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "dockmaster-devanna", "text": "Courier. Three affidavits, one window, no poetry. Evening updraft hits the mesa at the change of the light, and after it, every hull up there is legally heavier — don't ask, the lawyers didn't — so the stamps must land in Keel Town *first*." },
+      { "who": "dockmaster-devanna", "text": "Sign at the winch base, take the ramp, deliver, countersign, come back down to me. If the winch hums at you, hum nothing back. It's in a better mood since the apology and I will not have you ruining it." },
+      { "who": "ash-varga", "text": "Timed paperwork up a mesa against the sky's schedule, graded on landing, judged by a cable. The dock life is calling, Dockmaster." },
+      { "who": "dockmaster-devanna", "text": "The dock life is *billing*, courier. A hundred and fifty seconds of it, and counting. Begins now." }
+    ],
+    "accept": [
+      { "who": "dockmaster-devanna", "text": "Window opens when the light changes on the north dock line — you'll see the tarps go gold. Feather the updraft off the ramp lip or it will hand you back to yourself at altitude. Words of one who has watched it happen. Twice. Same rider." },
+      { "who": "wisp", "text": "Traffic report, friend Varga: you, in a hurry, vertically. Upstairs recommends the left line off the lip, the polite speed, and not arguing with the winch. The winch wins arguments by a length of cable." },
+      { "who": "ash-varga", "text": "Copy. Gold tarps, left line, polite speed, affidavit delivery as a sprint sport. Clock's mine." }
+    ],
+    "complete": [
+      { "who": "dockmaster-devanna", "text": "Countersigns in order, window beaten clean, and your descent was three parts landing to one part apology — that ratio is *progress*, courier. The hulls stayed legally light and the lawyers stayed out of my office. Rated: adequate-plus." },
+      { "who": "wisp", "text": "For the record, friend: nine and a half on the return landing. The half is because the mesa applauded. It does that for almost nobody. Don't let it go to your head — altitude sickness." },
+      { "who": "tamsin-cho", "text": "Factor Cho on the official band: the Guild notes three affidavits filed inside the window and one courier filed under 'reliable, altitude division'. The division is new. You invented it. Do not invent divisions, courier, it complicates forms." }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "side-cache-cairn-round",
+  "title": "The Cache Cairn Round",
+  "chapter": "side",
+  "type": "collect",
+  "giver": "compass",
+  "region": "drowned-array",
+  "summary": "The night-sink dropped the pan two degrees past comfortable and pulled a whole row of pre-collapse cache canisters up out of the silt, sealed, stencilled, and exactly where the old field grids said treasure wasn't. Compass wants five of them in the dry before the next sink turns the footing back to soup. The cairn wants you to know it was here first.",
+  "objectives": [
+    { "type": "goto", "target": "drowned-array:pan-edge", "label": "Cross the pan edge while the footing holds" },
+    { "type": "collect", "target": "drowned-array:cache-cairn", "count": 3, "label": "Recover cache canisters around the cairn (3)" },
+    { "type": "collect", "target": "drowned-array:panel-field", "count": 2, "label": "Recover the last two canisters in the panel field (2)" },
+    { "type": "dropoff", "target": "drowned-array:substation", "label": "Stash the canisters high and dry in the substation" }
+  ],
+  "rewards": {
+    "credits": 200,
+    "rep": { "reclaimers": 5, "guild": 2 },
+    "flags": ["side-cache-cairn-round.done", "lore:heliodyne-pause-memo"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "compass", "text": "Waypoint. The pan did its party trick — night-sink, hard frost, and up out of the silt comes a row of cache canisters, pre-collapse issue, seals intact, stencils legible. The old grid maps swear that ground is empty. The old grid maps are, once again, charming and wrong." },
+      { "who": "compass", "text": "Five canisters: three around the cairn, two strays in the panel field. Bring them to the substation before the pan warms up and turns back to pudding. Seal etiquette: no shaking, no sniffing, no opening one 'just to calibrate'." },
+      { "who": "ash-varga", "text": "Dig up two-hundred-year-old mystery canisters from a swamp on a timer, don't shake the mystery. My safety training consists entirely of this job." }
+    ],
+    "accept": [
+      { "who": "compass", "text": "Cairn field first, then the panels — the drift is migrating west to east, so you'll chase it. Mind the chalk arrows; SEVEN re-drew them last night and its opinion of 'passable' predates hover-bikes by a hundred and ninety years." },
+      { "who": "caretaker-7", "text": "PAN ROUNDS ADVISORY, COURIER: FOOTING RATED FIRM-MINUS. CANISTERS ARE TO BE LIFTED, NOT STACKED, NOT MADE INTO A SMALL FORT. THE LAST VISITOR MADE A SMALL FORT." },
+      { "who": "ash-varga", "text": "Firm-minus. Wonderful. Nothing a courier likes more than a rating invented by a robot with a stencil." }
+    ],
+    "complete": [
+      { "who": "compass", "text": "Five for five, seals intact, and the silt's already closing over the holes like a bad witness. Catalogue says 'agricultural survey stores', Waypoint. Agricultural survey stores do not have *your name's frequency* stamped on the audit ribbon. Noted. Filed. Lightly feared." },
+      { "who": "caretaker-7", "text": "PAN ROUNDS ACKNOWLEDGEMENT: CANISTERS SECURED, FORT STATUS ZERO. THE PAN WILL DREAM THEM BACK EVENTUALLY. THE PAN IS PATIENT. SO IS THIS UNIT." },
+      { "who": "compass", "text": "Payment's with the Guild factor, plus a survey credit — framed, if you like; it's redeemable for exactly nothing, like most honours. Come by when the next sink coughs something up. The desert's doing an archive thing and I intend to be *indexed*." }
+    ]
+  }
+}
