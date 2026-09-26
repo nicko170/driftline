@@ -75,7 +75,8 @@ export function WaterfallCanvas() {
       ctx.fillStyle = C.bone;
       ctx.fillText(f.short.toUpperCase(), 32, top + 30);
       const endAll = WATERFALL[cols - 1].bar[f.id].to;
-      const endStory = WATERFALL[cols - 2]?.bar[f.id].to ?? endAll;
+      const lastStoryCol = [...WATERFALL].reverse().find((c) => c.story);
+      const endStory = lastStoryCol?.bar[f.id].to ?? endAll;
       ctx.font = `600 10.5px ${FONT_D}`;
       ctx.fillStyle = rgba(C.amberHot, 0.9);
       ctx.fillText(`${endAll} total`, 32, top + 45);

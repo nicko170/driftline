@@ -5647,10 +5647,11 @@
     "balance",
     "missions"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo1",
-   "claimed_at": 1790406797.870681
+   "claimed_at": 1790406797.870681,
+   "done_at": "2026-09-26T19:00:24"
   },
   {
    "kind": "demo",
@@ -5812,8 +5813,10 @@
     "humour",
     "windspine"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790413193.2991621
   },
   {
    "kind": "article",
@@ -5828,8 +5831,10 @@
     "ratchet-june",
     "salvage"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790413193.2991629
   },
   {
    "kind": "article",
@@ -6064,8 +6069,10 @@
     "rigging",
     "prayer"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790413193.2991612
   },
   {
    "kind": "article",
@@ -6080,8 +6087,10 @@
     "couriers",
     "poem"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790413193.2991621
   },
   {
    "kind": "demo",

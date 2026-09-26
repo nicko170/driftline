@@ -269,7 +269,7 @@ export const FLAGS: LedgerFlag[] = (() => {
         id: `strand-kin-${f.id}`,
         severity: 'warn',
         glyph: '⚠',
-        title: `${f.glyph} ${f.name} can never hear ${'KIN'} called`,
+        title: `${f.glyph} ${f.name} can never reach the KIN rail`,
         detail: `Even running every posted job, the ledger tops ${f.short} out at ${all} — ${KIN_MIN - all} points short of the kin rail (${KIN_MIN}+). The top tier is unreachable content as shipped.`,
         factions: [f.id],
         missions: [],
