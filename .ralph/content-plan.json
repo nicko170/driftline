@@ -6165,10 +6165,11 @@
     "comedy",
     "east gate"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790414970.75047
+   "claimed_at": 1790414970.75047,
+   "done_at": "2026-09-26T19:57:40"
   },
   {
    "kind": "article",
@@ -6183,10 +6184,11 @@
     "ledger",
     "keel town"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790414970.7504718
+   "claimed_at": 1790414970.7504718,
+   "done_at": "2026-09-26T19:57:40"
   },
   {
    "kind": "article",
@@ -6201,10 +6203,11 @@
     "dune migration",
     "waypoints"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790414970.7504718
+   "claimed_at": 1790414970.7504718,
+   "done_at": "2026-09-26T19:57:40"
   },
   {
    "kind": "article",
@@ -6219,10 +6222,11 @@
     "pennant",
     "choice"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790414970.750473
+   "claimed_at": 1790414970.750473,
+   "done_at": "2026-09-26T19:57:40"
   },
   {
    "kind": "article",

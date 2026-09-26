@@ -1,0 +1,40 @@
+{
+  "id": "side-the-open-drawer",
+  "title": "The Open Drawer",
+  "chapter": "side",
+  "type": "fragile",
+  "giver": "impa-vell",
+  "region": "saltmouth",
+  "summary": "Clerk Vell has found a filing discrepancy so beautiful she cannot close it: three ledgers mis-shelved under wrong-but-poetic manifest descriptions, and their true home is the Top Scale at Keel Town. She has laminated the receipts 'for continuity of feeling', so ride smoothly — the poetry is real, and so is the cargo-integrity meter.",
+  "requires": { "flags": ["ch1-paper-trail.done"] },
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:exchange", "label": "Collect the three mis-shelved ledgers from the exchange" },
+    { "type": "goto", "target": "skydocks:winch-base", "label": "Ride out to the skydocks cargo winch — gently" },
+    { "type": "dropoff", "target": "skydocks:keel-town", "label": "Deliver the ledgers to the Top Scale, Keel Town" }
+  ],
+  "cargo": { "fragile": true, "label": "laminated ledgers" },
+  "rewards": {
+    "credits": 240,
+    "rep": { "guild": 6 },
+    "flags": ["side-the-open-drawer.done", "lore:ledger-redactions"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "impa-vell", "text": "Courier Varga, comma, Ash — I have a discrepancy. Asterisk, hushed: it is the most beautiful one on record. Ledger forty-one-D filed under 'harvest, spelt'. It contains four years of absences from the moorage watch. Somebody shelved four years of MISSING PEOPLE under wheat." },
+      { "who": "impa-vell", "text": "And ledger nine — 'rope, sundry' — courier, it is a eulogy. Page after page of eulogies itemised by the knot. I have cross-checked the knots. They are accurate. I am not okay — footnote — I have never been MORE okay." },
+      { "who": "impa-vell", "text": "All three belong at the Top Scale in Keel Town, where mis-shelved things get weighed against what they actually are. I laminated the receipts. For continuity. Of feeling. That's a real form now. I made it a real form." }
+    ],
+    "accept": [
+      { "who": "impa-vell", "text": "The manifests, aloud, because the courier reads the cargo: one — 'harvest, spelt', see above, underline, wheat, FOUR YEARS. Two — 'rope, sundry, see feelings'. Three — 'salvage, dusk-toned'. I don't know what dusk-toned salvage is either. That's why it goes to the Scale." },
+      { "who": "ash-varga", "text": "'Rope, sundry, see feelings.' Impa, if I say this at the border they're going to weigh my accent." },
+      { "who": "impa-vell", "text": "Say it EXACTLY like that. The Scale respects pronunciation. And mind the lamination, courier — gloss finish, eleven coats. If it scratches, I will file the scratch under grief." },
+      { "who": "tamsin-cho", "text": "Tamsin on the desk band. Courier, when the clerk starts laminating, the paperwork's already won. Ride like the cargo's awake. In a sense — italic, her italics, not mine — it is." }
+    ],
+    "complete": [
+      { "who": "impa-vell", "text": "The Top Scale countersigned, asterisk, WITHOUT comment, which from the Top Scale is a parade. Three ledgers re-shelved: absences under absence, eulogies under rope — footnote, apparently correct after all — and the dusk-toned salvage under —" },
+      { "who": "impa-vell", "text": "— under a drawer that was already open. Courier. The Scale keeps one drawer open so the desert can file things back. This is in the handbook. Page... dash. It's page dash." },
+      { "who": "impa-vell", "text": "They also sent you the redaction index as counter-gift. Read the entry that's been removed the most. Nine times. It's always removed on a Thursday, asterisk, and I have decided not to wonder why." },
+      { "who": "ash-varga", "text": "Delivered three lies to the one place that weighs them true, and the verdict is a drawer left open on purpose. Filing today under: the Guild has a heart and it's a jammed drawer." }
+    ]
+  }
+}

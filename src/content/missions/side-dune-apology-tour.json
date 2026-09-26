@@ -1,0 +1,40 @@
+{
+  "id": "side-dune-apology-tour",
+  "title": "The Dune's Apology Tour",
+  "chapter": "side",
+  "type": "scout",
+  "giver": "nyx-ala",
+  "region": "windspine",
+  "summary": "Dune four crossed Nyx's stake line in the night — the surveyor's word is 'sentimental', the instrument string's word is 'buried'. Hold still at four fresh apology stakes so her slate can forgive the ground one bearing at a time, then collect the map correction she's offering free of charge, because the map was wrong in an interesting way.",
+  "objectives": [
+    { "type": "goto", "target": "windspine:south-foot", "label": "Meet stake line zero at the southern foot" },
+    { "type": "scout", "target": "windspine:turbine-row", "label": "Hold still at apology stake one, turbine row" },
+    { "type": "scout", "target": "windspine:ridge-crest", "label": "Hold still at apology stake two, ridge crest" },
+    { "type": "scout", "target": "windspine:storm-gauge", "label": "Hold still at apology stake three, below the storm gauge" },
+    { "type": "dropoff", "target": "windspine:survey-camp", "label": "Carry the readings back to the survey camp" }
+  ],
+  "rewards": {
+    "credits": 220,
+    "rep": { "driftline": 3 },
+    "flags": ["side-dune-apology-tour.done", "dune4.apologised", "lore:windspine-survey-notes"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "nyx-ala", "text": "Courier. Fixed points first: you, there, don't move. Dune four migrated eleven metres overnight and parked itself on my cache line. Not hostile. Sentimental. The dunes do this when the ridge wind changes key." },
+      { "who": "nyx-ala", "text": "Wherever a dune buries something, I plant an apology stake — the desert's half of the correspondence. Four stakes went in before breakfast. The slate can't read them unless somebody very still stands there being a fixed point." },
+      { "who": "nyx-ala", "text": "Payment: credits, and the correction itself. The saddle you couriers flew all winter is now a rumour. First rider to hold the new truth holds it free. Interesting errors, courier, are the only currency this ground mints." }
+    ],
+    "accept": [
+      { "who": "nyx-ala", "text": "Stake one, turbine row. The dune apologised kneeling — east face soft, crest low. That's shame, in dune. Park, kill the throttle, and let the instruments take your pulse. Two metres of fresh slope is graded six on the soft-serve scale; the bike will think it's pudding. Be firmer." },
+      { "who": "nyx-ala", "text": "Stake two reads consistent. Stake three is under the gauge, where the ground and the weather argue custody of the same wind. If the stake leans toward your humming crate, note it in pencil. Everything soft is pencil." },
+      { "who": "ash-varga", "text": "Copy. Four apologies, held very still. Nyx — has the desert ever accepted one?" },
+      { "who": "nyx-ala", "text": "Frequently. Then it moves again. That's not malice, courier, it's cursive." }
+    ],
+    "complete": [
+      { "who": "nyx-ala", "text": "Four bearings, four confessions, one tidy scandal: dune four walked SOUTH, against the season, the same bearing the deep stakes moan before a turn. Your crate wasn't at any stake, courier, and yet every reading hums in its register. Pencil. Large pencil." },
+      { "who": "nyx-ala", "text": "As agreed — the correction, free. East saddle: closed. New line: posted. The map apologises, you pay attention, and round we go. I logged the whole sorry business in the weekly survey if your codex wants the long version." },
+      { "who": "surveyor-kest", "text": "Kest, meteorology, on the ridge band: I rated your little apology tour 'plausible'. High grade from this office. When the dune's finished feeling sorry, ask it about the sky. It's been lying out loud again." },
+      { "who": "nyx-ala", "text": "Flat salt, courier. Next time the ground writes me a letter, I'll want you back here being unnaturally still. It's the nicest thing anyone does for me, most weeks." }
+    ]
+  }
+}

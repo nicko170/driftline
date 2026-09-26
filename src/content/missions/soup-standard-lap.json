@@ -1,0 +1,38 @@
+{
+  "id": "soup-standard-lap",
+  "title": "The Soup-Standard Lap",
+  "chapter": "side",
+  "type": "collect",
+  "giver": "mallow",
+  "region": "saltmouth",
+  "summary": "Mallow's grandmother's stopwatch has read 9:58 since before Ash was in debt, which makes every lap she times 'officially infinite'. She has chalked five marks around the east gate and put a pot on. Cross all five while she narrates soup-times over the band, and find out what happens when the soup finally boils.",
+  "objectives": [
+    { "type": "goto", "target": "saltmouth:gate-east", "label": "Stage at the east gate chalk — Mallow is already counting" },
+    { "type": "collect", "target": "saltmouth:gate-east", "count": 5, "label": "Cross the five chalk marks — one official lap" },
+    { "type": "dropoff", "target": "saltmouth:gate-east", "label": "Return to the chalk for your official time" }
+  ],
+  "rewards": {
+    "credits": 90,
+    "rep": { "driftline": 2 },
+    "flags": ["soup-standard-lap.done", "lore:courier-slang-lexicon"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "mallow", "text": "Job posting, courier, from the OFFICE of the east gate. My stopwatch is the certified timepiece of Saltmouth and it reads nine fifty-eight. Grandma says it paused there because that's the best time and it wanted to keep it." },
+      { "who": "mallow", "text": "So officially, every lap is infinite, and the Guild keeps paying finite money for them. That's a discrepancy and I'm the only one brave enough to invoice it." },
+      { "who": "mallow", "text": "Five chalk marks, one lap, timed in soups. Grandma put the pot on when you turned up, so you're against the kettle. On soup-standard, Varga. The kettle always wins." }
+    ],
+    "accept": [
+      { "who": "mallow", "text": "And the starter's cat has SEEN the flag — lap is live! Varga off the chalk in — let me get my official face on — pursuit position behind a very committed lentil." },
+      { "who": "mallow", "text": "Chalk two crossed at a rolling simmer. Soup report: the pot has developed ambitions. Pemmy has looked left. The cat remains ranked first overall." },
+      { "who": "ash-varga", "text": "Copy the soup-times, Mallow. Tell the pot I'm not scared of anythin— why is Pemmy looking left." },
+      { "who": "mallow", "text": "Final chalk! Soup at full arrogant boil! Grandma is standing up! Grandmas only stand for weddings, weather, and TIMING EVENTS." }
+    ],
+    "complete": [
+      { "who": "mallow", "text": "…Nine fifty-eight. The stopwatch says nine fifty-eight. Again. Grandma checked it twice and then patted it, which is the highest officiating this family does." },
+      { "who": "mallow", "text": "Official result: the lap took exactly one soup, and a soup takes nine fifty-eight, forever, because that's the best time and the stopwatch keeps it. That's not broken, Varga. That's a STANDARD." },
+      { "who": "ketch", "text": "Ketch here. The whole moorage heard the commentary, kid. Guild scribes are already writing 'soup' into the slang ledger with a straight face. You've made the record books worse. Take the day off. I'm told they'll measure it for you." },
+      { "who": "mallow", "text": "Come back when you want a re-timed. Bring toppings. The cat has opened a second lap and she does not do charity." }
+    ]
+  }
+}

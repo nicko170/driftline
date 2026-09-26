@@ -1,0 +1,47 @@
+{
+  "id": "side-sealed-with-feeling",
+  "title": "Sealed With Feeling",
+  "chapter": "side",
+  "type": "timed",
+  "giver": "advocate-reyes",
+  "region": "skydocks",
+  "summary": "Advocate Reyes is executing an inconvenient debt and has found the elegant instrument: the debtor's own pennant is flying locked at Keel Town while the season flag rotates — and pennant code says a debt sleeps with the ship unless the pennant reaches the mast before rotation. Ride the pennant line, read the code at every gate, and decide how the writ gets signed.",
+  "timeLimit": 150,
+  "objectives": [
+    { "type": "pickup", "target": "skydocks:dockmaster", "label": "Take the writ from the dockmaster's hut, mesa top" },
+    { "type": "race", "targets": ["skydocks:keel-town", "skydocks:mesa-top", "skydocks:winch-base"], "label": "Run the pennant line before the season flag rotates" },
+    { "type": "dropoff", "target": "skydocks:dockmaster", "label": "Return the pennant — one way or another" }
+  ],
+  "rewards": {
+    "credits": 260,
+    "rep": { "guild": 5 },
+    "flags": ["side-sealed-with-feeling.done", "lore:skyship-pennant-code"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "advocate-reyes", "text": "Courier Varga. A colleague's file — let us keep the name in a drawer — owes the Guild a season of moorage and dislikes theme of payment. I am executing the debt, and the law, being occasionally beautiful, has handed me the debtor's own pennant code as the instrument." },
+      { "who": "advocate-reyes", "text": "The pennant flies *locked* at their mast. Under pennant code, while it flies, the debt sleeps with the ship — but the season flag rotates at dusk-mark, and a read pennant outruns a locked one. Carry the writ round the pennant line. Each checkpoint reads the code aloud. The skyship will convict itself in colours." },
+      { "who": "advocate-reyes", "text": "Yours will be the legs, Varga, and — in one small clause — the heart. I never draft the heart. Section nine forbids me, and I have learned to be glad of it." }
+    ],
+    "accept": [
+      { "who": "advocate-reyes", "text": "Code reading, from the spotter's supplement: amber over bone — the debt acknowledged. Bone over rust — the debt disputed. A grief pennant you do not read at all; you slow down for it. The checkpoints will teach you the rest. Rotation in one-fifty, nota bene, and the law does not grant extensions for scenery." },
+      { "who": "dockmaster-devanna", "text": "Devanna at the hut. Writ's inked and waxed, courier. Read the pennants pretty for me — dock rule says a code read wrong is a year of gulls, and I have *had* my year of gulls." },
+      { "who": "ash-varga", "text": "Copy. Writ aboard, one-fifty on the clock, delivering a ship's own flag back to it as an invoice. The Driftline keeps finding new shapes for a letter." },
+      { "who": "advocate-reyes", "text": "A dunning letter is a railing on a stair, courier. You are about to climb the debtor's own mast by it. Test the joinery." }
+    ],
+    "complete": [
+      { "who": "advocate-reyes", "text": "The pennant reached the mast with the season flag still un-rotated. Debt executed, ship ruled *sundry, payable* — the words the code saves for people who taught their own colours to testify. Yours, in lien." },
+      { "who": "advocate-reyes", "text": "And the *delivery*, Varga. I watched the line from the mesa. You read a grief pennant correctly at thirty knots, which is to say you were briefly the most law-abiding thing in Kessa-9 airspace. I have filed it under 'visits of concern', subsection: pride." },
+      { "who": "dockmaster-devanna", "text": "Rotation came and went, pennant legal, gulls unpaid. Whoever the name in the drawer is, they owe you the interesting kind of favour — the kind that's a debt and doesn't know it. The Driftline ledger remembers, courier. Even when the ink's somebody else's." }
+    ],
+    "choices": [
+      {
+        "prompt": "The executed pennant is heavy in your hand. Paragraph three says the executor's courier decides: formal service, or quiet mercy?",
+        "options": [
+          { "text": "Hand the pennant to Reyes, waxed and witnessed — the letter of the law.", "setsFlag": "reyes.pennant.served" },
+          { "text": "Tuck it under the debtor's door with a note: 'Your flag reads honest. Keep it flying.'", "setsFlag": "reyes.pennant.kindness" }
+        ]
+      }
+    ]
+  }
+}
