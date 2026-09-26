@@ -3939,10 +3939,11 @@
     "economy",
     "comedy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer1",
-   "claimed_at": 1790389916.7450292
+   "claimed_at": 1790389916.7450292,
+   "done_at": "2026-09-26T12:47:29"
   },
   {
    "kind": "article",
@@ -3956,10 +3957,11 @@
     "ch4",
     "MOTHER"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer1",
-   "claimed_at": 1790389916.74503
+   "claimed_at": 1790389916.74503,
+   "done_at": "2026-09-26T12:47:29"
   },
   {
    "kind": "article",
@@ -3973,10 +3975,11 @@
     "missing",
     "log"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer1",
-   "claimed_at": 1790389916.7450309
+   "claimed_at": 1790389916.7450309,
+   "done_at": "2026-09-26T12:48:24"
   },
   {
    "kind": "article",
@@ -3990,10 +3993,11 @@
     "riding",
     "ch3"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer1",
-   "claimed_at": 1790389916.7450309
+   "claimed_at": 1790389916.7450309,
+   "done_at": "2026-09-26T12:48:24"
   },
   {
    "kind": "article",
@@ -4576,8 +4580,10 @@
    "cluster": "demos",
    "intent": "A content-review instrument for the writing team: an in-engine gallery that renders every character JSON as a dialogue-card — portrait (withBase, fallback initials chip), name + faction chip, role, one greeting/bark/radio line each cycled on a timer, plus the actual DialogueBox and HUD radio ticker components so writers see true in-game rendering. Filter by faction (guild ochre / choir teal / reclaimer rust / driftline amber), search by name, flag cards missing portraits or <8 line buckets with a dashed ghost frame and a ▯ signal-not-recovered marker (never colour alone). Panel styles from ui.css; lives in src/world/regions/roster-review-bench/ or src/lab, auto-listed in /lab; zero game-world impact.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790390619.523545
   }
  ]
 }
