@@ -1,3 +1,4 @@
 {
-  "bench": { "pos": [6200, 6200], "label": "HUD workshed bench" }
+  "bench": { "pos": [6200, 6200], "label": "HUD workshed bench (off-world)", "elev": 0 },
+  "test-pan": { "pos": [6204, 6196], "label": "HUD test pan (off-world)", "elev": 0 }
 }

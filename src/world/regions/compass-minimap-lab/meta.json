@@ -1,8 +1,8 @@
 {
   "slug": "compass-minimap-lab",
   "name": "Compass & Minimap Lab",
-  "blurb": "HUD navigation bench — off-world workshed for tuning the compass and minimap.",
+  "blurb": "Workshop tool, not a game region: HUD navigation bench for compass ticks, waypoint clamping and minimap palettes over a fake test pan. Anchors and center live outside the playable map.",
   "center": [6200, 6200],
-  "radius": 120,
+  "radius": 4,
   "danger": 0
 }

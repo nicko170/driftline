@@ -11,7 +11,7 @@
  *
  * NOTE: this folder sits in the regions tree per workshed policy, so it also
  * satisfies the region registry/validator contract: `meta.json` +
- * `anchors.json` describe a harmless off-world bench (center [5600, 5400]) and
+ * `anchors.json` describe a harmless off-world bench (center [6200, 6200]) and
  * the default export carries `meta`/`anchors` statics — the game streams
  * nothing from it.
  */
