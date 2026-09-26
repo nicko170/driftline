@@ -1,0 +1,37 @@
+{
+  "id": "side-supper-bell",
+  "title": "Supper Bell Run",
+  "chapter": "side",
+  "type": "collect",
+  "giver": "dockmaster-vane",
+  "region": "skydocks",
+  "summary": "The Reclaimers' night dig on the cinder scar has worked through the night market's supper bell six evenings running, and hungry delvers are, in the dockmaster's phrase, a civic externality. Collect five stall orders around the Keel Town gantries after the gong, then ring the dig bell at the Yards. The slow pot waits for nobody. It barely waited for the recipe.",
+  "objectives": [
+    { "type": "goto", "target": "skydocks:dockmaster", "label": "Take the consolidated order slate from Vane's registry" },
+    { "type": "collect", "target": "skydocks:keel-town", "count": 5, "label": "Collect the five supper orders from the gantry stalls (5)" },
+    { "type": "dropoff", "target": "cinderflats:parts-pile", "label": "Ring the dig bell at the Yards' night line — supper's up" }
+  ],
+  "rewards": {
+    "credits": 150,
+    "rep": { "guild": 3, "reclaimers": 4 },
+    "flags": ["side-supper-bell.done", "lore:spice-pricing-dispatch"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "dockmaster-vane", "text": "Varga. A civic matter, regrettably digestive. The night dig on the scar works double shifts and has missed the market's supper bell six evenings running. Keel Town feeds its own shadow, downstairs included — it's in the hang-tenants' agreement, appendix nine, under 'decent'." },
+      { "who": "dockmaster-vane", "text": "Five stall orders on this slate: gong-gong noodles, salt-bloom flatbread, the slow pot, skewers of something the stall-keeper insists on calling 'mostly mushroom', and window four's portion for Pemmy. Yes, the goat dines. Keel Town honours its meteorologists. Ring the dig bell when you land — the brass one. The loud one is *liturgical*." },
+      { "who": "ash-varga", "text": "You're paying courier rates to move noodles across half the map." },
+      { "who": "dockmaster-vane", "text": "I'm paying courier rates so forty delvers don't invent their own cuisine. Downstairs cuisine is a documented hazard. Sign here. And here. The smell is not covered under warranty." }
+    ],
+    "accept": [
+      { "who": "dockmaster-vane", "text": "The gong rings once and the stall lids close — collect all five before the second sway or the slow pot achieves philosophy and congeals. Then the winch road, the west pan, the scar. Do NOT improvise the menu, courier. The dig boss votes by appetite and his faction is *hungry*." },
+      { "who": "evening-standard", "text": "And now, by listener request — tonight's list, read as broadcast. Ahem. 'Two noodles, one flatbread, double ochre-pepper for the dig boss, hold the pebbles.' Poetry, listeners. This desk has wept. In related markets: seasoning futures remain firm, and the slow pot remains slow. Prices binding until first sway." },
+      { "who": "wisp", "text": "Ferry advisory, friend: Keel Town gantries at supper hour — mooring lines, tourists, one goat with right of way. He has it in writing. Fly low, collect kind, and save a smell for the rest of us." }
+    ],
+    "complete": [
+      { "who": "boss-pyke", "text": "Pyke here. Bell rung, lids up, the whole night line standing round the crates like it's feast-day. Double ochre-pepper was for ME, courier — the crew voted, I was outvoted, we compromised by me eating first. Finest delivery the scar's seen since the rain rumours. You're dig family now. No privileges. Some soup." },
+      { "who": "dockmaster-vane", "text": "Registry notes the shadow fed, the pot un-congealed, the goat endorsed. Window four sends regards and one (1) hoof-printed countersignature, which outranks me on Tuesdays. Keel Town thanks you from a great height. As is traditional. As is *easiest*." },
+      { "who": "evening-standard", "text": "Closing item: somewhere on the cinder scar tonight, forty delvers ate like a town instead of a hazard. This desk declines to name the courier responsible, per request. The noodles, however, have written in. Goodnight, Kessa-9." }
+    ]
+  }
+}

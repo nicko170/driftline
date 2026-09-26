@@ -1,0 +1,39 @@
+{
+  "id": "side-ghost-lights",
+  "title": "Ghost Lights Commission",
+  "chapter": "side",
+  "type": "scout",
+  "giver": "gauge-keeper-dax",
+  "region": "windspine",
+  "summary": "Since the crate found its first word, Dax's night watch has logged pale lights along the boundary-mountain line — too steady for storm fire, too high for lanterns, and last night they kept *time*: three-two-three. The gauge needs eyes on the rim that aren't its keeper's. Hold station at two rim posts after dark, log the lights' measure, and don't answer anything that answers you.",
+  "requires": { "flags": ["ch2-first-word.done"] },
+  "objectives": [
+    { "type": "scout", "target": "canyon-slalom:finish-line", "label": "Hold station under the boundary wall at the old finish gantry — let the watch-meter settle" },
+    { "type": "scout", "target": "windspine:storm-gauge", "label": "Hold at Dax's gauge deck — log the lights' measure" },
+    { "type": "dropoff", "target": "windspine:survey-camp", "label": "Leave the watch log in the survey camp courier box" }
+  ],
+  "rewards": {
+    "credits": 180,
+    "rep": { "driftline": 3, "choir": 3 },
+    "flags": ["side-ghost-lights.done", "ghost-lights.logged", "lore:lore-boundary-mountains"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "gauge-keeper-dax", "text": "Courier. Since your cargo went conversational — don't ask how the gauge knows a thing has a voice; the gauge reads everything that hums — my night watch has logged lights on the boundary-mountain line. Pale. Lunar-coloured. Steady in my good glass, which is the part I don't care for." },
+      { "who": "gauge-keeper-dax", "text": "Storm fire flickers. Lanterns swing. These do neither, and last night — I'm not telling the chart this, the chart sulks — they kept *time*. Three-two-three. I need eyes on the rim that aren't mine. Mine have a conflict of interest: they panic at beauty. Been reliable about it for forty seasons." },
+      { "who": "ash-varga", "text": "You want me to stand still in the dark and stare at the haunted end of the map." },
+      { "who": "gauge-keeper-dax", "text": "Calibrated summary. The pay is honest and the coffee is tar-grade. Refusal goes in the register under 'sensible'. Nobody ever opens that page." }
+    ],
+    "accept": [
+      { "who": "gauge-keeper-dax", "text": "Two stations. Hold under the boundary wall at the old finish gantry first — let the watch-meter settle, engine dead. Then my gauge deck; I've set out a fresh chart and the good glass. Count the measure if they keep one. Do NOT count aloud, and do not answer anything that answers you. After: the log goes in the courier box at the survey camp. If I'm asleep, station policy holds that I am awake." },
+      { "who": "static-warden-pem", "text": "Pem on band nine, station. Word reaches me of lights that count. Attend: if they count in threes, that is *prosody*, and prosody is a claim of authorship. Write down the counts, exactly, in order. History forgives the superstitious — but it quotes the precise, station, forever, out loud." },
+      { "who": "ketch", "text": "Ketch. Ridge flats at night, kid: the salt holds the starlight and hides the rifts. Beam low, follow the morse winks, and when the gauge lamp blinks twice you're his problem — the good kind. Also your crate's been quiet all week and I don't believe in coincidences that timed." }
+    ],
+    "complete": [
+      { "who": "gauge-keeper-dax", "text": "Log's in. Three-two-three, then a wait, then three-two-three again. I checked the barometer twice, the way you check a pulse. Courier — you saw it too, so I'll write it plain: the parallax is *wrong*. Those lights aren't on the mountains. They're beyond the wall, and beyond the wall is on no chart I'm paid to trust." },
+      { "who": "gauge-keeper-dax", "text": "Page six of your own log. Your own hand. 'It hummed back.' Commission is filed complete; the finding is filed under 'pressure's holding', which is what this station writes when nothing is holding. Take the pay. Take the coffee. Forget the coffee." },
+      { "who": "ash-varga", "text": "It hummed the same count back. Three-two-three. I didn't tell it to. I didn't tell it anything." },
+      { "who": "gauge-keeper-dax", "text": "Nobody told the desert either, rider, and the desert's been practising. Night hatch rule applies: knock twice, state the weather you want. I want rain. Logged. 'Pressure's holding.' Off you go — and if the lights say your name out there, that's the wind showing off. Keep riding." }
+    ]
+  }
+}

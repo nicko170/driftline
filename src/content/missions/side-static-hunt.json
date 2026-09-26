@@ -1,0 +1,38 @@
+{
+  "id": "side-static-hunt",
+  "title": "Bell-Rustler",
+  "chapter": "side",
+  "type": "chase",
+  "giver": "aunt-vertex",
+  "region": "cinderflats",
+  "summary": "A Yards apprentice has 'borrowed' the brass bell off the Choir's relay horn and is joyriding the burn-flat loop, tolling as he goes — louder when frightened, and he is always frightened. The Hollow's smallest horn is mute an hour before vespers. Aunt Vertex wants her magpie back unbruised, the bell back unbent, and the feud that hasn't happened to stay that way.",
+  "objectives": [
+    { "type": "goto", "target": "choirhollow:listening-horn", "label": "Take Cantor Ilex's report at the listening horn's empty mount" },
+    { "type": "chase", "target": "cinderflats:yard-gate", "targets": ["cinderflats:yard-gate", "cinderflats:parts-pile", "choirhollow:crater-rim", "choirhollow:temple-steps"], "speed": 20, "label": "Run down the bell-rustler on the burn-flat loop — tag him gently" },
+    { "type": "dropoff", "target": "choirhollow:listening-horn", "label": "Re-hang the horn's bell before vespers" }
+  ],
+  "rewards": {
+    "credits": 170,
+    "rep": { "reclaimers": 4, "choir": 5 },
+    "flags": ["side-static-hunt.done", "lore:horn-etiquette"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "aunt-vertex", "text": "Duck. A small theological problem arrives on a skiff at speed. Young Mottle — welds like an angel, thinks like a magpie — has *borrowed* the brass bell off the Choir's relay horn on the rim and is joyriding it around the scar, making it sing wrong. I have prayed for patience. Patience has rung the boss's phone." },
+      { "who": "cantor-ilex", "text": "Cantor Ilex, on the band and calm in the way that costs. Courier: the bell is not decoration. It is the *amen* on the end of the listening. Our smallest horn is mute an hour to vespers, and the Hollow is attempting not to thieve back. Attempting nobly." },
+      { "who": "ash-varga", "text": "So a Reclaimer kid stole a church bell and I'm the ecumenical response." },
+      { "who": "aunt-vertex", "text": "The Yards do not feud with the Choir, duck — glass and song, same element, different tempers. Bring the bell home unbent and Mottle home unbruised, and he pays the Hollow in the traditional coin: *labour*, with a chaperone. Me. The chaperone is me." }
+    ],
+    "accept": [
+      { "who": "aunt-vertex", "text": "He runs the old burn-flat loop — our gate, the sorted piles, their rim, and back, because the bell frightens him every time it tolls, so he goes faster, and faster is louder, and louder is faster. Don't chase the boy, duck. Herd the loop. Sit in his shadow at the piles and let him ride into you." },
+      { "who": "ketch", "text": "Ketch. Skiff turns wide, accelerates like gossip, and the driver's thirteen seasons of dumb. Tag-box is armed on your rack — one kiss of paint and he stands down. Do NOT boost into him. I am not telling the Choir why their bell has a Ash-shaped dent." },
+      { "who": "cantor-ilex", "text": "One further item, courier, from the Stillness: the bell did not wait to be struck, last night. It rang on its own, towards the southeast. Retrieve it first. We will discuss the ringing after vespers, or never. Never remains a liturgical option." }
+    ],
+    "complete": [
+      { "who": "aunt-vertex", "text": "Caught, cuffed with kind words, returned at walking pace — I watched it all on the big-eyed scope and applauded twice. Mottle is scrubbing the horn tower by lantern-light as we speak, learning the two gospels: clearances and consequences. Butterscotch?" },
+      { "who": "cantor-ilex", "text": "The bell is re-hung and vespers was whole. At the re-hanging — no hand touched it, courier — it rang once, towards the southeast, and the great horn answered *in the same note*. We have decided to file this under 'miracles, minor, pending'. The Choir thanks you. So does the minor miracle." },
+      { "who": "ash-varga", "text": "It rang before I ever touched it. Tell your horn to write its own thank-you note next time." },
+      { "who": "aunt-vertex", "text": "Ah. You've noticed things ring *at* you now, duck. One of them always is an echo. Bring it round if it starts rhyming." }
+    ]
+  }
+}

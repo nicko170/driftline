@@ -1,0 +1,38 @@
+{
+  "id": "side-winch-brake",
+  "title": "Brake Window",
+  "chapter": "side",
+  "type": "timed",
+  "giver": "wisp",
+  "region": "skydocks",
+  "summary": "The Skydocks cargo winch is braking on prayer-grade pads, three rafts are stacked upstairs waiting on the evening moorage window, and Ketch has machined a fresh set to a whisper. Run them from the garage to the winch base before sundown's window — glass-steel, brittle as a promise until seated, so fly it gentle *and* fast, which is the whole trick of everything.",
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:garage", "label": "Lift the finished brake-pads from Ketch's bench" },
+    { "type": "dropoff", "target": "skydocks:winch-base", "label": "Deliver the pads to the winch crew before the evening window" }
+  ],
+  "timeLimit": 160,
+  "cargo": { "fragile": true, "label": "winch brake-pads" },
+  "rewards": {
+    "credits": 190,
+    "rep": { "guild": 5, "driftline": 3 },
+    "flags": ["side-winch-brake.done", "lore:skyship-derelict-register"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "wisp", "text": "Friend Varga. Small downstairs errand with upstairs consequences. The cargo winch at the mesa base is braking on prayer-grade pads — Dockmaster Shore's assessment, and she exaggerates only by omission. Ketch has machined a fresh set. Fetch them gentle and soon, ideally both at once." },
+      { "who": "wisp", "text": "Three rafts stacked upstairs holding for the evening window. If the pads aren't seated by sundown, those ships ride the night out at anchor — uncomfortable, expensive, and faintly liturgical in the wrong way. Miss the window and the moorage log gets one of its *chapters*. Nobody likes the chapters." },
+      { "who": "ash-varga", "text": "How much margin am I flying on?" },
+      { "who": "wisp", "text": "A courier margin. About ten breaths and one good line. Ketch measured it against your last hundred rides. He says, and I quote, 'don't make a liar of my ledger.'" }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Ketch. Pads are glass-steel, finished to a whisper, wrapped in wax. Brittle till they're seated — no hop-landings, no wall-taps; the Wren's shield soaks the small sins and I've told her to bill you for the medium ones. Straight pan line west, swing wide of the slalom mouth. The canyon's only a shortcut for people who enjoy explaining themselves to me." },
+      { "who": "wisp", "text": "Clock is a weather system now, friend. I'll be on band six narrating your ETA to the dockmaster like a bedtime story. Slightly scary bedtime story. 'And then the brake pads were... en route.' Gripping stuff. Fly smooth." },
+      { "who": "dockmaster-devanna", "text": "Shore. Winch crew's standing by, mount flagged amber-hot, brake drum scrubbed and waiting. Bring those pads breathing, courier — a winch that slips is a ship that kneels, and this mesa does not kneel to hardware. The window is the window. The sky doesn't grant extensions." }
+    ],
+    "complete": [
+      { "who": "dockmaster-devanna", "text": "Pads seated, bite tested, window made with a fathom to spare — first raft's already down and the crew swears the winch *purred*. Some of the ships on this mesa's derelict register came down by that winch in year nineteen. It remembers them. Now it remembers you fondly instead. Logged in ink, courier." },
+      { "who": "wisp", "text": "All three moored, downstairs-aglow and boring, which is the finest outcome aviation offers. The last raft's captain stood the winch crew a round. I drank yours — tea's no good at altitude and regret is heavier. Owing you, permanently. It's the only debt I enjoy." },
+      { "who": "ketch", "text": "Cargo shield reports zero soaked hits. ZERO. Either you're learning or my machine's lying to spare my feelings, and I've machined her too well for that. Good run, kid. The pads sing when the drum's warm. You'll hear them next window." }
+    ]
+  }
+}
