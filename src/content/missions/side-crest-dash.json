@@ -1,0 +1,46 @@
+{
+  "id": "side-crest-dash",
+  "title": "Crest Dash",
+  "chapter": "side",
+  "type": "race",
+  "giver": "surveyor-kest",
+  "region": "windspine",
+  "summary": "Surveyor Kest needs a rider to run the ridge sprint — survey camp, turbine row, the crest, then all the way down to the southern foot — so she can calibrate her wall-speed maths against a real bike. The standing record is sixty seconds. The standing record-holder is a goat.",
+  "timeLimit": 60,
+  "objectives": [
+    { "type": "goto", "target": "windspine:survey-camp", "label": "Stage at the survey camp start chalk" },
+    { "type": "race", "targets": ["windspine:turbine-row", "windspine:ridge-crest", "windspine:south-foot"], "label": "The dash: turbine row → ridge crest → southern foot, in one breath" }
+  ],
+  "rewards": {
+    "credits": 280,
+    "rep": { "guild": 5, "driftline": 4 },
+    "flags": ["side-crest-dash.done"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "surveyor-kest", "text": "Varga. My storm-wall model says a wall crosses the ridge in ninety seconds flat, and my model has never once been checked against an honest machine. You run the sprint, I get a number, science advances by one bike length." },
+      { "who": "surveyor-kest", "text": "Course: camp chalk, up through the turbines, tag the crest, then commit to the south slope and stop only when the foot stops you. Time to beat is sixty seconds. That is the record. It has held for three seasons." },
+      { "who": "ash-varga", "text": "Who set it? One of the old couriers?" },
+      { "who": "surveyor-kest", "text": "Pemmy. The weather goat. She was chasing a kettle down the slope and I timed her out of professional curiosity. She has not been informed of her record. She would be insufferable." }
+    ],
+    "accept": [
+      { "who": "surveyor-kest", "text": "Noted. Line notes: the turbines steal your wind in thirds — pass them wide. The crest tags itself if you're honest about your line. The descent is where the goat beat everyone. She tucked. You have fairings. Do the maths." },
+      { "who": "ketch", "text": "Kid, Kest's stopwatch is guild-certified and her mercy is not. Run the turbines wide like she said, drift the crest shoulder instead of jumping it, and spend your whole boost on the descent. Gravity is free thrust — the one bargain this desert honours." },
+      { "who": "surveyor-kest", "text": "And Varga — if you beat sixty, do not gloat within earshot of the goat pen. She files complaints with the Guild. I have seen the form." }
+    ],
+    "complete": [
+      { "who": "surveyor-kest", "text": "Time's logged. Course record — by a margin my model refuses to discuss. Updating the wall tables tonight. If a wall ever chases you off this ridge, courier, you now outrun it by four seconds. On paper. Which is where walls lose." },
+      { "who": "ash-varga", "text": "Tell me the goat took it well." },
+      { "who": "surveyor-kest", "text": "The goat has been informed. She looked at the stopwatch, then at me, then ate the chalk start line. I have filed it as a protest. Congrats, Varga. You beat the finest natural athlete on Windspine. Do not let it reach the poems column. There is no poems column. Noted." }
+    ],
+    "choices": [
+      {
+        "prompt": "Kest asks what to write in the calibration report's 'method' field.",
+        "options": [
+          { "text": "\"Write: one courier, one goat's ghost, and a very long way down.\"", "setsFlag": "kest.report.goat" },
+          { "text": "\"Write: thrust, gravity, and the difference between them.\"", "setsFlag": "kest.report.gravity" }
+        ]
+      }
+    ]
+  }
+}

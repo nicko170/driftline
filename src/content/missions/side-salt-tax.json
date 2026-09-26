@@ -1,0 +1,47 @@
+{
+  "id": "side-salt-tax",
+  "title": "The Salt Tax",
+  "chapter": "side",
+  "type": "fragile",
+  "giver": "sister-counterweight",
+  "region": "saltmouth",
+  "summary": "Sister Counterweight is auditing Saltmouth's salt piles, and every measure in town must be checked against her calibration weights — glass-blown to a hundredth of a dram, and worth more per gram than the water tower. Carry the weight case around the audit loop: the old salt pan, the tower, then home to the brass scale. Whole.",
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:exchange", "label": "Sign for the calibration weights at the exchange" },
+    { "type": "goto", "target": "saltmouth:flats-pan", "label": "Audit the stockpile measures at the old salt pan" },
+    { "type": "goto", "target": "saltmouth:water-tower", "label": "Check the tower's wet measure — 'rust makes instruments generous'" },
+    { "type": "dropoff", "target": "saltmouth:exchange", "label": "Return the weights to the brass scale, unbroken" }
+  ],
+  "cargo": { "fragile": true, "label": "calibration weights" },
+  "rewards": {
+    "credits": 340,
+    "rep": { "guild": 8 },
+    "flags": ["side-salt-tax.done", "lore:lore-guild-form-22b"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "sister-counterweight", "text": "Courier. It is audit season — the one season the Guild observes faithfully, as storms observe nothing. Every measure in Saltmouth must today confess to my weights. Nine weights, glass, blown to a hundredth of a dram, older than the Debt. They are, in every sense, the standard." },
+      { "who": "sister-counterweight", "text": "The loop: my exchange, the pan stockpiles, the tower's wet measure, home. Ride as though the town's entire accounting rests in your cargo net. It does. I have checked. Twice." },
+      { "who": "ketch", "text": "Kid, a word — glass weights. That means no jumps, no wallops, and drift like you're stirring tea. You break a dram, Counterweight doesn't bill you, she *subtracts* you. I've seen the column. There's a name in it. The name doesn't ride anymore." },
+      { "who": "ash-varga", "text": "Glass weights, gentle hands, no heroics. It's a tax audit, how dangerous can it— why is everyone looking at me like that." }
+    ],
+    "accept": [
+      { "who": "sister-counterweight", "text": "The case is sealed and signed. Note the weight of it, courier — that is what correct feels like. You will be tempted, on the flats, to open the throttle. The throttle is where inaccuracy lives. Go slowly enough to be trusted, quickly enough to be on time. There is no slower disaster than a broken standard." },
+      { "who": "sister-counterweight", "text": "One more thing. If the case feels lighter on the return leg — if any pile in this town has been paying its salt-tax with a crooked scoop — say nothing at the pile. Bring the confession to the scale. The scale forgives. I simply record." }
+    ],
+    "complete": [
+      { "who": "sister-counterweight", "text": "Nine weights. Nine. Intact to the dram — the case rode truer than the towers it checked. Saltmouth's measures now all agree with reality, which makes today rarer than rain. The Guild notes your hands, Ash Varga. Gentle hands. Filed under assets." },
+      { "who": "ash-varga", "text": "For the record — the pan's south scoop is light by a salt-spoon. I saw it, I said nothing, like you asked. Do I get a receipt for that observation?" },
+      { "who": "sister-counterweight", "text": "You get the better currency: you get to have noticed correctly. The south scoop will be visited. Quietly. At night, when scoops dream of being cups. And courier — the scale read you at the door. You've gained a dram. It's either courage or the crate. Either way: appreciable." }
+    ],
+    "choices": [
+      {
+        "prompt": "Sister Counterweight offers to log your audit fee under a category of your choosing.",
+        "options": [
+          { "text": "\"Log it under 'weights and measures'. Clean books, clean conscience.\"", "setsFlag": "counterweight.log.clean" },
+          { "text": "\"Log it under 'hazard pay'. The hazards were administrative.\"", "setsFlag": "counterweight.log.hazard" }
+        ]
+      }
+    ]
+  }
+}

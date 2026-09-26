@@ -1,0 +1,37 @@
+{
+  "id": "side-mesa-perch",
+  "title": "The Mesa Perch",
+  "chapter": "side",
+  "type": "scout",
+  "giver": "dockmaster-devanna",
+  "region": "skydocks",
+  "summary": "The Guild is printing a brochure — 'The Skydocks: Approachable' — and Factor Marn Phlox wants survey readings from the mesa's most photogenic perches at golden hour. Devanna thinks the mesa should be approached with respect or not at all. She is paying you to stand still and look at it anyway.",
+  "objectives": [
+    { "type": "goto", "target": "skydocks:dockmaster", "label": "Collect the Guild's survey plates from the dockmaster's hut" },
+    { "type": "scout", "target": "skydocks:mesa-top", "label": "Read the light from the mesa top — the postcard angle" },
+    { "type": "scout", "target": "skydocks:keel-town", "label": "Read Keel Town's balconies from below the masts" },
+    { "type": "scout", "target": "skydocks:winch-base", "label": "Read the winch yard — 'industry with a sunset behind it'" }
+  ],
+  "rewards": {
+    "credits": 210,
+    "rep": { "guild": 6 },
+    "flags": ["side-mesa-perch.done", "lore:rope-tally"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "dockmaster-devanna", "text": "Courier. Factor Phlox has sent plates, instructions, and a word I refuse to say on an open channel. The Guild wishes to know how 'approachable' my mesa looks at golden hour. My mesa. Nineteen years a captain and I am asked to be scenery." },
+      { "who": "factor-marn-phlox", "text": "Devanna! The plates are simply light-meters with ambitions. Stand the courier at the perches, let the readers sip the view, and the Guild prints something honest. Ships at anchor, lamps coming on, honest rope doing honest work. People should see it before the desert finishes redecorating." },
+      { "who": "dockmaster-devanna", "text": "You heard the factor. Three perches: the mesa top, the view up at Keel Town, and the winch yard, which he has described in writing as 'industry with a sunset behind it'. I have thrown nothing. Yet. Take the plates, stand where they say, and look at my docks like a brochure would." }
+    ],
+    "accept": [
+      { "who": "dockmaster-devanna", "text": "The readers need stillness, not speed — park yourself and let the light finish arriving. And if the view from the crest perch happens to be magnificent, courier, you will keep that to yourself. A dockmaster has a reputation of moderate surliness to maintain." },
+      { "who": "ash-varga", "text": "Copy. Stand still, admire professionally, report nothing majestic. Devanna — you know the brochure's going to be right, don't you?" },
+      { "who": "dockmaster-devanna", "text": "That, Varga, is the part I cannot forgive." }
+    ],
+    "complete": [
+      { "who": "factor-marn-phlox", "text": "The plates came back luminous! The Guild's printers have never seen numbers like these off the winch-yard reading — apparently rust photographs like royalty. You've done the mesa a kindness, courier. First print run will say 'Gateway to the High Lanes'. Devanna has already refused a copy." },
+      { "who": "dockmaster-devanna", "text": "He also wants a second survey at dawn. I told him dawn is when the mesa is busiest being a working dock and least interested in applause. ...Come back at dawn anyway, courier. Plates will be ready. That is not enthusiasm. That is scheduling." },
+      { "who": "ash-varga", "text": "Understood. Noted as: the dockmaster approached the mesa, cautiously, from the side, the way you approach anything proud." }
+    ]
+  }
+}

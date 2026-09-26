@@ -1,0 +1,37 @@
+{
+  "id": "side-hollow-chimes",
+  "title": "Hollow Chimes",
+  "chapter": "side",
+  "type": "collect",
+  "giver": "little-reverb",
+  "region": "choirhollow",
+  "summary": "Little Reverb heard chimes in the dark stretch where no lamps burn — four clear notes, gone by morning. She's decided they're resonance pebbles: glass chips that ring when the desert says the right thing near them. Bring back all four before the grown-ups declare them scripture and nobody's allowed to touch anything.",
+  "objectives": [
+    { "type": "goto", "target": "choirhollow:temple-steps", "label": "Meet Reverb at the temple steps — after lamp-lighting, before the patrol" },
+    { "type": "collect", "target": "choirhollow:crater-rim", "count": 2, "label": "Comb the dark rim — two pebbles chiming east of the lamps" },
+    { "type": "collect", "target": "choirhollow:listening-horn", "count": 2, "label": "Sweep the listening horn's blind side — two more" }
+  ],
+  "rewards": {
+    "credits": 170,
+    "rep": { "choir": 5 },
+    "flags": ["side-hollow-chimes.done", "lore:doctrine-of-the-cradle"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "little-reverb", "text": "Courier. Last night the hollow went ding. Four times. Not the lamps — the lamps go dong, everybody knows that — this was thin and clear and from the dark part of the rim where nobody's allowed at night." },
+      { "who": "little-reverb", "text": "So obviously it's resonance pebbles. Glass chips that ring when the desert talks near them. If I tell the grown-ups, Cantor Ilex will declare them holy, Brother Decibel will yell at them, and they'll spend sixty years in a box being sacred. Boring outcome." },
+      { "who": "ash-varga", "text": "And the non-boring outcome?" },
+      { "who": "little-reverb", "text": "You pick them up. Tonight. For my collection. I'm at eleven echoes and these would make fifteen, because they count double. That's just maths." }
+    ],
+    "accept": [
+      { "who": "little-reverb", "text": "Rules: after lamp-lighting so the patrol's busy, before the big quiet so the desert's still chatty. Two on the rim, two by the horn's blind side. You'll hear them before you see them — they go ding when you get close. Don't hum near them. They copy it and then they're harder to find. Learned that the expensive way." },
+      { "who": "cantor-ilex", "text": "Ash — the child tells us there is 'nothing' on the night rim. We have chosen to believe her, as one believes a very small priest. If you should find that nothing has weight, shape, and a tone like struck water... the Hollow would consider it a personal favour if it reached us *undiscussed*." },
+      { "who": "little-reverb", "text": "See? That's the box-talk starting. Go. Before they tune a whole ceremony to it." }
+    ],
+    "complete": [
+      { "who": "little-reverb", "text": "Four! Four clean dings, none of them holy yet. Listen — hold it to your ear. ...Hear that? It's doing your engine note back, but nicer. That one likes you. That's not a compliment. They like storms too." },
+      { "who": "ash-varga", "text": "Reverb, what actually makes the desert say the right thing near them? What were they answering last night?" },
+      { "who": "little-reverb", "text": "Dunno. It was a word though. Short one. The desert says it under everything lately, like a song stuck in its head. The grown-ups have a word for the word — they wrote a whole doctrine about the cradle and the door. Don't tell them I told you it was short." }
+    ]
+  }
+}
