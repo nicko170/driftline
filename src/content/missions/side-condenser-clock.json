@@ -1,0 +1,34 @@
+{
+  "id": "side-condenser-clock",
+  "title": "Against the Condenser",
+  "chapter": "side",
+  "type": "timed",
+  "giver": "brinemaster-ogo",
+  "region": "saltmouth",
+  "summary": "Guild water chits expire at dusk — unstamped draw credits are worthless paper and the condenser resets on the hour. Two stops inside Saltmouth before the clock drains: stamp at the tower, bank at the moorage.",
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:exchange", "label": "Take the unstamped water chits from the exchange" },
+    { "type": "dropoff", "target": "saltmouth:water-tower", "label": "Stamp the chits at the water tower" },
+    { "type": "dropoff", "target": "saltmouth:moorage", "label": "Bank the stamped chits at the moorage mast" }
+  ],
+  "timeLimit": 120,
+  "rewards": {
+    "credits": 85,
+    "rep": { "guild": 3 },
+    "flags": ["side-condenser-clock.done", "lore:lore-water-rights"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "brinemaster-ogo", "text": "Ah, courier. You are thirsty for work and I am holding water. Funny how often those are the same sentence." },
+      { "who": "brinemaster-ogo", "text": "The day's draw chits. Unstamped at dusk, they are wallpaper. Stamp them at the tower, bank them at the mast, and mind the clock — the condenser forgives nothing. It's the only honest machine I own." }
+    ],
+    "accept": [
+      { "who": "brinemaster-ogo", "text": "Two minutes, two stops, short ropes. Cut the corner behind the stills if your knees are brave. Go, go — the paper is already dying." }
+    ],
+    "complete": [
+      { "who": "brinemaster-ogo", "text": "Stamped, banked, breathing. You beat my machine, child. Do not make a habit of it — I insure against habits." },
+      { "who": "ash-varga", "text": "You pay me to race your own plumbing." },
+      { "who": "brinemaster-ogo", "text": "I pay you to remind Saltmouth that the clock has teeth. The ride is merely educational." }
+    ]
+  }
+}

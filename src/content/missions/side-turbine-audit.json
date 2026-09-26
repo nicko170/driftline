@@ -1,0 +1,32 @@
+{
+  "id": "side-turbine-audit",
+  "title": "Turbine Audit",
+  "chapter": "side",
+  "type": "collect",
+  "giver": "ketch",
+  "region": "windspine",
+  "summary": "Windspine's survey crew audits the turbines before high season and four of them are wearing bird-nests of old fence wire, shrine ribbon and half a fridge door. Hop the row and the crest, strip the debris, leave the blades honest.",
+  "objectives": [
+    { "type": "collect", "target": "windspine:turbine-row", "count": 2, "label": "Strip nests from the lower turbine row" },
+    { "type": "collect", "target": "windspine:ridge-crest", "count": 2, "label": "Strip nests from the ridge crest turbines" }
+  ],
+  "rewards": {
+    "credits": 140,
+    "rep": { "guild": 2, "reclaimers": 3 },
+    "flags": ["side-turbine-audit.done", "lore:windspine-log"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Survey camp wants its turbines undressed before the season wind. Years of birds — or something with the same work ethic — have knitted four of them little jackets of wire scrap." },
+      { "who": "ketch", "text": "You'll need the hop. Nests sit high. Whatever you pull down, dump it at the camp — Pyke's people buy it by the armful, so the scrap pays twice. Once to them, once to me not hearing about it." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Row first, crest second, watch the crosswind on the drop. And if a blade swings at you, duck — they're slow, not friendly." }
+    ],
+    "complete": [
+      { "who": "ketch", "text": "Four clean towers and a pile of wire the Reclaimers will frame a marriage proposal around. Good hop." },
+      { "who": "ash-varga", "text": "Something had built a whole pantry in the crest unit. I evicted a dynasty." },
+      { "who": "ketch", "text": "Congratulations, landlord. The turbines hum in a lower key now — even the wind notices good work." }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "side-crests",
+  "title": "Crests and Cairns",
+  "chapter": "side",
+  "type": "scout",
+  "giver": "salt-singer-ila",
+  "region": "saltmouth",
+  "summary": "Ila's weather has gone stale — a forecast repeated too many times spoils like milk, she says. Stand quiet at the three high places — dune overlook, crater rim, Windspine crest — and bring her back what the horizon says now.",
+  "objectives": [
+    { "type": "scout", "target": "saltmouth:overlook", "label": "Read the horizon from the dune overlook" },
+    { "type": "scout", "target": "choirhollow:crater-rim", "label": "Read the horizon from the Choir's crater rim" },
+    { "type": "scout", "target": "windspine:ridge-crest", "label": "Read the horizon from the Windspine crest" }
+  ],
+  "rewards": {
+    "credits": 150,
+    "rep": { "driftline": 4 },
+    "flags": ["side-crests.done", "lore:lore-first-courier"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "salt-singer-ila", "text": "Courier, courier, caught in my chorus — my weather's gone thin, my verses borrowed. Three high places keep the sky's account; go stand where the tall water starts." },
+      { "who": "salt-singer-ila", "text": "The overlook first, where Saltmouth ends. The rim, where the Choir listens down. The crest, where the wind keeps its ledger. Stand still, count slow, remember gold." }
+    ],
+    "accept": [
+      { "who": "salt-singer-ila", "text": "Still as stone, soft as sand — let the view arrive, don't demand it. I'll pay you in coin now and a verse later. The verse is the better currency, love." }
+    ],
+    "complete": [
+      { "who": "salt-singer-ila", "text": "Yes — smell of cold iron on the east line, a violet bruise past the ridge... you brought it whole. Three cairns climbed, three skies named, one old singer un-ashamed." },
+      { "who": "ash-varga", "text": "I mostly stood there going quiet. Whatever the desert does next, it talks to you first." },
+      { "who": "salt-singer-ila", "text": "It talks to whoever holds still long enough to be addressed. The first couriers learned that — now you have too." }
+    ],
+    "choices": [
+      {
+        "prompt": "Ila asks what you'll remember of the crest.",
+        "options": [
+          { "text": "\"The wind up there keeps accounts. I'll ride like it audits.\"", "setsFlag": "ila.crest.wind" },
+          { "text": "\"Honestly? The quiet. I didn't know a machine this loud could carry any.\"", "setsFlag": "ila.crest.quiet" }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "side-spark-plugs",
+  "title": "A Pocketful of Spark Plugs",
+  "chapter": "side",
+  "type": "collect",
+  "giver": "solder",
+  "region": "cinderflats",
+  "summary": "Solder's saddlebag split mid-yard and six reconditioned ignition plugs seeded themselves along the fence line and the sorted pile. Sweep them up before the mag-crane mistakes them for lunch.",
+  "objectives": [
+    { "type": "collect", "target": "cinderflats:yard-gate", "count": 3, "label": "Sweep the fence line by the yard gate — three plugs" },
+    { "type": "collect", "target": "cinderflats:parts-pile", "count": 3, "label": "Comb the sorted parts pile — three more plugs" }
+  ],
+  "rewards": {
+    "credits": 95,
+    "rep": { "reclaimers": 4 },
+    "flags": ["side-spark-plugs.done", "lore:lore-reclaimer-manual"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "solder", "text": "Okay. Small disaster. My saddlebag seam lied to me — honest stitching would never — and six plugs are now distributed across the fence line like very gross seed crystal." },
+      { "who": "solder", "text": "They're porcelain-shouldered, so don't park on them. And if the mag-crane eats one, that's between you and the crane. I will absolve nobody." }
+    ],
+    "accept": [
+      { "who": "solder", "text": "Six plugs, two piles of trouble. If you find yourself apologising to any of them out loud, that's normal. It helps. Probably." }
+    ],
+    "complete": [
+      { "who": "solder", "text": "Six! Six honest plugs, barely scratched. You have gentle forks, courier." },
+      { "who": "ash-varga", "text": "I talked to the last one. Like you said. It didn't help. I still did it." },
+      { "who": "solder", "text": "It always helps. You just can't hear the difference yet. Stick around the yard, you will." }
+    ]
+  }
+}
