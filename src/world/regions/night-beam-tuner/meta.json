@@ -1,0 +1,8 @@
+{
+  "slug": "night-beam-tuner",
+  "name": "Night Beam Tuner Bench",
+  "blurb": "Workshop tool, not a game region: dusk/night headlight tuning over a glass-canyon salt corridor. Anchors and center live outside the playable map.",
+  "center": [5200, 5200],
+  "radius": 4,
+  "danger": 0
+}

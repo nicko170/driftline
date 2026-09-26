@@ -257,10 +257,17 @@ const CONE_R0 = 1.8; // game cone radius at angle 0.45
 
 function BikeRig() {
   const spot = useRef<THREE.SpotLight>(null);
+  const target = useRef<THREE.Object3D>(null);
   const lamp = useRef<THREE.MeshStandardMaterial>(null);
   const coneMat = useRef<THREE.MeshBasicMaterial>(null);
   const coneMesh = useRef<THREE.Mesh>(null);
   const glow = useRef<THREE.MeshStandardMaterial>(null);
+
+  // deterministic target wiring: sibling object in the same group, so its
+  // world transform = group (bike at hover) × local [0, aimDrop, aimAhead]
+  useEffect(() => {
+    if (spot.current && target.current) spot.current.target = target.current;
+  }, []);
 
   useFrame(({ clock }) => {
     const on = beamOn(beam.t);
@@ -270,9 +277,10 @@ function BikeRig() {
       spot.current.penumbra = beam.penumbra;
       spot.current.distance = beam.distance;
       spot.current.decay = beam.decay;
-      const tgt = spot.current.target;
-      tgt.position.set(0, beam.aimDrop, beam.aimAhead);
-      tgt.updateMatrixWorld();
+    }
+    if (target.current) {
+      target.current.position.set(0, beam.aimDrop, beam.aimAhead);
+      target.current.updateMatrixWorld();
     }
     if (lamp.current) lamp.current.emissiveIntensity = 0.6 + on * beam.lampEmissive;
     if (coneMat.current) coneMat.current.opacity = on * beam.coneOpacity;
@@ -291,9 +299,8 @@ function BikeRig() {
         position={[0, 0.65, 1.7]}
         color="#FFE0AE"
         intensity={0}
-      >
-        <object3D position={[0, -1.1, 15]} attach="target" />
-      </spotLight>
+      />
+      <object3D ref={target} position={[0, -1.1, 15]} />
       <mesh position={[0, 0.26, 2.02]}>
         <planeGeometry args={[0.36, 0.13]} />
         <meshStandardMaterial ref={lamp} color="#FFE9C4" emissive="#FFE9C4" emissiveIntensity={0.6} side={THREE.DoubleSide} />

@@ -1,0 +1,205 @@
+/* Night Beam Tuner — scoped styles (nbt-). Palette tokens come from ui.css. */
+
+.nbt-root {
+  position: relative;
+  flex: 1;
+  min-height: 72vh;
+  display: flex;
+  background: var(--space, #14101F);
+}
+.nbt-canvas { position: absolute; inset: 0; }
+.nbt-canvas canvas { display: block; }
+
+.nbt-hint {
+  position: absolute; left: 14px; top: 12px; z-index: 2;
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE); opacity: 0.55; pointer-events: none;
+}
+.nbt-hint b { color: var(--amber, #FFB454); font-weight: 600; }
+
+/* ---------- slider rail ---------- */
+.nbt-panel {
+  position: absolute; left: 14px; bottom: 14px; z-index: 2;
+  width: min(400px, calc(100% - 28px));
+  max-height: calc(100% - 28px);
+  overflow-y: auto;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--rust-deep, #7E3320);
+  border-top: 1px solid var(--amber, #FFB454);
+  background: color-mix(in srgb, var(--space, #14101F) 84%, transparent);
+  backdrop-filter: blur(6px);
+  animation: rise 180ms ease-out;
+}
+
+.nbt-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 8px; }
+.nbt-head h2 {
+  margin: 0; font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--amber, #FFB454);
+}
+.nbt-head p { margin: 0; display: flex; gap: 8px; align-items: baseline; }
+.nbt-clock {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif); font-size: 15px;
+  color: var(--salt, #F3EEE2); font-variant-numeric: tabular-nums;
+}
+.nbt-night { font-size: 11px; color: var(--teal-bright, #57C4B8); letter-spacing: 0.08em; font-variant-numeric: tabular-nums; }
+
+.nbt-scrub { position: relative; margin-bottom: 4px; }
+
+.nbt-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+
+.nbt-btn, .nbt-chip {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE);
+  background: transparent;
+  border: 1px solid var(--rust-deep, #7E3320);
+  border-radius: 8px;
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: border-color 140ms, background 140ms, color 140ms;
+}
+.nbt-btn:hover, .nbt-chip:hover { border-color: var(--amber, #FFB454); color: var(--amber-hot, #FFC969); }
+.nbt-btn:focus-visible, .nbt-chip:focus-visible, .nbt-slider input:focus-visible,
+.nbt-scrub input:focus-visible { outline: 2px solid var(--amber, #FFB454); outline-offset: 1px; }
+.nbt-btn.primary { border-color: var(--amber, #FFB454); color: var(--amber-hot, #FFC969); }
+.nbt-btn.primary:hover { background: color-mix(in srgb, var(--amber, #FFB454) 16%, transparent); }
+.nbt-chip { padding: 6px 10px; font-size: 10px; }
+.nbt-chip.on { border-color: var(--teal-bright, #57C4B8); color: var(--teal-bright, #57C4B8); }
+.nbt-chip.view.on { border-color: var(--amber, #FFB454); color: var(--amber-hot, #FFC969); }
+
+/* ---------- sliders with glyph chips ---------- */
+.nbt-slider { display: grid; grid-template-columns: 18px 92px 1fr 56px; gap: 8px; align-items: center; margin: 6px 0; }
+.nbt-glyph {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 12px; text-align: center; line-height: 1;
+  width: 16px; height: 16px; border-radius: 4px;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.nbt-glyph.amber { color: var(--amber-hot, #FFC969); }
+.nbt-glyph.teal { color: var(--teal-bright, #57C4B8); }
+.nbt-glyph.bone { color: var(--bone, #E4D7BE); }
+.nbt-slider-label {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE); opacity: 0.85;
+}
+.nbt-slider-val {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 12px; text-align: right; font-variant-numeric: tabular-nums;
+  color: var(--amber-hot, #FFC969);
+}
+
+.nbt-slider input[type="range"], .nbt-scrub input[type="range"] {
+  -webkit-appearance: none; appearance: none;
+  width: 100%; height: 22px; background: transparent; cursor: pointer; margin: 0;
+}
+.nbt-slider input::-webkit-slider-runnable-track, .nbt-scrub input::-webkit-slider-runnable-track {
+  height: 3px; border-radius: 2px; background: color-mix(in srgb, var(--bone, #E4D7BE) 30%, transparent);
+}
+.nbt-slider input::-webkit-slider-thumb, .nbt-scrub input::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 13px; height: 13px; margin-top: -5px; border-radius: 3px;
+  background: var(--amber, #FFB454); border: 1px solid var(--rust-deep, #7E3320);
+  transform: rotate(45deg);
+}
+.nbt-slider input::-moz-range-track, .nbt-scrub input::-moz-range-track {
+  height: 3px; border-radius: 2px; background: color-mix(in srgb, var(--bone, #E4D7BE) 30%, transparent);
+}
+.nbt-slider input::-moz-range-thumb, .nbt-scrub input::-moz-range-thumb {
+  width: 11px; height: 11px; border-radius: 3px; border: 1px solid var(--rust-deep, #7E3320);
+  background: var(--amber, #FFB454); transform: rotate(45deg);
+}
+
+/* ---------- verdict strip ---------- */
+.nbt-verdict {
+  margin: 10px 0 4px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  display: flex; flex-direction: column; gap: 2px;
+  border: 1px dashed var(--rust-deep, #7E3320);
+}
+.nbt-verdict-stats {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--sand, #D9A45B); font-variant-numeric: tabular-nums;
+}
+.nbt-verdict-stats b { color: var(--amber-hot, #FFC969); font-weight: 600; }
+.nbt-verdict-label { font-size: 11.5px; letter-spacing: 0.04em; color: var(--bone, #E4D7BE); }
+.nbt-verdict.good { border-color: var(--teal-bright, #57C4B8); }
+.nbt-verdict.good .nbt-verdict-label { color: var(--teal-bright, #57C4B8); }
+.nbt-verdict.warn { border-color: var(--amber, #FFB454); }
+.nbt-verdict.warn .nbt-verdict-label { color: var(--amber-hot, #FFC969); }
+.nbt-verdict.bad { border-color: var(--danger, #E4572E); }
+.nbt-verdict.bad .nbt-verdict-label { color: var(--danger, #E4572E); }
+
+.nbt-footnote {
+  margin: 10px 0 0;
+  font-size: 10.5px; line-height: 1.55;
+  color: var(--bone, #E4D7BE); opacity: 0.7;
+}
+.nbt-footnote code { font-size: 10px; color: var(--teal-bright, #57C4B8); }
+
+/* ---------- scanline overlay ---------- */
+.nbt-scan {
+  position: absolute; right: 14px; top: 12px; z-index: 2;
+  width: min(340px, calc(100% - 28px));
+  padding: 10px 12px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--rust-deep, #7E3320);
+  background: color-mix(in srgb, var(--space, #14101F) 82%, transparent);
+  backdrop-filter: blur(6px);
+  pointer-events: none;
+}
+.nbt-scan-head {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE); margin-bottom: 6px;
+  display: flex; align-items: center; gap: 6px;
+}
+.nbt-scan-sub { margin-left: auto; color: var(--sand, #D9A45B); opacity: 0.8; letter-spacing: 0.06em; text-transform: none; }
+.nbt-scan canvas { width: 100%; height: 200px; display: block; }
+
+/* ---------- splash ---------- */
+.nbt-splash {
+  position: absolute; inset: 0; z-index: 5;
+  display: grid; place-items: center;
+  background: color-mix(in srgb, var(--space, #14101F) 62%, transparent);
+  backdrop-filter: blur(3px);
+  animation: rise 180ms ease-out;
+}
+.nbt-splash-card {
+  width: min(660px, calc(100% - 36px));
+  border-radius: 12px;
+  border: 1px solid var(--rust-deep, #7E3320);
+  border-top: 1px solid var(--amber, #FFB454);
+  background: color-mix(in srgb, var(--space, #14101F) 88%, transparent);
+  overflow: hidden;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.5);
+}
+.nbt-splash-art {
+  height: 240px;
+  background-size: cover;
+  background-position: center 60%;
+  border-bottom: 1px solid var(--rust-deep, #7E3320);
+}
+.nbt-splash-body { padding: 18px 22px 22px; }
+.nbt-splash-body h1 {
+  margin: 0 0 10px;
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 22px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--amber, #FFB454);
+}
+.nbt-splash-body p {
+  margin: 0 0 16px;
+  max-width: 58ch;
+  font-size: 13.5px; line-height: 1.65;
+  color: var(--bone, #E4D7BE);
+}
+.nbt-btn.big { padding: 11px 20px; font-size: 13px; }
+
+@media (max-width: 860px) {
+  .nbt-scan { display: none; }
+  .nbt-panel { left: 8px; right: 8px; bottom: 8px; width: auto; }
+  .nbt-hint { display: none; }
+}
