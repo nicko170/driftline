@@ -1,0 +1,55 @@
+{
+  "id": "ook",
+  "name": "Dusk-Farmer Ook",
+  "role": "Lichen farmer at the boundary shadow",
+  "faction": "independent",
+  "home": "mothersgate",
+  "bio": "Farms litho-lichen on the lee side of the boundary range, in the permanent shadow where the far glass hills begin and the sealed Gate keeps its old counsel. Grows the only green left on Kessa-9 — 'things that grow where nothing should' — and trades it door to door by night: oxygen lichen for breathers, glow-lichen for markers, and one strain he will not name that started growing on its own the year the desert began to change. Daylight people make him tired. He owns eleven hats, all identical, all wrong.",
+  "appearance": "Round, unhurried man in a layered night-cloak dusted pale green at the hem like flour on a baker, a wide waxed hat over deep-set patient eyes, luminous lichen smears on his cuffs and knuckles, carrying a seed satchel of stitched shade-cloth that glows faintly through the seams.",
+  "voice": "Terse to the edge of rudeness, warm underneath like banked coals. Speaks in soil: everything is rooting, feeding, or compost. One sentence at a time, then silence he refuses to feel bad about. Daylight is 'the loud hours'. Calls Ash 'rider', couriers generally 'weather with a face'.",
+  "lines": {
+    "greetings": [
+      "Rider. You brought noise. The lichen forgives you. Working on it myself.",
+      "You're early for the quiet hours. Stand there. Don't lean on the rows.",
+      "Varga. Heard the crate hums. Everything hums out here eventually. Soil takes requests."
+    ],
+    "barks": [
+      "Sun people talk like plants owe them something.",
+      "That green out past the rows? Don't touch it. It wasn't planted. Garden rule: I decide what grows. It disagrees. We're negotiating.",
+      "Hats keep the thoughts in. Eleven's barely enough out here."
+    ],
+    "mission": [
+      "Run this crate of breath-lichen to the wind camps. Sealed, dark, cool. Smell smoke, you ride faster. Smell nothing, ride anyway.",
+      "Night run, rider. Glow-tubs to the survey posts, spread them wide. The posts guide couriers home. Sometimes they guide something else. Report if so."
+    ],
+    "radio": [
+      "Ook. The rows flowered wrong tonight — uphill, against the wind, toward the Gate. Whatever you're carrying, rider, it's got admirers.",
+      "Green's spreading two handspans a day since your crate crossed the flats. Not complaining. Supply follows demand.",
+      "Radio off after this. Plants can't hear you but I can and I don't want to."
+    ],
+    "night": [
+      "Loud hours ended, finally. Now we can hear the desert thinking. It thinks slow. Respectable pace.",
+      "Steady light, good growth. Fitful light, thin rows. Nights out here I learn calm from the crop."
+    ],
+    "storm": [
+      "Storms drop dead at the boundary cliffs. Sand won't cross the shadow line. Ask the sand why. I've stopped asking. It says 'her'.",
+      "Wall on the horizon. Rows are banked, tubs are lidded, hat's snugged. Weather with a face, ride home."
+    ],
+    "crate": [
+      "Set the crate on the north row overnight and the lichen leaned. Whole field, leaning, like bread dough toward the oven.",
+      "Collector offered a fortune for the unnamed strain. Told him it's not mine to sell. Told him whose I think it is. He left fast. Rude but wise."
+    ],
+    "rumors": [
+      "The Choir says MOTHER sleeps behind the Gate. Something's gardening in her name, and it plants without asking. Gardener's intuition.",
+      "Reclaimers stripped the old irrigation out here years back. Rows watered themselves the week after. I file it under 'above my pay grade', which is everything."
+    ],
+    "lore": [
+      "Terraforming lichen: feeds on starlight, glass dust, and patience. First two are free. The third is why the colonies failed and the farmers didn't.",
+      "Kessa-9's last native green died two centuries back. What's growing in my rows now is either its descendant or its replacement. It grows toward the Gate. Draw your own furrow."
+    ],
+    "farewells": [
+      "Go. Come back in the quiet hours. Bring dark. Bring quiet. Bring payment, ideally.",
+      "Ride the shadow line home. Faster, cooler, and the lichen likes an audience."
+    ]
+  }
+}

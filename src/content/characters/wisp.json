@@ -1,0 +1,55 @@
+{
+  "id": "wisp",
+  "name": "Ferry-Pilot Wisp",
+  "role": "Skyship ferry pilot, Skydocks to the flats",
+  "faction": "independent",
+  "home": "skydocks",
+  "bio": "Flies the little ferry skiffs between Keel Town and the mesa moorage, and has never once been late — she arrives before the passengers, occasionally before the passengers decide to travel. Twenty years aloft over the Glass Desert has scrubbed all panic out of her; she has watched three storms eat a landscape while filing a snacks inventory. Her radio chatter is the couriers' favourite channel: aerial gossip, traffic reports, and calm so total it functions as weather.",
+  "appearance": "Tall, serene pilot in a faded teal flight suit two sizes too big with the cuffs rolled, grey-streaked hair in a loose knot pinned with a spent flare casing, mirrored goggles pushed up into a permanent mild squint, deck gloves hanging from her belt, standing beside a skiff that's already idling.",
+  "voice": "Unshakeably placid, weather-report cadence, gentle absurdity delivered flat. Refers to the sky as 'upstairs' and the desert as 'downstairs'. Everyone is 'friend' or 'traffic'. Never says 'hurry'; says 'when convenient, ideally soon-ish'. Her gossip is gossip-shaped data: always useful, never attributed.",
+  "lines": {
+    "greetings": [
+      "Friend Varga. You're eleven minutes ahead of my schedule for you. Rude of me to be behind. Tea?",
+      "Welcome to the moorage. Mind the wind, it's on a guild contract and gets ideas.",
+      "Ash. I flew over your route this morning. It looked fun from upstairs. Downstairs looked busy."
+    ],
+    "barks": [
+      "Gravity is a rumour with a good lawyer. I pay it respect and carry spare flux.",
+      "The mesa wind answers to money, friend. I've none, so we get along beautifully.",
+      "Twenty years aloft. Crashed twice. Both times the desert apologised first, which I found polite."
+    ],
+    "mission": [
+      "Little hop-job, friend: mail sacks to the three wind camps, drop them on the flags. They whistle on the way down. People like the whistle. Morale is aerodynamics.",
+      "Carry this passenger crate to Keel Town — gentle landings, it complains. Contents unknown, breathing steady, paid in advance. Upstairs rules: don't ask, do wave."
+    ],
+    "radio": [
+      "Ferry traffic on band six. One courier, southeast bound, rapid and lovely. One storm, northwest bound, unhurried and enormous. Plan accordingly, friends.",
+      "Varga, aerial observation: the Guild is stacking crates around your garage like a compliment with paperwork. Thought you'd want the overhead view.",
+      "Calm advisory: your boost trail is visible from altitude. Beautiful arc. Slightly illegal over the pan. Guild mad, Choir taking notes, Reclaimers applauding, apparently."
+    ],
+    "storm": [
+      "Ferry advisory, friends: the tall dirt is booking the whole western sky. All my passengers cancelled by surviving, sensibly. Ground speed is the new airspeed today.",
+      "Flew around a storm once, rather than through. Took three days. Arrived before everyone else anyway. There's a lesson; I've forgotten it, which is also a lesson."
+    ],
+    "night": [
+      "Night ferries are the honest ones. Upstairs shows all its lights; downstairs pretends to sleep.",
+      "Lamp Rest glows teal, Keel Town glows amber, and old Saltmouth glows like embers in a grate. Whole map's a instruments panel if you squint kindly."
+    ],
+    "crate": [
+      "Your sealed box, friend — at altitude it points. Can't explain. Compass points north, crate points at the Gate. I fly with both now. Redundancy feels wise.",
+      "Whatever's sealed, it's freight first and omen second. Freight I know. Omens pay worse."
+    ],
+    "rumors": [
+      "Heard upstairs that the Choir's horns all turned ten degrees last week. Toward the Gate. Horns don't have legs. Filed under 'downstairs problems'.",
+      "Guild's moorage fees doubled for ships that hum. Only one ship hums. It's nobody's. It's been moored there for nineteen years. Superb gossip, that one."
+    ],
+    "lore": [
+      "First ferries were terraforming tenders, friend. When the money ran out, the crews kept flying — you don't abandon a sky you've folded your life into.",
+      "From upstairs, the Glass Desert is a letter written in one long sentence of roads. The couriers are the punctuation. Be a good comma, friend."
+    ],
+    "farewells": [
+      "Smooth air and kind landing fees. Come fly sometime. The skiff already expects you; it's been idling since Tuesday.",
+      "Off you go, traffic. I'll watch your dust from upstairs and narrate kindly."
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "old-bahro",
+  "name": "Old Bahro",
+  "role": "Retired miner, moorage-mast fixture",
+  "faction": "independent",
+  "home": "saltmouth",
+  "bio": "Ninety-one years old, give or take a decade he refuses to account for, and parked at the foot of Saltmouth's moorage mast since before most of the town was bolted together. Claims he helped pour the Glassroad north when the reactor burn fused the canyon — also claims the canyon poured him, that there were two glassroads, and that he never left Saltmouth in his life. Every version contradicts the last and every version turns out to be partly true, which is why the couriers keep buying him soup.",
+  "appearance": "A folded-up old man in a fused-glass miner's coat that flashes teal when he turns, clouded eyes pale as salt, hands stained permanently amber from a lifetime of reactor flux, a peaked cap with a rail-union badge, sitting on the same labelled crate at the moorage mast — the crate says DO NOT OPEN and he says it's a footrest.",
+  "voice": "Winding, warm, self-contradicting on purpose. Starts a story three times, each opening truer than the last. Calls everyone 'young'un' including people in their sixties. His lies have load-bearing walls: pull one detail and something real falls out. Never finishes a sentence about MOTHER; always finishes one about soup.",
+  "portrait": "images/characters/old-bahro.jpg",
+  "heroAlt": "Illustrated portrait of Old Bahro, an ancient folded-up miner in a teal-flecked glass coat and union cap, seated on a marked crate under the Saltmouth moorage mast at long-shadow dusk.",
+  "lines": {
+    "greetings": [
+      "Young'un. Sit. Not there — that's the soup crate. Other crate. No, that one's mine.",
+      "Ash Varga. Knew your bike when it was somebody else's. Better rider then. Probably.",
+      "Come to hear how I poured the Glassroad? Good. I remember it different today, so it's new for both of us."
+    ],
+    "barks": [
+      "The mast creaks in E-flat when the wind's honest. Today it's lying.",
+      "I mined this desert before it was a desert. Underneath was worse. Cheerful thought for your morning.",
+      "That skyship's moored wrong. Shade-side lines first, everyone knows that. Nobody does it. Civilisation.",
+      "You want the truth? I'm ninety-one and retired from lying. I only do it professionally now."
+    ],
+    "mission": [
+      "Carry this down the Glassroad and mind the slick bend — I should know, I put it there. Or I didn't and you should mind it anyway. Both safe.",
+      "Deliver this soup to my sister. She's the tall one. We're all tall compared to me. I was tall once. This is the story's shortest version."
+    ],
+    "radio": [
+      "Bahro on the mast channel. Young'un Varga, the Glassroad's singing in thirds today. That means it's bored. Bored glass bites.",
+      "I watched you take that canyon bend. Twenty years ago that bend wasn't there. Make of that what the insurers did.",
+      "Radio etiquette, young'un. You say 'over' at the end. Like this: over. No, I won't stop. Over."
+    ],
+    "crate": [
+      "Sealed crate, eh? I used to sit on one of those. Still do. Matter of fact I'm sitting on yours. Joking. Unless it hums.",
+      "Things that shouldn't exist usually don't, twice. Once when they're made and once when someone opens them."
+    ],
+    "night": [
+      "Nights I remember the pour. Twice, on account of there being two of me in the story. Long story. Wrong night for it. Every night is.",
+      "The mast lights up amber after dark and the whole town reads it like a slow newspaper. Bad news glows faster."
+    ],
+    "storm": [
+      "Wall coming. I felt it in the badge. Union badges ache before storms. So does everything else I've got.",
+      "Outran a storm once on foot. That's a lie. It outran me politely and let me keep the lesson."
+    ],
+    "rumors": [
+      "Say what you like about the Choir, but their listening horns were mine first. Listening's just mining the air, young'un, and I hold the oldest claim.",
+      "There were two glassroads. One you ride, one I dreamed. The dream one's faster but the tolls are memories.",
+      "The Reclaimers think the old infrastructure is dead. Ask it sometime. Use the moorage lines as a mouth. I do."
+    ],
+    "lore": [
+      "Terraforming isn't gardening, child. Gardening, the garden forgives you. We wrote on Kessa-9 with a reactor and the paper never dried.",
+      "MOTHER went quiet the year the money ran out, yes. Quiet and OFF are cousins, not twins."
+    ],
+    "farewells": [
+      "Off you go. Come back and I'll tell you the true version. It'll be the fifth. The fifth one's got the good bend in it.",
+      "Soup's on the Guild tomorrow, they just don't know yet. Flat salt, young'un."
+    ]
+  }
+}

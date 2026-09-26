@@ -1,0 +1,55 @@
+{
+  "id": "salt-singer-ila",
+  "name": "Salt Singer Ila",
+  "role": "Flats busker and walking weather service",
+  "faction": "independent",
+  "home": "saltmouth",
+  "bio": "Plays the salt flats the way you'd play an instrument: a bowed length of old rail steel held against the crust until the whole pan hums back. Couriers route their mornings around her pitch — when Ila's song sits flat, the air is lying and a storm is somewhere behind it learning your name. The Guild offered her a salary to sing on their ledger; she sent back a bow and one long note that emptied a meeting room. Takes payment in fuel cells, good stories, and silence kept properly.",
+  "appearance": "Lean woman in layered bone-coloured wraps with a hood of tea-stained gauze, sun-dark arms bare to the shoulder, a worn rail-steel bow across her back like a shepherd's crook, salt-whitened boots, and a throat microphone made from a choir horn mouthpiece she insists she bought fair.",
+  "voice": "Half her lines arrive in loose couplets — she can't help it, the flats set the rhythm. Unhurried, amused, devastating about weather. Never says 'storm' when 'the tall water' will do. Answers direct questions one verse late, on purpose, so you'll remember the answer.",
+  "lines": {
+    "greetings": [
+      "Hush a breath — the flat's mid-sentence... there. Go on, you may speak, it was only gossip.",
+      "Courier Varga. Your engine hums B-flat today. Yesterday it lied. Ride the west line, the east is sulking.",
+      "A coin, a cell, or a story, love. The flats accept all currencies but flattery."
+    ],
+    "barks": [
+      "The salt sings true or it sings clever. Clever day, today. Watch it.",
+      "People pay for weather like it's a service. It's a conversation. I'm just bilingual.",
+      "That drone of yours — no, don't apologise to me. Apologise to the pan, it heard."
+    ],
+    "mission": [
+      "Run these tuning forks to the three pan stations. Plant them deep, bow them once, and if the third one answers before you touch it — come home fast.",
+      "Carry this cold-box to the dusk farms and don't spare the horses, love; the sky's practising something and it rhymes with 'hurry'."
+    ],
+    "radio": [
+      "Ila on the flats band. Long note low, short note high — front'll pass north of the ridge by nightfall. Ride like you heard it here first. You did.",
+      "Song sat flat at noon, courier. Flat song, tall water. Get a wall between you and the west, and make it a thick one.",
+      "That humming your cargo does? Put it near the pan at dusk and hush. Salt remembers its makers. So, apparently, do their boxes."
+    ],
+    "storm": [
+      "The tall water stands up when the singing stops. Singing's stopped. Move.",
+      "I sang a storm asleep once, out past the ridge. Sang a second one awake by accident. I charge extra for that story and you can't afford it."
+    ],
+    "night": [
+      "Night pan sings low and sweet. The day song's for weather. The night song's for whoever taught the salt to hold a tune.",
+      "Stars, then lamps, then one light moving too steady to be either. That's you, courier. The flats comment on your line choice."
+    ],
+    "crate": [
+      "Your box hums a fifth under my rail note. Old interval. Older than the Guild, older than the pan, almost as old as Bahro's first version.",
+      "Whatever's sealed in there sings in a key the salt was poured to answer. Carry it gentle, courier — it's homesick for a machine."
+    ],
+    "rumors": [
+      "The Choir thinks their crater invented listening. The pan predates the crater by a terraforming. I listen to the elder, professionally.",
+      "Bahro swears he never left Saltmouth. His coat says Glassroad pour-crew. Both true — ask him what 'left' means on a fused canyon."
+    ],
+    "lore": [
+      "Salt flats hold a note because they're one sheet, edge to edge — MOTHER laid the pan like a drumskin, and drummed on it with weather for a century.",
+      "Every tuning fork I own is cut from the rail line the money ran out on. The metal remembers the timetable. Trains are late two hundred years."
+    ],
+    "farewells": [
+      "Go light, come back heavy, that's the rhyme the flats like. They dislike 'go loud, come back scraped'.",
+      "Sing your engine a nice note at the ridge. It keeps the fuel honest and you less so. Balance."
+    ]
+  }
+}
