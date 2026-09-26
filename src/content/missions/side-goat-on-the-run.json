@@ -1,0 +1,35 @@
+{
+  "id": "side-goat-on-the-run",
+  "title": "The Goat Has Opinions",
+  "chapter": "side",
+  "type": "chase",
+  "giver": "brinemaster-ogo",
+  "region": "saltmouth",
+  "summary": "The weather desk's expensive new barometer forecast winds from the north. Pemmy licked the air, disagreed, and expressed the disagreement at speed — out the tradesmen's gate, across the pan, instrument dignity in ruins. Brinemaster Ogo wants his senior meteorologist walked home before tomorrow's shipping advisories write themselves. She is fast. She is certain. She has never once been wrong.",
+  "objectives": [
+    { "type": "goto", "target": "saltmouth:water-tower", "label": "Report to the weather desk — Pemmy has resigned at speed and taken the advisories with her" },
+    { "type": "chase", "target": "saltmouth:flats-pan", "targets": ["saltmouth:flats-pan", "saltmouth:overlook", "saltmouth:moorage", "saltmouth:exchange"], "speed": 16, "label": "Run Pemmy down — she doubles back, she hides behind the exchange, she has never once been wrong" },
+    { "type": "dropoff", "target": "saltmouth:water-tower", "label": "Walk her home behind you, slowly — she must believe the route was hers" }
+  ],
+  "rewards": {
+    "credits": 190,
+    "rep": { "guild": 6, "driftline": 2 },
+    "flags": ["side-goat-on-the-run.done", "lore:goat-ribbon-archive"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "brinemaster-ogo", "text": "Varga. The Guild has suffered a personnel incident. Pemmy reviewed the new barometer — a costly instrument, calibrated in the old cities, guaranteed by men I now intend to invoice — and found it *false*. Her review was delivered at forty kilometres an hour, through the tradesmen's gate, wearing the official sash." },
+      { "who": "brinemaster-ogo", "text": "Understand: I am not hiring you to apprehend a goat. I am hiring you to escort home the Guild's most accurate instrument, which happens to be expressing itself. She bites auditors and charlatans. You are neither. Probably. The sash counts as identification; the attitude counts as probable cause." },
+      { "who": "ash-varga", "text": "Let me get this straight. Your weather goat quit, out loud, in the middle of a forecast, and you're hiring me to catch middle management." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Ketch. A goat on the open pan cuts tighter than any skiff alive, so don't chase the hooves — read the dust. She'll arc for the shade of the overlook every lap like it's a duty. Be the shade's shadow before she gets there. And offer no opinions about barometers. That's how all this started." },
+      { "who": "pemmy", "text": "Maaah-eh-eh! *[Official translation, filed remotely: 'The desk notes the pursuit. The desk notes the north wind, currently unfelt, presently inevitable. The desk notes the chase will fail, but applauds the weather it makes.']*" }
+    ],
+    "complete": [
+      { "who": "brinemaster-ogo", "text": "Recovered! Unbitten courier, unbowed professional. The barometer has been *re-evaluated* — a process involving the crusher, two notaries, and a small ceremony — and tomorrow's advisories issue from the established authority. The Guild pays for the chase, one sash-polishing, and one (1) new ribbon for her rail. You've earned the colour of it." },
+      { "who": "pemmy", "text": "Baa. *[Official translation: 'The desk returns of its own volition. North wind, Thursday. The courier runs well, for a biped.']*" },
+      { "who": "evening-standard", "text": "Evening Standard, community hour: listeners report a small ochre comet circling the east pan this afternoon, pursued at apologetic speeds by a Driftline courier. Officials confirm the comet was employment-related. North wind Thursday, says the desk. Mark your washing lines accordingly." }
+    ]
+  }
+}

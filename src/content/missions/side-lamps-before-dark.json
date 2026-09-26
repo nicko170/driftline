@@ -1,0 +1,36 @@
+{
+  "id": "side-lamps-before-dark",
+  "title": "Lamps Before Dark",
+  "chapter": "side",
+  "type": "scout",
+  "giver": "verger-sann",
+  "region": "choirhollow",
+  "summary": "Storm season drags the dusk in early, and Lamp Rest's rim keeps its own stubborn schedule: ninety-one lamps, eleven sulking, one proud, and tonight too few hands to walk the ring — the usual amount of too few, which is all of them. Verger Sann sends a rider out with the wick-satchel: reach each unlit arc, hold still while the wick catches, get the ring lit before the dark finishes arriving.",
+  "objectives": [
+    { "type": "goto", "target": "choirhollow:temple-steps", "label": "Collect the wick-satchel from Verger Sann at the temple steps" },
+    { "type": "scout", "target": "choirhollow:lamp-ring", "label": "Light the west arc — hold still while each wick catches; the wind reads left to right" },
+    { "type": "scout", "target": "choirhollow:crater-rim", "label": "Light the proud lamp's arc — it expects a compliment and is not picky about the variety" },
+    { "type": "scout", "target": "choirhollow:listening-horn", "label": "Light the last lamp by the listening horn — if it hums back, hum once, politely" },
+    { "type": "dropoff", "target": "choirhollow:temple-steps", "label": "Return the satchel — darkness declined, with thanks" }
+  ],
+  "rewards": {
+    "credits": 200,
+    "rep": { "choir": 6, "driftline": 2 },
+    "flags": ["side-lamps-before-dark.done", "lore:wick-ledger"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "verger-sann", "text": "Courier. Stock report: dusk incoming ahead of schedule, rim walk short-handed by the usual amount — which is all of it. Ninety-one lamps on that ring, eleven sulking tonight, one proud; the proud one sulks *louder* than the others if it's lit late. I need a rider with a gentle throttle and no fear of inventory." },
+      { "who": "verger-sann", "text": "Take the wick-satchel. Ease up to each unlit arc and hold still — a wick catches for patience, not horsepower. I've tested both, and I have the eyebrows to prove it. Dark arrives whether we're ready or not. The crater provides. I provide the crater. You, tonight, provide the legs." }
+    ],
+    "accept": [
+      { "who": "little-reverb", "text": "Ooh, lamplighter shift! Rules: west arc first because the wind reads left to right; the proud lamp gets a compliment — any compliment — and the last lamp by the horn hums back. It's allowed. It's been allowed since before allowance." },
+      { "who": "static-warden-pem", "text": "Station. If the horn's lamp hums when it lights, answer once, politely, and take no requests. Some frequencies are doors, and not every door should be opened by a courier on a schedule." }
+    ],
+    "complete": [
+      { "who": "verger-sann", "text": "Ninety-one lit, eleven sulks resolved, one proud and *unctuous* about it. I counted twice — counting twice is how I pray. Ring lit before full dark: first time this season. In the ledger that goes down as a stock discrepancy. Minus one dusk." },
+      { "who": "static-warden-pem", "text": "The horn's lamp spoke tonight, station. Two words. I will not tell you the words. I will tell you they were *thank* and *you*, and that I have filed the incident under weather." },
+      { "who": "verger-sann", "text": "Take the wick ledger's back pages for your codex — centuries of lamps and the hands that kept them. Some entries end mid-sentence and resume a hundred years on, in new ink, mid-thought. Lamp Rest is like that, courier. We don't finish things. We keep them." }
+    ]
+  }
+}

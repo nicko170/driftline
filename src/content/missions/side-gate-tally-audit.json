@@ -1,0 +1,38 @@
+{
+  "id": "side-gate-tally-audit",
+  "title": "Counting the Crossings",
+  "chapter": "side",
+  "type": "scout",
+  "giver": "warden-of-the-span",
+  "region": "glassroad",
+  "summary": "The season's toll audit is coming down the Glassroad, and the Warden of the Span keeps the manuscript's crossings in gate-post chalk — a dialect no Guild ledger speaks. Ride the five posts south to north, hold still at each, and let the chalk say its piece. Some crossings paid in coin. Some paid in songs. All of them paid.",
+  "objectives": [
+    { "type": "goto", "target": "glassroad:gate-south", "label": "Begin at the south gate — audit season opens where the manuscript does" },
+    { "type": "scout", "target": "glassroad:gate-south", "label": "Scan post one — a convoy paid in songs: three verses, accepted at face value" },
+    { "type": "scout", "target": "glassroad:slick-mile", "label": "Scan post two — one crossing paid in apologies: accepted, provisionally, pending sincerity" },
+    { "type": "scout", "target": "glassroad:mid-span", "label": "Scan post three — a rider paid in exact change and was suspected for it" },
+    { "type": "scout", "target": "glassroad:glass-chapel", "label": "Scan post four — somebody paid twice and will not say why: chalked as piety" },
+    { "type": "scout", "target": "glassroad:gate-north", "label": "Scan post five — the Warden's own door: the only tally on the span that never quite balances" }
+  ],
+  "rewards": {
+    "credits": 230,
+    "rep": { "driftline": 4, "guild": 3 },
+    "flags": ["side-gate-tally-audit.done", "lore:gate-ethics-precedent"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "warden-of-the-span", "text": "Courier. The season's toll audit is upon the manuscript. Main clause: an auditor rides up from the Chapterhouse expecting numerals, and my gates have kept their crossings in chalk, dash and tall, honestly and untranslated. Margin clause: I require a courier's scanner, which is to say a courier's patience." },
+      { "who": "factor-marn-phlox", "text": "Relayed, slightly out of breath: the Chapterhouse says the span's numbers must 'reconcile or justify'. I don't know how a tally justifies itself, courier! I once tried to reconcile my lunch and it made the flatbread cry!" },
+      { "who": "warden-of-the-span", "text": "Main clause: five posts, south to north; hold inside each gate's shadow until the chalk has finished testifying. Margin clause: counts are evidence, and evidence on the manuscript is a courtesy we extend the road. Do not race the courtesy." }
+    ],
+    "accept": [
+      { "who": "warden-of-the-span", "text": "Begin at the south gate, in Factor Phlox's parish — he has pre-filled your permission slip, twice, in different inks. Mind the Slick Mile's pride between posts one and two; it humbles riders who scan in a hurry. I have never once read a tally at speed and believed it." },
+      { "who": "ketch", "text": "Ketch. Scanner work, kid — throttle off inside the gate shadow and let the machine brood. The glass is fast and smug, but chalk is slow and smugger. Tonight you ride for the slow team." }
+    ],
+    "complete": [
+      { "who": "warden-of-the-span", "text": "Five counted, and counted kindly. Main clause: the season reconciles to within one song, one apology, and one unexplained second payment — variance the Chapterhouse will file as 'weather', while you and I know better. Margin clause: the manuscript thanks you. Its handwriting, you will have noticed, improves." },
+      { "who": "factor-marn-phlox", "text": "The auditor read your scans, stamped them twice, and said 'unorthodox but airtight' — the single nicest sentence ever spoken at this gate, INCLUDING BY ME. The Guild extends its thanks and agrees, in writing, not to invoice the precedent." },
+      { "who": "warden-of-the-span", "text": "Tell the Guild their fees are intact and their arithmetic survived contact with reality. Tell the Shelf-Keeper — no. Tell no one. The margins will handle it, courier. They always do." }
+    ]
+  }
+}

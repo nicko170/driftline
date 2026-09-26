@@ -1,0 +1,35 @@
+{
+  "id": "side-static-funeral",
+  "title": "A Funeral for a Frequency",
+  "chapter": "side",
+  "type": "escort",
+  "giver": "static-warden-pem",
+  "region": "choirhollow",
+  "summary": "Mast Nine — the listening horn's oldest ear — answered its last true carrier in the spring and has spoken nothing but repeats since. Static-Warden Pem is retiring its brass voice-box to the Drowned Array, where dead frequencies are cairned, and Pem walks the whole way beside the wagon. Ride escort. Slowly. It is a funeral.",
+  "objectives": [
+    { "type": "goto", "target": "choirhollow:temple-steps", "label": "Meet Pem at the temple steps — the voice-box rides in state" },
+    { "type": "escort", "target": "choirhollow:lamp-ring", "targets": ["choirhollow:lamp-ring", "choirhollow:crater-rim", "drowned-array:pan-edge", "drowned-array:panel-field", "drowned-array:cache-cairn"], "speed": 11, "label": "Escort the voice-box to the Drowned Array — Pem sets the pace; mourners do not outrun the coffin" },
+    { "type": "dropoff", "target": "drowned-array:cache-cairn", "label": "Seat the voice-box among the patient dead — gently, it rode with its ears open" }
+  ],
+  "rewards": {
+    "credits": 210,
+    "rep": { "choir": 8, "driftline": 2 },
+    "flags": ["side-static-funeral.done", "lore:retired-frequencies"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "static-warden-pem", "text": "Station. A small death to report. Mast Nine — firstborn of the listening horn, older than the Choir, older than my notebooks — answered its last true carrier in the spring. What leaves it now are repeats: my own weather reports coming home to roost, wearing better diction." },
+      { "who": "static-warden-pem", "text": "We retire a mast's voice-box to the Drowned Array, where the desert archives anything patient. I will walk the wagon down myself — forty years it listened to me; the last courtesy left is footsteps. Ride escort, station. A funeral with no witnesses is only garbage day." }
+    ],
+    "accept": [
+      { "who": "little-reverb", "text": "Rules for a mast funeral: no boosting beside the wagon — the voice-box rattles, and it *hates* rattling. If the old call-sign plays once while you ride, that's normal. If it plays slightly *wrong*, that's also normal. We stopped writing that down because the writing was getting upset." },
+      { "who": "static-warden-pem", "text": "The route is honest: the lamp ring, the rim, the long quiet, the pan edge, and then the cairns, where TALLY-9 keeps its sad arithmetic. Stay near, station. A mourner who outruns the coffin has misunderstood mourners." },
+      { "who": "ketch", "text": "Ketch here. Escort speed, kid — that wagon is older than your debt's grandmother. Keep formation loose and kind, and no boosting past the cairns at the far end. The Array has opinions about wakes. I don't mean boat wakes." }
+    ],
+    "complete": [
+      { "who": "static-warden-pem", "text": "You heard nothing just now, station. So did I. Two rows of the notebook left blank, on purpose, in respect. … The call-sign came once — a half-step flat. Forty years of weather fiction, and tonight the fiction got the *notes* right and the voice wrong. That is not a malfunction. That is a reply." },
+      { "who": "tally", "text": "REGISTERED: one (1) voice-box, brass, still warm, declined to file cleanly. The Array accepts the patient. This unit has opened a new category of deceased: RETIRED, LISTENING. Condolences are filed in chalk, where they keep better." },
+      { "who": "ash-varga", "text": "Logged: escorted a dead radio to the cemetery for dead radios, walked it in like family, got thanked for the weather by a machine. Best Tuesday I've had." }
+    ]
+  }
+}

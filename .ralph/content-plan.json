@@ -5750,10 +5750,11 @@
     "radio",
     "memorial"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790412153.256407
+   "claimed_at": 1790412153.256407,
+   "done_at": "2026-09-26T19:07:30"
   },
   {
    "kind": "article",
@@ -5768,10 +5769,11 @@
     "toll",
     "audit"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790412153.2564092
+   "claimed_at": 1790412153.2564092,
+   "done_at": "2026-09-26T19:07:33"
   },
   {
    "kind": "article",
@@ -5786,10 +5788,11 @@
     "comedy",
     "brinemaster-ogo"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790412153.2564092
+   "claimed_at": 1790412153.2564092,
+   "done_at": "2026-09-26T19:07:36"
   },
   {
    "kind": "article",
@@ -5804,10 +5807,11 @@
     "verger-sann",
     "gentle"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790412153.2564101
+   "claimed_at": 1790412153.2564101,
+   "done_at": "2026-09-26T19:07:37"
   },
   {
    "kind": "article",
@@ -5991,8 +5995,10 @@
     "factions",
     "bench"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790413645.943935
   },
   {
    "kind": "article",
