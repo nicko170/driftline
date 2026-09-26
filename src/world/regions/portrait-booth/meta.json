@@ -1,0 +1,8 @@
+{
+  "slug": "portrait-booth",
+  "name": "Portrait Booth",
+  "blurb": "Workshop tool, not a game region: a contact-sheet wall for every Driftline character — portraits, voice notes, faction framing and a re-roll prompt composer. Anchors and center live outside the playable map.",
+  "center": [6800, 6800],
+  "radius": 4,
+  "danger": 0
+}

@@ -1,0 +1,4 @@
+{
+  "bench": { "pos": [6800, 6800], "label": "Portrait booth workshed (off-world)", "elev": 0 },
+  "frame-wall": { "pos": [6804, 6796], "label": "Contact-sheet frame wall (off-world)", "elev": 0 }
+}
