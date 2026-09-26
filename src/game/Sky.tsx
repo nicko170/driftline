@@ -141,8 +141,13 @@ export default function Sky() {
       if (c.fogDensity !== null) fogBias += (c.fogDensity - baseFogDensity) * w;
     }
 
-    // storm haze: fog thickens and goes sand-coloured as the wall closes in
-    const stormTarget = telemetry.storm ? Math.min(1, Math.max(0, 1 - telemetry.storm.dist / 500)) : 0;
+    // storm haze: fog thickens and goes sand-coloured as the wall closes in —
+    // mission storms bite hardest; an ambient weather front hazes from further
+    // out and saturates fully once it engulfs the rider
+    const missionStorm = telemetry.storm ? Math.min(1, Math.max(0, 1 - telemetry.storm.dist / 500)) : 0;
+    const front = telemetry.front;
+    const frontHaze = front ? (front.engulfed ? 1 : Math.max(0, 1 - front.dist / 750) * 0.85) : 0;
+    const stormTarget = Math.max(missionStorm, frontHaze);
     stormFog += (stormTarget - stormFog) * Math.min(1, 2.5 * dt);
     if (stormFog > 0.003) {
       _fog.lerp(_sandHaze, stormFog * 0.75);
@@ -169,11 +174,11 @@ export default function Sky() {
       );
       sun.current.target.position.set(telemetry.x, telemetry.y, telemetry.z);
       sun.current.target.updateMatrixWorld();
-      sun.current.intensity = sunI * Math.max(0.15, Math.min(1, elev + 0.4));
+      sun.current.intensity = sunI * Math.max(0.15, Math.min(1, elev + 0.4)) * (1 - stormFog * 0.55);
       (sun.current.color as THREE.Color).copy(_sun);
     }
     if (hemi.current) {
-      hemi.current.intensity = 0.22 + ambI * 0.34;
+      hemi.current.intensity = (0.22 + ambI * 0.34) * (1 - stormFog * 0.3);
       (hemi.current.color as THREE.Color).copy(_skyTop).lerp(new THREE.Color('#FFFFFF'), 0.4);
       (hemi.current.groundColor as THREE.Color).copy(_groundColor);
     }

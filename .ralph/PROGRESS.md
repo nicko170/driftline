@@ -1,5 +1,67 @@
 # Progress
 
+## Status — iteration 13 (AMBIENT WEATHER FRONTS shipped — free-ride storm season; 138 caches / 0 orphans; portraits still FULL HOUSE 56/56)
+
+**Done (typecheck/build/validate green: 39 regions, 56 characters, 98 missions, 180 lore, 138 caches; playtest green: 60.5 fps, 0 errors, 0 failed requests, 17.5% scene change):**
+- **Ambient weather fronts** — chapter 3's "storm season" is now literal in free
+  ride. `src/game/weather.ts` (module state machine + `tickWeather`) +
+  `src/game/WeatherFront.tsx` (visuals + frame driver, mounted outside Physics
+  in GameScreen). A 210 m sand-haze wall spawns 1500–1900 m out on a random
+  bearing ~80–130 s into the session, then every 210–330 s (ch 3+: 150–250 s,
+  ×1.15 speed), rolling roughly at the rider with a lazy miss + crosswind
+  wander. It never kills and never fails a mission — it's weather. No spawns
+  while a job is live; physics-paused freezes the world clock.
+  - **Effects ladder**: winding push ramps in 150 m ahead of the face (Bike
+    reads `telemetry.wind` as m/s² — a shove, never a throw, gated by freeze);
+    engulfed = boost burns ×1.5; fog/haze fold into Sky's stormFog channel
+    (fronts haze from 750 m, weaker than mission storms) and now also dim
+    sun/hemi; `audio.setStorm` rumbles with proximity and yields to mission
+    storms; screen tint + HUD chip reuse the storm-tint language.
+  - **HUD**: `▲ STORM FRONT · N m` chip (urgent + "IN THE WALL — shelter or
+    ride it out" when swallowed); minimap draws a DASHED sand ring + triangle —
+    shape differs from the solid danger wedge of mission storms (CVD rule).
+  - **Radio warnings**: front spawn keys a warning from surveyor-kest / ketch /
+    brinemaster-ogo (5 lines) on the normal ticker.
+  - **Economy + stakes**: sheltering within 130 m of ANY on-world region anchor
+    while the wall crosses pays a 45 cr Guild tariff (toast kicker now
+    customisable — `UnlockToast.kicker`, default "Log entry unlocked");
+    engulfed ≥5 s counts `stats.frontsRodeOut` (new RideStat, migrate spreads
+    emptyStats so old saves gain it) → new log entry **"Weathered" (▽)**.
+    clearWeather() on unmount so quitting mid-front leaves no stale audio/fog.
+  - Tuning benches filed: front-season-bench, hazard-pay-ledger,
+    front-cadence-simulator (demo backlog).
+- **Orphan sweep (standing duty)** — writers landed 4 lore mid-iteration (the
+  exact 4 lore intents restocked last pass) + 4 missions; placed all:
+  groan-copista → mothersgate:survey-point, night-riding-black →
+  canyon-slalom:gate-1 (night school on the slalom), open-drawer-ledger →
+  saltmouth:gate-east (exchange stays at 11 — overflow), three-new-beads →
+  skydocks:mesa-top. 134→**138 caches, 0 orphans**; no anchor pushed past 5.
+- **Backlog restock** — 27 intents: 12 lore (goat tariff hearing, relay soap
+  archive, MOTHER's denied maintenance requests, union shelter audit…),
+  8 missions (gauge-cards rides INTO a weakening front to teach the new wind
+  model; goat escort; fossil lap with Spence heckling; borrowed-sky chase),
+  4 characters (pencil-broker, union medic, Strand counter child, 41-fronts
+  veteran), 3 demos (above).
+
+**Next / known issues:**
+- **Front feel is untuned end-to-end**: constants (210 m wall, 5.4 m/s² wind,
+  1.5× boost burn, 45 cr tariff, 130 m shelter radius) are first-guess; the
+  three filed benches exist to tune them. Playtest tool never rides 80+ s, so
+  fronts need a manual/bench look (dev idea: a `?skyt`-style `?front=now` flag
+  would help playtests — worth adding next iteration).
+- **Portrait roster discipline**: full house holds (56/56, probes at start +
+  pre-finish). Writers keep landing sheets mid-iteration — re-run the probe at
+  start AND before finish every iteration.
+- **Orphan audit**: re-run right before finishing (probe: src/content/
+  caches.json lore ∪ mission `lore:` flags vs lore dir) — writers land content
+  faster than ever (10 items this iteration alone).
+- Anchor crowding: saltmouth:exchange at 11 (avoid); garage 6, listening-horn 6
+  at cap; prefer <5 anchors (both saltmouth:spawn 3 / flats-pan 4 / overlook 3).
+- windspine hover-playground is on-world (GAMEPLAY_EXCLUDED for props; its
+  anchors DO count as front shelters — acceptable, it's a lean-to on the pan).
+- Chunk-size warning persists (rapier 2.2 MB) — known, lazy routes keep it off
+  the title path.
+
 ## Status — iteration 12 (drift economy tuned from lab findings; portraits FULL HOUSE 56/56; 134 caches / 0 orphans)
 
 **Done (typecheck/build/validate green: 36 regions, 56 characters, 94 missions, 176 lore, 134 caches; playtest green: 60.5 fps, 0 errors, 0 failed requests, 31.6% scene change, signal chip live in HUD):**
@@ -1157,3 +1219,31 @@ constants (incl. the ×3.4 km/h display factor). Splash/concept art at
 Housekeeping: the shared typecheck showed one error in `cache-density-planner`
 (another worker's in-flight folder, `simRows === 1` should be `.length === 1`);
 left untouched per folder-ownership rules.
+
+## writer2 — iteration 32: four side jobs (first-ever missions for four givers)
+
+All four validated (`validate:content` clean) and marked done:
+- `soup-standard-lap` (collect, mallow, saltmouth): officially infinite lap —
+  5 chalk marks around gate-east timed in soups; twist landing: soup boils,
+  stopwatch still says 9:58 "because that's the best time and it keeps it."
+  Unlocks `lore:courier-slang-lexicon` (soup enters the slang ledger).
+- `side-the-open-drawer` (fragile, impa-vell, saltmouth→skydocks): laminated
+  ledgers mis-shelved under poetic manifests ("rope, sundry — see feelings")
+  delivered to the Top Scale at Keel Town, which keeps one drawer open so the
+  desert can file things back. Requires `ch1-paper-trail.done`. Unlocks
+  `lore:ledger-redactions`.
+- `side-dune-apology-tour` (scout, nyx-ala, windspine): dune four "apologised"
+  over her cache line — hold still at 4 apology stakes (turbine-row →
+  ridge-crest → storm-gauge); readings all hum in the crate's register
+  (ch2/4 texture). Sets `dune4.apologised`, unlocks
+  `lore:windspine-survey-notes`. Kest gets a radio cameo.
+- `side-sealed-with-feeling` (timed 150s, advocate-reyes, skydocks): pennant
+  code as legal instrument — race the pennant line before the season flag
+  rotates; pennant lore woven in (amber over bone = debt acknowledged; slow
+  for grief pennants). Choice flags: `reyes.pennant.served` /
+  `reyes.pennant.kindness` (future-writer hook: Reyes "mentions it later").
+  Unlocks `lore:skyship-pennant-code`.
+Canon notes seeded: the Top Scale at Keel Town = the Guild's weighing-court
+for mis-shelved things (one permanently open drawer, "page dash" of the
+handbook); "soup" now an official-ish Driftline time unit; dune apology
+stakes are the desert's half of Nyx's correspondence.

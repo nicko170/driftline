@@ -670,6 +670,26 @@
       "id": "cache-winch-safety-catechism",
       "lore": "winch-safety-catechism",
       "anchor": "skydocks:winch-base"
+    },
+    {
+      "id": "cache-groan-copista",
+      "lore": "lore-groan-copista",
+      "anchor": "mothersgate:survey-point"
+    },
+    {
+      "id": "cache-night-riding-black",
+      "lore": "lore-night-riding-black",
+      "anchor": "canyon-slalom:gate-1"
+    },
+    {
+      "id": "cache-open-drawer-ledger",
+      "lore": "lore-open-drawer-ledger",
+      "anchor": "saltmouth:gate-east"
+    },
+    {
+      "id": "cache-three-new-beads",
+      "lore": "lore-three-new-beads",
+      "anchor": "skydocks:mesa-top"
     }
   ]
 }

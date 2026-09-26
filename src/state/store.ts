@@ -37,6 +37,8 @@ export interface RideStats {
   bestDriftS: number;
   boostsUsed: number;
   stormsOutrun: number;
+  /** Ambient weather fronts ridden out for 5+ seconds (free-ride storm season). */
+  frontsRodeOut: number;
   missionsDone: number;
   airTimeS: number;
   biggestAirS: number;
@@ -50,6 +52,7 @@ export const emptyStats = (): RideStats => ({
   bestDriftS: 0,
   boostsUsed: 0,
   stormsOutrun: 0,
+  frontsRodeOut: 0,
   missionsDone: 0,
   airTimeS: 0,
   biggestAirS: 0,
@@ -200,7 +203,7 @@ export const useSaveStore = create<SaveState>()(
           const v = patch[k];
           if (v !== undefined) next[k] = Math.max(cur[k], v);
         }
-        for (const k of ['distanceM', 'jumps', 'driftTimeS', 'boostsUsed', 'stormsOutrun', 'missionsDone', 'airTimeS'] as const) {
+        for (const k of ['distanceM', 'jumps', 'driftTimeS', 'boostsUsed', 'stormsOutrun', 'frontsRodeOut', 'missionsDone', 'airTimeS'] as const) {
           const v = patch[k];
           if (v !== undefined) next[k] = cur[k] + v;
         }
@@ -221,7 +224,8 @@ export const useSaveStore = create<SaveState>()(
         const s = state as Partial<SaveState>;
         return {
           ...s,
-          stats: s.stats ?? emptyStats(),
+          // spread over emptyStats so older saves pick up stat keys added later
+          stats: { ...emptyStats(), ...(s.stats ?? {}) },
           achievements: s.achievements ?? [],
           outrosSeen: s.outrosSeen ?? [],
         } as SaveState;
@@ -265,6 +269,8 @@ export interface UnlockToast {
   title: string;
   desc: string;
   icon: string;
+  /** Small uppercase label above the title; defaults to "Log entry unlocked". */
+  kicker?: string;
 }
 
 interface GameState {

@@ -11,6 +11,7 @@ import CameraRig from './CameraRig';
 import Sky from './Sky';
 import DustTrail from './DustTrail';
 import MissionDirector from './MissionDirector';
+import WeatherFront from './WeatherFront';
 import InteractionSystem from './InteractionSystem';
 import RegionStream, { RegionColliders } from './RegionStream';
 import AmbientTraffic from './AmbientTraffic';
@@ -105,6 +106,7 @@ export default function GameScreen() {
           <RegionStream />
           <AmbientTraffic />
           <SignalCaches />
+          <WeatherFront />
           <MissionDirector />
           <InteractionSystem />
           <DustTrail />

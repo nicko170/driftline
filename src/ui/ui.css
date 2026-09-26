@@ -491,6 +491,14 @@ kbd {
   border-color: #9a86d0;
 }
 
+.hud-front {
+  position: absolute; bottom: 39%; left: 50%; transform: translateX(-50%);
+  padding: 7px 14px; font-family: var(--font-display); font-size: 12px;
+  letter-spacing: 0.14em; color: var(--sand);
+  border-color: var(--sand);
+}
+.hud-front.urgent { color: var(--danger); border-color: var(--danger); animation: pulse 0.7s infinite; }
+
 /* board: chapter groups + locked rows */
 .chapter-ribbon { display: flex; gap: 6px; margin-top: 10px; }
 .chapter-pip {

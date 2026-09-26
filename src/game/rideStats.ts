@@ -15,6 +15,7 @@ interface Pending {
   bestDriftS: number;
   boostsUsed: number;
   stormsOutrun: number;
+  frontsRodeOut: number;
   missionsDone: number;
   airTimeS: number;
   biggestAirS: number;
@@ -29,6 +30,7 @@ export const ride: Pending = {
   bestDriftS: 0,
   boostsUsed: 0,
   stormsOutrun: 0,
+  frontsRodeOut: 0,
   missionsDone: 0,
   airTimeS: 0,
   biggestAirS: 0,
@@ -45,11 +47,12 @@ export function flushRideStats(): void {
   if (ride.bestDriftS > 0) patch.bestDriftS = ride.bestDriftS;
   if (ride.boostsUsed > 0) patch.boostsUsed = ride.boostsUsed;
   if (ride.stormsOutrun > 0) patch.stormsOutrun = ride.stormsOutrun;
+  if (ride.frontsRodeOut > 0) patch.frontsRodeOut = ride.frontsRodeOut;
   if (ride.missionsDone > 0) patch.missionsDone = ride.missionsDone;
   if (ride.airTimeS > 0) patch.airTimeS = ride.airTimeS;
   if (ride.biggestAirS > 0) patch.biggestAirS = ride.biggestAirS;
   ride.distanceM = ride.jumps = ride.driftTimeS = ride.boostsUsed = 0;
-  ride.stormsOutrun = ride.missionsDone = ride.airTimeS = 0;
+  ride.stormsOutrun = ride.frontsRodeOut = ride.missionsDone = ride.airTimeS = 0;
   ride.topSpeedKmh = ride.bestDriftS = ride.biggestAirS = 0;
   ride.dirty = false;
   useSaveStore.getState().bumpStats(patch);

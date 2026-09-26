@@ -196,3 +196,24 @@ Faction colors: Salt Guild `ochre #B07C3A`, Choir `teal-bright #57C4B8`, Reclaim
   pan of half-drowned panels) and tally (the amber-lit archive room itself) sit in the
   same square storybook style. Writers add characters constantly — re-run the roster
   probe (characters dir vs both portrait dirs) before finishing any iteration.
+
+## Ambient weather fronts (iteration 13)
+
+- **Storm season is literal in free ride** (`src/game/weather.ts` + `WeatherFront.tsx`).
+  Fronts spawn far on the playa and roll at the rider: 210 m sand-haze walls in the
+  SAME visual language as MissionDirector's mission storm (the desert doesn't have two
+  kinds of weather) — wider, slower, fading in/out instead of popping. Chapter 3+
+  tightens cadence (150–250 s vs 210–330 s) and speed ×1.15.
+- **Weather, not a hunter**: no spawns while a mission is live, no fail states, wind is
+  a shove (≤ ~5.4 m/s² + cross-gusts), boost burns ×1.5 engulfed, freeze-gated.
+- **Signal language**: front = DASHED sand ring + △ on the minimap, `▲ STORM FRONT`
+  chip, storm-tint ramp — all shape-different from the mission storm's solid danger
+  wedge (CVD rule holds). Fog folds into Sky's stormFog channel; sun/hemi dim with
+  stormFog (both storm kinds benefit).
+- **Economy beat**: sheltering within 130 m of any on-world anchor during an engulf
+  pays a 45 cr Guild tariff toast ("Guild weather tariff" kicker — toasts now carry an
+  optional `kicker`); riding out ≥5 s engulf counts `frontsRodeOut` → "Weathered" ▽
+  log entry. Radio warning keys on spawn (kest/ketch/ogo).
+- Constants are first-guess — the front-season-bench / hazard-pay-ledger /
+  front-cadence-simulator lab intents exist to tune them; re-mirror benches when
+  shipping changes (the SHIPPED-table rule).

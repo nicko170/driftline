@@ -16,6 +16,10 @@ export const telemetry = {
   marker: { x: 0.5, y: 0.5, behind: false },
   /** Nearby interactable, written by the interaction system. */
   interact: null as null | { kind: 'board' | 'garage' | 'exchange'; label: string },
+  /** Ambient weather front (free-ride storm season): centre, radius, face distance, engulf flag. */
+  front: null as null | { x: number; z: number; r: number; dist: number; engulfed: boolean },
+  /** Wind acceleration (m/s²) pushed onto the bike by the weather front, if any. */
+  wind: null as null | { x: number; z: number },
   /** True when inside a capture radius but moving too fast (HUD hint). */
   slowHint: false,
   /** Escort objective state: distance to convoy, out-of-range timer 0..1. */

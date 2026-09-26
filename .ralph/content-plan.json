@@ -6335,6 +6335,426 @@
    "keywords": [],
    "status": "planned",
    "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-dune-that-ate-highstreet",
+   "title": "The Dune That Ate High Street",
+   "cluster": "lore",
+   "intent": "Field-guide entry: the dune season of '49 when three settlements packed up and followed the same dune for a year. Warm, funny, a little mournful; names real regions.",
+   "keywords": [
+    "dune migration",
+    "field guide",
+    "kessa-9 history",
+    "settlements"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-tariff-hearing-minutes",
+   "title": "Tariff Hearing Minutes, Appendix G (the Goat)",
+   "cluster": "lore",
+   "intent": "Salt Guild record: the tariff hearing transcript where a courier successfully argued a goat was 'light cargo'. Precedent, dissent, and the footnote that started the brass-cup dispute.",
+   "keywords": [
+    "salt guild",
+    "tariff",
+    "hearing",
+    "goat precedent",
+    "humour"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-choir-copyists-handbook",
+   "title": "Why We Copy by Hand",
+   "cluster": "lore",
+   "intent": "Choir tract on why the lamp-books are copied by hand when printers exist in Keel Town. Devotion as friction; ends with a practical copying schedule.",
+   "keywords": [
+    "choir",
+    "tract",
+    "lamp-books",
+    "copying",
+    "mothersgate"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-reclaimer-shelter-audit",
+   "title": "The Union Shelter Audit",
+   "cluster": "lore",
+   "intent": "Reclaimer union record: ranking every storm shelter in the glass desert with brutal one-line reviews ('keeps the sand out, not the singing').",
+   "keywords": [
+    "reclaimers",
+    "storm shelter",
+    "reviews",
+    "storm season"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-mothers-maintenance-requests",
+   "title": "MOTHER's Maintenance Requests (File 0)",
+   "cluster": "lore",
+   "intent": "Machine record: MOTHER's pre-collapse downtime requests, all denied, annotated 200 years later by the Choir as scripture. Sad-funny.",
+   "keywords": [
+    "mother",
+    "machine record",
+    "terraforming",
+    "choir scripture"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-glassroad-night-crossing",
+   "title": "Night Crossing: the Slick Mile",
+   "cluster": "lore",
+   "intent": "Field guide to crossing the Slick Mile at night without reflectors: mica-flash navigation, gear choice, and the one corner everyone calls the Confessional.",
+   "keywords": [
+    "night riding",
+    "slick mile",
+    "field guide",
+    "glassroad"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-relay-soap-archive",
+   "title": "Nine Years of 'Third Saddle From the Sun'",
+   "cluster": "lore",
+   "intent": "Long-static archive: fragments of a courier soap opera that ran on the relay band for nine years, with character sheet and fan complaints.",
+   "keywords": [
+    "radio",
+    "broadcast",
+    "relay drama",
+    "long static",
+    "humour"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-water-charter-cases",
+   "title": "Where the Water Charter Got Wet",
+   "cluster": "lore",
+   "intent": "Annotated settler map showing every place the water charter has been tested in court, with outcomes sketched as tide-lines.",
+   "keywords": [
+    "water charter",
+    "map",
+    "saltmouth",
+    "law"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-windspine-gauge-log",
+   "title": "The Gauge That Read Backwards",
+   "cluster": "lore",
+   "intent": "Survey log from Kest's predecessor: the day the storm gauge read backwards for six hours and what they chose to believe instead.",
+   "keywords": [
+    "windspine",
+    "storm gauge",
+    "survey log",
+    "weather"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-pennant-code-rude-addendum",
+   "title": "The Pennant Code's Rude Addendum",
+   "cluster": "lore",
+   "intent": "Keel Town record: the pennant code's rude subset that the skyship crews pretend isn't official, with the ruling that made it official.",
+   "keywords": [
+    "skydocks",
+    "pennant code",
+    "keel town",
+    "skyships",
+    "humour"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-first-oath-drafts",
+   "title": "Drafts of the First Oath",
+   "cluster": "lore",
+   "intent": "Driftline record: the first courier oath drafts, including the rejected ones ('any crate, most storms, some doors') and who argued for each comma.",
+   "keywords": [
+    "driftline",
+    "oath",
+    "history",
+    "couriers"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "lore-crusher-diaries",
+   "title": "The Crusher Diaries",
+   "cluster": "lore",
+   "intent": "Cinderflats log: a crusher operator's diary of the week the machine hummed back at the null-crate register, filed under 'probably nothing'.",
+   "keywords": [
+    "cinderflats",
+    "crusher",
+    "null crate",
+    "hum",
+    "log"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-mooring-deadline",
+   "title": "Side: Mooring Deadline",
+   "cluster": "missions",
+   "intent": "Timed side job in skydocks from dockmaster-devanna: beat the tide of shift-change traffic to deliver mooring papers across Keel Town before the pens down tools. Light comedy of bureaucracy vs physics; rewards guild rep.",
+   "keywords": [
+    "timed",
+    "skydocks",
+    "keel town",
+    "dockmaster",
+    "side job"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-salvage-lottery",
+   "title": "Side: Salvage Lottery",
+   "cluster": "missions",
+   "intent": "Collect side job in cinderflats from mags-delver: sweep five tagged pre-burn components off the pan before the auction crew wakes. Fragile-adjacent without the meter; route-planning fun; reclaimer rep.",
+   "keywords": [
+    "collect",
+    "cinderflats",
+    "reclaimers",
+    "salvage",
+    "side job"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-bloom-survey",
+   "title": "Side: Bloom Survey",
+   "cluster": "missions",
+   "intent": "Scout side job at drowned-array from hollis-fenn: three drowned-substation viewpoints at dusk to photograph new glass-bloom growth. Quiet, beautiful; unlocks a blooms lore entry; choir-leaning flavour but faction-neutral reward.",
+   "keywords": [
+    "scout",
+    "drowned-array",
+    "glass blooms",
+    "viewpoints",
+    "side job"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-goat-herd-ridge",
+   "title": "Side: The Long Goat Walk",
+   "cluster": "missions",
+   "intent": "Escort side job from saltmouth to windspine: walk aunt-vertex's two slow goats to the ridge pastures while the radio argues about it. Comedy pace-change mission; driftline rep + small credits.",
+   "keywords": [
+    "escort",
+    "goats",
+    "saltmouth",
+    "windspine",
+    "humour"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-fossil-lap",
+   "title": "Side: The Fossil Lap",
+   "cluster": "missions",
+   "intent": "Race side job on canyon-slalom from marshal-dune: a charity purse lap against Spence Sorrel's ancient course record, with corner radio heckling from Spence himself. Unlocks a race-risk lore entry.",
+   "keywords": [
+    "race",
+    "canyon-slalom",
+    "charity",
+    "course record"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-copyists-satchel",
+   "title": "Side: The Copyist's Satchel",
+   "cluster": "missions",
+   "intent": "Deliver side job in choirhollow from verger-sann: hand-carry a lamp-book copying satchel up to the crater-rim scriptorium before the dusk bell; fragile paper, soft rain of grit. Choir rep + lore unlock.",
+   "keywords": [
+    "deliver",
+    "choirhollow",
+    "lamp-books",
+    "dusk bell",
+    "fragile"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-gauge-cards",
+   "title": "Side: Read the Gauge Backwards",
+   "cluster": "missions",
+   "intent": "Storm side job at windspine from surveyor-kest (post-storm-season): ride INTO a weakening front to recover three storm-gauge memory cards. Inverts the outrun formula; teaches the ambient-front wind model.",
+   "keywords": [
+    "storm",
+    "windspine",
+    "recovery",
+    "weather front"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-borrowed-sky",
+   "title": "Side: Borrowed Sky",
+   "cluster": "missions",
+   "intent": "Chase side job from mothersgate: a Choir novice has 'borrowed' a courier bike to feel the sky; catch and bump (not wreck) them back before prior-chance notices. Warm tone, no punishment in dialogue.",
+   "keywords": [
+    "chase",
+    "mothersgate",
+    "choir novice",
+    "borrowed bike",
+    "humour"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "char-pencil-broker",
+   "title": "Character number — Pencil-broker of Keel Town (needs id + name)",
+   "cluster": "characters",
+   "intent": "Tamsin Cho's opposite number: a Keel Town pencil-broker who sells 'certified blank' forms, speaks entirely in stationery metaphors, and quietly funds the riders' night school. Skydocks home, guild faction-adjacent.",
+   "keywords": [
+    "character",
+    "keel town",
+    "guild",
+    "forms",
+    "comic"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "char-union-medic",
+   "title": "Character — Reclaimer union medic (needs id + name)",
+   "cluster": "characters",
+   "intent": "A Reclaimer union medic at cinderflats who treats bikes and riders with the same kit and the same bedside manner; gruff-tender voice, patch-kit barks, storm-season triage stories.",
+   "keywords": [
+    "character",
+    "reclaimers",
+    "medic",
+    "cinderflats"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "char-strand-counter",
+   "title": "Character — the Strand counter (needs id + name)",
+   "cluster": "characters",
+   "intent": "Child astronomer at mothersgate who has named all 404 Strand mirrors and corrects adults on their order; awe-register counterpoint to Mallow's stopwatch comedy.",
+   "keywords": [
+    "character",
+    "mothersgate",
+    "choir",
+    "strand",
+    "child"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "char-front-veteran",
+   "title": "Character number — forty-one fronts veteran (needs id + name)",
+   "cluster": "characters",
+   "intent": "Retired storm-season courier drinking at Saltmouth's gate-east who claims to have outridden 41 fronts and remembers 39 of them differently each telling; pairs with Spence Sorrel's one story.",
+   "keywords": [
+    "character",
+    "saltmouth",
+    "retired courier",
+    "storm stories"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "front-season-bench",
+   "title": "Front Season Bench",
+   "cluster": "demos",
+   "intent": "Bench for the shipped ambient weather front (weather.ts/WeatherFront.tsx): scrub front speed/radius/wind/fog ramp against day, dusk, night and storm backdrops; verify wall readability at 1500 m spawn, HUD chip contrast, CVD pass on the dashed minimap ring vs the solid mission wedge; export tuned constants.",
+   "keywords": [
+    "demo",
+    "weather",
+    "storm front",
+    "bench",
+    "readability"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "hazard-pay-ledger",
+   "title": "Hazard Pay Ledger",
+   "cluster": "demos",
+   "intent": "Notebook-style bench charting the hazard-pay economy: tariff trigger radius (130 m), payout (45 cr), shelter density map vs mission-reward income curves; what-if sliders for radius/payout with rider-minute cost model; JSON export of tariffs.",
+   "keywords": [
+    "demo",
+    "economy",
+    "hazard pay",
+    "planner"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "front-cadence-simulator",
+   "title": "Front Cadence Simulator",
+   "cluster": "demos",
+   "intent": "Season-cadence simulator for ambient fronts: Monte-Carlo the spawn gaps/speeds per chapter, chart engulf-seconds per hour of play, verify chapter 3 'storm season' pressure never interrupts mission runs; heatmap of front paths over the world.",
+   "keywords": [
+    "demo",
+    "weather",
+    "simulation",
+    "cadence",
+    "chapters"
+   ],
+   "status": "planned",
+   "added_by": "builder"
   }
  ]
 }

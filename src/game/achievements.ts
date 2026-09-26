@@ -35,6 +35,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
   { id: 'hophead', title: 'Hophead', desc: 'Hop 50 times.', icon: '⌃', test: (s) => s.jumps >= 50 },
   { id: 'skyhook', title: 'Skyhook', desc: 'Stay airborne for 2 seconds in one go.', icon: '⟡', test: (s) => s.biggestAirS >= 2 },
   { id: 'wall-runner', title: 'Wall Runner', desc: 'Outrun a storm wall and live to file the report.', icon: '◉', test: (s) => s.stormsOutrun >= 1 },
+  { id: 'front-rider', title: 'Weathered', desc: 'Ride out a rolling weather front in open country. The salt remembers who didn\'t shelter.', icon: '▽', test: (s) => (s.frontsRodeOut ?? 0) >= 1 },
   { id: 'salt-money', title: 'Salt Money', desc: 'Hold 5,000 credits at once.', icon: '¤', test: (_s, save) => save.credits >= 5000 },
   { id: 'clean-ledger', title: 'Clean Ledger', desc: 'Pay off the 8,000-credit Driftline bond. The Guild counts it twice and smiles both times.', icon: '◈', test: (_s, save) => save.flags.includes('debt.cleared') },
   { id: 'tuned', title: 'Tuned to the Teeth', desc: 'Max out any one bike upgrade.', icon: '✦', test: (_s, save) => Math.max(save.upgrades.engine, save.upgrades.handling, save.upgrades.boost, save.upgrades.shield) >= 3 },

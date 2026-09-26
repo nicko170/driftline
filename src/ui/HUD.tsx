@@ -110,7 +110,7 @@ function AchToasts() {
     <div className="ach-toast panel" role="status" onClick={shiftToast}>
       <span className="ach-toast-icon" aria-hidden>{current.icon}</span>
       <span className="ach-toast-body">
-        <span className="ach-toast-kicker">Log entry unlocked</span>
+        <span className="ach-toast-kicker">{current.kicker ?? 'Log entry unlocked'}</span>
         <strong>{current.title}</strong>
         <span className="ach-toast-desc">{current.desc}</span>
       </span>
@@ -242,13 +242,16 @@ export default function HUD() {
         </div>
       )}
 
-      {/* storm screen tint */}
-      {telemetry.storm && (
-        <div
-          className="hud-storm-tint"
-          style={{ opacity: Math.min(0.55, Math.max(0, 1 - telemetry.storm.dist / 380) * 0.55) }}
-        />
-      )}
+      {/* storm screen tint — mission walls bite harder; weather fronts haze earlier */}
+      {(() => {
+        const s = telemetry.storm;
+        const f = telemetry.front;
+        const tint = Math.max(
+          s ? Math.min(0.55, Math.max(0, 1 - s.dist / 380) * 0.55) : 0,
+          f ? (f.engulfed ? 0.5 : Math.min(0.45, Math.max(0, 1 - f.dist / 520) * 0.45)) : 0,
+        );
+        return tint > 0.02 ? <div className="hud-storm-tint" style={{ opacity: tint }} /> : null;
+      })()}
 
       {/* fail banner with retry */}
       {missionFailed && (
@@ -287,6 +290,15 @@ export default function HUD() {
       {telemetry.signal && mode === 'riding' && (
         <div className="hud-signal panel">
           ⟡ faint signal · {Math.round(telemetry.signal.dist)} m
+        </div>
+      )}
+
+      {/* ambient weather front — storm season rolls through free ride */}
+      {telemetry.front && mode === 'riding' && (
+        <div className={`hud-front panel ${telemetry.front.engulfed || telemetry.front.dist < 240 ? 'urgent' : ''}`}>
+          {telemetry.front.engulfed
+            ? '▲ IN THE WALL — shelter at a settlement or ride it out'
+            : `▲ STORM FRONT · ${Math.round(telemetry.front.dist)} m`}
         </div>
       )}
 
@@ -374,6 +386,28 @@ function drawMinimap(canvas: HTMLCanvasElement | null): void {
     ctx.fill();
     ctx.strokeStyle = 'rgba(228, 87, 46, 0.8)';
     ctx.stroke();
+  }
+
+  // ambient weather front (dashed sand ring — shape differs from the mission wedge)
+  const front = telemetry.front;
+  if (front) {
+    ctx.setLineDash([5, 4]);
+    ctx.beginPath();
+    ctx.arc(px(front.x), pz(front.z), Math.max(4, front.r * scale), 0, Math.PI * 2);
+    ctx.strokeStyle = 'rgba(217, 164, 91, 0.85)';
+    ctx.lineWidth = 1.4;
+    ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = 'rgba(217, 164, 91, 0.9)';
+    ctx.save();
+    ctx.translate(px(front.x), pz(front.z));
+    ctx.beginPath();
+    ctx.moveTo(0, -4.4);
+    ctx.lineTo(3.6, 3.2);
+    ctx.lineTo(-3.6, 3.2);
+    ctx.closePath();
+    ctx.fill();
+    ctx.restore();
   }
 
   // waypoint (canonical — follows moving targets)

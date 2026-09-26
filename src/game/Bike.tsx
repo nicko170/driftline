@@ -120,7 +120,9 @@ export default function Bike() {
       ride.dirty = true;
     }
     c.prevBoosting = boosting;
-    if (boosting) c.boost = Math.max(0, c.boost - dt * (0.26 - up.boost * 0.035));
+    // burning boost inside a weather front costs half again as much — sand in the intakes
+    const frontDrag = telemetry.front?.engulfed ? 1.5 : 1;
+    if (boosting) c.boost = Math.max(0, c.boost - dt * (0.26 - up.boost * 0.035) * frontDrag);
     else c.boost = Math.min(1, c.boost + dt * (0.07 + up.boost * 0.02 + (grounded ? 0 : 0.01)));
 
     /* ---------- throttle / thrust ---------- */
@@ -177,6 +179,14 @@ export default function Bike() {
         vx += _fwd.x * accel * 0.18 * dt;
         vz += _fwd.z * accel * 0.18 * dt;
       }
+    }
+
+    // weather front wind — a shove, never a throw (gated by freeze so menus
+    // don't let the gusts park you somewhere silly)
+    const wind = telemetry.wind;
+    if (wind && !freeze) {
+      vx += wind.x * dt;
+      vz += wind.z * dt;
     }
 
     // world bounds — soft wall just inside the boundary mountains
