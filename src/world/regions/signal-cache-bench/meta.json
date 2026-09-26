@@ -1,0 +1,8 @@
+{
+  "slug": "signal-cache-bench",
+  "name": "Signal Cache Scout Bench",
+  "blurb": "Workshop tool, not a game region: readability range for the signal-cache pickup (weathered tripod + floating lore-violet octahedron) over a distance ladder, against day/dusk/night backdrops and storm dust, alongside live replicas of the shipping HUD hint chip and minimap diamond, with CVD simulation and contrast tables for tuning emissive/glint thresholds. Anchors and center live outside the playable map.",
+  "center": [9400, 8800],
+  "radius": 4,
+  "danger": 0
+}

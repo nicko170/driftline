@@ -1,0 +1,4 @@
+{
+  "bench": { "pos": [9400, 8800], "label": "Cache scout bench (off-world)", "elev": 0 },
+  "rangehead": { "pos": [9400, 8790], "label": "Cache readability lane head (off-world)", "elev": 0 }
+}

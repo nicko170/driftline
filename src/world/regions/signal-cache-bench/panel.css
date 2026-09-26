@@ -1,0 +1,186 @@
+/* Signal Cache Scout Bench — scoped styles (scb-). Palette tokens come from ui.css. */
+
+.scb-root {
+  position: relative;
+  flex: 1;
+  min-height: 72vh;
+  display: flex;
+  background: var(--ink, #1B1526);
+}
+.scb-stage { position: absolute; inset: 0; overflow: hidden; }
+.scb-stage canvas { display: block; }
+.scb-filters { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+.scb-hint {
+  position: absolute; top: 12px; right: 14px; z-index: 3;
+  max-width: min(46ch, 60%);
+  font-size: 10.5px; letter-spacing: 0.11em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE); opacity: 0.6; pointer-events: none;
+  text-align: right;
+}
+
+/* ---- shipping HUD replicas (styled exactly like .hud-signal) ---- */
+
+.scb-chip {
+  position: absolute; bottom: 33%; left: 50%; transform: translateX(-50%);
+  z-index: 2; pointer-events: none;
+  padding: 7px 14px;
+  font-family: var(--font-display, 'Chakra Petch', sans-serif); font-size: 12px;
+  letter-spacing: 0.14em; color: #b8a7e8; white-space: nowrap;
+  border: 1px solid #9a86d0; border-radius: 10px;
+  background: color-mix(in srgb, var(--space, #14101F) 86%, transparent);
+  backdrop-filter: blur(6px);
+  transition: opacity 220ms ease-out;
+}
+.scb-chip-hidden { opacity: 0; }
+
+.scb-minimap {
+  position: absolute; right: 14px; bottom: 14px; z-index: 2;
+  width: 152px; height: 152px; border-radius: 50%;
+  border: 1px solid var(--rust-deep, #7E3320);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+/* storm screen tint — radial rust gradient from the bottom (storm language) */
+.scb-storm-tint {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: radial-gradient(130% 95% at 50% 100%, rgba(179, 80, 46, 0.9) 0%, rgba(138, 83, 53, 0.35) 45%, transparent 75%);
+}
+
+/* ---- control panel ---- */
+
+.scb-panel {
+  position: absolute; left: 14px; bottom: 14px; z-index: 4;
+  width: min(452px, calc(100% - 28px));
+  max-height: calc(100% - 28px);
+  overflow-y: auto;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--rust-deep, #7E3320);
+  background: color-mix(in srgb, var(--space, #14101F) 86%, transparent);
+  backdrop-filter: blur(6px);
+  animation: scb-rise 180ms ease-out;
+}
+
+.scb-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.scb-head h2 {
+  margin: 0; font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--amber, #FFB454);
+}
+.scb-icon {
+  border: none; background: transparent; color: var(--bone, #E4D7BE);
+  font-size: 18px; cursor: pointer; line-height: 1; padding: 2px 6px;
+}
+.scb-reopen {
+  position: absolute; left: 14px; bottom: 14px; z-index: 4;
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE);
+  background: color-mix(in srgb, var(--space, #14101F) 84%, transparent);
+  border: 1px solid var(--rust-deep, #7E3320); border-radius: 8px;
+  padding: 8px 14px; cursor: pointer; backdrop-filter: blur(6px);
+}
+.scb-reopen:hover, .scb-reopen:focus-visible { border-color: #9A86D0; }
+
+.scb-keyart {
+  display: block; width: 100%; height: 92px; object-fit: cover; margin: 10px 0 0;
+  border-radius: 8px; border: 1px solid var(--rust-deep, #7E3320);
+  background: var(--space, #14101F);
+}
+
+.scb-stats {
+  display: flex; flex-wrap: wrap; gap: 6px 10px; margin: 10px 0 4px;
+  font-size: 11.5px; color: var(--bone, #E4D7BE);
+}
+.scb-stats b { color: var(--salt, #F3EEE2); font-family: var(--font-display, 'Chakra Petch', sans-serif); }
+
+.scb-panel h3 {
+  margin: 14px 0 6px; font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--teal-bright, #57C4B8);
+}
+.scb-panel h3 code { color: var(--bone, #E4D7BE); opacity: 0.7; font-size: 10px; letter-spacing: 0; }
+
+.scb-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0; }
+
+.scb-btn, .scb-pill {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE);
+  background: transparent;
+  border: 1px solid var(--rust-deep, #7E3320);
+  border-radius: 8px;
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: border-color 140ms, background 140ms, color 140ms;
+}
+.scb-btn:hover, .scb-pill:hover { border-color: var(--amber, #FFB454); }
+.scb-btn:focus-visible, .scb-pill:focus-visible { outline: 2px solid var(--amber, #FFB454); outline-offset: 2px; }
+.scb-pill.on {
+  background: color-mix(in srgb, var(--amber, #FFB454) 16%, transparent);
+  border-color: var(--amber, #FFB454);
+  color: var(--amber-hot, #FFC969);
+}
+.scb-btn.primary {
+  background: color-mix(in srgb, var(--amber, #FFB454) 16%, transparent);
+  border-color: var(--amber, #FFB454);
+  color: var(--amber-hot, #FFC969);
+}
+
+.scb-check {
+  display: flex; align-items: baseline; gap: 8px; margin: 10px 0 2px;
+  font-size: 11.5px; color: var(--bone, #E4D7BE); cursor: pointer;
+}
+.scb-check em { opacity: 0.55; font-style: normal; font-size: 10.5px; }
+.scb-check input { accent-color: var(--amber, #FFB454); }
+
+.scb-slider { display: block; margin: 8px 0 2px; font-size: 11.5px; color: var(--bone, #E4D7BE); }
+.scb-slider span { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.scb-slider span b {
+  color: var(--amber-hot, #FFC969);
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-variant-numeric: tabular-nums;
+}
+.scb-slider span em { opacity: 0.5; font-style: normal; font-size: 10px; letter-spacing: 0.06em; }
+.scb-slider input[type='range'] {
+  width: 100%; margin: 4px 0 0; accent-color: #9A86D0; cursor: pointer;
+}
+.scb-slider input[type='range']:focus-visible { outline: 2px solid var(--amber, #FFB454); outline-offset: 2px; }
+
+.scb-table {
+  width: 100%; border-collapse: collapse; margin: 2px 0 4px;
+  font-size: 11px; color: var(--bone, #E4D7BE);
+}
+.scb-table th {
+  text-align: left; font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--sand, #D9A45B); padding: 3px 6px 5px 0;
+  border-bottom: 1px solid var(--rust-deep, #7E3320);
+}
+.scb-table td { padding: 3px 6px 3px 0; border-bottom: 1px dashed color-mix(in srgb, var(--rust-deep, #7E3320) 55%, transparent); }
+.scb-table tr:last-child td { border-bottom: none; }
+.scb-table em { display: block; font-style: normal; opacity: 0.5; font-size: 9.5px; }
+.scb-table code { color: var(--teal-bright, #57C4B8); font-size: 10px; }
+
+.scb-glyph-sm { color: var(--amber-hot, #FFC969); }
+
+.scb-swatch {
+  display: inline-block; width: 15px; height: 15px; border-radius: 4px;
+  border: 1px solid; vertical-align: -3px; margin-right: 7px;
+}
+
+.scb-contrast td { font-variant-numeric: tabular-nums; }
+.scb-pass { color: var(--teal-bright, #57C4B8); }
+.scb-warn { color: var(--danger, #E4572E); }
+.scb-mid { color: var(--sand, #D9A45B); }
+.scb-grade { font-size: 9px; opacity: 0.85; white-space: nowrap; }
+
+.scb-note { margin: 4px 0 0; font-size: 10.5px; line-height: 1.5; color: var(--bone, #E4D7BE); opacity: 0.6; }
+.scb-note code { color: var(--teal-bright, #57C4B8); }
+.scb-note b { color: var(--amber, #FFB454); }
+
+@keyframes scb-rise {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
