@@ -1885,10 +1885,11 @@
     "chapter 3",
     "clue"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790382858.155319
+   "claimed_at": 1790382858.155319,
+   "done_at": "2026-09-26T10:39:26"
   },
   {
    "kind": "article",
@@ -1902,10 +1903,11 @@
     "chapter 3-4",
     "mystery"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790382858.1553202
+   "claimed_at": 1790382858.1553202,
+   "done_at": "2026-09-26T10:39:26"
   },
   {
    "kind": "article",
@@ -1919,10 +1921,11 @@
     "storm season",
     "chapter 3"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790382858.1553202
+   "claimed_at": 1790382858.1553202,
+   "done_at": "2026-09-26T10:42:14"
   },
   {
    "kind": "article",
@@ -1936,10 +1939,11 @@
     "reclaimers",
     "comedy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790382858.1553202
+   "claimed_at": 1790382858.1553202,
+   "done_at": "2026-09-26T10:40:53"
   },
   {
    "kind": "article",
@@ -1953,8 +1957,10 @@
     "radio",
     "chapter 5"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790383392.61969
   },
   {
    "kind": "article",
@@ -1968,8 +1974,10 @@
     "spotter",
     "poster"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790383392.619691
   },
   {
    "kind": "article",
@@ -1983,8 +1991,10 @@
     "law",
     "saltmouth"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790383392.619691
   },
   {
    "kind": "article",
@@ -1998,8 +2008,10 @@
     "recipes",
     "comfort"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790383392.619691
   },
   {
    "kind": "article",
