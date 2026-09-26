@@ -1,0 +1,8 @@
+{
+  "slug": "handling-curve-lab",
+  "name": "Handling Curve Lab",
+  "blurb": "Workshop tool, not a game region: a figure-eight salt pan with painted grip zones (salt 1.0, sand 0.8, glass 0.5) where the shipping bike controller's constants are tuned live against a telemetry scope and upgrade-ladder curve graphs. Anchors and center live outside the playable map.",
+  "center": [7400, 6600],
+  "radius": 4,
+  "danger": 0
+}
