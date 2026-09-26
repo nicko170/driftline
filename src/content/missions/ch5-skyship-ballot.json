@@ -1,0 +1,40 @@
+{
+  "id": "ch5-skyship-ballot",
+  "title": "The Skyship Ballot",
+  "chapter": 5,
+  "type": "race",
+  "giver": "dockmaster-devanna",
+  "region": "skydocks",
+  "summary": "The settlements are voting on the Choice Warrant — the paper that puts Kessa-9's future in one courier's hands — and with the static turned to soup, voice radio can't be trusted to carry a count. So the ballot rides the skyship beacons: mirror, flare and lamp, station to station, while the dusk alignment holds. You're the relay. Five stations, one conjunction window, no second pass for a month. The Door will not wait a month.",
+  "requires": { "flags": ["ch4-glass-blooms.done"] },
+  "timeLimit": 300,
+  "objectives": [
+    { "type": "pickup", "target": "skydocks:dockmaster", "label": "Sign for the tally seal at the Dockmaster's hut" },
+    { "type": "race", "targets": ["windspine:storm-gauge", "windspine:turbine-row", "skydocks:winch-base", "saltmouth:gate-east", "saltmouth:job-board"], "label": "Relay the ballot: storm gauge → turbine row → winch yards → east gate → the board" }
+  ],
+  "rewards": {
+    "credits": 700,
+    "rep": { "guild": 5, "choir": 5, "reclaimers": 5, "driftline": 8 },
+    "flags": ["ch5-skyship-ballot.done", "ballot.cast", "lore:lore-choice-warrant"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "dockmaster-devanna", "text": "Varga. The settlements are holding a ballot that should have been a broadcast, except the air's been reciting poetry since the blooms and nobody trusts a count they can't see. So we're doing it the old way: tally light. Beacon to beacon, flare to mirror, while the dusk lines up the stations. Twenty minutes of geometry, once, then a month of fog." },
+      { "who": "dockmaster-devanna", "text": "The question on the ballot is the only one left: does Kessa-9 sign the Choice Warrant — put the waking or the sleeping of MOTHER in the Driftline's hands, and stand behind it? The company that wrote that form two centuries ago left the deciding line blank. Tonight somebody fills it in." },
+      { "who": "dockmaster-devanna", "text": "They made me ballot-warden because I'm the one person on this desert who's counted a mutiny honestly. I can't carry the light myself; my riding days ended with my ship. So the warden deputises the fastest honest thing with an engine. Sign for the tally seal. Don't crack the wax. Count it twice." },
+      { "who": "ash-varga", "text": "One seal, five stations, and a window measured in minutes. Dockmaster — if the desert votes no, does anybody tell the crate?" }
+    ],
+    "accept": [
+      { "who": "sister-counterweight", "text": "Audit note for the rider: I weigh the tally at each station myself, courier, from the bell tower, with the same scale I use for salt and souls. Ride the stations in order, no shortcuts across my sightlines, and if your light is late I certify *late*. The scale does not do mercy." },
+      { "who": "static-warden-pem", "text": "Conjunction advisory: the gauge mirror, the turbine row lamp, the Kestrel's Debt mirror at the winch yards, the east-gate flare and the board beacon will hold one true line for roughly five minutes of dusk. After that the geometry walks away like a creditor. Do not stop for anything, including awe." },
+      { "who": "jett-marrows", "text": "Radio check, Parcel! Racing *democracy* now, are we? For the record I wanted to race you for it, but apparently carrying votes is 'a solemn trust' and racing them is 'a felonable'. Your desert, sweetheart." },
+      { "who": "ash-varga", "text": "Seal's signed for, wax intact. Storm gauge first. If the dusk wants to walk away early, it'll have to outrun the Wren." }
+    ],
+    "complete": [
+      { "who": "sister-counterweight", "text": "Certified. Every station lit true and in order, the seal uncracked, the count legible from my own scale-beam: the Warrant passes. Kessa-9 has voted, courier, to be decided by its courier. I have weighed many outcomes. This is the first one that *balanced*." },
+      { "who": "cantor-ilex", "text": "We heard the flares, Ash. The whole hollow stood on the crater rim and watched the question cross the desert and come back *answered*. Not 'wake her.' Not 'let her sleep.' Only: we trust the hands that carried her key this far. It is the humblest thing this coalition has ever done." },
+      { "who": "boss-pyke", "text": "Yards watched your light go by, chief. Crews cheered at a *ballot*, that's how far gone we are. Warrant's yours fair and voted. Now you'd better have strong panniers, because you're carrying the whole planet's opinion, and opinions are the heaviest cargo there is." },
+      { "who": "ketch", "text": "Ketch here. Two centuries a company left that line blank, and tonight a desert full of stubborn, generous lunatics wrote a courier's name in it. Get some sleep, kid. Next run is the one they'll name the calendar after." }
+    ]
+  }
+}

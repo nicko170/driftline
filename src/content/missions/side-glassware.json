@@ -1,0 +1,38 @@
+{
+  "id": "side-glassware",
+  "title": "Choir Glassware",
+  "chapter": "side",
+  "type": "fragile",
+  "giver": "cantor-ilex",
+  "region": "choirhollow",
+  "summary": "Brother Decibel has finished a set of singing-glass windchimes — six strands, tuned to the lamp ring's own chord — commissioned by Keel Town for the little shrine above the moorage masts. Singing glass is to cargo what a rumour is to insurance: the payout scales with how much of the chord survives the crossing. Take the old salt pan line; it's the gentlest road on the map. The masts are a long way from the lamp ring, and every dune in between has an opinion.",
+  "requires": { "flags": ["ch2-choir-offer.done"] },
+  "objectives": [
+    { "type": "pickup", "target": "choirhollow:lamp-ring", "label": "Sign for the crated chimes at the lamp ring" },
+    { "type": "goto", "target": "saltmouth:flats-pan", "label": "Cross the flats by the old salt pan — the gentlest line" },
+    { "type": "dropoff", "target": "skydocks:keel-town", "label": "Deliver the chord to Keel Town's shrine" }
+  ],
+  "cargo": { "fragile": true, "label": "singing-glass windchimes" },
+  "rewards": {
+    "credits": 520,
+    "rep": { "choir": 8, "guild": 2 },
+    "flags": ["side-glassware.done", "lore:lore-choir-litany-1"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "cantor-ilex", "text": "Courier. Keel Town has commissioned a voice for its masts — six strands of singing glass, cut from the canyon bloom-stock and tuned to our chord. The Guild paid in full *before* hearing them, which tells you what the silence up there costs a rich person." },
+      { "who": "brother-decibel", "text": "TUNED THEM MYSELF! — ahem. Forgive the pipes. Six strands, courier, laced in cradle-felt and crated in cork. Each one rings in the lamp ring's chord. If the crate sings on your bike, that is *normal*. If it sings a chord we did NOT tune, pull over and write it down. For science. FOR SCRIPTURE. Both." },
+      { "who": "cantor-ilex", "text": "The fee rises with the surviving chord — six strands, six notes of the payout. Singing glass does not forgive bumps, Ash. Take the salt pan; the dunes will argue, and the glass will listen to all of them." }
+    ],
+    "accept": [
+      { "who": "little-reverb", "text": "Ash! The chimes are nervous — glass gets stage fright, everybody knows that — so hum to them over the bumps. Any note. They just want to know the road can carry a tune. Also don't let them hear any F-naturals. Long story. Choir feud." },
+      { "who": "ash-varga", "text": "Copy. Cradle-felt, cork crate, hum on the bumps, avoid the feud note. Lamp ring to the salt pan to the masts. If I arrive with one strand left, does the shrine get a soloist?" },
+      { "who": "cantor-ilex", "text": "A soloist is still a voice, courier. But — six would be a *choir*." }
+    ],
+    "complete": [
+      { "who": "dockmaster-devanna", "text": "Shrine riggers have them, courier. Struck one note against the mast weather and half of Keel Town came out onto the balconies. Nineteen years I flew this sky and never once delivered anything that made rich people go *quiet*. There's a first for every ledger." },
+      { "who": "cantor-ilex", "text": "We heard it from the hollow, Ash — faint, high, carried on the mast lines like a message that finally found its recipient. The desert's chord now has an upstairs room. Thank you for carrying it gently." },
+      { "who": "ash-varga", "text": "Payout's by the note and the note held. If the Guild asks, the credit was nerve management. My nerves have never been managed so musically." }
+    ]
+  }
+}

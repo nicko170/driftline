@@ -1,0 +1,35 @@
+{
+  "id": "side-dune-mail",
+  "title": "Dune Mail Express",
+  "chapter": "side",
+  "type": "deliver",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "The outskirts round: four drops on the beacon loop outside Saltmouth's walls — the east gate watch, the salt-pan camp, the dune-overlook beacon keeper, and the moorage mast. Light satchel, heavy gossip, no clock. The Guild pays generous for this one because the last courier called it 'a lovely afternoon' and Tamsin refuses to let that stand uncorrected.",
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:job-board", "label": "Collect the outskirts satchel at the job board" },
+    { "type": "dropoff", "target": "saltmouth:gate-east", "label": "Mail for the east gate watch" },
+    { "type": "dropoff", "target": "saltmouth:flats-pan", "label": "Mail for the salt-pan camp" },
+    { "type": "dropoff", "target": "saltmouth:overlook", "label": "Mail for the dune-overlook beacon keeper" },
+    { "type": "dropoff", "target": "saltmouth:moorage", "label": "Last bag: the moorage mast" }
+  ],
+  "rewards": {
+    "credits": 140,
+    "rep": { "guild": 3 },
+    "flags": ["side-dune-mail.done"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "Outskirts round. Four stops on the beacon loop, no clock, good money. Contents, since you'll ask: seed catalogues for the pan camp, a strongly-worded complaint for the east gate — from the east gate, addressed to itself, long story — and a letter for the beacon keeper franked *to the east wind, care of whoever's passing.*" },
+      { "who": "tamsin-cho", "text": "One rule: the satchel seals stay waxed. The moorage crew can smell opened mail through a sandstorm, and they invoice me for the emotional damage. Itemised." }
+    ],
+    "accept": [
+      { "who": "ash-varga", "text": "Satchel's light. If anyone asks, I'm a public service. If the wind asks, I'm *especially* a public service — apparently I'm delivering to it." },
+      { "who": "tamsin-cho", "text": "The east wind subscribes to two newsletters and owes the Guild eleven credits. Deliver its letter like everyone else's. Democracy, courier." }
+    ],
+    "complete": [
+      { "who": "ash-varga", "text": "All four drops done. The beacon keeper read the wind's letter over my shoulder, declared it 'mostly weather', and tipped me a warm flatbread. Best-paid delivery of my career." },
+      { "who": "tamsin-cho", "text": "Logged and counted. You know, Ash, jobs like this are the Driftline's real résumé — any lunatic can chase a storm, but it takes a *courier* to find the salt-pan camp when the camp's moved. Don't tell the Guild I said something nice. They'd tariff it." }
+    ]
+  }
+}

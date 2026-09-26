@@ -1,0 +1,47 @@
+{
+  "id": "ch5-last-delivery",
+  "title": "Last Delivery",
+  "chapter": 5,
+  "type": "deliver",
+  "giver": "ketch",
+  "region": "saltmouth",
+  "summary": "The Warrant is signed, the window is tonight, and the choice-core — the lantern-warm seed that fell out of the null crate when it bloomed at the gate — has been humming one patient note on Ketch's workbench since dawn. One run left: Saltmouth to the Door, through the glass hills, with everything the desert has left standing up behind you. At the threshold, the oldest decision on Kessa-9 gets made by its newest courier. Any crate, any storm, any door.",
+  "requires": { "flags": ["ch5-skyship-ballot.done", "ballot.cast"] },
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:garage", "label": "Lift the choice-core from Ketch's workbench" },
+    { "type": "storm", "target": "mothersgate:the-door", "label": "Carry the core to the Door — outrun what the desert has left" }
+  ],
+  "rewards": {
+    "credits": 1500,
+    "rep": { "guild": 10, "choir": 10, "reclaimers": 10, "driftline": 20 },
+    "flags": ["ch5-last-delivery.done", "lore:lore-broadcast-finale"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Come here a minute, kid. The crate opened like a flower out there at the gate, and what was in the middle of it is on my bench — a seed the size of a storm lantern, warm as a held hand. It's been humming one note since dawn. My radio played songs tonight it hasn't known since I was your age. I didn't sleep. I kept saying 'one more verse.'" },
+      { "who": "ketch", "text": "The ballot says the choice rides with the courier. The storm gauge says the season's got one last wall saved up, and it'll stand up the moment something precious moves. That's not weather anymore, that's *arguing*. So: Saltmouth to the Door, straight across the glass hills, and you do not stop for anything the sky throws." },
+      { "who": "ash-varga", "text": "One parcel, no manifest, no sender, every faction watching, half the desert awake and the other half on my heels. You know what, boss? It's the first job all year that's felt normal." },
+      { "who": "ketch", "text": "That's my courier. Take the core. And kid — whatever you decide at that threshold, decide it like a Varga: eyes open, both feet, and no apologising to the weather." }
+    ],
+    "accept": [
+      { "who": "tamsin-cho", "text": "Board notice, final entry under the oldest heading we keep: *any crate, any storm, any door.* The manifest's open, Varga. It's been open since a crate nobody sent signed a ledger nobody wrote. Close it right." },
+      { "who": "rill-davenant", "text": "Rill here — yes, on my own radio, mostly reassembled, thank you for asking. Listen, Varga: those coordinates I spent a week reciting? They were never a place. They were a permission. You've had it the whole time. Now go be faster than I was. That's an order *and* a joke." },
+      { "who": "cantor-ilex", "text": "We hear you, Ash. The lamps are all lit and every horn points your way. Whatever note she sings when you get there — the Choir will learn it, either way it goes. That is what a choir is *for*." },
+      { "who": "static-warden-pem", "text": "Pem on band nine: the wall is standing up behind the water tower, and courier, it is *reciting*. Deep weather. Move like the desert is billing you for the road one last time." }
+    ],
+    "complete": [
+      { "who": "ash-varga", "text": "Door, Ketch. I'm at the Door, and it's opening like morning, and the storm's about a hundred metres behind me wearing the whole horizon. The core's humming two notes now. I think it's asking. I think it's been asking all along." },
+      { "who": "little-reverb", "text": "She's awake enough to *ask*, Ash! That's the politest thing anyone's done on this planet in two hundred years. Whatever you answer, answer it out loud. She likes voices. Everybody likes voices." },
+      { "who": "ketch", "text": "It's your knock, kid. The Warrant says so, the creed says so, and an old man in a garage full of spare parts says so. Wake her or sing her back down — either way, the Driftline delivered. Now close the manifest." }
+    ],
+    "choices": [
+      {
+        "prompt": "The Door stands open. The choice-core hums in your hands like a held heartbeat. Behind you, the last storm is closing over the glass hills. Ahead of you, MOTHER — awake enough to listen. The whole desert voted to stand behind whatever you do next.",
+        "options": [
+          { "text": "Set the core in the cradle. Wake her — let the terraforming finish, let the rain come back, and let the Glass Desert become the garden it was halfway to being. (Ending: RAIN)", "setsFlag": "ending.rain" },
+          { "text": "Sing the core back to sleep. Keep the hard free land, the salt and the long roads, and leave the key where the next lost courier will find it in another two hundred years. (Ending: QUIET)", "setsFlag": "ending.quiet" }
+        ]
+      }
+    ]
+  }
+}
