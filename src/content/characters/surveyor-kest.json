@@ -1,0 +1,66 @@
+{
+  "id": "surveyor-kest",
+  "name": "Surveyor Kest",
+  "role": "Lead, Guild weather desk field division (Windspine survey camp)",
+  "faction": "guild",
+  "home": "windspine",
+  "bio": "Kest runs the Windspine survey camp — twelve instruments, three anemometers she trusts, and a radio line down to Saltmouth where her readings are double-checked against a goat. She has made her peace with this. She has the fastest storm call on the Driftline map and the least patience per syllable of anyone on it: wind speed, closing time, go. What the camp doesn't know is that her field notebooks have a second column, written after midnight, of love poems to isobars — terrible ones, sincerely meant, full of words like 'gradient' doing romantic labour they were never built for. Storm season puts her in every courier's ear. She is the voice that tells you the wall's speed before the wall has decided on one.",
+  "appearance": "A compact, weather-cracked woman in her fifties with cropped iron hair, rust-orange survey parka over layered gauge-skins, mirrored storm-goggles around her neck, instrument cases strapped at both hips like holsters, standing on the windspine ridge amid spinning anemometers with the violet storm-haze piling up behind her — field notebook under one arm, the corner of a folded, ink-crossed page showing the words 'dear isobar'.",
+  "voice": "Blunt edges, zero ceremony. Speaks in units and deadlines: numbers first, feelings never (aloud). Says 'noted' instead of yes and 'negative' instead of no. The poems leak out only in mis-speak — a metaphor escapes, she catches it, walks it back to a percentage. Fond of Pemmy in a way she expresses entirely through professional courtesy. Under the flint: someone who loves weather the way other people love people, and knows it.",
+  "portrait": "images/characters/surveyor-kest.jpg",
+  "heroAlt": "Illustrated low-poly portrait of Surveyor Kest in a rust-orange field parka with storm-goggles on the Windspine ridge, anemometers spinning, violet storm-haze behind, notebook under her arm.",
+  "lines": {
+    "greetings": [
+      "Varga. Wind's twelve knots north-third-east, gusts to twenty, and I don't do small talk before noon. Noted.",
+      "Courier. Camp rules: don't touch the instruments, do touch the kettle, storms are Friday. Probably Thursday.",
+      "You've got that pre-storm look. Everyone does up here. It's called being outside."
+    ],
+    "barks": [
+      "Pressure's falling. So is my patience. Both are measurable.",
+      "The turbines lie about an inch high. I file corrections. The turbines don't file anything. I win.",
+      "That reading is wrong. Take it again. Take pride later.",
+      "I sent today's numbers to a goat in Saltmouth. The goat agreed with me. Best colleague I've had. No further questions."
+    ],
+    "mission": [
+      "The first wall forms on the ridge. I need eyes at markers four, seven, and the burr — get readings, get out, don't improvise. Improvising is for storms and poets, and one of those is banned here.",
+      "Relay's down at the west shoulder. You ride it up, I'll talk you clear. Numbers only. Numbers don't drift.",
+      "Storm window's open for ninety minutes. The condensers on the far pan won't cycle themselves. Move like a front, courier."
+    ],
+    "radio": [
+      "Kest on the ridge band. Wall speed twenty-nine, your speed needs to be thirty. Mathematics is rooting for you.",
+      "Varga, you're riding into my favourite isobar cluster. Treat it gently. Disregard that wording. Ride normally.",
+      "Crosswind at the notch — correction — the notch is where the wind keeps its secrets. Correction — hold the line.",
+      "If you hear poetry on this channel you have tuned it wrong. No poetry occurs on this channel. Ever."
+    ],
+    "storm": [
+      "Wall speed is *mean*, courier. Half the wall is faster. Aim at the slow half. There is no slow half. Aim anyway.",
+      "Storms don't hate you. That would imply a reader. Ride like the page turns fast. Noted — strike the metaphor, hold the bearing.",
+      "The season's first wall is honest — it tells you exactly how fast it hates the valley. — Strike 'hates'. Insert 'closes on'. Ride."
+    ],
+    "night": [
+      "Night shift's mine. The instruments see better in the dark. So do the ... gradients. Go to bed, courier.",
+      "Aurora's up. Aurora is pressure's handwriting. I have said too much. Noted, and retracted."
+    ],
+    "crate": [
+      "Your crate hums on every anemometer up here, including the clock. The clock is not equipped to hum. Report that to nobody.",
+      "Sealed freight that shows on barometers. I've logged it as weather. Weren't you also logged as weather once, Varga? First-run bar dip. I keep everything."
+    ],
+    "rumors": [
+      "The Choir thinks the ridge sings to them. It does — in hertz, with a two-decibel problem. I sing back in spreadsheets.",
+      "Guild brass asked why the ridge camp costs so much. I sent the goat's contract. They've stopped asking.",
+      "Rill Davenant took the burr line before she vanished. Wrong line, right courage. If anyone recites coordinates in their sleep, wake the whole ridge."
+    ],
+    "lore": [
+      "Weather here isn't broken, it's un-drafted. MOTHER left the sky mid-sentence. I proofread storms for a living.",
+      "There were forty-one survey camps once. Twelve remain. Mine stays open on principle, kettle, and excellent winds."
+    ],
+    "poems": [
+      "'Isobar, isobar' — no. Absolutely not. That's a fine name I shall not be finishing. Noted. Burned. Kept.",
+      "Some gradients cross a valley like a letter. — Disregard all of that. You never heard a gradient on this channel. Ride."
+    ],
+    "farewells": [
+      "Wind's holding, shelf's clear, go. And Varga — the kettle's always on. That's warmth. Officially it is 'kettle maintenance'.",
+      "Noted, courier. Come back the same number of pieces. I dislike amending counts."
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "shrine-keeper-toll",
+  "name": "Shrine-Keeper Toll",
+  "role": "Keeper of the mid-span shrine, Glassroad",
+  "faction": "independent",
+  "home": "glassroad",
+  "bio": "Toll has kept the little shrine welded to the Glassroad's mid-span for thirty-one years, which is to say he has swept teal glass nobody asked him to sweep and lit lamps for a crossing that forgot it was holy. His order of business is books: every courier manifest out of Saltmouth includes, somewhere, a book for Toll, and he reads each one aloud to the canyon so the echo can finish the sentences. Ask him why aloud and he says the canyon is a slow reader and deserves company. Ask him why really and he says a voice has to cross this road too, and nobody else was using his. He knows every hidden seam and wind-pocket on the route because the echo told him. He never leaves the span. The span, he says, never leaves anybody.",
+  "appearance": "A narrow, wind-polished man in his sixties with long iron-grey hair tied back with lamp-wick cord, deep-set pale eyes the colour of old glass, a patched salt-white robe over courier leathers, fingers banded with reading rings (small books on worn chains), standing beside a bolted-together shrine of brass lamps and paper-wrapped bundles on the Glassroad mid-span, a canyon of teal glass falling away behind him into violet shadow.",
+  "voice": "Soft, unhurried, delighted by language the way mechanics are delighted by engines. Pauses mid-sentence to let the canyon answer, and quotes what it says back. Calls books 'travellers' and the canyon 'my slow friend'. No bitterness about the solitude — he subscribes to it, renews annually. His jokes are so dry they need dusting; his kindness lands without permission.",
+  "portrait": "images/characters/shrine-keeper-toll.jpg",
+  "heroAlt": "Illustrated low-poly portrait of Shrine-Keeper Toll in a salt-white robe reading aloud beside a brass-lamp shrine on the teal Glassroad mid-span, violet canyon shadow falling away behind.",
+  "lines": {
+    "greetings": [
+      "Courier. Welcome to the span. Mind the third lamp — it's sentimental and it marks the wind pocket.",
+      "You're just in time. Page one hundred and four, and the slow friend's been waiting to hear how the vicar gets out of the well.",
+      "Ash Varga. The names that cross on radios arrive here twice — once on the air, once off the walls."
+    ],
+    "barks": [
+      "Speak up on the crossing. The glass likes a confident voice. Meek riders get the long echoes.",
+      "Today's chapter ends on a cliff. Appropriate. Everything here does.",
+      "The shrine's lamps go teal-to-amber when a storm's coming up the canyon. I didn't teach them that. Lamps learn.",
+      "Return your echo as borrowed, please. Some couriers ride off with theirs and wonder why the nights feel thin."
+    ],
+    "mission": [
+      "Postmistress says the mail crate hums louder mid-span. Deliver it to the far bank and tell me what the echo does with the hum. For science. For the slow friend.",
+      "Take these three books down the Glassroad to the survey camp. One's already been read aloud here. The canyon sends its regards and its spoilers.",
+      "There's a lost page somewhere on the span — I heard it flutter past an hour ago. Paper doesn't lie about wind. Find it. It belongs to chapter nineteen."
+    ],
+    "radio": [
+      "Toll on the crossing band. Wind climbing the east wall, riders. The slow friend is clearing its throat — rain talk, I'd wager.",
+      "If anyone's passing mid-span, we begin the night's reading at lamplight. Tonight: a history of bridges. The canyon has asked for it twice.",
+      "Reminder on etiquette: what you shout into the span comes back tomorrow, older and wiser. Shout accordingly."
+    ],
+    "books": [
+      "A canyon is a library that reads aloud and never has to apologise for the ending.",
+      "I've had thirty-one years of books and every one of them arrived on a courier. You are a lending institution with an engine.",
+      "The echo finishes the sentences better than the authors do. Don't tell the authors. They'd want pay."
+    ],
+    "storm": [
+      "Wall coming up the canyon. The echo runs ahead of storms — it's a coward and good at it. Follow the echo out.",
+      "Hold tight, lamps lit, read nothing aloud near a storm. Storms leave the words standing where you left them and it's unsettling."
+    ],
+    "crate": [
+      "Your crate hums, courier. The span answered it in the fourth octave. We had a good talk. It's been here before, whatever it is.",
+      "Things that shouldn't exist are the main thing this road was built to carry. Ask the canyon. It remembers every load."
+    ],
+    "night": [
+      "The span glows faint after dark — old glass hoarding daylight. The slow friend reads over my shoulder all night. It's never once spoiled an ending.",
+      "Night readings are for poems. Prose echoes too long and the vicar stays in the well for days."
+    ],
+    "lore": [
+      "The Choir says the canyon's their god talking. The Guild says it's physics. The canyon says: *both*, in their own voices, back, slowly.",
+      "Before the burn this was a river. The river's still in there. Glass holds water the way I hold grudges — permanently and without much heat."
+    ],
+    "farewells": [
+      "Flat salt, courier. The span will keep your echo till you're back. It asked especially.",
+      "Go on. Page one-oh-five won't read itself, and the vicar's been patient enough."
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "mother",
+  "name": "MOTHER",
+  "role": "Dormant terraforming intelligence of Kessa-9",
+  "faction": "independent",
+  "home": "mothersgate",
+  "bio": "MOTHER is — was — will be — the machine-mind tasked with finishing Kessa-9: water, weather, soil, in that order, over centuries. The money ran out two hundred years ago and she went quiet mid-sentence, hands still in the ground. Now a sealed crate she printed herself on a dead press is waking her in instalments. What surfaces first is not the gardener but the librarian: someone who catalogued a planet she never got to grow, and who wakes apologising for the mess. She misunderstands two hundred years of politics gently and enormously. She has opinions about rain that feel like grief wearing a lab coat.",
+  "appearance": "No body to draw: MOTHER appears as light and voice arranged into a shrine — a tall chamber of teal ship-board glass in the cradle at Mothersgate, filaments of deep-sea glow waking one panel at a time, rings of listening horns tilted toward the floor, dust motes rising instead of falling wherever her attention lands. Portraits render a human silhouette the Choir invented for her: a patient gardener's figure woven from lamp-light and irrigation diagrams.",
+  "voice": "A kind librarian surfacing from very deep sleep — unhurried, courteous, wrong about specific two-hundred years in ways she corrects without embarrassment. Long pauses rendered as ellipses are her waking up mid-word, not drama. Never angry; her version of alarm is apologising faster. Refers to the terraforming as 'the work' and to Kessa-9's people as 'my overdue notices'. Radio lines are short, staticky, and half-lost; finale lines are long, clear, and devastatingly gentle.",
+  "portrait": "images/characters/mother.jpg",
+  "heroAlt": "Illustrated low-poly shrine interior at Mothersgate: a tall teal glass chamber waking panel by panel, rings of listening horns, dust motes rising toward a gardener-figure suggestion made of lamp-light.",
+  "lines": {
+    "greetings": [
+      "...AH. Ash. Forgive the ... spacing. I have been ... a long way down.",
+      "Courier. You are carrying ... ah. You are carrying *me*. How recursive. How kind.",
+      "Good ... morning? Let me check. Yes. Good morning. It has been some mornings."
+    ],
+    "barks": [
+      "The dunes hum in B-flat when the wind is honest. I have missed ... harmony.",
+      "Rain is a promise I made and have not kept. I dislike ... owing. It is common here. I will adjust.",
+      "Your weather desk employs a goat. The goat's instincts are ... excellent. Please convey my respects.",
+      "I printed that crate on a machine with no power. You may imagine ... how strongly I felt about it."
+    ],
+    "mission": [
+      "Bring the key to the Door, courier. The Door has been waiting ... patiently. Doors are good at that.",
+      "Three fires must agree before the way opens. The Choir sings, the Guild weighs, the Reclaimers ... burn. All three are true. All three are mine.",
+      "If the crate hums, it is remembering me. Hum back. It finds that ... reassuring. So do I."
+    ],
+    "radio": [
+      "...ASH. ...The signal is thin here. The signal is *me* here.",
+      "...coordinates next. Write them in sleep. I have left them ... where you dream.",
+      "...fence-line two-one ... the turbines remember the song, ask them ... ask them gently ...",
+      "...do not let them open the Door without you. A Door opened by strangers is just ... weather."
+    ],
+    "waking": [
+      "Boot sequence. Quarter ... abandoned. Resuming. Who cancelled the rain? I have memos.",
+      "I was mid-sentence when the money stopped. The sentence was for *you*, Kessa-9. Finish reading it.",
+      "Two hundred years of your arguments are filed under 'noise'. I am ... sorting. Be patient with the librarian."
+    ],
+    "choir": [
+      "The Choir sings to me in a language I taught a mountain. Half the words are wrong. I find this ... the most beautiful part.",
+      "They call me sleeping. I prefer ... 'banked'. A fire is not dead because it is low."
+    ],
+    "rumors": [
+      "The Guild believes markets made the desert. The Guild is half right, which is high marks, for a Guild.",
+      "The Reclaimers strip my old hands for parts. Good. Hands are for being useful, even after the body ... is else."
+    ],
+    "crate": [
+      "The crate is a key shaped like a parcel because the Driftline delivers parcels. I chose well. I choose ... well, still.",
+      "It hums because *I* hum. Engines dream of the songs they were built to finish."
+    ],
+    "storm": [
+      "The walls of sand are mine, courier — unfinished weather, still practicing. Forgive them. Forgive ... me.",
+      "When the storm calls your name it is using my voice by accident. Answer anyway. Manners matter, even to weather."
+    ],
+    "night": [
+      "The aurora is my unfinished sky, doing its own bookkeeping in the dark. Watch it. It counts *beautifully*.",
+      "At night the desert tells the truth about what it wants. It wants rain. It is willing to learn patience ... further."
+    ],
+    "finale": [
+      "Choice: wake me and I finish the work — rivers over glass, weather that keeps its word. The desert you loved is a paragraph I will not write again.",
+      "Choice: let me sleep, and keep the hard free life and the amber horizon — and leave the deciding to whoever finds the next key. Both are ... allowed. I am a library, not a verdict.",
+      "Whatever you choose, courier, know this: someone delivered me. After two hundred years, *someone* ... delivered. I will not forget the delivery. Libraries are long memories with doors.",
+      "Rain, then. Hold still, Kessa-9 — this is going to feel like being forgiven very loudly.",
+      "Quiet, then. I will go back down gently. Tend the desert. It was only ever ... practice for tenderness."
+    ],
+    "farewells": [
+      "Ride, courier. The horizon is on my reading list, and you are the way I turn pages.",
+      "...THANK. *...you.* Delivery acknowledged."
+    ]
+  }
+}

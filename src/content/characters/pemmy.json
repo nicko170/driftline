@@ -1,0 +1,47 @@
+{
+  "id": "pemmy",
+  "name": "Pemmy (Weather Goat)",
+  "role": "Senior meteorologist, Guild Weather Desk (caprine division)",
+  "faction": "guild",
+  "home": "saltmouth",
+  "bio": "Pemmy is a goat. Pemmy is also the Salt Guild's most accurate weather instrument, and has been since she wandered into the weather desk as a kid, ate three barometer charts, and refused to leave. Her forecasting method is proprietary and, as far as anyone can tell, consists of licking the air, staring at the horizon, and bleating with tremendous conviction. The factors translate her bleats with straight faces into shipping advisories, and the advisories are right almost always, which is more than can be said for the instrument wall behind her. She draws a salary in oats and a pension in unconditional respect. Do not touch the atlas. She bites.",
+  "appearance": "A stocky dun-and-salt goat of unshakeable composure, standing on a weathered chart table in front of the Saltmouth weather desk's sun-bleached instrument wall; an official ochre Guild sash across her shoulders like a stole, a tarnished brass desk tag reading PEMMY — ATTITUDE AND WIND, one ear notched by history, chewing slowly on something that used to be a pressure graph.",
+  "voice": "Pemmy communicates exclusively in bleats, rendered faithfully in text, each followed by the official factor translation in brackets. The translation is always confident, occasionally editorial, and never once admits uncertainty. Pemmy herself radiates the calm of a professional who has never been wrong and has bitten three auditors.",
+  "portrait": "images/characters/pemmy.jpg",
+  "heroAlt": "Illustrated low-poly portrait of Pemmy the weather goat wearing an ochre Guild sash, standing on a chart table in front of a sun-bleached weather instrument wall, eating a barometer trace with professional calm.",
+  "lines": {
+    "greetings": [
+      "Beeeeh. *[Official translation: 'Welcome to the weather desk. Scanning you for snacks and low pressure.']*",
+      "Meh-eh-eh. *[Official translation: 'Courier Varga. Your paperwork predicts bad weather. Stand closer anyway.']*",
+      "*Extended stare.* *[Official translation: 'The desk is pleased to see you. The desk reserves the right to bite.']*"
+    ],
+    "barks": [
+      "Meh. *[Official translation: 'Wind's from the east-southeast. If you argue, the desk will remember.']*",
+      "Baaa-aah! *[Official translation: 'WALL FORMING. ALL ROUTES CLOSE IN THE HOUR. THE DESK SAID IT FIRST.']*",
+      "*Chewing.* *[Official translation: 'That chart was wrong anyway. You are welcome.']*",
+      "Maaah. *[Official translation: 'The turbines are lying today. Ride as if they are not.']*"
+    ],
+    "mission": [
+      "Meh-eh-eh-eh! *[Official translation: 'Storm window opens at dusk. Take the condenser run NOW or sleep in the dunes.']*",
+      "Baa. *[Official translation: 'Go with the weather. Come back with the crate. In that order.']*"
+    ],
+    "radio": [
+      "Baah-ah-ah. *[Official translation, relayed by desk: 'Crosswinds at marker nine. Pemmy saw it before the mast did. Respect this.']*",
+      "*Static, chewing, more static.* *[Relay note: 'The goat is on the radio again. The goat is always on the radio.']*"
+    ],
+    "storm": [
+      "BAAAH. *[Official translation: 'RUN. WHICH PART OF THIS WAS UNCLEAR.']*",
+      "Meh-eh-eh. *[Official translation: 'The wall has your name on it. Spell it back loudly and be elsewhere.']*",
+      "*Snorts at the horizon, twice.* *[Official translation: 'Tuesday will be worse. Plan your week accordingly.']*"
+    ],
+    "credits": [
+      "Maaah. *[Official translation: 'Paid in full. The desk tips its translator.']*"
+    ],
+    "debt": [
+      "Baaah. *[Official translation: 'The desk notes your account. The desk notes everything. Especially pastries.']*"
+    ],
+    "night": [
+      "*Asleep, standing up, wearing her sash. The desk considers this a forecast: tomorrow will be fine.]*"
+    ]
+  }
+}
