@@ -1,0 +1,8 @@
+{
+  "slug": "garage-shop-lab",
+  "name": "Garage Shop Flow Lab",
+  "blurb": "Workshop tool, not a game region: Ketch's garage purchase flow rebuilt out-of-game on a scripted wallet — button states, buy/affirm animation, debt callout placements, paint swatch grid at phone/desktop widths, a DOM-driven keyboard-a11y pass, and a copy-CSS export. Anchors and center live outside the playable map.",
+  "center": [7800, 7800],
+  "radius": 4,
+  "danger": 0
+}

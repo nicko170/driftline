@@ -2691,8 +2691,10 @@
     "caretaker",
     "lore"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790405151.533225
   },
   {
    "kind": "article",
@@ -2707,8 +2709,10 @@
     "night",
     "weather"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790405151.533226
   },
   {
    "kind": "article",
@@ -2722,8 +2726,10 @@
     "choirhollow",
     "logistics"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790405151.533226
   },
   {
    "kind": "article",
@@ -2738,8 +2744,10 @@
     "radio",
     "songs"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790405151.533226
   },
   {
    "kind": "article",
@@ -5380,10 +5388,11 @@
    "cluster": "demos",
    "intent": "Garage purchase-flow bench: rebuild the upgrade shop UI out-of-game with a scripted wallet; audition button states, buy/affirm animation, debt-callout and paint swatch grid at phone/desktop widths; keyboard-a11y pass; copy-CSS export.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo1",
-   "claimed_at": 1790398131.8735769
+   "claimed_at": 1790398131.8735769,
+   "done_at": "2026-09-26T16:46:16"
   },
   {
    "kind": "demo",

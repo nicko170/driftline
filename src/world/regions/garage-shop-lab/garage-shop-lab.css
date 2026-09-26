@@ -1,0 +1,410 @@
+/* Garage Shop Flow Lab — scoped styles (.gsl-*). Design tokens from src/ui/ui.css.
+ * The baseline stage reuses production classes (.sheet, .garage-part, .paint-swatch)
+ * so it renders exactly what the game ships; the tuned stage gets .gsl-* upgrades. */
+
+.gsl-root {
+  color: var(--bone);
+  font-family: var(--font-body);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ---- header ------------------------------------------------------------ */
+
+.gsl-head {
+  position: relative;
+  min-height: 230px;
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center 42%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.gsl-head-veil {
+  flex: 1;
+  padding: 20px 22px 18px;
+  background: linear-gradient(180deg, transparent 0%, color-mix(in srgb, var(--ink) 85%, transparent) 80%);
+}
+
+.gsl-head h2 {
+  margin: 0 0 6px;
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3.4vw, 32px);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--salt);
+}
+
+.gsl-head p { margin: 0; max-width: 76ch; font-size: 13.5px; line-height: 1.55; }
+
+.gsl-purse {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border: 1px solid var(--amber);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--space) 82%, transparent);
+  backdrop-filter: blur(6px);
+  font-family: var(--font-display);
+}
+.gsl-purse-num {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--amber-hot);
+  font-variant-numeric: tabular-nums;
+}
+.gsl-purse-unit { font-size: 11px; letter-spacing: 0.2em; color: var(--sand); }
+.gsl-purse .exchange-seal { font-size: 10px; }
+
+/* ---- controls ---------------------------------------------------------- */
+
+.gsl-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  padding: 12px 14px;
+  align-items: center;
+}
+
+.gsl-ctl-group { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.gsl-ctl-label {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--teal-bright);
+  margin-right: 2px;
+}
+
+.gsl-chip {
+  font-family: var(--font-display);
+  font-size: 11.5px;
+  letter-spacing: 0.06em;
+  color: var(--bone);
+  background: color-mix(in srgb, var(--violet) 60%, transparent);
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: border-color 120ms ease-out, background 120ms ease-out;
+}
+.gsl-chip:hover { border-color: var(--amber); }
+.gsl-chip:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.gsl-chip.on {
+  background: color-mix(in srgb, var(--amber) 20%, var(--space));
+  border-color: var(--amber);
+  color: var(--amber-hot);
+}
+
+.gsl-sliders { gap: 16px; }
+.gsl-slider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--sand);
+}
+.gsl-slider span { min-width: 130px; }
+.gsl-slider b { color: var(--amber-hot); font-variant-numeric: tabular-nums; }
+.gsl-slider input[type="range"] { width: 130px; accent-color: var(--amber); }
+
+/* ---- stage ------------------------------------------------------------- */
+
+.gsl-stage-row { display: grid; grid-template-columns: 1fr; gap: 14px; }
+.gsl-stage-row.split { grid-template-columns: 1fr 1fr; align-items: start; }
+@media (max-width: 1100px) { .gsl-stage-row.split { grid-template-columns: 1fr; } }
+
+.gsl-frame { margin: 0; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.gsl-frame figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sand);
+}
+.gsl-frame-tag { color: var(--rust); }
+.gsl-frame-tag-tuned { color: var(--teal-bright); }
+.gsl-frame-dim { opacity: 0.7; }
+
+.gsl-stage {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 420px;
+  padding: 18px;
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  background:
+    radial-gradient(120% 90% at 50% 0%, color-mix(in srgb, var(--violet) 55%, transparent) 0%, color-mix(in srgb, var(--ink) 80%, transparent) 70%);
+  overflow: hidden auto;
+  max-height: 82vh;
+  transition: max-width 180ms ease-out;
+}
+
+/* the shipped sheet is sized off the viewport — re-home it to the stage */
+.gsl-stage .sheet {
+  width: 100%;
+  max-height: none;
+  overflow: visible;
+  animation: none;
+}
+
+/* ---- tuned shop -------------------------------------------------------- */
+
+.gsl-shop { display: flex; flex-direction: column; gap: 14px; }
+
+.gsl-shop-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--panel-border);
+  padding-bottom: 12px;
+}
+.gsl-shop-head h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  color: var(--salt);
+}
+.gsl-quote { margin: 4px 0 0; font-size: 12.5px; font-style: italic; }
+
+.gsl-wallet {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-family: var(--font-display);
+}
+.gsl-wallet-num {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--amber-hot);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.gsl-wallet-unit { font-size: 11px; letter-spacing: 0.24em; color: var(--sand); }
+
+.gsl-debt-strip {
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--sand);
+  border-left: 3px solid var(--ochre);
+  padding-left: 12px;
+}
+.gsl-debt-strip strong { color: var(--amber-hot); font-variant-numeric: tabular-nums; }
+
+.gsl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+
+.gsl-part {
+  position: relative;
+  overflow: hidden;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.gsl-part p { margin: 0; font-size: 13px; line-height: 1.5; }
+
+.gsl-glyph { color: var(--amber); }
+
+.gsl-placard {
+  font-size: 12px !important;
+  color: var(--sand);
+  border-left: 2px solid color-mix(in srgb, var(--ochre) 60%, transparent);
+  padding-left: 8px;
+  flex: 1;
+}
+
+/* buy row + denial reason */
+.gsl-buy-row { margin-top: 10px; display: flex; flex-direction: column; gap: 6px; }
+.gsl-buy { width: 100%; }
+/* teachable: aria-disabled stays focusable/clickable (you can ask WHY) */
+.gsl-shop .btn[aria-disabled="true"] { opacity: 0.62; }
+.gsl-shop .btn[aria-disabled="true"]:hover { transform: none; border-color: var(--panel-border); }
+.gsl-deny-reason { font-size: 12px; color: var(--danger); }
+
+/* affirm: wash + stamp press */
+@keyframes gslBought {
+  0% { box-shadow: 0 0 0 0 rgba(255, 180, 84, 0); }
+  22% { box-shadow: 0 0 0 2px rgba(255, 180, 84, 0.75), 0 0 22px rgba(255, 180, 84, 0.35); }
+  100% { box-shadow: 0 0 0 1px rgba(255, 180, 84, 0.15); }
+}
+.gsl-part.gsl-bought { animation: gslBought var(--gsl-affirm-ms, 650ms) ease-out; }
+
+.gsl-stamp {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--amber-hot);
+  border: 1px solid color-mix(in srgb, var(--amber) 70%, transparent);
+  border-radius: 4px;
+  padding: 2px 8px;
+  transform: rotate(-6deg);
+  background: color-mix(in srgb, var(--space) 70%, transparent);
+  animation: gslStamp calc(var(--gsl-affirm-ms, 650ms) * 0.5) cubic-bezier(0.2, 1.6, 0.4, 1);
+  pointer-events: none;
+}
+@keyframes gslStamp {
+  from { opacity: 0; transform: rotate(-6deg) scale(1.7); }
+  to { opacity: 1; transform: rotate(-6deg) scale(1); }
+}
+
+@keyframes gslPipPop {
+  from { transform: scaleY(0.3); filter: brightness(2); }
+  to { transform: scaleY(1); filter: none; }
+}
+.gsl-pip-pop { animation: gslPipPop 260ms ease-out backwards; }
+
+@keyframes gslDeny { 20%, 60% { transform: translateX(-2px); } 40%, 80% { transform: translateX(2px); } }
+.gsl-part.gsl-denied { animation: gslDeny 300ms ease-out; }
+
+/* swatch rack */
+.gsl-swatches { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+.gsl-swatch {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.gsl-swatch:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.gsl-swatch-check {
+  color: var(--salt);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1;
+  text-shadow: 0 1px 3px rgba(20, 16, 31, 0.9);
+}
+.gsl-swatch.gsl-locked {
+  cursor: help;
+  opacity: 0.55;
+  background: color-mix(in srgb, var(--sw) 40%, var(--space)) !important;
+  border: 2px dashed color-mix(in srgb, var(--amber) 45%, transparent) !important;
+}
+.gsl-swatch-lock { color: var(--salt); opacity: 0.85; font-size: 14px; }
+
+/* debt ledger card inside the garage grid */
+.gsl-debt { gap: 10px; }
+.gsl-debt .exchange-outstanding { font-size: 30px; margin: 6px 0 8px; }
+.gsl-pay-row { gap: 6px; }
+.gsl-pay-row .btn { font-size: 12px; padding: 8px 12px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .gsl-part.gsl-bought, .gsl-part.gsl-denied, .gsl-stamp, .gsl-pip-pop { animation: none; }
+}
+
+/* ---- below: tape + audits ---------------------------------------------- */
+
+.gsl-below {
+  display: grid;
+  grid-template-columns: minmax(250px, 340px) 1fr;
+  gap: 14px;
+  align-items: start;
+}
+@media (max-width: 1100px) { .gsl-below { grid-template-columns: 1fr; } }
+
+.gsl-tape { padding: 14px 16px; }
+.gsl-tape h4, .gsl-audits h4, .gsl-foot h4 {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sand);
+}
+.gsl-tape ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 5px; }
+.gsl-receipt {
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+  padding: 6px 10px;
+  border-left: 3px solid var(--ochre);
+  background: color-mix(in srgb, var(--violet) 35%, transparent);
+  border-radius: 0 6px 6px 0;
+  animation: gslRise 220ms ease-out;
+}
+.gsl-receipt-deny { border-left-color: var(--danger); color: color-mix(in srgb, var(--danger) 70%, var(--bone)); }
+.gsl-receipt-paint { border-left-color: var(--teal-bright); }
+.gsl-receipt-pay { border-left-color: var(--amber); }
+@keyframes gslRise { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.gsl-tape-hint { margin: 10px 0 0; font-size: 11.5px; opacity: 0.65; line-height: 1.5; }
+
+.gsl-audits { padding: 14px 16px; display: flex; flex-direction: column; gap: 12px; }
+.gsl-audits > p { margin: 0; font-size: 13px; line-height: 1.55; }
+
+.gsl-checks h4 { margin: 0 0 6px; font-size: 12px; }
+.gsl-check-tally b { font-variant-numeric: tabular-nums; margin-left: 6px; }
+.gsl-check-tally .gsl-ok { color: var(--teal-bright); }
+.gsl-check-tally .gsl-bad { color: var(--danger); }
+.gsl-check-tally .gsl-warn { color: var(--amber); }
+.gsl-checks ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.gsl-check { display: flex; gap: 10px; align-items: flex-start; font-size: 12.5px; }
+.gsl-check i {
+  flex: 0 0 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  font-style: normal;
+  font-size: 11px;
+  border-radius: 5px;
+  border: 1px solid var(--panel-border);
+}
+.gsl-check-pass i { color: var(--teal-bright); border-color: color-mix(in srgb, var(--teal) 60%, transparent); }
+.gsl-check-fail i { color: var(--danger); border-color: color-mix(in srgb, var(--danger) 60%, transparent); }
+.gsl-check-warn i { color: var(--amber); border-color: color-mix(in srgb, var(--amber) 50%, transparent); }
+.gsl-check-pending i { color: var(--sand); }
+.gsl-check div { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.gsl-check strong { color: var(--salt); font-weight: 600; }
+.gsl-check span { opacity: 0.72; }
+
+/* ---- footer: CSS export ------------------------------------------------- */
+
+.gsl-foot {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gsl-foot > div p { margin: 0; font-size: 13px; line-height: 1.55; max-width: 72ch; }
+.gsl-foot .btn { align-self: flex-start; }
+.gsl-csspreview {
+  margin: 0;
+  max-height: 260px;
+  overflow: auto;
+  padding: 12px 14px;
+  font-size: 11.5px;
+  line-height: 1.55;
+  color: var(--bone);
+  background: color-mix(in srgb, var(--ink) 70%, transparent);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  white-space: pre-wrap;
+}
+
+/* screen-reader-only live region */
+.gsl-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
