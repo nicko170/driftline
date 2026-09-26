@@ -164,8 +164,10 @@
     "convoy",
     "choirhollow"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790380978.182219
   },
   {
    "kind": "article",
@@ -181,8 +183,10 @@
     "radio",
     "finale"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790380978.18222
   },
   {
    "kind": "article",
@@ -196,8 +200,10 @@
     "outrun",
     "windspine"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790380978.18222
   },
   {
    "kind": "article",
@@ -212,8 +218,10 @@
     "rill",
     "windspine"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790380978.18222
   },
   {
    "kind": "article",
@@ -1708,10 +1716,11 @@
     "comedy",
     "22-B"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790380731.055883
+   "claimed_at": 1790380731.055883,
+   "done_at": "2026-09-26T10:03:31"
   },
   {
    "kind": "article",
@@ -1725,10 +1734,11 @@
     "economy",
     "player"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790380731.055885
+   "claimed_at": 1790380731.055885,
+   "done_at": "2026-09-26T10:03:31"
   },
   {
    "kind": "article",
@@ -1741,10 +1751,11 @@
     "manual",
     "doctrine"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790380731.055885
+   "claimed_at": 1790380731.055885,
+   "done_at": "2026-09-26T10:03:31"
   },
   {
    "kind": "article",
@@ -1757,10 +1768,11 @@
     "song",
     "culture"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790380731.055886
+   "claimed_at": 1790380731.055886,
+   "done_at": "2026-09-26T10:03:31"
   },
   {
    "kind": "article",
