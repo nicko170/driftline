@@ -1,0 +1,218 @@
+/* Heightfield Explorer — scoped styles (te-). Palette tokens come from ui.css. */
+
+.te-root {
+  position: relative;
+  flex: 1;
+  min-height: 68vh;
+  display: flex;
+  background: var(--ink, #1B1526);
+}
+.te-canvas { position: absolute; inset: 0; }
+.te-canvas canvas { display: block; }
+
+/* header card (top-left) */
+.te-titlecard {
+  position: absolute; top: 12px; left: 14px; z-index: 2;
+  display: flex; gap: 12px; align-items: center;
+  max-width: min(480px, calc(100% - 28px));
+  padding: 10px 14px 10px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--rust-deep, #7E3320);
+  background: color-mix(in srgb, var(--space, #14101F) 84%, transparent);
+  backdrop-filter: blur(6px);
+  pointer-events: none;
+}
+.te-titlecard .te-art {
+  width: 96px; height: 60px; flex: none;
+  border-radius: 7px;
+  border: 1px solid var(--rust-deep, #7E3320);
+  background-size: cover; background-position: center;
+  background-color: var(--violet, #2A2140);
+}
+.te-titlecard h1 {
+  margin: 0 0 3px;
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 15px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--amber, #FFB454);
+}
+.te-titlecard p {
+  margin: 0; font-size: 11.5px; line-height: 1.45;
+  color: var(--bone, #E4D7BE); opacity: 0.85;
+}
+
+/* corner note (world corner, inside the 3D view) */
+.te-corner-note {
+  font-size: 11px; letter-spacing: 0.06em;
+  color: var(--bone, #E4D7BE);
+  background: color-mix(in srgb, var(--space, #14101F) 78%, transparent);
+  border: 1px solid var(--rust-deep, #7E3320);
+  border-radius: 8px;
+  padding: 6px 10px;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+.te-corner-note b { color: var(--amber-hot, #FFC969); font-variant-numeric: tabular-nums; }
+.te-corner-note span { display: block; margin-top: 2px; opacity: 0.6; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; }
+
+/* floating region labels */
+.te-region-label {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--salt, #F3EEE2);
+  background: color-mix(in srgb, var(--space, #14101F) 82%, transparent);
+  border: 1px solid var(--amber, #FFB454);
+  border-radius: 6px;
+  padding: 3px 9px;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* control panel (bottom-left) */
+.te-panel {
+  position: absolute; left: 14px; bottom: 14px; z-index: 2;
+  width: min(400px, calc(100% - 28px));
+  max-height: calc(100% - 120px);
+  overflow-y: auto;
+  padding: 12px 16px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--rust-deep, #7E3320);
+  background: color-mix(in srgb, var(--space, #14101F) 86%, transparent);
+  backdrop-filter: blur(6px);
+  animation: rise 180ms ease-out;
+}
+
+.te-head { display: flex; flex-direction: column; gap: 6px; margin-bottom: 8px; }
+.te-head h2 {
+  margin: 0; font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--amber, #FFB454);
+}
+.te-badge {
+  align-self: flex-start;
+  font-size: 10px; letter-spacing: 0.08em;
+  color: var(--bone, #E4D7BE);
+  border: 1px solid var(--rust-deep, #7E3320);
+  border-radius: 999px;
+  padding: 3px 9px;
+}
+.te-badge.ok { color: var(--teal-bright, #57C4B8); border-color: var(--teal-bright, #57C4B8); }
+
+.te-progress {
+  position: relative;
+  height: 22px; margin: 6px 0 8px;
+  border: 1px solid var(--rust-deep, #7E3320);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.te-progress-bar {
+  position: absolute; inset: 0 auto 0 0;
+  background: color-mix(in srgb, var(--amber, #FFB454) 45%, transparent);
+  transition: width 120ms linear;
+}
+.te-progress span {
+  position: relative; z-index: 1;
+  display: block; text-align: center;
+  font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+  line-height: 21px; color: var(--salt, #F3EEE2);
+}
+
+.te-panel section { margin: 10px 0 0; }
+.te-panel h3 {
+  margin: 0 0 6px;
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--teal-bright, #57C4B8);
+  opacity: 0.9;
+}
+
+.te-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.te-grid2 { display: grid; grid-template-columns: 1fr 1fr; }
+
+.te-btn, .te-chip {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE);
+  background: transparent;
+  border: 1px solid var(--rust-deep, #7E3320);
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: border-color 140ms, background 140ms, color 140ms;
+}
+.te-chip { font-size: 10px; padding: 5px 9px; }
+.te-btn:hover:not(:disabled), .te-chip:hover:not(:disabled) {
+  border-color: var(--amber, #FFB454);
+  color: var(--amber-hot, #FFC969);
+}
+.te-btn:focus-visible, .te-chip:focus-visible, .te-panel input:focus-visible {
+  outline: 2px solid var(--amber, #FFB454); outline-offset: 1px;
+}
+.te-btn.primary { border-color: var(--amber, #FFB454); color: var(--amber-hot, #FFC969); }
+.te-btn:disabled { opacity: 0.4; cursor: default; }
+.te-chip.on {
+  border-color: var(--teal-bright, #57C4B8);
+  color: var(--teal-bright, #57C4B8);
+  background: color-mix(in srgb, var(--teal-bright, #57C4B8) 10%, transparent);
+}
+
+.te-dim { margin: 6px 0 0; font-size: 10.5px; color: var(--bone, #E4D7BE); opacity: 0.65; }
+.te-warn { margin: 5px 0 0; font-size: 10.5px; color: var(--amber-hot, #FFC969); opacity: 0.9; }
+
+.te-legend { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 7px; }
+.te-legend-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 10px; letter-spacing: 0.06em; color: var(--bone, #E4D7BE); opacity: 0.85;
+}
+.te-legend-item i {
+  width: 14px; height: 10px; border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.4); flex: none;
+}
+
+.te-field { margin: 9px 0 0; }
+.te-field > label {
+  display: block; margin-bottom: 4px;
+  font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE); opacity: 0.75;
+}
+
+.te-seed-row { display: flex; gap: 6px; align-items: center; }
+.te-seed-row input {
+  width: 90px;
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 13px; font-variant-numeric: tabular-nums;
+  color: var(--salt, #F3EEE2);
+  background: color-mix(in srgb, var(--ink, #1B1526) 70%, transparent);
+  border: 1px solid var(--rust-deep, #7E3320);
+  border-radius: 7px;
+  padding: 5px 8px;
+}
+
+.te-slider-row { display: grid; grid-template-columns: 1fr 52px; gap: 10px; align-items: center; }
+.te-slider-row input[type='range'] { width: 100%; accent-color: var(--amber, #FFB454); }
+.te-val {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 12px; text-align: right; color: var(--salt, #F3EEE2);
+  font-variant-numeric: tabular-nums;
+}
+
+.te-stats {
+  margin-top: 12px; padding-top: 8px;
+  border-top: 1px solid color-mix(in srgb, var(--rust-deep, #7E3320) 60%, transparent);
+  display: flex; flex-direction: column; gap: 3px;
+  font-size: 10.5px; color: var(--bone, #E4D7BE); opacity: 0.8;
+  font-variant-numeric: tabular-nums;
+}
+.te-stats code { color: var(--teal-bright, #57C4B8); font-size: 10.5px; }
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (max-width: 720px) {
+  .te-titlecard { max-width: calc(100% - 20px); left: 10px; top: 10px; }
+  .te-titlecard .te-art { display: none; }
+  .te-panel { left: 8px; right: 8px; bottom: 8px; width: auto; max-height: 55%; }
+}

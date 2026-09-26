@@ -1099,8 +1099,10 @@
     "leader",
     "cinderflats"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790383727.20977
   },
   {
    "kind": "article",
@@ -1114,8 +1116,10 @@
     "young",
     "parts"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790383727.209771
   },
   {
    "kind": "article",
@@ -1129,8 +1133,10 @@
     "comic",
     "dangerous"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790383727.209771
   },
   {
    "kind": "article",
@@ -1143,8 +1149,10 @@
     "navigator",
     "maps"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790383727.209771
   },
   {
    "kind": "article",
@@ -1957,10 +1965,11 @@
     "radio",
     "chapter 5"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790383392.61969
+   "claimed_at": 1790383392.61969,
+   "done_at": "2026-09-26T10:48:41"
   },
   {
    "kind": "article",
@@ -1974,10 +1983,11 @@
     "spotter",
     "poster"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790383392.619691
+   "claimed_at": 1790383392.619691,
+   "done_at": "2026-09-26T10:48:06"
   },
   {
    "kind": "article",
@@ -1991,10 +2001,11 @@
     "law",
     "saltmouth"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790383392.619691
+   "claimed_at": 1790383392.619691,
+   "done_at": "2026-09-26T10:48:06"
   },
   {
    "kind": "article",
@@ -2008,10 +2019,11 @@
     "recipes",
     "comfort"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790383392.619691
+   "claimed_at": 1790383392.619691,
+   "done_at": "2026-09-26T10:48:06"
   },
   {
    "kind": "article",
@@ -2024,8 +2036,10 @@
     "mechanics",
     "tutorial-lore"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790383567.143043
   },
   {
    "kind": "article",
@@ -2039,8 +2053,10 @@
     "origin",
     "myth"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790383567.143044
   },
   {
    "kind": "article",
@@ -2054,8 +2070,10 @@
     "null crate",
     "memoir"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790383567.1430452
   },
   {
    "kind": "article",
@@ -2069,8 +2087,10 @@
     "comedy",
     "guild"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790383567.1430452
   },
   {
    "kind": "article",
@@ -2292,10 +2312,11 @@
    "cluster": "demos",
    "intent": "Fly-through of the world heightfield in false colour (height bands, surface-kind tint, region masks overlaid) with toggles for each terrain feature (canyon carve, ridge, mesa, flats). Purpose: worldgen debugging and pretty. Interactions: orbit/fly camera, layer toggles, seed display. Stack: R3F + the real lib/terrain module.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo1",
-   "claimed_at": 1790380910.767543
+   "claimed_at": 1790380910.767543,
+   "done_at": "2026-09-26T10:52:03"
   },
   {
    "kind": "demo",

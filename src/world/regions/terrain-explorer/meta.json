@@ -1,0 +1,8 @@
+{
+  "slug": "terrain-explorer",
+  "name": "Heightfield Explorer Bench",
+  "blurb": "Workshop tool, not a game region: false-colour fly-over of the shared world heightfield with per-feature layer toggles. Anchors and center live outside the playable map.",
+  "center": [6500, 5400],
+  "radius": 4,
+  "danger": 0
+}
