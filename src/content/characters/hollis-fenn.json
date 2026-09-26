@@ -1,48 +1,49 @@
 {
   "id": "hollis-fenn",
   "name": "Hollis Fenn",
-  "role": "Mooring-warden and bell of Keel Town",
-  "faction": "guild",
+  "role": "Wharf-master of Keel Town; keeper of the Top Scale and the Unlisted Column",
+  "faction": "independent",
   "home": "skydocks",
-  "bio": "Keel Town grew off the Mesa's west rim one hung hull at a time, and Hollis Fenn has rung it together ever since: mooring-warden of the slung town, keeper of the bell code, and the only official the hang-tenants elected twice (once by acclamation, once by accident during a storm vote that nobody called). Devanna Shore holds the Guild's masts topside; Hollis holds everything that dangles beneath them — which, as he explains to inspectors, is a separate jurisdiction with its own wind. He pays couriers out of a tin marked MOORAGE, does not ask what hums inside a sealed crate, and considers a favour banked better than money.",
-  "appearance": "A sun-hollowed man in his fifties with a bell-rope shoulder, storm-battered Guild vest turned inside out so only the stitching shows, brass ring-keys on a length of ship's line, one boot re-soled with winch leather, and a speaking-trumpet slung crosswise on his back like a cutlass.",
-  "voice": "Ship's-bell cadence — his sentences strike. Declares things like weather observations that happen to be threats or kindnesses. Smuggler's discretion: he never heard nothing, but he did overhear a great deal. Calls couriers 'young tonnage'. His warmth is real and his accounting is warmer.",
+  "bio": "Hollis Fenn runs the hanging side of the skydocks: the Top Scale, the weigh-ins, the winch base where Keel Town meets its rope. Where Devanna Shore keeps the Guild's masts above the rim, Fenn keeps what hangs below it, and the two conduct their entire working relationship in slate annotations neither will admit to enjoying. His discretion is chartered and famous — the docking slate's unlisted column is chalked in his hand, six words at a time, and he has out-stared auditors, brides, and one (1) sandstorm over the sacred question of what goes in it. He is fond of couriers the way captains are fond of mail: they are how the town gets its letters, its small mercies, and, quarterly, its excuses.",
+  "appearance": "A broad, deliberate man in his late fifties with a weighing clerk's stoop over a bosun's forearms, in a patched sailskin coat gone salt-pale at the shoulders; a small brass ship's bell on a chest chain (the Finality Bell, per charter), a chalk slate at his belt lettered UNLISTED, grey hair in a queue lashed with winch twine, felt-soled boots on a hanging platform of lashed planks strung with amber lanterns, the skydocks mesa rim and moored skyships looming overhead.",
+  "voice": "Ship's-bell cadence: speaks in verdicts, two bells to a thought. Custodian of the Finality Bell — a small brass ship's bell rung once to close any dispute, per the Hang-Tenants' Agreement; the bell is small and extremely final. Discretion as civic religion: Keel Town weighs everything and sees nothing. Bone-dry humour, gentle with couriers, merciless with invoicers. Benediction: hang true.",
   "lines": {
     "greetings": [
-      "Strikes three of the afternoon, and here comes young tonnage. Keel Town's open to whoever ties on polite.",
-      "Varga. The west cleat held all winter and I am not taking questions about it. What's the sky sent us?",
-      "Mind the drop between docks four and five — she only bites riders who flatter the height."
+      "Courier. Stand on the scale. Not you — your intentions. The scale knows the difference.",
+      "Varga. You've crossed the flats and arrived vertical. Everything that manages both is welcome at my wharf.",
+      "Welcome to Keel Town. Mind the sway. The sway has never once minded you back."
     ],
     "barks": [
-      "The bell says what I say. Convenient arrangement. Ask the hang-tenants; they'll confirm the bell is honest.",
-      "A favour held is worth two favours spent and one never mentioned. That's Keel Town arithmetic and it audits."
-    ],
-    "jurisdiction": [
-      "Devanna runs what you can stand on. I run what you can't. Jurisdiction, young tonnage, is mostly about where gravity files complaints.",
-      "Everything beneath the rim is my parish: the cleats, the creak, the soup, and the people with nowhere drier to keep their opinions."
+      "Devanna keeps the masts; I keep what's hung under them. Guild above, Hang-Tenants below, and in the middle: rope. Rope and manners.",
+      "Everything in this town is weighed once a year. Except gossip, grief, and the unlisted column — exempt by charter, chalked by me, final by bell.",
+      "The winch has filed a complaint against gravity. I countersigned. Gravity has not responded. Gravity is appeals-proof.",
+      "People ask why the slate keeps a column nobody may read. Because the alternative is a column nobody can stop reading. That's the whole harbor-master's art, child."
     ],
     "mission": [
-      "The Guild's offer wax goes up to the mesa house and the *interesting* wax comes to me. Guess which kind this is. Deliver like you never noticed the difference.",
-      "Keel Town Quarterly, young tonnage — every hull gets one, even the hull that swears it's a raft. Drop, bell, next. Last courier tried to read a copy in flight and the magazine won.",
-      "Somebody left moorage pay on the night ring again without a name. Third season running. Do not investigate. Investigate nothing at speed."
+      "Quarterly mail goes up by winch — unless the winch is in a mood, in which case it goes up by courier, at double rate, with my blessing and one item marked DO NOT READ ALOUD. The marking is the courtesy. The obeying is the job.",
+      "Guild manifest transfers: weighed at the Top Scale, chalked at my slate, gone up the cable by dusk. When a manifest's sums disagree with the crate's weight, the crate wins. Cargo is honest. Paperwork aspires.",
+      "Third berth rings a bell mid-nights and has no boat to ring it. Log it as the Pale Lark and don't sweep the berth. Some reservations we keep."
     ],
     "radio": [
-      "Keel Town band. Bell's rung for weather from the spine — hang your speed, young tonnage, the rim gusts mean it today.",
-      "Hollis on the hang-band. If anybody asks, your hold is empty, your route is dull, and I've never seen you. If nobody asks: welcome back, there's soup.",
-      "Traffic note: the mesa house wants a word about a crate nobody entered. Come by the west approach. The west approach has terrible record-keeping.",
-      "The slung hulls are singing in the wind tonight. G chord, mostly rust. I'll ring it down at dusk — somebody should."
-    ],
-    "crate": [
-      "If that crate hums, keep humming along. Ships sound better with accompaniment.",
-      "Sealed is sealed, young tonnage. I've unloaded crates that ticked, crates that whispered, and one crate that was — I'll swear on the bell — *embarrassed*. None of it was mine to open."
+      "Keel wharf to courier Varga: town's hanging true, the scale's honest, and the noodle feud stands at six beads. Come up hungry and unarmed.",
+      "Wharf band: rider inbound off the flats, your dust reads courier, tired, underpaid. Am I close? I'm always close. Weigh-ins at the top.",
+      "Hollis Fenn, Keel Town. To whoever taught the market crane to swing in time with the Gazette being read aloud: the charter thanks you. The crane is fined."
     ],
     "night": [
-      "Night mooring, young tonnage: ring twice, wait for the lamp, tie off on the honest cleat. The dishonest one has a view of the drop you'll remember.",
-      "After dark, Keel Town answers to the bell and the bell answers to me, and I — at my age — answer to whoever brings tea. Constitution's on a plate of tin under dock three. Very moving."
+      "Night weigh-ins cost double. The town sways more after dark and lies less. The scale trusts the night. So do I.",
+      "On a still night the lanterns put beads on the mesa's shadow. The whole town hangs off that sight. Some things hold by beauty. Don't tell the engineers."
+    ],
+    "storm": [
+      "Storm notice, Keel Town: lashings doubled, decks cleared, Finality Bell stowed. The bell ends arguments, not weather.",
+      "If the wall takes the west rim, the charter says we vote on whether to be afraid. Attendance is not compulsory. Absence is noted."
+    ],
+    "crate": [
+      "Your hold hums in the frequency the unlisted column is written in, courier. That is not a sentence I can explain. It is a sentence I can weigh.",
+      "I've chalked six words about that crate in a column built for six words. Some cargo you carry; some cargo carries you, and the scale, notably, cannot tell."
     ],
     "farewells": [
-      "Ring once when you clear the rim so the town knows a friend left on purpose. Keel Town keeps its own hours, and it keeps you in them.",
-      "Go light, young tonnage. There's moorage pay with your name chalked under it and I never once said whose chalk."
+      "Hang true, courier. That's the whole benediction. We've found it covers everything.",
+      "Off the scale. You weigh less than you did in Saltmouth, one way or another. Whatever you set down out there — the flats will weigh it. They always do."
     ]
   }
 }

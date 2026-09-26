@@ -1,0 +1,37 @@
+{
+  "id": "side-jett-marrows-rematch",
+  "title": "Rematch on the Slick Mile",
+  "chapter": "side",
+  "type": "race",
+  "giver": "jett-marrows",
+  "region": "glassroad",
+  "summary": "Jett Marrows says the flats were flat and the asterisk still festers: so it's the Slick Mile, five marks up the Glassroad at dusk, when the glass hoards the light and lies about where it ends. His purse is a sock of genuine pre-Delay bottle caps — antique money for an antique road. Toll and the Warden have been drafted as witnesses. Neither agreed. Both are watching.",
+  "requires": { "flags": ["side-vs-jett.done"] },
+  "timeLimit": 300,
+  "objectives": [
+    { "type": "goto", "target": "glassroad:gate-south", "label": "Stage at the south gate — start line chalked in bottle-cap gold" },
+    { "type": "race", "targets": ["glassroad:gate-south", "glassroad:slick-mile", "glassroad:mid-span", "glassroad:glass-chapel", "glassroad:gate-north"], "label": "Five marks up the glass: start line → Slick Mile → mid-span → chapel bend → north gate" }
+  ],
+  "rewards": {
+    "credits": 380,
+    "rep": { "driftline": 5 },
+    "flags": ["side-jett-marrows-rematch.done", "lore:glass-physics"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "jett-marrows", "text": "VARGA. The flats were FLAT, the asterisk still festers, so we settle properly: the Slick Mile, at dusk, when the glass hoards the light and tells you the road ends one bend later than it does. Five marks. My purse is a sock of genuine pre-Delay bottle caps — Reclaimer-assayed antique money, for an antique road." },
+      { "who": "ketch", "text": "He's honest about the caps, kid — they spend at any exchange with a Guild scale. And the glass at dusk is honest slick. Feather everything, don't chase your own headlights, and on the chapel bend do NOT look at the chapel. It's a pretty chapel. That's the trap." },
+      { "who": "jett-marrows", "text": "Witnesses drafted! The Shelf-Keeper at mid-span, the Warden at the north gate. Neither agreed. Both said so at length. In this canyon that is a YES, courier, and you know it." }
+    ],
+    "accept": [
+      { "who": "jett-marrows", "text": "She races! Toll! Warden! Witness the correction of the record! Marks: start line, the Mile, mid-span — wave at NOBODY — chapel bend, north gate. I'll meet you at the top for the crowning. Yours or mine. Probably mine. Statistically mine." },
+      { "who": "warden-of-the-span", "text": "North gate band, Warden speaking: a race is chalked on my manuscript at dusk. The lamps are lit, the third gate sings flat, and the canyon has fetched its best echo for the occasion. Entertain us, children. Amend yourselves accordingly." },
+      { "who": "ash-varga", "text": "Copy. Racing a braggart up a mirror at dusk for a sock of bottle caps, with two hermits as the stewards. Most normal Friday I've had in months." }
+    ],
+    "complete": [
+      { "who": "jett-marrows", "text": "...The chapel bend. I looked at the chapel. Toll WAVED. I waved *back*. You didn't wave. That's the entire losing of it, isn't it. The caps are yours. Spend them slowly — they're older than the Guild and smug about it." },
+      { "who": "jett-marrows", "text": "One more thing, rook— Varga. Twice now you've taken a course I trained for years. The asterisk's dead; I've buried it at sea, which is to say the pan. What you chase next isn't me. It's the pencil line on the north gate that the chalk keeps stopping short of. Ask the Warden whose it is." },
+      { "who": "warden-of-the-span", "text": "North gate band: a new fastest crossing is chalked. Main clause: congratulations, courier. Margin clause: R. Davenant's line is still on the gate, in pencil, two full torus-widths ahead of tonight's chalk. Nothing further. The manuscript will be in touch." }
+    ]
+  }
+}

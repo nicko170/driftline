@@ -1,0 +1,37 @@
+{
+  "id": "side-crusher-parts-run",
+  "title": "Parts for the Crusher",
+  "chapter": "side",
+  "type": "fragile",
+  "giver": "boss-pyke",
+  "region": "cinderflats",
+  "summary": "The Crusher's new cutting head has arrived from the smiths — gyro-stabilised, ceramic-collared, and worth a season of leverage. It must cross ninety metres of the most obstacle-dense real estate on Kessa-9 on courier suspension, down the processional route, without one hard bounce. The Yards will line the rope and grade your line out loud.",
+  "cargo": { "fragile": true, "label": "gyro-stabilised cutting head" },
+  "objectives": [
+    { "type": "pickup", "target": "cinderflats:boss-office", "label": "Lift the cutting head from its cradle at Pyke's office" },
+    { "type": "goto", "target": "cinderflats:yard-gate", "label": "Take the processional under the yard gate — slowly; the rope line is judging" },
+    { "type": "dropoff", "target": "cinderflats:crusher", "label": "Set the head into the Crusher's feed cradle" }
+  ],
+  "rewards": {
+    "credits": 130,
+    "rep": { "reclaimers": 5 },
+    "flags": ["side-crusher-parts-run.done", "lore:yard-rules"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "boss-pyke", "text": "Courier. The Crusher's dental work is in from the smiths — one gyro-stabilised cutting head, ceramic collar, cost me a season of leverage and three favors I was saving for funerals. It crosses the yard on *your* suspension, because hauler suspension is an insult to ceramics." },
+      { "who": "solder", "text": "Plain speaking, since Boss is being delicate: the collar cracks, we eat a season of spare teeth, metaphorically, which is the only way you'd want to. Between the office and the hopper lies an open-air museum of things you will want to hit. Decline." },
+      { "who": "ash-varga", "text": "Ninety metres of junkyard, carrying the most expensive part of the junkyard-eater, past an audience of people who strip machines professionally. Sure. This is fine." }
+    ],
+    "accept": [
+      { "who": "boss-pyke", "text": "Processional route: out my door, under the yard gate, straight-ish to the cradle. Above walking pace is theatre we cannot afford. Vertex's people will applaud a clean line. They've graded couriers out loud since before the bridge burned." },
+      { "who": "mags-delver", "text": "Yards band for the courier: ode in progress, title *The Head That Crossed the Yard*. Currently twelve lines long, duck — the precise length of the journey if you bounce it. Ride so I have to cut verses." },
+      { "who": "ketch", "text": "Ketch here. Fragile jobs are boring by *specification*. Boring is the luxury good we're selling today. Keep your hover height humble and let the Cargo Shield Drink do its job." }
+    ],
+    "complete": [
+      { "who": "boss-pyke", "text": "Intact. Hear that collar sing in the cradle? That's a season of leverage coming home in tune. Payment posted — and courier, the rope line heard you didn't bounce. That *spends* in the Yards." },
+      { "who": "mags-delver", "text": "The ode comes in at four lines, duck. Four. You understand what you've cost me. *She crossed like morning crosses salt — unhurried — and the collar sang her name in ceramic.* Well. Some of it was worth keeping." },
+      { "who": "solder", "text": "First bite at dusk, if you want to hear her purr. Bring ear protection and a respect you didn't arrive with. Both are standard kit now." }
+    ]
+  }
+}

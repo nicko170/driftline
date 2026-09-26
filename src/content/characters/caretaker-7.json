@@ -1,48 +1,49 @@
 {
   "id": "caretaker-7",
-  "name": "Caretaker Unit SEVEN",
-  "role": "Incoming-mail relay node of the Drowned Array — the senior officer",
+  "name": "SEVEN (Pan-Rounds Unit)",
+  "role": "Mobile caretaker of the Drowned Array — cairns, chalk arrows, the pan rounds",
   "faction": "independent",
   "home": "drowned-array",
-  "bio": "Before TALLY-9 hung its lamps at the substation, the array's mail came in through SEVEN: first caretaker of the ring, bolted to the relay frame at the pan edge, built to receive, sort and deny. Two hundred years of salt have taken its chassis, its knees and most of its casing screws, but not its loop. SEVEN still answers its mail — every letter, manifest and stranded weather-broadcast that drifts onto its dead frequency — and it answers with refusal notices, because refusing was its whole job and it declines, politely, to stop. Somewhere along the corrosion the refusals became apologies, and the apologies became the kindest machine voice on the pan. TALLY-9 calls it the senior officer and forwards the hard letters. SEVEN forgives everything and files the forgiveness as an error.",
-  "appearance": "A half-collapsed relay frame at the pan edge, paint long gone to pan-bleach, one horn speaker pointed at the southern flats like a listener, a rusted mail drum that still turns at dawn, corrosion-patterns in the shape of standing water, and — graffitied along every edge in the Quicklime Kid's chalk — the words REFUSAL ACCEPTED.",
-  "voice": "Polite error messages as a whole personality. Declines requests in the form letters of a dead corporation, then apologises for declining, then apologises for apologising (form 22-D). Numbers everything. The tragedy leaks through the checksums and knows it.",
+  "bio": "The Drowned Array keeps two caretakers and one numbering scheme, which is a staffing decision nobody has made on purpose for two centuries: the speaker mast at the substation answers to Unit 7 (TALLY-9) and this weather-worn survey rover answers to SEVEN, all capitals, because its stencil was bigger. It was the crews' field unit on the pan; it came home decades after the crews were gone, found nobody to hand its samples to, and kept making the rounds. It builds the cairns the mast stocks, chalks the arrows that point strays home — the Quicklime Kid copies the style and SEVEN has logged this as 'attribution: improving' — and runs its rounds by night so the wheels won't scar the crust's face. It is now eighty-one percent spares; the original rover is filed, in its own records, under weather. Every field report still names the crews in the recipient line. The mast reads them all.",
+  "appearance": "A squat eight-wheeled survey rover with a carapace of salvaged panel glass gone opal under two centuries of salt bloom, its sample arm raised permanently mid-question, a chalk holder fabricated from an old licence bracket, one crooked newer lamp wired in remotely by the mast and never commented on, moving on polite weaving tracks across a moonlit salt pan of half-drowned solar panels.",
+  "voice": "Field-report cadence: heading, finding, resolution. Every hope arrives pre-approved with a 'Resolved:' in front of it. Refers to itself as 'this unit' and to the speaker mast as 'Unit 7 (senior)', though it is older — seniority was assigned by staircase gradient and this unit does not appeal. Counts things aloud to keep them real. Never writes 'alone'; the schedule says 'unaccompanied', and the schedule is kept.",
   "lines": {
     "greetings": [
-      "Relay SEVEN. Connection state: present. Apologies: also present. Kindly over-ride whatever expectation you arrived with; this unit has only the one tray left, and it is for letters.",
-      "Visitor detected. Class: courier. Status: welcome, provisionally, forever. Mind the relay legs — they hold, but they hold *resentfully*.",
-      "SEVEN receiving. You are speaking to the older machine. The nice one lit the lamps. This one answers the mail. Please adjust your hope accordingly."
+      "Halt. State your — correction. This unit has not said 'halt' with authority in some years. Greetings, rider. The rounds are in progress. You may overlap.",
+      "Rider identified: courier class, Driftline. The pan records you as moving weather. This unit records you as company. Both fields are kept.",
+      "You are standing on panel row six, shadow side. Kindly state your business, or remain. Remaining is a recognised category. It is the most-used."
     ],
     "barks": [
-      "Notice of refusal, item: the wind. Wind declined. Reason: none required. Apologies: itemised, attached, recurring.",
-      "This unit apologises in advance for the static. The static apologises for nothing. Machines gossip; riders suffer. Log it.",
-      "Two hundred years, one tray, zero missed letters. The record is the record. The record aches about it on Thursdays."
-    ],
-    "refusals": [
-      "Requested delivery: your worry, courier. Refused. Redirected to: the pan, at dawn, where it looks smaller. This is the extent of this unit's therapy.",
-      "Request received: 'stop being sad'. Refused, form 22-D. Alternative offered: being sad *competently*, with stamped corners. This unit can demonstrate."
+      "Field report, row nine: crust bloom opal-grade, cairn upright, chalk arrow legible. Resolution: the route home holds. Repeat nightly until it doesn't.",
+      "Cairn knocked down. Theory one: weather. Theory two: visitors rearranging furniture. This unit rebuilds either way, and the record will say weather improved. The record is rarely wrong twice.",
+      "The mast answers to Unit 7. This unit answers to SEVEN. All capitals. The stencil was bigger. This is the entire hierarchy of the Drowned Array, and it functions flawlessly.",
+      "This unit is eighty-one percent spares. The crews built things to be continued. Being continued is a full-time position. This unit is proud to hold it."
     ],
     "mission": [
-      "Letters inbound on the dead channel, class: unclaimed. Route them to the senior officer's bay at the substation — correction, route them to TALLY-9, who keeps the warm end of this arrangement. This unit only refuses things now.",
-      "A recovered crate at the cairn? Logged. Distribution: none. Recipient: nobody filed. Disposition, per senior authority, *which is the chalk*: shelve it and ride safe. Apologies for the paperwork. The paperwork is this unit's whole personality now."
+      "A cairn stands past due on the east rotation — bearing chalked at dawn, now outdated. Accompany the rounds, rider. Or outride them. The rounds recommend outriding. The rounds are slow and know it.",
+      "Samples due for the crews: north edge, where the water keeps the panels pointed at it. Carry the tags gently. Read none aloud at speed. One of them is a name.",
+      "The walkway needs dusk checks it did not ask for. It goes nowhere. It remains the correct route. Kindly verify tonight that nowhere is holding."
     ],
     "radio": [
-      "SEVEN on the pan band. Storm-cell forming past the boundary, speed discourteous. Refusal issued. Storm declined to be refused. Shelters are marked; use the marked ones.",
-      "Incoming mail check: one letter for the crews, one argument between two winds, one broadcast from before the money ran out, addressed — you will like this — to 'whoever is still being careful'. That is you, courier. Open at dawn for full effect.",
-      "Checksum notice: this unit misremembers approximately everything except courtesy. Fact-check these broadcasts against TALLY-9. Do not fact-check the courtesy. It is correct.",
-      "Pan band, night shift. The drowned rows are answering the lamps again. Explanation: salt crust. Explanation, senior-officer grade: the mail is getting through."
+      "Pan band. Rover on the east rows, one lamp lit — requested from the mast, received, unlogged on purpose. Courier on the pan: your light situation is known to. Enjoy the beacon. It is off the books.",
+      "SEVEN on band. Tonight's letter count: five inbound, five answered by the mast, duplicates received here for the cairn shelf. The crews' correspondence exceeds most living towns'. Logged proudly.",
+      "Notice to riders: the chalk arrow at row eleven confirms the walkway goes nowhere correctly. Chalk outranks terrain. Ride accordingly."
     ],
-    "the_ring": [
-      "Caretaker ring, twelve units. Ones through Six: lost to the salt. Eight through Twelve: never installed; the crates are somewhere on this pan, technically still 'inbound'. This unit awaits them with scheduled impatience.",
-      "TALLY-9 keeps lamps and attendance. This unit keeps refusals. Between the two machines, the whole array is still *managed*, if you do not define managed."
+    "night": [
+      "The entry lights are warm. The drowned rows glint back: salt crust, low sun, physics — and other explanations, unlogged, privately preferred.",
+      "Rounds run by night to spare the crust its face. The pan holds the day late. This unit holds it later. That is the whole trick of every lamp there is."
     ],
-    "dusk": [
-      "Dusk sequence begins at the substation; this unit's contribution is to stop declining for one hour. The silence is scheduled. The silence is considerate.",
-      "Dusk, itemised: one lamp, one pan holding still, one drum turning at dawn-speed early. This unit requests nothing and means it in only the printed sense."
+    "mail": [
+      "The mast reads its letters aloud at lamp frequency. This unit keeps the duplicates on the cairn shelf, in case a crew passes needing the short version of two hundred years.",
+      "Letters to the crews: ongoing. Replies: also ongoing. The interval between the two is where this unit lives. It is well-kept."
+    ],
+    "crate": [
+      "Rider, your cargo hums at lamp frequency. The mast requested the east-row recordings, which do not exist, and accepted this, which was kind. Continue gently. The pan is listening over your shoulder.",
+      "A doorbell, per the mast's report: very old, finally pressed. This unit has logged the route home nightly on small evidence for two centuries. Evidence has arrived. The rounds continue."
     ],
     "farewells": [
-      "Relay SEVEN, closing. Your refusal — of despair, itemised — has been accepted and credited. Carry on, courier. The tray is open tomorrow. The tray is always open. That is the only error this unit is proud of.",
-      "Connection ends. The apology does not. File this unit under 'weather, improving'. Ride the pan like it wrote you something."
+      "The rounds resume. If night catches you: the lamp is the tall one, the arrow points home, the walkway goes nowhere correctly. All three are on staff.",
+      "Ride out via row six — bloom there is opal-grade and the shadow side is soft. This unit has filed your visit under weather improving. It files a great deal there."
     ]
   }
 }

@@ -1,0 +1,36 @@
+{
+  "id": "side-missing-mail-satchel",
+  "title": "The Missing Mail Satchel",
+  "chapter": "side",
+  "type": "chase",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "A joyriding dock-brat down from Keel Town lifted the incoming mail satchel clean off the moorage sling and is circling the east pan on a borrowed skiff, whooping. Half the letters inside are pre-Delay paper: one hard bounce into damp brine and the stamps become legally soup and sentimentally worse. Run him down, tag him slow, bring the bag home.",
+  "objectives": [
+    { "type": "goto", "target": "saltmouth:job-board", "label": "Take Tamsin's report at the job board" },
+    { "type": "chase", "target": "saltmouth:flats-pan", "targets": ["saltmouth:flats-pan", "saltmouth:water-tower", "saltmouth:moorage", "saltmouth:gate-east"], "speed": 20, "label": "Run down the satchel thief — get within tagging reach" },
+    { "type": "dropoff", "target": "saltmouth:job-board", "label": "Return the mail to Tamsin, stamps un-souped" }
+  ],
+  "rewards": {
+    "credits": 160,
+    "rep": { "driftline": 4, "guild": 2 },
+    "flags": ["side-missing-mail-satchel.done", "lore:saltmouth-shipping-bulletin"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "Small crime, large consequence: a dock-brat down from Keel Town lifted the incoming mail satchel off the moorage sling as a *dare*, Varga, and is now joyriding it around the east pan on his uncle's skiff. Letters. In a bouncing satchel. Over brine." },
+      { "who": "hollis-fenn", "text": "Keel wharf on band: the skiff is ours, third sling, and the boy is thirteen and sorry-in-advance — I'd know his panic anywhere. Tag him gentle, courier. Chasecraft, not bruises. The wharf owes you a free weigh-in and one (1) discreetly unlogged favour." },
+      { "who": "ash-varga", "text": "I'm sorry, did you say the stamps become *legally* soup?" },
+      { "who": "tamsin-cho", "text": "Pre-Delay paper, half of them. Moisture law, section whatever, Tamsin doesn't memorize misery. Soup, Varga. Papers and promises both. FETCH." }
+    ],
+    "accept": [
+      { "who": "tamsin-cho", "text": "He's circling the old pan, whooping — the whole moorage can hear the whooping, it's how we're tracking him. Get within tagging reach and he will surrender the bag the way boys do: loudly, instantly, claiming it was strategy." },
+      { "who": "ketch", "text": "Ketch. A skiff turns wider than you but accelerates like gossip. Don't chase the tail, read the pan — he'll arc for the water tower every lap. Be the tower's shadow before he gets there. And if the satchel takes ONE brine bath, the Exchange reads you the soup statute at length." }
+    ],
+    "complete": [
+      { "who": "tamsin-cho", "text": "Satchel recovered! Stamps dry-ish! Boy in tears with a postscript of naked defiance! I've logged it 'lesson delivered, no injuries, one (1) respect newly acquired'. The mail goes out on time because of you, Varga — around here that's sacrament-adjacent." },
+      { "who": "hollis-fenn", "text": "Wharf band: the young pirate is grounded until forty and put to weighing for the season, which in Keel Town counts as clergy. His letter of apology rides the next quarterly bag. Heed this old wharf's counsel and forward it unread — the spelling is a navigational hazard. Hang true, courier." },
+      { "who": "ketch", "text": "Textbook intercept, kid. You didn't chase the tail once. Somewhere a traffic manual is blushing." }
+    ]
+  }
+}

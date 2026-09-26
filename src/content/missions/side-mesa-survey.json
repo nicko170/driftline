@@ -1,0 +1,35 @@
+{
+  "id": "side-mesa-survey",
+  "title": "The Mesa Survey",
+  "chapter": "side",
+  "type": "scout",
+  "giver": "surveyor-kest",
+  "region": "windspine",
+  "summary": "The Guild's master map is fifteen years stale and Kest holds the contract to fix it: three sightline stations, re-shot clean — the dune overlook, the Windspine ridge crest, and the Hollow's crater rim. Hold dead steady at each for a three-count scan. Steady-rider rates apply: the less your bike complains, the plumper the pouch.",
+  "objectives": [
+    { "type": "scout", "target": "saltmouth:overlook", "label": "Hold station at the dune overlook for the scan" },
+    { "type": "scout", "target": "windspine:ridge-crest", "label": "Hold station at the ridge crest — mind the turbine wash" },
+    { "type": "scout", "target": "choirhollow:crater-rim", "label": "Hold station on the crater rim; do not wave at the listeners" },
+    { "type": "dropoff", "target": "windspine:survey-camp", "label": "File the triangulation at Kest's survey table" }
+  ],
+  "rewards": {
+    "credits": 230,
+    "rep": { "guild": 6 },
+    "flags": ["side-mesa-survey.done", "lore:storm-gauge-journal"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "surveyor-kest", "text": "Contract, Guild desk, mesa survey. Three sightline stations: dune overlook, ridge crest, crater rim. Hold each one three seconds dead steady — my instruments hate vibration worse than I do, and you'll get along with both of us." },
+      { "who": "tamsin-cho", "text": "Guild's paying steady-rider rates, Varga — the smoother the hover, the plumper the pouch. It is the only job on this board graded on boredom. Revel in it. Boredom is underpriced." },
+      { "who": "ash-varga", "text": "So: fly very fast to three beautiful places, then stand absolutely still in them. The cruelty of this profession knows no floor." }
+    ],
+    "accept": [
+      { "who": "surveyor-kest", "text": "Scrip rings are flagged at each station. Park inside, kill the throttle noise, hold the count. The overlook shots calibrate the ridge; the ridge calibrates the rim. Skimp the first and the map lies about everything east of here forever, *at scale*." },
+      { "who": "ketch", "text": "Ketch. Steady-hover work means the landings are the exam — a hard bump restarts the scan clock. Glide in like you're delivering soup. Which, professionally, you are: soup for surveyors." }
+    ],
+    "complete": [
+      { "who": "surveyor-kest", "text": "Readings in. Cleanest set I've bought all year. The rim shot bisects the Hollow *exactly* on the old line — the crater hasn't moved, forty years of cartography was right about one thing, and the Guild's map stops lying at the mesa. You're part of a map now, courier. More immortality than most of us get." },
+      { "who": "tamsin-cho", "text": "The Guild's filed it 'survey, mesa, satisfactory'. Their vocabulary is a dry well. Mine says: rider-shaped accuracy, paid in full, and the mapmakers asked for you by name next season. Guard the secret that you're secretly thrilled." }
+    ]
+  }
+}

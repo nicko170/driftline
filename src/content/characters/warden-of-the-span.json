@@ -1,47 +1,52 @@
 {
   "id": "warden-of-the-span",
   "name": "The Warden of the Span",
-  "role": "Hermit of the Glassroad's mid-span shrine",
+  "role": "Warden of the Glassroad's gates and lamps; keeper of the manuscript",
   "faction": "independent",
   "home": "glassroad",
-  "bio": "Nobody installed him; the shrine simply came with the canyon and so, eventually, did he. The Warden keeps the mid-span shrine of the Glassroad — sweeps the ripple glass, relights the two brazier lenses, and keeps the visitor's book, which is now nine volumes long because he annotates every entry, then annotates his annotations. Couriers bring him books from Saltmouth and he pays in observations, recommendations, and once — famously — in a detailed critique of the concept of doors. He has opinions about the shrine bell that he will share at whatever length the listener's courage allows.",
-  "appearance": "A very tall, very thin man of indeterminate age in layered dust-coats sewn with ribbon-tabs (bookmarks, he explains, for arguments in progress), cracked spectacles wired at both hinges, bisque-pale hands, and a sweep-broom worn smooth on one side like a blade.",
-  "voice": "Slow tides of speech; every sentence arrives with footnotes and apologises for them. Kind in the subclauses. Refers to himself as 'the margin' when being wry. Laughs once per conversation, at something nobody else has located.",
+  "bio": "Someone has to count the gates, tally the lamps, and chalk the wind's behaviour onto the survey stakes, and for forty years that someone has been the Warden of the Span. They live in the nook under the north gate with a kettle, a lamplighter's pole, and spectacles ground from green bottle glass that make the world look, they say, finally honest. The Warden placed the book order that started Toll's mid-span library — thirteen bound volumes, carried down the glass like lullabies — and received every copy back annotated in Toll's hand, annotated the annotations, and sent each book across again. It is the longest-running correspondence on Kessa-9, conducted entirely in margins by two people who have never met and would both deny being lonely, with citations.",
+  "appearance": "A stooped elder of indeterminate seventy-something in a long dust-ochre coat painted over the years with gate tallies in ochre and teal chalk, a brass-hooked lamplighter's pole carried like a walking staff, green-glass spectacles, every pocket weighted with chalk sticks; standing beneath the Glassroad's north gate where the teal canyon glass falls away into violet shadow, one lamp freshly lit at their feet.",
+  "voice": "Speaks in margin notes: a main clause, a pause, then the smaller, quieter clause where the truth lives. Calls the glassroad 'the manuscript' and storms 'revisions'. Unhurried, self-sparing humour; grief kept at arm's length under the filing code 'weather'. Never says Toll's name without the honorific 'the Shelf-Keeper' — out of respect, or possibly to win the argument.",
   "lines": {
     "greetings": [
-      "Ah. A courier. The shrine receives you; the book receives you; the tea, when it exists, receives you last but with feeling.",
-      "Mind the third step of the measure — it objects to being hurried, and it objects aloud.",
-      "You arrive at the precise middle of the canyon, which is where the canyon keeps its opinion of itself. Speak softly; it is sensitive."
+      "A courier. Good. The manuscript's been short of footnotes all week.",
+      "Mind the third gate. It's begun singing a half-step flat. I've chalked it. Chalk fixes nothing. Chalk testifies.",
+      "You're the Varga. Your echo arrived before you did — polite of it. Most riders' echoes arrive after, resentful."
     ],
     "barks": [
-      "The bell is not cracked. The bell is *subdivided*. One day I shall write the pamphlet.",
-      "A rider once asked why I stay. I stayed to answer. We are both still here.",
-      "Everything in this canyon is a length of light some distance from its argument. Present company included."
+      "Forty years of lamps and tallies. The lamps keep themselves now, mostly. I keep the mostly.",
+      "The Shelf-Keeper at mid-span claims the canyon finishes sentences. In the margins of my last book they wrote the canyon offers amendments. We are not speaking. We are corresponding at a furious pace.",
+      "People ask why I live under a gate on a road I never ride. Main clause: the lamps. Margin clause: the lamps were here before the reasons were.",
+      "The Choir says the canyon is a god. The Guild says it is a road. The manuscript, and I have checked, declines to be either, in a handwriting I have come to trust."
     ],
     "mission": [
-      "The Saltmouth booksellers' board lists me as 'persistent correspondence'. Correct. The parcel is a dictionary of tide words — the desert has no tide, and I intend to find out what it has instead.",
-      "If you are carrying mail for the mid-span chapel — and the board insists it is a chapel, though it has never agreed — the slot is the brazier lens, and the lens is grateful."
+      "Carry this book to the Shelf-Keeper at mid-span — gently, it has been through a revision — and bring back whatever returns. There will be weight to it. Margins are heavy when both parties are right.",
+      "The lamp tally is off by one between the third gate and the Slick Mile. The manuscript says twelve lit; my count says eleven and a rumour. Ride the count for me. The good lamps do their own numbering."
     ],
     "radio": [
-      "Mid-span to any riding ear: the Slick Mile is damp in patches today. The patches are philosophical. Brake early, think later.",
-      "The shrine lights are lit. If you are passing at dusk, that will be the two points of gold halfway down. If you are not passing, they are for the canyon, which was the plan all along.",
-      "Annotation for the road, courier — this is the margin speaking. Your last crossing left a very clean line in the ripple. I have entered it in the book. Verdict: it meant it."
+      "North gate band: lamps lit to the Slick Mile, one sulking past the chapel. Riders on the span tonight — sing to the dark ones; they wake flattered.",
+      "Warden on band. Tonight's forecast has been revised twice by the wind itself. The manuscript recommends: riders with cargo take the east wall; riders with opinions, any wall will do.",
+      "Notice to the Shelf-Keeper, care of any passing courier: my annotations stand. Yours lean. The canyon is a slow reader and a fast judge, and it has ruled for me twice this season."
+    ],
+    "night": [
+      "Night on the span: the glass gives the daylight back slowly, like a debtor of good character. I walk the lamps and collect.",
+      "The canyon reads the chapel's entries aloud at dusk. From up here it sounds like rain on a roof we don't have. Unaccompanied, on schedule, tolerable. That was the margin clause."
+    ],
+    "storm": [
+      "Revision inbound up the canyon. Lamps to amber, doors to leeward, and the visitor's book comes inside this time — storms count names and their arithmetic is poor.",
+      "The echo runs ahead of a wall. When it passes me going north in a hurry, I have nine minutes. Forty years and no wall has beaten the nine minutes. That isn't safety. That's manners."
     ],
     "books": [
-      "Current reading: a history of doors (wrong but handsome), a manual of knots from a world with water (impertinent), and the visitor's book, which I have stopped pretending is not my life.",
-      "Do lend me your occupation, courier. Riding is one of the few that read aloud correctly."
+      "A book is a machine for keeping a voice in a dry place. The glassroad is the driest place I could find. The rest follows logically, then keeps walking.",
+      "Thirteen books I ordered, and thirteen came back annotated. I annotated the annotations. Somewhere a scholar would weep. Here we call it volume fourteen."
     ],
-    "the_canyon": [
-      "The Glassroad argues in both directions simultaneously, and wins. I consider this the healthiest marriage in the desert and I sweep its floor.",
-      "At the precise mid-span the echo returns before you finish speaking. The canyon edits. I have learned to draft accordingly."
-    ],
-    "the_bell": [
-      "Rung once: attention. Rung twice: weather. Rung three times: I am thinking and require the canyon to know.",
-      "It is an old bell, originally a reactor sounding-bronze, and it remembers being louder than the end of the world. We do not discuss it."
+    "crate": [
+      "That hum of yours has footnotes all up the east wall, courier. I've chalked them. If the Shelf-Keeper asks, I heard nothing. If the manuscript asks, I heard everything.",
+      "Cargo that shouldn't exist, riding a road that shouldn't either. The manuscript approves of you both. I quote: it hums back in the fourth octave, which the Shelf-Keeper and I are currently fighting about."
     ],
     "farewells": [
-      "Go gently down the Slick Mile; take the chapel shadow wide at dusk, as the canyon grabs. The margin wishes you well, underlined twice.",
-      "The book remains open. So does the shrine. So, courier, should you."
+      "Go carefully. The manuscript spills ink past the Slick Mile and calls it scenery.",
+      "Ride out, and leave your echo as borrowed. The canyon returns everything eventually — in someone else's voice, improved."
     ]
   }
 }

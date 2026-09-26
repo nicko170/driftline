@@ -2619,8 +2619,10 @@
     "comedy",
     "hub"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790405145.1793869
   },
   {
    "kind": "article",
@@ -2635,8 +2637,10 @@
     "story",
     "skyship"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790405145.1793869
   },
   {
    "kind": "article",
@@ -2651,8 +2655,10 @@
     "comedy",
     "elder"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790405145.1793869
   },
   {
    "kind": "article",
@@ -2667,8 +2673,10 @@
     "books",
     "calm"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790405145.1793869
   },
   {
    "kind": "article",
