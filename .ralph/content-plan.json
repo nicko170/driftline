@@ -387,8 +387,10 @@
     "door",
     "cinematic"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384304.977311
   },
   {
    "kind": "article",
@@ -402,8 +404,10 @@
     "farewell",
     "character beats"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384304.977312
   },
   {
    "kind": "article",
@@ -417,8 +421,10 @@
     "MOTHER",
     "choice-core"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384304.977312
   },
   {
    "kind": "article",
@@ -432,8 +438,10 @@
     "gauntlet",
     "endgame"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384304.977312
   },
   {
    "kind": "article",
@@ -2183,10 +2191,11 @@
     "warrant",
     "ending"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790384225.0112078
+   "claimed_at": 1790384225.0112078,
+   "done_at": "2026-09-26T11:00:18"
   },
   {
    "kind": "article",
@@ -2200,10 +2209,11 @@
     "garage",
     "heart"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790384225.0112078
+   "claimed_at": 1790384225.0112078,
+   "done_at": "2026-09-26T11:00:36"
   },
   {
    "kind": "article",
@@ -2217,10 +2227,11 @@
     "radio",
     "physics"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790384225.011209
+   "claimed_at": 1790384225.011209,
+   "done_at": "2026-09-26T11:00:47"
   },
   {
    "kind": "article",
@@ -2234,10 +2245,11 @@
     "saltmouth",
     "folk"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790384225.011209
+   "claimed_at": 1790384225.011209,
+   "done_at": "2026-09-26T11:00:57"
   },
   {
    "kind": "article",
