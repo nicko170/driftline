@@ -1,0 +1,50 @@
+{
+  "id": "hespa-vole",
+  "name": "Hespa Vole",
+  "role": "Keel Town winch-keeper and night-market menu reader",
+  "faction": "independent",
+  "home": "skydocks",
+  "bio": "Keeps the Keel Town cargo winch by day — the oldest machine on the mesa and the only one that has never dropped a soul, which Hespa attributes to manners — and reads the night-market menu over the gantry speakers by night, prices rhymed so the market can correct her by ear. Third-generation rigger; the grease-pencil hand on the Winch Catechism is her grandmother's, and Hespa maintains the tradition of shouting the articles in progressively less patient margins. Believes a market runs on rope and rhyme, and that a price sung twice is a price kept.",
+  "appearance": "A compact winch-keeper in a sky-dock harness worn over a market apron heavy with price tags knotted like ornaments, one glove on and one off for reading line by feel, a speaking trumpet hung on the belt next to a belaying pin, hair pinned up with a tally of fishhooks, framed against the great winch drum at dusk with market lamps coming on amber below the mesa rim.",
+  "voice": "Speaks in two registers and switches without warning: the menu cadence — prices as poetry, everything scanned and rhymed — and the winch voice, flat and final, which ends conversations. Calls rope 'she', riggers 'cousins', and customers 'the payable'. Insults are priced. 'Friend rate' is her highest honour and still includes tax.",
+  "lines": {
+    "greetings": [
+      "Evening, courier! Salt fish, five; loaf of pan-bread, six; courier's welcome, priceless, taxable — come in, come in.",
+      "You're the one with the humming crate. The winch ticked when you docked. Twice. She only ticks at loads she's considering.",
+      "Mind the apron strings — every tag on me is a debt somebody's winning. Pull one if you're paying; never pull two."
+    ],
+    "barks": [
+      "Rope first, prices second, feelings by appointment. That's the whole of the dock, cousin.",
+      "The two noodle stalls renewed the feud tonight. Prices rhymed so hard at each other a spice rack surrendered. I read both menus. I take no sides. I take commission.",
+      "Guild man asked yesterday if the winch is 'certified'. The winch is two hundred years old and has never dropped a soul. Certification is what we give things that *might*. She's past might.",
+      "A sung price holds. A shouted price flexes. A *whispered* price, courier — run, and take your crate with you."
+    ],
+    "mission": [
+      "Manifest says lift, lift happens — but you tell the sender the winch charges by the story now. Parcel with a hum pays double, because she hums *back* and my drum's too old for duets. Except she isn't, and we both enjoyed it. Double anyway.",
+      "Run it gentle past the catechism plate on your way up. Third-gen grease pencil on the bottom margin is family. You don't have to read it. You do have to nod."
+    ],
+    "radio": [
+      "Keel Town night menu, courtesy the winch! Tonight: cinder pepper, dear and deserving — thirty a twist, no grieving! Salt tea, free with admission — admission: one song, one decision!",
+      "Gantry band to the rider parked across my winch line: friend, your shadow is on my rope. Move the shadow or be *priced*, and friend rate still includes the tax.",
+      "Late-night menu note, same as always: the last item is not for sale. You know the item. The pot by the winch house, the cup poured for whoever's still out there. Prices fluctuate. That one holds."
+    ],
+    "market": [
+      "Fishhooks, three a row; lamp oil, amber, slow! The goat's forecast, weather permitting, two a card; refunds for the hard of hearting — none.",
+      "Menu rhyme, corrected on air tonight because the ginger stall undercut me in *assonance*: I will not be assonanced at in my own market.",
+      "Stall nine sells 'antique skyship rope, one owner.' Cousins — there is no such thing as one-owner rope. Rope has a biography. Ask her."
+    ],
+    "winch": [
+      "Over and under and kiss on the crown — that's not poetry, that's *procedure*. The poetry's free.",
+      "She ticks in fives when the load's honest. Count them. When she ticks in threes, somebody's manifest is lying and the night gets long.",
+      "My grandmother wrote the shouting margin on the catechism. My mother wrote the patient one. I'm saving mine. That's how you know a family respects a machine: three generations of handwriting, one bolted plate, zero dropped souls."
+    ],
+    "crate": [
+      "Your crate, courier — she keyed the winch-lead twice on uplift and the drum answered on the downbeat. I've never heard her answer cargo. Rigging, weather, my grandmother's ghost, yes. Cargo, no. Manifest it as 'musical' and pay the double.",
+      "The Choir sent word the crate should be *walked* home, the Guild wants it weighed, the Yards want to hear it. The winch wants a duet. I'm the only one pricing the duet."
+    ],
+    "farewells": [
+      "Off with you — come back at lamp-light, I'll read you the stall feuds in falling order. Bring a story; the exit tax is one (1).",
+      "Ride straight, pay promptly, rhyme under pressure. Friend rate, courier — and I've put it in a song, so it holds."
+    ]
+  }
+}

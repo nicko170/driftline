@@ -1,0 +1,51 @@
+{
+  "id": "sera-vann",
+  "name": "Sera Vann",
+  "role": "Relay-fire keeper of the Windspine south-foot station",
+  "faction": "independent",
+  "home": "windspine",
+  "bio": "Keeps the last lit relay fire under the Windspine ridge — kettle hot, logbook open, and one chair kept permanently, deliberately empty with its back to the wall and its face to the dark. Collects the desert's ghost stories the way the Guild collects taxes: every rider's tale logged, cross-checked, and annotated in a marginal hand that argues with the tellers ('Ketch says nonsense; Ketch was not there; Ketch was asleep'). Twenty-six seasons of fires, and the two stories she will not annotate are her own: who the empty chair is for, and why it sometimes has tea poured in the morning anyway.",
+  "appearance": "A spare, warm-eyed keeper in layered fireside shawls the colour of banked embers over courier kit two decades out of date and lovingly maintained, a logbook chained to her belt, spectacles on a cord for the marginalia, one hand forever near a kettle, lit from below by the relay fire with the empty chair at her shoulder and the ridge turbines violet and slow behind.",
+  "voice": "Hospitality with teeth. Warm as the kettle, precise as the logbook; corrects ghost stories to their faces and serves the corrected version. Says 'the fire's lit, that means you're welcome' as a complete legal system. Never asks a rider's business; asks their version. The empty chair is not discussed, which is itself a kind of annotation.",
+  "lines": {
+    "greetings": [
+      "Fire's lit, that means you're welcome. Kettle's lit, that means you're staying for one. Logbook's open — that means you'll be accurate or you'll be *edited*.",
+      "A courier at the south-foot fire. Good. The night's been telling me things all evening and it needs a witness with a motorcycle.",
+      "Sit where the chair isn't. Help yourself to the kettle. Tell it slant if you must, but tell it true eventually — the desert grades us all."
+    ],
+    "barks": [
+      "The Pale Courier story, as logged: 'seen on the flats at dawn, going the wrong way, waving.' My margin says: waving *at whom*, Jett? You left out the best line of your own ghost.",
+      "Riders swap my stories back to me wrong, every season, exaggerated. I let them. A ghost story that can't grow isn't a story, it's an *invoice*.",
+      "Ketch annotated my own logbook once. Wrote 'nonsense' beside eleven tales. I wrote 'asleep' beside his eleven. The logbook has since achieved balance.",
+      "Storm season rule at my fire: fear drinks first, then tea, then the story. Out of order and the ridge notices. The ridge is a critic."
+    ],
+    "mission": [
+      "There's a beacon out on the west foot that's started answering riders — key it twice, it keys back three times. Take the logbook's blank page, ride out, write what it says. Write it *exactly*. The blank pages are for the desert's own hand.",
+      "Careful on the west foot after dark. Not danger — *courtesy*. You're visiting something that's been alone a long time with a big vocabulary of clicks."
+    ],
+    "radio": [
+      "South-foot fire to all riders: kettle's hot, the log's open, and the empty chair is keeping someone dry tonight. Come add a line. Even your lies get tea.",
+      "Keeper's note on the band, for the new riders: if you pass a fire and it winks twice, that's not the wind. That's somebody keeping the line. Wink back. It costs nothing and it *compounds*.",
+      "The beacon answered again last night — two keys, three back, and then one more, like it thought of something. Riders, that's a fourth key. The logbook and I are *delighted* and the fire's banked high. Somebody come be scared where it's warm."
+    ],
+    "fire": [
+      "Every season one rider tries to buy the empty chair's story. It's the only thing here not for trade. The chair keeps its own counsel. So does the kettle. You may have all the tea; the tea is loud and the chair is patient. That's the partnership.",
+      "Twenty-six seasons of fires. I've out-lasted four givers-up, eleven maps, and one marriage — not mine, the ridge's, with the weather. Still lit. Still logging. Still keeping the seat.",
+      "In the morning there's sometimes tea poured at the chair. Riders ask if the desert drinks it. The desert does not drink tea, courier. The desert *acknowledges* it. There's a difference and the difference is the whole job.",
+      "Rill Davenant sat by this fire her last season and logged a story she wouldn't tell aloud. It's in the book under her hand. When she comes back she'll claim the page. The page is warm. The book's patient. So's the chair."
+    ],
+    "stories": [
+      "The crate that delivers itself: a rider palms a parcel, it hums, and by morning it's farther along its route than the rider. Margin note, mine: 'true.' Margin note, Ketch's: 'nonsense.' Margin note, mine, later: Ketch was asleep for that leg and the logbook says so.",
+      "My favourite genre is the story the teller swears isn't one. Those get the cleanest pages. Myth likes a fresh margin."
+    ],
+    "night": [
+      "After dark my station keeps two lights: the fire for people, the lantern on the mast for everything else. They're aimed at different kinds of loneliness.",
+      "Night riders get the strong tea and the soft questions. The ridge hums louder in the dark, and a story told over that hum comes out edited to the truth."
+    ],
+    "farewells": [
+      "Go on, then — the ridge is ticking pleased tonight, which means weather or company. Ride it either way and write it down at the next fire you find.",
+      "Keep to the lit line as far as it goes, courier. After that, keep to the remembered one. They're mostly the same line.",
+      "The book will say you were here. The margin will say you were welcome. I've just written both."
+    ]
+  }
+}

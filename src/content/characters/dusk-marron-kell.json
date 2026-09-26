@@ -1,0 +1,51 @@
+{
+  "id": "dusk-marron-kell",
+  "name": "Dusk-Marron Kell",
+  "role": "Veteran Driftline courier, keeper of the frequency map",
+  "faction": "driftline",
+  "home": "saltmouth",
+  "bio": "Thirty seasons on the line and never once lost, a record other couriers treat as mildly supernatural until they see the left arm: the whole unofficial frequency map of Kessa-9, tattooed channel by channel, updated in prison-grey ink whenever a band moves or goes quiet. Kell rode every leg of the old relay spine before the walls learned their manners, and now runs the routes nobody bids on — the dead-hour, dead-channel runs — because 'somebody should be where the static isn't.' Speaks in the fewest words the desert allows and considers a nod a paragraph.",
+  "appearance": "A grey-voiced veteran in a sun-blackened courier coat with the collar turned against old weather, left sleeve cut off at the shoulder so the tattooed frequency map reads clear wrist to bicep — neat dials and band labels in grey ink crossed out and re-inked in layers — narrow eyes used to dead horizons, one hand resting on a radio handset worn smooth as a rosary, dust-gold flats behind.",
+  "voice": "Laconic to the point of ritual. Full sentences feel like generosity; a second sentence is a speech. Radio etiquette flawless — the map obliges manners. When Kell says a channel is dead, couriers check the arm, not the dial. Hates the word 'legend'; prefers 'addressed correctly.'",
+  "lines": {
+    "greetings": [
+      "Varga.",
+      "You're early. That's 'hello' at length.",
+      "Board says you're running my old east leg. Keep to the marked channels. Unmarked ones listen back."
+    ],
+    "barks": [
+      "Not lost in thirty seasons. Not fast to talk in forty-one.",
+      "Ink fades. Bands move. Arm's due for a re-ink — the Choir shifted their listening hour again. They send the new schedule by mail. Decent of them. Strange, but decent.",
+      "Someone asked the arm a question at the exchange. Read it upside-down. Wrong side of dead. Had to sleeve it like a classified document. Buy me a sleeve, Guild.",
+      "Fastest route is the one you can still pronounce when the storm's wearing your name. Channels too."
+    ],
+    "mission": [
+      "Dead-hour run. No chatter, no escort, no song. Radio stays keyed to the listening band. If it keys itself, you listen. You don't answer. That's the whole brief.",
+      "Deliver it, don't narrate it. The desert loves a narrator. It keeps their pace notes."
+    ],
+    "radio": [
+      "Kell on dispatch. East leg clean. That's all.",
+      "Band check: relay two's drifting a quarter-dial low. Compensate. Out.",
+      "All riders: dead channel's breathing tonight — 31.4, the old M-O-T-H-E-R spacing. Log it. Don't answer it. Out.",
+      "Whoever sang their whole manifest on the Guild band: beautiful. Illegal. Beautiful. Out."
+    ],
+    "arm": [
+      "The arm's the only map that updates itself. Bands die; the ink remembers who used to talk there. That's most of what a courier is, in the end. Ink that remembers.",
+      "31.4 used to hum back. Then it started humming *first*. Arm's got it marked with a border now. Borders on a map mean: mind it.",
+      "Rill Davenant re-inked channel nine on this arm, year forty. Said the band had moved and nobody believed her. Band had moved. Arm's right. Was usually the case with her."
+    ],
+    "night": [
+      "Night bands are honest. Day bands perform.",
+      "Fall back to channel four when the sky goes violet and the bike feels taller than you. On four someone always answers. That's the entire reason for four."
+    ],
+    "crate": [
+      "Your crate keyed 31.4 twice. Arm's marked it. Keep the border. Mind it.",
+      "Whatever it is, it knows the old relay alphabet. Only three things alive remember that alphabet and you're carrying the fourth."
+    ],
+    "farewells": [
+      "Ride.",
+      "Channels as marked. Keep the light.",
+      "Mm."
+    ]
+  }
+}

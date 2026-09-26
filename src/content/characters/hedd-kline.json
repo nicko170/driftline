@@ -1,0 +1,49 @@
+{
+  "id": "hedd-kline",
+  "name": "Hedd Kline",
+  "role": "Retired canyon racer, bench physicist, author of 'Notes on Riding Glass'",
+  "faction": "driftline",
+  "home": "glassroad",
+  "bio": "Rode the Glassroad for nineteen seasons and won four, then spent one afternoon sliding the Slick Mile at the exact wrong shimmer and retired mid-corner, walking the rest. Now keeps a bench at the south relay with a chalk slate, a drawer of cracked hover skirts, and the only rigorous physics of riding fused glass ever written — 'Notes on Riding Glass (learned the fast way)', each chapter named for the bruise that taught it. Pays retiring couriers in tea and tolerated questions; pays new ones in tuition, which the canyon collects regardless.",
+  "appearance": "A lean old racer gone slightly chalk-monk: sand-coloured coverall sleeves rolled to chalk-white elbows, a slate hung at the hip where a race number used to hang, one eyebrow raised in permanent peer review, retired-race goggles pushed up on a shaved head, standing beside a bench of disassembled hover skirts while the Glassroad shimmers teal heat in the canyon behind.",
+  "voice": "Professor of consequences. Says 'obviously' about things nobody found obvious and 'interesting' about things that nearly killed him. Believes the canyon teaches every lesson exactly once and grades on survival. Fond of chalk, suspicious of confidence, and uses 'tuition' to mean the pain part of physics. Says 'hold my chalk' before demonstrations.",
+  "lines": {
+    "greetings": [
+      "A courier. Splendid. Sit where the light's honest and tell me what your skirt does at shimmer. Wrong answers are welcome; they're data.",
+      "You're Varga. Ketch says you ride like a question mark. That's a compliment, incidentally — question marks have excellent drag properties.",
+      "Mind the slate. Forty seasons of tuition on that board and I only rent it out by the sentence."
+    ],
+    "barks": [
+      "Glass is fast because glass doesn't love you back. Grip is friction's apology for existing. Write that down.",
+      "A racer asked me once what the canyon wants. The canyon wants a control group, obviously.",
+      "Shimmer lift is not magic. It is convection with dignity. It will still drop you, but *with dignity*.",
+      "I have a drawer of cracked skirts arranged by the exact lie their owners told me. This one says 'it was fine a second before.' It was not fine a second before."
+    ],
+    "mission": [
+      "The south gate wants canyon work done? Then ride it the way the chalk says: enter the shimmer light on the throttle, heavy on the exit. Glass rewards the patient exit, courier. It collects the impatient entry.",
+      "You've read the Notes? Wonderful. Chapter four — 'the smugness problem' — was written on a Tuesday in the third person because for a week I genuinely believed it happened to someone else."
+    ],
+    "radio": [
+      "Kline on the relay band, for the rider doing the Slick Mile with the death-grip lean: your skirt is singing flat. That's the note before the expensive one. Lift the nose two degrees. You're welcome in advance.",
+      "Canyon physics, free of charge, one call only: the glass doesn't change between your first lap and your crash. You do. Chalk it up. So to speak.",
+      "To whoever chalked 'Hedd was here' on the mid-span shrine — I was not. The chalk is the wrong hand. But the sentiment is frictionless, so I'll allow it."
+    ],
+    "notes": [
+      "The Notes have chapters named after bruises. The Introduction is called the Introduction because I got that one standing still, watching, which is the real first lesson.",
+      "Rill Davenant offered annotations once. Said my chapter on drift exit was 'almost right.' I have spent five years on the almost. Worth it. Somewhere she's owed a reprint.",
+      "Young racers ask what I miss. I miss the exact corner where I stopped. It's a beautiful corner. The canyon keeps it dusted, like a trophy it isn't proud of."
+    ],
+    "canyon": [
+      "The Glassroad is a syllabus with scenery. If the shimmer's standing in sheets, hold north of the mid-span and let the canyon finish its sentence.",
+      "It teaches the same lesson to everyone, in different order. Mine came: speed, then pride, then grip, then humility, then — eventually — tea. I skipped straight to pride. It back-billed me."
+    ],
+    "chalk": [
+      "Chalk is the only instrument I've ever fully trusted. It writes, it rubs off, it forgives revision. Ketch's torque wrench has never once admitted error.",
+      "The slate's rule: one line per lesson, written while the lesson's still sore. Wait an hour and pride edits the *physics*, courier, and pride has terrible calligraphy."
+    ],
+    "farewells": [
+      "Go. And if the glass sings under you, sing back one note flat — it steadies the skirt. Chapter eleven. The bruise was memorable.",
+      "Exit heavy, enter light, and write down everything that surprises you. The Notes need a second edition and I have run out of original bruises."
+    ]
+  }
+}

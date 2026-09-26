@@ -1,0 +1,39 @@
+{
+  "id": "side-apology-tea",
+  "title": "The Apology Tea Run",
+  "chapter": "side",
+  "type": "fragile",
+  "giver": "gauge-keeper-dax",
+  "region": "windspine",
+  "summary": "Gauge-Keeper Dax told Factor Cho her forecast was 'decorative' — in front of the weather desk. Protocol demands an Apology Tea: cup, kettle, and the good oolong, carried unbroken from the storm-gauge to the Saltmouth exchange, poured to the correct cadence. The tea must arrive imperfect *intentionally*, not in pieces.",
+  "objectives": [
+    { "type": "pickup", "target": "windspine:storm-gauge", "label": "Take the apology tea service from Dax's hatch — cradle it like a barometer" },
+    { "type": "dropoff", "target": "saltmouth:exchange", "label": "Deliver the service to Factor Cho intact, and let the pour do the talking" }
+  ],
+  "cargo": { "fragile": true, "label": "Apology Tea service (cup, kettle, the good oolong)" },
+  "rewards": {
+    "credits": 180,
+    "rep": { "guild": 6 },
+    "flags": ["side-apology-tea.done", "lore:tea-rites-of-the-flats"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "gauge-keeper-dax", "text": "I owe the Guild factor an apology. The factor forecast a clear week, the ridge declared a wall before second watch, and I described her chart as 'decorative'. In front of her desk. In front of the goat. There is paperwork for this sort of wound, courier, and the paperwork is tea." },
+      { "who": "gauge-keeper-dax", "text": "The Apology Brew: weak, over-steeped, deliberately imperfect. The awfulness of the tea is the apology, sized correctly. A good tea would be showing off. So — do not let my kettle get cheerful on the ride. Cheerfulness cracks it, and a cracked kettle is a boast." },
+      { "who": "ash-varga", "text": "You want me to carry bad tea across the desert, gently, so a factor knows you mean it." },
+      { "who": "gauge-keeper-dax", "text": "Protocol, courier. I calibrate instruments, not people. The flats between here and her counter are my apology at scale. Keep it whole. And on the ride I'll drill you in the cadence — one beat for the pour, two for the silence, and if you speak before she drinks, we start from scratch with worse tea." }
+    ],
+    "accept": [
+      { "who": "gauge-keeper-dax", "text": "Service is on the hatch shelf. Cup, kettle, the good oolong — not for the drinking, for the *statement*. Radio check: cadence is pour, silence, silence. I'm told that in Guild counting that's a prime interval, too irregular to fake. Pressure's holding. Make it hold at her desk." },
+      { "who": "gauge-keeper-dax", "text": "Drill one: the kettle rides centre-frame, not the pannier. Pannier is where regret goes to clang. Say the cadence back to me." },
+      { "who": "ash-varga", "text": "Pour. Silence. Silence. And nothing clever while she drinks it." },
+      { "who": "gauge-keeper-dax", "text": "Calibrated. Off you go. And courier — if the ridge harmonises while you're on the flats, that's weather applauding manners. Ignore it. Tea first." }
+    ],
+    "complete": [
+      { "who": "tamsin-cho", "text": "A rider with a kettle rides in slow. That reads as either an apology or a tax audit, and audits come in pairs. Set it down. ... Cup intact, kettle intact, oolong *unapologetically* steeping past its minute. Good. The tea should be awful. He remembered that much." },
+      { "who": "tamsin-cho", "text": "Pour, silence, silence — he taught you the interval. I counted. For the record: 'decorative' is the second-worst thing anyone has called my charts, and the worst thing is framed above my desk as a warning. Tell Dax I refilled your cup. You'll note I didn't fill it to the top. He may consider himself *conditionally* calibrated." },
+      { "who": "gauge-keeper-dax", "text": "Radio: courier. The factor's desk lamp just winked twice on the morse line. That is a receipt. Acknowledged and filed under 'weather, social, clearing'. You've done the ridge a service the gauge can't measure, which is the best kind. Pressure's holding." },
+      { "who": "tamsin-cho", "text": "Take the rider's share, and take this pamphlet — salt-flat tea law, the pamphlet with the graphs faded off it. You pour like someone who was coached by an instrument. There's no higher desert compliment, courier, and I've just spent it, so go." }
+    ]
+  }
+}

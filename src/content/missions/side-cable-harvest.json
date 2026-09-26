@@ -1,0 +1,39 @@
+{
+  "id": "side-cable-harvest",
+  "title": "Cable Harvest",
+  "chapter": "side",
+  "type": "collect",
+  "giver": "ratchet-june",
+  "region": "cinderflats",
+  "summary": "A brine tide is shouldering into the Cinderflats dig margin and six of the union's winch-cable spools are sitting out on the flood line like ducks on a bad bet. Ratchet June loans you the spool-net; you have until the salt sheen finds them. June counts every spool in over the band, with a rhyme, at panic speed.",
+  "objectives": [
+    { "type": "pickup", "target": "cinderflats:yard-gate", "label": "Take the spool-net off Second Mortgage's rack" },
+    { "type": "collect", "target": "cinderflats:parts-pile", "count": 6, "label": "Reel in the winch-cable spools off the flood margin" },
+    { "type": "dropoff", "target": "cinderflats:crusher", "label": "Winch the spools aboard by the Crusher before the tide shines" }
+  ],
+  "rewards": {
+    "credits": 230,
+    "rep": { "reclaimers": 6 },
+    "flags": ["side-cable-harvest.done", "lore:delver-odes"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ratchet-june", "text": "Courier! Union problem, union prices. Tide's coming into the dig margin — the brine pans breathe this time of season, and they're inhaling — and six of our winch-cable spools are sitting out on the flood line where some optimist staged them. Some optimist named June. Singing was involved." },
+      { "who": "ratchet-june", "text": "Cable that's been brined is cable that rusts from the heart out, and cable that rusts from the heart out is a sermon I gave Tuesday. Six spools, worth a season of lift each, scattered out where the flats are about to go mirror-bright and mean." },
+      { "who": "ash-varga", "text": "Collect six spools off a flooding margin. How far out are they?" },
+      { "who": "ratchet-june", "text": "Closest one's basically at the parts pile waving at us. Far ones are wading. Take the spool-net off Second Mortgage's rack — she'll let you, she's in a gracious mood, I read to her this morning. I'll count them in over the band. In rhyme. Rhyme keeps you honest at panic speed, and panic's the honest speed today." }
+    ],
+    "accept": [
+      { "who": "ratchet-june", "text": "Net's on the rack, hook's already warm. Now the song of the harvest, verse the work: spools in the shallows, spools in the shine — bring home the cable, the brine ain't wine!" },
+      { "who": "ratchet-june", "text": "Mind the tide sheen, courier — when the flats go mirror it's not water being nice, it's brine doing maths. Grab the dry ones first if you're proud, grab the wet ones first if you're wise. Either way June's counting on the band: one spool, two spool, red spool, *saved* spool." },
+      { "who": "boss-pyke", "text": "Yard band: whoever's running salvage on my margin with June counting in rhyme — the Crusher's drum is warmed and facing the tide. Bring 'em home wet if you must, but home. Union rule: we apologise to cable we drown, and I *hate* apologising." }
+    ],
+    "complete": [
+      { "who": "ratchet-june", "text": "Six of six! Count the harvest, courier: five came home dry as a hymn, one came home damp at the hem — and the last one, the brave one, got *kissed* by the tide. We'll rinse her in sweet water and tell nobody. Spools vote with their cores, and every core in that drum is voting for you." },
+      { "who": "ratchet-june", "text": "Second Mortgage did the winch work — hear her hum? That's her harvest chorus, the one with the drums left in. I promised her a verse about a bear if you brought all six. She'll get two verses. So will you: the Delver odes, the old stripping songs — take the booklet, courier, learn one. A salvage yard's just a library that sings back." },
+      { "who": "boss-pyke", "text": "Logged: six drums, zero drowned, one modestly seasoned. Union pays harvest rates plus the dry bonus the dry ones earned. And courier — June's rhyming is now *your fault quotient* going forward. It rises when you win. Budget for it." },
+      { "who": "ash-varga", "text": "Do I get a rhyme?" },
+      { "who": "ratchet-june", "text": "You get the last line, courier, and it's the good one: *rode through the shine with the tide at their back — the flats keep the brave and the brave keep the slack.* Keep the oil warm!" }
+    ]
+  }
+}
