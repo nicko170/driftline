@@ -1,0 +1,37 @@
+{
+  "id": "side-calm-before",
+  "title": "The Calm Before Rounds",
+  "chapter": "side",
+  "type": "storm",
+  "giver": "surveyor-kest",
+  "region": "windspine",
+  "summary": "Storm-season rounds start tomorrow, and the survey camp's field medicine is three days late and re-staged at the turbine-row cache. Kest's instruments say a turning wall is forming off the ridge — the kind that shears sideways mid-run. Lift the medicine and beat the wall into the shelter trench. The kettle situation at camp is described as 'critical'.",
+  "requires": { "flags": ["side-storm-window.done"] },
+  "objectives": [
+    { "type": "goto", "target": "windspine:south-foot", "label": "Get off the ridgeline to the southern foot before the wind turns" },
+    { "type": "pickup", "target": "windspine:turbine-row", "label": "Lift the field-medicine case from the turbine-row cache" },
+    { "type": "storm", "target": "windspine:survey-camp", "label": "Outrun the turning wall into the survey-camp shelter trench" }
+  ],
+  "rewards": {
+    "credits": 300,
+    "rep": { "guild": 4, "driftline": 4 },
+    "flags": ["side-calm-before.done", "lore:storm-almanac"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "surveyor-kest", "text": "Varga. Field report, one item: the camp's storm kit — burn salve, the good splints, suture thread worth more than turbines — got re-staged at the turbine-row cache when the supply hauler refused the ridge. That was three days ago. Rounds start tomorrow. I have twelve instruments and no bandages. Do the arithmetic." },
+      { "who": "surveyor-kest", "text": "Second item: pressure's falling off the north shoulder like a— like a rock. It's falling like a rock. If the wall forms it will *turn*, courier. Turning walls don't chase. They edit. You want to be edited into the shelter trench before the edit reaches you. Noted. Go." }
+    ],
+    "accept": [
+      { "who": "ash-varga", "text": "Medicine run into a wall that changes its mind. Kest, when you say 'edit', the percentage version is—? ...Kest? Kest, say numbers." },
+      { "who": "surveyor-kest", "text": "Numbers: wall at twenty-six metres a second and unsentimental. Shelter trench is north of camp, marked with the tall lamps. Cross the threshold and the trench closes over you like a — like a lid. It's a lid. Move, courier. And the case is sealed triple-wax: do not open it, there is a note in it that is *none of your route*." },
+      { "who": "ketch", "text": "Ketch on the garage band. Heard Kest's voice go clipped in a way that means it's real weather. Ride the face, don't fight it, kid. Turning walls shear on the upslope — read the rip and stay in your own line. Flat salt and a following wind. That's an order." }
+    ],
+    "complete": [
+      { "who": "surveyor-kest", "text": "Case received, seals intact, kit inventoried: salve, splints, thread, gauze, and one (1) small unmarked bottle of good ink. Which nobody ordered and which I am not discussing on an open channel. The wall turned *twice*, Varga. Two shear rotations. My anemometers will be gossiping about it for a month." },
+      { "who": "surveyor-kest", "text": "One further entry. Off the record — which means on the record but quieter: there are twelve people up here all season because somebody has to tell Saltmouth when to be afraid. Today somebody remembered we're also flammable, breakable, and fond of ink. Deliveries like this are — they move the needle on the morale gauge. It's a real gauge. I built it. Stop looking at me. Noted." },
+      { "who": "ketch", "text": "Shelter logged and the wall's gone sulking off the ridge east. Come back down the mountain slow, kid — the season's almanac says the calm before rounds is the last calm we get, and Kest writes that almanac herself. She left a copy for you at camp. She'll deny it was a gift. Everything up there is 'instrumentation'." },
+      { "who": "ash-varga", "text": "Delivered: one medicine case, contents confidential, recipient cover story 'kettle maintenance'. Ketch — the ink. Do you think the manifest just— ...flat salt and a following wind, you old matchmaker. Copy. Coming home." }
+    ]
+  }
+}

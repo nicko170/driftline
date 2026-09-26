@@ -1,0 +1,35 @@
+{
+  "id": "side-paints-and-salt",
+  "title": "Paints and Salt",
+  "chapter": "side",
+  "type": "deliver",
+  "giver": "brinemaster-ogo",
+  "region": "saltmouth",
+  "summary": "The pan crew has cut the season's first ochre — four sacks of the deep rust-red that makes a garage a garage. Brinemaster Ogo wants it weighed, waxed and walked to Ketch's paint bench before someone reclassifies it as a luxury. There may be a fifth sack. There is officially no fifth sack.",
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:flats-pan", "label": "Lift the ochre sacks from the pan crew's dig flap" },
+    { "type": "dropoff", "target": "saltmouth:exchange", "label": "Weigh and wax-seal the pigment at the exchange scale" },
+    { "type": "dropoff", "target": "saltmouth:garage", "label": "Deliver the sealed ochre to Ketch's paint bench" }
+  ],
+  "rewards": {
+    "credits": 180,
+    "rep": { "guild": 4, "driftline": 2 },
+    "flags": ["side-paints-and-salt.done", "lore:guild-wax-seal-chemistry"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "brinemaster-ogo", "text": "Courier Varga. Sit— no, don't. Pigment work. The pan crew cut the season's first ochre this morning, the deep rust-red, and every hour it sits unmanifested some clerk gets ideas. Four sacks, dig flap at the old pan, to my scale, then to that garage you frequent." },
+      { "who": "brinemaster-ogo", "text": "A word on wax: cargo class lives in the colour band, courier. Ochre band means sealed against damp, sand and amateur opinions. Break a seal wrong and you can unmarry someone — it's in the manual. Read the manual. The manual is a perk of employment." }
+    ],
+    "accept": [
+      { "who": "ash-varga", "text": "Four sacks of dirt, weighed by a soul-scale, walked three hundred metres. What's the catch? There's a catch with you. The catch has a catch." },
+      { "who": "brinemaster-ogo", "text": "No catch. A rounding, let us say. If Sister Counterweight's scale reads a weight that disagrees with your manifest, you will hear me applauding her instrument, and you will say nothing, because wax is thicker than paperwork. Off you go." },
+      { "who": "sister-counterweight", "text": "Counterweight to the courier now riding to the pan. The scale has been pre-informed. It is humming a little song that sounds like 'five'. That is all." }
+    ],
+    "complete": [
+      { "who": "sister-counterweight", "text": "For the record: four sacks, wax-sealed, ochre band, correctly manifested. There was also a gift. Gifts under two kilos, carried with intent, are outside tariff — the Guild is firm on this, I checked twice. The pan crew gives well. I have weighed presents that were only debts wearing ribbon. Not this one." },
+      { "who": "ketch", "text": "Hold on — hold on. Five sacks. Four Guild, one... oh, those diggers. Thirty years they remember an old resin recipe I taught a season-hand. Look at this red, kid. Violet undertone, like a canyon worrying about something. This isn't pigment, it's a reunion." },
+      { "who": "brinemaster-ogo", "text": "Ogo, exchange band. A satisfactory transaction all round: the Guild measured pigment, the garage received paint, and nobody anywhere was seen to be generous. Reputations intact. You've a steady hand with a scale-adjacent matter, Varga. Dull work, honestly done — the Guild's highest compliment. There's a pamphlet. I've billed you for it." }
+    ]
+  }
+}

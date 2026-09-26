@@ -1,0 +1,36 @@
+{
+  "id": "side-rope-and-ferro",
+  "title": "The Rope Tally",
+  "chapter": "side",
+  "type": "deliver",
+  "giver": "old-ferro",
+  "region": "saltmouth",
+  "summary": "The Guild registrar wants the moorage mast's rigging 'listed or condemned' — sixty years of knots, due on paper by week's end. Ferro's answer is the tally-line: forty-one metres of braid that IS the paperwork, if anyone alive can read knots. Sister Counterweight can read knots. Haul the tally to her audit desk and bring the verdict home.",
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:moorage", "label": "Coil the tally-line into the crate at the mast foot" },
+    { "type": "dropoff", "target": "saltmouth:exchange", "label": "Deliver the tally to Sister Counterweight's audit desk" },
+    { "type": "pickup", "target": "saltmouth:exchange", "label": "Collect the stamped transcription and her ruling" },
+    { "type": "dropoff", "target": "saltmouth:moorage", "label": "Bring the verdict back to Ferro's hammock" }
+  ],
+  "rewards": {
+    "credits": 170,
+    "rep": { "guild": 3, "driftline": 3 },
+    "flags": ["side-rope-and-ferro.done", "lore:rope-tally"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "old-ferro", "text": "Young line. The registrar's sent a form with a deadline on it — 'list the mast's rigging or see it condemned'. Sixty years of lines, and they want them *listed*. On paper. Paper's the least load-rated material known to the trade." },
+      { "who": "old-ferro", "text": "So here's the play. That coiled braid in the crate is my tally — every ship caught, every storm ridden, one knot a season, sixty of them. It *is* the list. It just wants a reader. Counterweight reads knots like psalms, I hear. Carry it gentle — it's load-rated for one old man's whole working life, and the rating's honest." }
+    ],
+    "accept": [
+      { "who": "ash-varga", "text": "You're handing sixty years of knot diary to the Guild auditor. Ferro, she weighs *souls*. You're sure there's nothing in that rope you'd rather keep unweighed?" },
+      { "who": "old-ferro", "text": "...Knot fifty-three is mine, young line. It's named after nobody. It's named after nobody *loudly*. Whatever she reads, she reads, and whatever she writes, the registrar frames. Ride now — Pearl says the wind's freshening and the braid doesn't like strangers. It'll like you. It's met worse. Barely." },
+      { "who": "sister-counterweight", "text": "Counterweight to courier Varga: the audit desk is ready. Inform the rigger that his rope will be weighed twice — once as cargo, once as testimony. The second weighing is free. The Guild is not without mercy. The Guild's mercy has a form number." }
+    ],
+    "complete": [
+      { "who": "sister-counterweight", "text": "Transcription complete. Sixty knots, sixty seasons, evidence of continuity of conscientious rigging — the mast is herewith listed, not condemned, and the registrar is invited to abandon his interest in hammocks, scaffolding and the space between. Also note: knot fifty-three is entered as *untranslatable, in good standing*. Some entries the ledger holds open out of professional respect." },
+      { "who": "ash-varga", "text": "She read the whole rope, Ferro. Every knot. She wrote down fifty-nine of them." },
+      { "who": "old-ferro", "text": "Aye. I can see her columns from here, laid fair and square. She left fifty-three blank and called it *standing*. ...That woman audits like weather, young line — she only sounds cold from the outside. Put the ruling under the crate lid, where the twine keeps dry. And tell her— no. Tell her nothing. The braid says it better, and she'll be by to hear it. They always come back to the mast." }
+    ]
+  }
+}

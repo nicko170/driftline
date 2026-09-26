@@ -1,0 +1,37 @@
+{
+  "id": "side-hearing-seats",
+  "title": "Witness Round-Up",
+  "chapter": "side",
+  "type": "timed",
+  "giver": "sister-counterweight",
+  "region": "skydocks",
+  "summary": "Three witnesses to the mooring-fee dispute are ducking their subpoenas across the skydocks — one claims a storm knee, one claims cargo wash, one has simply gone vertical up a mast. Sister Counterweight's circuit hearing convenes when your skids cross the exchange yard, and her gavel does not reschedule. Round them up, swear them in, be quick about it.",
+  "timeLimit": 300,
+  "objectives": [
+    { "type": "goto", "target": "skydocks:winch-base", "label": "Make the winch base before the gavel convenes" },
+    { "type": "collect", "target": "skydocks:keel-town", "count": 3, "label": "Round up the three reluctant witnesses around Keel Town" },
+    { "type": "dropoff", "target": "saltmouth:exchange", "label": "Present all three at the hearing before the gavel falls" }
+  ],
+  "rewards": {
+    "credits": 250,
+    "rep": { "guild": 5, "driftline": 2 },
+    "flags": ["side-hearing-seats.done", "lore:hum-hearings"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "sister-counterweight", "text": "Courier. The Office of the Counterweight requires persons. Three (3) witnesses to what the moorage fees actually paid for — a ruling depends on it, and the hearing depends on them, and they depend, apparently, on being physically fetched from the skydocks like overdue weather." },
+      { "who": "sister-counterweight", "text": "Their excuses are on file and rejected as follows: the storm knee is healed and flinches theatrically; the cargo wash dried two days ago; the one who has 'gone vertical' is a rigger and considers mast-height a legal address. It is not. I have checked. Twice. Fetch them before the gavel convenes. The gavel keeps its own calendar and shares nothing with me." }
+    ],
+    "accept": [
+      { "who": "ash-varga", "text": "Serving subpoenas by hover-bike. The Driftline oath covers any crate, any storm, any door — nobody said anything about *plaintiffs*." },
+      { "who": "dockmaster-devanna", "text": "Devanna Shore, skydocks. Counterweight told me you're collecting strays. They're all within shouting distance of Keel Town — hear the excuses and you'll find them: 'medical', 'maritime', and one long silence from up a mast. Take the winch line up and mind the gulls. The gulls are hostile and unaffiliated." },
+      { "who": "sister-counterweight", "text": "A note for your manifest, courier: witnesses travel as persons, not cargo. You may not stack them. This has been clarified before and, apparently, must be clarified again. The Guild regrets nothing and documents everything." }
+    ],
+    "complete": [
+      { "who": "sister-counterweight", "text": "Three witnesses, presented, sworn, and seated — one with sand still falling out of his testimony. The gavel approves of your timing, courier; it made a sound I can only describe as *early*. The record will show that justice was delivered like freight: intact, audited, and with the packing sand returned." },
+      { "who": "dockmaster-devanna", "text": "Shore here. Word up the winch is the fees go back to the mast fund, harbour-side. You've just rigged the docks for the next twenty seasons and all you carried was three liars and a clipboard. Good hauling, courier. The sky owes you one calm crossing." },
+      { "who": "ash-varga", "text": "Delivered: three people who did not want to arrive. On time, unstacked. Next time the manifest says 'persons', I'm reading the small print and the medium print." },
+      { "who": "sister-counterweight", "text": "Final entry, for your ledger and mine: a hearing is a weighing with chairs. Yours balanced. The Office keeps minutes of the strange sessions for the archive — couriers who fetch truth by hand may consult them. You'll find your season has a chapter already. It is filed under *early*." }
+    ]
+  }
+}
