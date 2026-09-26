@@ -1,0 +1,8 @@
+{
+  "slug": "cargo-shake-lab",
+  "name": "Cargo Shake Lab",
+  "blurb": "Workshop tool, not a game region: a salt test pan where a ghost hover-bike runs scripted bump sequences while the fragile-cargo damage chain (impact threshold, shield soak, FRAGILE_DMG, payout curve) is tuned live. Anchors and center live outside the playable map.",
+  "center": [8600, 8000],
+  "radius": 4,
+  "danger": 0
+}

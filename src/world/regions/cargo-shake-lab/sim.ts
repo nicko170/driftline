@@ -156,6 +156,7 @@ export const lab = {
   seq: 'gauntlet',
   running: false,
   muted: false,
+  loop: true, // auto-replay the run after a beat (disabled by reduced motion)
   reducedMotion: typeof window !== 'undefined'
     && (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false),
   stash: null as Params | null, // ghost A param set
