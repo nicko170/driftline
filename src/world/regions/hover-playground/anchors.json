@@ -1,0 +1,7 @@
+{
+  "spawn": { "pos": [-1020, 590], "label": "Spawn pad", "elev": 2 },
+  "glass-lane": { "pos": [-1020, 520], "label": "Slick glass lane" },
+  "kicker-west": { "pos": [-1066, 490], "label": "West kicker mound" },
+  "kicker-east": { "pos": [-966, 546], "label": "East kicker mound" },
+  "pylon-ring": { "pos": [-1020, 460], "label": "Horizon pylon ring" }
+}

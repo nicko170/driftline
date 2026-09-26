@@ -1,0 +1,8 @@
+{
+  "slug": "hover-playground",
+  "name": "Hover Playground",
+  "blurb": "A Driftline workshed test pan: gridded salt flat, one slick glass lane, three kickers. Not part of the open world — a physics sandbox for tuning bike feel.",
+  "center": [-1020, 520],
+  "radius": 60,
+  "danger": 0
+}
