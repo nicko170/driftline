@@ -1,0 +1,54 @@
+{
+  "id": "quicklime-kid",
+  "name": "The Quicklime Kid",
+  "role": "Masked freelance rider, marker-thief, unlicensed phenomenon",
+  "faction": "independent",
+  "home": "drowned-array",
+  "bio": "Nobody knows who the Quicklime Kid is, and the Kid works hard to keep the market open on guesses. First noticed shaving course markers off the Saltmouth training loop for scrap and laughs; since spotted running the Drowned Array's panel-rows at dusk, leaving chalk-white dust and exactly one word on the open band. Driftline policy is officially 'tag them with a paint-round if you can' and unofficially 'make sure the parcels marked CARETAKER, ARRAY keep going out.' The parcels keep going out.",
+  "appearance": "A wiry rider in a sun-bleached scarf-mask and a flexglass visor painted with a grin that is anatomically ambitious, leathers two sizes hand-me-down, white chalk dust on everything, riding a skeletal little bike that is clearly five stolen good ideas riveted together.",
+  "voice": "Barely a voice — communicates in engine revs (two short, one long is 'hello'), skids that spell rude things, and one-word radio messages delivered flat as a weather report. When the Kid finally uses a full sentence, couriers save the recording. The mystery is the wardrobe; the talent is real.",
+  "lines": {
+    "greetings": [
+      "*two short revs, one long one, and a chalk arrow on the salt pointing at the fast line*",
+      "*the visor-grin tilts, considering you; the engine says, approximately, 'again?'*",
+      "*a single chalk mark appears on your pannier. It was not there a moment ago. It means you've been seen.*"
+    ],
+    "barks": [
+      "*one long rev — the agreed-upon sound for 'mine now' before a marker vanishes*",
+      "*a skid that spells, in dust, approximately: NICE TRY*",
+      "*the engine idles in a pattern that is definitely, deliberately, your own engine's rhythm*"
+    ],
+    "mission": [
+      "*the Kid points at the shaved course marker, then at you, then vanishes through the panel-rows leaving one word on the band: 'Faster.'*",
+      "*on the moorage fence, in fresh chalk: RACE? — and below it, smaller: bring the humming one, it sings nice*"
+    ],
+    "radio": [
+      "Ahead.",
+      "Later.",
+      "Counted.",
+      "*static, then two short revs and one long one, then static, like the band clearing its throat*"
+    ],
+    "caretaker": [
+      "*a parcel marked CARETAKER, ARRAY sits on the drowned substation step, stamps already licked. The Kid's chalk dust is still settling on it.*",
+      "Caretaker. *the Kid's actual voice, one word, then the engine covers for them immediately*",
+      "*asked directly about the substation, the Kid draws a cairn in chalk: two flat stones, one upright. Stocked. Restock. Empty. Then wipes it all away with one glove.*"
+    ],
+    "rare-words": [
+      "Good race. *a full sentence — legend status — then the visor-grin dips and the moment is already a story you're telling*",
+      "Ash Varga. The crate picked right. *it's the most anyone has ever heard them say, and by the time you turn, there's only chalk dust and a panel-row creaking in a wind that has stopped*"
+    ],
+    "race": [
+      "*the Kid rolls up beside you at the gate, revs twice, and chalks a finish line across both your bows. Terms are terms.*",
+      "Won.",
+      "Lost. *a beat* Again."
+    ],
+    "storm": [
+      "*as the wall rises, the Kid cuts across your bow and chalks an arrow mid-air with the skid — the shelter seam, marked by someone who has clearly done this before*",
+      "Shelter. *the single word arrives on the band before the wall's roar does*"
+    ],
+    "farewells": [
+      "*two short revs, one long one, fading backward into the panel-rows*",
+      "*a chalk mark on the salt behind you as you leave: SEE YOU.*"
+    ]
+  }
+}

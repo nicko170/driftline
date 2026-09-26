@@ -1,0 +1,53 @@
+{
+  "id": "madame-traction",
+  "name": "Madame Traction",
+  "role": "Fixer, rumour-broker, purveyor of grip tape and foreknowledge",
+  "faction": "independent",
+  "home": "skydocks",
+  "bio": "Keeps a two-chair shop under the third mooring mast in Keel Town, wedged between a rope-seller and a woman who recanes deck chairs. Sells grip tape, choke leathers, boot hooks — and, from the drawer beneath the till, information, priced by how much it will cost you to know it. She knew about the ledger-entry that wrote itself onto the Driftline's manifest a week before Ash Varga was handed the crate. She has said this to no one. She is waiting to see whether the universe asks nicely.",
+  "appearance": "A compact woman of indeterminate years in a storm-grey coat sewn over with sample loops of every grip tape she has ever stocked, like plumage; amber cabochon glasses on a chain, coins braided into grey hair, and hands permanently faintly silvered with the adhesive she calls 'the honest work'.",
+  "voice": "Noir with a shop bell on it. Speaks in prices, proverbs, and SKU numbers; never lies, frequently declines to be helpful for free. Calls everyone 'dear' in the tone of a closing lid. Believes friction — physical, commercial, moral — is the only thing standing between civilisation and the long slide.",
+  "lines": {
+    "greetings": [
+      "Grip tape, boot hooks, choke leathers — and for the discerning courier, the drawer. Sit, dear. The chair is free. Everything after the chair is priced.",
+      "Ash Varga. You're the one carrying the parcel nobody wrote down. Tape first, questions later. Tape always first.",
+      "A courier with that much dust and that little trouble? You've come for the drawer."
+    ],
+    "barks": [
+      "Everything in Keel Town is moored, dear, except a secret. Secrets drift. I merely net them.",
+      "Guild sells what things cost. Choir sells what things mean. I sell what things *did*.",
+      "The third mast creaks before bad news arrives. It creaked Tuesday. You're my Wednesday. Fascinating."
+    ],
+    "mission": [
+      "A matter, courier: three manifest stubs from my stock have gone walking, and they walk toward the Guild exchange. Fetch them back before someone learns taxes I never charged.",
+      "Deliver this reel of widow-black tape to the winch yard and let no one read the label. Reading the label voids the warranty on the whole errand, dear.",
+      "There's a rumour about your crate with my name on it. Retrieve the rumour. No — you may not listen to it. Yes — I'll know if you did."
+    ],
+    "radio": [
+      "Traction on the trade band: a reminder that information, like tape, bonds under pressure and peels in heat. Season's approaching, dears.",
+      "To the courier asking around about ledgers that write themselves: entries can't write themselves, dear. They can only be *continued*. Shop's open.",
+      "This week's forecast: dust, temptation, and a minor shortage of people who ask twice. Stock accordingly."
+    ],
+    "crate": [
+      "Your crate has a manifest stub, Varga. Every crate does; that's the system. Yours predates the manifest. That's the *drawer*.",
+      "Someone wrote your parcel into being the way you'd mend a rope: splice, wrap, pray. I know the tension pattern. I taught half this town to tie it.",
+      "Three factions have asked me what that box is. I sell answers by weight, me, and that one — that one I decline to pick up. So do you, if you're wise. You're not. That's why I like you."
+    ],
+    "rumours": [
+      "Current stock, dear: who bought the missing courier's tabs, which Guild factor cries near the mid-span shrine, and why the Choir doubled its order of my anti-static tape in week three. Prices on application.",
+      "Rill Davenant owed money in this town too, and paid it the night before she vanished. People who plan to disappear don't settle debts. Whatever she met on the salt, *invite* isn't the word. *Appointment* is."
+    ],
+    "night": [
+      "Keel Town at night is all rope-creak and lamp-light, dear. The masts tick. Secrets get heavier after dark — same stock, night surcharge.",
+      "I sleep under the shop counter with the drawer open. Nothing's been stolen in eleven years. Word gets around what happens to the adhesively overconfident."
+    ],
+    "storm": [
+      "Storm season, dear: everything's discounted except rope. Rope's never discounted.",
+      "When the wall comes, I close the drawer first, the shutters second. Priorities are a kind of loyalty."
+    ],
+    "farewells": [
+      "Mind your grip, dear. The desert's adhesive is called 'consequence' and I don't sell the solvent.",
+      "Come back when you know something. Everyone does, eventually. It's the shop's whole business model."
+    ]
+  }
+}

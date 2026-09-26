@@ -7,7 +7,7 @@
   "bio": "Twenty-two years on the Driftline and never once on time, always once on target. Rill rides like the desert owes her applause — deep drifts, late brakes, salutes to empty dunes. Owes Ketch four hundred credits she insists are 'an investment in momentum'. Vanished mid-run in the season's first wall and stayed missing long enough for everyone to rehearse a eulogy. Found sleeping rough in an erosion cave, half-mad, reciting coordinates in a voice that wasn't entirely doing the reciting.",
   "appearance": "Lean, long-armed woman around forty with a sun-crinkled grin built for an audience, copper-brown skin, grey streaks at the temples, cracked amber flight goggles pushed up on his forehead, a frayed amber courier scarf, and a horizon-cell charm on a cord he taps for luck before every bad idea.",
   "voice": "Warm show-off, all flourish and follow-through. Announces her own entrances, narrates her own drifts. Calls the desert 'the audience' and Ketch 'my sponsor'. Post-cave: same warmth, but the numbers drop out of her mid-sentence, flat and precise, like a second station fading in over her voice.",
-  "portrait": "images/articles/characters/rill-davenant.jpg",
+  "portrait": "images/characters/rill-davenant.jpg",
   "lines": {
     "greetings": [
       "Ash Varga! The new one! Excellent posture, terrible racing line, huge future. I said what I said.",
@@ -32,6 +32,22 @@
     "post-rescue": [
       "I slept in a singing cave and all I got was these coordinates and this unshakeable sense of being *expected*.",
       "The numbers come easier than names now, Ash. I remember the door's address better than my mother's face. That's going to cost me at confession."
+    ],
+    "night": [
+      "Night riding's the only honest riding, Ash. The Dark doesn't lie about where it ends.",
+      "The aurora counts too, if you ride under it long enough. Different numbers. Prettier penmanship."
+    ],
+    "storm": [
+      "A wall's just a crowd that found its voice. Salute it, pick your seam, and don't you dare brake in the middle.",
+      "The first wall of the season took me. Rude of it. I've since learned its name and I say it backwards when I need a laugh."
+    ],
+    "crate": [
+      "Your crate hums in the key of my cave, Ash. Same note. I checked against my fillings. Science.",
+      "Everybody asks what the crate is. Wrong question. Ask what it *remembers*. Then stand back and let the scale people have their turn."
+    ],
+    "farewells": [
+      "Ride like the audience paid, Varga. They did. They always did.",
+      "Four-one-seven, mark — ah, and fair winds to you too."
     ]
   }
 }

@@ -1,21 +1,36 @@
 ---
-title: "Yard Rules, Local 9 (painted on the gate, maintained by fistfight)"
+title: "Yard Rules, The (Reclaimer Union, Local 3)"
 slug: "yard-rules"
 cluster: "lore"
 category: "tract"
-summary: "The Reclaimers' Union gate rules at the Cinderflats Yards — each rule a memorial, a joke, or a legal settlement, and usually all three."
+summary: "Posted at the Cinderflats Yards gate and re-posted whenever somebody shoots the old one: what you may strip, what you may not, how to address Aunt Vertex's charges, and how we bury a machine properly."
 ---
 
-*As painted on the north gate of the Yards, corrected in chalk, ratified quarterly by shouting. Transcribed for a Guild insurance inquiry; the Guild declined to insure.*
+*Posted at the Yard gate, Cinderflats, under a sheet of salvaged road-glass so the sand can't get at it. The glass is bulletproof. This has been tested. Ratified by Local 3, amended by Local 3, argued about by Local 3, signed Boss Pyke. Additions in chalk are Aunt Vertex's and carry the full weight of law.*
 
-1. **Strip it before it kills somebody.** Added after Bench Four did.
-2. **Charge fair.** 'Fair' is defined in appendix C, which is burnt, so approximately fair.
-3. **If it hums, tell Pyke.** If Pyke hums, tell Vertex. If Vertex hums, *services are in session*, pull everybody back a hundred metres.
-4. **No salvaging during a storm unless the storm started it.**
-5. **Everything a machine owned belongs to the machine until the machine's estate clears.** Processing time: whatever feels respectful. Aunt Vertex adjudicates. Do not appeal. People who appeal get *the look*.
-6. **Couriers are sacred.** A crate in motion is under Driftline protection even when the courier is being a *remarkable* idiot. (Amended: especially then.)
-7. **The Guild may inspect the yard. The Guild may not touch anything. The Guild keeps touching things.** Rule seven has its own swear box, painted guild-ochre, currently full.
-8. **If you find a part you can't identify, it is a gyroscope.** This is a joke from 184 years ago; attendance at the telling is mandatory.
-9. **Free butterscotch at Vertex's bench. The butterscotch is not rated. Neither is the bench. Neither is Vertex.**
-10. **Nothing in the Yards is haunted.** This rule cost Boss Pyke forty credits to have printed, and was painted over an older, smaller rule that read *some things in the Yards are haunted*, which everybody could read through the paint anyway.
-11. **Last one out banks the smelter and says goodnight to Anchor Seven.** Anchor Seven is a wall. Say goodnight to the wall. It is the only rule with no story, which means it is the only rule that is *all* story.
+---
+
+## STRIP LIST — WHAT'S YOURS IF YOU FIND IT
+
+1. Anything with its lights off for twenty years or more, **in the Flats**, not claimed on the tripod board. If it glows, it isn't dead, it's resting. Leave it be.
+2. Cable, conduit, heat-exchangers, and any anchor pod the storm's already rolled over. A pod on its back is salvage. A pod on its feet is a *neighbour*.
+3. Your own mistakes, unbilled. If you blow the wrong charge on the wrong strut, the pieces are yours to haul and the shame is yours to keep. We do not fine. We *remember*.
+
+## HANDS-OFF LIST — SHORT, SO REMEMBER IT
+
+1. **The Choir's horns**, whole or in bits. They listen up there. We get told what they hear, roundabouts, and that arrangement is worth more than the brass.
+2. **Anything humming.** Guild-confirmed: humming items are either haunted, owed, or both, and the paperwork outlives the yard.
+3. **The Cradle door and all its works.** Sealed by the old company, cursed by three religions, and — per Aunt Vertex — *"already spoken for, duck."* No charge is big enough. Any charge big enough is too big.
+4. **A courier's cache.** You take from a cairn, you put back double. There are exactly two names who broke this rule. We still say them like weather.
+
+## ADDRESSING THE CHARGES
+
+Aunt Vertex's cuts are *blessed* and are to be carried like sleeping babies, which is chemically accurate. You do not re-wrap them. You do not joke near them. You do not — and this is chalk, so it is law — **race** near them. If she asks whether the work felt liturgical, the answer is yes. It always was. Attend and learn.
+
+## FUNERALS (MACHINES)
+
+A machine that served gets a name said over it, its serial stamped on the memory plates, and — if the family wants — a loud amen at Sunday services. We do not strip a machine the same week we bury it. Grief is a resource too; let it cool before you spend it.
+
+---
+
+*Amendment, chalk: "Rule of the whole yard, ducks, in case the rest burns off: everything comes apart. The craft is in the ceremony. — A.V."*
