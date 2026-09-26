@@ -2366,8 +2366,10 @@
    "cluster": "demos",
    "intent": "A wall-of-sand simulator: rolling storm front as curved fog wall + particle sheet crossing a flat pan; sliders for speed, density, turbulence, wall height; try outrunning it on a simple bike. Purpose: tune ch3/ch5 storm missions. Art: ochre wall over violet dusk. Stack: R3F, custom fog shader-lite via FogExp2 modulation + Points.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790384173.907157
   },
   {
    "kind": "demo",

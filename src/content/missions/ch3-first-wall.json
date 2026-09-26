@@ -14,7 +14,7 @@
   "rewards": {
     "credits": 320,
     "rep": { "driftline": 8, "guild": 2 },
-    "flags": ["ch3-first-wall.done", "lore:lore-windspine-field-guide"]
+    "flags": ["ch3-first-wall.done", "lore:lore-windspine-field-guide", "lore:lore-broadcast-storm-season"]
   },
   "dialogue": {
     "offer": [

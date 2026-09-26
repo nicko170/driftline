@@ -16,7 +16,7 @@
   "rewards": {
     "credits": 360,
     "rep": { "driftline": 12 },
-    "flags": ["ch3-rill-missing.done", "rill.missing"]
+    "flags": ["ch3-rill-missing.done", "rill.missing", "lore:lore-rill-flight-log-2"]
   },
   "dialogue": {
     "offer": [

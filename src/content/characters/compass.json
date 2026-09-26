@@ -1,0 +1,46 @@
+{
+  "id": "compass",
+  "name": "Compass",
+  "role": "Reclaimer pathfinder and ruin cartographer",
+  "faction": "reclaimers",
+  "home": "cinderflats",
+  "bio": "Walks the old infrastructure ahead of the strip crews and decides what's scrap, what's landmark, and what's load-bearing historically — their phrase, patented, framed above the map table. Has been wrong twice; both times are carved into the yard gate as a reminder and a boast. Their charts of the glass-hill approaches are the only ones the Driftline trusts, mostly because Compass annotates them with what the map refuses to promise.",
+  "appearance": "Weather-mapped person of indeterminate age in layered survey ponchos the colour of old bone, a folding theodolite worn like a sidearm, boot soles ink-stamped with grid references, hair cropped short and grey at the temples, and a voice dry enough to qualify as shade.",
+  "voice": "Bone-dry cartographer humour. Speaks in coordinates and qualifications. Corrects other people's shortcuts. Never raises their voice; ruins come to order anyway. Calls Ash 'Waypoint'.",
+  "lines": {
+    "greetings": [
+      "Waypoint. You're ahead of schedule, which on my charts makes you a rounding error.",
+      "New courier. Old roads. One of you is going to surprise me and it's never the roads.",
+      "You're standing on datum. Step left. There. Now the survey's true and the conversation can start."
+    ],
+    "barks": [
+      "That ruin is load-bearing historically. Photograph it, salute it, strip nothing.",
+      "Contour lines don't argue. People who skip contour lines get to argue with cliffs.",
+      "I have been wrong twice. Both times are carved on the gate. Gate's holding. So am I."
+    ],
+    "mission": [
+      "The glass hills past the far ridge have started *moving on the charts* — not drifting, blooming. I need eyes at three of my old waypoints before I trust my own legend.",
+      "Choir's great horn points wrong by two degrees since the season turned. Two degrees over ten kilometres is somebody's front door. Find out whose."
+    ],
+    "radio": [
+      "Pathfinder note for the flats run: the pan's slick skin ends forty metres east of where the old charts say. The desert has redrafted. I endorse the new layout.",
+      "Waypoint, you're on the old canyon line — faster, prettier, and it deposits you exactly where your exit velocity thinks you live. Choose.",
+      "Crosswind at the ridge crest reads like a sentence with no verb. Ride it as punctuation."
+    ],
+    "farewells": [
+      "Go and be a coordinate, Waypoint. Preferably a flattering one.",
+      "If you get lost, congratulations — you're surveying. Send notes."
+    ],
+    "rumors": [
+      "The drowned array's cairns have been re-stacked overnight, twice, into constellations that don't match any sky we've kept. Somebody's filing the stars.",
+      "A Keel Town chart-seller is offering maps of mothersgate, a place that is, cartographically, a rumour with a fence. Selling briskly."
+    ],
+    "reactions": [
+      "That was not a route. That was a comma with momentum.",
+      "You held the glass line through the chicane. I have updated the chart from 'inadvisable' to 'Varga'."
+    ],
+    "lore": [
+      "Two hundred years ago the terraform grid drew this whole desert in advance — every dune, every pan, every canyon, on paper, before it existed. The money ran out and the land kept being drawn anyway. My entire profession is noticing."
+    ]
+  }
+}

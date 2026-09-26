@@ -5,7 +5,7 @@
   "type": "scout",
   "giver": "rill-davenant",
   "region": "saltmouth",
-  "summary": "Rill is home, healing, and still reciting numbers in his sleep — but Pem has cross-checked them against terraform-era survey grids. They're an address, and reading it takes three dead survey pylons: the ridge gauge, the drowned cairn, and a marker out past the far glass hills. Hold each one slow and steady, and the old grid will draw you a door.",
+  "summary": "Rill is home, healing, and still reciting numbers in her sleep — but Pem has cross-checked them against terraform-era survey grids. They're an address, and reading it takes three dead survey pylons: the ridge gauge, the drowned cairn, and a marker out past the far glass hills. Hold each one slow and steady, and the old grid will draw you a door.",
   "requires": { "flags": ["ch3-rill-found.done", "rill.coordinates"] },
   "objectives": [
     { "type": "scout", "target": "windspine:storm-gauge", "label": "Hold at the old storm gauge — first pylon reading" },

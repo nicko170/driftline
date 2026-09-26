@@ -26,6 +26,23 @@
       "Yard boss to courier: you're trailing dust on my airstrip approach. Beautiful. Do it slower next time so my crew can applaud.",
       "Reminder on the open band: the Yards buy scrap, part out wrecks, and do not, repeat not, sell 'gently haunted' components. That sign cost me forty credits.",
       "Solder says your rear vane is out of true by a hair. Solder is always right. It's the worst thing about him."
+    ],
+    "farewells": [
+      "Shift bell's in ten. Come back with an empty rack or a good excuse, sprout — either one's tradeable.",
+      "Mind the south berm. It's a berm now. Monday it was Auntie's sermon in waiting."
+    ],
+    "rumors": [
+      "Somebody's been leaving fresh water on the Crusher's housings at night. No prayer tags, no Guild wax. If that's a ghost, it's the best-hydrated ghost in the scar.",
+      "The Guild offered to buy the Yards' storm-insurance ledger sight unseen. Sight unseen, sprout. That means they're forecasting something they haven't told the goat."
+    ],
+    "reactions": [
+      "That drift through the smelter gap — I had three crews stop the crushers to watch. You cost me nine minutes of union time and it was WORTH IT.",
+      "You came in hot and parked it like laundry. Fine. You're a courier again."
+    ],
+    "lore": [
+      "The Yards were a terraforming depot before they were a scar. Half my inventory list is two centuries old — and chief, half of it is still *deliverable*. Machines remember being wanted. That's the whole religion here."
     ]
-  }
+  },
+  "portrait": "images/characters/boss-pyke.jpg",
+  "heroAlt": "Illustrated portrait of Boss Pyke, a square-built scrapyard union boss in a rust exosuit apron with a raised welding visor."
 }

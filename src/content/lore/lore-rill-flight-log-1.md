@@ -6,7 +6,7 @@ category: "log"
 summary: "Pages from a young Rill Davenant's courier logbook, recovered with her dropped cache — jokes about storms, debts and saluting turbines that read very differently now that the storms have started talking back."
 ---
 
-*Recovered from Rill Davenant's cache bag, ridge foot, during the storm-season search. Water-stained, sand-blasted, and comprehensively annotated by its author, who footnotes himself with no shame. — K.*
+*Recovered from Rill Davenant's cache bag, ridge foot, during the storm-season search. Water-stained, sand-blasted, and comprehensively annotated by its author, who footnotes herself with no shame. — K.*
 
 **Year One, somewhere on the flats.**
 
@@ -26,6 +26,6 @@ Found the cave under the ridge foot, the one with the acoustic kink. Sat in it a
 
 Note to self, since caves are good listeners: if I ever go missing, check here. Bring my logbook so I can remember being young and wrong. Tell Ketch the four hundred credits are an investment in momentum. Tell the desert I saluted it back.
 
-*The later pages of the logbook are missing — torn out, not burnt. The bearing Rill's cracked horizon cell held points at exactly this cave system. We found him there four days into the season, asleep, counting. — K.*
+*The later pages of the logbook are missing — torn out, not burnt. The bearing Rill's cracked horizon cell held points at exactly this cave system. We found her there four days into the season, asleep, counting. — K.*
 
 *She says the cave was "a very good listener". I have decided not to ask what it said back. — K.*

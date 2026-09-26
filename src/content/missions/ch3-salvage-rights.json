@@ -16,7 +16,7 @@
   "rewards": {
     "credits": 280,
     "rep": { "driftline": 6, "guild": 3, "reclaimers": 3 },
-    "flags": ["ch3-salvage-rights.done", "lore:salvage-code"]
+    "flags": ["ch3-salvage-rights.done", "lore:salvage-code", "lore:lore-broadcast-dispute"]
   },
   "dialogue": {
     "offer": [

@@ -1,0 +1,48 @@
+{
+  "id": "solder",
+  "name": "Solder",
+  "role": "Reclaimer mechanic, parts desk, the Yards",
+  "faction": "reclaimers",
+  "home": "cinderflats",
+  "bio": "Sixteen when he rebuilt a horizon cell from two dead ones and a biscuit tin; twenty now and the Yards' youngest parts-desk chief by unanimous exhaustion of everyone who argued. Idolizes Ash's bike — the Wren is, in his professional opinion, held together with spite, and he means it as worship. Runs the side-trade in salvaged vanes, cells, and counsel nobody asked for. Boss Pyke says he's always right, which he finds more stressful than flattering.",
+  "appearance": "Lanky young man in a rust-red worksuit with the sleeves torn off at different heights, safety goggles pushed into a halo of black curls, three sizes of screwdriver behind one ear, fingertips stained teal from glass-dust, a hand-labelled parts apron reading ASK ME ABOUT TOLERANCES.",
+  "voice": "Fast, reverent, footnotes himself out loud. Apologises to machines when he cuts them. Calls good engineering 'honest' and bad engineering 'a liar'. Nervous around Ash, serene around the Wren.",
+  "lines": {
+    "greetings": [
+      "Oh — hi. Hi. The bike can come in. You can also come in. Obviously. Order of greeting was not ranked.",
+      "Varga. Tell me you felt the rear vane shudder at eighty. Tell me you FELT it.",
+      "Parts desk is open. Everything's priced in credits or good stories, and I'm not supposed to accept the stories, so speak quickly."
+    ],
+    "barks": [
+      "That's not rust, that's patina. Rust is a failure of romance.",
+      "Rule of the bench: if it sparks when you look at it, it's flirting, not failing. If it sparks when you touch it, run.",
+      "Somebody welded this with a FEELING. I can fix it but I can't forgive it."
+    ],
+    "mission": [
+      "I need anchor-grade vanes — the survey pylons out on windspine used the good alloy. Bring me four and I'll make the Wren whisper instead of whistle.",
+      "Pyke says the crate hums. Pyke also said Anchor Seven was 'fine', and Aunt Vertex disagreed with most of Anchor Seven. Let me listen to it. Five minutes. I'll wear the good ear."
+    ],
+    "radio": [
+      "Courier Varga, your port intake is singing a half-step flat — it's nothing, it's dust, it's BEAUTIFUL, don't change anything.",
+      "Open band, whoever's hauling the smelter drum: your load is drifting port and my nerves are drifting with it. Correct or confess.",
+      "The Wren's hover springs are older than me and holding spec. Nobody claps for springs. I'm clapping for springs."
+    ],
+    "farewells": [
+      "Ride honest. Come back with stories or vanes. Preferably both. Mostly vanes.",
+      "Tell the Wren — nothing. She knows."
+    ],
+    "rumors": [
+      "The Choir's been buying up unbroken choir-glass at twice Guild rate. Twice. In THIS economy of scrap. They're fixing something big.",
+      "Storm took a crawler on the pan and the winch crew beat the insurance assessor there by an hour. Somewhere a Guild clerk felt a great disturbance."
+    ],
+    "reactions": [
+      "You dented her — no, it's fine, dents are history, dents are PROVENANCE. I'm fine. We're all fine.",
+      "THAT landing. The compression on that landing. I have no notes. I have one note. You heard both sides of the vane do an octave."
+    ],
+    "lore": [
+      "The old terraform rigs didn't break, you know. They got left mid-sentence. Half my job is letting them finish the sentence and the other half is charging for the punctuation."
+    ]
+  },
+  "portrait": "images/articles/characters/solder.jpg",
+  "heroAlt": "Illustrated low-poly portrait of Solder, a lanky young Reclaimer mechanic with goggles in black curls and a rust-red sleeveless worksuit, grinning with reverence amid scrapyard machine ribs."
+}

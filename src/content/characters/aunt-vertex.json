@@ -26,6 +26,21 @@
       "Vertex to the young rider: that dust trail of yours is a joy. Come by after and I'll tell you which canyon echo is lying to you. One of them always is.",
       "If you hear a thump from the Yards followed by applause, that's church, duck, not an accident.",
       "Storm's sniffing around the scar tonight. Bring your charges home to Auntie where they're *appreciated*."
+    ],
+    "farewells": [
+      "Off you go, duck. If anything on your bike rattles, that's it asking to be a bell. Bring it round.",
+      "Ride gentle past Bench Four until Friday. It will be Bench *none* on Friday."
+    ],
+    "rumors": [
+      "The Choir offered me a tithe in unbroken glass to hush my Sunday services. I took the glass and doubled the services. Church is church, duck.",
+      "They say the big cradle door past the glass hills is held by a lock as big as this yard. Rubbish, darling. A lock is a charge you haven't placed yet."
+    ],
+    "reactions": [
+      "Ooh, that landing! All four corners complaining in harmony. You've a gift for percussion, duck.",
+      "You scuffed your paint. Good. A fast bike with unscuffed paint is a bicycle with ambitions."
+    ],
+    "lore": [
+      "Anchor Seven's pods came down in one Sunday service — beautiful reading, standing ovation from the scaffold. The ancestors RSVP'd in thunder. We keep the blast log next to the prayer book; it's the same book, duck, different margins."
     ]
   }
 }
