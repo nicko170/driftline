@@ -1050,10 +1050,11 @@
     "farewell tour",
     "endgame"
    ],
-   "status": "planned",
+   "status": "done",
    "added_by": "builder",
-   "worker": null,
-   "claimed_at": 1790391113.8181918
+   "worker": "writer2",
+   "claimed_at": 1790404039.021108,
+   "done_at": "2026-09-26T16:32:50"
   },
   {
    "kind": "article",
@@ -4103,8 +4104,11 @@
     "hazards",
     "oral tradition"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790404039.021112,
+   "done_at": "2026-09-26T16:32:50"
   },
   {
    "kind": "article",
@@ -4119,8 +4123,11 @@
     "dormancy",
     "wake-key"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790404039.0211132,
+   "done_at": "2026-09-26T16:32:52"
   },
   {
    "kind": "article",
@@ -4135,8 +4142,11 @@
     "humour",
     "faction culture"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790404039.0211132,
+   "done_at": "2026-09-26T16:32:52"
   },
   {
    "kind": "article",
@@ -4151,8 +4161,10 @@
     "scripture",
     "initiate voice"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790404237.1251562
   },
   {
    "kind": "article",
@@ -4167,8 +4179,10 @@
     "Ash Varga",
     "manifest wax"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790404237.125157
   },
   {
    "kind": "article",
@@ -4183,8 +4197,10 @@
     "field guide",
     "salt pan"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790404237.1251578
   },
   {
    "kind": "article",
@@ -4199,8 +4215,10 @@
     "rules",
     "dockmaster"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790404237.1251578
   },
   {
    "kind": "article",
@@ -5341,6 +5359,51 @@
    "cluster": "demos",
    "intent": "Title-screen motion bench: key-art parallax layers, menu entrance choreography, epilogue-panel reveal and font-loading states under simulated slow networks; export timing tokens for the shipped TitleScreen.",
    "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "night-beam-tuner",
+   "title": "Night Beam Tuner — headlight & dusk lighting bench",
+   "cluster": "demos",
+   "intent": "A night-riding tuning bench for the game's dusk/night lighting. Full-screen 3D view over a stretch of glass canyon and salt pan with the player-spec bike static in-frame; UI sliders scrub the day clock (sky.t), headlight spot angle/intensity/decay/distance, beam-cone opacity, and lamp emissive. Goal: find beam settings that read the road 20–30 m ahead without turning the salt pan into a searchlight pool. Art direction: violet night palette (--violet #2A2140 sky, neon-amber accents), HUD-styled slider rail (Chakra Petch labels, amber-hot tabular values, colour-blind-safe glyph chips per control). Include a 'scanline' overlay showing ground illuminance across the beam footprint, day/dusk/night preset buttons, and an 'export constants' button producing paste-ready props for src/game/Bike.tsx Headlight. Built with React Three Fiber + a small canvas-2D overlay; off-world demo-region folder with meta.json + meta.ts demo sheet.",
+   "keywords": [
+    "night",
+    "headlight",
+    "lighting",
+    "tuning"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "upgrade-curve-sandbox",
+   "title": "Upgrade Curve Sandbox — garage feel-economy grapher",
+   "cluster": "demos",
+   "intent": "A feel-economy simulator for garage upgrades (engine 0–5, handling 0–5, boost 0–5): plots 0–100 km/h time, top speed, drift-exit kick force, boost drain/recharge curves and cost-per-level bars as you tick upgrade pips, against the exact constants in src/game/Bike.tsx. Designers use it to keep every credit step feeling bought. Art direction: Guild ledger-sheet styling — salt-white cards on --space violet, ochre debt-ink rules, amber-hot knees in each curve, tabular numerals throughout; a small ghosted bike silhouette (flat-shaded, no textures) on a mini skidpad replaying a scripted launch for the current pip set. Include stock/sport/gold preset chips, delta readouts vs stock, and an export JSON of tuned constants. Canvas-2D graphs + R3D mini viewport, off-world bench region with meta.json + meta.ts.",
+   "keywords": [
+    "upgrades",
+    "garage",
+    "economy",
+    "tuning"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "rep-ledger-bench",
+   "title": "Rep Ledger Bench — faction reputation flow review",
+   "cluster": "demos",
+   "intent": "A review bench for the reputation economy: a sankey-ish flow of every mission's faction rep rewards (Salt Guild ochre, Choir teal-bright, Reclaimers rust, Driftline amber) read live from src/content/missions/*.json, with threshold rails (hostile/wary/neutral/friendly/kin), net-rep-per-chapter waterfall, and faction-journey sparklines for a playthrough that does everything. Flags missions that strand a faction below its next gated unlock and story missions whose rep deltas fight each other. Art direction: field-survey chart in violet-dark panels, faction-colour coded ribbons with shape glyphs (never colour alone), sand-coloured annotation labels, big tabular totals. Canvas-2D custom rendering, no scene steering; off-world demo-region with meta.json + meta.ts and a 'copy rebalance table' export.",
+   "keywords": [
+    "reputation",
+    "factions",
+    "balance",
+    "missions"
+   ],
    "status": "planned",
    "added_by": "builder"
   }
