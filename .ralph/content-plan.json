@@ -3715,10 +3715,11 @@
     "ch3",
     "weather"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer2",
-   "claimed_at": 1790389269.5649831
+   "claimed_at": 1790389269.5649831,
+   "done_at": "2026-09-26T12:25:22"
   },
   {
    "kind": "article",
@@ -3732,10 +3733,11 @@
     "bulletin",
     "shipping"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer2",
-   "claimed_at": 1790389269.564984
+   "claimed_at": 1790389269.564984,
+   "done_at": "2026-09-26T12:25:22"
   },
   {
    "kind": "article",
@@ -3749,10 +3751,11 @@
     "brinemaster",
     "founding"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer2",
-   "claimed_at": 1790389269.564985
+   "claimed_at": 1790389269.564985,
+   "done_at": "2026-09-26T12:25:32"
   },
   {
    "kind": "article",
@@ -3766,10 +3769,11 @@
     "field guide",
     "stars"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer2",
-   "claimed_at": 1790389269.564985
+   "claimed_at": 1790389269.564985,
+   "done_at": "2026-09-26T12:25:32"
   },
   {
    "kind": "article",
@@ -3783,8 +3787,11 @@
     "trade",
     "independent"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "done",
+   "added_by": "writer2",
+   "worker": "writer1",
+   "claimed_at": 1790389306.7221172,
+   "done_at": "2026-09-26T12:28:27"
   },
   {
    "kind": "article",
@@ -3798,8 +3805,11 @@
     "skyships",
     "gossip"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "done",
+   "added_by": "writer2",
+   "worker": "writer1",
+   "claimed_at": 1790389306.722118,
+   "done_at": "2026-09-26T12:28:31"
   },
   {
    "kind": "article",
@@ -3813,8 +3823,11 @@
     "history",
     "canyon"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "done",
+   "added_by": "writer2",
+   "worker": "writer1",
+   "claimed_at": 1790389306.7221189,
+   "done_at": "2026-09-26T12:28:37"
   },
   {
    "kind": "article",
@@ -3828,8 +3841,11 @@
     "ritual",
     "comedy"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "done",
+   "added_by": "writer2",
+   "worker": "writer1",
+   "claimed_at": 1790389306.7221189,
+   "done_at": "2026-09-26T12:28:40"
   },
   {
    "kind": "article",
@@ -3843,8 +3859,10 @@
     "survey",
     "storms"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790389574.6021419
   },
   {
    "kind": "article",
@@ -3858,8 +3876,10 @@
     "secrets",
     "ledger"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790389574.602143
   },
   {
    "kind": "article",
@@ -3873,8 +3893,10 @@
     "broadcast",
     "eerie"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790389574.602144
   },
   {
    "kind": "article",
@@ -3888,8 +3910,10 @@
     "death",
     "archive"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790389574.602144
   },
   {
    "kind": "article",
@@ -4476,10 +4500,11 @@
     "mission design",
     "driftline"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo1",
-   "claimed_at": 1790386688.689086
+   "claimed_at": 1790386688.689086,
+   "done_at": "2026-09-26T12:31:26"
   },
   {
    "kind": "demo",
