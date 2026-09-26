@@ -2219,8 +2219,10 @@
    "cluster": "demos",
    "intent": "Fly-through of the world heightfield in false colour (height bands, surface-kind tint, region masks overlaid) with toggles for each terrain feature (canyon carve, ridge, mesa, flats). Purpose: worldgen debugging and pretty. Interactions: orbit/fly camera, layer toggles, seed display. Stack: R3F + the real lib/terrain module.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo1",
+   "claimed_at": 1790380910.767543
   },
   {
    "kind": "demo",

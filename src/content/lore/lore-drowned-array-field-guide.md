@@ -4,6 +4,8 @@ slug: "lore-drowned-array-field-guide"
 cluster: "lore"
 category: "field-guide"
 summary: "Field annex for the sinking solar pan: the courier cache code written in stone cairns, panel-field shortcuts, the caretaker's mail round, and why the water shines at dusk."
+heroImage: "images/articles/lore/lore-drowned-array-field-guide.jpg"
+heroAlt: "Low-poly illustration of weathered teal solar panels sinking tilted into a white salt pan at dusk, brine between the rows glowing amber, small stone cairns marking a courier path."
 ---
 
 *Driftline Training Annex 15 — Drowned Array, intermediate and up. Half of this region is an old solar farm; the other half is a salt pan that is eating it. Both halves are honest about it.*
