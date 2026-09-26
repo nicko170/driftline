@@ -1,0 +1,37 @@
+{
+  "id": "side-night-supply",
+  "title": "Night Supply Window",
+  "chapter": "side",
+  "type": "timed",
+  "giver": "ketch",
+  "region": "windspine",
+  "summary": "The storm-gauge crew keeps night hours — daytime makes the instruments lie, they say, and the instruments have earned some trust. Four charged horizon cells need to reach the gauge while the hatch is open, which is to say: after dark, before the pre-dawn watch, across empty cold flats with the stars doing navigation duty. Take a lantern. The ridge morse-lights will know you're coming.",
+  "timeLimit": 220,
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:garage", "label": "Take the charged horizon cells from the garage" },
+    { "type": "dropoff", "target": "windspine:storm-gauge", "label": "Deliver the cells to the storm gauge while the hatch is open" },
+    { "type": "goto", "target": "windspine:survey-camp", "label": "Check in at the survey camp on the way back" }
+  ],
+  "rewards": {
+    "credits": 160,
+    "rep": { "driftline": 4 },
+    "flags": ["side-night-supply.done", "lore:storm-almanac"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Night job, kid. Storm-gauge crew at the far end of the ridge is dead on cells, and their hatch only opens after dark — daylight makes the needles philosophical. Four charged horizon cells, my bench, your pannier, go while the sky's doing its violet trick." },
+      { "who": "ash-varga", "text": "Night run to the far end of Windspine on a clock. What happens if I get there after the hatch closes?" },
+      { "who": "ketch", "text": "Then the gauge sleeps through the morning watch, the ridge flies blind, and the crew writes your name in a log they keep for exactly that. It's called the *register of politely mentioned couriers*. You don't want in it." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Cells are strapped and warm. Flats at night read different — the salt holds the starlight, which is beautiful, and hides the rifts, which isn't. Lantern beam low, follow the ridge morse. When the gauge's lamp winks twice, you're close and it's *open*." },
+      { "who": "static-warden-pem", "text": "Station. Riding at night. The dark between stations is not empty, station — it is *unlit*, which is a different thing. Carry a light and the dark minds its manners. My radio will keep a chair warm for your engine hum." },
+      { "who": "ketch", "text": "And kid — Rill used to take this run because she liked the cold stars. You take it because it's posted. That difference is called *judgement*. Come home." }
+    ],
+    "complete": [
+      { "who": "ketch", "text": "Hatch log says you made the window with room to spare, and the camp says you checked in like a professional. Two good habits in one night. The garage kettle's on if you're ever within smell of it." },
+      { "who": "ash-varga", "text": "The flats were silver the whole way, Ketch. Like riding on the back of a mirror. You could have mentioned that part." },
+      { "who": "ketch", "text": "Mentioning it doesn't help, kid. You either see it or you read about it. Congratulations on seeing it." }
+    ]
+  }
+}

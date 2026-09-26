@@ -1,0 +1,37 @@
+{
+  "id": "side-relay-repair",
+  "title": "Relay Repair Round",
+  "chapter": "side",
+  "type": "collect",
+  "giver": "ketch",
+  "region": "saltmouth",
+  "summary": "The Driftline's relay net is going deaf at the edges — the pan relay, the east-gate relay, and the overlook mast are all running on cells older than most couriers. Swap the charged drops at each relay, then climb to the moorage mast and re-sync the net before the evening chatter window. Radios are the only road that never gets weather, and it's our road.",
+  "objectives": [
+    { "type": "collect", "target": "saltmouth:flats-pan", "count": 2, "label": "Swap the cell drops at the old pan relay" },
+    { "type": "collect", "target": "saltmouth:gate-east", "count": 2, "label": "Swap the cell drops at the east-gate relay" },
+    { "type": "collect", "target": "saltmouth:overlook", "count": 2, "label": "Swap the cell drops at the overlook mast" },
+    { "type": "goto", "target": "saltmouth:moorage", "label": "Re-sync the net at the moorage mast" }
+  ],
+  "rewards": {
+    "credits": 130,
+    "rep": { "driftline": 5 },
+    "flags": ["side-relay-repair.done", "lore:frequency-map"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Housekeeping, kid. Our relay net's going crusty — three relays around the flats running on cells I installed when you were a rumour. Fresh drops are staged at each one; swap them, then re-sync at the moorage mast before the evening window." },
+      { "who": "ash-varga", "text": "The Driftline's radios are powered by cells as old as me and the only maintenance plan was hoping?" },
+      { "who": "ketch", "text": "The maintenance plan was *paying attention*, and now you're it. Welcome to infrastructure, kid. It's underneath everything and nobody writes songs about it except the Choir, and theirs hiss." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Pan relay first — it's the deafest. The drops are painted amber, half-buried on purpose; sand insulates better than our mud-plugs and won't accept compliments. Tap each relay twice after the swap: once for the wake, once for respect." },
+      { "who": "static-warden-pem", "text": "Station. You are repairing the *other* voices' roads. That is neighbourly. When the net sings again, the static between stations will be ever so slightly lonelier, and I will pretend not to have a preference." },
+      { "who": "ketch", "text": "One more thing — the overlook mast leans. It has leaned for forty years. It is *committed* to leaning. Do not straighten it, the Guild has tried and the mast won." }
+    ],
+    "complete": [
+      { "who": "ketch", "text": "Net's sync'd, chatter window's loud, and the evening gossip just cross-crossed the flats clean for the first time all season. That's you, kid. Nobody will ever know. That's the job." },
+      { "who": "ash-varga", "text": "I fixed three radios and my reward is everyone getting to complain more clearly." },
+      { "who": "ketch", "text": "The finest reward infrastructure offers. Bank it. And kid — when I was riding, fixing the net was how I learned the flats. You've now touched every good sightline we own. File that away." }
+    ]
+  }
+}

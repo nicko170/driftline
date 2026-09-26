@@ -681,10 +681,11 @@
     "skydocks",
     "mesa"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790386815.81158
+   "claimed_at": 1790386815.81158,
+   "done_at": "2026-09-26T11:43:55"
   },
   {
    "kind": "article",
@@ -698,10 +699,11 @@
     "night",
     "windspine"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790386815.81158
+   "claimed_at": 1790386815.81158,
+   "done_at": "2026-09-26T11:43:55"
   },
   {
    "kind": "article",
@@ -715,10 +717,11 @@
     "radio",
     "relays"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790386815.811581
+   "claimed_at": 1790386815.811581,
+   "done_at": "2026-09-26T11:43:55"
   },
   {
    "kind": "article",
@@ -733,10 +736,11 @@
     "shrine",
     "books"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790386815.811581
+   "claimed_at": 1790386815.811581,
+   "done_at": "2026-09-26T11:43:55"
   },
   {
    "kind": "article",
@@ -4369,8 +4373,10 @@
     "npc loops",
     "driftline"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790386920.846474
   },
   {
    "kind": "demo",

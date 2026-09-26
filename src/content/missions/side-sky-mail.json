@@ -1,0 +1,38 @@
+{
+  "id": "side-sky-mail",
+  "title": "Keel Town Quarterly",
+  "chapter": "side",
+  "type": "deliver",
+  "giver": "tamsin-cho",
+  "region": "skydocks",
+  "summary": "The Keel Town mail only goes up by winch and by courier, and the winch is cheaper, so guess whose job this is. Quarterly bag — letters, two cargo manifests someone wrote poems in the margins of, and one taped parcel marked 'DO NOT READ ALOUD'. Up the mesa, then back down the long way: Devanna wants your landings getting worse on record, not by accident.",
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:job-board", "label": "Take the Keel Town mail bag from the job board" },
+    { "type": "goto", "target": "skydocks:winch-base", "label": "Take the winch ramp up the mesa" },
+    { "type": "dropoff", "target": "skydocks:keel-town", "label": "Deliver the mail bag in Keel Town" },
+    { "type": "pickup", "target": "skydocks:dockmaster", "label": "Collect the return pouch from the dockmaster's hut" },
+    { "type": "dropoff", "target": "saltmouth:job-board", "label": "Run the pouch home — landings to practice" }
+  ],
+  "rewards": {
+    "credits": 150,
+    "rep": { "driftline": 4, "guild": 2 },
+    "flags": ["side-sky-mail.done", "lore:lore-skydocks-field-guide"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "Quarterly mail for Keel Town. Normally the winch does it, but the winch has filed a complaint — about *gravity*, courier, I cannot make this stuff up — and so the bag moves by Driftline at double rate." },
+      { "who": "tamsin-cho", "text": "One condition from the dockmaster: come down the long way, around the north shoulder. She says your landings are 'promising', which from Devanna Shore is a declaration of love." },
+      { "who": "ash-varga", "text": "A bag that could ride a cable, a dockmaster grading my landings, and the Guild paying double so a machine can sulk. This job is perfect." }
+    ],
+    "accept": [
+      { "who": "tamsin-cho", "text": "The parcel marked DO NOT READ ALOUD — do not. The last courier who did read one aloud was fine, but the meeting he read it *to* required a recess. Mind the winch cables near the base; they hum when the ships above are arguing." },
+      { "who": "ketch", "text": "Ketch here. Climb the ramp steady, no boost near the lip — the updraft off the mesa face will take a hot engine and be rude with it. Coming down, feather it. Wisp will be watching. Everyone's always watching up there, kid. It's a *dock*." },
+      { "who": "wisp", "text": "Friend Varga, traffic report: you, shortly. The mesa is looking forward to it. Upstairs is clear, downstairs is patient, the winch is in a *mood*. Come up the friendly side." }
+    ],
+    "complete": [
+      { "who": "dockmaster-devanna", "text": "Mail received, pouch countersigned. Watched your descent, courier. Not bad. That is the whole compliment; do not spend it all at once." },
+      { "who": "tamsin-cho", "text": "Bag up, pouch down, double rate earned, and the Guild's ledger records the winch's complaint as 'resolved by subcontract'. The machine gets an apology. You get credits. The system works." },
+      { "who": "wisp", "text": "Traffic clears, friend. For the record: your last landing was a nine. I'm rounding, but I'm *kind*." }
+    ]
+  }
+}

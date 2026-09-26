@@ -1,0 +1,38 @@
+{
+  "id": "side-canyon-post",
+  "title": "Canyon Post",
+  "chapter": "side",
+  "type": "deliver",
+  "giver": "salt-singer-ila",
+  "region": "glassroad",
+  "summary": "The keeper of the mid-span shrine has ordered books. Books, courier — actual printed pages, thirteen of them, bound, in a shockproof satchel Ila swears is 'mostly shockproof'. The glassroad is slick enough to crack a spine at sixty metres an hour, so carry them like a lullaby: slow hands, clean drifts, no bouncing off the canyon walls no matter how beautifully they sing back.",
+  "cargo": { "fragile": true, "label": "the book satchel" },
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:flats-pan", "label": "Take the shockproof satchel from Ila at the old pan" },
+    { "type": "goto", "target": "glassroad:gate-south", "label": "Enter the canyon at the south gate" },
+    { "type": "dropoff", "target": "glassroad:mid-span", "label": "Deliver the books to the mid-span shrine, spines uncracked" }
+  ],
+  "rewards": {
+    "credits": 170,
+    "rep": { "driftline": 4 },
+    "flags": ["side-canyon-post.done", "lore:lore-glassroad-field-guide"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "salt-singer-ila", "text": "A favour in felt and in paper — the shrine-keeper's craving a library, thirteen bound volumes for a shrine that's mostly a shelf and a view. I promised them carried gentle as gossip, and the flats vouched for you, love. They hum your engine kind." },
+      { "who": "ash-varga", "text": "Books. Down the glassroad. In a satchel that is 'mostly' shockproof." },
+      { "who": "salt-singer-ila", "text": "'Mostly' is the honest weather of all containers. The satchel was a choir-horn crate in a former life — it knows how to hold a note and a page both. Carry it smooth, and read none aloud at speed; a story cracks worse than a spine." }
+    ],
+    "accept": [
+      { "who": "salt-singer-ila", "text": "Slow is a speed too, courier. Drift the bends like bowing a string — the canyon returns what you give it, and you are giving it *literature*." },
+      { "who": "ketch", "text": "Ketch here. Fragile books on the glass road. Weight's nought, the risk is all bounce — feather the hop, keep your hover height boring, and if a wall starts singing at you, sing softer. Ila's right about the canyon, worse luck." },
+      { "who": "salt-singer-ila", "text": "The thirteenth book's for you, love, on the keeper's tab. Don't open it mid-run. A good page pulls the eye, and the glassroad is jealous of your eyes." }
+    ],
+    "complete": [
+      { "who": "salt-singer-ila", "text": "The keeper writes: spines straight, pages dry, one book already being read aloud to the canyon, which has stopped echoing the ends of sentences to argue. You have improved the acoustics of a *gorge*, courier. That's a rare line in any ledger." },
+      { "who": "ash-varga", "text": "Delivered intact. I did look at my book. It's about rivers that used to run here. It's a hopeful little punch in the ribs." },
+      { "who": "salt-singer-ila", "text": "Then it arrived twice — once in the satchel, once in the chest. Payment on the board, love, plus one singing cell, plus the flats' regards, which spend nowhere and matter everywhere." },
+      { "who": "ketch", "text": "Nice, quiet hands on that run, kid. The Wren came home without a rattle. Book-learning agrees with you both." }
+    ]
+  }
+}

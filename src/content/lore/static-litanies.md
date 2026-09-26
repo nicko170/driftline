@@ -1,29 +1,59 @@
 ---
-title: "Static Litanies, Third Bell (congregation copy)"
+title: "Three Static Litanies, with Translations"
 slug: "static-litanies"
 cluster: "lore"
 category: "tract"
-summary: "The Choir's evening litany, assembled from transcribed band-static and recited nightly at Lamp Rest — including the verse nobody will explain."
+summary: "Three short litanies heard in the hiss between stations and rendered into language by the Hollow's listeners — gentle, strange, and, on two recorded occasions, accurate about events that had not yet happened."
 ---
 
-*Recited at third bell by the congregation of Lamp Rest, each voice tuned a quarter-tone apart, so the disharmony makes a cord the dead air can catch. Copied for courier Varga by Cantor Ilex, in person, without being asked.*
+*The Choir does not pretend the static speaks plainly. What follows is the hiss as heard (slowed, that no one be accused of inventing consonants) beside the Chorus's rendering, with the Warden's notes. The renderings are acts of faith, not claims of fact. The Warden would like it recorded that this distinction has fooled no storms.*
+*— static-warden pem, listening rota, third chair*
 
-**The Cantor:** We are the listener and the listening.  
-**The Choir:** She built the sky; the sky is holding.
+---
 
-**The Cantor:** Two hundred years she slept mid-sentence.  
-**The Choir:** The sentence is not finished; neither are we.
+## Litany IV — "Water, Walking"
 
-**The Warden reads the day's static.** (Transcription follows, standard notation. Hiss rendered as commas, tone rendered as breath, meaning rendered as best we can.)
+*As heard:* …sssh—sssh—PLOP. …sssh. …PLOP. PLOP. *(pause, forty breaths)* …ssshhh-haaa…
 
-: : comma, comma, *THE RAIN IS A PROMISE NOT A MEMORY*, comma : :  
-: : comma, *COUNT THE WATER THAT ISN'T*, comma-comma : :  
-: : *THE CHILD WHO LISTENS AT NIGHT IS CORRECT ABOUT EVERYTHING*, comma : :
+*As rendered:*
 
-**The Cantor:** Who carried our prayers when the towers went dark?  
-**The Choir:** No one. Therefore she heard us raw.
+She walked the water up from below,
+one drop at a time, like stairs.
+Each drop knew the whole journey.
+We are the drops. The stairs are tired.
+Be patient. The journey knows us too.
 
-**The Cantor:** Who shall carry *her* word when she wakes?  
-**The Choir:** Whoever is moving. The line does not name us. *(This verse was found already written in the litany book, in nobody's hand, on the morning the unsigned crate arrived in Saltmouth. The congregation voted to recite it anyway. Little Reverb abstained, being six, and said the verse was 'about the bike lady', which is not doctrine but is now a footnote.)*
+*Warden's note:* The forty-breath pause is sung, not silent. Visitors who cannot sing a pause may hold a lamp and look as though they could. This is considered adequate. Rain-making is slow, the Chorus says, because it is *thorough*. This is the kindest thing anyone has ever said about the Delay.
 
-**Closing, all together:** Everything hums. Everything hums. If you are cargo, be carried. If you are a courier, be kind. The Gate keeps what the desert promised, and the desert — comma, comma — *is almost ready to say it back.*
+## Litany XII — "The Carriers"
+
+*As heard:* …tick-tick-tick—BRZZZ—tick… *(a rhythm like hoofbeats, like engines, like somebody counting on their knuckles)* …tick-tick—*AMBER*—brzzz…
+
+*As rendered:*
+
+Any crate. Any storm. Any door.
+The small fast ones carry the world in pieces,
+and the world does not know it is being carried,
+and that is the correct way to carry a world.
+Bless their fuel lines. Bless their stubborn bolts.
+Bless the one who is coming, who owes money
+and will be counted *anyway*.
+
+*Warden's note:* Litany XII predates the Driftline's founding charter by at least sixty years. The Guild's position is that the rendering was revised. The Chorus's position is that the hiss was revised *first*. I have no position. I have cotton in my ears and humility in my heart and I sleep with the radio off since the courier Davenant's number came through. See also: Litany XII, appendix, *"BE A DOOR, NOT A CARGO"* — we do not sing the appendix.
+
+## Litany XXIII — "Tomorrow, Twice"
+
+*As heard:* …ssshhh—**rain on a tuesday**—sssh… *(then, distinctly, twice)* …sssh…**the tall one takes the long way home**…sssh—*(untranslatable; the Warden uses the word "hungry" and then apologises for it)*
+
+*As rendered:*
+
+Rain on a Tuesday.
+The tall one takes the long way home.
+Do not wave at the crossroads. Cross politely.
+What is asleep is *near the page*.
+
+*Warden's note:* Recorded season's edge, eleven weeks before Davenant's beacon went dark and forty years after the last Tuesday with weather in it. The Chorus sang it anyway. We sing them all anyway; a litany that will only be true later is still a litany, and hope with no return date is the Hollow's chief export. Second note, added in Cantor Ilex's hand: *"If it rains on a Tuesday, stop all litanies immediately. Not from fear. We will simply all be busy."*
+
+---
+
+*Visitors may request a litany by number. Requests for XXIII are granted last and sung softest.*
