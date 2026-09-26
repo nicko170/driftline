@@ -1,0 +1,5 @@
+{
+  "rain-door": { "pos": [8190, 7600], "label": "The teal door (rehearsal stage wing, off-world)", "elev": 0 },
+  "quiet-door": { "pos": [8210, 7600], "label": "The amber door (rehearsal stage wing, off-world)", "elev": 0 },
+  "warrant-desk": { "pos": [8200, 7612], "label": "Warrant desk and script stand (off-world)", "elev": 0 }
+}

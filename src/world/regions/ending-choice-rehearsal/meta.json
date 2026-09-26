@@ -1,0 +1,8 @@
+{
+  "slug": "ending-choice-rehearsal",
+  "name": "Ending Choice Rehearsal Stage",
+  "blurb": "Workshop tool, not a game region: a rehearsal stage for the Chapter 5 finale moment — the choice that sets ending.rain or ending.quiet. Mounts the shipped dialogue box, the shipped chapter-outro debrief card and the live title-screen epilogue panels in one scrollable timeline, drives the real save flags, slow-reads both epilogue drafts at broadcast pace with a radio-static bed, and statically audits every mission + choice tree to prove no content can set both endings. Anchors and centre live far outside the playable map.",
+  "center": [8200, 7600],
+  "radius": 4,
+  "danger": 0
+}

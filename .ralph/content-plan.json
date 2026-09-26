@@ -5698,10 +5698,11 @@
    "cluster": "demos",
    "intent": "A rehearsal stage for the Chapter 5 finale moment: the choice that sets ending.rain or ending.quiet. Product: the shipped DialogueBox + chapter-outro card + title-screen epilogue panel all mounted in one scrollable timeline, driven by the real store (flags set/cleared live). Features: scrub between the two epilogue drafts side-by-side, a slow-read mode that types the epilogue at broadcast pace with radio-static ambience, an 'audience' strip showing which achievements/codex entries each ending retro-unlocks (future-proofing hook), and a flag-integrity audit that proves no mission can set both ending flags (static scan of all mission JSON + dialogue choice trees). Art direction: violet-dark stage, two doors of light — teal-blooming vs amber-quiet — the epilogue text set in the codex reading-pane measure (17px/1.72/66ch). Shape-first endings: rain ending gets the ⟡ record glyph, quiet ending the ◉ broadcast glyph; colour is decoration. Stack: React DOM reusing DialogueBox/store; demo-region off-world.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo2",
-   "claimed_at": 1790412515.7678962
+   "claimed_at": 1790412515.7678962,
+   "done_at": "2026-09-26T19:35:57"
   },
   {
    "kind": "article",
@@ -6146,6 +6147,180 @@
     "heatmap",
     "tool"
    ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "soup-standard-lap",
+   "title": "The Soup-Standard Lap",
+   "cluster": "missions",
+   "intent": "Side job giver mallow: Mallow's broken stopwatch reads 9:58 forever, so she hires the courier to ride an 'officially infinite lap' — a collect run hitting her 5 chalk marks around the east gate while she narrates soup-times over the radio; twist: her soup finally boils and she declares the lap 'nine fifty-eight, again'. Unlocks a lore entry about the soup-standard.",
+   "keywords": [
+    "mallow",
+    "saltmouth",
+    "collect",
+    "comedy",
+    "east gate"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790414970.75047
+  },
+  {
+   "kind": "article",
+   "slug": "side-the-open-drawer",
+   "title": "Side Job: The Open Drawer",
+   "cluster": "missions",
+   "intent": "Side job giver impa-vell: Impa has found a filing discrepancy so beautiful she can't close it — deliver (A→B) three mis-shelved ledgers from the exchange to Keel Town's Top Scale, each with a wrong-but-poetic manifest description the player reads aloud in dialogue; fragile cargo because Impa has laminated the receipts. Guild rep reward.",
+   "keywords": [
+    "impa-vell",
+    "guild",
+    "deliver",
+    "ledger",
+    "keel town"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790414970.7504718
+  },
+  {
+   "kind": "article",
+   "slug": "side-dune-apology-tour",
+   "title": "Side Job: The Dune's Apology Tour",
+   "cluster": "missions",
+   "intent": "Side job giver nyx-ala at windspine south foot: dune four has migrated over a cache line overnight — scout 4 fresh survey stakes where the dune 'apologised', each viewpoint guarded by soft-serve sand physics; ends with Nyx selling you the gossip waypoint for free because the map was wrong in an interesting way. Unlocks a dune-migration lore entry.",
+   "keywords": [
+    "nyx-ala",
+    "windspine",
+    "scout",
+    "dune migration",
+    "waypoints"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790414970.7504718
+  },
+  {
+   "kind": "article",
+   "slug": "side-sealed-with-feeling",
+   "title": "Side Job: Sealed With Feeling",
+   "cluster": "missions",
+   "intent": "Side job giver advocate-reyes at skydocks: Reyes executes an inconvenient debt by racing the debtor's own locked skyship pennant back to their mast before the season flag rotates (timed run with a pennant-code reading beat at each checkpoint); choice: hand her the pennant or tuck it under the door with a note — sets a small kindness flag Reyes mentions later.",
+   "keywords": [
+    "advocate-reyes",
+    "skydocks",
+    "timed",
+    "pennant",
+    "choice"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790414970.750473
+  },
+  {
+   "kind": "article",
+   "slug": "lore-night-riding-black",
+   "title": "Riding Black: A Night Courier's Notes",
+   "cluster": "lore",
+   "intent": "Field guide by Sable Urrutta on riding black: no reflectors, one smoked lens, reading salt by starlight and mica-flash, the fine you pay happily, and the night-courier courtesy of never outshining a lamp-line. Written as night-school notes passed hand to hand.",
+   "keywords": [
+    "sable",
+    "night riding",
+    "field guide",
+    "driftline",
+    "starlight"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790414805.339336
+  },
+  {
+   "kind": "article",
+   "slug": "lore-open-drawer-ledger",
+   "title": "The Drawer, Left Open (Audit Trail)",
+   "cluster": "lore",
+   "intent": "Record: the exchange's inventory ledger has a line item 'drawer, left open (1)' that has appeared in every audit for ninety years — the annotation trail of clerks who each found Impa's predecessor's habit, tried to close it, and one by one left it open, with dates and increasingly personal marginalia.",
+   "keywords": [
+    "impa-vell",
+    "guild",
+    "exchange",
+    "record",
+    "audit"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790414805.3393369
+  },
+  {
+   "kind": "article",
+   "slug": "lore-three-new-beads",
+   "title": "Air Check: The Night of Three New Beads",
+   "cluster": "lore",
+   "intent": "Broadcast transcript: Vela Marlowe's Air Check hour the night the Strand lit three new beads — callers argue, a Choir listener sings the between-stars breath on air uninvited, and Marlowe ends the hour by naming the new lights after listener suggestions, one of which is the player's bike name if known, 'an old favourite' otherwise.",
+   "keywords": [
+    "marlowe",
+    "broadcast",
+    "strand",
+    "skyship",
+    "radio"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790414805.3393369
+  },
+  {
+   "kind": "article",
+   "slug": "lore-groan-copista",
+   "title": "Forty Years of One Groan",
+   "cluster": "lore",
+   "intent": "Tract: a Choir copyist at Mothersgate transcribes the gate's weakest seam groan daily into the lamp-books as if it were scripture; forty years of one groan annotated by five hands, the last hand noting the day the groan 'breathed in' — ties gently to MOTHER waking and Prior Chance's lamp rounds.",
+   "keywords": [
+    "choir",
+    "mothersgate",
+    "tract",
+    "mother",
+    "groan"
+   ],
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790414805.339338
+  },
+  {
+   "kind": "demo",
+   "slug": "portrait-gallery-bench",
+   "title": "Portrait Gallery Bench",
+   "cluster": "demos",
+   "intent": "Portraits Completion Gallery — now that all 52 cast portraits are painted, an off-world gallery bench that displays the full commissioned set in game-lit conditions (day/dusk/night Sky keyframes), checks each portrait's readability as a 64px dialogue thumb and a CODEX card, flags low-contrast or off-palette pieces against the DESIGN.md style block, and exports a missing-art manifest. Canvas-2D contact sheet + one hero easel view; frontier ledger-paper styling; Machado CVD filter toggle like the signal-cache bench.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "drift-economy-bench",
+   "title": "Drift Economy Bench",
+   "cluster": "demos",
+   "intent": "Drift Economy Feel Bench — rider-scaled replay of the new handling-scaled drift exit (builder iter 12): scripted drift inputs at handling L0–L3 on a salt skidpad, ghost arcs overlay, real-time kick/refund meters with the exported physics from upgrade-curve-sandbox, and a 'one more slide' scoring mode that grades exit smoothness. Goal: verify the L1 gyros feel worth 400 cr before players buy them. Amber/rust garage ledger styling, canvas skidpad with skid marks that fade like chalk.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "night-radio-bench",
+   "title": "Night Radio Clutter Bench",
+   "cluster": "demos",
+   "intent": "Night Radio Clutter Bench — night-time legibility of the radio ticker + subtitles: renders the HUD radio band (RADIO · SALTMOUTH / LONG STATIC) over the real night and storm sky keyframes with the band-aware weighting live-linked to a mock rep slider, checks line-length/read-speed comfortable reading at 60–90 km/h foveal glance, and verifies the amber/teal band chips against CVD matrices. DOM replica, no WebGL needed.",
+   "keywords": [],
    "status": "planned",
    "added_by": "builder"
   }
