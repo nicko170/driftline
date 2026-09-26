@@ -1,0 +1,37 @@
+{
+  "id": "side-lost-crate-1",
+  "title": "Lost: One (1) Crate, Rustic",
+  "chapter": "side",
+  "type": "collect",
+  "giver": "solder",
+  "region": "drowned-array",
+  "summary": "A Guild hauler bounced a Yards crate off its deck somewhere on the Saltmouth-to-Array road, logged it as 'settled dust', and invoiced the Yards for the emotional labour of noticing. Solder wants the crate found by its impact marks and delivered — per standing arrangement — to the cache cairn at the Drowned Array, no questions asked by anyone with a clipboard.",
+  "objectives": [
+    { "type": "goto", "target": "drowned-array:pan-edge", "label": "Pick up the hauler's trail where the road meets the pan" },
+    { "type": "collect", "target": "drowned-array:panel-field", "count": 3, "label": "Follow the three impact gouges through the panel field" },
+    { "type": "dropoff", "target": "drowned-array:cache-cairn", "label": "Shelve the crate at the cache cairn — no questions, no clipboards" }
+  ],
+  "rewards": {
+    "credits": 260,
+    "rep": { "reclaimers": 6 },
+    "flags": ["side-lost-crate-1.done", "lore:caretaker-log"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "solder", "text": "Courier Varga. Hypothetically. Say a hauler shed one (1) perfectly rustic crate of outvane spares over the pan road, and say its captain wrote 'incident: none' in the log because confessing is above his pay band. Hypothetically the gouges on the salt could lead a good rider right to it. I'm asking. Non-hypothetically." },
+      { "who": "boss-pyke", "text": "What my parts desk is dancing around: cargo falls off Guild decks and gets 'settled dust' stamped on it. We don't file complaints. We file coordinates. Find it by its dents, courier, and take it to the Array cairn." },
+      { "who": "ash-varga", "text": "The cairn by the drowned substation? The one with the little stocked shelf that I'm not supposed to know about?" },
+      { "who": "boss-pyke", "text": "The very one you're not supposed to know about. Some knowings we allow. Delivery fee's honest." }
+    ],
+    "accept": [
+      { "who": "solder", "text": "Reading the trail, for free, because I can't help myself: gouge one will be long and shallow — that's the bounce. Gouge two is shorter and angrier — that's the tumble. Gouge three is where it STOPPED, and stopped-things is where crates live. It's basically literature. Salt literature." },
+      { "who": "ash-varga", "text": "Copy. Follow the bounce, the tumble, and the full stop. And if a Guild patrol asks what I'm sweeping off the pan?" },
+      { "who": "boss-pyke", "text": "Tell them you're reading." }
+    ],
+    "complete": [
+      { "who": "solder", "text": "Gouge, gouge, GOUGE — you read it like chapbook! The crate's intact, the spares are honest, and I have already forgotten where you took it. This log entry writes itself and then burns itself. Beautiful." },
+      { "who": "quicklime-kid", "text": "*when you step back from the cairn, there is a fresh chalk tick beside your delivery, and on the open band, one word:* 'Counted.'" },
+      { "who": "boss-pyke", "text": "Word of advice, courier: never ask who stocks the cairn or who empties it. The Array-shelf arrangement predates your debt and will outlive my temper. You did right by it. That's rarer than spares." }
+    ]
+  }
+}

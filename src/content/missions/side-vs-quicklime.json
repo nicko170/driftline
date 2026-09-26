@@ -1,0 +1,38 @@
+{
+  "id": "side-vs-quicklime",
+  "title": "Rematch: The Quicklime Kid",
+  "chapter": "side",
+  "type": "race",
+  "giver": "quicklime-kid",
+  "region": "drowned-array",
+  "summary": "There's a chalk line across the pan edge of the Drowned Array and your name under it — well, a chalk silhouette of a crate, which is worse. The Quicklime Kid runs the sunken panel-rows at dusk: a slalom through dead glass that punishes speed and rewards nerve. No purse, no purse-strings, no purse-related vocabulary. Just the line.",
+  "requires": { "flags": ["side-vs-jett.done"] },
+  "timeLimit": 220,
+  "objectives": [
+    { "type": "goto", "target": "drowned-array:pan-edge", "label": "Meet the chalk line at the pan edge" },
+    { "type": "race", "targets": ["drowned-array:panel-field", "drowned-array:substation", "drowned-array:panel-field", "drowned-array:cache-cairn"], "label": "Run the slalom: panel-rows → drowned substation → back through the rows → the cairn" },
+    { "type": "race", "targets": ["drowned-array:panel-field", "drowned-array:pan-edge", "drowned-array:cache-cairn"], "label": "The return leg — the Kid's own course, reversed through the dust" }
+  ],
+  "rewards": {
+    "credits": 480,
+    "rep": { "driftline": 4 },
+    "flags": ["side-vs-quicklime.done", "lore:lore-drowned-array-field-guide"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "quicklime-kid", "text": "*a chalk line across the pan edge, and beside it, in handwriting that has clearly been practising: YOU RACE SALT NOW. COME RACE GLASS.*" },
+      { "who": "solder", "text": "Ash — open band, sorry — if that's the Kid chalking you, GO. That's not a challenge, that's an invitation. Do you know how many riders get the chalk? Three. I've COUNTED. The panel slalom is the best technical course on Kessa-9 and it doesn't technically exist." },
+      { "who": "ketch", "text": "Drowned Array's all rhythm, kid. The panel-rows creak a half-second before your line should change — the desert telegraphs down there. Listen to the glass, not your throttle hand." }
+    ],
+    "accept": [
+      { "who": "quicklime-kid", "text": "*two short revs, one long one. Then, flat on the band like a weather report:* 'Gates marked. Mine count.' *the visor-grin catches the low sun and is gone into the rows*" },
+      { "who": "solder", "text": "Technical notes, since the Kid won't give any: the substation gate is blind — commit BEFORE you see it, the cairn gate comes up fast after, and if a panel creaks under your skirt lift your line, it means the glass remembers weight and is FLATTERING you." },
+      { "who": "ash-varga", "text": "Copy. Blind gate, fast cairn, and the glass is a critic. If I lose to a person with no recorded voice I'm framing the chalk." }
+    ],
+    "complete": [
+      { "who": "quicklime-kid", "text": "*the Kid idles beside you, revs twice, pauses — and then, in an actual voice, sanded down from disuse:* 'Good race.' *a glove chalks a tiny finish line across your bow. Terms are terms. The dust settles on it like respect.*" },
+      { "who": "solder", "text": "THEY USED A FULL SENTENCE. Ash, do you understand what you hold? I've got riders offering me real credits for transcripts of 'Good race' and I won't sell — principally — because it's YOURS. Frame the chalk, kid. Frame the chalk." },
+      { "who": "ketch", "text": "Heard the creak of that slalom from the garage roof — rookies don't make panels sing like that. Flats and a following wind, Varga. You just got adopted by the Array, and the Array's a picky family." }
+    ]
+  }
+}

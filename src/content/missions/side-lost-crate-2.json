@@ -1,0 +1,40 @@
+{
+  "id": "side-lost-crate-2",
+  "title": "Lost: The Usual Crate",
+  "chapter": "side",
+  "type": "collect",
+  "giver": "tamsin-cho",
+  "region": "choirhollow",
+  "summary": "It happened again. Same hauler line, same captain, same 'settled dust' — except this crate split open over Choir Hollow and scattered five packets of Agricultural Material (the manifest says seeds; the manifest is sweating) across the lamp ring and the temple steps. Sweep every packet before vespers, before the Choir plants them liturgically out of spite.",
+  "requires": { "flags": ["side-lost-crate-1.done"] },
+  "timeLimit": 330,
+  "objectives": [
+    { "type": "goto", "target": "choirhollow:crater-rim", "label": "Slip over the crater rim before the vespers bell" },
+    { "type": "collect", "target": "choirhollow:lamp-ring", "count": 3, "label": "Sweep three packets off the lamp ring — casually, like weather" },
+    { "type": "collect", "target": "choirhollow:temple-steps", "count": 2, "label": "Lift the last two from the temple steps — do NOT make eye contact with a Cantor" },
+    { "type": "dropoff", "target": "saltmouth:exchange", "label": "Get the Agricultural Material back to the Guild exchange intact" }
+  ],
+  "rewards": {
+    "credits": 310,
+    "rep": { "guild": 5 },
+    "flags": ["side-lost-crate-2.done", "lore:lore-salt-cuisine"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "Ash. Remember the crate that fell off a hauler and became your little detective story? Good news: the Guild fixed nothing. Same line, same captain, new crate — and this one burst open over Choir Hollow and scattered five packets of seeds across consecrated geography. I need them swept up before vespers." },
+      { "who": "tamsin-cho", "text": "The complication: the Choir believes, sincerely, that objects which arrive from the sky are *correspondence*. If a Cantor blesses a packet it becomes, spiritually, mail — and liturgical mail cannot be surrendered without a hearing. I've already lost one pumpkin to due process. There is an heirloom pumpkin growing at the lamp ring that is, legally, a parishioner." },
+      { "who": "ash-varga", "text": "So: steal the mail, dodge the clergy, beat the bell. For the Guild. Quietly." },
+      { "who": "tamsin-cho", "text": "'Recover prepaid freight from an unscheduled landing.' Words are free, Ash, use the expensive ones." }
+    ],
+    "accept": [
+      { "who": "cantor-ilex", "text": "*a hymn, on the open band, pointedly serene* — the Hollow reminds all riders that what the sky entrusts to the ground, the ground answers for. Also, whoever chalked THIS lamp ring full of packet-mud may wish to hurry. For their aura." },
+      { "who": "tamsin-cho", "text": "That was a threat. A beautiful, legally-actionable threat. Lamp ring first — three packets — then two on the temple steps, and if Brother Decibel is mid-sermon do NOT stop to enjoy it, he's very good and we are very timed." },
+      { "who": "ash-varga", "text": "Copy. Five packets, one bell, zero pumpkins joining the Choir on my watch." }
+    ],
+    "complete": [
+      { "who": "tamsin-cho", "text": "Five of five, before vespers, and — I'm counting — zero litigation. Ash Varga, the exchange owes you a fruit basket, which is ironic, and which I am therefore withholding." },
+      { "who": "cantor-ilex", "text": "We saw the whole thing, courier. Every sweep, every dodge. For the record, the Hollow was prepared to fight for those seeds rite and socket — but anyone who moves that reverently at speed is doing a kind of liturgy themselves. Take note, Brothers: *that* is how you genuflect at forty metres a second." },
+      { "who": "little-reverb", "text": "Ash!! We replanted the legal pumpkin anyway — Cantor Ilex says paperwork is just gardening for the soul — so EVERYONE won. Except the hauler captain, who lost twice and doesn't know about either time. That's my favourite kind of scoreboard." }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "side-vs-jett",
+  "title": "Rematch: Jett Marrows",
+  "chapter": "side",
+  "type": "race",
+  "giver": "jett-marrows",
+  "region": "saltmouth",
+  "summary": "Jett Marrows has chalked a full circuit on the salt flats and told the whole moorage you're scared of flat ground. Three laps around Saltmouth's beacons — east gate, dune overlook, water tower, old salt pan — boost, drift, and absolutely no canyon to blame. The purse is real; the trash talk started yesterday.",
+  "requires": { "flags": ["ch2-glassroad-race.done"] },
+  "timeLimit": 300,
+  "objectives": [
+    { "type": "goto", "target": "saltmouth:moorage", "label": "Stage at the moorage mast — the chalk start line" },
+    { "type": "race", "targets": ["saltmouth:gate-east", "saltmouth:overlook", "saltmouth:water-tower", "saltmouth:flats-pan"], "label": "Lap one: east gate → overlook → water tower → salt pan" },
+    { "type": "race", "targets": ["saltmouth:gate-east", "saltmouth:overlook", "saltmouth:water-tower", "saltmouth:flats-pan"], "label": "Lap two — Jett always shows his line here" },
+    { "type": "race", "targets": ["saltmouth:gate-east", "saltmouth:overlook", "saltmouth:water-tower", "saltmouth:flats-pan", "saltmouth:moorage"], "label": "Final lap — finish across the moorage chalk line" }
+  ],
+  "rewards": {
+    "credits": 420,
+    "rep": { "driftline": 6 },
+    "flags": ["side-vs-jett.done", "lore:lore-courier-slang"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "jett-marrows", "text": "Parcel! You lucked out in the canyon — slick glass, no witnesses, asterisk pending. So I've drawn you a REAL test: three laps, flat salt, four beacons, nowhere to hide. Purse is four hundred and twenty of my actual credits, because I enjoy theatre." },
+      { "who": "ketch", "text": "He's been chalking that start line since dawn and re-chalking it every time the wind argues. Take his money, kid. Flat circuits are about exit speed and nerve — you've been renting both off me for months." },
+      { "who": "jett-marrows", "text": "Rules: pass every gate, keep it above ground, and if your weird crate hums the lap times back at me, that's BETWEEN you and the clergy." }
+    ],
+    "accept": [
+      { "who": "jett-marrows", "text": "She accepts! Listen for my horn at the overlook — it's how I say 'this is where you lost'. Free lesson, rookie: brake BEFORE the water tower's shadow, not inside it. That one's just good manners." },
+      { "who": "ketch", "text": "Race notes: the pan gate is the money gate. Enter wide, drift the whole crust, boost out flat, and do NOT chase Jett into lap two — he always over-cooks the tower turn showing off. Let him gift-wrap it." },
+      { "who": "ash-varga", "text": "Copy. Three laps, four gates, one scheduled over-cooking. If I win, the asterisk on his record gets a little friend." }
+    ],
+    "complete": [
+      { "who": "jett-marrows", "text": "…The tower turn. The ONE turn. I made eye contact with my own reflection in the tank and the next thing I knew you were a rumour on the horizon. Fine. FINE. Purse is yours. Theatre's expensive." },
+      { "who": "jett-marrows", "text": "For the record, rook— Varga. That's the fastest anyone's lapped the flats since Davenant stopped answering the band. I'm not saying it's a pattern. The asterisk is saying it. Quietly. I'll have it killed." },
+      { "who": "ketch", "text": "Nice exits, kid. Driftline nets are calling it 'the moorage chalk massacre' — theatre, like the man said. Word's out there's a second rider out there chalking lines at the Drowned Array. Doesn't talk. Just chalks. When you're ready." }
+    ]
+  }
+}
