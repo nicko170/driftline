@@ -63,6 +63,14 @@ Faction colors: Salt Guild `ochre #B07C3A`, Choir `teal-bright #57C4B8`, Reclaim
 - UI transitions ≤180ms ease-out; menus fade+4px rise; no layout shift.
 - Bike feel targets: hover bob ~2Hz at idle, drift lean ≤14°, boost FOV 60→74, hop land squash 90ms.
 
+## Mission/moment language (iteration 2)
+
+- **Waypoint beams** colour by objective: amber default/`pickup`/`dropoff`/`race`; teal for escort/scout; danger-red `#E4572E` for chase/storm. HUD keeps shape+colour pairs (amber diamond objective, teal square convoy, rust triangle chase target, red disc storm on minimap).
+- **Storm wall**: 3 nested open cylinder shells (sand `#C98F4E`→`#8A5335`, opacities 0.22→0.05) + churn band; screen tint = radial rust gradient from bottom; fog lerps sand and densifies with proximity.
+- **Chapter cards**: full-screen violet-dark overlay, teal kicker "Chapter N", big salt display title, amber ◆◆◆ rule; dismissible with E/Enter/Esc.
+- **Board ribbons**: chapter pips 26px; done = teal outline, current = solid amber with glow; locked postings dashed ghost rows with reason text in sand.
+- **Fragile cargo bar** in the mission tracker: teal→red under 35%; payout note at completion.
+
 ## Performance budgets
 
 - 60fps mid laptop at Medium: pixelRatio ≤1.5, shadow 1024, scatter ≤ ~2k instances, fog-over-draw minimal, no per-frame allocations in the render or physics hot paths (module-level scratch objects only).

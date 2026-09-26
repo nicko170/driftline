@@ -16,7 +16,9 @@ export default defineConfig({
         manualChunks: {
           three: ['three'],
           r3f: ['@react-three/fiber', '@react-three/drei'],
-          physics: ['@react-three/rapier'],
+          fx: ['@react-three/postprocessing', 'postprocessing'],
+          // @react-three/rapier is only reached from the lazy /play route —
+          // let rollup split it naturally (manual chunking caused a cycle).
         },
       },
     },

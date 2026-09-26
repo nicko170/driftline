@@ -12,6 +12,8 @@ class AudioEngine {
   private windGain: GainNode | null = null;
   private windFilter: BiquadFilterNode | null = null;
   private padGain: GainNode | null = null;
+  private stormGain: GainNode | null = null;
+  private stormOsc: OscillatorNode | null = null;
   private volume = 0.8;
   private muted = false;
 
@@ -103,6 +105,39 @@ class AudioEngine {
     padFilter.connect(padGain);
     padGain.connect(this.master);
     this.padGain = padGain;
+
+    // Storm: low detuned rumble + howl, gain driven by proximity
+    const stormGain = ctx.createGain();
+    stormGain.gain.value = 0;
+    const stormOsc = ctx.createOscillator();
+    stormOsc.type = 'sine';
+    stormOsc.frequency.value = 38;
+    const stormOsc2 = ctx.createOscillator();
+    stormOsc2.type = 'sawtooth';
+    stormOsc2.frequency.value = 61;
+    const stormFilter = ctx.createBiquadFilter();
+    stormFilter.type = 'lowpass';
+    stormFilter.frequency.value = 160;
+    stormOsc.connect(stormFilter);
+    stormOsc2.connect(stormFilter);
+    stormFilter.connect(stormGain);
+    stormGain.connect(this.master);
+    stormOsc.start();
+    stormOsc2.start();
+    this.stormGain = stormGain;
+    this.stormOsc = stormOsc;
+  }
+
+  /** Storm rumble intensity 0..1 (0 = silent). Called per-frame while a storm objective is live. */
+  setStorm(intensity: number): void {
+    if (!this.ctx || !this.stormGain || !this.stormOsc) return;
+    const t = this.ctx.currentTime;
+    this.stormGain.gain.setTargetAtTime(Math.min(0.22, intensity * 0.22), t, 0.3);
+    this.stormOsc.frequency.setTargetAtTime(34 + intensity * 22, t, 0.4);
+    if (this.windGain) {
+      const w = Math.min(0.3, intensity * 0.24);
+      this.windGain.gain.setTargetAtTime(Math.max(w, this.windGain.gain.value), t, 0.3);
+    }
   }
 
   resume(): void {

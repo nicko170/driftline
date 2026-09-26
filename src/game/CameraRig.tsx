@@ -7,8 +7,6 @@ import * as THREE from 'three';
 import { useFrame, useThree } from '@react-three/fiber';
 import { telemetry } from '../telemetry';
 import { useSaveStore, useGameStore } from '../state/store';
-import { getAnchor } from '../world/registry';
-import { missionsById } from '../missions/library';
 
 const _target = new THREE.Vector3();
 const _look = new THREE.Vector3();
@@ -64,20 +62,13 @@ export default function CameraRig() {
       cam.updateProjectionMatrix();
     }
 
-    // project active waypoint for HUD
-    const mission = game.activeMissionId ? missionsById.get(game.activeMissionId) : null;
-    const obj = mission?.objectives[game.objectiveIndex];
-    if (obj && mission) {
-      const ref = obj.type === 'race' ? obj.targets?.[game.objectiveCount] : obj.target;
-      const anchor = ref ? getAnchor(ref) : null;
-      if (anchor) {
-        _mark.set(anchor.x, anchor.y + 3.5, anchor.z).project(cam);
-        telemetry.marker.x = THREE.MathUtils.clamp((_mark.x + 1) / 2, 0.04, 0.96);
-        telemetry.marker.y = THREE.MathUtils.clamp((1 - _mark.y) / 2, 0.06, 0.9);
-        telemetry.marker.behind = _mark.z > 1;
-      } else {
-        telemetry.marker.behind = true;
-      }
+    // project active waypoint for HUD (MissionDirector maintains it; follows NPCs)
+    const objPoint = game.activeMissionId ? telemetry.objective : null;
+    if (objPoint) {
+      _mark.set(objPoint.x, objPoint.y + 3.5, objPoint.z).project(cam);
+      telemetry.marker.x = THREE.MathUtils.clamp((_mark.x + 1) / 2, 0.04, 0.96);
+      telemetry.marker.y = THREE.MathUtils.clamp((1 - _mark.y) / 2, 0.06, 0.9);
+      telemetry.marker.behind = _mark.z > 1;
     } else {
       telemetry.marker.behind = true;
     }

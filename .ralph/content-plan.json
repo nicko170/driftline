@@ -2252,8 +2252,10 @@
    "cluster": "demos",
    "intent": "UI lab for the HUD navigation: a fake world with draggable anchors to test compass tick positioning, waypoint diamond clamping, minimap contrast at 4 palettes (day/naught no— day/dusk/night/storm). Purpose: prove colour-blind-safe shapes. Stack: pure React + canvas 2D.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo2",
+   "claimed_at": 1790381246.9531531
   },
   {
    "kind": "demo",

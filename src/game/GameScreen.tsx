@@ -19,6 +19,9 @@ import GaragePanel from '../ui/GaragePanel';
 import DialogueBox from '../ui/DialogueBox';
 import PauseMenu from '../ui/PauseMenu';
 import TouchControls from '../ui/TouchControls';
+import ChapterCard from '../ui/ChapterCard';
+import Effects from './Effects';
+import { currentChapter } from '../missions/chapters';
 import { bindInput, consume } from '../input/input';
 import { useGameStore, useSaveStore } from '../state/store';
 import { audio } from '../audio/audio';
@@ -38,6 +41,13 @@ export default function GameScreen() {
   useEffect(() => {
     const id = window.setInterval(() => {
       if (!consume('pause')) return;
+      // a pending chapter card owns Esc/E
+      const save = useSaveStore.getState();
+      const pendingChapter = (() => {
+        const { chapter } = currentChapter(save.missionsDone);
+        return chapter >= 1 && !save.chaptersSeen.includes(chapter) ? chapter : null;
+      })();
+      if (pendingChapter !== null) return;
       const g = useGameStore.getState();
       if (g.mode === 'riding') {
         g.setMode('paused');
@@ -84,11 +94,13 @@ export default function GameScreen() {
           <InteractionSystem />
           <DustTrail />
           <CameraRig />
+          {quality === 'high' && <Effects />}
         </Suspense>
       </Canvas>
 
       <HUD />
       <TouchControls />
+      <ChapterCard />
       {mode === 'board' && <MissionBoard />}
       {mode === 'garage' && <GaragePanel />}
       {mode === 'dialogue' && <DialogueBox />}

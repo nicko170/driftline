@@ -1,11 +1,32 @@
 # Progress
 
-## Status — iteration 1 (complete vertical slice, playable)
+## Status — iteration 2 (mission runtime breadth, board tiers, chapters, FX)
 
-**Live loop:** title → Play → ride (WASD, Shift boost, Space hop, S+steer drift-with-boost-reward,
-E interact) → job board → accept mission → waypoints/compass/minimap → complete → credits, rep,
-flags, codex unlocks → garage upgrades & paint → pause/settings. Gamepad + touch. Saves persist
-(versioned localStorage `driftline-save`). Playtest: 60fps, 0 console errors.
+**All 10 objective types now have live runtimes** (see ROUTES.md table): escort (NPC hover-wagon
++ range meter + 10s grace fail), chase (rubber-banded skiff, catch radius, tracking beam), scout
+(reach + hold-scan with progress), storm (chasing sand-wall with fog/wind/tint/shake + procedural
+storm rumble), plus fragile cargo integrity: impacts (post shield-soak) damage cargo, payout scales
+`0.35 + 0.65×integrity`, 0% = fail. Fail banner has **Retry / Let it go**; retry re-applies
+timeLimits. Pause menu can abandon a job. Job board: chapter-grouped ribbons, "current chapter"
+badge, **locked postings with human-readable reasons**. Chapter system derived from content
+(`src/missions/chapters.ts`); intro cards shown once per chapter (`save.chaptersSeen`).
+Post-processing on `high` preset: bloom + vignette (`@react-three/postprocessing`, own `fx` chunk).
+Canonical `telemetry.objective` point (follows NPCs) now drives camera marker, HUD distance/bearing
+and minimap; minimap also draws convoy/chase/storm; "SLOWER" hint fixes the old slow-gate confusion.
+Radio chatter now casts from any character with a `radio` bucket. Seeded 3 showcase side missions
+(escort/chase/storm). Playtest: 60fps, 0 errors, 100% screen change after input.
+
+## Iteration 1 recap (architecture — still current)
+- **Terrain is analytic** (`src/lib/terrain.ts`): one height function for mesh, bike hover,
+  anchors and scatter — no rapier heightfield collider. Bike = dynamic rigid body, but motion is
+  arcade-driven (ride-height controller + lateral grip shaping + manual smoothed rotation);
+  rapier handles prop collisions only.
+- **World**: 2400×2400 m, 8 core regions (+ region-builder additions) in `src/world/regions/<slug>/`.
+  Distance-gated render via RegionStream; colliders always on. Canonical coords in `src/world/layout.ts`.
+- **Content**: glob-eager missions/characters/lore; `npm run validate:content` checks schema +
+  cross-refs + escort/chase route rules. Writers shipped 14 missions / 14 characters / 28 lore by iter 2.
+- **State**: zustand save (persisted, v1) + runtime; per-frame via `src/telemetry.ts` (HUD polls 10Hz).
+- **Routes**: `/` title, `/play`, `/codex`, `/credits`, `/lab`. BASE_PATH + 404.html + .nojekyll OK.
 
 ## Architecture (as committed, iteration 1)
 - **Terrain is analytic** (`src/lib/terrain.ts`): one height function for mesh, bike hover,
@@ -24,20 +45,32 @@ flags, codex unlocks → garage upgrades & paint → pause/settings. Gamepad + t
 - Build: `tsc && vite build && postbuild` (404.html + .nojekyll). BASE_PATH supported.
 
 ## Next iterations (priority order)
-1. **Mission runtime breadth**: escort/chase/scout/storm objective runtimes; fragile damage
-   actually reducing payout (shield soak); mission board shows locked reasons; retry after fail.
-2. **More regions' props density** (skydocks/cinderflats still sparse; cinderflats needs the big
-   crane; drowned-array needs sunken detail) + region climate tint blending in Sky.
-3. **Chapters gating UI** (chapter ribbon on board; story chapter intro cards).
-4. **Portraits**: generate illustrated portraits for characters (DialogueBox already supports them).
-5. **Post-processing** (bloom/vignette via @react-three/postprocessing) on high preset.
-6. **Achievements + stats**; credits sequence; endings flow for ch5.
-7. Keep seeding lore backlog: planned must carry ≥120 total; add ~70 more lore ideas next builder pass.
+1. **Portraits**: generate illustrated portraits for characters (DialogueBox supports `portrait`).
+2. **Region props density pass**: skydocks/cinderflats sparse; cinderflats needs the big crane
+   (it has an anchor + lore about it); drowned-array sunken detail; climate tint blending in Sky.
+3. **Achievements + ride stats** (distance, best drift, storms outrun); credits sequence upgrade;
+   endings flow for ch5 (flags `ending.rain`/`ending.quiet` → title-screen epilogue card).
+4. **Ambient traffic**: 2-3 background couriers/NPC haulers cruising region roads for world life.
+5. **Chapter-outro beat**: short debrief dialogue when a chapter completes, not just card→next.
+6. Perf: consider moving terrain build to a worker; rapier chunk is 2.4MB lazy (route-gated).
 
 ## Known issues / watch-items
-- Rapier bundle is 2.2MB min (wasm inlined) — lazy-loaded on /play only; fine for now.
-- Bike rotation is fully manual — no physical tumbling ever; acceptable arcade choice (brief allows).
-- `slowEnough` gate for pickup/dropoff (16 km/h) can confuse — consider auto-brake assist later.
-- Two backlog intents have a stray "…no—" typo (nona-vex, windspine guide); harmless, writers infer.
-- Radio chatter cycles ketch/tamsin only until more characters land.
-- Terrain draw is CPU-built once (200×200 grid ~40k verts); keep SEGMENTS ≤ 224 on low preset.
+- Rapier now rolls into the GameScreen chunk (2.4MB min) — route-lazy, acceptable; keep an eye.
+  Do NOT re-add it to manualChunks (caused a rollup circular-chunk warning).
+- FX (bloom) only on `high`; verify fps on real GPUs when someone presets high.
+- Escort/chase NPCs ignore prop colliders (visual only, hover at terrain+1.35) — acceptable.
+- Storm capture uses no slow-gate (dive for shelter); intentional. Storm radius 150m.
+- Radio chatter: `game.say` on cargo damage uses giver 'mission' bucket — can feel chatty on
+  repeated bumps; consider cooldown if players complain.
+
+## Writer log — writer2, iteration 2 (2026-09-26)
+- Finished the Choir crater cast: cantor-ilex (healed age drift → Little Reverb is nine), static-warden-pem, little-reverb, brother-decibel. All home=choirhollow, faction=choir.
+- HARNESS QUIRK: finish_article counts `lines` BUCKETS, not strings — characters need ≥8 keys (greetings/barks/mission/radio/farewells/rumors/reactions/lore works). Repo validator only needs 8 strings total, so extra buckets are safe.
+- Little Reverb portrait generated at public/images/articles/characters/little-reverb.jpg (writers can't write to public/images/characters/); `portrait` field set to articles path + heroAlt added. Builder may move path later if desired.
+- Canon hooks planted: "left knife" (Ash's bike nickname option?), band zero / "the breath in", the Bell Incident (Decibel's ear patch), echo-collecting side content, west horn singing = weather.
+
+## Region builder log — demo2, iteration 1 (2026-09-26)
+- Built region `canyon-slalom` ("The Sluice — Glassroad Slalom"): an 8-gate time-trial course woven down the existing Glass Road canyon (slick glass grip 0.5 zone). Anchors: start-gantry, marshal-post, gate-1..gate-8, spectator-ledge, finish-line — ready for `race` missions with `targets: ["canyon-slalom:gate-1", ...]`.
+- All gate math derives from GLASSROAD_PATH course distances (start d=60, gates d=200..1440, finish d=1600); anchors.json coords were precomputed with the same formula, so visuals/colliders/anchors agree. Pylons+caps+crossbars+strips+chevrons are 5 instanced draws; only 8 gate diamonds animate (bob+spin). Colliders: pylons, gantry legs, marshal hut, ledge wall (~24 AABBs).
+- Center [575,-315], radius 840, propsCull 1.2; climate dusk-tinted (skyTint #3A2A55, fog 0.0024). Concept art at public/images/work/canyon-slalom.jpg.
+- Harness note: finish_demo accepted region-folder placement (src/world/regions/<slug>/) with meta.json+anchors.json+meta.ts+index.tsx RegionModule default export.

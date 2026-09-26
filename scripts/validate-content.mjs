@@ -101,6 +101,12 @@ for (const f of listFiles(missionDir, '.json')) {
     if (o.type === 'race') {
       if (!Array.isArray(o.targets) || o.targets.length < 3) err(w, `objective ${i}: race needs >= 3 targets`);
       else o.targets.forEach((t, j) => { if (!hasAnchor(t)) err(w, `objective ${i} target ${j}: "${t}" not found`); });
+    } else if (o.type === 'escort' || o.type === 'chase') {
+      // NPC spawns at `target` (optional; defaults to first route point) then
+      // runs the `targets` route (escort: one-way; chase: ping-pong)
+      if (!Array.isArray(o.targets) || o.targets.length < 2) err(w, `objective ${i}: ${o.type} needs >= 2 route anchors in "targets"`);
+      else o.targets.forEach((t, j) => { if (!hasAnchor(t)) err(w, `objective ${i} route[${j}]: "${t}" not found`); });
+      if (o.target && !hasAnchor(o.target)) err(w, `objective ${i}: spawn target "${o.target}" not found`);
     } else if (!o.target) err(w, `objective ${i}: missing target`);
     else if (!hasAnchor(o.target)) err(w, `objective ${i}: target "${o.target}" not found`);
     if (o.type === 'collect' && !(o.count >= 2)) err(w, `objective ${i}: collect needs count >= 2`);

@@ -398,6 +398,111 @@ kbd {
 .credits-body { line-height: 1.7; font-size: 15px; max-width: 62ch; }
 .credits-body .btn { margin-top: 16px; }
 
+/* ============ iteration 2: mission runtime HUD ============ */
+
+.hud-cargo { margin-top: 8px; }
+.hud-cargo-label { font-size: 11px; letter-spacing: 0.08em; color: var(--sand); }
+.hud-cargo-bar {
+  height: 6px; margin-top: 3px; border-radius: 3px; overflow: hidden;
+  background: color-mix(in srgb, var(--bone) 16%, transparent);
+}
+.hud-cargo-fill {
+  height: 100%; border-radius: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--teal-bright));
+  transition: width 180ms ease-out;
+}
+.hud-cargo-bar.low .hud-cargo-fill { background: linear-gradient(90deg, var(--danger), var(--rust)); }
+
+.hud-escort { margin-top: 6px; font-family: var(--font-display); font-size: 12px; color: var(--teal-bright); letter-spacing: 0.06em; }
+.hud-escort.warn { color: var(--danger); animation: pulse 0.7s infinite; }
+
+.hud-scout { margin-top: 6px; font-family: var(--font-display); font-size: 12px; color: var(--teal-bright); letter-spacing: 0.1em; }
+.hud-scout-bar {
+  display: inline-block; vertical-align: middle; margin-left: 8px; width: 90px; height: 6px;
+  border-radius: 3px; background: color-mix(in srgb, var(--bone) 16%, transparent); overflow: hidden;
+}
+.hud-scout-fill { display: block; height: 100%; background: var(--teal-bright); transition: width 120ms linear; }
+
+.hud-storm { margin-top: 6px; font-family: var(--font-display); font-size: 12px; color: var(--sand); letter-spacing: 0.08em; }
+.hud-storm.urgent { color: var(--danger); animation: pulse 0.55s infinite; }
+
+.hud-storm-tint {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(120% 100% at 50% 120%, rgba(179, 80, 46, 0.5) 0%, transparent 60%),
+    linear-gradient(0deg, rgba(217, 164, 91, 0.18) 0%, transparent 45%);
+}
+
+.hud-fail {
+  position: absolute; top: 84px; left: 50%; transform: translateX(-50%);
+  padding: 14px 20px; color: var(--danger); font-weight: 600; text-align: center;
+  pointer-events: auto; max-width: min(520px, 92vw);
+}
+.hud-fail-actions { display: flex; gap: 10px; justify-content: center; margin-top: 10px; }
+.btn.small { font-size: 12px; padding: 8px 14px; }
+
+.hud-slow {
+  position: absolute; bottom: 33%; left: 50%; transform: translateX(-50%);
+  padding: 8px 16px; font-family: var(--font-display); font-size: 13px;
+  letter-spacing: 0.16em; color: var(--amber-hot);
+  border-color: var(--amber);
+  animation: pulse 1s infinite;
+}
+
+/* board: chapter groups + locked rows */
+.chapter-ribbon { display: flex; gap: 6px; margin-top: 10px; }
+.chapter-pip {
+  width: 26px; height: 26px; display: grid; place-items: center;
+  border-radius: 6px; border: 1px solid var(--panel-border);
+  font-family: var(--font-display); font-size: 12px; color: var(--bone); opacity: 0.5;
+}
+.chapter-pip.done { opacity: 0.9; color: var(--teal-bright); border-color: var(--teal); }
+.chapter-pip.current {
+  opacity: 1; color: var(--space); background: var(--amber); border-color: var(--amber);
+  box-shadow: 0 0 10px rgba(255, 180, 84, 0.5);
+}
+.board-group {
+  display: flex; align-items: center; gap: 10px;
+  margin: 12px 0 4px; padding-bottom: 3px;
+  border-bottom: 1px solid color-mix(in srgb, var(--rust-deep) 60%, transparent);
+}
+.board-group-label {
+  font-family: var(--font-display); font-size: 11px; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--sand);
+}
+.board-group.current .board-group-label { color: var(--amber); }
+.board-group.locked .board-group-label { color: var(--bone); opacity: 0.5; }
+.board-group-badge {
+  font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--space); background: var(--amber); border-radius: 6px; padding: 1px 7px;
+}
+.board-list-inner { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.board-locked {
+  display: grid; grid-template-columns: 58px 1fr; gap: 2px 8px; align-items: center;
+  padding: 7px 10px; border: 1px dashed color-mix(in srgb, var(--bone) 22%, transparent);
+  border-radius: 8px; opacity: 0.6; font-size: 13px;
+}
+.board-locked-reason { grid-column: 2; font-size: 11.5px; color: var(--sand); }
+.board-abandon-note { font-size: 12px; margin: 4px 0 8px; }
+
+/* chapter intro card */
+.chapter-overlay { z-index: 40; background: rgba(11, 8, 18, 0.78); }
+.chapter-card {
+  text-align: center; max-width: 560px; padding: 40px 30px;
+  animation: rise 320ms ease-out;
+}
+.chapter-card-numeral {
+  font-family: var(--font-display); letter-spacing: 0.5em; font-size: 13px;
+  color: var(--teal-bright); text-transform: uppercase;
+}
+.chapter-card-title {
+  font-size: clamp(38px, 7vw, 64px); margin: 10px 0 4px; color: var(--salt);
+  text-shadow: 0 4px 40px rgba(255, 180, 84, 0.3); letter-spacing: 0.03em;
+}
+.chapter-card-logline { font-size: 16px; color: var(--bone); margin: 6px 0 0; }
+.chapter-card-epigraph { font-style: italic; opacity: 0.72; margin: 18px 0 0; font-size: 14px; }
+.chapter-card-rule { color: var(--amber); letter-spacing: 1.2em; margin: 22px 0 26px; opacity: 0.8; }
+
 /* ============ animation ============ */
 
 @keyframes bob { 0%, 100% { transform: translate(-50%, -50%); } 50% { transform: translate(-50%, calc(-50% - 6px)); } }

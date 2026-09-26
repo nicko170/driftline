@@ -1,0 +1,36 @@
+{
+  "id": "side-convoy-shadow",
+  "title": "Convoy Shadow",
+  "chapter": "side",
+  "type": "escort",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "A Guild grain wagon crawls the east road at half a snail's pace, and the dunes have opinions about slow freight. Ride shotgun — keep the wagon in sight from the exchange to the Slick Mile.",
+  "objectives": [
+    {
+      "type": "escort",
+      "target": "saltmouth:exchange",
+      "targets": ["saltmouth:gate-east", "glassroad:gate-south", "glassroad:slick-mile"],
+      "speed": 13,
+      "label": "Escort the grain wagon — stay within 100m"
+    },
+    { "type": "dropoff", "target": "glassroad:slick-mile", "label": "Collect the manifest wax at the Slick Mile" }
+  ],
+  "rewards": {
+    "credits": 160,
+    "rep": { "guild": 4 },
+    "flags": ["side-convoy-shadow.done"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "Grain wagon, east road, no brakes worth mentioning. The driver swears the dunes are 'giving him a look'. Shadow him to the Slick Mile and don't lose sight of the rig — the Guild counts escorts that actually escort." }
+    ],
+    "accept": [
+      { "who": "tamsin-cho", "text": "He's rolling out of the exchange now. Wagon's the one that smells like bread and fear." },
+      { "who": "ash-varga", "text": "Convoy shadow. Slow hours, honest credits. My favourite kind of lie." }
+    ],
+    "complete": [
+      { "who": "tamsin-cho", "text": "Wagon made it with all four skids and most of the driver's nerves. The Guild notes the miles, courier." }
+    ]
+  }
+}

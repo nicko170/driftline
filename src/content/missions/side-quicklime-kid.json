@@ -1,0 +1,37 @@
+{
+  "id": "side-quicklime-kid",
+  "title": "Tag the Quicklime Kid",
+  "chapter": "side",
+  "type": "chase",
+  "giver": "ketch",
+  "region": "saltmouth",
+  "summary": "The Quicklime Kid has been shaving course markers off the training loop for scrap and laughs. Ketch wants the Kid tagged with a paint-round before the novices ride a marked route that no longer exists.",
+  "objectives": [
+    {
+      "type": "chase",
+      "target": "saltmouth:flats-pan",
+      "targets": ["saltmouth:flats-pan", "saltmouth:overlook", "saltmouth:moorage", "saltmouth:water-tower"],
+      "speed": 20,
+      "label": "Run down the Quicklime Kid — get within 15m to tag them"
+    },
+    { "type": "goto", "target": "saltmouth:garage", "label": "Report back to the garage" }
+  ],
+  "rewards": {
+    "credits": 140,
+    "rep": { "guild": 2 },
+    "flags": ["side-quicklime-kid.done"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Kid's quick — leaner bike than yours, better line through the pan. But they carry damp powder in the port pannier and it clumps. Watch for the white dust, run them down, give them the paint, not the lecture. Save the lecture for me." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "They'll be circling the old salt pan. Moves like a startled lizard. Don't thread town at full clip — Tamsin's already annoyed." },
+      { "who": "ash-varga", "text": "One paint-round, coming up. For the record, at that age I also stole markers." }
+    ],
+    "complete": [
+      { "who": "ketch", "text": "Tagged! Took the paint right on the cowl. The Kid yelled something admiring I'll pretend not to repeat." },
+      { "who": "ketch", "text": "Good chasecraft, Ash. Marker-shaving's a novice sport; you'll be chasing worse things before the season turns." }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "side-storm-window",
+  "title": "Storm Window",
+  "chapter": "side",
+  "type": "storm",
+  "giver": "ketch",
+  "region": "windspine",
+  "summary": "The survey camp's horizon cells are due and the season's first real wall of sand is climbing the flats behind you. Pick up the cells at the east gate cache and beat the storm to the camp.",
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:gate-east", "label": "Grab the horizon cells at the east gate cache" },
+    { "type": "storm", "target": "windspine:survey-camp", "label": "OUTRUN THE WALL — dive into the survey camp" },
+    { "type": "dropoff", "target": "windspine:survey-camp", "label": "Hand the cells to the survey crew" }
+  ],
+  "rewards": {
+    "credits": 220,
+    "rep": { "guild": 3, "reclaimers": 2 },
+    "flags": ["side-storm-window.done"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Storm gauge says one hour of window and the gauge is a romantic. Cells are at the east gate cache, camp is up the spine. You'll feel the wall before you see it — the radio goes sad and the light goes the colour of old butter." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Route's simple: cells, spine, camp. What the desert adds is up to the desert. If the wall gets close, don't fight it — just be elsewhere." }
+    ],
+    "complete": [
+      { "who": "ketch", "text": "You beat the wall up the spine with cells to spare? That's the run they'll tell at the pumps tonight." },
+      { "who": "ash-varga", "text": "Tell it loud. I'm owed at least one legend against my tab." }
+    ]
+  }
+}

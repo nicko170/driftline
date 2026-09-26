@@ -5,10 +5,20 @@ import { audio } from '../audio/audio';
 export default function PauseMenu({ onQuitToTitle }: { onQuitToTitle: () => void }) {
   const settings = useSaveStore((s) => s.settings);
   const updateSettings = useSaveStore((s) => s.updateSettings);
+  const activeMissionId = useGameStore((s) => s.activeMissionId);
 
   const resume = () => {
     useGameStore.getState().setMode('riding');
     useGameStore.getState().setPhysicsPaused(false);
+  };
+
+  const abandon = () => {
+    const g = useGameStore.getState();
+    g.clearMission();
+    g.setMode('riding');
+    g.setPhysicsPaused(false);
+    g.say('ketch', 'Dropped the job. The board remembers, kid — it always remembers.');
+    audio.blip(330, 0.09);
   };
 
   return (
@@ -20,6 +30,9 @@ export default function PauseMenu({ onQuitToTitle }: { onQuitToTitle: () => void
         </header>
         <div className="pause-actions">
           <button className="btn primary" onClick={resume}>Resume <kbd>Esc</kbd></button>
+          {activeMissionId && (
+            <button className="btn" onClick={abandon}>Abandon current job</button>
+          )}
           <button className="btn" onClick={onQuitToTitle}>Quit to title</button>
         </div>
         <section className="settings">

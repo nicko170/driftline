@@ -32,6 +32,8 @@ const _horizon = new THREE.Color();
 const _fog = new THREE.Color();
 const _sun = new THREE.Color();
 const _bg = new THREE.Color();
+const _sandHaze = new THREE.Color('#C98F4E');
+let stormFog = 0; // smoothed 0..1
 
 function sampleSky(t: number) {
   let i = 0;
@@ -68,13 +70,21 @@ export default function Sky() {
     }
     const { sunI, ambI } = sampleSky(sky.t);
 
+    // storm haze: fog thickens and goes sand-coloured as the wall closes in
+    const stormTarget = telemetry.storm ? Math.min(1, Math.max(0, 1 - telemetry.storm.dist / 500)) : 0;
+    stormFog += (stormTarget - stormFog) * Math.min(1, 2.5 * dt);
+    if (stormFog > 0.003) {
+      _fog.lerp(_sandHaze, stormFog * 0.75);
+      _horizon.lerp(_sandHaze, stormFog * 0.6);
+    }
+
     // background + fog
     _bg.copy(_skyTop).lerp(_horizon, 0.35);
     scene.background = _bg;
     if (!scene.fog) scene.fog = new THREE.FogExp2(_fog.getHex(), 0.0018);
     const fog = scene.fog as THREE.FogExp2;
     fog.color.copy(_fog);
-    fog.density = 0.0013 + nightFactor() * 0.0009;
+    fog.density = 0.0013 + nightFactor() * 0.0009 + stormFog * 0.0042;
 
     if (sun.current) {
       // sun circles the world; snapped to the player so shadows stay crisp

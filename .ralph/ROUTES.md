@@ -72,9 +72,23 @@ Registry: `src/world/registry.ts`. Colliders are fixed AABBs the bike bumps off.
 }
 ```
 
-Objective runtime types implemented so far: `pickup`, `dropoff`, `goto`, `collect`
-(spawns `count` items near anchor), `race` (checkpoint list via `targets` array). Others
-(`escort`, `chase`, `scout`, `storm`) validate at schema level; runtime lands in later iterations.
+### Objective runtime semantics (MissionDirector)
+
+| objective type | `target` | `targets` | runtime |
+| --- | --- | --- | --- |
+| `pickup`/`dropoff`/`deliver`/`goto` | anchor | — | reach the anchor under **SLOW** (20 km/h-ish) — HUD shows a SLOWER hint inside the radius |
+| `collect` | anchor | — | `count` (≥2) pickups spawn scattered 6–28m around the anchor |
+| `race` | — | ≥3 checkpoints | pass the torus gates in order |
+| `scout` | anchor | — | get inside 26m, hold ≤7 km/h to scan for 3.2s (HUD progress) |
+| `escort` | NPC spawn (opt) | ≥2 route anchors | hover-wagon crawls the route at `speed` (def 13 m/s); stay within 95m or fail after a 10s grace ("RETURN TO CONVOY") |
+| `chase` | NPC spawn (opt) | ≥2 route anchors | skiff ping-pongs the route at `speed` (def 21 m/s, rubber-banded); get within 15m to catch |
+| `storm` | shelter anchor | — | a sand wall spawns 460m behind you and hunts you at 23–32 m/s with fog/wind/screen tint; reach the shelter (no slow gate) before the face crosses you |
+
+Fragile cargo: `cargo.fragile` starts a cargo-integrity bar (HUD); collisions above the
+shield soak damage it; at 0% the run fails; payout scales `0.35 + 0.65 × integrity`.
+Failed runs show a retry banner (`missionFailed { id, reason }` → "Retry the run").
+Chapter progression is derived: a chapter completes when all its content-present story
+missions are done (`src/missions/chapters.ts`); `save.chaptersSeen` gates the intro cards.
 
 ## Character schema — `src/content/characters/<id>.json`
 

@@ -1,15 +1,15 @@
 /**
  * HUD — reads mut telemetry at ~10Hz into local state. Speed, boost, compass,
- * minimap, mission tracker, waypoint marker, interact prompt, radio ticker.
+ * minimap, mission tracker, waypoint marker, interact prompt, radio ticker,
+ * cargo integrity, escort/storm/scout meters and the fail/retry banner.
  */
 import { useEffect, useRef, useState } from 'react';
 import { telemetry } from '../telemetry';
 import { useGameStore, useSaveStore } from '../state/store';
 import { missionsById } from '../missions/library';
-import { REGIONS, getAnchor } from '../world/registry';
+import { REGIONS } from '../world/registry';
 import { WORLD_HALF } from '../world/layout';
-import { pickLine } from '../dialogue/library';
-import { character } from '../dialogue/library';
+import { pickLine, character, characters } from '../dialogue/library';
 import { audio } from '../audio/audio';
 
 const COMPASS_POINTS: [number, string][] = [
@@ -26,6 +26,13 @@ function angDiff(a: number, b: number): number {
   return d;
 }
 
+/** Everyone with radio lines can chime in, weighted by who's alive in content. */
+function radioCast(): string[] {
+  const out: string[] = [];
+  for (const c of characters.values()) if (c.lines.radio?.length) out.push(c.id);
+  return out.length ? out : ['ketch'];
+}
+
 export default function HUD() {
   const [, force] = useState(0);
   const minimap = useRef<HTMLCanvasElement>(null);
@@ -36,6 +43,7 @@ export default function HUD() {
   const objectiveCount = useGameStore((s) => s.objectiveCount);
   const timeLeft = useGameStore((s) => s.timeLeft);
   const missionFailed = useGameStore((s) => s.missionFailed);
+  const cargoIntegrity = useGameStore((s) => s.cargoIntegrity);
   const radioLine = useGameStore((s) => s.radioLine);
   const mode = useGameStore((s) => s.mode);
 
@@ -51,35 +59,28 @@ export default function HUD() {
   // ambient radio chatter while riding (subtitles are always on)
   useEffect(() => {
     if (mode !== 'riding') return;
+    const cast = radioCast();
     const id = window.setInterval(() => {
       const g = useGameStore.getState();
       if (g.mode !== 'riding' || g.radioLine || Math.random() > 0.3) return;
-      const cast = telemetry.interact ? 'ketch' : ['ketch', 'tamsin-cho', 'ketch'][Math.floor(Math.random() * 3)];
-      const line = pickLine(cast, 'radio');
+      const who = cast[Math.floor(Math.random() * cast.length)];
+      const line = pickLine(who, 'radio');
       if (line) {
-        g.say(cast, line);
+        g.say(who, line);
         audio.radioBlip();
       }
     }, 14000);
     return () => window.clearInterval(id);
   }, [mode]);
 
-  // clear stale mission-fail banner
-  useEffect(() => {
-    if (!missionFailed) return;
-    const t = window.setTimeout(() => useGameStore.getState().setMode('riding'), 100);
-    return () => window.clearTimeout(t);
-  }, [missionFailed]);
-
   const mission = activeMissionId ? missionsById.get(activeMissionId) : null;
   const objective = mission?.objectives[objectiveIndex];
-  const objectiveRef = objective?.type === 'race' ? objective.targets?.[objectiveCount] : objective?.target;
-  const targetAnchor = objectiveRef ? getAnchor(objectiveRef) : null;
-  const targetDist = targetAnchor ? Math.hypot(targetAnchor.x - telemetry.x, targetAnchor.z - telemetry.z) : null;
-  const waypointBearing = targetAnchor ? Math.atan2(targetAnchor.x - telemetry.x, -(targetAnchor.z - telemetry.z)) : null;
+  const objPoint = mission ? telemetry.objective : null;
+  const targetDist = objPoint ? Math.hypot(objPoint.x - telemetry.x, objPoint.z - telemetry.z) : null;
+  const waypointBearing = objPoint ? Math.atan2(objPoint.x - telemetry.x, -(objPoint.z - telemetry.z)) : null;
 
   const kmh = Math.round(telemetry.speed * 3.4);
-  const showMarker = mission && targetAnchor && !telemetry.marker.behind;
+  const showMarker = mission && objPoint && !telemetry.marker.behind;
 
   return (
     <div className="hud" aria-hidden={mode !== 'riding'}>
@@ -120,11 +121,70 @@ export default function HUD() {
           </div>
           {targetDist !== null && <div className="hud-mission-dist">{Math.round(targetDist)} m</div>}
           {timeLeft !== null && <div className={`hud-mission-time ${timeLeft < 15 ? 'urgent' : ''}`}>{Math.ceil(timeLeft)}s</div>}
+
+          {/* fragile cargo */}
+          {cargoIntegrity !== null && (
+            <div className="hud-cargo" aria-label={`Cargo integrity ${Math.round(cargoIntegrity * 100)} percent`}>
+              <span className="hud-cargo-label">◻ {mission.cargo?.label ?? 'fragile cargo'}</span>
+              <div className={`hud-cargo-bar ${cargoIntegrity < 0.35 ? 'low' : ''}`}>
+                <div className="hud-cargo-fill" style={{ width: `${cargoIntegrity * 100}%` }} />
+              </div>
+            </div>
+          )}
+
+          {/* escort range meter */}
+          {telemetry.escort && (
+            <div className={`hud-escort ${telemetry.escort.out > 0 ? 'warn' : ''}`}>
+              {telemetry.escort.out > 0
+                ? `⟲ RETURN TO CONVOY — ${Math.max(0, Math.ceil((1 - telemetry.escort.out) * 10))}s`
+                : `convoy ${Math.round(telemetry.escort.dist)} m`}
+            </div>
+          )}
+
+          {/* scout scan progress */}
+          {telemetry.scout && telemetry.scout.progress > 0 && (
+            <div className="hud-scout">
+              SCANNING <span className="hud-scout-bar"><span className="hud-scout-fill" style={{ width: `${telemetry.scout.progress * 100}%` }} /></span>
+            </div>
+          )}
+
+          {/* storm proximity */}
+          {telemetry.storm && (
+            <div className={`hud-storm ${telemetry.storm.dist < 200 ? 'urgent' : ''}`}>
+              ▲ STORM WALL {Math.max(0, Math.round(telemetry.storm.dist))} m
+            </div>
+          )}
         </div>
       )}
 
-      {/* fail banner */}
-      {missionFailed && <div className="hud-fail panel">{missionFailed}</div>}
+      {/* storm screen tint */}
+      {telemetry.storm && (
+        <div
+          className="hud-storm-tint"
+          style={{ opacity: Math.min(0.55, Math.max(0, 1 - telemetry.storm.dist / 380) * 0.55) }}
+        />
+      )}
+
+      {/* fail banner with retry */}
+      {missionFailed && (
+        <div className="hud-fail panel">
+          <div className="hud-fail-reason">{missionFailed.reason}</div>
+          <div className="hud-fail-actions">
+            <button
+              className="btn primary small"
+              onClick={() => { audio.blip(660, 0.07); useGameStore.getState().retryFailed(); }}
+            >
+              Retry the run
+            </button>
+            <button
+              className="btn small"
+              onClick={() => { audio.blip(330, 0.07); useGameStore.getState().dismissFail(); }}
+            >
+              Let it go
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* waypoint marker (projected) */}
       {showMarker && (
@@ -136,6 +196,11 @@ export default function HUD() {
           ◆
           {targetDist !== null && <span className="hud-marker-dist">{Math.round(targetDist)}m</span>}
         </div>
+      )}
+
+      {/* slow-down hint inside capture radius */}
+      {telemetry.slowHint && mode === 'riding' && (
+        <div className="hud-slow panel">◆ SLOWER — ease off to make the hand-off</div>
       )}
 
       {/* interact prompt */}
@@ -201,18 +266,41 @@ function drawMinimap(canvas: HTMLCanvasElement | null): void {
     ctx.stroke();
   }
 
-  // waypoint
-  const g = useGameStore.getState();
-  const mission = g.activeMissionId ? missionsById.get(g.activeMissionId) : null;
-  const obj = mission?.objectives[g.objectiveIndex];
-  const ref = obj?.type === 'race' ? obj.targets?.[g.objectiveCount] : obj?.target;
-  const anchor = ref ? getAnchor(ref) : null;
-  if (anchor) {
+  // storm wall (danger wedge)
+  if (telemetry.storm) {
+    ctx.beginPath();
+    ctx.arc(px(telemetry.storm.x), pz(telemetry.storm.z), telemetry.storm.r * scale, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(228, 87, 46, 0.28)';
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(228, 87, 46, 0.8)';
+    ctx.stroke();
+  }
+
+  // waypoint (canonical — follows moving targets)
+  if (telemetry.objective && useGameStore.getState().activeMissionId) {
     ctx.fillStyle = '#FFB454';
     ctx.save();
-    ctx.translate(px(anchor.x), pz(anchor.z));
+    ctx.translate(px(telemetry.objective.x), pz(telemetry.objective.z));
     ctx.rotate(Math.PI / 4);
     ctx.fillRect(-3.4, -3.4, 6.8, 6.8);
+    ctx.restore();
+  }
+
+  // escort convoy (teal square) / chase target (rust triangle)
+  if (telemetry.convoy) {
+    ctx.fillStyle = '#57C4B8';
+    ctx.fillRect(px(telemetry.convoy.x) - 2.6, pz(telemetry.convoy.z) - 2.6, 5.2, 5.2);
+  }
+  if (telemetry.chase) {
+    ctx.fillStyle = '#E4572E';
+    ctx.save();
+    ctx.translate(px(telemetry.chase.x), pz(telemetry.chase.z));
+    ctx.beginPath();
+    ctx.moveTo(0, -4.4);
+    ctx.lineTo(3.6, 3.2);
+    ctx.lineTo(-3.6, 3.2);
+    ctx.closePath();
+    ctx.fill();
     ctx.restore();
   }
 

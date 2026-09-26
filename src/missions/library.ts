@@ -10,9 +10,11 @@ export type MissionType = 'deliver' | 'timed' | 'fragile' | 'escort' | 'chase' |
 
 export interface Objective {
   type: 'pickup' | 'dropoff' | 'goto' | 'collect' | 'race' | 'escort' | 'chase' | 'scout' | 'storm' | 'deliver';
-  target?: string;          // "region:anchor"
-  targets?: string[];       // race checkpoints
+  target?: string;          // "region:anchor" — spawn point for escort/chase NPCs, shelter for storm
+  targets?: string[];       // race checkpoints / escort & chase route (ordered)
   count?: number;           // collect N
+  /** NPC ground speed m/s (escort default 13, chase default 21). */
+  speed?: number;
   label?: string;
 }
 
@@ -49,4 +51,37 @@ export function availableMissions(done: string[], flags: string[], rep: Record<F
     if (req?.rep && Object.entries(req.rep).some(([f, n]) => rep[f as Faction] < (n ?? 0))) return false;
     return true;
   });
+}
+
+export interface LockedMission {
+  mission: Mission;
+  reasons: string[];
+}
+
+const FACTION_LABEL: Record<Faction, string> = { guild: 'Salt Guild', choir: 'Choir', reclaimers: 'Reclaimers' };
+
+/** Missions the player can see on the board but not yet take, with readable reasons. */
+export function lockedMissions(done: string[], flags: string[], rep: Record<Faction, number>, activeId: string | null): LockedMission[] {
+  const flagSet = new Set(flags);
+  const out: LockedMission[] = [];
+  for (const m of missions) {
+    if (done.includes(m.id) || m.id === activeId) continue;
+    const reasons: string[] = [];
+    for (const f of m.requires?.flags ?? []) {
+      if (flagSet.has(f)) continue;
+      if (f.endsWith('.done')) {
+        const other = missionsById.get(f.slice(0, -5));
+        reasons.push(other ? `Complete “${other.title}” first` : 'Progress the story first');
+      } else {
+        reasons.push('Progress the story first');
+      }
+    }
+    for (const [fac, need] of Object.entries(m.requires?.rep ?? {})) {
+      if ((rep[fac as Faction] ?? 0) < (need ?? 0)) {
+        reasons.push(`${FACTION_LABEL[fac as Faction] ?? fac} reputation ${need}+`);
+      }
+    }
+    if (reasons.length) out.push({ mission: m, reasons });
+  }
+  return out;
 }

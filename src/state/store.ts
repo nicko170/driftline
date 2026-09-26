@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { missionsById } from '../missions/library';
 
 export type Quality = 'low' | 'medium' | 'high';
 export type Faction = 'guild' | 'choir' | 'reclaimers';
@@ -36,6 +37,8 @@ interface SaveState {
   flags: string[];
   codex: string[];
   missionsDone: string[];
+  /** Story chapters whose intro card has been shown. */
+  chaptersSeen: number[];
   settings: Settings;
   hasSave: boolean;
 
@@ -46,6 +49,7 @@ interface SaveState {
   completeMission: (id: string, r: MissionRewards) => void;
   purchase: (key: keyof Omit<Upgrades, 'paint'>, cost: number) => void;
   setPaint: (hex: string) => void;
+  markChapterSeen: (n: number) => void;
   updateSettings: (s: Partial<Settings>) => void;
   newGame: () => void;
 }
@@ -66,6 +70,7 @@ const initialProgress = {
   flags: [] as string[],
   codex: ['glass-desert-field-guide'],
   missionsDone: [] as string[],
+  chaptersSeen: [] as number[],
 };
 
 export const useSaveStore = create<SaveState>()(
@@ -116,6 +121,10 @@ export const useSaveStore = create<SaveState>()(
         });
       },
       setPaint: (hex) => set({ upgrades: { ...get().upgrades, paint: hex }, hasSave: true }),
+      markChapterSeen: (n) => {
+        if (get().chaptersSeen.includes(n)) return;
+        set({ chaptersSeen: [...get().chaptersSeen, n], hasSave: true });
+      },
       updateSettings: (patch) => set({ settings: { ...get().settings, ...patch } }),
       newGame: () => set({ ...initialProgress, flags: [], codex: ['glass-desert-field-guide'], missionsDone: [], hasSave: true }),
     }),
@@ -132,6 +141,7 @@ export const useSaveStore = create<SaveState>()(
         flags: s.flags,
         codex: s.codex,
         missionsDone: s.missionsDone,
+        chaptersSeen: s.chaptersSeen,
         settings: s.settings,
         hasSave: s.hasSave,
       }),
@@ -162,7 +172,10 @@ interface GameState {
   /** collect objective progress / race checkpoint index */
   objectiveCount: number;
   timeLeft: number | null;
-  missionFailed: string | null;
+  /** Set after a failed run — keeps the mission id so the player can retry. */
+  missionFailed: { id: string; reason: string } | null;
+  /** 0..1 while a fragile-cargo mission is active, else null. */
+  cargoIntegrity: number | null;
   dialogue: DialogueLine[] | null;
   dialogueChoices: DialogueChoice | null;
   radioLine: { who: string; text: string; t: number } | null;
@@ -174,7 +187,11 @@ interface GameState {
   setObjectiveCount: (n: number) => void;
   tickTimer: (dt: number) => void;
   failMission: (reason: string) => void;
+  retryFailed: () => void;
+  dismissFail: () => void;
   clearMission: () => void;
+  setCargoIntegrity: (v: number | null) => void;
+  damageCargo: (dmg: number) => void;
   openDialogue: (lines: DialogueLine[], choices?: DialogueChoice) => void;
   closeDialogue: () => void;
   say: (who: string, text: string) => void;
@@ -188,6 +205,7 @@ export const useGameStore = create<GameState>()((set, get) => ({
   objectiveCount: 0,
   timeLeft: null,
   missionFailed: null,
+  cargoIntegrity: null,
   dialogue: null,
   dialogueChoices: null,
   radioLine: null,
@@ -201,6 +219,7 @@ export const useGameStore = create<GameState>()((set, get) => ({
       objectiveCount: 0,
       timeLeft: timeLimit ?? null,
       missionFailed: null,
+      cargoIntegrity: null,
     }),
   advanceObjective: () => set({ objectiveIndex: get().objectiveIndex + 1, objectiveCount: 0 }),
   setObjectiveCount: (objectiveCount) => set({ objectiveCount }),
@@ -210,8 +229,30 @@ export const useGameStore = create<GameState>()((set, get) => ({
     set({ timeLeft: Math.max(0, t - dt) });
   },
   failMission: (reason) =>
-    set({ missionFailed: reason, activeMissionId: null, objectiveIndex: 0, objectiveCount: 0, timeLeft: null }),
-  clearMission: () => set({ activeMissionId: null, objectiveIndex: 0, objectiveCount: 0, timeLeft: null }),
+    set((s) => ({
+      missionFailed: s.activeMissionId ? { id: s.activeMissionId, reason } : { id: get().missionFailed?.id ?? '', reason },
+      activeMissionId: null,
+      objectiveIndex: 0,
+      objectiveCount: 0,
+      timeLeft: null,
+      cargoIntegrity: null,
+      mode: 'riding',
+    })),
+  retryFailed: () => {
+    const f = get().missionFailed;
+    if (!f?.id) return;
+    const m = missionsById.get(f.id);
+    set({ missionFailed: null });
+    get().startMission(f.id, m?.timeLimit);
+  },
+  dismissFail: () => set({ missionFailed: null }),
+  clearMission: () => set({ activeMissionId: null, objectiveIndex: 0, objectiveCount: 0, timeLeft: null, cargoIntegrity: null }),
+  setCargoIntegrity: (cargoIntegrity) => set({ cargoIntegrity }),
+  damageCargo: (dmg) => {
+    const cur = get().cargoIntegrity;
+    if (cur === null) return;
+    set({ cargoIntegrity: Math.max(0, cur - dmg) });
+  },
   openDialogue: (dialogue, dialogueChoices) => set({ dialogue, dialogueChoices: dialogueChoices ?? null, mode: 'dialogue' }),
   closeDialogue: () => set({ dialogue: null, dialogueChoices: null, mode: 'riding' }),
   say: (who, text) => set({ radioLine: { who, text, t: Date.now() } }),
