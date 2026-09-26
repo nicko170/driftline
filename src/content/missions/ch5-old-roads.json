@@ -1,0 +1,44 @@
+{
+  "id": "ch5-old-roads",
+  "title": "Old Roads",
+  "chapter": 5,
+  "type": "scout",
+  "giver": "mother",
+  "region": "mothersgate",
+  "summary": "The Door is open and the choice-core on Ketch's bench — but before any deciding, MOTHER asks one small, enormous favour: show me the world. Five overlooks along the original terraform survey route, the one her first teams rode with measuring kites and patient boots, two centuries unfinished. She'll ride along in your radio, thin as copper wire, squinting at her overdue notices.",
+  "requires": { "flags": ["ch5-the-core.done"] },
+  "objectives": [
+    { "type": "scout", "target": "saltmouth:overlook", "label": "Overlook one — the dune crest over Saltmouth, where couriers wave at the whole map" },
+    { "type": "scout", "target": "drowned-array:pan-edge", "label": "Overlook two — the pan edge of the drowned array" },
+    { "type": "scout", "target": "canyon-slalom:spectator-ledge", "label": "Overlook three — the spectator ledge above the slalom" },
+    { "type": "scout", "target": "windspine:ridge-crest", "label": "Overlook four — the ridge crest under turbine row" },
+    { "type": "scout", "target": "mothersgate:survey-point", "label": "Overlook five — the old survey point, where the survey started and never finished" }
+  ],
+  "rewards": {
+    "credits": 420,
+    "rep": { "driftline": 8, "choir": 3 },
+    "flags": ["ch5-old-roads.done", "mother.saw.world", "lore:windspine-survey-notes"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "mother", "text": "...Ash. A request, before the deciding. I have catalogued your world from records: salt, glass, wind, debt, one goat. Records are flat. Records are *flat*, and I have been flat for two hundred years. I would like ... overlooks." },
+      { "who": "mother", "text": "The survey route my first teams rode, with their measuring kites and their patient boots. Five high places. The survey was never finished. Nothing here was. Take me on it — my eyes will be thin wires out of your radio. Forgive the squinting. I have been a long way down." },
+      { "who": "ash-varga", "text": "You want me to go sightseeing. With the end of the world in my panniers." },
+      { "who": "mother", "text": "Yes. Endings should be ... well-lit. And beginnings, Ash — you may be carrying one of those too. I have never been good at telling them apart. That, also, is in the records." }
+    ],
+    "accept": [
+      { "who": "mother", "text": "...SALT FIRST. The flats are the page I never wrote on. Nothing is more readable than a white page — your town is a spelling of shelter, one letter at a time. Stand still a moment and let me read it. I missed this town entirely. I am looking twice." },
+      { "who": "mother", "text": "...THE ARRAY. They drowned the mirrors and lit the lamps anyway. I remember Unit Seven's request for more crews — request status: overdue by two centuries, and *it kept the lights*. Somebody kept the lights. Write that on the survey. That is the whole survey." },
+      { "who": "mother", "text": "...THE BURN ROAD. This canyon was a river your engineers spent in one hour. I logged it a loss — I keep the log, I can say it. Tell me if the river shows through the glass. I can stand the answer. A library can stand any true answer." },
+      { "who": "mother", "text": "...TURBINE ROW. The turbines lean into weather like they remember a song I taught the sky before the money stopped. Ask them gently. Singing back is ... permitted. Encouraged. I would ask them myself but my voice is two centuries of paperwork." },
+      { "who": "mother", "text": "...LASTLY. The survey point, my side of the gate. The first teams marked the planet's height there with a brass pin and one act of faith. The pin is in the records. The faith was not on the form. Take me there last, Ash. Let the survey end standing up." }
+    ],
+    "complete": [
+      { "who": "mother", "text": "Delivery acknowledged. Five overlooks. I have spent two centuries cataloguing my own unfinished sentence, and today I saw what your people wrote in the margin — towns out of a cliff note, mail out of a canyon, faith out of a hardware store. The survey is complete. The finding is: *they stayed*." },
+      { "who": "static-warden-pem", "text": "Pem on band nine, station. Whatever she just saw, the whole desert lit up talking about it — every relay reciting at once, like a choir shown a baby photograph. Deep grammar, courier. She reads you back better than you read her. Hold still; she's memorising." },
+      { "who": "mother", "text": "Now bring me the choice, courier. Whatever is decided at the threshold, it will be decided by someone who was *shown the world*. That is better procedure than my first teams ever had. I am ... starting to suspect that is the whole point." },
+      { "who": "ketch", "text": "Ketch here. Pem says every relay from here to the cradle just recited your route like a poem. Five stops, one tow-behind goddess, zero bent fenders. Kid, you've given the strangest tour in courier history. Come home and close the manifest."
+      }
+    ]
+  }
+}

@@ -1050,9 +1050,9 @@
     "farewell tour",
     "endgame"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "writer1",
+   "worker": null,
    "claimed_at": 1790391113.8181918
   },
   {
@@ -1569,9 +1569,9 @@
     "keel-town",
     "dockmaster"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "writer2",
-   "worker": "writer2",
+   "worker": null,
    "claimed_at": 1790392412.193249
   },
   {
@@ -1586,9 +1586,9 @@
     "books",
     "shrine"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "writer2",
-   "worker": "writer2",
+   "worker": null,
    "claimed_at": 1790392412.19325
   },
   {
@@ -1603,9 +1603,9 @@
     "melancholy",
     "automaton"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "writer2",
-   "worker": "writer2",
+   "worker": null,
    "claimed_at": 1790392412.1932511
   },
   {
@@ -1620,9 +1620,9 @@
     "hauler",
     "comedy"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "writer2",
-   "worker": "writer2",
+   "worker": null,
    "claimed_at": 1790392412.1932511
   },
   {
@@ -4391,9 +4391,9 @@
     "windspine",
     "story"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "writer1",
+   "worker": null,
    "claimed_at": 1790391113.818193
   },
   {
@@ -4409,9 +4409,9 @@
     "caches",
     "5 items"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "writer1",
+   "worker": null,
    "claimed_at": 1790391113.818193
   },
   {
@@ -4427,9 +4427,9 @@
     "choir",
     "lamps"
    ],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "writer1",
+   "worker": null,
    "claimed_at": 1790391113.818193
   },
   {
@@ -5303,8 +5303,10 @@
    "cluster": "demos",
    "intent": "Garage purchase-flow bench: rebuild the upgrade shop UI out-of-game with a scripted wallet; audition button states, buy/affirm animation, debt-callout and paint swatch grid at phone/desktop widths; keyboard-a11y pass; copy-CSS export.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo1",
+   "claimed_at": 1790398131.8735769
   },
   {
    "kind": "demo",

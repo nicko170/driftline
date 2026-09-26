@@ -1,0 +1,42 @@
+{
+  "id": "ch3-first-wall-run",
+  "title": "The Glass Road Closes",
+  "chapter": 3,
+  "type": "storm",
+  "giver": "shrine-keeper-toll",
+  "region": "glassroad",
+  "summary": "The season's first wall ran the Windspine yesterday — and this morning it learned the canyon. It's standing up east of the Glass Road with the shrine lamps gone teal, and the Guild's new position is 'seasonal review', filed from very far away. Somebody has to close the road in person: keys from the south gate, horn at the mid-span shrine, and then outrun what's coming up the canyon to the temple-step shelter before the wall books the whole span.",
+  "requires": { "flags": ["ch3-first-wall.done"] },
+  "objectives": [
+    { "type": "pickup", "target": "glassroad:gate-south", "label": "Take the season keys and the road ledger from the south gate post" },
+    { "type": "goto", "target": "glassroad:mid-span", "label": "Sound the closure horn at Toll's shrine — let the whole span hear the road is done" },
+    { "type": "storm", "target": "choirhollow:temple-steps", "label": "THE WALL IS IN THE CANYON — run it to the temple-step shelter" },
+    { "type": "dropoff", "target": "choirhollow:temple-steps", "label": "Hand the season keys to Cantor Ilex — the Choir holds the road until the wall passes" }
+  ],
+  "rewards": {
+    "credits": 340,
+    "rep": { "driftline": 6, "choir": 4, "guild": 2 },
+    "flags": ["ch3-first-wall-run.done", "glassroad.closed", "lore:storm-gauge-journal"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "shrine-keeper-toll", "text": "Couriers, on the crossing band. Yesterday the season's beast ran the spine and everyone said well, that's weather. This morning it is standing in *my* canyon — east wall up, and my lamps have gone teal, and the lamps know before the Guild does. They always do. I didn't teach them. Lamps learn." },
+      { "who": "shrine-keeper-toll", "text": "The Guild's statement arrived by fast rider who would not stop: the Glass Road is under — I'll quote — 'seasonal review'. The canyon's statement is much louder. So the road closes today, in person, properly, with witnesses: season keys from the south gate, the horn sounded here, and the keys walked to the temple steps before the wall books the whole span." },
+      { "who": "shrine-keeper-toll", "text": "I would carry them myself, but I am thirty-one pages into chapter twenty-two and the vicar has wait— no. That isn't it. I would carry them myself, and my knees filed a dissenting report." },
+      { "who": "ash-varga", "text": "You're asking me to take the Glass Road off the map on its own behalf." },
+      { "who": "shrine-keeper-toll", "text": "I am. The slow friend would rather be closed by somebody who reads on it. And Ash — when the horn sounds, don't linger for the echo. The echo today will be *wearing sand*." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Ketch here. Toll's right and the gauge agrees — the wall's swung round and it's walking up the canyon like it owns shares. Keys, horn, run. When a storm's behind you in a canyon, don't steer for the gap you can see; steer for the gap that's *coming*. Canyons make exits, kid. Trust the architecture." },
+      { "who": "static-warden-pem", "text": "Pem on band nine. Your wall recited the whole way down the spine yesterday, station, and today it is counting bridges. One bridge. One. It is being very thorough. Ride, courier, and give it nothing worth an item line." },
+      { "who": "cantor-ilex", "text": "We hear you, courier. The temple steps are lit ahead of schedule and the shelter is open — we heard the road closing from here. Sound travels, and so does trouble; you will travel faster. The Choir will hold the keys warmer than the Guild ever held the road." },
+      { "who": "shrine-keeper-toll", "text": "One last thing, courier. The echo runs ahead of storms — it's a coward and good at it. If you lose the run of the canyon, follow your own voice home. Mine will be holding the lamps. Teal means go. Amber means *go faster*." }
+    ],
+    "complete": [
+      { "who": "cantor-ilex", "text": "We hear you, Ash — and we heard you coming, because the canyon was using yesterday's echo to knock, which is how storms ask to be let in. Keys received. The road is closed by hand, witnessed, sung over. It reopens when the wall forgets why it came. Walls do eventually. Roads remember longer." },
+      { "who": "tamsin-cho", "text": "Factor Cho, official band: log the Glass Road closed for the season, freight claims to the window, window is closed, appeals to the weather desk, desk is a goat. …Off the record, Varga: you rang that horn on the radio and every ledgerman in Saltmouth went quiet. The Guild doesn't get ceremony. That was the closest we've come." },
+      { "who": "shrine-keeper-toll", "text": "The wall took the north end of the span like a bookmark, courier — page stays open, story continues next season. My lamps are back to amber and the slow friend says — I'm quoting — *good riddance*, in your exact voice. It memorised you. That's either an honour or a haunting. On this road, it's the same receipt." },
+      { "who": "ketch", "text": "Gate's shut, keys are sung in, and the season's properly open now, kid — walls plural. Rill's still out there on the north loop and her silence is starting to read like handwriting. Rest the bike. Then we go studying her route." }
+    ]
+  }
+}
