@@ -4775,10 +4775,11 @@
     "decibel",
     "vespers"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405910.6095722
+   "claimed_at": 1790405910.6095722,
+   "done_at": "2026-09-26T17:02:33"
   },
   {
    "kind": "article",
@@ -4793,10 +4794,11 @@
     "keys",
     "solder"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405910.6095722
+   "claimed_at": 1790405910.6095722,
+   "done_at": "2026-09-26T17:02:33"
   },
   {
    "kind": "article",
@@ -5002,10 +5004,11 @@
     "flats",
     "heat"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790405722.559972
+   "claimed_at": 1790405722.559972,
+   "done_at": "2026-09-26T17:02:41"
   },
   {
    "kind": "article",
@@ -5019,10 +5022,11 @@
     "roadside",
     "tract"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790405722.559974
+   "claimed_at": 1790405722.559974,
+   "done_at": "2026-09-26T17:02:42"
   },
   {
    "kind": "article",
@@ -5037,10 +5041,11 @@
     "record",
     "bike"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790405722.559974
+   "claimed_at": 1790405722.559974,
+   "done_at": "2026-09-26T17:02:43"
   },
   {
    "kind": "article",
@@ -5054,10 +5059,11 @@
     "standard",
     "comedy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790405722.559975
+   "claimed_at": 1790405722.559975,
+   "done_at": "2026-09-26T17:02:51"
   },
   {
    "kind": "article",
@@ -5483,8 +5489,10 @@
     "lighting",
     "tuning"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo2",
+   "claimed_at": 1790406145.4800582
   },
   {
    "kind": "demo",

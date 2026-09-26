@@ -1,0 +1,37 @@
+{
+  "id": "side-rain-gauge-run",
+  "title": "Cartridges for the Desk",
+  "chapter": "side",
+  "type": "timed",
+  "giver": "surveyor-kest",
+  "region": "windspine",
+  "summary": "The storm-gauge on Windspine's far ridge logs its season onto brass cartridges, and the Guild weather desk wants them in Saltmouth before Pemmy's desk meeting — which is to say before the goat reaches the part of the agenda marked STORMS. Kest will count you down on the band, deadpan, in units.",
+  "timeLimit": 170,
+  "objectives": [
+    { "type": "pickup", "target": "windspine:storm-gauge", "label": "Pull the season cartridges from the storm-gauge" },
+    { "type": "dropoff", "target": "saltmouth:exchange", "label": "Deliver them to the Guild weather desk before the meeting closes" }
+  ],
+  "rewards": {
+    "credits": 210,
+    "rep": { "guild": 5 },
+    "flags": ["side-rain-gauge-run.done", "lore:storm-gauge-keepers-log"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "surveyor-kest", "text": "Posting. The far storm-gauge terminates its season tonight. Its data lives on brass cartridges — analogue, hurrah, storm-proof, courier-shaped. Requirement: cartridges on the Saltmouth weather desk before the desk's quarterly meeting moves to the item STORMS." },
+      { "who": "surveyor-kest", "text": "Context. The weather desk's senior meteorologist is a goat. The agenda is a pile of cards the goat knocks over in order. When STORMS falls, the meeting closes and the desk files 'no data' for the whole ridge. My reports say otherwise. My reports require the cartridges." },
+      { "who": "ash-varga", "text": "Deadline pressure from the far ridge to the exchange. How long have I got when the goat reaches STORMS?" },
+      { "who": "surveyor-kest", "text": "One hundred and seventy seconds from cartridge extraction, margin zero, unit: rides-you-have-legendarily-got. Noted." }
+    ],
+    "accept": [
+      { "who": "surveyor-kest", "text": "Affirmative. I'll count you down on the band. Do not expect encouragement. Expect accuracy." },
+      { "who": "pemmy", "text": "Bleeh-eh-eh-eh. [The senior meteorologist acknowledges the courier's deployment and moves that the agenda be adjourned to the snack item first.] Bleh. [The motion fails. The agenda stands. STORMS is coming down the pile at pace.]" },
+      { "who": "ketch", "text": "Storm-gauge to the desk in under three minutes, kid — straight line off the notch, boost the flats, brake for the gate-corner you always take too hot. Flat salt." }
+    ],
+    "complete": [
+      { "who": "surveyor-kest", "text": "Received. Margin: eleven seconds. The desk has entered the season into record — official forecast for the ridge is now 'documented', which is the highest grade the desk issues and the first since the Wall year." },
+      { "who": "pemmy", "text": "Bleh-eh. Bleh bleh. [The senior meteorologist has reviewed the cartridges and pronounces them CRUNCHY, which the factor translates as 'in order'. The meeting stands adjourned. The agenda pile has been eaten, per the closing item.]" },
+      { "who": "surveyor-kest", "text": "Addendum, courier. The gauge-keeper's log says the gauge struck one extra pulse this season — at night, aimed at nothing. Instrument error, statistically. I logged it anyway. Units first. Wonderings second. Noted, both." }
+    ]
+  }
+}

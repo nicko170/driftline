@@ -1,0 +1,38 @@
+{
+  "id": "side-crane-keys",
+  "title": "The Crane Keys",
+  "chapter": "side",
+  "type": "fragile",
+  "giver": "solder",
+  "region": "cinderflats",
+  "summary": "The gantry crane at the Crusher hasn't lifted in nine days because its ignition keys — and the little glass timing die that wakes the winch brain — turned up in Saltmouth, in Ketch's garage, unexplained. Solder will accept their return with gratitude and zero explanation. The timing die is the fragile part; the crane is the patient part.",
+  "cargo": { "fragile": true, "label": "the crane keys and timing die" },
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:garage", "label": "Collect the key ring and timing die from Ketch's bench" },
+    { "type": "dropoff", "target": "cinderflats:crusher", "label": "Deliver them to the gantry crane at the Crusher, die intact" }
+  ],
+  "rewards": {
+    "credits": 175,
+    "rep": { "reclaimers": 6 },
+    "flags": ["side-crane-keys.done", "lore:cinderflats-crusher-operator-manual"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "solder", "text": "Okay. Situation. The gantry crane — the big honest one, the one that lifts whole skiffs like it's saying grace — has been dark for nine days because its keys were NOT IN THE YARD, and I have checked the yard forty times, and apologised to the hook-block twice, which the hook-block did not earn." },
+      { "who": "solder", "text": "The keys turned up in Saltmouth. In Ketch's garage. On the good bench. I am not going to explain how, because there IS no how, and any how I make up would be a liar's engineering, and I don't bolt liars into the day." },
+      { "who": "ketch", "text": "Ketch speaking, and before anyone asks: they were hanging on MY spare hook, behind MY kettle, in a town Solder did not visit. I have named the hook Judas. That's all the investigation this garage can underwrite." },
+      { "who": "solder", "text": "The ring has the three keys and the timing die — the die is glass, it's the crane's morning opinion of you, drop it and the winch brain wakes up WRONG — wrong like a liar, courier. Carry it soft." }
+    ],
+    "accept": [
+      { "who": "solder", "text": "Die goes in the felt roll, felt roll goes FLAT, flat goes in imagination and seat of the pants. Feather everything. The crusher road rattles like a bad confession." },
+      { "who": "ketch", "text": "Straight run west on the flats, kid, brake before the yard gate not IN the yard gate. And if the crane says anything when the keys go in — and I am told cranes don't talk — it says thank you. Machines know who carried their keys home." },
+      { "who": "ash-varga", "text": "To be clear: I'm returning keys that teleported to our garage, to a crane, gently, at speed, for a person who has declined to explain anything. A normal Driftline Tuesday." }
+    ],
+    "complete": [
+      { "who": "solder", "text": "She woke up HUMMING. Nine days dark and the first thing the winch brain did was complete its safety checklist TWICE, which is the crane equivalent of stretching. The die's true — you carried it like psalmody." },
+      { "who": "solder", "text": "Between us: I found a note in the hook block. It says 'BORROWED — SORRY', and it's in CHALK. I am not saying who writes in chalk. I am saying the Quicklime Kid requisitioned a CRANE and put it BACK, and that is the politest haunting in yard history." },
+      { "who": "ketch", "text": "Crane's turning over sweet, kid. Heard it from the exchange. Some cargo's keys, some cargo's oil — the desert runs on what couriers carry gentle. Also Judas the hook keeps your verdict pending." },
+      { "who": "solder", "text": "Pay's on the board, plus the operator's manual — original print, my annotations, the good warnings. Read the chapter on the timing die twice. It's the only chapter that's also a lullaby." }
+    ]
+  }
+}

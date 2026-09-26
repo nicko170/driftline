@@ -1,0 +1,38 @@
+{
+  "id": "side-widow-lamp",
+  "title": "Oil for the Widow Lamp",
+  "chapter": "side",
+  "type": "fragile",
+  "giver": "shrine-keeper-toll",
+  "region": "glassroad",
+  "summary": "Shrine-Keeper Toll keeps one lamp on the mid-span lit for someone who never came home, and the lamp is particular about its oil — a sea-blend only Ila at the old pan still renders. Carry the cask down the glassroad unspilt. Toll pays by the candle-hour and haggles entirely in quotations.",
+  "cargo": { "fragile": true, "label": "the widow-lamp oil" },
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:flats-pan", "label": "Collect the sealed oil cask from Ila's stall at the old pan" },
+    { "type": "dropoff", "target": "glassroad:mid-span", "label": "Deliver the oil to Toll at the mid-span shrine, unspilt" }
+  ],
+  "rewards": {
+    "credits": 190,
+    "rep": { "driftline": 5 },
+    "flags": ["side-widow-lamp.done", "lore:glassroad-toll-songs"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "shrine-keeper-toll", "text": "Toll on the span, courier — posting this through the board because the Shrine's manifest column is full of sonnets again. The lamp wants its oil. One lamp of sixty-odd gets its own cask; the slow friend knows which." },
+      { "who": "shrine-keeper-toll", "text": "It's the Widow Lamp. It burns for a rider named Nel who didn't come out of the Wall of the Long Night, and she was salt-stubborn in life, so the lamp inherited it: it takes sea-blend oil or it sulks amber and smokes at me. Ila renders the last of it at the old pan." },
+      { "who": "ash-varga", "text": "Two hundred metres of canyon of glass, a cask of lamp oil, and a deadline of 'before dusk', I take it?" },
+      { "who": "shrine-keeper-toll", "text": "'Before dusk' is a quotation, actually. Bridal canopy of light, etcetera. Just — arrive before the reading, rider. She's part of the reading." }
+    ],
+    "accept": [
+      { "who": "shrine-keeper-toll", "text": "Carry it like a secret. And mind the payout terms: I pay by the candle-hour of oil delivered, and I shall haggle per tradition — my offer stands at, quote, 'a summer's day', unquote. Ila says that's generous. The Guild says it isn't a currency. We're all learning." },
+      { "who": "salt-singer-ila", "text": "The cask's ready, love. Smell it — old ocean, rendered patient. Pour the road nothing; the glass remembers the sea bitter enough already. 'Put not your faith in flat miles', as Toll's books say. I annotated that one. It says *fair* now." },
+      { "who": "ketch", "text": "Ketch here — oil run for Toll's widow lamp. Feather the bumps, kid. Some cargo you carry for the payer. Some you carry for the lamp." }
+    ],
+    "complete": [
+      { "who": "shrine-keeper-toll", "text": "Unspilt. Read the cask with me — ninety candle-hours, against a quoted forty of story-oil. You have beaten literature, courier." },
+      { "who": "shrine-keeper-toll", "text": "She'll burn tonight in sea-light — that's the bluer one. Nel always said the desert owed her an ocean and she'd wait for it on the span. So it waits with her. 'The candles we light are not for the dark, but for the witnesses.' That's mine. Don't tell the books." },
+      { "who": "ash-varga", "text": "Payment counted out in story-oil, Toll? How many candle-hours am I holding?" },
+      { "who": "shrine-keeper-toll", "text": "Ninety. Plus the song the span sings when the lamp's happy, which is tonight's reading gratis, and — final offer — my copy of the toll-songs, annotated, which the slow friend insists you've earned by listening. Deal, quote-slash-unquote?" }
+    ]
+  }
+}

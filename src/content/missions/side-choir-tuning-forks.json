@@ -1,0 +1,37 @@
+{
+  "id": "side-choir-tuning-forks",
+  "title": "A Pocketful of Tuning Forks",
+  "chapter": "side",
+  "type": "collect",
+  "giver": "brother-decibel",
+  "region": "choirhollow",
+  "summary": "Vespers is tonight and four of the listening horns' tuning forks have gone walkabout around the Hollow — Brother Decibel suspects wind, visitors, and one specific child with excellent pitch. Sweep the lamp ring and the horn gallery, return the forks to the temple steps before the singing starts, and do NOT ask about the F-natural.",
+  "objectives": [
+    { "type": "collect", "target": "choirhollow:lamp-ring", "count": 2, "label": "Sweep the lamp ring — two forks gone astray" },
+    { "type": "collect", "target": "choirhollow:listening-horn", "count": 2, "label": "Search the listening-horn gallery — two more forks" },
+    { "type": "dropoff", "target": "choirhollow:temple-steps", "label": "Return the forks to the temple steps before vespers" }
+  ],
+  "rewards": {
+    "credits": 160,
+    "rep": { "choir": 6 },
+    "flags": ["side-choir-tuning-forks.done", "lore:choir-lamp-rituals"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "brother-decibel", "text": "COURIER! — sorry. courier. Vespers is at dusk, the Reply is in FINE VOICE — sorry — and the horns cannot be tuned to a crater on good intentions alone. Four forks are missing from the gallery. FOUR." },
+      { "who": "brother-decibel", "text": "The wind borrows things here, the visitors borrow things here, and there is a CHILD in this congregation whose perfect pitch is matched only by her perfect innocence — but I will say no more, because Little Reverb is listening. She is always listening. It is her WHOLE THING." },
+      { "who": "ash-varga", "text": "Four forks, around the lamp ring and the horn gallery, before dusk. Easy one, surely." },
+      { "who": "brother-decibel", "text": "One fork is an F-natural. It is NOT to be struck near the glassware, the chimes, or the glass ANYTHING. Choir feud. Long story. Both sides were out of tune." }
+    ],
+    "accept": [
+      { "who": "brother-decibel", "text": "Sweep the lamp ring first — the lamps GUIDE — sorry, the lamps guide. Forks like lamplight. Then the horn gallery. Mind the Reply after dusk; it repeats kindness exactly, and I have been KIND to those forks." },
+      { "who": "little-reverb", "text": "I didn't take the forks. I BORROWED the forks. The crater and I were in a DISCUSSION — sorry, Brother Decibel does the sorry thing, I don't — anyway they're where the wind put them and the wind and I are CLOSE." }
+    ],
+    "complete": [
+      { "who": "brother-decibel", "text": "FOUR! — four. A-perfect, every one. Courier, the horns sing tonight in the old temperament — the Reply will answer in KIND, which is to say kindly. You have tuned the evening. THERE'S A LINE FOR THE LEDGER — sorry. Habit." },
+      { "who": "little-reverb", "text": "You found the F-natural! It was under the horn it was SCARED of. Forks get homesick. The crater says you're allowed back. That's most of what it ever says. It's MOSTLY about who's allowed back." },
+      { "who": "ash-varga", "text": "The forks were warm, Decibel. All four. They've been outside for days." },
+      { "who": "brother-decibel", "text": "...Noted, and NOT MY DEPARTMENT — sorry. Sing when you pass the Hollow tonight, courier. The ring keeps whoever keeps the ring." }
+    ]
+  }
+}
