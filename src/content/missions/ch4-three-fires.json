@@ -1,0 +1,47 @@
+{
+  "id": "ch4-three-fires",
+  "title": "Three Fires",
+  "chapter": 4,
+  "type": "deliver",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "The Door has an address now — which means the desert's worst-kept secret is officially for sale. Ogo summons you to Keel Town, Ilex to the temple steps, Pyke to her office. Three fires, three final cases for the gate combination burning a hole in your pannier. Hear them all. Then decide who, if anyone, gets it.",
+  "requires": { "flags": ["ch4-coordinates.done", "door.triangulated"] },
+  "objectives": [
+    { "type": "goto", "target": "skydocks:keel-town", "label": "Hear the Guild's case at Keel Town" },
+    { "type": "goto", "target": "choirhollow:temple-steps", "label": "Hear the Choir's case at the temple steps" },
+    { "type": "goto", "target": "cinderflats:boss-office", "label": "Hear the Reclaimers' case at Pyke's office" }
+  ],
+  "rewards": {
+    "credits": 300,
+    "rep": { "guild": 3, "choir": 3, "reclaimers": 3, "driftline": 5 },
+    "flags": ["ch4-three-fires.done"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "Three sealed postings came in before dawn, all addressed to you, all marked URGENT in three different handwritings. Guild wax, Choir lamp-black, and one that appears to be *welded* shut. The whole desert knows you found the Door, Ash." },
+      { "who": "tamsin-cho", "text": "Advice from the only neutral desk on Kessa-9: hear all three before you answer any. People tell you the most wonderful truths when they think they're bidding against each other." }
+    ],
+    "accept": [
+      { "who": "brinemaster-ogo", "text": "Varga. The Guild's case is arithmetic, nothing more. Two hundred years this desert has been *stable*, and stability is the only dividend that never bounces. Sell us the combination. We will archive the Door so deeply it becomes geology, and your debt becomes a story you tell kindly." },
+      { "who": "cantor-ilex", "text": "Courier. She is knocking from the inside now — the lamps have begun to answer in pairs. Bring us the combination and we will open her cradle like morning. The Choir does not want power, Ash. We want *weather*. Real, falling, forgiven weather." },
+      { "who": "boss-pyke", "text": "Chief. Forget archives and angels — that door is *infrastructure*. My union opens it safe, logs what's behind it, and if there's machines worth waking, we wake them right, with a checklist and a betting pool. Hand the combination to people who respect hinges. Casserole after." },
+      { "who": "ash-varga", "text": "Noted. One wants to vault it, one wants to worship it, one wants to check its wiring. And the creed says crates decide nothing — the courier does. Lucky desert." }
+    ],
+    "complete": [
+      { "who": "tamsin-cho", "text": "The board is whispering, Ash. Whatever you decided at those three fires — the whole desert felt the temperature change when you decided it." },
+      { "who": "ketch", "text": "Ketch here. I won't ask which way you leaned. The creed doesn't ask. But kid — when you knock on two hundred years of sleeping, you don't get to complain about who wakes up." }
+    ],
+    "choices": [
+      {
+        "prompt": "The gate combination sits in your pannier. Who learns it?",
+        "options": [
+          { "text": "Sell it to the Guild — stability, and the debt erased.", "setsFlag": "gate.ally.guild" },
+          { "text": "Give it to the Choir — let her finish the sky.", "setsFlag": "gate.ally.choir" },
+          { "text": "Hand it to the Reclaimers — wake the machines with a checklist.", "setsFlag": "gate.ally.reclaimers" },
+          { "text": "Keep it. The Driftline carries; it doesn't decide.", "setsFlag": "gate.ally.none" }
+        ]
+      }
+    ]
+  }
+}

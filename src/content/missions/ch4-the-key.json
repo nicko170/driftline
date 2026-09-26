@@ -1,0 +1,39 @@
+{
+  "id": "ch4-the-key",
+  "title": "The Key",
+  "chapter": 4,
+  "type": "fragile",
+  "giver": "ketch",
+  "region": "saltmouth",
+  "summary": "Ketch stashed the null crate in the relay cache at the Glassroad's south gate when the factions started circling — and meant it to stay buried. But the Door is found, the combination is spoken for, and the cache is warm to the touch. Fetch the crate, run the whole canyon north, and carry it out past the far glass hills to the gate approach. Storm season has flanks left in it. Ride between them.",
+  "requires": { "flags": ["ch4-three-fires.done"] },
+  "objectives": [
+    { "type": "pickup", "target": "glassroad:gate-south", "label": "Sign for the null crate at the south-gate relay cache" },
+    { "type": "goto", "target": "glassroad:gate-north", "label": "Run the canyon end to end — north gate" },
+    { "type": "dropoff", "target": "mothersgate:approach", "label": "Set the crate down at the gate approach" }
+  ],
+  "cargo": { "fragile": true, "label": "null crate" },
+  "rewards": {
+    "credits": 520,
+    "rep": { "driftline": 10 },
+    "flags": ["ch4-the-key.done", "crate.at-gate"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Time to tell you something, kid. The night the season turned, I took the crate out of Saltmouth and buried it in the relay cache at the canyon's south gate. Guild wax, triple seal, no manifest — oldest trick I know. Felt clever at the time. Since then the cache has been… warm to the touch." },
+      { "who": "ash-varga", "text": "You hid a humming wake-key in a dead relay box and hoped nobody would hear it. Ketch, that is the most Guild thing you have ever done." },
+      { "who": "ketch", "text": "Laugh while you can. Ogo knows I moved something heavy that night, the Choir knows the canyon's singing back, and Pem's been watching the storm gauge recite like a choir stove. Fetch it. Full canyon, north gate, then out past the glass hills. Slow hands, fast bike." },
+      { "who": "ketch", "text": "It's a key, kid. Keys don't like being rattled and they *hate* being dropped, and this one you're carrying on a bike I taught you to drift on. The watch counts every bump." }
+    ],
+    "accept": [
+      { "who": "static-warden-pem", "text": "Station — Pem. The gauge says a wall will comb the badlands east of the canyon today. Flanks, courier, not a head-on — the season is herding. Do not be herded." },
+      { "who": "little-reverb", "text": "Ash? It's Reverb. She's *loud* now. The crate's been humming in its box for months and I can hear it through my own radio with the radio *off*. When you carry it, hum back. She likes that. Everybody likes that." },
+      { "who": "ash-varga", "text": "Copy. South gate cache, full canyon, far hills. If the season wants my flank, it can cartwheel for it." }
+    ],
+    "complete": [
+      { "who": "ketch", "text": "Ketch here. Your dust trail from the water tower looks — kid, it looks like a lit fuse. You've carried the most wanted box on Kessa-9 to the only door it fits, and you didn't even scratch the wax. …Don't tell Tamsin I got emotional. She charges for it." },
+      { "who": "ash-varga", "text": "Crate's down, Ketch. And the hum — it stopped. First time since I signed for it, it's *quiet*. It doesn't need to hum anymore. It's home." },
+      { "who": "static-warden-pem", "text": "Confirmed on every band, courier. The static just went *tidy*. Whatever the season has left in it, it is pulling its own collar straight. Well done. Well done." }
+    ]
+  }
+}

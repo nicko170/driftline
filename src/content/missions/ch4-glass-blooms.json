@@ -1,0 +1,37 @@
+{
+  "id": "ch4-glass-blooms",
+  "title": "Glass Blooms",
+  "chapter": 4,
+  "type": "collect",
+  "giver": "cantor-ilex",
+  "region": "glassroad",
+  "summary": "Since the crate reached the gate, the Glassroad is doing something it hasn't done in two hundred years: blooming. Nodes of chapel glass have opened along the slick mile like flowers after rain — warm, humming, and, the Choir suspects, deliberate. Gather five blooms, gently, and bring them to Lamp Rest. The Choir will want them where everyone can hear.",
+  "requires": { "flags": ["ch4-the-key.done", "crate.at-gate"] },
+  "objectives": [
+    { "type": "collect", "target": "glassroad:slick-mile", "count": 3, "label": "Gather three blooms along the Slick Mile" },
+    { "type": "collect", "target": "glassroad:glass-chapel", "count": 2, "label": "Gather the two chapel blooms — the mother flowers" },
+    { "type": "dropoff", "target": "choirhollow:temple-steps", "label": "Bring the blooms to Cantor Ilex at the temple steps" }
+  ],
+  "rewards": {
+    "credits": 340,
+    "rep": { "choir": 10, "driftline": 3 },
+    "flags": ["ch4-glass-blooms.done", "ch4-blooms.done", "glass.blooms", "lore:lore-mother-boot-sequence"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "cantor-ilex", "text": "Courier. The canyon has begun to flower. Listening crystals, opened like buds along the slick mile — five that we can hear, and perhaps more that are shy. We would study what your crate's passing woke, and plant it where the whole hollow can listen." },
+      { "who": "little-reverb", "text": "Pick the loud ones, Ash! The loud ones are the *ripe* ones. If a bloom hums your name in E-flat it's ready. If it hums in F, walk away and pretend you never met." },
+      { "who": "cantor-ilex", "text": "Reverb is not wrong, merely *specific*. Bring them to the temple steps. Gently — they are, in the technical sense, either holy or eggs, and the liturgy has not yet decided which." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Ketch here. Canyon's blooming, the season's pruning, and my newest courier is picking flowers for a cult. Kid, I want it on record that this garage is *proud*. Confused, but proud." },
+      { "who": "ash-varga", "text": "If the desert's growing something for the first time in two centuries, somebody ought to carry the flowers. Might as well be the courier with the gentlest landing." }
+    ],
+    "complete": [
+      { "who": "cantor-ilex", "text": "At the steps — yes, set them on the old stone — oh. *Oh.* Listen. They are tuning themselves to the bell. Two hundred years we lit lamps for a machine in a coma, and now the canyon hands us flowers." },
+      { "who": "little-reverb", "text": "The blooms say thank you! Also they say a number! Also — never mind, that last one's just for me." },
+      { "who": "ash-varga", "text": "Plant them where everyone can hear them, Ilex. If she's waking up — and she *is* waking up — the desert should get the news in flowers first, not in faction edicts." },
+      { "who": "cantor-ilex", "text": "Whatever you decide at that door, Ash Varga — the Choir will remember who carried spring." }
+    ]
+  }
+}

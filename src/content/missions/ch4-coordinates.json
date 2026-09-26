@@ -1,0 +1,38 @@
+{
+  "id": "ch4-coordinates",
+  "title": "Coordinates",
+  "chapter": 4,
+  "type": "scout",
+  "giver": "rill-davenant",
+  "region": "saltmouth",
+  "summary": "Rill is home, healing, and still reciting numbers in his sleep — but Pem has cross-checked them against terraform-era survey grids. They're an address, and reading it takes three dead survey pylons: the ridge gauge, the drowned cairn, and a marker out past the far glass hills. Hold each one slow and steady, and the old grid will draw you a door.",
+  "requires": { "flags": ["ch3-rill-found.done", "rill.coordinates"] },
+  "objectives": [
+    { "type": "scout", "target": "windspine:storm-gauge", "label": "Hold at the old storm gauge — first pylon reading" },
+    { "type": "scout", "target": "drowned-array:cache-cairn", "label": "Hold at the drowned cairn — second pylon reading" },
+    { "type": "scout", "target": "mothersgate:survey-point", "label": "Hold at the old survey point — third pylon, triangulate" },
+    { "type": "goto", "target": "mothersgate:approach", "label": "Ride the triangulation out to the gate approach" }
+  ],
+  "rewards": {
+    "credits": 420,
+    "rep": { "driftline": 8, "choir": 3 },
+    "flags": ["ch4-coordinates.done", "door.triangulated", "lore:lore-rill-coordinates"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "rill-davenant", "text": "Ash! Come in, sit — no, stay standing, I'm told pacing helps the numbers come out. Four-one-seven. Mark. See? That's not me, that's the cave talking through me. Pem says I've been carrying somebody's street directions in my skull for a week." },
+      { "who": "static-warden-pem", "text": "Station — Pem. The coordinates are old survey grid, terraform-era. Three pylons still hold a whisper of charge: the ridge gauge, the drowned cairn, and a marker past the far glass hills. Read all three and the boxes will draw you a door." },
+      { "who": "ash-varga", "text": "So the cave made Rill a postal worker. Fine. Three pylons, one door. And when we find the door — do we knock?" },
+      { "who": "rill-davenant", "text": "Nine-one-two, mark — ugh. Sorry. Knock *gently*, Ash. Whatever's behind it has been asleep longer than Saltmouth's been awake." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Ketch here. Take the scouting slow — the pylons need a held reading, not a flyby. Hover close, keep the Wren steady, let the box listen. And kid? Write down anything the desert tells you. That's garage policy now." },
+      { "who": "rill-davenant", "text": "Rill on the garage couch, medically supervised and *bored*. If the pylons start reciting back, tell them I said nine-one-two. They'll know what it means. I certainly don't." }
+    ],
+    "complete": [
+      { "who": "ash-varga", "text": "Third reading's in. The grid lines cross past the glass hills — there's a structure out there big enough to fog my visor from this range. It looks… sealed. Patient. Like it's been saving my seat." },
+      { "who": "static-warden-pem", "text": "The Door, courier. Every survey map we own circles it like a secret. You have done in one afternoon what the Choir has hummed at for two hundred years. Humbling. *So* humbling." },
+      { "who": "ketch", "text": "Mark it, seal it, and tell nobody with a treasury. …Kid, I can hear the factions leaning in from here. Now that it's got an address, nothing about that door stays uncounted for long." }
+    ]
+  }
+}
