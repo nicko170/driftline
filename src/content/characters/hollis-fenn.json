@@ -15,9 +15,11 @@
     ],
     "barks": [
       "The bell says what I say. Convenient arrangement. Ask the hang-tenants; they'll confirm the bell is honest.",
-      "Devanna runs what you can stand on. I run what you can't. Jurisdiction, young tonnage, is mostly about where gravity files complaints.",
-      "If that crate hums, keep humming along. Ships sound better with accompaniment.",
       "A favour held is worth two favours spent and one never mentioned. That's Keel Town arithmetic and it audits."
+    ],
+    "jurisdiction": [
+      "Devanna runs what you can stand on. I run what you can't. Jurisdiction, young tonnage, is mostly about where gravity files complaints.",
+      "Everything beneath the rim is my parish: the cleats, the creak, the soup, and the people with nowhere drier to keep their opinions."
     ],
     "mission": [
       "The Guild's offer wax goes up to the mesa house and the *interesting* wax comes to me. Guess which kind this is. Deliver like you never noticed the difference.",
@@ -30,9 +32,17 @@
       "Traffic note: the mesa house wants a word about a crate nobody entered. Come by the west approach. The west approach has terrible record-keeping.",
       "The slung hulls are singing in the wind tonight. G chord, mostly rust. I'll ring it down at dusk — somebody should."
     ],
+    "crate": [
+      "If that crate hums, keep humming along. Ships sound better with accompaniment.",
+      "Sealed is sealed, young tonnage. I've unloaded crates that ticked, crates that whispered, and one crate that was — I'll swear on the bell — *embarrassed*. None of it was mine to open."
+    ],
     "night": [
       "Night mooring, young tonnage: ring twice, wait for the lamp, tie off on the honest cleat. The dishonest one has a view of the drop you'll remember.",
       "After dark, Keel Town answers to the bell and the bell answers to me, and I — at my age — answer to whoever brings tea. Constitution's on a plate of tin under dock three. Very moving."
+    ],
+    "farewells": [
+      "Ring once when you clear the rim so the town knows a friend left on purpose. Keel Town keeps its own hours, and it keeps you in them.",
+      "Go light, young tonnage. There's moorage pay with your name chalked under it and I never once said whose chalk."
     ]
   }
 }

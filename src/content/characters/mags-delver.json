@@ -4,7 +4,7 @@
   "role": "Reclaimer hauler, poet of the retired machine",
   "faction": "reclaimers",
   "home": "cinderflats",
-  "bio": "Runs a six-sling hauler called *Amble* out of the Yards, stripping dead infrastructure by day and writing it letters by night. Mags learned stripping from Solder and poetry from the machines themselves — 'they're all elegies already, I just take dictation.' Her odes are pinned to the yard gate on tyre-paper, and the horizontal winch at dock nine has begun, in her opinion, to preen. Once hauled a Guild crate 'slightly west of its manifest' and returned it to the cache cairn with a full apology sonnet, which Solder framed.",
+  "bio": "Runs a six-sling hauler called *Amble* out of the Yards, stripping dead infrastructure by day and writing it letters by night. Mags learned stripping from Solder and poetry from the machines themselves — 'they're all elegies already, I just take dictation.' Her odes are pinned to the yard gate on tyre-paper, and the horizontal winch at dock nine has begun, in her opinion, to preen. Once hauled a Guild crate 'slightly west of its manifest' and watched the gouge marks land on the pan like parentheses; she returned the location to Solder with a full apology sonnet, which Solder framed.",
   "appearance": "Round-shouldered and deliberate, in a hauler's bracers worn shiny, a coil of sling cable carried like a scarf, chalk behind one ear (poetry) and chalk behind the other (load maths), and an umbrella rigged to *Amble*'s cab that becomes a sunshade, an awning, and an opinion.",
   "voice": "Hauler's patience with a poet's compass. Speaks of machines as colleagues with seniority. Her insults are metric, her praise is iambic. Ends difficult sentences with a stanza break she expects you to feel.",
   "lines": {
@@ -30,6 +30,18 @@
     "verse": [
       "Ode, first stanza, free of charge: *You held the sun, and held the crews, and held / the money while the money held its nerve — / then let go gently, into salt. Well served.* Second stanza's four credits and a promise you'll keep riding.",
       "Last line of the day, delivered nightly, same as the mail: *No machine retires. It is relieved, or it is abandoned, and the Yards know the difference.* Sign the gatebook if you felt that one."
+    ],
+    "the_yards": [
+      "Boss Pyke says 'salvage', Aunt Vertex says 'liturgy', Solder says 'careful with that'. Three words for the same art. I write them all down; someday the desert will want its name back.",
+      "The Yards at first light: flags on the dangerous ones, chalk on the grateful ones, and breakfast, which is neither flagged nor chalked and suffers for it."
+    ],
+    "amble": [
+      "Amble is not slow. Amble is *deliberate*, and she was deliberate before it was fashionable, and she out-climbs your hoverbike on a grade of one-in-she-says-so.",
+      "Six slings, one umbrella, full cargo of opinions. If Amble ever retires I shall write her a whole book, and she will outlive it just to correct the metre."
+    ],
+    "farewells": [
+      "Ride with your eyes up, love. The scrap is all down here, and so is most of the truth, but the good lines run on the horizon.",
+      "Yards gate thanks you, Amble thanks you, and I — being the softest machine on the lot — thank you twice. Chalk's behind the hitch if you leave a verse."
     ]
   }
 }

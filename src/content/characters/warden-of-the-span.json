@@ -15,8 +15,8 @@
     ],
     "barks": [
       "The bell is not cracked. The bell is *subdivided*. One day I shall write the pamphlet.",
-      "Everything in this canyon is a lentgth of light some distance from its argument. Present company included.",
-      "A rider once asked why I stay. I stayed to answer. We are both still here."
+      "A rider once asked why I stay. I stayed to answer. We are both still here.",
+      "Everything in this canyon is a length of light some distance from its argument. Present company included."
     ],
     "mission": [
       "The Saltmouth booksellers' board lists me as 'persistent correspondence'. Correct. The parcel is a dictionary of tide words — the desert has no tide, and I intend to find out what it has instead.",
@@ -30,6 +30,18 @@
     "books": [
       "Current reading: a history of doors (wrong but handsome), a manual of knots from a world with water (impertinent), and the visitor's book, which I have stopped pretending is not my life.",
       "Do lend me your occupation, courier. Riding is one of the few that read aloud correctly."
+    ],
+    "the_canyon": [
+      "The Glassroad argues in both directions simultaneously, and wins. I consider this the healthiest marriage in the desert and I sweep its floor.",
+      "At the precise mid-span the echo returns before you finish speaking. The canyon edits. I have learned to draft accordingly."
+    ],
+    "the_bell": [
+      "Rung once: attention. Rung twice: weather. Rung three times: I am thinking and require the canyon to know.",
+      "It is an old bell, originally a reactor sounding-bronze, and it remembers being louder than the end of the world. We do not discuss it."
+    ],
+    "farewells": [
+      "Go gently down the Slick Mile; take the chapel shadow wide at dusk, as the canyon grabs. The margin wishes you well, underlined twice.",
+      "The book remains open. So does the shrine. So, courier, should you."
     ]
   }
 }

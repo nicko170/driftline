@@ -4029,8 +4029,11 @@
     "comedy",
     "mags"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "done",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790403281.619703,
+   "done_at": "2026-09-26T16:26:59"
   },
   {
    "kind": "article",
@@ -4044,8 +4047,11 @@
     "history",
     "log"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "done",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790403281.619704,
+   "done_at": "2026-09-26T16:26:59"
   },
   {
    "kind": "article",
@@ -4059,8 +4065,11 @@
     "awakening",
     "broadcast"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "done",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790403281.619704,
+   "done_at": "2026-09-26T16:27:13"
   },
   {
    "kind": "article",
@@ -4075,8 +4084,11 @@
     "MOTHER stirring",
     "machine records"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790403281.619704,
+   "done_at": "2026-09-26T16:27:13"
   },
   {
    "kind": "article",
@@ -4580,10 +4592,10 @@
    "cluster": "demos",
    "intent": "A tuning bench for the fragile-cargo system. Off-world test pan (place in src/world/regions/cargo-shake-lab/ so it ships with the game registry but stays out of the playspace — center beyond ±1800). A ghost hover-bike runs canned bump sequences (small rock, gantry leg, hard landing, storm clip) while a large cargo-integrity gauge, damage-per-impact scatter chart and payout curve (0.35 + 0.65·integrity) update live. Sliders: FRAGILE_DMG coefficient, shield soak per level 0-3, impact threshold. Presets row ('story-balance', 'punishing', 'forgiving'), copy-JSON export for MissionDirector tuning, A/B ghost replay. Art direction: DRIFTLINE house style — flat-shaded low-poly, salt/ochre pan, teal glass gauges, amber HUD panels from ui.css; dashed ghost-bike so it reads as a bench, not a track. Keyboard + pointer friendly, reduced-motion aware, no per-frame allocations; typecheck + build must stay green.",
    "keywords": [],
-   "status": "planned",
+   "status": "claimed",
    "added_by": "builder",
-   "worker": null,
-   "claimed_at": 1790387664.5284019
+   "worker": "demo3",
+   "claimed_at": 1790403355.459946
   },
   {
    "kind": "demo",
@@ -4592,9 +4604,9 @@
    "cluster": "demos",
    "intent": "An interactive arcade-physics tuning toy for the Driftline hover-bike feel. A figure-eight salt pan with painted grip zones (salt 1.0, sand 0.8, glass 0.5) and a telemetry strip: speed, lateral slip, drift reward window, boost meter curves drawn on a small canvas scope. Live sliders for accel, top speed, grip by surface, drift-exit boost multiplier, hop impulse, boost regen — each instant-applied to a test bike the player drives (reuse the Bike controller constants, don't fork physics). Show upgrade ladder pips (engine/handling/boost 0-3) against the curve graph so designers see headroom. One-click 'baseline' reset and copy-settings-JSON. Stark readable DRIFTLINE visuals: flat shading, big silhouettes, amber/teal colour-shape coding, dust puffs; 60fps, no console errors.",
    "keywords": [],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "demo1",
+   "worker": null,
    "claimed_at": 1790389979.918804
   },
   {
@@ -4604,9 +4616,9 @@
    "cluster": "demos",
    "intent": "A content-review instrument for the writing team: an in-engine gallery that renders every character JSON as a dialogue-card — portrait (withBase, fallback initials chip), name + faction chip, role, one greeting/bark/radio line each cycled on a timer, plus the actual DialogueBox and HUD radio ticker components so writers see true in-game rendering. Filter by faction (guild ochre / choir teal / reclaimer rust / driftline amber), search by name, flag cards missing portraits or <8 line buckets with a dashed ghost frame and a ▯ signal-not-recovered marker (never colour alone). Panel styles from ui.css; lives in src/world/regions/roster-review-bench/ or src/lab, auto-listed in /lab; zero game-world impact.",
    "keywords": [],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "demo3",
+   "worker": null,
    "claimed_at": 1790390619.523545
   },
   {
