@@ -207,14 +207,16 @@ function Mesas() {
       mesh.current.setMatrixAt(i, _m);
     }
     mesh.current.instanceMatrix.needsUpdate = true;
-    if (!mesh.current.instanceColor) {
+    let ic: THREE.InstancedBufferAttribute | null = mesh.current.instanceColor;
+    if (!ic) {
       const c = new THREE.Color();
       for (let i = 0; i < N; i++) {
         c.set(MESA_COLORS[i % MESA_COLORS.length]);
         mesh.current.setColorAt(i, c);
       }
-      if (mesh.current.instanceColor) mesh.current.instanceColor.needsUpdate = true;
+      ic = mesh.current.instanceColor;
     }
+    if (ic) ic.needsUpdate = true;
   });
   return (
     <instancedMesh ref={mesh} args={[undefined, undefined, N]} frustumCulled={false}>

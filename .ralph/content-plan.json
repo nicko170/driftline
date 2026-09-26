@@ -2449,10 +2449,11 @@
    "cluster": "demos",
    "intent": "Feel-lab for boost juice: synthetic bike telemetry drives candidate boost feedbacks (FOV curves, screen shake amps, engine pitch curves, boost-bar drain styles) side by side. Interactions: hold-to-boost on a straight track, A/B toggles. Stack: R3F minimal + HUD prototypes.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo1",
-   "claimed_at": 1790383937.521614
+   "claimed_at": 1790383937.521614,
+   "done_at": "2026-09-26T11:36:56"
   },
   {
    "kind": "demo",
@@ -3115,8 +3116,10 @@
     "missing courier",
     "foreshadow"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790386577.990006
   },
   {
    "kind": "article",
@@ -3131,8 +3134,10 @@
     "prayer",
     "scripture"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790386577.990007
   },
   {
    "kind": "article",
@@ -3147,8 +3152,10 @@
     "rights",
     "dispute"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790386577.990007
   },
   {
    "kind": "article",
@@ -3163,8 +3170,10 @@
     "charter",
     "ch1"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790386577.990007
   },
   {
    "kind": "article",
@@ -3179,8 +3188,10 @@
     "guild",
     "comedy"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790386647.345453
   },
   {
    "kind": "article",
@@ -3195,8 +3206,10 @@
     "riding",
     "field guide"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790386647.345454
   },
   {
    "kind": "article",
@@ -3211,8 +3224,10 @@
     "engineering",
     "ch2"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790386647.3454552
   },
   {
    "kind": "article",
@@ -3227,8 +3242,10 @@
     "history",
     "couriers"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790386647.3454552
   },
   {
    "kind": "article",

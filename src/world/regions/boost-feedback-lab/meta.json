@@ -1,0 +1,8 @@
+{
+  "slug": "boost-feedback-lab",
+  "name": "Boost Feedback Lab",
+  "blurb": "Workshop tool, not a game region: a treadmill speed strip where candidate boost feedbacks (FOV, shake, pitch, boost-bar) audition against the shipped treatment. Anchors and center live outside the playable map.",
+  "center": [5800, 5200],
+  "radius": 4,
+  "danger": 0
+}
