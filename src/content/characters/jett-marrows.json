@@ -4,7 +4,7 @@
   "role": "Driftline courier and undefeated* canyon racer",
   "faction": "driftline",
   "home": "saltmouth",
-  "bio": "The fastest rider on the Glassroad and the holder of three lap records, one of which is real. Irritated that the Guild's newest debtor is getting famous for a box instead of a time split. Races Ash partly for pride, mostly because beating new couriers is how he says hello — and losing, when it happens, is how he says 'welcome'.",
+  "bio": "The fastest rider on the Glassroad and the holder of three lap records, one of which is real. Irritated that the Guild's newest debtor is getting famous for a box instead of a time split. Races Ash partly for pride, mostly because beating new couriers is how he says hello \u2014 and losing, when it happens, is how he says 'welcome'.",
   "appearance": "Lean rider in a scuffed amber-and-white leathersuit with the sleeves torn off, a grin built for wanted posters, hair in wind-sculpted spikes he'd deny styling, goggles with one cracked lens kept 'for luck and for accuracy'.",
   "voice": "Swagger with a heartbeat. Trash talk as affection, precise about racing lines and vague about everything else. Asterisks his own bragging. Hits radio chatter like a sport. When he's actually impressed he goes quiet and technical.",
   "lines": {
@@ -19,12 +19,12 @@
       "I don't brake. I negotiate with the future."
     ],
     "mission": [
-      "South gate, sunrise, canyon's empty. Beat my line and I'll stop calling you Parcel. Lose and you carry my mail for a week. Either way I win — that's called inevitability, look it up.",
+      "South gate, sunrise, canyon's empty. Beat my line and I'll stop calling you Parcel. Lose and you carry my mail for a week. Either way I win \u2014 that's called inevitability, look it up.",
       "Bring the mystery box if you want. If it hums faster than me I'll hear it coming and adjust."
     ],
     "radio": [
       "Marrows to Varga: that was your racing line? I've seen more aggressive parking.",
-      "Okay, *okay*, that drift out of the Slick Mile was— I'll allow it. Once. Don't make a habit of being watchable.",
+      "Okay, *okay*, that drift out of the Slick Mile was\u2014 I'll allow it. Once. Don't make a habit of being watchable.",
       "Word on the band says your crate picked you personally. Respect. My bike picked me too. It was also concussed at the time."
     ],
     "night": [
@@ -33,7 +33,7 @@
     ],
     "storm": [
       "You don't race a wall, rookie, you *flirt* with it and then you leave. Storms hate a clean exit.",
-      "First wall of the season took Davenant, so no — I don't race in season. I spectate in season. With binoculars. And an enormous flask. Growth."
+      "First wall of the season took Davenant, so no \u2014 I don't race in season. I spectate in season. With binoculars. And an enormous flask. Growth."
     ],
     "crate": [
       "That crate of yours hums faster than it moves. If I ever lose to a *box*, I'm retiring to sell grip tape.",
@@ -43,5 +43,6 @@
       "South gate. Sunrise. Bring the box if it comforts you.",
       "Ride fast, Parcel. Second-fastest. Those are the rules I just made."
     ]
-  }
+  },
+  "portrait": "images/characters/jett-marrows.jpg"
 }

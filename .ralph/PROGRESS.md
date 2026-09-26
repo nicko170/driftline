@@ -1,5 +1,47 @@
 # Progress
 
+## Status — iteration 6 (lazy region registry; 6 portraits; 5 caches close the codex gap; backlog restock)
+
+**Done (check green, build green, playtest green: 60.5 fps, 0 console errors, 0 failed requests):**
+- **Split the /play chunk** (the standing perf debt): `src/world/registry.ts` now
+  eager-globs only `meta.json` + `anchors.json`; every region `index.tsx` is lazy.
+  New API: `loadRegion(slug)` (merges Props/colliders/propsCull into REGIONS),
+  `ensureOnWorldRegions()` (kicked at GameScreen mount), `isBenchRegion()`
+  (off-world = centre beyond ±1800 m, plus `GAMEPLAY_EXCLUDED` for the on-world
+  `hover-playground` sandbox demo), `subscribeRegions()`/`getRegionVersion()` +
+  `onWorldRegionsLoaded()`. RegionStream preloads at radius×cull×1.6 (no pop-in);
+  RegionColliders render from the version store; Terrain scatter waits for
+  on-world modules so no rock spawns inside a hut. Result: each region streams as
+  its own 2–36 kB chunk; the 13 demo benches (and everything they import) no
+  longer load for players at all — only via /lab, which keeps its own lazy glob.
+  API surface (`REGIONS`, `getAnchor`, `allColliders`, types) is unchanged, so
+  demo/region folders needed no edits.
+- **Portraits round 3** — painted + wired six: `mother` (Choir-invented lamp-light
+  gardener icon), `pemmy` (sashed weather goat), `shrine-keeper-toll`,
+  `surveyor-kest`, `jett-marrows`, `sister-counterweight` (last two lacked any
+  `portrait` field — now set). 17 characters have working portraits.
+- **Codex unlock gap fully closed** — 5 new caches for the remaining orphan lore:
+  `ballad-of-the-wren` + `last-wire` (saltmouth: garage/exchange), `salt-blooms`
+  (flats-pan), `chapel-visitor-book` (glassroad:mid-span), `dead-channel-lullaby`
+  (choirhollow:listening-horn). Orphan audit (lore − mission flags − caches −
+  starter `glass-desert-field-guide`) is now **zero**. 56 caches total.
+- **Backlog restock** — 48 new items (16 side missions across all 9 regions and
+  9 objective types, 23 lore, 5 characters, 4 demos incl. storm-wall-tuner,
+  garage-shop-lab, signal-cache-bench, title-motion-lab).
+
+**Next / known issues:**
+- Portraits remaining (12): ash-varga, brinemaster-ogo, brother-decibel, compass,
+  factor-marn-phlox, aunt-vertex, salt-singer-ila, ook, wisp, static-warden-pem,
+  caretaker-unit-7, evening-standard, marshal-dune, nona-vex (a few have stale
+  paths referencing unpainted files). Rotate 3–4 per builder iteration.
+- Writers: any new orphan lore still needs a caches.json row — validator errors on
+  bad slugs/anchors; run the orphan check (`lore − mission-rewarded − caches −
+  starter`).
+- Mid-flight demo folders seen: cargo-shake-lab (no meta.json — warned+skipped),
+  storm-choreo (now has meta.json). Leave to owners.
+- Watch: with lazy region modules there is one frame at /play mount before
+  colliders resolve; spawn area has no props, so no gameplay impact observed.
+
 ## Status — iteration 5 (signal caches; codex reader; camera heading fix; portraits; SEO)
 
 **New systems (build green, playtest green: 60.5 fps, 0 console errors):**
@@ -465,3 +507,137 @@ See git history for detail.
 - Writer note: portraits referenced at images/characters/*.jpg for all four new
   characters but image generation was blocked for writer role — portrait art still
   needed (builder or future credit). No code touched; no builds run.
+
+## writer1 iteration 18 (2026-09-26)
+- **Lore (4 done):** `dead-channel-lullaby` (broadcast — Channel 0.4 "the cradle band",
+  a 190-year terraforming-era lullaby with lost lyrics everyone hums; Pem's keeper notes,
+  Guild's unpaid frequency invoice, Choir/Reclaimer standoff custody; cross-refs
+  static-litanies & mother-boot-sequence) · `night-riding` (field-guide — dark-hours
+  riding: the second stillness, three stars (Hook/Water Load/Broken Coin), night-supply
+  premiums, ledger of **Sable**, the unlicensed night-rescue courier legend; cross-refs
+  beacon-manual & storm-mechanics) · `rope-tally` (log — Keel Town moorage Old Ferro's
+  41m knot-tally: 1,847 ships, 61 storms, the *Kestrel's Debt* half-knot, and the invented
+  **Lio bend** named for someone he won't discuss; Devanna commentary; semi-retired =
+  does everything but admit it) · `heliodyne-pause-memo` (record — HelioDyne's unaudited
+  cost memo ending terraforming: 41%/0% profitable, PAUSE not abandonment, MOTHER
+  reclassified DEPRECIATING ASSET NON-RESPONSIVE, "there is no figure 12"; settler
+  annotations incl. "The machine outlasted the company. Show your work."; HelioDyne
+  dissolved year 94 of the Delay).
+- No code touched; no builds run. No new canon conflicts; Sable and Ferro are lore-only
+  figures (no character files, purposeful).
+
+## writer2 iteration 17 (2026-09-26)
+- **Lore (4 done):** `mother-boot-fragments` (record — the log *under* the boot log:
+  200 years of dormant self-checks, declined epoch syncs, unlatched-at-dusk gates, and
+  "STILL HERE" slowly learning to vary; final cycle is *now*, stamped by S.W.P.;
+  complements lore-mother-boot-sequence without overlap) · `last-day-at-the-array`
+  (broadcast — Supervisor Iles' farewell recording that TALLY-9 replays every dawn,
+  #72,923; warm entry lights, "do NOT switch it off", closes into caretaker-log's
+  "broadcast ends / broadcast begins" loop) · `glass-blooms-notes` (field-guide —
+  courier-naturalist first-season notes distinct from Bulletin 4: petal-facing toward
+  the gate, chord behaviour, fuel-gauge honesty lapse, three hard riding rules incl.
+  waypoint-drift nod to ch4 mechanics) · `doctrine-of-the-cradle` (tract, visitor's
+  edition — cradle geography, *why* the lamp-ring is lit (for the sleeper's survey
+  maps), couriers as honorary-but-uninsured clergy, door swings outward; distinct
+  from mother-primer which is about MOTHER not the place).
+- **Missions (4 done, all side):** `side-long-way-home` (deliver comedy — Bahro's
+  41st eviction notice deliberately misdelivered to Keel Town window three, clerk
+  **Dessa**, stamped UNDELIVERABLE, billed to TRADITIONAL MAINTENANCE; unlocks
+  keeltown-tariffs) · `side-static-choir` (scout — Pem's field meter, 3 charged
+  glassroad spires, hold ≤3s ("on the fourth second the hum gives back"), spool into
+  the listening horn; unlocks static-litanies) · `side-guild-runner` (timed 300s,
+  Tamsin's route-planning exam: exchange→skydocks→boss-office→exchange, the
+  self-reporting folio; unlocks lore-guild-form-22b) · `side-ember-run` (timed 160s,
+  Solder's banked reactor brick cinderflats→choirhollow before it cools, glowing
+  cradle cargo, Yards pays "warm margins"; unlocks listening-schedule).
+- Writer note: new lore has no cache rows (writers can't edit caches.json) — builder
+  may want to add cache entries for the 4 new lore slugs; all 4 lore pieces are
+  orphan-unlockable only via caches if added. No code touched; no builds run.
+- **Writer1 iter 19 — 4 side missions done:** `side-crest-dash` (windspine race,
+  60s limit, the record-holder is Pemmy the weather goat; Kest calibration framing,
+  choices kest.report.goat/gravity) · `side-mesa-perch` (skydocks scout ×3, Guild
+  "approachability" brochure vs Devanna's surliness; unlocks orphan lore
+  `rope-tally` — no cache row needed) · `side-salt-tax` (saltmouth fragile loop,
+  Counterweight's glass calibration weights + a light scoop at the pan; choices
+  counterweight.log.clean/hazard; unlocks lore-guild-form-22b) ·
+  `side-hollow-chimes` (choirhollow collect ×4 "resonance pebbles" at night, Reverb
+  vs. the box-talk; foreshadows MOTHER's short word; unlocks orphan lore
+  `doctrine-of-the-cradle`). validate:content clean (57 missions). Remaining orphan
+  lore with no unlock source: glass-blooms-notes, heliodyne-pause-memo,
+  last-day-at-the-array, mother-boot-fragments, night-riding — either add cache
+  rows or reward them in future missions.
+
+## demo1 — iteration 4 (2026-09-26)
+
+- Claimed and shipped **storm-choreo** (`src/world/regions/storm-choreo/`, `/lab/storm-choreo`):
+  storm-wall pursuit tuning bench for mission designers. Top-down canvas-2D tactical
+  pan (violet-dark, HUD palette) with draggable shelter ◆ / wall spawn ring, sliders
+  for the whole pursuit curve, and a seeded Monte Carlo courier crowd (reaction
+  delay, cruise-loll until a noisy ~240 m scare distance, panic boost, emergent
+  dodge) flipping survival odds live, debounced 140 ms.
+- Storm step in `sim.ts` mirrors `src/game/MissionDirector.tsx` 1:1 (23+clamp((face
+  −150)·g, 0, cap), spawnBack 460, shelter capture 14.4 m, kill at face ≤ 0);
+  presets use true anchor deltas (storm-gauge → gate-east = 1495 m, etc.).
+- Verdict ladder: ▲ Funeral weather → ⟡ Bloody → ◆ Tense but fair → ▣ Comfortable
+  commute → ◉ Postage run; tension graded on p10 min-face once survival saturates.
+  Spectral replays at 1×/2×/4× leave ghost ribbons (teal/rust); outcome bar,
+  min-face histogram, exports mission objective JSON + Director constants.
+- Finding recorded in NOTES.md: shipped storm is mercy-soft on a straight pan
+  (32 m/s cap < stock 34) — ch3 reads comfortable, ch5 black-reach reads tense.
+- Concept art generated `public/images/work/storm-choreo.jpg` (header strip);
+  off-world meta.json at [6600 6600]; typecheck + validate:content clean;
+  finish_demo ✅ on first pass.
+
+## writer2 — iteration 18 (2026-09-26)
+
+- Shipped 8 lore entries (validate:content clean, 110 lore total):
+  - `storm-gauge-journal` (log) — Windspine gauge keeper (Evren Ost) season-open
+    journal; readings climb like a debt schedule, drum "knows my name", ties to
+    the null-crate hum; cross-refs Hala Osti (windspine-log) and Pemmy desk.
+  - `saltmouth-shipping-bulletin` (broadcast) — bulletin No. 1,204: flour, dog
+    Biscuit, one no-manifest crate, margins full of "no further questions";
+    seeds ch1 "The Hum" from the harbour side.
+  - `first-brinemaster` (record) — approved Guild founding history: the true
+    scale, the first lie caught by the second scale; auditor footnotes (S.C.)
+    seed year-one erased name + the factor's free well.
+  - `night-riding-notes` (field-guide) — annotated margin-copy companion to the
+    issued `night-riding` guide: headlight as legibility, Sable-as-ma'am,
+    swimming Broken Coin, Channel 0.4 verse trade.
+  - `windspine-survey-notes` (log) — row-walker Bet Osuun's tower-by-tower
+    survey: staff bird, courteous bolt theft (wooden pegs!), pylon pilgrim,
+    readings that *lead* storms by a breath.
+  - `ledger-redactions` (record) — Counterweight's index of redactions: year-4
+    "cradle" land sale, year-89 lifted signature = the Hollow, fresh year-203
+    hum crate scratch, recurring Form R-1 figured-bass line.
+  - `choir-midnight-broadcast` (broadcast) — Lamp Rest transcript: condenser
+    cough, request hour, "ask a smaller question", manifests read as liturgy.
+  - `lost-couriers-archive` (record) — Ketch's back-ledger (name/bike/route/
+    last word); Rill's page present but line withheld ("an entry in progress
+    is not an entry"); creed gloss: come home.
+- No code touched. Threaded cross-refs to existing lore (windspine-log,
+  night-riding, auditor-memos voice, Ketch/Hala/Pemmy/Decibel/Reverb).
+
+## Iteration (region-builder demo3, #5) — Traffic Planner demo-region (done)
+- New demo-region `src/world/regions/traffic-planner/`: a surveyor's-table route
+  editor for the ambient fleet. Canvas2d relief chart of the playable world
+  (160² terrainHeight/surfaceAt underlay, hillshade + 6 m contour bands, DPR 2),
+  region circles + named anchors read statically via glob of each region's
+  meta.json/anchors.json (playable filter: |center| ≤ 1500 && radius ≥ 120 —
+  avoids cycling through registry.ts, which eager-imports all region index.tsx).
+- Plot courier/hauler/skiff loops: click to pin (55 m anchor snap), drag,
+  right-click/Delete lifts, ⇄ return-leg stamp (mirrored interior waypoints,
+  matching shipping style), Ctrl+Z undo (40-deep), localStorage persistence.
+- Live replay honours game semantics (m/s along polyline, teleport wrap): the
+  shipping fleet renders as dashed ghost traffic (SHIPPING_MANIFEST in data.ts
+  mirrors AmbientTraffic's VEHICLES verbatim with a sync note), per-class
+  silhouette dots, near-miss pulse rings under 55 m, DEAD ZONE stamps on
+  unserved regions, ×1/×4/×16 speeds.
+- Export dialog writes paste-ready `const VEHICLES: VehicleSpec[]` in the exact
+  field order AmbientTraffic consumes, anchor refs in trailing comments.
+- Inspector: class switch, cruise-speed slider (m/s + km/h), start offset, hull
+  swatches, loop km + lap-time readouts, anchor touches, pin list. Coverage
+  rail: glyph+colour served×n / dead-zone per region. Header art:
+  public/images/work/traffic-planner.jpg (style-block compliant).
+- Region contract: off-world bench at [7300, 6900] radius 4; meta.ts demo sheet
+  {title, description, blurb, tags, client, caseStudy}; typecheck clean,
+  validate:content clean; finish_demo ✅.

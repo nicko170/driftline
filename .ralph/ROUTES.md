@@ -29,9 +29,10 @@ Demos can live in **two places** — both are picked up automatically by `/lab`:
    off-world centre, attached as statics `mod.meta`/`mod.anchors`) and re-exports a named
    `meta` with a `title` — that's what makes the Lab list it. Pure world regions (no named
    `meta` export with a title) are never listed as demos.
-The registry (`src/world/registry.ts`) eager-globs all region index.tsx, so demo-region
-folders must always compile; `npm run validate:content` skips region folders that have no
-`meta.json` yet (mid-flight parallel builds) with a warning instead of failing.
+The registry (`src/world/registry.ts`) eager-globs only meta.json/anchors.json;
+index.tsx is lazy (see "Region contract" below), so demo-region folders compile-check
+but never weigh down the `/play` chunk. `npm run validate:content` skips region folders
+that have no meta.json yet (mid-flight parallel builds) with a warning instead of failing.
 
 ## Content pipeline
 
@@ -55,6 +56,15 @@ One shared world heightfield covers the whole map (2400×2400 m); regions are zo
 named anchors + streamed props. Anchor references use `"<regionSlug>:<anchorId>"`.
 Ground anchors' Y resolves from the terrain function (`elev` overrides for docks/towers).
 Registry: `src/world/registry.ts`. Colliders are fixed AABBs the bike bumps off.
+
+**Region loading model (iteration 6):** `meta.json` + `anchors.json` are glob-eager
+(anchors feed missions/caches/HUD/Sky at boot); `index.tsx` is glob-**lazy** —
+`loadRegion(slug)` merges `Props`/`colliders`/`propsCull` into the REGIONS entry and
+bumps `regionVersion` (subscribe via `subscribeRegions()`/`useSyncExternalStore`).
+GameScreen calls `ensureOnWorldRegions()` at mount; RegionStream preloads anything
+within radius×cull×1.6. Bench/off-world regions (centre beyond ±1800 m, or listed in
+the registry's `GAMEPLAY_EXCLUDED` — currently `hover-playground`, a demo parked
+on-world) are never loaded by gameplay; the Lab imports them via its own lazy glob.
 
 ## Mission schema — `src/content/missions/<id>.json`
 

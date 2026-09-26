@@ -1,56 +1,285 @@
 {
-  "$comment": "Signal caches — derelict data obelisks scattered across the Glass Desert. Riding close recovers a codex entry (lore slug) and pays a 15 cr Guild archival bounty. 'anchor' is '<regionSlug>:<anchorId>'; caches sharing an anchor are fanned out deterministically. Placement is thematic: field guides live in their regions, Guild paper in Saltmouth, Choir texts in the Hollow, MOTHER lore at Mothersgate.",
+  "$comment": "Signal caches \u2014 derelict data obelisks scattered across the Glass Desert. Riding close recovers a codex entry (lore slug) and pays a 15 cr Guild archival bounty. 'anchor' is '<regionSlug>:<anchorId>'; caches sharing an anchor are fanned out deterministically. Placement is thematic: field guides live in their regions, Guild paper in Saltmouth, Choir texts in the Hollow, MOTHER lore at Mothersgate.",
   "caches": [
-    { "id": "cache-auditor-memos", "lore": "auditor-memos", "anchor": "saltmouth:exchange" },
-    { "id": "cache-salt-guild-audit", "lore": "lore-salt-guild-audit", "anchor": "saltmouth:exchange" },
-    { "id": "cache-bike-maintenance-notes", "lore": "bike-maintenance-notes", "anchor": "saltmouth:garage" },
-    { "id": "cache-ash-application", "lore": "lore-ash-application", "anchor": "saltmouth:job-board" },
-    { "id": "cache-guild-ledger-year-one", "lore": "lore-guild-ledger-year-one", "anchor": "saltmouth:water-tower" },
-    { "id": "cache-weather-goat-methods", "lore": "weather-goat-methods", "anchor": "saltmouth:moorage" },
-    { "id": "cache-night-market-menu", "lore": "night-market-menu", "anchor": "saltmouth:flats-pan" },
-    { "id": "cache-driftline-creed", "lore": "lore-driftline-creed", "anchor": "saltmouth:overlook" },
-    { "id": "cache-rill-last-route", "lore": "rill-last-route", "anchor": "saltmouth:gate-east" },
-    { "id": "cache-guild-debt-doctrine", "lore": "lore-guild-debt-doctrine", "anchor": "saltmouth:spawn" },
-    { "id": "cache-glass-physics", "lore": "glass-physics", "anchor": "glassroad:mid-span" },
-    { "id": "cache-glassroad-burn-report", "lore": "glassroad-burn-report", "anchor": "glassroad:slick-mile" },
-    { "id": "cache-glass-bloom-bulletin", "lore": "lore-glass-bloom-bulletin", "anchor": "glassroad:glass-chapel" },
-    { "id": "cache-glassroad-field-guide", "lore": "lore-glassroad-field-guide", "anchor": "glassroad:gate-south" },
-    { "id": "cache-listening-schedule", "lore": "listening-schedule", "anchor": "choirhollow:listening-horn" },
-    { "id": "cache-choir-heretics", "lore": "lore-choir-heretics", "anchor": "choirhollow:temple-steps" },
-    { "id": "cache-mother-primer", "lore": "mother-primer", "anchor": "choirhollow:lamp-ring" },
-    { "id": "cache-choirhollow-field-guide", "lore": "lore-choirhollow-field-guide", "anchor": "choirhollow:crater-rim" },
-    { "id": "cache-cinderflats-field-guide", "lore": "lore-cinderflats-field-guide", "anchor": "cinderflats:yard-gate" },
-    { "id": "cache-reclaimer-crusher", "lore": "lore-reclaimer-crusher", "anchor": "cinderflats:crusher" },
-    { "id": "cache-reclaimer-hymn", "lore": "lore-reclaimer-hymn", "anchor": "cinderflats:parts-pile" },
-    { "id": "cache-jett-interview", "lore": "jett-interview", "anchor": "skydocks:mesa-top" },
-    { "id": "cache-skyship-classes", "lore": "lore-skyship-classes", "anchor": "skydocks:mesa-top" },
-    { "id": "cache-keeltown-tariffs", "lore": "keeltown-tariffs", "anchor": "skydocks:dockmaster" },
-    { "id": "cache-water-charter", "lore": "water-charter", "anchor": "skydocks:dockmaster" },
-    { "id": "cache-moorage-stories", "lore": "lore-moorage-stories", "anchor": "skydocks:keel-town" },
-    { "id": "cache-keel-town-charter", "lore": "lore-keel-town-charter", "anchor": "skydocks:keel-town" },
-    { "id": "cache-guild-form-22b", "lore": "lore-guild-form-22b", "anchor": "skydocks:winch-base" },
-    { "id": "cache-horizon-cell-care", "lore": "horizon-cell-care", "anchor": "windspine:survey-camp" },
-    { "id": "cache-storm-mechanics", "lore": "lore-storm-mechanics", "anchor": "windspine:storm-gauge" },
-    { "id": "cache-relay-fire-stories", "lore": "relay-fire-stories", "anchor": "windspine:ridge-crest" },
-    { "id": "cache-storm-almanac", "lore": "storm-almanac", "anchor": "windspine:south-foot" },
-    { "id": "cache-frequency-map", "lore": "frequency-map", "anchor": "drowned-array:panel-field" },
-    { "id": "cache-terraforming-report", "lore": "terraforming-report", "anchor": "drowned-array:substation" },
-    { "id": "cache-wake-key-theory", "lore": "wake-key-theory", "anchor": "drowned-array:cache-cairn" },
-    { "id": "cache-terraforming-primer", "lore": "lore-terraforming-primer", "anchor": "mothersgate:approach" },
-    { "id": "cache-the-delay", "lore": "lore-the-delay", "anchor": "mothersgate:the-door" },
-    { "id": "cache-mother-voice", "lore": "mother-voice", "anchor": "mothersgate:the-door" },
-    { "id": "cache-mothersgate-survey", "lore": "mothersgate-survey", "anchor": "mothersgate:survey-point" },
-    { "id": "cache-bike-anatomy", "lore": "lore-bike-anatomy", "anchor": "canyon-slalom:marshal-post" },
-    { "id": "cache-oath-history", "lore": "oath-history", "anchor": "canyon-slalom:start-gantry" },
-    { "id": "cache-boundary-mountains", "lore": "lore-boundary-mountains", "anchor": "canyon-slalom:spectator-ledge" },
-    { "id": "cache-wren-service-record", "lore": "lore-wren-service-record", "anchor": "canyon-slalom:finish-line" },
-    { "id": "cache-beacon-manual", "lore": "beacon-manual", "anchor": "skydocks:winch-base" },
-    { "id": "cache-dock-shanties", "lore": "dock-shanties", "anchor": "saltmouth:moorage" },
-    { "id": "cache-door-inscription", "lore": "door-inscription", "anchor": "mothersgate:the-door" },
-    { "id": "cache-garage-keepers", "lore": "garage-keepers", "anchor": "saltmouth:garage" },
-    { "id": "cache-hum-hearings", "lore": "hum-hearings", "anchor": "choirhollow:crater-rim" },
-    { "id": "cache-rain-forecasts", "lore": "rain-forecasts", "anchor": "windspine:survey-camp" },
-    { "id": "cache-shelter-reviews", "lore": "shelter-reviews", "anchor": "canyon-slalom:gate-5" },
-    { "id": "cache-weighing-log", "lore": "weighing-log", "anchor": "saltmouth:exchange" }
+    {
+      "id": "cache-auditor-memos",
+      "lore": "auditor-memos",
+      "anchor": "saltmouth:exchange"
+    },
+    {
+      "id": "cache-salt-guild-audit",
+      "lore": "lore-salt-guild-audit",
+      "anchor": "saltmouth:exchange"
+    },
+    {
+      "id": "cache-bike-maintenance-notes",
+      "lore": "bike-maintenance-notes",
+      "anchor": "saltmouth:garage"
+    },
+    {
+      "id": "cache-ash-application",
+      "lore": "lore-ash-application",
+      "anchor": "saltmouth:job-board"
+    },
+    {
+      "id": "cache-guild-ledger-year-one",
+      "lore": "lore-guild-ledger-year-one",
+      "anchor": "saltmouth:water-tower"
+    },
+    {
+      "id": "cache-weather-goat-methods",
+      "lore": "weather-goat-methods",
+      "anchor": "saltmouth:moorage"
+    },
+    {
+      "id": "cache-night-market-menu",
+      "lore": "night-market-menu",
+      "anchor": "saltmouth:flats-pan"
+    },
+    {
+      "id": "cache-driftline-creed",
+      "lore": "lore-driftline-creed",
+      "anchor": "saltmouth:overlook"
+    },
+    {
+      "id": "cache-rill-last-route",
+      "lore": "rill-last-route",
+      "anchor": "saltmouth:gate-east"
+    },
+    {
+      "id": "cache-guild-debt-doctrine",
+      "lore": "lore-guild-debt-doctrine",
+      "anchor": "saltmouth:spawn"
+    },
+    {
+      "id": "cache-glass-physics",
+      "lore": "glass-physics",
+      "anchor": "glassroad:mid-span"
+    },
+    {
+      "id": "cache-glassroad-burn-report",
+      "lore": "glassroad-burn-report",
+      "anchor": "glassroad:slick-mile"
+    },
+    {
+      "id": "cache-glass-bloom-bulletin",
+      "lore": "lore-glass-bloom-bulletin",
+      "anchor": "glassroad:glass-chapel"
+    },
+    {
+      "id": "cache-glassroad-field-guide",
+      "lore": "lore-glassroad-field-guide",
+      "anchor": "glassroad:gate-south"
+    },
+    {
+      "id": "cache-listening-schedule",
+      "lore": "listening-schedule",
+      "anchor": "choirhollow:listening-horn"
+    },
+    {
+      "id": "cache-choir-heretics",
+      "lore": "lore-choir-heretics",
+      "anchor": "choirhollow:temple-steps"
+    },
+    {
+      "id": "cache-mother-primer",
+      "lore": "mother-primer",
+      "anchor": "choirhollow:lamp-ring"
+    },
+    {
+      "id": "cache-choirhollow-field-guide",
+      "lore": "lore-choirhollow-field-guide",
+      "anchor": "choirhollow:crater-rim"
+    },
+    {
+      "id": "cache-cinderflats-field-guide",
+      "lore": "lore-cinderflats-field-guide",
+      "anchor": "cinderflats:yard-gate"
+    },
+    {
+      "id": "cache-reclaimer-crusher",
+      "lore": "lore-reclaimer-crusher",
+      "anchor": "cinderflats:crusher"
+    },
+    {
+      "id": "cache-reclaimer-hymn",
+      "lore": "lore-reclaimer-hymn",
+      "anchor": "cinderflats:parts-pile"
+    },
+    {
+      "id": "cache-jett-interview",
+      "lore": "jett-interview",
+      "anchor": "skydocks:mesa-top"
+    },
+    {
+      "id": "cache-skyship-classes",
+      "lore": "lore-skyship-classes",
+      "anchor": "skydocks:mesa-top"
+    },
+    {
+      "id": "cache-keeltown-tariffs",
+      "lore": "keeltown-tariffs",
+      "anchor": "skydocks:dockmaster"
+    },
+    {
+      "id": "cache-water-charter",
+      "lore": "water-charter",
+      "anchor": "skydocks:dockmaster"
+    },
+    {
+      "id": "cache-moorage-stories",
+      "lore": "lore-moorage-stories",
+      "anchor": "skydocks:keel-town"
+    },
+    {
+      "id": "cache-keel-town-charter",
+      "lore": "lore-keel-town-charter",
+      "anchor": "skydocks:keel-town"
+    },
+    {
+      "id": "cache-guild-form-22b",
+      "lore": "lore-guild-form-22b",
+      "anchor": "skydocks:winch-base"
+    },
+    {
+      "id": "cache-horizon-cell-care",
+      "lore": "horizon-cell-care",
+      "anchor": "windspine:survey-camp"
+    },
+    {
+      "id": "cache-storm-mechanics",
+      "lore": "lore-storm-mechanics",
+      "anchor": "windspine:storm-gauge"
+    },
+    {
+      "id": "cache-relay-fire-stories",
+      "lore": "relay-fire-stories",
+      "anchor": "windspine:ridge-crest"
+    },
+    {
+      "id": "cache-storm-almanac",
+      "lore": "storm-almanac",
+      "anchor": "windspine:south-foot"
+    },
+    {
+      "id": "cache-frequency-map",
+      "lore": "frequency-map",
+      "anchor": "drowned-array:panel-field"
+    },
+    {
+      "id": "cache-terraforming-report",
+      "lore": "terraforming-report",
+      "anchor": "drowned-array:substation"
+    },
+    {
+      "id": "cache-wake-key-theory",
+      "lore": "wake-key-theory",
+      "anchor": "drowned-array:cache-cairn"
+    },
+    {
+      "id": "cache-terraforming-primer",
+      "lore": "lore-terraforming-primer",
+      "anchor": "mothersgate:approach"
+    },
+    {
+      "id": "cache-the-delay",
+      "lore": "lore-the-delay",
+      "anchor": "mothersgate:the-door"
+    },
+    {
+      "id": "cache-mother-voice",
+      "lore": "mother-voice",
+      "anchor": "mothersgate:the-door"
+    },
+    {
+      "id": "cache-mothersgate-survey",
+      "lore": "mothersgate-survey",
+      "anchor": "mothersgate:survey-point"
+    },
+    {
+      "id": "cache-bike-anatomy",
+      "lore": "lore-bike-anatomy",
+      "anchor": "canyon-slalom:marshal-post"
+    },
+    {
+      "id": "cache-oath-history",
+      "lore": "oath-history",
+      "anchor": "canyon-slalom:start-gantry"
+    },
+    {
+      "id": "cache-boundary-mountains",
+      "lore": "lore-boundary-mountains",
+      "anchor": "canyon-slalom:spectator-ledge"
+    },
+    {
+      "id": "cache-wren-service-record",
+      "lore": "lore-wren-service-record",
+      "anchor": "canyon-slalom:finish-line"
+    },
+    {
+      "id": "cache-beacon-manual",
+      "lore": "beacon-manual",
+      "anchor": "skydocks:winch-base"
+    },
+    {
+      "id": "cache-dock-shanties",
+      "lore": "dock-shanties",
+      "anchor": "saltmouth:moorage"
+    },
+    {
+      "id": "cache-door-inscription",
+      "lore": "door-inscription",
+      "anchor": "mothersgate:the-door"
+    },
+    {
+      "id": "cache-garage-keepers",
+      "lore": "garage-keepers",
+      "anchor": "saltmouth:garage"
+    },
+    {
+      "id": "cache-hum-hearings",
+      "lore": "hum-hearings",
+      "anchor": "choirhollow:crater-rim"
+    },
+    {
+      "id": "cache-rain-forecasts",
+      "lore": "rain-forecasts",
+      "anchor": "windspine:survey-camp"
+    },
+    {
+      "id": "cache-shelter-reviews",
+      "lore": "shelter-reviews",
+      "anchor": "canyon-slalom:gate-5"
+    },
+    {
+      "id": "cache-weighing-log",
+      "lore": "weighing-log",
+      "anchor": "saltmouth:exchange"
+    },
+    {
+      "id": "cache-ballad-of-the-wren",
+      "lore": "ballad-of-the-wren",
+      "anchor": "saltmouth:garage"
+    },
+    {
+      "id": "cache-last-wire",
+      "lore": "last-wire",
+      "anchor": "saltmouth:exchange"
+    },
+    {
+      "id": "cache-salt-blooms",
+      "lore": "salt-blooms",
+      "anchor": "saltmouth:flats-pan"
+    },
+    {
+      "id": "cache-chapel-visitor-book",
+      "lore": "chapel-visitor-book",
+      "anchor": "glassroad:mid-span"
+    },
+    {
+      "id": "cache-dead-channel-lullaby",
+      "lore": "dead-channel-lullaby",
+      "anchor": "choirhollow:listening-horn"
+    }
   ]
 }

@@ -30,6 +30,7 @@ import { bindInput, consume } from '../input/input';
 import { useGameStore, useSaveStore } from '../state/store';
 import { audio } from '../audio/audio';
 import { evaluateAchievements } from './achievements';
+import { ensureOnWorldRegions } from '../world/registry';
 
 export default function GameScreen() {
   const navigate = useNavigate();
@@ -41,6 +42,7 @@ export default function GameScreen() {
     bindInput();
     audio.resume();
     evaluateAchievements(); // catch any save-state unlocks from a previous session
+    ensureOnWorldRegions(); // lazy region modules: props + colliders stream in behind rapier
   }, []);
 
   // pause key handling (edge-triggered, polled lightly)

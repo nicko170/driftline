@@ -3,12 +3,19 @@
  * samples the same function, so ground contact is always exact). Vertex colours
  * paint salt flats / dunes / glass canyon. Scatter is instanced and seeded.
  */
-import { useMemo } from 'react';
+import { useMemo, useSyncExternalStore } from 'react';
 import * as THREE from 'three';
 import { terrainHeight, terrainNormal, vertexColor } from '../lib/terrain';
 import { mulberry32 } from '../lib/noise';
 import { WORLD_SIZE } from '../world/layout';
-import { REGIONS, allColliders } from '../world/registry';
+import {
+  REGIONS,
+  allColliders,
+  getRegionVersion,
+  isBenchRegion,
+  onWorldRegionsLoaded,
+  subscribeRegions,
+} from '../world/registry';
 
 const SEGMENTS = 200;
 
@@ -36,11 +43,17 @@ function useTerrainGeometry() {
 }
 
 function Scatter() {
-  const { rocks, spires, shrubs } = useMemo(() => {
+  // Delay scatter until on-world region modules (colliders) have resolved, so
+  // no rock ever spawns inside a hut. Benches never affect scatter placement.
+  useSyncExternalStore(subscribeRegions, getRegionVersion);
+  const ready = onWorldRegionsLoaded();
+  const data = useMemo(() => {
+    if (!ready) return null;
     const rand = mulberry32(777);
     const anchors: [number, number][] = [];
     const colliders = allColliders();
     for (const region of REGIONS.values()) {
+      if (isBenchRegion(region.meta)) continue;
       for (const a of Object.values(region.anchors)) anchors.push(a.pos);
     }
     const nearAnchor = (x: number, z: number, d = 26) => anchors.some(([ax, az]) => (ax - x) ** 2 + (az - z) ** 2 < d * d);
@@ -75,9 +88,11 @@ function Scatter() {
       return [s, s * 0.8, s];
     });
     return { rocks, spires, shrubs };
-  }, []);
+  }, [ready]);
 
   const meshes = useMemo(() => {
+    if (!data) return null;
+    const { rocks, spires, shrubs } = data;
     const dummy = new THREE.Object3D();
     const build = (
       items: { x: number; y: number; z: number; ry: number; s: [number, number, number] }[],
@@ -114,8 +129,9 @@ function Scatter() {
         new THREE.MeshStandardMaterial({ color: '#6E7A3A', flatShading: true, roughness: 1 }),
       ),
     };
-  }, [rocks, spires, shrubs]);
+  }, [data]);
 
+  if (!meshes) return null;
   return (
     <group>
       <primitive object={meshes.rockMesh} />

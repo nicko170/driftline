@@ -4,7 +4,7 @@
   "faction": "guild",
   "role": "Guild auditor-titular",
   "home": "saltmouth",
-  "bio": "Keeper of the Guild's brass scale at the Saltmouth exchange, where she weighs incoming salt, outgoing cargo, and — by long tradition nobody can now explain — the souls of the newly contracted. She weighed the null crate on a dare and has Not Been The Same Since, though she agrees the scale has never been more accurate.",
+  "bio": "Keeper of the Guild's brass scale at the Saltmouth exchange, where she weighs incoming salt, outgoing cargo, and \u2014 by long tradition nobody can now explain \u2014 the souls of the newly contracted. She weighed the null crate on a dare and has Not Been The Same Since, though she agrees the scale has never been more accurate.",
   "appearance": "Tall, still woman in an ochre audit-robe with hems weighted like curtains, a brass balance worn across her shoulders like a yoke, grey braids pinned with tally-nails, and eyes that seem to be subtracting something from you.",
   "voice": "Measured, ceremonial, inventory-metaphysical. Everything is stock, spoilage, surplus, or loss. Speaks of souls as 'items carried without a receipt'. The joke is that she's joking; the horror is that the scale is not.",
   "lines": {
@@ -20,7 +20,7 @@
     ],
     "mission": [
       "Carry this tithe-salt to the mid-span shrine. Do not rest it on the glass. The glass is owed things and it collects.",
-      "If the crate crosses your path again, courier — weigh nothing. Some balances prefer to stay open."
+      "If the crate crosses your path again, courier \u2014 weigh nothing. Some balances prefer to stay open."
     ],
     "radio": [
       "Counterweight to courier Varga: your soul remains on file. No further action is required. Yet.",
@@ -44,5 +44,6 @@
       "Go lightly, courier. You will be weighed on your return. You always are.",
       "Balance be with you. It won't be, but be with it."
     ]
-  }
+  },
+  "portrait": "images/characters/sister-counterweight.jpg"
 }
