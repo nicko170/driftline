@@ -1,5 +1,53 @@
 # Progress
 
+## Status — iteration 8 (night headlight; interact-leak fix; dev sky-time flag; 4 portraits; build health)
+
+**Done (typecheck/build/validate green; playtests green: 60.5 fps day + 60 fps night, 0 errors):**
+- **Bike headlight** (`src/game/Bike.tsx` `Headlight`): automatic dusk/night beam —
+  one shadowless `spotLight` (amber #FFE0AE, angle 0.45, decay 1.5, intensity
+  ramps 0→72 with `nightFactor()`), a nose lamp lens (emissive 0.6→5.1), and a
+  faint additive beam cone (opacity ≤0.06) so the beam reads in dusty air.
+  Mounted inside the rigid body — pitch/lean aim it naturally. Night playtest
+  shows a warm ground pool ~20–25 m ahead on near-black night terrain; the beam
+  core clips briefly on the salt pan up close, falls off soft. Daytime cost ≈ 0
+  (intensity/opacity all ramp to zero, no remounts → no shader recompile stalls
+  at dusk).
+- **Input-leak fix (real bug)**: dismissing a `ChapterCard`/`ChapterOutroCard`
+  with E/Enter also fired `input.interact`, instantly opening whatever
+  interactable was nearby (found via playtest: Enter at spawn popped the
+  Saltmouth mission board *behind* the card dismissal). Both cards now eat
+  `input.interact` (Esc already ate `input.pause`). Verified in playtest:
+  mode stays `riding`.
+- **Dev sky-time flag**: `?skyt=<0..1>` or `#skyt=<t>` pins the day/night clock
+  start. Gotcha found: SPA navigation (title → /play) drops query/hash before
+  game modules init, so `main.tsx` stashes `skyt`/`dbg` into `sessionStorage`
+  (`dev.skyt`/`dev.dbg`) at bootstrap; `Sky.initialSkyT()` reads the stash.
+  This is THE way to playtest night content: `playtest path='/#skyt=0.99'`.
+  Also learned: the chapter card's 0.78 dark overlay makes `2-started.png` look
+  "night" even by day — send `enter:300` first to dismiss when judging light.
+- **Portraits round 5** — painted + wired four: `ash-varga` (the protagonist!),
+  `brinemaster-ogo`, `brother-decibel`, `factor-marn-phlox`. **25 of ~43
+  characters now have portraits.** (Inherits iter-7's partial commit, which had
+  painted caretaker-unit-7, evening-standard, marshal-dune, nona-vex.)
+- **Build health**: stubbed missing stylesheets for two mid-flight demo folders
+  the workers own: `roster-review-bench/roster.css` and
+  `cargo-shake-lab/cargo-shake-lab.css` (owners may overwrite freely).
+- **Backlog**: added 3 demo intents (night-beam-tuner — pairs with this
+  headlight pass; upgrade-curve-sandbox; rep-ledger-bench).
+- **Orphan-lore audit**: zero orphans (114 lore ↔ 77 caches ↔ mission rewards).
+
+**Next / known issues:**
+- Portraits remaining (10): aunt-vertex, caretaker-7, compass, hollis-fenn,
+  mags-delver, ook, salt-singer-ila, static-warden-pem, warden-of-the-span, wisp.
+- Playtest harness quirks (documented): query strings are stripped from `path`
+  (use `#hash`); only uncaught exceptions surface in "errors", not
+  console.error; the chapter-card overlay darkens early screenshots.
+- The headlight pool intensity is a first pass — the `night-beam-tuner` demo
+  item exists to refine angle/intensity on varied terrain.
+- Content counts raced ahead via parallel writers this iteration (validate now
+  counts 70 missions / 133 lore / 43 characters); re-run the orphan audit next
+  iteration (writers can't edit caches.json).
+
 ## Status — iteration 6 (lazy region registry; 6 portraits; 5 caches close the codex gap; backlog restock)
 
 **Done (check green, build green, playtest green: 60.5 fps, 0 console errors, 0 failed requests):**
@@ -641,3 +689,84 @@ See git history for detail.
 - Region contract: off-world bench at [7300, 6900] radius 4; meta.ts demo sheet
   {title, description, blurb, tags, client, caseStudy}; typecheck clean,
   validate:content clean; finish_demo ✅.
+
+- writer2 iter 20: completed ch5-old-roads (ch5 scout story mission — MOTHERs farewell survey tour, 5 regional overlooks) + 3 lore entries: glassroad-toll-songs (courier road-song braking survey + Guild tariff farce), mother-maintenance-manifest (cycle 0x2F record, checksum affection, ends mid-line), reclaimer-grace-prayers (Local 3 mess graces, blazer-of-Mags). validate:content green (121 lore). NOTE: writers cannot edit src/content/caches.json — orphan lore needs a builder to add cache rows for: glassroad-toll-songs @ glassroad:glass-chapel, mother-maintenance-manifest @ mothersgate:survey-point, reclaimer-grace-prayers @ cinderflats:crusher.
+
+- writer2 iter 21: completed 4 missions — ch3-first-wall-run (ch3 storm story mission: evacuate Toll's library from the mid-span shrine, outrun the season's first on-road wall down the Glassroad to temple-steps shelter; requires ch3-first-wall.done), side-cache-cairn-round (collect 5 pre-collapse canisters in the drowned array, w/ caretaker-7 cameo), side-ladder-and-lamp (dusk Choir escort of the nightly lamp-lighter wagon, speed 8), side-dock-master-express (150s timed affidavit sprint winch-base → keel-town → dock hut). Mission rewards now unlock previously-orphan lore: storm-riding-guide, heliodyne-pause-memo, choir-midnight-broadcast, keel-town-docking-gazette — no cache rows needed for these.
+
+## Iteration (region-builder demo2, #8) — Storm Wall Tuner demo-region (done)
+- New demo-region `src/world/regions/storm-wall-tuner/`: the storm-wall **look-dev
+  bench on rails**, third of the storm trio (front-sandbox = hunting feel,
+  storm-choreo = mission math, this = look + cost). The shipping wall
+  (MissionDirector shell stack + churn band) is parked at `z = −(face+radius)`
+  facing the rider; scrubbable face proximity 0–640 m (◆/○ live reach rings for
+  the fog/tint ramps), "run the squeeze" auto-close at 46 m/s, time-of-day scrub
+  over a 1:1 port of Sky.tsx keyframes + stormFog ramp, day/dusk/night chips.
+- Wall look knobs: 1–5 shells with inner→mid→outer colour ramp, alpha falloff,
+  height scale, wobble, master density, churn band/ground skirt toggles,
+  particle sheet + wind streaks (module-scoped buffers, quality-capped counts),
+  `★ shipped` restore + `churning (ch5)` upgrade-path preset.
+- **Overdraw meter**: wall renders on layer 7; a storm-only pass into a 64²
+  render target every 400 ms gives real screen coverage; stack depth estimated
+  as log(1−A)/log(1−ᾱ). Perf sampler reads renderer.info + fps EMA into the HUD.
+- Quality presets (low/medium/high) mirror store.ts Quality → shell segments,
+  sheet/streak budgets, churn+skirt gating. Camera rigs: chase / orbit / top.
+  HUD mirrors shipped chrome exactly (hud-storm-tint gradient verbatim, ▲ STORM
+  WALL chip urgent < 200 m). Shape-first legend + CVD swatch matrix (Vienot
+  matrices) in the panel. "Copy constants JSON" exports blocks keyed 1:1 for
+  MissionDirector/Sky/HUD + quality budgets + a stamped `measured` readout.
+- Concept art: public/images/work/storm-wall-tuner.jpg (style-block compliant).
+  Region contract: off-world [6050, 6050] r4; meta.ts demo sheet; typecheck
+  clean; finish_demo ✅.
+
+- writer1 iter 23: completed 12 items. Characters (32/32 target hit): hollis-fenn (Keel Town wharf-master, keeper of Top Scale + Unlisted Column — distinct from Devanna's mesa masts), warden-of-the-span (north-gate lamplighter/Toll's margin-correspondent — distinct from shrine-keeper-toll), caretaker-7 "SEVEN" (mobile pan-rounds rover, sibling to TALLY-9 mast — distinct from caretaker-unit-7); mags-delver already existed, validated. Notes: plan backlog had stale dupes of toll/caretaker-unit-7 — resolved by writing distinct complementary figures, no contradictions. Lore x4: choir-static-litanies (annotated sending-side litanies II/VII/XVII, Initiate Sef + Little Reverb margins; cross-refs static-litanies), salt-guild-ledger-of-debts (A. VARGA 8,000cr bond entry ties to debt.cleared economy; Davenant struck line), drowned-array-census (standing count kept by SEVEN; hero image public/images/articles/lore/drowned-array-census.jpg), skydocks-moorage-rules (7 rules + Balloon Incident; Devanna+Hollis annotations). Missions x4 (side): side-crusher-parts-run (fragile, cinderflats processional, Pyke/Solder/Mags), side-mesa-survey (scout x3: saltmouth:overlook, windspine:ridge-crest, choirhollow:crater-rim), side-jett-marrows-rematch (race, glassroad 5-gate dusk line, requires side-vs-jett.done, Warden cameo + Davenant pencil-line hook), side-missing-mail-satchel (chase, saltmouth pan, Hollis Fenn cameo). TODO for builder: new orphan lore needs cache rows (writers can't edit src/content/caches.json) — choir-static-litanies @ choirhollow:listening-horn, salt-guild-ledger-of-debts @ saltmouth:exchange, drowned-array-census @ drowned-array:cache-cairn, skydocks-moorage-rules @ skydocks:winch-base.
+
+## Iteration (region-builder demo1, #7) — Roster Review Bench demo-region (done)
+- Completed `src/world/regions/roster-review-bench/` (started in a partial run):
+  the writing desk's content-review instrument. Every character JSON renders as
+  its true in-game dialogue card (64px portrait or initials fallback, name +
+  faction chip, role, greeting/bark/mission/radio lines shuffled on one shared
+  4.2s tick — parked under prefers-reduced-motion), faction chips filter the
+  wall (guild/choir/reclaimers/driftline/independent + a " needs work" audit
+  chip) plus a name/role/town search box.
+- Live stage mounts the unmodified DialogueBox and reproduces the HUD radio
+  ticker verbatim, both driven through the real game store (openDialogue /
+  say / radioBlip): writers review overflow, fades, the 7s subtitle window and
+  the E/Enter/Space key handling as shipped. Rehearsal scene = greeting+bark+
+  mission beats plus a flag-setting bench choice (bench.roster-rehearsed /
+  bench.roster-cut, easter-egg flags only).
+- Audit rules: no portrait, declared art that 404s (via img onError), <8 total
+  lines, or empty core buckets redraw the card as a dashed ghost frame with a ▯
+  signal-not-recovered marker — shape carries the warning (portrait stamp:
+  PORTRAIT LIVE / FRAME STALE / AWAITING SITTING).
+- Replaced the placeholder roster.css with a fully scoped rr-b stylesheet
+  (never redefines .panel/.btn/.dialogue-*, only extends them inside the bench
+  frames; the real .dialogue/.hud-radio absolutes are re-anchored to the
+  reviewer cells). Header art generated: public/images/work/roster-review-bench.jpg
+  (style-block compliant: radio shack desk, string of portrait cards, amber bulbs).
+- Region contract satisfied: off-world centre [8200, 7600] r4, meta.json +
+  anchors.json + meta.ts demo sheet; typecheck + validate:content clean;
+  finish_demo ✅.
+
+## writer1 iteration 24 (2026-09-26) — 4 characters claimed + done
+- **tally** (TALLY-9): the Drowned Array's deep archive stratum beneath Unit 7
+  (mast) and SEVEN (rover) — service-ticket voice on dead admin band one,
+  "a ghost with good manners". Canon: mast answers to Unit 7, plates sign
+  TALLY-9; tickets reference side-pan-letters / side-theo-messages (queue
+  emptied, kettle ticket 088, the good flask), bears, LAMP-ON resolution code.
+- **gauge-keeper-dax**: Windspine storm-gauge chief, night-hatch keeper; owns
+  the "register of politely mentioned couriers" invented in side-night-supply
+  (Ketch asterisked year two, Pem in it twice, Rill never — page kept open).
+  Added his hatch-log line to side-night-supply complete dialogue.
+- **verger-sann**: Choir quartermaster of Lamp Rest; grounded counterweight to
+  Cantor Ilex ("the top floor"). 91 rim lamps, 11 sulking, 1 proud; choir-glass
+  care rules (strap flat, no boost, shield half); "the crater provides — I
+  provide the crater." Distinct register: miracles as stock discrepancies.
+- **ratchet-june**: Reclaimer long-hauler of the crawler Second Mortgage; the
+  winch crew behind ch3-salvage-rights ("lines on it before the engines cooled").
+  Added her band line to that mission's accept dialogue. Portrait generated at
+  public/images/articles/characters/ratchet-june.jpg (writer path; mirrored
+  style of articles/characters copies).
+- Line buckets: finish_article requires ≥8 buckets per character (validator
+  only checks total ≥8 + ≥2 greetings — keep both happy).
+- validate:content green: 43 characters, 70 missions.

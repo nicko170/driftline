@@ -6,6 +6,7 @@
   "home": "glassroad",
   "bio": "The youngest factor ever posted to the Glassroad's south gate, a promotion achieved entirely by being the only applicant. Perpetually cheerful, catastrophically underqualified, and quietly certain the canyon is looking at him. Famously the relay who 'technically received' the null crate from behind a marker cairn.",
   "appearance": "Gangly young man drowning in an oversized ochre relay coat with the sleeves rolled four times, a clipboard clutched to his chest like a shield, sun-goggles too big for his face, and an expression of bravery visibly under construction.",
+  "portrait": "images/characters/factor-marn-phlox.jpg",
   "voice": "Breathless, eager, over-prepared for the wrong emergencies. Apologises to inanimate objects. Brags about survival statistics he's inventing. The canyon scares him; the paperwork scares him more; he'd never admit either.",
   "lines": {
     "greetings": [

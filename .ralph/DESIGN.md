@@ -100,8 +100,20 @@ Faction colors: Salt Guild `ochre #B07C3A`, Choir `teal-bright #57C4B8`, Reclaim
   crater, dusk violet in the canyon slalom, denser dry air at Mothersgate. Blends by
   proximity; the base day/night keyframes always dominate.
 
-## World collection language (iteration 5)
+## Night riding (iteration 8)
 
+- **Headlight**: automatic with `nightFactor()` (from Sky) — no manual toggle; it
+  fades in through dusk (ramp `(nf − 0.12) / 0.35`). One shadowless spotlight
+  (amber-white `#FFE0AE`, angle ~0.45, decay 1.5, peak intensity ~72), a nose
+  lamp lens, and a whisper-faint additive beam cone (#FFD9A0, ≤0.06 opacity).
+  Night ground should stay near-black violet with a warm pool reading 20–25 m
+  ahead; the salt pan may clip briefly at point-blank — acceptable, headlights
+  bloom. Never add a second shadow-casting light at night; lamps stay emissive.
+- **Dev sky flag**: `?skyt=<0..1>` / `#skyt=<t>` (stashed to sessionStorage at
+  bootstrap in main.tsx because SPA nav drops query/hash) pins the clock start —
+  the canonical way to playtest night content, e.g. `/​#skyt=0.99`.
+
+## World collection language (iteration 5)
 - **Signal caches** (codex pickups): weathered tripod (`#5C4632` timber) holding a
   floating **lore-violet octahedron** `#9A86D0` (emissive, bob+spin), faint violet
   ground ring and a whisper-thin vertical glimmer so they read at range against the

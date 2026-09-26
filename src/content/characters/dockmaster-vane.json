@@ -1,0 +1,55 @@
+{
+  "id": "dockmaster-vane",
+  "name": "Dockmaster Vane",
+  "role": "Civic dockmaster of Keel Town",
+  "faction": "guild",
+  "home": "skydocks",
+  "bio": "Runs Keel Town's civic moorings — the resident sky-rafts, the market floats, the hang-tenant registry and its famous Window Three — from a ledgered office four hundred metres above the floor of everything. Devanna Shore runs the Guild's commercial masts and winch yards; Vane runs the town that clings to them, and the two maintain a professional rivalry conducted entirely through countersignature. Has not touched the ground in twenty-six years and plans to keep it that way; the ground, he maintains, is where paperwork goes to get sand in it.",
+  "appearance": "Tall, thin man in his late fifties in a pale ochre harbour-master's coat with teal altitude piping, ink-stained cuffs, a brass barometer on a chain he consults like a wristwatch, boots with absurdly soft soles, leaning perpetually against a railing with one hand on the moorage line and the other on his stamp pad, the mesa's violet drop behind him.",
+  "voice": "Airy, clipped, faintly winded even sitting still. Talks like a lighthouse keeper who learned accounting: weather first, figures second, feelings only as appendices. Refers to the desert floor as 'the downstairs'. Afraid of the ground the way other men are afraid of debts — respectfully, at a distance, and with documentation.",
+  "portrait": "images/characters/dockmaster-vane.jpg",
+  "heroAlt": "Illustrated portrait of Dockmaster Vane, a thin ochre-coated harbour-master with a chained barometer, stamping papers at a railing high on the skydocks mesa above a violet drop.",
+  "lines": {
+    "greetings": [
+      "Ah. A courier. From downstairs. Do wipe your altitude at the door.",
+      "Varga. Barometer's steady, registry's not. Sit if you must, but the floor up here is mostly a courtesy.",
+      "Welcome to Keel Town. Mind the gap between the rafts. It's scenic and legally distinct from a hazard."
+    ],
+    "barks": [
+      "Window Three is closed. It's always closed. That's how you know it's working.",
+      "Dockmaster Shore handles the ships. I handle the town. She'll tell you the town is the cargo. She is mistaken, and I have stamped her mistake.",
+      "Everything up here is checked twice: once by me and once against me. The second check is the thorough one.",
+      "Ground-folk say the mesa sways. The mesa breathes. Downstairs merely holds its breath. Noted, not envied."
+    ],
+    "mission": [
+      "Custody papers for countersigning? Present them flat-side up and humming-side away. Whatever Ogo is demoting to furniture, the furniture stays off my rafts.",
+      "The ballot manifests go raft to raft, courier, and each signature must match its mooring. Keel Town votes the way it floats: together, or the town undocks household by household. Carry it steady.",
+      "Window Three has a backlog of apologetic envelopes returning downstairs, stamped UNDELIVERABLE in the traditional way. See they're delivered improperly, and tell Dessa the mast still owes me a song in E-flat."
+    ],
+    "radio": [
+      "Keel Town traffic to all riders: the winch queue is long, the drop is longer. Plan your visit around whichever frightens you less.",
+      "Vane on the civic band. Reminder that mooring fees are overdue the moment you feel guilty about them. Some of you have felt guilty since the dry season. Admirable productivity.",
+      "Dockmaster Shore logs winds in knots. The civic office logs them in complaints. Today's wind: eleven complaints, trending bracing."
+    ],
+    "crate": [
+      "Your humming friend was the subject of a two-hour session of the moorings committee. The minutes record 'lively discussion'. The minutes are being kind. So was I. Nobody ran.",
+      "Brinemaster Ogo's papers describe your crate as 'the party of the first part'. I've countersigned vessels with less standing. It stays out of the civic archive either way — the archive is only rated for furniture."
+    ],
+    "storm": [
+      "Storm wall on the downstairs horizon. Civic moorings are doubled and the town is breathing shallow. Riders up the winch now, arguing later.",
+      "A mesa in a storm is a lighthouse with better accountants. We stand still on purpose. It's a skill."
+    ],
+    "night": [
+      "Keel Town at night is all moored lights in a row, like a ledger someone finally ruled straight. I walk the rails until the figures stop moving. They never stop. Wonderful view.",
+      "The downstairs glows violet after dark and hums if the wind's right. Beautiful, impractical, unratable. I've tried."
+    ],
+    "feet": [
+      "Twenty-six years since my boots touched the downstairs. The boots are retired. The arrangement is permanent. No further questions are on the agenda.",
+      "People ask if I miss the ground. I miss it the way one misses a former creditor. Fondly. From a great height."
+    ],
+    "farewells": [
+      "Mind the winch on the way down. It minds nothing, which is why I have a desk.",
+      "Ride level, Varga. Downstairs flatness is the one thing I recommend about the place."
+    ]
+  }
+}

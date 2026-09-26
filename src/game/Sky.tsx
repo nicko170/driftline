@@ -11,8 +11,27 @@ import { useGameStore } from '../state/store';
 import { telemetry } from '../telemetry';
 import { REGIONS } from '../world/registry';
 
-/** 0..1, 0.30 = mid-morning at spawn. Advances slowly. */
-export const sky = { t: 0.32 };
+/** 0..1, 0.30 = mid-morning at spawn. Advances slowly.
+ *  Dev override: ?skyt=0.97 pins the start time (used by playtests of night
+ *  content — headlights, lamps, stars). */
+function initialSkyT(): number {
+  if (typeof location === 'undefined') return 0.32;
+  // Note: SPA navigation drops query/hash before this module runs, so the
+  // bootstrap in main.tsx stashes dev flags in sessionStorage — read those
+  // first, then fall back to the raw URL (direct /play?skyt=… loads).
+  try {
+    const stashed = sessionStorage.getItem('dev.skyt');
+    if (stashed !== null) {
+      const v = Number.parseFloat(stashed);
+      if (Number.isFinite(v)) return ((v % 1) + 1) % 1;
+    }
+  } catch { /* ignore */ }
+  const src = location.search + '&' + location.hash;
+  const m = /[?&#]skyt=([0-9.]+)/.exec(src);
+  const v = m ? Number.parseFloat(m[1]) : NaN;
+  return Number.isFinite(v) ? ((v % 1) + 1) % 1 : 0.32;
+}
+export const sky = { t: initialSkyT() };
 
 const DAY_LEN = 14 * 60; // seconds per full cycle
 

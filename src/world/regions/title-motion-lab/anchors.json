@@ -1,0 +1,5 @@
+{
+  "bench": { "pos": [8600, -8200], "label": "Title motion bench (off-world)", "elev": 0 },
+  "easel": { "pos": [8604, -8196], "label": "Key-art parallax easel (off-world)", "elev": 0 },
+  "timeline-desk": { "pos": [8596, -8204], "label": "Choreography timeline desk (off-world)", "elev": 0 }
+}

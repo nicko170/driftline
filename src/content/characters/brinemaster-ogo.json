@@ -6,6 +6,7 @@
   "home": "saltmouth",
   "bio": "Third Brinemaster of Saltmouth and keeper of the master ledgers. Built the Guild's water monopoly and sleeps badly because of it. Wants the null crate archived, shelved, or sold — anything except listened to. Genuinely fond of couriers, which he expresses by underpaying them slightly less.",
   "appearance": "Broad, weathered man in a long ochre coat stiff with salt at the hem, a brass scale-pin at his collar, white beard cropped square like a ledger margin, and rings on every finger — each one a closed contract.",
+  "portrait": "images/characters/brinemaster-ogo.jpg",
   "voice": "Avuncular menace. Speaks in brine and measure metaphors; everything is a weight, a price, or a debt. Never threatens directly — he quotes policy. Laughs harder the less funny things get.",
   "lines": {
     "greetings": [

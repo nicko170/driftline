@@ -19,6 +19,12 @@ Deployed at GitHub Pages under `/driftline/` (workflow sets `BASE_PATH=/driftlin
 SPA fallback: Pages serves `404.html` — we copy `index.html` to `404.html` in `postbuild`.
 `.nojekyll` is emitted from `public/`.
 
+**Dev/QA flags**: `?skyt=<0..1>` or `#skyt=<t>` pins the sky clock start (day/night
+playtesting; 0.99 ≈ deep night). Captured into `sessionStorage.dev.skyt` at bootstrap
+(`src/main.tsx`) because SPA navigation (title → `/play`) drops query/hash before the
+game modules initialise. The playtest harness strips query strings from `path` — pass
+the flag in the **hash**: `path: '/#skyt=0.99'`.
+
 ## Labs / demos (dual-source discovery)
 
 Demos can live in **two places** — both are picked up automatically by `/lab`:

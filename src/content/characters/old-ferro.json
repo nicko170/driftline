@@ -1,0 +1,55 @@
+{
+  "id": "old-ferro",
+  "name": "Old Ferro",
+  "role": "Retired rigging hand, moorage mast",
+  "faction": "independent",
+  "home": "saltmouth",
+  "bio": "Spliced and reeved every line on Saltmouth's moorage mast for sixty years before retiring, technically, into a hammock slung at its base among the cleats. Knows every rope by name, temperament, and medical history, and will correct your grip on a winch line from thirty metres away with his eyes shut. Where Old Bahro feuds with the Guild over eviction notices, Ferro's paper-war is older and pettier: the Guild keeps trying to register his hammock as a vessel and charge it mooring fees, and Ferro keeps returning the forms annotated, in rigger's shorthand, as *scaffolding*.",
+  "appearance": "A wiry, knotted old man in a rope-frayed salt-white jumper and a rigger's belt heavy with marlinspikes, palms shiny as rope from a lifetime of line-work, white whiskers braided with twine, half-recumbent in a hammock slung between two mast cleats like he was born in it, one foot bare and permanently swinging to some wind only he measures.",
+  "voice": "Slow, rope-minded, deceptively vague; every metaphor is a knot and every knot is advice. Counts strangers' character in 'lays' like a line — a good person is 'laid fair'. Rambles in loops that always reeve home. Tender toward rope, sceptical toward anything rigid. Secretly keeps the mast's true condition in his head and only his head, and pays attention to everything while appearing to sleep.",
+  "portrait": "images/characters/old-ferro.jpg",
+  "heroAlt": "Illustrated portrait of Old Ferro, a wiry rigger in a rope-frayed jumper with marlinspikes on his belt, drowsing in a hammock slung between the cleats of Saltmouth's moorage mast.",
+  "lines": {
+    "greetings": [
+      "Easy with the boot, young line. You're standing on Marisol — she bruises proud.",
+      "Varga. Laid fair, you are. I could tell from your docking. Most couriers throw lines; you *pay* them out.",
+      "Come to hear about the ropes? Sit on the cleat that doesn't complain. That one. No — that one."
+    ],
+    "barks": [
+      "Every line on this mast has a name, a temper, and a doctor. I'm all three.",
+      "Rigid things snap, young line. The mast sways *on purpose*. Learned it from me. I learned it from the mast. Circle of knowledge.",
+      "The Guild sent a man to measure my hammock. The hammock measured him back. He left confused, which is the hammock's natural element.",
+      "Vessels pay mooring fees. Scaffolding doesn't. My hammock has been scaffolding since before the registrar was born, and it will be scaffolding at his retirement party. I'll bring dip."
+    ],
+    "mission": [
+      "Run this tag-line parcel up to the winch hands at the mesa base — splice kit, fresh eyes, and a note telling them the third line left is mourning. They'll know. Lines mourn slow and slip without warning.",
+      "Bahro's envelope gets its long way home once a year, tidy as solstice. Mine's simpler: these fee notices want walking to the exchange and filing under 'scaffolding'. The Guild files nothing there. Emptiness is the filing. Over."
+    ],
+    "radio": [
+      "Mast band, Ferro. Wind's come up half a lay since breakfast. Couriers on the flat: the sky's snugged her gusts this morning, so snug yourselves.",
+      "Young Varga. Your hover-wash up the mastside just twitched the starboard springline. Charming. Do it slower next time and Pearl here will purr.",
+      "Whoever spliced the ferry whip with a timber hitch and a prayer: the prayer part's holding, the hitch isn't. Come see me before the mast writes you back."
+    ],
+    "ropes": [
+      "A rope's a promise with a twist in it. The twist is where the promise lives. Untwisted twine can't hold anything, same as an honest schedule.",
+      "Marisol's the old mooring cable — sings low before weather. Pearl's the springline — vain, strong, hates sand. You've not lived till you've been introduced.",
+      "Knot advice, free of charge: the bowline is for trust, the clove hitch is for visits, and the thief knot is how you find out who checks their luggage."
+    ],
+    "crate": [
+      "Heard your box hums, young line. So did the mast, the night it crossed. Two hums, one key. I counted the lays of it. Won't say the number. Rope keeps secrets better than vaults — that's why vaults are jealous.",
+      "Things that shouldn't exist? Young line, I've spliced rope back into weather. Everything exists. The question is what it's *load-rated* for."
+    ],
+    "storm": [
+      "Wall's coming. The springlines said so at dawn — Pearl tightened, Marisol dropped a note. Double everything you love and slack everything you don't.",
+      "Storm's a bad knot in the sky. You don't cut it, young line. You ride along it till it works loose."
+    ],
+    "night": [
+      "Nights, the mast ticks over like a sleeping animal with a sanding habit. I count the ticks. Fifty-one years of ticks. It adds up to nothing and keeps me company.",
+      "Sleep in a hammock long enough and the wind reads you like rigging. I dream in fair leads and I've never once been winched."
+    ],
+    "farewells": [
+      "Fair wind off your quarter, young line. Come back with a story and I'll tell you which rope it was.",
+      "Ride gentle past the mast. Pearl's in a mood and Marisol's been awake all week keeping her in it."
+    ]
+  }
+}

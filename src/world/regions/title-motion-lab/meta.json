@@ -1,0 +1,8 @@
+{
+  "slug": "title-motion-lab",
+  "name": "Title Motion Lab",
+  "blurb": "Motion bench, not a game region: the shipped title screen entrance rebuilt as a tunable instrument — key-art parallax layers, beat-by-beat menu choreography, the epilogue-panel reveal, and font-swap states under simulated slow networks, with a timeline readout and exportable CSS timing tokens. Anchors and center live outside the playable map.",
+  "center": [8600, -8200],
+  "radius": 4,
+  "danger": 0
+}

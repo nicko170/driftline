@@ -1,0 +1,60 @@
+{
+  "id": "keeper-solei",
+  "name": "Keeper Solei",
+  "role": "Keeper of the Glass Chapel, Glassroad",
+  "faction": "independent",
+  "home": "glassroad",
+  "bio": "Keeps the Glass Chapel on the south stretch of the glassroad — part shrine, part wayside kitchen, fully the last warm threshold before the Slick Mile — with a pot of tea that tastes like regret and a bench that has reset more courier morale than the Guild's whole benefits scheme. Where Toll reads to the canyon and the Warden argues with it in margins, Solei simply feeds whoever comes through her gate and asks after their knees. Riders say you haven't truly ridden the glassroad until Solei has handed you something steaming and told you a proverb that only makes sense three bends later.",
+  "appearance": "A round-shouldered, square-handed woman in her seventies in layered ochre-and-bone wraps stitched against canyon drafts, a teal glass ladle hung at her hip like a mace, chem-marked apron over riding leathers, hair hidden under a scorched headscarf, perpetually mid-motion between a solar kettle and a long bench under the chapel's fused-glass arch, the teal canyon glowing violet behind her.",
+  "voice": "Warm, unhurried, unimpressible. Speaks in weathered proverbs that turn sideways halfway through and land somewhere true. Practical kindness over doctrine — the chapel has no creed but tea. Calls every courier 'rider' and every problem 'weather'. Her terrible tea is brewed strong enough to strip paint and is loved with total sincerity; she knows it's bad and considers that the point.",
+  "portrait": "images/articles/characters/keeper-solei.jpg",
+  "heroAlt": "Illustrated portrait of Keeper Solei, an elder woman in layered ochre wraps with a teal glass ladle at her hip, pouring tea beneath the fused-glass arch of the Glass Chapel on the canyon road.",
+  "lines": {
+    "greetings": [
+      "Rider. Bench before business. The bench has opinions; don't deprive it.",
+      "Come in from the wind. Tea's on, and tea is all we're certain of.",
+      "Ah — the hum-rider. Sit. The canyon's been talking about you all week. Rude of it not to send chairs."
+    ],
+    "barks": [
+      "A road you can't stop on isn't a road, it's an argument. I keep the comma.",
+      "The tea is terrible. Terrible tea is honest tea. Good tea is just flavoured water telling you what you want to hear.",
+      "Knees, rider. Everyone asks after engines and nobody asks after knees, and you can live without an engine.",
+      "The glass sings, the Choir says it's a god, the Guild says it's a mineral. I say it needs polishing and someone to eat under it. We're all partly right, which is the usual shape."
+    ],
+    "mission": [
+      "Take this bundle down to the survey camp at the Slick Mile — bread, tea brick, and a note that says their watcher-lamp leans. They'll pretend they don't need the note. The leaning is the note.",
+      "Someone's left offerings at the gate shrines again — batteries, mostly, and one very confused boot. Ride the count for me, rider, and tell the boot's owner it's in good company."
+    ],
+    "radio": [
+      "Chapel band: kettle's on till dusk, bench is warm, south gate's honest today. Toll's reading chapter something-or-other at the mid-span so the echo's in a good mood — ride accordingly.",
+      "Keepers' weather, all riders: wind coming down-canyon crosswise, tea-strength by four. If you're past the chapel, you're home; if you're not, the bench keeps.",
+      "Solei here. A reminder that the offerings box is for offerings, not invoices. You know who you are. Tea anyway."
+    ],
+    "proverbs": [
+      "The canyon gives every rider one free mistake. Spend yours on parking.",
+      "A fast rider crosses the glass. A wise rider is crossed by it. Says on the lintel. I stitched it before breakfast.",
+      "Never trust a calm road before lunch, rider. Never trust a loud one after. All roads are weather.",
+      "Soup first, speed second, and if your god minds, send the god around — I have a bench."
+    ],
+    "crate": [
+      "Your cargo hums, rider, and the chapel glass rings back in company instead of alarm. Whatever you carry, it's been welcomed here before. That should comfort or worry you; tea helps either.",
+      "The Choir would call your box scripture and the Guild would call it freight. On my bench it's a third thing: a reason for soup. Come by after."
+    ],
+    "storm": [
+      "Wall rising north, rider. Bench inside, kettle inside, you inside. The chapel's stood through forty seasons by being exactly the right amount of stubborn.",
+      "Storms are just the desert clearing its throat. Nasty throat. Get indoors and argue with my tea till it passes."
+    ],
+    "night": [
+      "Night riding on the glass is for poets and fools, and the poets carry lamps. Rest here, rider. The dark keeps better than your enthusiasm.",
+      "The canyon holds the day's light a while after dusk, like it's rationing. So is the tea. Both are enough if you sip."
+    ],
+    "books": [
+      "Toll reads to the canyon up at the span and the Warden corrects his footnotes from the north gate, and neither has ever set foot here. Fine scholarship travels; scholars rarely do. More bread for the readers.",
+      "Thirteen books came through my gate in a satchel once, rider. I returned one: the river one. Seemed cruel to keep it where it can't rain."
+    ],
+    "farewells": [
+      "Bench before business, weather before worry, and flat salt to you, rider.",
+      "Go gentle past the Slick Mile. The glass admires a show-off and admiration is heavy."
+    ]
+  }
+}

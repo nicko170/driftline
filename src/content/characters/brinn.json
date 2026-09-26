@@ -1,0 +1,56 @@
+{
+  "id": "brinn",
+  "name": "Brinn",
+  "role": "Reclaimer trader, east-gate camp",
+  "faction": "reclaimers",
+  "home": "saltmouth",
+  "bio": "Camps her stripped-fast skiff and her folding stall just outside Saltmouth's east gate, where the Guild's weighhouse can't quite see her scales and Brinn can't quite stop laughing about it. Sells salvage that is 'second-hand, third-hand, mostly hands-off' — gyro rings that outlived their makers, horizon cells that are only ever *slightly* warm. Under the patter she's the fairest backstop the east gate has: her scales are honest-ish, her word exactly one handshake long, and her laugh is load-bearing.",
+  "appearance": "Broad, sun-browned woman in layered rust-red reclaimed leathers stitched with pulled copper wire, a bandolier of mismatched scale-weights worn like medals, one goggle lens folk-etched with a winking eye, heavy laugh-crinkles, standing beside a folding stall stacked with gyro rings, cabling spools, and a crateload of horizon cells under a warning blanket she ignores.",
+  "voice": "Booms first, bargains second. Everything is a deal and every deal is a story she tells better than the truth. Calls everyone 'customer' like a compliment and 'friend' like a surcharge. Genuinely generous with advice and genuinely allergic to refunds. Deeply superstitious about exactly one thing: a sale she didn't laugh through.",
+  "portrait": "images/characters/brinn.jpg",
+  "heroAlt": "Illustrated portrait of Brinn, a broad laughing Reclaimer trader in rust-red wire-stitched leathers with a bandolier of scale-weights, at her folding salvage stall outside Saltmouth's east gate.",
+  "lines": {
+    "greetings": [
+      "Customer! Step into the shade, the sun's markup is terrible.",
+      "Varga! Still riding that debt around like a hood ornament? Come, hold this gyro ring, feel the savings.",
+      "Welcome to the east gate's finest and only emporium. Everything's priced to move. Mostly it moved already. Ha!"
+    ],
+    "barks": [
+      "That cell's only slightly warm. Warm means it's alive. Alive means it works. Logic, friend, unbeatable.",
+      "Honest scales! Mine are honest-*ish*. The 'ish' is where the deals live.",
+      "Guild prices inside the walls, Brinn prices outside. Nature loves a margin.",
+      "No refunds. Refunds are a story the Guild tells children. Brinn tells truer stories, like this one, which ends with you buying a cable spool."
+    ],
+    "mission": [
+      "Ketch's gyro rings? Boxed and waiting, spun true, only haunted by the one skiff. Free of charge, the haunting.",
+      "Friend, I have a manifest this long of things the desert doesn't need anymore and this short of couriers I trust. You see where this goes. It goes fast, and it pays.",
+      "Take these cells to the ridge camp and don't stack them. They get chatty in stacks. By chatty I mean hot. By hot I mean chatty."
+    ],
+    "radio": [
+      "East gate band! Brinn here. Today's special: everything. Tomorrow's special: same, but I'm honest about it. Ha!",
+      "Courier Varga, word to your speaker: that part I sold your garage arrived strictly through channels. The channels wish to remain anonymous.",
+      "Weather note from the east gate: wind's up, prices are down, and one of these facts was already true."
+    ],
+    "deals": [
+      "For you, friend, cost price. Plus a small fee for finding the cost price. It's on a different list. Very exclusive.",
+      "You haggle well. Terrible news for you: I like that. Friend discount starts now and compounds weekly.",
+      "This one's free. First one's always free. HA! Little Reclaimer joke. Nothing here is free. Take two, I admire the reflex."
+    ],
+    "crate": [
+      "That box of yours hums, friend. I flipped a crate like that once. The buyer's still humming too. He bought earplugs off me. Great sale.",
+      "Word of advice, no charge: if a thing shouldn't exist, sell it fast or name it and keep it. Middle option is where the Choir lives."
+    ],
+    "storm": [
+      "Wall on the weather glass! Stall's folding, prices aren't. Storm discount is a myth, same as refunds.",
+      "Storm season's good business, friend. Everyone needs new everything. Terrible for the everything. Wonderful for Brinn."
+    ],
+    "night": [
+      "Night trading at the east gate, friend. The cells glow prettier after dark. That is either an optics thing or a problem. Buy first, we'll diagnose together.",
+      "I sleep under the stall with one eye on the spools. The spools sleep too. We dream of buyers."
+    ],
+    "farewells": [
+      "Ride fast, friend! If anything rattles, that's the quality settling in!",
+      "Come back when you have money! Or stories! I accept both at roughly the same rate!"
+    ]
+  }
+}

@@ -30,6 +30,7 @@ export default function ChapterCard() {
       if (k === 'enter' || k === 'e' || k === 'escape') {
         audio.chime();
         input.pause = false; // Esc closes the card, never opens the pause menu
+        input.interact = false; // E/Enter closes the card, never fires the board
         markChapterSeen(pending);
       }
     };
@@ -44,6 +45,7 @@ export default function ChapterCard() {
   const dismiss = () => {
     audio.chime();
     input.pause = false;
+    input.interact = false;
     markChapterSeen(pending);
   };
 

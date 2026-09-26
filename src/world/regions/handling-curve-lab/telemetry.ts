@@ -43,6 +43,7 @@ export const ring = {
   boost: new Float32Array(RING), // 0..1
   drift: new Float32Array(RING), // 0/1
   reward: new Float32Array(RING), // 0..1 window fill
+  surf: new Uint8Array(RING), // 0 salt · 1 sand · 2 glass (scope surface lane)
 };
 
 /** Push one sample — called once per rendered frame. */
@@ -53,6 +54,7 @@ export function pushSample(): void {
   ring.boost[i] = tele.boost;
   ring.drift[i] = tele.drifting ? 1 : 0;
   ring.reward[i] = tele.drifting ? tele.rewardLive : 0;
+  ring.surf[i] = tele.surface === 'sand' ? 1 : tele.surface === 'glass' ? 2 : 0;
   ring.head = (i + 1) % RING;
   if (ring.len < RING) ring.len++;
 }

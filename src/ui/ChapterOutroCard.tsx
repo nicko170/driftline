@@ -32,6 +32,8 @@ export default function ChapterOutroCard() {
       audio.chime();
       // eat the edge-triggered pause so Esc closes the card, not opens the menu
       input.pause = false;
+      // and eat interact so E/Enter closes the card, not fires the nearby spot
+      input.interact = false;
       useSaveStore.getState().markOutroSeen(chapterOutro);
       useGameStore.getState().setChapterOutro(null);
     };

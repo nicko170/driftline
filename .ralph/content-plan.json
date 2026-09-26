@@ -4987,8 +4987,10 @@
     "flats",
     "heat"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790405722.559972
   },
   {
    "kind": "article",
@@ -5002,8 +5004,10 @@
     "roadside",
     "tract"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790405722.559974
   },
   {
    "kind": "article",
@@ -5018,8 +5022,10 @@
     "record",
     "bike"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790405722.559974
   },
   {
    "kind": "article",
@@ -5033,8 +5039,10 @@
     "standard",
     "comedy"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790405722.559975
   },
   {
    "kind": "article",

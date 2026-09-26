@@ -6,6 +6,7 @@
   "home": "saltmouth",
   "bio": "New to the Driftline, riding a second-hand hover-bike bought on Guild credit. Owes 8,000 credits, rides like the debt is chasing — because it is. Talks dry, rides kind, and is constitutionally incapable of leaving a sealed crate alone.",
   "appearance": "Lean courier in a sun-faded rust riding coat, wrap-around amber goggles, scarf over the lower face, hair doing whatever the wind negotiated. The bike: a patched, beloved second-hand hover.",
+  "portrait": "images/characters/ash-varga.jpg",
   "voice": "Dry internal monologue, understated on the radio. Humor at own expense. Gets quieter, not louder, when things get big.",
   "lines": {
     "greetings": [

@@ -18,6 +18,7 @@ import { terrainHeight, terrainNormal, surfaceAt } from '../lib/terrain';
 import { input, pollKeyboard, pollGamepad } from '../input/input';
 import { telemetry, addShake } from '../telemetry';
 import { audio } from '../audio/audio';
+import { nightFactor } from './Sky';
 import { useSaveStore, useGameStore } from '../state/store';
 import { getAnchor } from '../world/registry';
 import { ride, flushRideStats } from './rideStats';
@@ -274,8 +275,68 @@ export default function Bike() {
       }}
     >
       <CuboidCollider args={[1.25, 0.42, 0.55]} restitution={0.25} friction={0.4} />
+      <Headlight />
       <BikeModel paint={paint} glowRef={glow} />
     </RigidBody>
+  );
+}
+
+/**
+ * Headlight — automatic dusk/night main beam. One shadowless spotlight tracking
+ * the bike, plus a nose lamp mesh and a whisper-faint additive beam cone so the
+ * beam reads in dusty air. Intensity ramps with nightFactor(); during the day
+ * the light contributes ~nothing (spot intensity 0, cone opacity 0).
+ * Mounted inside the rigid body so pitch/lean aim the beam naturally.
+ */
+function Headlight() {
+  const spot = useRef<THREE.SpotLight>(null);
+  const lamp = useRef<THREE.MeshStandardMaterial>(null);
+  const cone = useRef<THREE.MeshBasicMaterial>(null);
+  useFrame(() => {
+    const on = Math.min(1, Math.max(0, (nightFactor() - 0.12) / 0.35));
+    if (spot.current) spot.current.intensity = on * 72;
+    if (lamp.current) lamp.current.emissiveIntensity = 0.6 + on * 4.5;
+    if (cone.current) cone.current.opacity = on * 0.06;
+  });
+  return (
+    <group>
+      <spotLight
+        ref={spot}
+        position={[0, 0.65, 1.7]}
+        angle={0.45}
+        penumbra={0.7}
+        distance={70}
+        decay={1.5}
+        color="#FFE0AE"
+        intensity={0}
+      >
+        <object3D position={[0, -1.1, 15]} attach="target" />
+      </spotLight>
+      {/* headlamp lens on the nose (always faintly lit; bright at night) */}
+      <mesh position={[0, 0.26, 2.02]}>
+        <planeGeometry args={[0.36, 0.13]} />
+        <meshStandardMaterial
+          ref={lamp}
+          color="#FFE9C4"
+          emissive="#FFE9C4"
+          emissiveIntensity={0.6}
+          side={THREE.DoubleSide}
+        />
+      </mesh>
+      {/* beam cone — apex sits at the lens, opens ahead, additive dust sheen */}
+      <mesh position={[0, 0.2, 5.45]} rotation={[-Math.PI / 2 + 0.05, 0, 0]}>
+        <coneGeometry args={[1.8, 7.1, 12, 1, true]} />
+        <meshBasicMaterial
+          ref={cone}
+          color="#FFD9A0"
+          transparent
+          opacity={0}
+          blending={THREE.AdditiveBlending}
+          depthWrite={false}
+          side={THREE.DoubleSide}
+        />
+      </mesh>
+    </group>
   );
 }
 
