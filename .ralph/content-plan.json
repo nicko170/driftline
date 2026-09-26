@@ -1798,8 +1798,11 @@
     "machine",
     "log"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790381628.0476139,
+   "done_at": "2026-09-26T10:21:22"
   },
   {
    "kind": "article",
@@ -1813,8 +1816,11 @@
     "couriers",
     "core"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790381628.047615,
+   "done_at": "2026-09-26T10:21:04"
   },
   {
    "kind": "article",
@@ -1828,8 +1834,11 @@
     "language",
     "humor"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790381628.047615,
+   "done_at": "2026-09-26T10:21:38"
   },
   {
    "kind": "article",
@@ -1842,8 +1851,11 @@
     "log",
     "foreshadowing"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790381628.047615,
+   "done_at": "2026-09-26T10:21:38"
   },
   {
    "kind": "article",
