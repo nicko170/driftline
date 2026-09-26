@@ -1,0 +1,203 @@
+/* Storm Front Sandbox — scoped styles (sfs-). Palette tokens come from ui.css. */
+
+.sfs-root {
+  position: relative;
+  flex: 1;
+  min-height: 72vh;
+  display: flex;
+  background: var(--ink, #1B1526);
+  overflow: hidden;
+}
+.sfs-canvas { position: absolute; inset: 0; }
+.sfs-canvas canvas { display: block; }
+
+/* ---------- HUD chrome ---------- */
+.sfs-hud { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
+
+.sfs-tint {
+  position: absolute; inset: 0; opacity: 0;
+  background:
+    radial-gradient(120% 90% at 50% 100%, rgba(179, 80, 46, 0.55), transparent 60%),
+    linear-gradient(rgba(138, 83, 53, 0.35), rgba(201, 143, 78, 0.5));
+  mix-blend-mode: multiply;
+  transition: opacity 120ms linear;
+}
+
+.sfs-topline {
+  position: absolute; top: 12px; left: 50%; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 14px;
+  padding: 7px 14px; border-radius: 9px;
+  border: 1px solid var(--rust-deep, #7E3320);
+  background: color-mix(in srgb, var(--space, #14101F) 78%, transparent);
+  backdrop-filter: blur(4px);
+  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE);
+}
+.sfs-status { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; }
+.sfs-dot { width: 9px; height: 9px; border-radius: 2px; transform: rotate(45deg); background: var(--teal-bright, #57C4B8); }
+.sfs-status[data-status='hunt'] .sfs-dot { background: var(--danger, #E4572E); }
+.sfs-status[data-status='caught'] .sfs-dot { background: var(--danger, #E4572E); animation: sfsblink 0.3s steps(2) infinite; }
+.sfs-status[data-status='sheltered'] .sfs-dot { background: var(--amber, #FFB454); }
+@keyframes sfsblink { 50% { opacity: 0.25; } }
+
+.sfs-facewrap { display: inline-flex; align-items: center; gap: 8px; }
+.sfs-facelabel { opacity: 0.55; }
+.sfs-facebar {
+  width: 130px; height: 6px; border-radius: 3px; overflow: hidden;
+  background: color-mix(in srgb, var(--rust-deep, #7E3320) 55%, transparent);
+}
+.sfs-facefill {
+  height: 100%; border-radius: 3px;
+  background: linear-gradient(90deg, var(--ochre, #B07C3A), var(--amber, #FFB454));
+  transition: background 200ms;
+}
+.sfs-facefill.is-close { background: linear-gradient(90deg, var(--danger, #E4572E), #FFB454); }
+.sfs-faceval { font-variant-numeric: tabular-nums; color: var(--amber-hot, #FFC969); min-width: 42px; }
+.sfs-margin { font-variant-numeric: tabular-nums; opacity: 0.8; min-width: 64px; }
+.sfs-margin.is-bad { color: var(--danger, #E4572E); }
+
+.sfs-msg {
+  position: absolute; top: 24%; left: 50%; transform: translateX(-50%);
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: clamp(18px, 3vw, 30px); font-weight: 700; letter-spacing: 0.22em;
+  color: var(--amber-hot, #FFC969); text-shadow: 0 2px 18px rgba(0, 0, 0, 0.6);
+  opacity: 0; transition: opacity 180ms ease-out; white-space: nowrap;
+}
+
+.sfs-speedtape {
+  position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+  display: flex; align-items: baseline; gap: 12px;
+  padding: 8px 18px; border-radius: 10px;
+  border: 1px solid var(--rust-deep, #7E3320);
+  background: color-mix(in srgb, var(--space, #14101F) 80%, transparent);
+  backdrop-filter: blur(4px);
+}
+.sfs-speednum {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 26px; font-weight: 700; color: var(--salt, #F3EEE2);
+  font-variant-numeric: tabular-nums;
+}
+.sfs-speedunit { font-size: 10.5px; letter-spacing: 0.08em; color: var(--bone, #E4D7BE); opacity: 0.75; }
+.sfs-speedunit b { color: var(--amber-hot, #FFC969); font-variant-numeric: tabular-nums; }
+.sfs-timer { font-size: 10.5px; letter-spacing: 0.14em; color: var(--bone, #E4D7BE); opacity: 0.75; }
+.sfs-timer b { color: var(--teal-bright, #57C4B8); font-variant-numeric: tabular-nums; }
+
+.sfs-keys {
+  position: absolute; bottom: 16px; right: 16px; margin: 0;
+  font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE); opacity: 0.5;
+}
+
+/* ---------- panel ---------- */
+.sfs-panel {
+  position: absolute; left: 14px; bottom: 14px; z-index: 2;
+  width: min(400px, calc(100% - 28px));
+  max-height: calc(100% - 90px);
+  overflow-y: auto;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--rust-deep, #7E3320);
+  background: color-mix(in srgb, var(--space, #14101F) 84%, transparent);
+  backdrop-filter: blur(6px);
+  animation: sfsrise 180ms ease-out;
+}
+
+.sfs-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.sfs-head h2 {
+  margin: 0; font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--amber, #FFB454);
+}
+.sfs-icon {
+  border: none; background: transparent; color: var(--bone, #E4D7BE);
+  font-size: 18px; cursor: pointer; line-height: 1; padding: 2px 6px;
+}
+.sfs-reopen {
+  position: absolute; left: 14px; bottom: 14px; z-index: 2;
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE);
+  background: color-mix(in srgb, var(--space, #14101F) 84%, transparent);
+  border: 1px solid var(--rust-deep, #7E3320); border-radius: 8px;
+  padding: 8px 14px; cursor: pointer; backdrop-filter: blur(6px);
+}
+.sfs-reopen:hover, .sfs-reopen:focus-visible { border-color: var(--amber, #FFB454); }
+
+.sfs-stats {
+  display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 10px 0 4px;
+  font-size: 11.5px; color: var(--bone, #E4D7BE);
+  font-variant-numeric: tabular-nums;
+}
+.sfs-stats b { color: var(--salt, #F3EEE2); font-family: var(--font-display, 'Chakra Petch', sans-serif); }
+.sfs-pill {
+  text-transform: uppercase; letter-spacing: 0.1em; font-size: 10px;
+  padding: 2px 8px; border-radius: 6px; border: 1px solid var(--teal-bright, #57C4B8);
+  color: var(--teal-bright, #57C4B8);
+}
+.sfs-pill.is-hunt { border-color: var(--danger, #E4572E); color: var(--danger, #E4572E); }
+.sfs-pill.is-caught { border-color: var(--danger, #E4572E); background: color-mix(in srgb, var(--danger, #E4572E) 18%, transparent); }
+.sfs-pill.is-sheltered { border-color: var(--amber, #FFB454); color: var(--amber, #FFB454); }
+
+.sfs-panel h3 {
+  margin: 14px 0 4px; font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--teal-bright, #57C4B8);
+}
+
+.sfs-slider { display: grid; grid-template-columns: 92px 1fr 58px; align-items: center; gap: 8px; margin: 5px 0; }
+.sfs-slider-label { font-size: 11.5px; color: var(--bone, #E4D7BE); opacity: 0.85; }
+.sfs-slider-val {
+  font-size: 11px; text-align: right; color: var(--amber-hot, #FFC969);
+  font-variant-numeric: tabular-nums;
+}
+.sfs-slider input[type='range'] {
+  width: 100%; height: 4px; appearance: none; border-radius: 2px;
+  background: linear-gradient(90deg, var(--ochre, #B07C3A), var(--amber, #FFB454));
+  outline-offset: 3px; cursor: pointer;
+}
+.sfs-slider input[type='range']::-webkit-slider-thumb {
+  appearance: none; width: 13px; height: 13px; border-radius: 3px;
+  background: var(--salt, #F3EEE2); border: 1px solid var(--rust-deep, #7E3320);
+  transform: rotate(45deg);
+}
+.sfs-slider input[type='range']:focus-visible { outline: 2px solid var(--amber, #FFB454); }
+
+.sfs-check {
+  display: flex; align-items: baseline; gap: 8px; margin: 8px 0 2px;
+  font-size: 11.5px; color: var(--bone, #E4D7BE); cursor: pointer;
+}
+.sfs-check input { accent-color: var(--amber, #FFB454); }
+
+.sfs-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+
+.sfs-btn, .sfs-chip {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE);
+  background: transparent;
+  border: 1px solid var(--rust-deep, #7E3320);
+  border-radius: 8px;
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: border-color 140ms, background 140ms, color 140ms;
+}
+.sfs-btn:hover, .sfs-chip:hover { border-color: var(--amber, #FFB454); }
+.sfs-btn:focus-visible, .sfs-chip:focus-visible { outline: 2px solid var(--amber, #FFB454); outline-offset: 2px; }
+.sfs-btn.primary {
+  background: color-mix(in srgb, var(--amber, #FFB454) 16%, transparent);
+  border-color: var(--amber, #FFB454);
+  color: var(--amber-hot, #FFC969);
+}
+
+.sfs-note { margin: 4px 0 0; font-size: 10.5px; line-height: 1.5; color: var(--bone, #E4D7BE); opacity: 0.55; }
+.sfs-note code { color: var(--teal-bright, #57C4B8); }
+
+@keyframes sfsrise {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 760px) {
+  .sfs-topline { flex-wrap: wrap; justify-content: center; max-width: calc(100% - 24px); }
+  .sfs-keys { display: none; }
+  .sfs-speedtape { bottom: auto; top: 64px; }
+}

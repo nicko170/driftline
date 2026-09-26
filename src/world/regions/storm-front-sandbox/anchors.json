@@ -1,0 +1,4 @@
+{
+  "bench": { "pos": [5800, 5400], "label": "Storm bench sawhorses (off-world)", "elev": 0 },
+  "storm-gauge": { "pos": [5802, 5398], "label": "Test gauge mast (off-world)", "elev": 0 }
+}

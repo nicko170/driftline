@@ -1,0 +1,9 @@
+{
+  "slug": "storm-front-sandbox",
+  "name": "Storm Front Sandbox",
+  "blurb": "Workshop tool, not a game region: a wall-of-sand simulator on an off-world test pan for tuning the ch3/ch5 storm missions. Anchors and center live outside the playable map.",
+  "center": [5800, 5400],
+  "radius": 4,
+  "danger": 0,
+  "climate": { "fogDensity": 0.0018, "skyTint": "#2A2140", "groundTint": "#C98F4E" }
+}

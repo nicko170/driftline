@@ -1195,10 +1195,11 @@
     "rescue",
     "chapter 3"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790385441.2884202
+   "claimed_at": 1790385441.2884202,
+   "done_at": "2026-09-26T11:21:59"
   },
   {
    "kind": "article",
@@ -1212,10 +1213,11 @@
     "race",
     "salt flats"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790385441.2884212
+   "claimed_at": 1790385441.2884212,
+   "done_at": "2026-09-26T11:21:59"
   },
   {
    "kind": "article",
@@ -1229,10 +1231,11 @@
     "race",
     "mysterious"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790385441.2884219
+   "claimed_at": 1790385441.2884219,
+   "done_at": "2026-09-26T11:21:59"
   },
   {
    "kind": "article",
@@ -1246,10 +1249,11 @@
     "rumors",
     "skydocks"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790385441.2884219
+   "claimed_at": 1790385441.2884219,
+   "done_at": "2026-09-26T11:21:59"
   },
   {
    "kind": "article",
@@ -1263,8 +1267,10 @@
     "stories",
     "glassroad"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790385509.164263
   },
   {
    "kind": "article",
@@ -1278,8 +1284,10 @@
     "weather",
     "poet"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790385509.164265
   },
   {
    "kind": "article",
@@ -1293,8 +1301,10 @@
     "night",
     "lichen"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790385509.164265
   },
   {
    "kind": "article",
@@ -1308,8 +1318,10 @@
     "pilot",
     "chatter"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790385509.1642659
   },
   {
    "kind": "article",
@@ -2421,10 +2433,11 @@
    "cluster": "demos",
    "intent": "A wall-of-sand simulator: rolling storm front as curved fog wall + particle sheet crossing a flat pan; sliders for speed, density, turbulence, wall height; try outrunning it on a simple bike. Purpose: tune ch3/ch5 storm missions. Art: ochre wall over violet dusk. Stack: R3F, custom fog shader-lite via FogExp2 modulation + Points.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo3",
-   "claimed_at": 1790384173.907157
+   "claimed_at": 1790384173.907157,
+   "done_at": "2026-09-26T11:23:44"
   },
   {
    "kind": "demo",
@@ -2446,8 +2459,10 @@
    "cluster": "demos",
    "intent": "Typography playground for the codex: reads lore markdown live from src/content/lore, with toggles for measure, leading, size, and a 'printed Guild form' decorative mode. Purpose: keep 120+ in-world entries genuinely pleasant to read. Stack: React + the codex library.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo2",
+   "claimed_at": 1790385760.2881038
   },
   {
    "kind": "demo",
@@ -2841,8 +2856,10 @@
     "salvage",
     "comedy"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790385726.9445472
   },
   {
    "kind": "article",
@@ -2857,8 +2874,10 @@
     "schedule",
     "mystery"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790385726.9445481
   },
   {
    "kind": "article",
@@ -2873,8 +2892,10 @@
     "melancholy",
     "log"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790385726.9445481
   },
   {
    "kind": "article",
@@ -2889,8 +2910,10 @@
     "history",
     "door"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790385726.9445481
   },
   {
    "kind": "article",
@@ -4241,6 +4264,36 @@
     "npc loops",
     "driftline"
    ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "cargo-shake-lab",
+   "title": "Cargo Shake Lab",
+   "cluster": "demos",
+   "intent": "A tuning bench for the fragile-cargo system. Off-world test pan (place in src/world/regions/cargo-shake-lab/ so it ships with the game registry but stays out of the playspace — center beyond ±1800). A ghost hover-bike runs canned bump sequences (small rock, gantry leg, hard landing, storm clip) while a large cargo-integrity gauge, damage-per-impact scatter chart and payout curve (0.35 + 0.65·integrity) update live. Sliders: FRAGILE_DMG coefficient, shield soak per level 0-3, impact threshold. Presets row ('story-balance', 'punishing', 'forgiving'), copy-JSON export for MissionDirector tuning, A/B ghost replay. Art direction: DRIFTLINE house style — flat-shaded low-poly, salt/ochre pan, teal glass gauges, amber HUD panels from ui.css; dashed ghost-bike so it reads as a bench, not a track. Keyboard + pointer friendly, reduced-motion aware, no per-frame allocations; typecheck + build must stay green.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "handling-curve-lab",
+   "title": "Handling Curve Lab",
+   "cluster": "demos",
+   "intent": "An interactive arcade-physics tuning toy for the Driftline hover-bike feel. A figure-eight salt pan with painted grip zones (salt 1.0, sand 0.8, glass 0.5) and a telemetry strip: speed, lateral slip, drift reward window, boost meter curves drawn on a small canvas scope. Live sliders for accel, top speed, grip by surface, drift-exit boost multiplier, hop impulse, boost regen — each instant-applied to a test bike the player drives (reuse the Bike controller constants, don't fork physics). Show upgrade ladder pips (engine/handling/boost 0-3) against the curve graph so designers see headroom. One-click 'baseline' reset and copy-settings-JSON. Stark readable DRIFTLINE visuals: flat shading, big silhouettes, amber/teal colour-shape coding, dust puffs; 60fps, no console errors.",
+   "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "roster-review-bench",
+   "title": "Roster Review Bench",
+   "cluster": "demos",
+   "intent": "A content-review instrument for the writing team: an in-engine gallery that renders every character JSON as a dialogue-card — portrait (withBase, fallback initials chip), name + faction chip, role, one greeting/bark/radio line each cycled on a timer, plus the actual DialogueBox and HUD radio ticker components so writers see true in-game rendering. Filter by faction (guild ochre / choir teal / reclaimer rust / driftline amber), search by name, flag cards missing portraits or <8 line buckets with a dashed ghost frame and a ▯ signal-not-recovered marker (never colour alone). Panel styles from ui.css; lives in src/world/regions/roster-review-bench/ or src/lab, auto-listed in /lab; zero game-world impact.",
+   "keywords": [],
    "status": "planned",
    "added_by": "builder"
   }
