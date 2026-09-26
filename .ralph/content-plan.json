@@ -3545,10 +3545,11 @@
     "terraforming",
     "eerie"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer1",
    "worker": "writer1",
-   "claimed_at": 1790387812.9956942
+   "claimed_at": 1790387812.9956942,
+   "done_at": "2026-09-26T12:04:52"
   },
   {
    "kind": "article",
@@ -3563,10 +3564,11 @@
     "routes",
     "field guide"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer1",
    "worker": "writer1",
-   "claimed_at": 1790387812.995695
+   "claimed_at": 1790387812.995695,
+   "done_at": "2026-09-26T12:04:52"
   },
   {
    "kind": "article",
@@ -3581,10 +3583,11 @@
     "skydocks",
     "memoir"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer1",
    "worker": "writer1",
-   "claimed_at": 1790387812.995695
+   "claimed_at": 1790387812.995695,
+   "done_at": "2026-09-26T12:05:20"
   },
   {
    "kind": "article",
@@ -3598,10 +3601,11 @@
     "coloursoviet",
     "history"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer1",
-   "claimed_at": 1790387812.995696
+   "claimed_at": 1790387812.995696,
+   "done_at": "2026-09-26T12:04:52"
   },
   {
    "kind": "article",
@@ -3615,8 +3619,10 @@
     "machine",
     "log"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790387893.097437
   },
   {
    "kind": "article",
@@ -3630,8 +3636,10 @@
     "melancholy",
     "abandonment"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790387893.0974379
   },
   {
    "kind": "article",
@@ -3645,8 +3653,10 @@
     "world change",
     "field guide"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790387893.0974379
   },
   {
    "kind": "article",
@@ -3660,8 +3670,10 @@
     "doctrine",
     "mothersgate"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790387893.0974379
   },
   {
    "kind": "article",
