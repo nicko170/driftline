@@ -1,0 +1,8 @@
+{
+  "slug": "dialogue-stage",
+  "name": "Dialogue Stage",
+  "blurb": "Workshop tool, not a game region: a dialogue-scene staging bench — cast characters, write and time the lines, watch the scene play in the real in-game dialogue box at phone, handheld and wide frame sizes against day/dusk/night backdrops, then copy a paste-ready dialogue block for a mission file. Anchors and center live outside the playable map.",
+  "center": [7900, 7300],
+  "radius": 4,
+  "danger": 0
+}
