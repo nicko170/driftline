@@ -1477,10 +1477,11 @@
     "chorus",
     "comedy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790387516.018139
+   "claimed_at": 1790387516.018139,
+   "done_at": "2026-09-26T11:56:53"
   },
   {
    "kind": "article",
@@ -1494,10 +1495,11 @@
     "upgrades",
     "independent"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790387516.018139
+   "claimed_at": 1790387516.018139,
+   "done_at": "2026-09-26T11:56:53"
   },
   {
    "kind": "article",
@@ -1511,10 +1513,11 @@
     "melancholy",
     "comic"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790387516.018139
+   "claimed_at": 1790387516.018139,
+   "done_at": "2026-09-26T11:56:53"
   },
   {
    "kind": "article",
@@ -3542,8 +3545,10 @@
     "terraforming",
     "eerie"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790387812.9956942
   },
   {
    "kind": "article",
@@ -3558,8 +3563,10 @@
     "routes",
     "field guide"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790387812.995695
   },
   {
    "kind": "article",
@@ -3574,8 +3581,10 @@
     "skydocks",
     "memoir"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790387812.995695
   },
   {
    "kind": "article",
@@ -3589,8 +3598,10 @@
     "coloursoviet",
     "history"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer1",
+   "claimed_at": 1790387812.995696
   },
   {
    "kind": "article",

@@ -100,6 +100,23 @@ Faction colors: Salt Guild `ochre #B07C3A`, Choir `teal-bright #57C4B8`, Reclaim
   crater, dusk violet in the canyon slalom, denser dry air at Mothersgate. Blends by
   proximity; the base day/night keyframes always dominate.
 
+## World collection language (iteration 5)
+
+- **Signal caches** (codex pickups): weathered tripod (`#5C4632` timber) holding a
+  floating **lore-violet octahedron** `#9A86D0` (emissive, bob+spin), faint violet
+  ground ring and a whisper-thin vertical glimmer so they read at range against the
+  sky. Violet under-glow = the record/library glyph ⟡ and is reserved for codex
+  finds — never used by mission markers (amber/teal/rust/red stay mission-only).
+- HUD hint chip "⟡ faint signal · N m" in violet chip styling; minimap draws
+  nearby uncollected caches as open violet diamonds. Toast on recovery uses the
+  ⟡ icon — shape carries meaning (accessibility rule holds).
+- **Codex reading pane**: 17px / 1.72 / 66ch measure, display-font `h3` section
+  heads with a faint amber rule; category chips are glyph + colour (▲ field-guide,
+  ◉ broadcast, ▣ tract, ✦ log, ⟡ record) — tuned in the Codex Reader Lab.
+- Heading convention (documented once): `telemetry.heading` is a true bearing,
+  0 = north (−z); world forward = (sin h, 0, −cos h). Camera, dust and HUD all
+  follow this.
+
 ## Performance budgets
 
 - 60fps mid laptop at Medium: pixelRatio ≤1.5, shadow 1024, scatter ≤ ~2k instances, fog-over-draw minimal, no per-frame allocations in the render or physics hot paths (module-level scratch objects only).

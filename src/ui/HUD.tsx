@@ -9,6 +9,7 @@ import { useGameStore, useSaveStore } from '../state/store';
 import { missionsById } from '../missions/library';
 import { REGIONS } from '../world/registry';
 import { WORLD_HALF } from '../world/layout';
+import { SIGNAL_CACHES } from '../game/caches';
 import { pickLine, character, characters } from '../dialogue/library';
 import { audio } from '../audio/audio';
 
@@ -221,6 +222,13 @@ export default function HUD() {
         </div>
       )}
 
+      {/* signal cache hint */}
+      {telemetry.signal && mode === 'riding' && (
+        <div className="hud-signal panel">
+          ⟡ faint signal · {Math.round(telemetry.signal.dist)} m
+        </div>
+      )}
+
       {/* slow-down hint inside capture radius */}
       {telemetry.slowHint && mode === 'riding' && (
         <div className="hud-slow panel">◆ SLOWER — ease off to make the hand-off</div>
@@ -310,6 +318,25 @@ function drawMinimap(canvas: HTMLCanvasElement | null): void {
     ctx.rotate(Math.PI / 4);
     ctx.fillRect(-3.4, -3.4, 6.8, 6.8);
     ctx.restore();
+  }
+
+  // nearby uncollected signal caches (violet open diamonds — the record glyph)
+  const codexNow = new Set(useSaveStore.getState().codex);
+  ctx.strokeStyle = 'rgba(154, 134, 208, 0.9)';
+  ctx.lineWidth = 1.4;
+  for (const c of SIGNAL_CACHES) {
+    if (codexNow.has(c.lore)) continue;
+    if (Math.abs(c.x - telemetry.x) > 420 || Math.abs(c.z - telemetry.z) > 420) continue;
+    const sx = px(c.x);
+    const sy = pz(c.z);
+    if (sx < 4 || sx > S - 4 || sy < 4 || sy > S - 4) continue;
+    ctx.beginPath();
+    ctx.moveTo(sx, sy - 3.6);
+    ctx.lineTo(sx + 3.6, sy);
+    ctx.lineTo(sx, sy + 3.6);
+    ctx.lineTo(sx - 3.6, sy);
+    ctx.closePath();
+    ctx.stroke();
   }
 
   // escort convoy (teal square) / chase target (rust triangle)

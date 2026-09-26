@@ -1,0 +1,51 @@
+{
+  "id": "evening-standard",
+  "name": "The Evening Standard",
+  "role": "Host of the nightly broadcast, moorage-mast band, Saltmouth",
+  "faction": "independent",
+  "home": "saltmouth",
+  "bio": "Nobody remembers hiring the Evening Standard; the voice simply began announcing the evening from the moorage-mast band one night twenty years ago, in the cadence of a newspaper that never existed on a world that never had one. Every settlement tunes in at dusk for the headlines: weather, debts called in, marriages, storms, and — a day late and slightly wrong — the deeds of couriers, including a certain Ash Varga, who has been described variously as 'a Reclaimer youth', 'two couriers in one coat', and 'responsible, somehow, for rain'. The Standard has never been seen. Ketch swears it's a person. Old Bahro swears it's a recording. The Standard, on air, declines to settle betting pools.",
+  "appearance": "No confirmed sighting. The moorage-mast booth contains a chair worn to a buttock-perfect shine, a brass speaking horn aimed at the transmitter, a kettle that is always somehow just boiled, and a wall of handwritten corrections pinned face-inward, which everyone agrees is a superb joke.",
+  "voice": "Broadcast-register calm: headlines in triads, deadpan corrections, weather with personality. Reads your life back to you a day late and slightly wrong, like a mirror with a sense of humour. Never says 'I'. Says 'this desk'. Catches itself being kind and moves briskly on.",
+  "portrait": "images/characters/evening-standard.jpg",
+  "lines": {
+    "greetings": [
+      "You are listening to the Evening Standard. The kettle is on. The news, shortly, will be too.",
+      "Good evening, Kessa-9. This desk is aware of the time. This desk chooses to begin anyway.",
+      "Settled? Good. The sky is doing the violet thing it does. Let us attend to one another."
+    ],
+    "barks": [
+      "Headline: the salt flats remain flat. Investigation ongoing. Experts consulted; salt unrepentant.",
+      "This desk has received seventeen letters about the humming. This desk has hummed. We are all, in a sense, freight.",
+      "Correction: yesterday's report described the storm as 'moody'. The storm has written in. It prefers 'expressive'. Regrets are extended.",
+      "The Guild would like it known that everything is counted. The Choir would like it known that everything is heard. This desk would like its tea, and notes the two facts are related."
+    ],
+    "mission": [
+      "Tonight's manifest notes a courier, an unlisted crate, and three parties all denying interest with unusual velocity. This desk wishes the courier a following wind and a good lawyer. Same thing, out here.",
+      "Riders on the glass road: a delivery is reported run in record time by 'a nobody with a second-hand bike'. The nobody is invited to feel smug on a regional basis."
+    ],
+    "radio": [
+      "Traffic: a courier identified by listeners as 'the new one' has taken the cut-off at a speed this desk will describe as 'audible'. Slow down, Varga. The news should never be personal.",
+      "Last night's broadcast described Ash Varga as 'a Reclaimer youth'. This desk apologises to Ash Varga, to Reclaimers, and to youth. All three have written in.",
+      "Weather: storm season approaches from the ridgeline with the confidence of a debt collector. Secure your washing. Secure your feelings. The Standard will be here when it passes. The Standard is always here.",
+      "And finally: somewhere out on the pan, something old tuned itself tonight, and every lamp in the west turned a degree toward it. No further details. Sleep well, Kessa-9, in whatever order you manage it."
+    ],
+    "headlines": [
+      "Headline: Keel Quarter wedged on mast three for the third season running. Dockmaster Shore reminds crews the keelson is aft. The keelson, records show, has never once moved.",
+      "Headline: water futures firm. Weather futures fictional. Marriage futures: two, both Saltmouth, both against advice this desk respects.",
+      "Headline: the boundary mountains visible again from the ridge. Older listeners will recall this is billed as seasonal. This desk recalls the mountains moving. This desk is not paid for recollection."
+    ],
+    "corrections": [
+      "Correction: this desk reported the crate delivered to the moorage as 'unremarkable'. Sources describe it as 'remarkably absent from every manifest'. This desk stands semi-corrected, which is the traditional posture.",
+      "Correction: the Choir's static litany is not, as reported, 'one long note'. It is, a Warden writes, 'one long word, and it knows your name'. This desk will sleep with the kettle on."
+    ],
+    "weather": [
+      "Weather: a low of cold, a high of bright, and a medium of dust, which is the traditional arrangement. The wind is from the west and has opinions.",
+      "Weather: the ridge reports static buildup significant enough to comb. Nona Vex will buy it by the spark. This desk does not take commission and resents the implication."
+    ],
+    "farewells": [
+      "That is the evening. The flats keep the light a little past losing it. So do we. Goodnight, Kessa-9.",
+      "This desk is done. Ride indoors, where the news can take the night off. Goodnight."
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "marshal-dune",
+  "name": "Marshal Dune",
+  "role": "Self-appointed (and only) law of the cinderflats approaches",
+  "faction": "independent",
+  "home": "cinderflats",
+  "bio": "There is no law between Saltmouth and the Yards, and Marshal Dune is what grew in its place: a big tired person standing on a rock with a badge made from a hubcap, appointed by themselves on the grounds that somebody had to be. The Reclaimers tolerate them because Dune settles part-disputes before Pyke has to, and pays for their own ketchee. The Guild tolerates them because Dune files the accident reports nobody else will touch. Everyone calls them Marshal. The hubcap says, in faded dealer brand, GUARANTEED FOR LIFE — which Dune cites as the whole of the law, and intends to collect on.",
+  "appearance": "A broad, sun-creased person in a long duster the colour of wet ash over a Guild-issue road jacket, a polished hubcap-badge on a leather chest strap engraved GUARANTEED FOR LIFE, a traffic wand strapped like a sidearm, a hat with the brim pinned up on one side by a manifest wax seal, and boots with two different soles because 'the desert reads your gait, and I lie to it'.",
+  "voice": "Tired-parent authority with a comedian's timing. Lectures like roadside weather — you can ignore it, but you'll be sorry at kilometre twelve. Calls offenders 'citizen', children 'deputy', and Ash, grudgingly, 'colleague'. The law, in their mouth, is mostly manners with consequences.",
+  "portrait": "images/characters/marshal-dune.jpg",
+  "lines": {
+    "greetings": [
+      "Halt— no. Keep going. That was practice. You're one of the good ones, Varga, and I want a record of me saying it twice.",
+      "Colleague. The road's honest today, which means the trouble is in town. Walk with me.",
+      "You are technically speeding, but the number you are speeding at has no word for it, so I am calling it weather and waving you through."
+    ],
+    "barks": [
+      "The badge is a hubcap. The authority is that everyone needs somebody to be the adult. Do the arithmetic, citizen.",
+      "Pyke's lot strip what's dead and the Guild sells what's breathing. I stand in the middle and try to keep the categories from mingling.",
+      "I have one jail. It is the shade of my hat, and you sit in it until you apologise. It has never failed.",
+      "GUARANTEED FOR LIFE. The dealer meant the hubcap. I mean the jurisdiction. One of us is going to be right."
+    ],
+    "mission": [
+      "A strip crew 'found' a crate with Driftline wax on it and the Guild 'found' the paperwork for owning it. You are going to find both of them, in sequence, with me standing in the visible middle.",
+      "Citizen, I am deputising your bike. The bike now has parking rights. Use them at the crusher before that hauler proves my accident report right."
+    ],
+    "radio": [
+      "Marshal's channel, which is all channels. Whoever left a burning vane on the cut-off: I know who you are, and so does your mother. Collect it before I do.",
+      "Road report: the flats are flat, the scammers are lying, the Choir is singing something with teeth in it. Normal Tuesday. Marshal out.",
+      "Varga — colleague — when you jumped the yard gate just now, you committed poetry, which is legal, and a nuisance, which is taxed. Fine is two credits and one apology to the gate."
+    ],
+    "law": [
+      "Article one: you don't run a con on someone whose water you drank. Article two: see article one. The numbering is aspirational.",
+      "The Guild's lawyers sent a letter questioning my standing. I have filed it under 'shade' — the letter, and my standing, sit together under the hat.",
+      "Nobody died on my road last season. That statistic is my whole pension, and I will be defending it with lectures."
+    ],
+    "crate": [
+      "Your humming crate crossed my jurisdiction at dusk and every flag on my lines turned to face it. I've logged that under 'weather'. I am selecting my categories carefully these days.",
+      "Whatever you are carrying, colleague, the outlaws want it and the laws don't cover it. That makes it mine. Be careful with my evidence."
+    ],
+    "storms": [
+      "Storm season bylaw, first and last: when the wall comes, my road is everyone's road and my hat is everyone's shade. Crowd in, citizen. The lectures continue regardless.",
+      "Writing tickets during a dust front is petty, I know. Wind resistance keeps the ink wet. We all find our methods."
+    ],
+    "farewells": [
+      "Go safe. That's not a blessing, it's a bylaw.",
+      "The road keeps no secrets, colleague. It just repeats them to whoever rides slow enough to listen."
+    ]
+  }
+}

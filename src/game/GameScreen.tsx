@@ -14,6 +14,7 @@ import MissionDirector from './MissionDirector';
 import InteractionSystem from './InteractionSystem';
 import RegionStream, { RegionColliders } from './RegionStream';
 import AmbientTraffic from './AmbientTraffic';
+import SignalCaches from './SignalCaches';
 import HUD from '../ui/HUD';
 import MissionBoard from '../ui/MissionBoard';
 import GaragePanel from '../ui/GaragePanel';
@@ -98,6 +99,7 @@ export default function GameScreen() {
           </Physics>
           <RegionStream />
           <AmbientTraffic />
+          <SignalCaches />
           <MissionDirector />
           <InteractionSystem />
           <DustTrail />

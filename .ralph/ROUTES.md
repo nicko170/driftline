@@ -38,6 +38,8 @@ folders must always compile; `npm run validate:content` skips region folders tha
 - Missions: `src/content/missions/<id>.json` — glob-eager imported by `src/missions/library.ts`.
 - Characters: `src/content/characters/<id>.json` — glob-eager imported by `src/dialogue/library.ts`.
 - Lore: `src/content/lore/<slug>.md` — glob-raw imported by `src/codex/library.ts`, frontmatter parsed in `src/lib/frontmatter.ts`.
+- Signal caches: `src/content/caches.json` — lore recovery pickups in the world (see "Exploration" below).
+- Codex bodies render through the markdown-lite renderer `src/lib/markdown.tsx` (`## ` → h3, `*em*`, `**strong**`).
 - `npm run validate:content` → `scripts/validate-content.mjs` (plain node, no deps) checks all schemas + cross-references (regions, anchors, characters, flags, chapter gating). Must pass for build to be considered healthy.
 
 ## Region contract — `src/world/regions/<slug>/`
@@ -180,6 +182,20 @@ Body ≥ 250 words, in-world voice. Unlock: mission reward flag `lore:<slug>`.
   proximity (squared falloff over radius+140 m skirt, ≤0.6 per zone, ≤1 total). Regions
   with centres beyond ±1800 m (lab benches) are ignored. Writers/region builders can set
   climate freely in meta.json.
+
+## Exploration: signal caches — `src/content/caches.json` (iteration 5)
+
+```jsonc
+{ "caches": [ { "id": "cache-auditor-memos", "lore": "auditor-memos", "anchor": "saltmouth:exchange" } ] }
+```
+
+Derelict data obelisks: riding within 13 m (while riding) recovers the lore
+entry (`lore:<slug>` flag → codex) and pays +15 cr. `lore` must match an
+existing codex file; `anchor` is `<regionSlug>:<anchorId>` on a real (on-world)
+region. Several caches on one anchor fan out automatically. Collected state is
+derived from `save.codex` — no save fields. Editors adding orphan lore (not
+mission-rewarded, not starter-unlocked) should add a cache row; the validator
+checks slugs/anchors/uniqueness.
 
 ## Demo contract — `src/lab/<slug>/index.tsx`
 

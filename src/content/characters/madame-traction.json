@@ -7,6 +7,7 @@
   "bio": "Keeps a two-chair shop under the third mooring mast in Keel Town, wedged between a rope-seller and a woman who recanes deck chairs. Sells grip tape, choke leathers, boot hooks — and, from the drawer beneath the till, information, priced by how much it will cost you to know it. She knew about the ledger-entry that wrote itself onto the Driftline's manifest a week before Ash Varga was handed the crate. She has said this to no one. She is waiting to see whether the universe asks nicely.",
   "appearance": "A compact woman of indeterminate years in a storm-grey coat sewn over with sample loops of every grip tape she has ever stocked, like plumage; amber cabochon glasses on a chain, coins braided into grey hair, and hands permanently faintly silvered with the adhesive she calls 'the honest work'.",
   "voice": "Noir with a shop bell on it. Speaks in prices, proverbs, and SKU numbers; never lies, frequently declines to be helpful for free. Calls everyone 'dear' in the tone of a closing lid. Believes friction — physical, commercial, moral — is the only thing standing between civilisation and the long slide.",
+  "portrait": "images/characters/madame-traction.jpg",
   "lines": {
     "greetings": [
       "Grip tape, boot hooks, choke leathers — and for the discerning courier, the drawer. Sit, dear. The chair is free. Everything after the chair is priced.",

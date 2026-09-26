@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nicko170.github.io/driftline/sitemap.xml

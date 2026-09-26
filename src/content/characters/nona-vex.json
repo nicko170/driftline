@@ -1,0 +1,50 @@
+{
+  "id": "nona-vex",
+  "name": "Nona Vex",
+  "role": "Fuel mistress of the Skydocks, stormstatic converter, boost-cell quartermaster",
+  "faction": "independent",
+  "home": "skydocks",
+  "bio": "Keeps the fuel shack at the winch base where Keel Town meets the sky, third generation of a family that watched the skyship fuel markets collapse and calmly decided to eat lightning instead. Nona converts skycranes and hoist engines to run on captured stormstatic — bottled brush discharge from the wind ridges, sold by the spark — and runs the only honest boost-cell trade on the mesa. Dockmaster Shore calls her 'the only woman up here whose numbers add twice'. Sold Ash's boost kit with a receipt that reads, in full: 'worked when sold.' It did. It does. Nona's guarantee is Nona.",
+  "appearance": "A deliberate, narrow-shouldered woman in a soot-dark chemise apron crackled with old discharge patterns like frost-ferns, insulated gauntlets to the elbow, hair wrapped in copper grounding wire, a capture bottle of blue-white static clipped at her hip like a canteen, and eyes that are always watching some middle distance where the weather is made.",
+  "voice": "Minimalist merchant of thunder. Speaks in units, prices, and single adjectives; eye contact costs extra and she rarely charges anyone for it. Says 'hm' with a fully itemised sentence behind it. Secretly delighted by fast bikes and bad weather, which on Kessa-9 is the same thing twice.",
+  "portrait": "images/characters/nona-vex.jpg",
+  "lines": {
+    "greetings": [
+      "Hm. Cells in the drawer. Prices on the slate. Wind's cheap today — the ridge is overproducing and doesn't know it.",
+      "Varga. Your bike's draw is honest. Kit holds. Come back when it doesn't.",
+      "Touch nothing blue. The blue things are arguments I am currently winning."
+    ],
+    "barks": [
+      "Stormstatic isn't dangerous. People are dangerous near it. The bottle just keeps score.",
+      "The Guild sells fuel by the promise. I sell it by the spark. Theirs runs out on paper; mine runs out in the middle of a canyon. Mine tells you first.",
+      "Skycranes on lightning. My grandmother's idea. Everyone laughed until the fuel ships stopped coming, and then everyone was very interested in grandmother.",
+      "Bay three is for customers. Bay two is for friends. Bay one is for the thunder, and it does not knock."
+    ],
+    "mission": [
+      "Take this charge bottle to the ridge anchor and let the storm top it up. Hold it away from your body. Hold it away from your opinions. Bring back full, get paid full.",
+      "A choir acolyte bought cells off me and paid in singing. The song is stored in bottle seven. If you ride past Choirhollow, ask them what they want it for. Curiosity. Not mine. Professional."
+    ],
+    "radio": [
+      "Vex on the mesa band: boost cells in, prices as quoted, nobody is permitted to be surprised.",
+      "Courier Varga. That last boost burn of yours shook my bottles to a brighter colour. Legal. Impressive. Expensive later.",
+      "Storm season note for riders: static gathers on fast metal. If your bike starts whispering before the wall hits, ground out and wait. The whispering is not the bike. This is a service announcement."
+    ],
+    "cells": [
+      "Boost cell, grade one: old skyship plate, holds a storm's temper for ninety seconds. Grade two: my temper. Longer.",
+      "A dead cell isn't dead. It is sulking. I speak to them. This is why I work alone and my margins are excellent.",
+      "The hover runs clean on stormstatic because the storm, down deep, wants to be asked. Machines and weather both. Ask properly, they go."
+    ],
+    "crate": [
+      "Your crate pulled a bottle's worth of charge through the air yesterday, no contact. Spark crawled up the slate. I've priced the slate.",
+      "Varga. When the crate hums, the shack's lamps lean toward the road. I do not have a unit for that yet. When I do, it will be expensive."
+    ],
+    "storms": [
+      "Wall inbound. Bottles capped, crane earthed, prices upright. Come stand in bay two if your kit's honest. Bay one, if it isn't.",
+      "Good storm tonight. The ridge will bottle bright for a week. If you hear singing from the shack, that is the cells settling. Probably."
+    ],
+    "farewells": [
+      "Hm. Full bottles, dry hands, honest kit. Go.",
+      "Ride out the noise before you ride into it. Cheaper."
+    ]
+  }
+}

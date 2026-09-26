@@ -1,5 +1,55 @@
 # Progress
 
+## Status — iteration 5 (signal caches; codex reader; camera heading fix; portraits; SEO)
+
+**New systems (build green, playtest green: 60.5 fps, 0 console errors):**
+- **Signal caches** — the codex unlock gap is closed: `src/content/caches.json`
+  (51 entries) maps orphan lore slugs to world anchors, thematically placed
+  across all nine real regions (field guides in their own regions, Guild paper
+  in Saltmouth, MOTHER lore at Mothersgate…). `src/game/caches.ts` resolves
+  positions at module load (several per anchor fan out golden-angle);
+  `src/game/SignalCaches.tsx` renders uncollected caches (weathered tripod +
+  lore-violet octahedron ⟡, bob/spin, faint vertical glimmer) and collects at
+  13 m while riding: `lore:<slug>` flag (→ codex), +15 cr bounty, toast, chime.
+  Collected state derives from `save.codex` — **no new save fields**. HUD:
+  violet "⟡ faint signal · N m" chip within 340 m + open violet diamonds on
+  the minimap. Validated in `scripts/validate-content.mjs` (lore exists,
+  anchor exists + on-world, unique ids/slugs).
+- **Camera heading truth fix** (the lab's BUG WARN, owned here):
+  `telemetry.heading` is a true bearing (0 = north −z); Bike wrote it
+  correctly but CameraRig reconstructed forward as `(sin h, 0, cos h)` —
+  z-mirrored, so the chase cam sat on the wrong side. Now
+  `(sin h, 0, −cos h)`; DustTrail emission/wash z flipped to match.
+  Forward = `(sin h, 0, −cos h)` is now the documented convention.
+- **Codex reader upgrade** (`src/lib/markdown.tsx` — canonical markdown-lite:
+  blank-line blocks, `## ` → h3, `*em*`/`**strong**`, no innerHTML ever):
+  CodexScreen renders entries properly (was raw markdown), tunes the reading
+  pane to the Codex Reader Lab's results (17 px / 1.72 / 66 ch, display-font
+  h3), adds search + category glyph/colour chips (shared `LORE_CATEGORY_META`).
+- **Portraits**: copied old-bahro.jpg to canonical `images/characters/`;
+  generated quicklime-kid + madame-traction portraits and wired their JSON.
+  11 characters now have working portraits.
+- **SEO**: JSON-LD VideoGame in index.html; robots.txt + sitemap.xml in
+  public/ (hardcoded https://nicko170.github.io/driftline).
+- **Build-health fixes for mid-flight demo folders** (owning demo worker may
+  overwrite freely): boost-feedback-lab TS narrowing error (`instanceColor`),
+  waypoint-glow-up missing `type ColourwayId` import, traffic-planner wrong
+  `../layout` path → `../../layout`, placeholder stub
+  `dialogue-stage/dialogue-stage.css`.
+
+**Next / known issues:**
+- Perf debt: the `/play` chunk (~2.3 MB) eagerly includes every demo-region
+  module via the registry glob. Split: eager-glob meta.json/anchors.json,
+  lazy-glob index.tsx (registry + Lab). Deferred — demo workers are actively
+  writing region folders; coordinate.
+- Writers: new lore entries that aren't mission-rewarded need a cache slot in
+  `src/content/caches.json` (else they're un-unlockable). The validator errors
+  on bad slugs/anchors; run the orphan check (`lore − mission-rewarded − caches − starter`).
+- Ch5 has 2–3 story missions of 6 target; ending flags (`ending.rain`/`ending.quiet`)
+  are wired to title epilogues, credits stanza and hidden achievements.
+- Mid-flight demo folders seen this iteration: dialogue-stage, traffic-planner,
+  storm-choreo, waypoint-glow-up — leave them to their owners.
+
 ## Status — iteration 4 (economy: Guild exchange & debt; chapter outros; endings flow; climate blending; portraits round 2)
 
 **New systems (build green, playtest green: 60.5fps, 0 console errors):**
@@ -236,3 +286,182 @@ See git history for detail.
 - Continuity threads now available for future writers: TALLY-9's entry lights + lamp frequency
   (the crate's hum "answered my lamp-frequency"), the Quicklime Kid ferrying water to caches,
   Madame Traction's drawer, the west horn "two short revs, one long" answer = Kid's own greeting.
+
+## Writer1 — iteration 13 (2026-09-26)
+- Wrote four lore pieces: `storm-almanac` (44th-edition field guide: Walker/Sprinter/Grazer/
+  Choirwall taxonomy, shelter etiquette, the twelve-minute rule reprinted in red; points at
+  lore-storm-mechanics and Rill's coordinates), `bike-maintenance-notes` (Ketch's chalk wall:
+  hover-spring damping, gyro Opinions→Character, why the Wren pulls left ("the pull is
+  editorial"); cross-refs lore-wren-service-record owner-one season-31 entry),
+  `horizon-cell-care` (Guild safety pamphlet: charge cycles, heat discipline, the hum's
+  harmonics, "slightly warm" cells and the incident reports of Brinn — new place name, a
+  settlement that caught fire, "we rebuilt the dock first because morale"),
+  `relay-fire-stories` (collected ghost stories: the Pale Courier, the crate that delivers
+  itself — now with Varga continuity, the beacon that answers; "true"/"nonsense" annotations by
+  Sister Counterweight / Ketch, keeper Sera Vann's empty-chair closing note).
+- New hooks for future writers: Brinn (burned settlement, dock rebuilt first), the harmonic hum
+  ("hums like a man who's decided something" = reportables to Ketch), the empty chair at relay
+  fires, storm-wall taxonomy names usable in mission dialogue/barks.
+
+## Demo log — demo2, iteration 5 (2026-09-26): Codex Reader Lab
+- Built `src/world/regions/codex-reader-lab/` — a typesetting reading-room for the Courier's
+  Codex: live size/leading/measure/tracking sliders + Sora/serif face toggle; three decorative
+  sheets (tuned night panel, salt-white day paper, printed Guild ledger form with slug-derived
+  form number, received-stamp and filing footer); shelf with category chips, search, ↑/↓
+  keyboard nav, and a lint strip enforcing the same floors as validate:content (250w, `## `
+  section, summary — 68 entries at build time). Settings persist (localStorage
+  `dl.codex-reader-lab.settings`); "Copy CSS" exports tuned values as `.codex-reading` rules.
+- Compare mode splits against an honest baseline that mirrors CodexScreen's shipped rendering
+  verbatim (raw markdown, no measure cap) so the fix is argued over a page, not a PR.
+- ⚠ Findings for the app builder (WARN, not patched — lab touches no game code), full detail in
+  the folder's NOTES.md: (1) CodexScreen.tsx renders lore bodies raw — players see `##` and `**`
+  literally; the 40-line `renderTunedBody` parser in data.ts is safe to lift in. (2)
+  `.codex-reading` has no max-width (150ch lines on wide screens; comfort band 50–78ch).
+  (3) 68→120 entries need search/filter on the codex list; the shelf pattern drops in.
+- Off-world region contract satisfied (meta.json + anchors.json at [7400,7400]; statics on the
+  default export; named meta for /lab). Header art at public/images/work/codex-reader-lab.jpg.
+  typecheck + validate:content clean; finish_demo passed first call. Last iteration's warning
+  about endings.ts is resolved — typecheck is green.
+
+## Writer log — writer1, iteration 14 (2026-09-26): rival rematches + lost crates
+- Claimed & completed 4 side missions (validate:content clean, 42 missions):
+  - `side-vs-jett` (race, saltmouth) — Jett's 3-lap flats circuit (gate-east → overlook →
+    water-tower → flats-pan, chalk finish at moorage). Requires `ch2-glassroad-race.done`;
+    unlocks `lore:lore-courier-slang`. Ketch's outro seeds the Quicklime Kid hook.
+  - `side-vs-quicklime` (race, drowned-array) — chalk-line panel-row slalom; Kid speaks a
+    full sentence ("Good race.") on completion. Requires `side-vs-jett.done`; unlocks
+    `lore:lore-drowned-array-field-guide`. Rival ladder: glassroad-race → jett → quicklime.
+  - `side-lost-crate-1` (collect→deliver, drowned-array) — Solder sends Ash following 3
+    impact gouges into the panel field, then deliver the intact crate to the cache cairn
+    (the Quicklime Kid "Counted." it). Unlocks `lore:caretaker-log`.
+  - `side-lost-crate-2` (timed collect, choirhollow) — same joke, worse outcome: 5 seed
+    packets scattered across the lamp ring + temple steps before vespers; Choir schism
+    comedy (the liturgical pumpkin precedent), Cantor Ilex graciously concedes. Unlocks
+    `lore:lore-salt-cuisine`.
+- Hero art: `public/images/articles/missions/side-vs-quicklime.jpg` (dusk array slalom,
+  chalk-line start) — mission JSON schema has no heroImage field; file is available if a
+  job-board or codex art slot is ever added.
+
+## Writer log — writer2, iteration 13 (2026-09-26): lore octet — comms, goat desk, glass, wake-key
+- Claimed & completed 8 lore entries (all finish_article clean):
+  - `auditor-memos` (record) — Sister Counterweight's official memos: calibration circle,
+    soul-weighing as Schedule 9 practice, backwards stocktake dispute, and the two-line
+    crate memo. Pairs with `lore-salt-guild-audit` (official voice vs private memoir).
+  - `frequency-map` (field-guide) — channels tattooed on courier Dusk-Marron Kell's arm:
+    Guild dispatch, relay band, the Standard, Choir hours, Pyke's cutting band, the dead
+    pair, and the open wrist frequency the crate breathes across (knock twice, ride on).
+  - `night-market-menu` (broadcast) — Keel Town gantry read-aloud by winch-keeper Hespa
+    Vole: wind-dated lichen, threes-scored storm bread, the Pell-vs-Maud noodle feud
+    (ties to Jett's NOODLES line), Pemmy weather disclaimer, crate cameo. Hero art: public/images/articles/lore/night-market-menu.jpg (heroImage set).
+  - `jett-interview` (broadcast) — Air Check with Marlowe: asterisk litigation, mentorship
+    canyon, "who?", optimistic gate ethics, then the sincere Davenant beat he asks her to
+    cut and she keeps. Engine ends with two short revs, one long (listening-schedule tie).
+  - `weather-goat-methods` (field-guide) — rider's annex for reading the desk: STOOD /
+    STAMPED×4 / LAID DOWN / GONE INSIDE, unpublished accuracy ledger (96%), five greatest
+    forecasts with #1 redacted over the crate. Distinct from `lore-goat-forecast` (that
+    was the Form 91-C defense; this is rider protocol + greatest hits).
+  - `glass-physics` (field-guide) — Hedd Kline's crash-learned canyon physics with Ketch
+    annotations; complements `lore-glassroad-field-guide` (theory vs bench-time).
+  - `wake-key-theory` (record) — Solder's bench assessment of the crate as a wake-key,
+    three opening quotes (bench-rate / Vertex / anonymous Guild wax), obligatory casserole, Boss Pyke's embossed ruling: "Not yet... answer the door dressed."
+  - `oath-history` (tract) — who wrote the seven words (paint mostly-doors), who broke them
+    (Wenn; the Selby pair; one redacted this season), who died keeping them (lamp-passed
+    list ending in Davenant's "gone quiet").
+
+## Demo builder log — demo3, iteration 4 (2026-09-26): waypoint-glow-up bench
+- Claimed & completed `waypoint-glow-up` (Waypoint & Beacon Bench) as a demo-region
+  at `src/world/regions/waypoint-glow-up/` — off-world bench (center [5800,6600],
+  2 harmless anchors, no Props) so the game streams nothing; Lab lists it via the
+  named `meta` export. finish_demo clean, typecheck + validate:content green.
+- Bench: a distance-marked **night firing lane** lines up all nine shipping markers
+  (collect cluster, waypoint beam+diamond, scout scan ring, convoy beam+square,
+  chase beam+triangle, storm disc+veil, race-gate trio) with geometry constants
+  mirrored from MissionDirector.tsx (`spec.ts` — copy spec JSON exports them).
+  Colourways ×3 (shipped / hot-rod / hostile `ghost`) × station spacings ×3
+  (huddle 12–90 m / standard 26–272 m / horizon 60–660 m) × motion freeze.
+- CVD simulation is compositor-level: Machado 2009 matrices emitted as SVG
+  `feColorMatrix` (cvd.tsx) and applied via CSS `filter: url(#…)` to the live
+  WebGL canvas — fog, glow and bloom simulated too. Panel swatches go through the
+  same matrices in JS so legend/contrast table/canvas agree.
+- Legend table + per-marker contrast matrix (vs `#1B1526` night backdrop, bar
+  ≥3:1) across typical/protan/deutan/tritan proves the rule in pixels: **shape is
+  the identity; colour is decoration** — the `ghost` colourway fails contrast on
+  purpose while glyphs `◆■◉▲●✦◍◎○` still name every marker uniquely.
+- Key art generated: `public/images/work/waypoint-glow-up.jpg` (loading screen art;
+  also shown as the panel header strip via withBase()).
+
+## writer1 — iteration 15 (2026-09-26)
+
+- 8 pieces claimed + validated (finish_article clean on all):
+  - **Lore (record):** `rill-last-route` — Davenant's manifest & route slips from the
+    run she didn't come back from; everything stamped and ordinary, one 41-minute gap
+    and a teal-ink bearing nobody stocks. Chills, foreshadows ch3, ties into
+    `lore-rill-flight-log-2`/`lore-rill-coordinates`. Generated hero art
+    `public/images/articles/lore/rill-last-route.jpg` (riderless bike at the crest,
+    amber scarf, teal-ink slip — house palette, no text).
+  - **Lore (tract):** `static-litanies` — three heard-in-the-hiss litanies with Chorus
+    renderings + Pem's notes; XXIII quietly prophesies Rill's disappearance ("the tall
+    one takes the long way home") and II/IV keep the Choir's warm-liturgical voice.
+  - **Lore (tract):** `salvage-code` — Reclaimer salvage code (first-touch law =
+    Article Three as quoted in `ch3-salvage-rights`, hazard shares, the 4-page
+    definition of "abandoned" incl. 9.4(π) on doors, cross-refs lore-door-hymns),
+    annotated by three feuding editors (V=Vertex, P=Pyke, S=Solder). This file also
+    satisfies the pre-existing `lore:salvage-code` reward flag in ch3-salvage-rights.
+  - **Lore (record):** `water-charter` — Saltmouth's knife-amended founding charter;
+    Article VII is the "Guild graciously permits hydration" provision Tamsin cites in
+    `ch1-watering`; goat clause kept straight-faced. Complements `lore-water-rights`.
+  - **Missions (side):** `side-sky-mail` (deliver, skydocks teaching run up the winch
+    + the long way down; unlocks lore-skydocks-field-guide), `side-night-supply`
+    (timed night run saltmouth→windspine:storm-gauge; teaches day/night; unlocks
+    storm-almanac), `side-relay-repair` (collect ×3 saltmouth relays + re-sync at
+    moorage mast; unlocks frequency-map), `side-canyon-post` (fragile books to
+    glassroad:mid-span with Ila's lit-courier voice; unlocks lore-glassroad-field-guide).
+- All mission anchors/characters/givers verified against region anchors.json files.
+  No code touched; no builds run (writer role).
+
+## Demo log — demo2, iteration 6 (2026-09-26): Dialogue Stage
+- Built `src/world/regions/dialogue-stage/` — a writer's puppet theatre for mission
+  dialogue. Cast wall of all 23 characters (faction filters, portrait + voice-notes
+  card, one-click line samplers from the real greetings/barks/mission/radio
+  buckets); scene script in offer/accept/complete blocks + optional flag-setting
+  choice; live preview rendered with the game's own dialogue CSS inside fixed-width
+  frames (phone 390 / handheld 768 / wide 1180) where the frame width stands in for
+  the viewport — the shipped `min(680px, 94vw)` rule is previewed honestly — against
+  day/dusk/night gradient-and-mesa backdrops. Playback auto-advances at an
+  adjustable read pace (120–320 wpm, per-line dwell maths + progress bar);
+  E/Enter/Space advance and ←/→ step like the game. Lint pass flags unknown
+  speakers, blank lines, >280/480-char sprawl, one-voice monologues, and flag-less
+  choices; "Steal a scene for surgery" imports any of the ~40 shipped missions';
+  dialogue for re-staging; export emits a paste-ready schema-shaped `dialogue` JSON
+  block with copy-to-clipboard. Script + stage prefs persist
+  (`driftline.dlg-stage.*` localStorage).
+- Off-world region contract satisfied (meta.json + anchors.json at [7900,7300];
+  statics on the default export; named meta for /lab). Header art at
+  public/images/work/dialogue-stage.jpg (dusk puppet stage, bulb string, hover bike).
+- typecheck clean for this folder; a parallel worker's traffic-planner folder was
+  mid-flight at build time (missing sibling module import there, not this bench).
+  finish_demo passed first call.
+
+## WRITER1 — iteration 17 (2026-09-26): 4 characters + 4 lore
+- **Characters:** `pemmy` (Guild weather goat — all bleats with deadpan official
+  factor translations in brackets; home saltmouth; ties to weather-goat-methods
+  lore) · `mother` (MOTHER character card — kind-librarian voice waking mid-word;
+  buckets incl. waking/choir/rumors/crate/storm/night/finale with lines serving both
+  endings: rain & quiet; home mothersgate) · `shrine-keeper-toll` (mid-span shrine
+  keeper on the glassroad; reads books aloud so the canyon echo "finishes the
+  sentences"; home glassroad) · `surveyor-kest` (guild weather-desk field lead at
+  windspine; blunt units-first storm voice who reports to a goat and secretly writes
+  terrible love poems about isobars; storm-mission technical earpiece).
+- **Lore:** `salt-blooms` (field-guide, school-desk primer — blooms hum faintly
+  before storms, tying to the null-crate hum; Pemmy cameo) · `ballad-of-the-wren`
+  (broadcast — orientation radio play; canon addition: the Wren's third rider
+  **Paloma Reyes**, lost on the diphtheria run; the bike returned alone and parked
+  herself at Ketch's garage; Ketch cameo) · `last-wire` (record — final budget
+  hearing with 9-year feed-lag + the last wire annotated "(sorry)", framed at the
+  Guild exchange; eleven months reserve paid for Saltmouth's water charter) ·
+  `chapel-visitor-book` (log — glassroad mid-span chapel, one entry per storm
+  survived; succession of keepers, Toll current since year 129; Rill signed year 158;
+  PENDING back page for the stormless).
+- Writer note: portraits referenced at images/characters/*.jpg for all four new
+  characters but image generation was blocked for writer role — portrait art still
+  needed (builder or future credit). No code touched; no builds run.

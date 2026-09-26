@@ -5,7 +5,7 @@
 export const telemetry = {
   x: 0, y: 0, z: 0,
   speed: 0,           // m/s ground speed
-  heading: 0,         // radians, 0 = north (-z)
+  heading: 0,         // true bearing, radians: 0 = north (-z); forward = (sin h, 0, -cos h)
   boost: 1,           // 0..1
   boosting: false,
   grounded: true,
@@ -28,6 +28,8 @@ export const telemetry = {
   storm: null as null | { x: number; z: number; r: number; dist: number },
   /** Scout scan-in-progress, 0..1. */
   scout: null as null | { progress: number },
+  /** Nearest uncollected signal cache within hail (HUD hint + minimap). */
+  signal: null as null | { x: number; z: number; dist: number },
   /** Canonical active-objective world position (moving targets follow NPCs).
    *  Written by MissionDirector; read by camera/HUD/minimap. */
   objective: null as null | { x: number; y: number; z: number },

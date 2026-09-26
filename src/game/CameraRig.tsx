@@ -25,7 +25,8 @@ export default function CameraRig() {
     const game = useGameStore.getState();
 
     const h = telemetry.heading;
-    _fwd.set(Math.sin(h), 0, Math.cos(h));
+    // heading is a true bearing (0 = north = -z); forward = (sin h, 0, -cos h)
+    _fwd.set(Math.sin(h), 0, -Math.cos(h));
 
     const speed = telemetry.speed;
     const dist = 7.2 + Math.min(4.5, speed * 0.075);

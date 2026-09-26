@@ -1,0 +1,8 @@
+{
+  "slug": "traffic-planner",
+  "name": "Traffic Planner",
+  "blurb": "Workshop tool, not a game region: a surveyor's-table route editor for the ambient traffic fleet — plot courier/hauler/skiff loops over a relief map of Kessa-9, replay them at speed, and export the exact VehicleSpec manifest AmbientTraffic consumes. Anchors and center live outside the playable map.",
+  "center": [7300, 6900],
+  "radius": 4,
+  "danger": 0
+}

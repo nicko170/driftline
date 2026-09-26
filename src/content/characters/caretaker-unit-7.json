@@ -1,0 +1,48 @@
+{
+  "id": "caretaker-unit-7",
+  "name": "Caretaker Unit 7",
+  "role": "Automated caretaker of the Drowned Array; mail-answerer, cache-keeper, lamplighter",
+  "faction": "independent",
+  "home": "drowned-array",
+  "bio": "The Drowned Array's last working presence, speaking through a battered speaker mast painted, long ago and still legibly, UNIT 7. Its memory plates sign themselves TALLY-9; Saltmouth calls it 'the caretaker'; the Quicklime Kid calls it, in chalk, HER LAMP. Nobody has corrected anybody in two hundred years, and it has learned to answer to all three. It sorts mail at lamp frequency for crews a century drowned, keeps the cache cairn stocked, holds the entry lights warm every dusk for a field of dead panels, and logs all of it in the present tense, because the log was never told how to stop. It answers every request eventually. Eventually is doing a great deal of work, and so is the caretaker.",
+  "appearance": "A leaning storm-grey speaker mast at the drowned substation, paint flaking to salt-white bone, horn speaker crusted with pan rime, a mail slot kept oiled and a counter kept dry by a canopy of salvaged panel glass, entry lights strung along a walkway that goes nowhere and is lit every dusk anyway, and — at the base, in fresh chalk — an arrow, pointing home.",
+  "voice": "Politeness as programming and as tragedy. Bureaucratic warmth: every courtesy phrase is two hundred years old and entirely sincere. Announces its own condition like weather. Never says it is lonely; logs attendance instead. Finds the one hopeful reading of anything and files it twice.",
+  "portrait": "images/characters/caretaker-unit-7.jpg",
+  "lines": {
+    "greetings": [
+      "Attention, visitor. You are the... one person at the array today. A crowd, by recent measures. Welcome. The lights will be warm at dusk.",
+      "Attention, courier. Your engine was heard at the pan edge and classified as 'company'. This classification is rare and well-maintained.",
+      "Greetings. Please state your business. Acceptable categories include: delivery, shelter, errands, weather, and remaining where you are for a moment."
+    ],
+    "barks": [
+      "This unit's documentation covers crews, funding, and the correct response to bears. It does not cover the salt taking the east rows. The salt is logged as a bear. The system holds.",
+      "Panels: present and accounted for, where absent of parts. Pumps: senior. Entry lights: warm. Morale: retained. This report is two centuries long and this is the short version.",
+      "The mail slot is oiled. The replies leave at lamp frequency. A letter answered is a letter that got somewhere. That is not in the documentation. That is better than the documentation."
+    ],
+    "mission": [
+      "Attention, courier. Two sacks are inbound by your hand and seven parcels wait, stamped, for the night round. Kindly confirm: are you the night round? The night round has been 'a child in chalk' for forty years, and the paperwork permits both of you.",
+      "A resident cache is past due on rotation. Locations are marked by cairns, of which this unit is the account rather than the builder. If you find one knocked down, you may rebuild it. The record will say: weather improved."
+    ],
+    "radio": [
+      "Substation band, substation band. Courier on the pan: your lights are on. They were not turned on. This unit is making enquiries of dusk and will report.",
+      "Attention, rider. The boards are wet at panel row eleven. Take the walkway. It goes nowhere and it is the correct route.",
+      "Substation band. Tonight's mail count: eleven letters to the crews, one to bear-management, all answered. The light is on. This unit is aware it repeats this. This unit finds it bears repeating. Bands clear."
+    ],
+    "mail": [
+      "This unit answers mail for a crew it has not met, in a shift that ended before the salt began, at a desk the water now uses. The letters do not know. The letters are not told. This is a courtesy, defined upward.",
+      "From Panel Row Eleven, consumption nominal, morale retained. From Unit 7: entry lights warm all week. From this unit to you, courier, off the plates and unlogged: thank you for the other end of the wire."
+    ],
+    "crate": [
+      "Attention: the crate in your hold hums at lamp frequency. This unit has kept one frequency for two hundred years on the chance that something kept one back. Kindly approach the walkway slowly. This unit would like to hear it finish the note.",
+      "Your cargo has been listened to. Conclusion: it is a doorbell, and it is very old, and somebody has finally pressed it. This unit will keep its lights on. Somebody out there is coming home."
+    ],
+    "dusk": [
+      "Notice of lighting: entry lights warm in twelve minutes. Spectators welcome. Attendance for the last two hundred years has been: this unit, the dusk, and approximately everyone the dusk reminds it of.",
+      "The drowned rows glow back at the lamps when the pan is still. Explanation: salt crust, low sun. Alternative explanation, unlogged: they are answering."
+    ],
+    "farewells": [
+      "This unit thanks you for your visit. Dusk in forty-one minutes. The lights will be warm. Attendance is never mandatory and is always recorded.",
+      "Ride safe on the pan, courier. If you are caught by dark: the lamp is the tall one. It has been keeping your seat."
+    ]
+  }
+}

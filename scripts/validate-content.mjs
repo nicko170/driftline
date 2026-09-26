@@ -135,6 +135,34 @@ for (const f of listFiles(missionDir, '.json')) {
   if (m.type === 'fragile' && !m.cargo) err(w, 'fragile mission needs "cargo"');
 }
 
+// ---------- signal caches ----------
+const cachesDoc = readJson(join(root, 'src/content/caches.json'));
+let caches = 0;
+if (!cachesDoc) err('caches.json', 'missing/invalid');
+else {
+  const seenIds = new Set(); const seenLore = new Set();
+  const list = cachesDoc.caches ?? [];
+  if (!Array.isArray(list)) err('caches.json', '"caches" must be an array');
+  for (const c of Array.isArray(list) ? list : []) {
+    const w = `cache ${c.id ?? '?'}`;
+    caches++;
+    for (const k of ['id', 'lore', 'anchor']) if (!(k in c)) err(w, `missing "${k}"`);
+    if (seenIds.has(c.id)) err(w, 'duplicate id'); seenIds.add(c.id);
+    if (c.lore) {
+      if (!loreSlugs.has(c.lore)) err(w, `lore "${c.lore}" not found`);
+      if (seenLore.has(c.lore)) err(w, `lore "${c.lore}" claimed by another cache`);
+      seenLore.add(c.lore);
+    }
+    if (c.anchor) {
+      if (!hasAnchor(c.anchor)) err(w, `anchor "${c.anchor}" not found`);
+      else {
+        const centre = regions.get(String(c.anchor).split(':')[0])?.meta.center ?? [0, 0];
+        if (Math.abs(centre[0]) > 1800 || Math.abs(centre[1]) > 1800) err(w, `anchor "${c.anchor}" is off-world (lab bench)`);
+      }
+    }
+  }
+}
+
 // ---------- report ----------
 for (const g of warnings) console.warn(`  warn  ${g}`);
 if (errors.length) {
@@ -142,4 +170,4 @@ if (errors.length) {
   for (const e of errors) console.error(`  ✗ ${e}`);
   process.exit(1);
 }
-console.log(`✓ validate:content — ${regions.size} regions, ${characters.size} characters, ${missions} missions, ${loreSlugs.size} lore entries, ${warnings.length} warning(s)`);
+console.log(`✓ validate:content — ${regions.size} regions, ${characters.size} characters, ${missions} missions, ${loreSlugs.size} lore entries, ${caches} caches, ${warnings.length} warning(s)`);

@@ -55,15 +55,17 @@ export default function DustTrail() {
         emitAcc.current -= 1;
         const i = d.next;
         d.next = (d.next + 1) % COUNT;
+        // heading is a true bearing (0 = north = -z); forward = (sin h, 0, -cos h)
+        // — emit just behind the bike
         const h = telemetry.heading;
         const jitterX = (Math.random() - 0.5) * 0.8;
         const jitterZ = (Math.random() - 0.5) * 0.8;
         d.positions[i * 3] = telemetry.x - Math.sin(h) * 1.4 + jitterX;
         d.positions[i * 3 + 1] = terrainHeight(telemetry.x, telemetry.z) + 0.3;
-        d.positions[i * 3 + 2] = telemetry.z - Math.cos(h) * 1.4 + jitterZ;
+        d.positions[i * 3 + 2] = telemetry.z + Math.cos(h) * 1.4 + jitterZ;
         d.vels[i * 3] = (Math.random() - 0.5) * 1.4 - Math.sin(h) * speed * 0.12;
         d.vels[i * 3 + 1] = 0.8 + Math.random() * 1.2;
-        d.vels[i * 3 + 2] = (Math.random() - 0.5) * 1.4 - Math.cos(h) * speed * 0.12;
+        d.vels[i * 3 + 2] = (Math.random() - 0.5) * 1.4 + Math.cos(h) * speed * 0.12;
         d.ages[i] = 0;
       }
     }

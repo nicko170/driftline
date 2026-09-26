@@ -1,0 +1,4 @@
+{
+  "survey-table": { "pos": [7300, 6900], "label": "Surveyor's table (off-world workshed)", "elev": 0 },
+  "plotter-rack": { "pos": [7304, 6896], "label": "Route plotter and string-spool rack (off-world)", "elev": 0 }
+}
