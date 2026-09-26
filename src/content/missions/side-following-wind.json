@@ -1,0 +1,35 @@
+{
+  "id": "side-following-wind",
+  "title": "A Following Wind",
+  "chapter": "side",
+  "type": "race",
+  "giver": "ketch",
+  "region": "saltmouth",
+  "summary": "No cargo, no deadline you didn't agree to, no faction watching: just the flats grand loop. East gate chalk, up to the dune overlook, back through the moorage rigging, swing the water tower, carve the old pan, and home — five gates of clean salt and nothing to prove. Ketch will be on the radio the whole way. He's worse than weather.",
+  "timeLimit": 150,
+  "objectives": [
+    { "type": "goto", "target": "saltmouth:gate-east", "label": "Stage at the east gate chalk" },
+    { "type": "race", "targets": ["saltmouth:overlook", "saltmouth:moorage", "saltmouth:water-tower", "saltmouth:flats-pan", "saltmouth:gate-east"], "label": "The grand loop: overlook → moorage → water tower → old pan → home" }
+  ],
+  "rewards": {
+    "credits": 260,
+    "rep": { "driftline": 6, "guild": 2 },
+    "flags": ["side-following-wind.done"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Kid. You've been hauling and dodging and outrunning everything this desert throws, and I realised nobody's ever sent you out to just *ride*. That's a training failure and I'm correcting it. The grand loop: five gates, my clock, your line. Prize is a tin of the good tea and me never shutting up on the radio." },
+      { "who": "ketch", "text": "Rules: there aren't any. Boost when it feels right, drift when the salt says so, and if you find yourself grinning inside the helmet — that's the mission. Old couriers called this one 'a following wind'. You'll see why at the pan." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Radio check. I'll be your weather, your crowd, and your conscience. Gate one is the climb — don't boost the dune face, float it. Two is the rigging at the moorage; mind the mast cables, they'll shave a fin if you get greedy. Three, the tower, is where you learn what a wide line costs. Four's the pan. Nothing at the pan but room." },
+      { "who": "ash-varga", "text": "So no cargo, no clock that means anything, and a full commentary track from a man who once called a sandstorm 'textured'. This is the best job I've ever taken. Staging now." },
+      { "who": "tamsin-cho", "text": "Word of warning from the board: it's not a Guild posting, so if you plant the bike it's not covered. Ketch, the garage's liability and the garage's *sentiment* both sign my paperwork conceptually. Have fun, courier. That's an instruction." }
+    ],
+    "complete": [
+      { "who": "ketch", "text": "Clock stopped. Line was — kid, that drift off the pan into the east gate was *criminal*, and I mean that as the highest compliment this garage issues. The Wren's purring in a key I haven't heard since Old Bahro's day. That's what riding's for. Remember the feeling; the desert'll spend the rest of your career trying to take it back." },
+      { "who": "ketch", "text": "The loop's yours now. Any time the book's full of crates and factions and cylinders that hum, you run those five gates and remember: the fastest thing out here isn't a storm, it's a courier with nothing to prove and a following wind. Flat salt to you, kid. That's the whole blessing." },
+      { "who": "ash-varga", "text": "Still grinning. If Tamsin asks what I was doing, tell her I was 'maintaining morale infrastructure'. She'll find a form for it." }
+    ]
+  }
+}

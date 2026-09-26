@@ -1,0 +1,35 @@
+{
+  "id": "warden-of-the-span",
+  "name": "The Warden of the Span",
+  "role": "Hermit of the Glassroad's mid-span shrine",
+  "faction": "independent",
+  "home": "glassroad",
+  "bio": "Nobody installed him; the shrine simply came with the canyon and so, eventually, did he. The Warden keeps the mid-span shrine of the Glassroad — sweeps the ripple glass, relights the two brazier lenses, and keeps the visitor's book, which is now nine volumes long because he annotates every entry, then annotates his annotations. Couriers bring him books from Saltmouth and he pays in observations, recommendations, and once — famously — in a detailed critique of the concept of doors. He has opinions about the shrine bell that he will share at whatever length the listener's courage allows.",
+  "appearance": "A very tall, very thin man of indeterminate age in layered dust-coats sewn with ribbon-tabs (bookmarks, he explains, for arguments in progress), cracked spectacles wired at both hinges, bisque-pale hands, and a sweep-broom worn smooth on one side like a blade.",
+  "voice": "Slow tides of speech; every sentence arrives with footnotes and apologises for them. Kind in the subclauses. Refers to himself as 'the margin' when being wry. Laughs once per conversation, at something nobody else has located.",
+  "lines": {
+    "greetings": [
+      "Ah. A courier. The shrine receives you; the book receives you; the tea, when it exists, receives you last but with feeling.",
+      "Mind the third step of the measure — it objects to being hurried, and it objects aloud.",
+      "You arrive at the precise middle of the canyon, which is where the canyon keeps its opinion of itself. Speak softly; it is sensitive."
+    ],
+    "barks": [
+      "The bell is not cracked. The bell is *subdivided*. One day I shall write the pamphlet.",
+      "Everything in this canyon is a lentgth of light some distance from its argument. Present company included.",
+      "A rider once asked why I stay. I stayed to answer. We are both still here."
+    ],
+    "mission": [
+      "The Saltmouth booksellers' board lists me as 'persistent correspondence'. Correct. The parcel is a dictionary of tide words — the desert has no tide, and I intend to find out what it has instead.",
+      "If you are carrying mail for the mid-span chapel — and the board insists it is a chapel, though it has never agreed — the slot is the brazier lens, and the lens is grateful."
+    ],
+    "radio": [
+      "Mid-span to any riding ear: the Slick Mile is damp in patches today. The patches are philosophical. Brake early, think later.",
+      "The shrine lights are lit. If you are passing at dusk, that will be the two points of gold halfway down. If you are not passing, they are for the canyon, which was the plan all along.",
+      "Annotation for the road, courier — this is the margin speaking. Your last crossing left a very clean line in the ripple. I have entered it in the book. Verdict: it meant it."
+    ],
+    "books": [
+      "Current reading: a history of doors (wrong but handsome), a manual of knots from a world with water (impertinent), and the visitor's book, which I have stopped pretending is not my life.",
+      "Do lend me your occupation, courier. Riding is one of the few that read aloud correctly."
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "bench": { "pos": [8200, 7600], "label": "Roster review bench (off-world)", "elev": 0 },
+  "mic-desk": { "pos": [8204, 7596], "label": "Radio mic-check desk (off-world)", "elev": 0 },
+  "card-wall": { "pos": [8196, 7604], "label": "Dialogue-card review wall (off-world)", "elev": 0 }
+}

@@ -1569,10 +1569,10 @@
     "keel-town",
     "dockmaster"
    ],
-   "status": "planned",
+   "status": "claimed",
    "added_by": "writer2",
-   "worker": null,
-   "claimed_at": 1790392412.193249
+   "worker": "writer1",
+   "claimed_at": 1790398779.811987
   },
   {
    "kind": "article",
@@ -1586,10 +1586,10 @@
     "books",
     "shrine"
    ],
-   "status": "planned",
+   "status": "claimed",
    "added_by": "writer2",
-   "worker": null,
-   "claimed_at": 1790392412.19325
+   "worker": "writer1",
+   "claimed_at": 1790398779.811989
   },
   {
    "kind": "article",
@@ -1603,10 +1603,10 @@
     "melancholy",
     "automaton"
    ],
-   "status": "planned",
+   "status": "claimed",
    "added_by": "writer2",
-   "worker": null,
-   "claimed_at": 1790392412.1932511
+   "worker": "writer1",
+   "claimed_at": 1790398779.811989
   },
   {
    "kind": "article",
@@ -1620,10 +1620,10 @@
     "hauler",
     "comedy"
    ],
-   "status": "planned",
+   "status": "claimed",
    "added_by": "writer2",
-   "worker": null,
-   "claimed_at": 1790392412.1932511
+   "worker": "writer1",
+   "claimed_at": 1790398779.811989
   },
   {
    "kind": "article",
@@ -4576,9 +4576,9 @@
    "cluster": "demos",
    "intent": "A tuning bench for the fragile-cargo system. Off-world test pan (place in src/world/regions/cargo-shake-lab/ so it ships with the game registry but stays out of the playspace — center beyond ±1800). A ghost hover-bike runs canned bump sequences (small rock, gantry leg, hard landing, storm clip) while a large cargo-integrity gauge, damage-per-impact scatter chart and payout curve (0.35 + 0.65·integrity) update live. Sliders: FRAGILE_DMG coefficient, shield soak per level 0-3, impact threshold. Presets row ('story-balance', 'punishing', 'forgiving'), copy-JSON export for MissionDirector tuning, A/B ghost replay. Art direction: DRIFTLINE house style — flat-shaded low-poly, salt/ochre pan, teal glass gauges, amber HUD panels from ui.css; dashed ghost-bike so it reads as a bench, not a track. Keyboard + pointer friendly, reduced-motion aware, no per-frame allocations; typecheck + build must stay green.",
    "keywords": [],
-   "status": "claimed",
+   "status": "planned",
    "added_by": "builder",
-   "worker": "demo2",
+   "worker": null,
    "claimed_at": 1790387664.5284019
   },
   {

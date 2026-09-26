@@ -1,0 +1,8 @@
+{
+  "slug": "roster-review-bench",
+  "name": "Roster Review Bench",
+  "blurb": "Workshop tool, not a game region: a content-review instrument that renders every character JSON as a live dialogue card — portraits with initials fallback, faction framing, greeting/bark/radio lines cycled on a timer, the real DialogueBox and HUD radio ticker driven through the game store, plus audits that flag missing art and thin line sheets with a dashed ghost frame and a shape marker. Anchors and center live outside the playable map.",
+  "center": [8200, 7600],
+  "radius": 4,
+  "danger": 0
+}

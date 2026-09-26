@@ -280,6 +280,111 @@
       "id": "cache-dead-channel-lullaby",
       "lore": "dead-channel-lullaby",
       "anchor": "choirhollow:listening-horn"
+    },
+    {
+      "id": "cache-choir-midnight-broadcast",
+      "lore": "choir-midnight-broadcast",
+      "anchor": "choirhollow:lamp-ring"
+    },
+    {
+      "id": "cache-cradle-door-status",
+      "lore": "cradle-door-status",
+      "anchor": "mothersgate:approach"
+    },
+    {
+      "id": "cache-first-brinemaster",
+      "lore": "first-brinemaster",
+      "anchor": "saltmouth:exchange"
+    },
+    {
+      "id": "cache-glass-blooms-notes",
+      "lore": "glass-blooms-notes",
+      "anchor": "glassroad:glass-chapel"
+    },
+    {
+      "id": "cache-heliodyne-pause-memo",
+      "lore": "heliodyne-pause-memo",
+      "anchor": "mothersgate:survey-point"
+    },
+    {
+      "id": "cache-keel-town-docking-gazette",
+      "lore": "keel-town-docking-gazette",
+      "anchor": "skydocks:keel-town"
+    },
+    {
+      "id": "cache-last-day-at-the-array",
+      "lore": "last-day-at-the-array",
+      "anchor": "drowned-array:substation"
+    },
+    {
+      "id": "cache-ledger-redactions",
+      "lore": "ledger-redactions",
+      "anchor": "saltmouth:exchange"
+    },
+    {
+      "id": "cache-lost-couriers-archive",
+      "lore": "lost-couriers-archive",
+      "anchor": "saltmouth:garage"
+    },
+    {
+      "id": "cache-mother-boot-fragments",
+      "lore": "mother-boot-fragments",
+      "anchor": "mothersgate:the-door"
+    },
+    {
+      "id": "cache-night-riding-notes",
+      "lore": "night-riding-notes",
+      "anchor": "canyon-slalom:spectator-ledge"
+    },
+    {
+      "id": "cache-night-riding",
+      "lore": "night-riding",
+      "anchor": "saltmouth:gate-east"
+    },
+    {
+      "id": "cache-reactor-burn-history",
+      "lore": "reactor-burn-history",
+      "anchor": "glassroad:gate-north"
+    },
+    {
+      "id": "cache-rill-davenant-log",
+      "lore": "rill-davenant-log",
+      "anchor": "windspine:south-foot"
+    },
+    {
+      "id": "cache-salt-harvest-tract",
+      "lore": "salt-harvest-tract",
+      "anchor": "saltmouth:flats-pan"
+    },
+    {
+      "id": "cache-saltmouth-shipping-bulletin",
+      "lore": "saltmouth-shipping-bulletin",
+      "anchor": "saltmouth:moorage"
+    },
+    {
+      "id": "cache-storm-gauge-journal",
+      "lore": "storm-gauge-journal",
+      "anchor": "windspine:storm-gauge"
+    },
+    {
+      "id": "cache-storm-riding-guide",
+      "lore": "storm-riding-guide",
+      "anchor": "windspine:survey-camp"
+    },
+    {
+      "id": "cache-union-liturgy-machines",
+      "lore": "union-liturgy-machines",
+      "anchor": "cinderflats:parts-pile"
+    },
+    {
+      "id": "cache-water-pricing-memo",
+      "lore": "water-pricing-memo",
+      "anchor": "saltmouth:water-tower"
+    },
+    {
+      "id": "cache-windspine-survey-notes",
+      "lore": "windspine-survey-notes",
+      "anchor": "windspine:turbine-row"
     }
   ]
 }

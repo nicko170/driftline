@@ -1,0 +1,34 @@
+{
+  "id": "side-debt-interest",
+  "title": "Interest Payment",
+  "chapter": "side",
+  "type": "collect",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "Last night's blow lifted six brass invoice tags clean off the exchange roof, and until they're back in Tamsin's counting tray, half of Saltmouth's debts are technically *unitemised* — a state of affairs the Guild considers 'weather for paperwork'. Recover all six from where the wind put them and the Guild will 'annotate' your bond. Generously. In pencil.",
+  "objectives": [
+    { "type": "collect", "target": "saltmouth:exchange", "count": 2, "label": "Pluck the tags snagged in the exchange's own gutter braces (2)" },
+    { "type": "collect", "target": "saltmouth:water-tower", "count": 2, "label": "Two more rattle in the water tower's ladder cage (2)" },
+    { "type": "collect", "target": "saltmouth:moorage", "count": 2, "label": "Two more are snagged in the moorage mast rigging (2)" },
+    { "type": "dropoff", "target": "saltmouth:exchange", "label": "Hand all six back at the counter" }
+  ],
+  "rewards": {
+    "credits": 160,
+    "rep": { "guild": 4 },
+    "flags": ["side-debt-interest.done", "lore:lore-guild-debt-doctrine"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "Courier. Small civic embarrassment. The blow took six invoice tags off my roof, and those tags are the only thing standing between this town's ledgers and what the doctrine pamphlets call 'an unpriced mercy'. I'm not finding them myself; the wind has a head start and no filing system." },
+      { "who": "tamsin-cho", "text": "Two are in my own gutters, which nobody mention. Two are rattling in the water tower ladder cage, driving Brinemaster Ogo to say words that cost extra. Two are up in the moorage rigging where the mast crew 'fished' with a boat hook. Bring all six and the Guild annotates your bond. There's a whole pamphlet about the annotation. I'll put a copy in your codex. It's the exciting kind of read, if you're me." }
+    ],
+    "accept": [
+      { "who": "ash-varga", "text": "Six pieces of blown-off bureaucracy, scattered across town by weather, and my reward is a pencil mark on my debt. Tamsin, this is the most Guild job ever Guilded." },
+      { "who": "tamsin-cho", "text": "And yet you're taking it, because the pencil mark is *real*, which is more than the skyship futures ever were. Watch the ladder cage — the tower hums on a good wind and it'll hypnotise you into sitting down. Count twice. Hand them to me personally, not the slot. The slot has a union." }
+    ],
+    "complete": [
+      { "who": "tamsin-cho", "text": "Six of six. Itemised, re-hung, roof re-sealed at rates you'll find reasonable because I invented them. Your bond now carries the annotation 'interested party', which in Guild doctrine means your debt has a *listener*. It's the nicest thing the ledger allows me to do before noon." },
+      { "who": "tamsin-cho", "text": "And Ash — between two people who count for a living — I've watched couriers pay their bond off in stamps, in favours, in one case in an actual goat. Yours comes off in deliveries. That's the honest way, and it's the one that pays. Keep riding." }
+    ]
+  }
+}

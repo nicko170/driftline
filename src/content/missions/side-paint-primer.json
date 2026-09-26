@@ -1,0 +1,36 @@
+{
+  "id": "side-paint-primer",
+  "title": "A Favour of Paint",
+  "chapter": "side",
+  "type": "deliver",
+  "giver": "ketch",
+  "region": "saltmouth",
+  "summary": "Ketch is one pigment short of finishing a paint he's been promising himself for thirty years: cairn ochre, the good deep rust-red, stocked by the drowned caretaker's cache cairn. Cairn rule is take one, leave one — so there's a tin of his good tea and a thank-you note to drop in the mail slot first. No clock. Just a long ride and an old man pretending it isn't a big deal.",
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:garage", "label": "Take Ketch's consideration tin from the garage bench" },
+    { "type": "dropoff", "target": "drowned-array:substation", "label": "Leave the tea and the note in the caretaker's mail slot" },
+    { "type": "pickup", "target": "drowned-array:cache-cairn", "label": "Take one charge of cairn ochre — one, not two" },
+    { "type": "dropoff", "target": "saltmouth:garage", "label": "Get the pigment back before Ketch's tea goes cold" }
+  ],
+  "rewards": {
+    "credits": 210,
+    "rep": { "driftline": 4 },
+    "flags": ["side-paint-primer.done", "lore:ballad-of-the-wren"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Kid. Favour, not a job — though I'm paying, because favours that touch the road are jobs and anyone who says different is selling something. Thirty years I've been one pigment short of a paint. Cairn ochre, deep rust-red, the kind the drowned crews dug out before I was born. The caretaker stocks it at the cache cairn." },
+      { "who": "ketch", "text": "Two rules, and they're the same rule wearing two coats. Take one charge, never two. And leave something for it — the tin on my bench, there's a note inside. That machine keeps a whole field warm for nobody. It gets told thank-you. It gets told by us." }
+    ],
+    "accept": [
+      { "who": "ash-varga", "text": "Tea to a two-hundred-year-old speaker mast, then grave-goods from a cairn, then home before your tea gets cold. Ketch, this is the most retired-man errand ever run." },
+      { "who": "ketch", "text": "Watch it. And mind the walkway at the substation — goes nowhere, stays the right way. You'll see. Oh, and if the caretaker plays you its dawn broadcast, you stand there and *listen*, kid. Some mail you answer by attending." },
+      { "who": "caretaker-unit-7", "text": "Substation band. Courier inbound: your business is logged as 'errand, category: paint'. The cache cairn is stocked. The mail slot is oiled. Dusk in forty-one minutes. The lights will be warm." }
+    ],
+    "complete": [
+      { "who": "ketch", "text": "— There it is. Look at that. Rust-red with a violet undertone, like a canyon worrying about something. Two charge-cakes after the Guild fees, cut with bone binder and pan salt, and tomorrow the first coat goes on the mixing-paddle. Twenty-nine years of 'sometime', done by Thursday." },
+      { "who": "ash-varga", "text": "What's it for? Not the Wren — she'd never hide under paint this good. …Ketch. You're grinning. Old man, what is the paint *for*?" },
+      { "who": "ketch", "text": "For whatever you need it to be for, kid. That's the whole answer and also the honest one. Now clear off — and if the wind out there asks you who mixed it, you say the garage at Saltmouth, and you say it proud. There's a song about bikes like yours, you know. Played it for new riders every season. I'll put it in your book." }
+    ]
+  }
+}

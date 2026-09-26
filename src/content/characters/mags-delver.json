@@ -1,0 +1,35 @@
+{
+  "id": "mags-delver",
+  "name": "Mags Delver",
+  "role": "Reclaimer hauler, poet of the retired machine",
+  "faction": "reclaimers",
+  "home": "cinderflats",
+  "bio": "Runs a six-sling hauler called *Amble* out of the Yards, stripping dead infrastructure by day and writing it letters by night. Mags learned stripping from Solder and poetry from the machines themselves — 'they're all elegies already, I just take dictation.' Her odes are pinned to the yard gate on tyre-paper, and the horizontal winch at dock nine has begun, in her opinion, to preen. Once hauled a Guild crate 'slightly west of its manifest' and returned it to the cache cairn with a full apology sonnet, which Solder framed.",
+  "appearance": "Round-shouldered and deliberate, in a hauler's bracers worn shiny, a coil of sling cable carried like a scarf, chalk behind one ear (poetry) and chalk behind the other (load maths), and an umbrella rigged to *Amble*'s cab that becomes a sunshade, an awning, and an opinion.",
+  "voice": "Hauler's patience with a poet's compass. Speaks of machines as colleagues with seniority. Her insults are metric, her praise is iambic. Ends difficult sentences with a stanza break she expects you to feel.",
+  "lines": {
+    "greetings": [
+      "Courier! Come out of that wind. Amble's at her rest angle and I'm at mine, which is horizontal, professionally.",
+      "Varga. You owe the yard gate a hello; it's been reading. Tonight's ode is to a condenser that outlived its makers' name.",
+      "Slowly does it, love. The Yards bite in descending order of how much they like you, and strangers start low."
+    ],
+    "barks": [
+      "Every machine I strip gets a last line written in chalk on the hull before the lamps go. Solder calls it bookkeeping. She's not wrong; grief is a ledger.",
+      "The Crusher gets praised, the winches get praised — nobody thanks the bolts. The bolts hold the *world*, love, ask any roof.",
+      "Aunt Vertex says the desert prunes and we gather. I put it better in eight lines. Six were about her wheelbarrow."
+    ],
+    "mission": [
+      "That crate that 'settled as dust' off the Guild hauler? Amble and I watched the gouge marks from the mesa-side — three beautiful parentheses in the pan. Whoever retrieves it, the Yards hear about it. That's currency, courier.",
+      "I've a sling of condenser cages wants going to the pan-edge navigation lattice — not cargo, *applause*. The lattice has been up two hundred years holding a horizon together. We are paying respects in hardware."
+    ],
+    "radio": [
+      "Yards band to the flats: Amble and Mags outbound, loaded heavy with scrap and heavier with opinions. Riders on the south line have right of way and our envy.",
+      "Notice for riders: stripped a relay mast near the pan edge today; left the beam standing, wrote it twelve lines. If you pass at dusk, the chalk catches the low sun. Read it aloud; old metal likes rhythm.",
+      "Mags on band. Whichever courier left the blues-scale whistling in the intake mesh at dock nine: thank you; the winch has been unbearable about it all week."
+    ],
+    "verse": [
+      "Ode, first stanza, free of charge: *You held the sun, and held the crews, and held / the money while the money held its nerve — / then let go gently, into salt. Well served.* Second stanza's four credits and a promise you'll keep riding.",
+      "Last line of the day, delivered nightly, same as the mail: *No machine retires. It is relieved, or it is abandoned, and the Yards know the difference.* Sign the gatebook if you felt that one."
+    ]
+  }
+}

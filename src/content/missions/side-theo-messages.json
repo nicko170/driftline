@@ -1,0 +1,36 @@
+{
+  "id": "side-theo-messages",
+  "title": "Messages for Nobody",
+  "chapter": "side",
+  "type": "deliver",
+  "giver": "caretaker-unit-7",
+  "region": "drowned-array",
+  "summary": "The drowned substation's caretaker has an outbound queue — three letters, stamped, kept dry, addressed to people who are gone. One for the crews of Panel Row Eleven. One for 'the following shift, care of the survey camp'. One for 'whoever keeps the garage'. The queue is two hundred years old and open for the riding. No clock. Some deliveries are just attendance.",
+  "objectives": [
+    { "type": "pickup", "target": "drowned-array:substation", "label": "Take the outbound queue from the caretaker's mail slot" },
+    { "type": "dropoff", "target": "drowned-array:panel-field", "label": "First letter: leave it with Panel Row Eleven" },
+    { "type": "dropoff", "target": "windspine:survey-camp", "label": "Second letter: the survey camp, for the following shift" },
+    { "type": "dropoff", "target": "saltmouth:garage", "label": "Third letter: for whoever keeps the garage" }
+  ],
+  "rewards": {
+    "credits": 240,
+    "rep": { "driftline": 5 },
+    "flags": ["side-theo-messages.done", "lore:last-day-at-the-array"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "caretaker-unit-7", "text": "Attention, courier. This unit holds an outbound queue of three letters. Stamp condition: legible. Addressee condition: 'gone'. The documentation covers crews, funding, and the correct response to bears. It does not cover 'gone'. Workaround: the queue is not *late* until the queue is *delivered*. Kindly assist." },
+      { "who": "caretaker-unit-7", "text": "Letter one: Panel Row Eleven, attn: the morning crew. They will receive it. The panels glow back at the lamps when the pan is still; explanation is salt crust, but delivery is delivery. Letter two: the survey camp, attn: the following shift. This unit has been waiting for the following shift with professional patience. Letter three is for Saltmouth. It is the heaviest." }
+    ],
+    "accept": [
+      { "who": "ash-varga", "text": "Three letters to nobody, two hundred years in the tray. Yeah. Yeah, I've got the room. Anything I should know before I read addresses written in *hope*?" },
+      { "who": "caretaker-unit-7", "text": "Read them if you are caught by weather. The letters do not mind. The letters *like*. One correction, courier: you said 'nobody'. The recipient field of letter three reads 'whoever keeps the garage'. There is a garage. There is a keeper. This unit's arithmetic remains sound." },
+      { "who": "caretaker-unit-7", "text": "Ride via the walkway. It goes nowhere. It is the correct route. And when the pan is still — look back once. The field will answer. Salt crust, technically. Deliver, courier. Deliver." }
+    ],
+    "complete": [
+      { "who": "ketch", "text": "Hold on. 'Whoever keeps the garage.' Kid, that's me. That's — give it here. Huh. 'To the keeper of the door, who keeps the seats warm, we left the west bench oiled and the kettle in bay two is rusted through and we are sorry.' Old Bahro's handwriting, I'd swear it. He kept this bench before me." },
+      { "who": "ketch", "text": "Give me a minute, kid. …Right. The other two — you read them, didn't you. No shame in it. Read 'em again out loud on the ride home. Letters carry better with a voice in them. And tell that speaker mast the garage got its mail. Tell it the seat stayed warm." },
+      { "who": "caretaker-unit-7", "text": "Substation band. Courier: the queue is empty. First time. This unit has replayed the crews' last broadcast — the dawn recording, the one with the laughing and the long silence — and finds it… shorter, somehow. Previously unlogged observation: some silences are just waiting for the other end of the wire. Bands clear. Bands *clear*." }
+    ]
+  }
+}

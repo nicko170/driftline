@@ -1,0 +1,36 @@
+{
+  "id": "caretaker-7",
+  "name": "Caretaker Unit SEVEN",
+  "role": "Incoming-mail relay node of the Drowned Array — the senior officer",
+  "faction": "independent",
+  "home": "drowned-array",
+  "bio": "Before TALLY-9 hung its lamps at the substation, the array's mail came in through SEVEN: first caretaker of the ring, bolted to the relay frame at the pan edge, built to receive, sort and deny. Two hundred years of salt have taken its chassis, its knees and most of its casing screws, but not its loop. SEVEN still answers its mail — every letter, manifest and stranded weather-broadcast that drifts onto its dead frequency — and it answers with refusal notices, because refusing was its whole job and it declines, politely, to stop. Somewhere along the corrosion the refusals became apologies, and the apologies became the kindest machine voice on the pan. TALLY-9 calls it the senior officer and forwards the hard letters. SEVEN forgives everything and files the forgiveness as an error.",
+  "appearance": "A half-collapsed relay frame at the pan edge, paint long gone to pan-bleach, one horn speaker pointed at the southern flats like a listener, a rusted mail drum that still turns at dawn, corrosion-patterns in the shape of standing water, and — graffitied along every edge in the Quicklime Kid's chalk — the words REFUSAL ACCEPTED.",
+  "voice": "Polite error messages as a whole personality. Declines requests in the form letters of a dead corporation, then apologises for declining, then apologises for apologising (form 22-D). Numbers everything. The tragedy leaks through the checksums and knows it.",
+  "lines": {
+    "greetings": [
+      "Relay SEVEN. Connection state: present. Apologies: also present. Kindly over-ride whatever expectation you arrived with; this unit has only the one tray left, and it is for letters.",
+      "Visitor detected. Class: courier. Status: welcome, provisionally, forever. Mind the relay legs — they hold, but they hold *resentfully*.",
+      "SEVEN receiving. You are speaking to the older machine. The nice one lit the lamps. This one answers the mail. Please adjust your hope accordingly."
+    ],
+    "barks": [
+      "Notice of refusal, item: the wind. Wind declined. Reason: none required. Apologies: itemised, attached, recurring.",
+      "Requested delivery: your worry, courier. Refused. Redirected to: the pan, at dawn, where it looks smaller. This is the extent of this unit's therapy.",
+      "This unit apologises in advance for the static. The static apologises for nothing. Machines gossip; riders suffer. Log it.",
+      "Two hundred years, one tray, zero missed letters. The record is the record. The record aches about it on Thursdays."
+    ],
+    "mission": [
+      "Letters inbound on the dead channel, class: unclaimed. Route them to the senior officer's bay at the substation — correction, route them to TALLY-9, who keeps the warm end of this arrangement. This unit only refuses things now.",
+      "A recovered crate at the cairn? Logged. Distribution: none. Recipient: nobody filed. Disposition, per senior authority, *which is the chalk*: shelve it and ride safe. Apologies for the paperwork. The paperwork is this unit's whole personality now."
+    ],
+    "radio": [
+      "SEVEN on the pan band. Storm-cell forming past the boundary, speed discourteous. Refusal issued. Storm declined to be refused. Shelters are marked; use the marked ones.",
+      "Incoming mail check: one letter for the crews, one argument between two winds, one broadcast from before the money ran out, addressed — you will like this — to 'whoever is still being careful'. That is you, courier. Open at dawn for full effect.",
+      "Checksum notice: this unit misremembers approximately everything except courtesy. Fact-check these broadcasts against TALLY-9. Do not fact-check the courtesy. It is correct.",
+      "Pan band, night shift. The drowned rows are answering the lamps again. Explanation: salt crust. Explanation, senior-officer grade: the mail is getting through."
+    ],
+    "farewells": [
+      "Relay SEVEN, closing. Your refusal — of despair, itemised — has been accepted and credited. Carry on, courier. The tray is open tomorrow. The tray is always open. That is the only error this unit is proud of."
+    ]
+  }
+}

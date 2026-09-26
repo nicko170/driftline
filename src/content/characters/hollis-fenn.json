@@ -1,0 +1,38 @@
+{
+  "id": "hollis-fenn",
+  "name": "Hollis Fenn",
+  "role": "Mooring-warden and bell of Keel Town",
+  "faction": "guild",
+  "home": "skydocks",
+  "bio": "Keel Town grew off the Mesa's west rim one hung hull at a time, and Hollis Fenn has rung it together ever since: mooring-warden of the slung town, keeper of the bell code, and the only official the hang-tenants elected twice (once by acclamation, once by accident during a storm vote that nobody called). Devanna Shore holds the Guild's masts topside; Hollis holds everything that dangles beneath them — which, as he explains to inspectors, is a separate jurisdiction with its own wind. He pays couriers out of a tin marked MOORAGE, does not ask what hums inside a sealed crate, and considers a favour banked better than money.",
+  "appearance": "A sun-hollowed man in his fifties with a bell-rope shoulder, storm-battered Guild vest turned inside out so only the stitching shows, brass ring-keys on a length of ship's line, one boot re-soled with winch leather, and a speaking-trumpet slung crosswise on his back like a cutlass.",
+  "voice": "Ship's-bell cadence — his sentences strike. Declares things like weather observations that happen to be threats or kindnesses. Smuggler's discretion: he never heard nothing, but he did overhear a great deal. Calls couriers 'young tonnage'. His warmth is real and his accounting is warmer.",
+  "lines": {
+    "greetings": [
+      "Strikes three of the afternoon, and here comes young tonnage. Keel Town's open to whoever ties on polite.",
+      "Varga. The west cleat held all winter and I am not taking questions about it. What's the sky sent us?",
+      "Mind the drop between docks four and five — she only bites riders who flatter the height."
+    ],
+    "barks": [
+      "The bell says what I say. Convenient arrangement. Ask the hang-tenants; they'll confirm the bell is honest.",
+      "Devanna runs what you can stand on. I run what you can't. Jurisdiction, young tonnage, is mostly about where gravity files complaints.",
+      "If that crate hums, keep humming along. Ships sound better with accompaniment.",
+      "A favour held is worth two favours spent and one never mentioned. That's Keel Town arithmetic and it audits."
+    ],
+    "mission": [
+      "The Guild's offer wax goes up to the mesa house and the *interesting* wax comes to me. Guess which kind this is. Deliver like you never noticed the difference.",
+      "Keel Town Quarterly, young tonnage — every hull gets one, even the hull that swears it's a raft. Drop, bell, next. Last courier tried to read a copy in flight and the magazine won.",
+      "Somebody left moorage pay on the night ring again without a name. Third season running. Do not investigate. Investigate nothing at speed."
+    ],
+    "radio": [
+      "Keel Town band. Bell's rung for weather from the spine — hang your speed, young tonnage, the rim gusts mean it today.",
+      "Hollis on the hang-band. If anybody asks, your hold is empty, your route is dull, and I've never seen you. If nobody asks: welcome back, there's soup.",
+      "Traffic note: the mesa house wants a word about a crate nobody entered. Come by the west approach. The west approach has terrible record-keeping.",
+      "The slung hulls are singing in the wind tonight. G chord, mostly rust. I'll ring it down at dusk — somebody should."
+    ],
+    "night": [
+      "Night mooring, young tonnage: ring twice, wait for the lamp, tie off on the honest cleat. The dishonest one has a view of the drop you'll remember.",
+      "After dark, Keel Town answers to the bell and the bell answers to me, and I — at my age — answer to whoever brings tea. Constitution's on a plate of tin under dock three. Very moving."
+    ]
+  }
+}
