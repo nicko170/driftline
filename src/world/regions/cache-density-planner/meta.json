@@ -1,0 +1,8 @@
+{
+  "slug": "cache-density-planner",
+  "name": "Cache Density & Fan-Out Planner",
+  "blurb": "Workshop tool, not a game region: a top-down survey sheet for the signal-cache collection layer — every cache drawn at its resolved golden-angle fan-out position with true 13 m capture discs, crowding heat warnings, a paste-a-row live simulation, and codex-styled reading cards. Anchors and center live outside the playable map.",
+  "center": [9200, 7600],
+  "radius": 4,
+  "danger": 0
+}

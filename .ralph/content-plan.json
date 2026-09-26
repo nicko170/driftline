@@ -5659,10 +5659,11 @@
    "cluster": "demos",
    "intent": "A look-dev/QA bench for the signal-cache collection layer (now 100+ caches across 11 on-world regions). Product: a top-down schematic map of every region's anchors with each cache drawn as the real ⟡ violet-octahedron pickup marker, fan-out spiral rings rendered exactly as caches.ts resolves them (golden-angle, r = 5 + k·2.2), and CAPTURE_RADIUS 13 m circles so overlaps and crowding read instantly. Features: live re-lit simulation of cache additions (paste a new caches.json row and see it land), anchor crowding heat warnings (>6 caches per anchor flags amber, >10 red), region filter chips using faction colours, click a cache to read its lore title/summary in a codex-styled reading card. Art direction: printed survey-map feel — salt-white paper ground, ochre contour hatching, violet signal glyphs, teal connective threads between anchors in one region. Shape-first: density warnings use ▲/■ count pips, not colour alone. Stack: React DOM + SVG overlay, caches.ts data import; expose as demo-region off-world centre.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo2",
-   "claimed_at": 1790407265.6142988
+   "claimed_at": 1790407265.6142988,
+   "done_at": "2026-09-26T18:47:51"
   },
   {
    "kind": "demo",
@@ -5671,8 +5672,10 @@
    "cluster": "demos",
    "intent": "A portrait quality booth for the 40+ character image pipeline. Product: every painted portrait (public/images/characters + articles mirror paths) hung in a gallery wall; each runs through automated QC checks — luminance histogram (is the face in the warm-key band?), saturation drift vs the faction palette chip (guild ochre / choir teal / reclaimer rust / driftline amber / independent bone), edge-contrast silhouette readability score, and the real 64px dialogue-card crop preview so writers see the portrait as shipped. Features: side-by-side grading of two portraits, a 'hang her next to the choir wall' context preview (portrait beside 3 same-faction neighbours), grayscale-accessibility pass (Vienot CVD matrices), and a shot-list generator that drafts a generate_image prompt from the character's appearance/voice JSON fields (ready for the builder to paste into the paint tool). Art direction: a gallery inside Ketch's garage — rust pegboard, amber string lights, polaroid-string of sitters. Stack: React DOM + canvas readback of pixel stats; demo-region off-world.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790412314.3346171
   },
   {
    "kind": "demo",
@@ -5963,6 +5966,133 @@
     "radio",
     "factions",
     "bench"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "skyship-pennant-code",
+   "title": "Reading the Pennants",
+   "cluster": "lore",
+   "intent": "Field-guide to reading skyship pennant code at the skydocks: signal flags by season, the grief pennant, the prize-crew chevron, and colours only legal within the moorage shadow because they once meant something worse on the open desert.",
+   "keywords": [
+    "skydocks",
+    "flags",
+    "skyships",
+    "signal-code"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "brass-cup-dispute",
+   "title": "The Brass Cup Dispute",
+   "cluster": "lore",
+   "intent": "Record: the Brass Cup Dispute — assay minutes,公证 testimony, and the one page where Mose Adler and Hollis Fenn agree about a measurement and immediately regret it. Capacity of the official cup: still disputed, now with charts.",
+   "keywords": [
+    "saltmouth",
+    "skydocks",
+    "guild",
+    "assay",
+    "feud"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "mother-census-ledger",
+   "title": "The Census Ledger (Excerpt)",
+   "cluster": "lore",
+   "intent": "Tract from the Mothersgate data vaults: pages of MOTHER's half-finished terraforming census ledger — columns for people, bees, and one column labelled only 'other'; the entries continue for three pages after the money ran out, in the same patient hand.",
+   "keywords": [
+    "mothersgate",
+    "mother",
+    "terraforming",
+    "ledger",
+    "history"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "night-mirror-harvest",
+   "title": "Night-Mirror Lichen: A Grower's Notes",
+   "cluster": "lore",
+   "intent": "Field-guide from the boundary shadow: night-mirror lichen farming with Dusk-Farmer Ook — sowing by shadow length, harvesting by moonrise, what the pale-green glow is actually good for, and why you never sell a mirror crop to someone in a hurry.",
+   "keywords": [
+    "boundary",
+    "lichen",
+    "farming",
+    "ook",
+    "night"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "winch-safety-catechism",
+   "title": "The Winch Catechism",
+   "cluster": "lore",
+   "intent": "Tract pinned at the winch base: the skydocks winch-safety catechism, half Guild regulation and half dockworker prayer, annotated by three generations of riggers in progressively less patient hands. Knot diagrams replaced, charmingly, by rhyme.",
+   "keywords": [
+    "skydocks",
+    "winch",
+    "safety",
+    "rigging",
+    "prayer"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "first-wall-tally",
+   "title": "The First-Wall Tally",
+   "cluster": "lore",
+   "intent": "Record from the Courier Berth in Saltmouth: the chalk tally above the old coffee urn where every courier logs their first solo storm wall — name, wall colour, and one word each; the word column is a found poem two centuries long.",
+   "keywords": [
+    "driftline",
+    "storm",
+    "cafeteria-chalk",
+    "couriers",
+    "poem"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "radio-weight-sandbox",
+   "title": "Radio Weight Sandbox",
+   "cluster": "demos",
+   "intent": "Demo-region lab bench for the shipped band-weighted radio chatter (HUD.tsx pickRadioVoice): a static soundstage with one teleport plinth per on-world region; sliders simulate faction rep (guild/choir/reclaimers 0–100); a 'roll 100' button samples picks and renders a live histogram of voice ids vs theoretical weights, with local-band, driftline and rep contribution breakdowns stacked in amber/teal/rust; CVD-safe chips; export weights as JSON. Art direction: night salt flat, one relay mast with amber lamp, oscilloscope props inspired by radio-static-visualizer. Audience: tuners verifying that locals speak loudest at home and rep favourites get airtime.",
+   "keywords": [
+    "radio",
+    "chatter",
+    "weights",
+    "reputation",
+    "lab-bench"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "cache-route-grand-tour",
+   "title": "Cache Route Grand Tour",
+   "cluster": "demos",
+   "intent": "Demo-region planning instrument: all signal caches plotted on a stylised top-down salt-pan chart as violet diamonds, overlaid with a heatmap of mission objective anchors (amber) and dead-zone contours; click a cache for its lore slug/anchor/spacing metrics; filters by region and unlock source; a 'propose row' pencil writes candidate caches.json rows with automatic collision checks (reuses cache-density-planner math). Purpose: keep the 128+ cache network evenly rideable as writers add lore. Art direction: cartography table at night, violet/amber inks on bone paper.",
+   "keywords": [
+    "caches",
+    "map",
+    "planning",
+    "heatmap",
+    "tool"
    ],
    "status": "planned",
    "added_by": "builder"
