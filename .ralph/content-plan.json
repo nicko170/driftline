@@ -608,10 +608,11 @@
     "jett",
     "salt flats"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790386138.600298
+   "claimed_at": 1790386138.600298,
+   "done_at": "2026-09-26T11:34:56"
   },
   {
    "kind": "article",
@@ -626,10 +627,11 @@
     "drowned-array",
     "slalom"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790386138.6003
+   "claimed_at": 1790386138.6003,
+   "done_at": "2026-09-26T11:34:56"
   },
   {
    "kind": "article",
@@ -643,10 +645,11 @@
     "search",
     "deliver"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790386138.6003
+   "claimed_at": 1790386138.6003,
+   "done_at": "2026-09-26T11:34:56"
   },
   {
    "kind": "article",
@@ -660,10 +663,11 @@
     "comedy",
     "choirhollow"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790386138.6003
+   "claimed_at": 1790386138.6003,
+   "done_at": "2026-09-26T11:34:56"
   },
   {
    "kind": "article",
@@ -2483,10 +2487,11 @@
    "cluster": "demos",
    "intent": "Typography playground for the codex: reads lore markdown live from src/content/lore, with toggles for measure, leading, size, and a 'printed Guild form' decorative mode. Purpose: keep 120+ in-world entries genuinely pleasant to read. Stack: React + the codex library.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo2",
-   "claimed_at": 1790385760.2881038
+   "claimed_at": 1790385760.2881038,
+   "done_at": "2026-09-26T11:35:00"
   },
   {
    "kind": "demo",
@@ -3034,8 +3039,10 @@
     "crate",
     "comedy"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790386380.435803
   },
   {
    "kind": "article",
@@ -3050,8 +3057,10 @@
     "comms",
     "field guide"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790386380.435804
   },
   {
    "kind": "article",
@@ -3066,8 +3075,10 @@
     "night market",
     "flavor"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790386380.435804
   },
   {
    "kind": "article",
@@ -3082,8 +3093,10 @@
     "broadcast",
     "comedy"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790386380.435804
   },
   {
    "kind": "article",
