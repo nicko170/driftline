@@ -1,0 +1,37 @@
+{
+  "id": "side-heliograph-express",
+  "title": "Mirror, Mirror, Going Fast",
+  "chapter": "side",
+  "type": "timed",
+  "giver": "gauge-keeper-dax",
+  "region": "windspine",
+  "summary": "The Windspine ridge crew has finished silvering the Choir's new heliograph mirror — half a season of polish, one afternoon of usefulness. Run it crest to crater while the sun angle holds: a heliograph only tells the truth in good light, and good light keeps nobody's schedule but its own.",
+  "timeLimit": 260,
+  "objectives": [
+    { "type": "pickup", "target": "windspine:ridge-crest", "label": "Collect the fresh-silvered mirror from the ridge crew at the crest" },
+    { "type": "goto", "target": "windspine:south-foot", "label": "Thread the descents to the southern foot — the light is burning" },
+    { "type": "dropoff", "target": "choirhollow:listening-horn", "label": "Set the mirror in the listening-horn mount while the angle holds" }
+  ],
+  "rewards": {
+    "credits": 300,
+    "rep": { "choir": 6, "guild": 4 },
+    "flags": ["side-heliograph-express.done", "lore:letters-to-the-sleeper"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "gauge-keeper-dax", "text": "Courier. Entry in the station day book — yes, we *have* a day book, don't tell the needles. The crest crew finished silvering the Choir's heliograph mirror this morning. It goes to the listening horn while the light holds, and the light holds until it doesn't. The sun keeps its own register, and it has never once been in mine." },
+      { "who": "gauge-keeper-dax", "text": "Route is honest: crest, descents, southern foot, then the floor to the crater. Mirror's wrapped in survey felt — the crew sent it down facing *up*, which they call tradition and I file under optimism. Mounted, it lets the Hollow shout at Saltmouth in pure light instead of burning a generator. Shout is the technical term. I have it in writing." },
+      { "who": "verger-sann", "text": "Sann here, from the crater. Mount's greased, horn's aimed, and eleven lamps are sulking about a *rival light* — we'll reconcile the parish later. Hurry kindly, courier. The angle we want comes through once a day. Like good light always does, and like nothing else on Kessa-9." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Ketch on band. Mirror job — feather those descents, kid; that much silvered glass is a sail that tattles on your throttle hand. And resist looking yourself over in it. Vanity is drag. The only honest mirror out there is the one pointed at somebody else's horizon. That's the whole quota for mirrors and I expect it back." },
+      { "who": "ash-varga", "text": "Copy: fly the sun's register, don't meet my own eyes, shout is a technical term. Two hundred and sixty seconds of borrowed afternoon. The Wren's thin for it, Dax. She likes appointments the sun keeps." },
+      { "who": "gauge-keeper-dax", "text": "Your clock is my chart, and my chart reads the sun, not your nerves. Arrive inside the angle and the Hollow goes up in silver. Arrive late and you've freighted the Guild's handsomest dark lantern — there is a line in the day book for both outcomes, and only one of them is a compliment. Pressure's holding. Off you go." }
+    ],
+    "complete": [
+      { "who": "verger-sann", "text": "Slotted, aimed and — there. First shout just crossed the flats like the horn had been practising all winter. Two hundred years of listening, and the Choir finally gets to *say* something at the speed of light. The lamps, for the record, leaned. I counted twice. I always do." },
+      { "who": "verger-sann", "text": "Your fee, and this besides: the season packet, copied fair in my hand — the letters we read aloud at the Door, with my margins on which of them the lamps leaned toward. Couriers carry most of those letters to us. Seems only correct that a courier should see where the leaning ones fall." },
+      { "who": "gauge-keeper-dax", "text": "Station log. Day book, if you're keeping track, which I am, professionally: courier Varga crossed the floor inside the angle, glass steady, mirror whole, sun on schedule as always. Your name goes in the book at season turn under *arrived*. It's the short list, courier. Everyone worth reciting is on it. Pressure's holding." }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "side-still-water",
+  "title": "Still Water, Moving Fast",
+  "chapter": "side",
+  "type": "fragile",
+  "giver": "hollis-fenn",
+  "region": "skydocks",
+  "summary": "Hollis Fenn is freighting six sealed jugs of still water — dock-distilled, priced like it remembers rain — off the mesa and across the map to Dusk-Farmer Ook's lee rows at the boundary shadow. The winch doesn't run to the middle of nowhere; that's what couriers are for. Slosh is the cargo voting no, and on a long run the cargo lobbies.",
+  "requires": { "flags": ["ch1-first-run.done"] },
+  "objectives": [
+    { "type": "pickup", "target": "skydocks:winch-base", "label": "Weigh out the six sealed jugs at the Top Scale" },
+    { "type": "goto", "target": "glassroad:gate-south", "label": "Come off the mesa and thread the south gate — slow, the jugs are voting" },
+    { "type": "dropoff", "target": "mothersgate:approach", "label": "Set the water down in Ook's lee rows, unsloshed" }
+  ],
+  "cargo": { "fragile": true, "label": "still water — keep it that way" },
+  "rewards": {
+    "credits": 460,
+    "rep": { "driftline": 5, "guild": 3 },
+    "flags": ["side-still-water.done", "lore:bike-name-registry"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "hollis-fenn", "text": "Courier. Cargo: six jugs of still water, dock-distilled off the condenser rigs, priced like it remembers rain. Destination: the boundary shadow, one dusk-farmer, patient as compost. Mesa-mail rules say the winch doesn't run to the middle of nowhere — Rule Fourteen, courier's exemption, *that's what you are for*. The exemption pays. The exemption always pays." },
+      { "who": "hollis-fenn", "text": "Seals are chalked, harness is weighed, and the Top Scale has taken the measure of your intentions — it finds them adequate, which from that scale is a sonnet. Between my wharf and the shadow line there is horizon, a south gate with opinions, and every dune on the route has strong views on surface tension. Water keeps its own counsel. Keep it that way." },
+      { "who": "ook", "text": "Rider. Rows are thirsty. Bring it flat — flat is faster, ask the lichen. And if any jug comes open on the way: don't drink the evidence. It costs more than you." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Ketch here. Water runs, kid: the jugs'll rattle like a meeting of treasurers. Slosh is just the cargo voting, and the cargo is a democracy that hits back — feather the hops off the mesa, don't let the south gate kiss your panniers, and keep your hover height *boring*. Boring is a skill and today it's paid double." },
+      { "who": "ash-varga", "text": "Copy. Six jugs of the most expensive standing-still I've ever carried, delivered at speed. This job is a riddle with a tank strap." },
+      { "who": "hollis-fenn", "text": "One more for the slate. Your bike — the name plate under the cowl's been filed down and re-cut. Old name showing through the new one, the way a watermark shows through cheap paper. I've chalked it in the column where such things are kept. Column says she answers to an older name in storms. Ride like she's listening. Hang true." }
+    ],
+    "complete": [
+      { "who": "ook", "text": "Set them down. Slow. ... Good jugs. Water remembers the sky. Lichen remembers water. Chain of custody, rider — longest one on Kessa-9. You're one link of it now. Shirt's damp." },
+      { "who": "hollis-fenn", "text": "Wharf band, Fenn. The return harness just came off the Top Scale — seal weights honest, six words entered in the column: *water, dock, shadow, arrived, still, paid*. The column compliments you. The column has complimented four couriers in eleven years, and two of them retired immediately, as a mark of respect." },
+      { "who": "ketch", "text": "Quiet hands on the long haul, kid — Ook's rows got their sky back with the seals intact. And fun fact off the garage wall while you ride home: I found the Wren's page in the old bike-name registry. She's had names before the one I gave her, same as anyone worth knowing. Pinned the page by the kettle. Read it when you're in — and bring tea. The registry runs on tea." }
+    ]
+  }
+}
