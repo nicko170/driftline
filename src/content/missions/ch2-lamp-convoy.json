@@ -1,0 +1,36 @@
+{
+  "id": "ch2-lamp-convoy",
+  "title": "Lamp Convoy",
+  "chapter": 2,
+  "type": "escort",
+  "giver": "cantor-ilex",
+  "region": "choirhollow",
+  "summary": "Every year the Choir relights the crater's lamp ring at walking pace, flame by flame, with the season's first lamp oil riding in a wagon older than your debt. This year they want a courier riding convoy — close enough to catch a tip, never ahead of the candles. The lamps, Little Reverb reports, have started lighting before the procession arrives. Nobody at Lamp Rest finds this alarming except your gunwale.",
+  "requires": { "flags": ["ch2-choir-offer.done"] },
+  "objectives": [
+    { "type": "goto", "target": "choirhollow:temple-steps", "label": "Report to the temple steps for the lighting" },
+    { "type": "escort", "target": "choirhollow:lamp-ring", "targets": ["choirhollow:lamp-ring", "choirhollow:crater-rim", "choirhollow:listening-horn"], "speed": 10, "label": "Ride convoy with the oil wagon — keep pace, never outrun the flames" },
+    { "type": "dropoff", "target": "choirhollow:listening-horn", "label": "Set the master flame in the listening horn's cradle" }
+  ],
+  "rewards": {
+    "credits": 260,
+    "rep": { "choir": 10, "driftline": 3 },
+    "flags": ["ch2-lamp-convoy.done", "lore:lore-choir-litany-2"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "cantor-ilex", "text": "We hear you, courier. Tonight the Choir performs its oldest chore: the lamp ring gets its year's oil, carried at walking pace, flame by flame, around the rim. It is, by design, extremely dull. We ask you to make it dull in company." },
+      { "who": "cantor-ilex", "text": "Ride beside the oil wagon. Not ahead — a procession outrun becomes a queue with candles. Keep our pace, keep our circle, and if anything about the evening surprises you, remember that we charged you nothing for the seat." }
+    ],
+    "accept": [
+      { "who": "little-reverb", "text": "You're the escort? Good. Rules: no boosting near the lamp oil, no honking at the horn, and when the third lamp lights by itself you say nothing. It gets shy." },
+      { "who": "ketch", "text": "Ketch here. Lamp convoy. I rode that circle thirty years ago, kid. Keep it sloppy-tight — close enough to catch a tip, far enough to duck. And if a lamp lights before they reach it, you smile and keep riding, same as taxes." },
+      { "who": "ash-varga", "text": "Copy. Slowest job I've ever taken. Escorting fire at walking speed around a crater that listens back. Logging it under 'Tuesday'." }
+    ],
+    "complete": [
+      { "who": "little-reverb", "text": "Two lamps lit early. That one's never happened. The grown-ups are pretending it's wind. It's not wind. Wind has never once been on time." },
+      { "who": "static-warden-pem", "text": "Pem on band nine. My notebooks recorded your escort as 'a shape the signal followed around the rim'. Forty years of weather fiction, station, and tonight the plot moved." },
+      { "who": "cantor-ilex", "text": "Every lamp lit, and the ring remembers its carriers, Ash Varga. It has added you to its circuit. We are aware how that sounds. We have stopped apologising for how things sound." }
+    ]
+  }
+}

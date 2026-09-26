@@ -1,0 +1,39 @@
+{
+  "id": "ch3-rill-missing",
+  "title": "Courier Down",
+  "chapter": 3,
+  "type": "collect",
+  "giver": "ketch",
+  "region": "windspine",
+  "summary": "Rill Davenant's beacon went dark between the survey camp and the turbine row — mid-run, no storm close enough to blame, no distress call proud enough to be hers. Her transponder's fragments are pinging along the row like teeth after a bar fight. Recover them, follow what's left of the signal up the ridge, and bring Ketch proof of something. Any something.",
+  "requires": { "flags": ["ch3-first-wall.done"] },
+  "objectives": [
+    { "type": "goto", "target": "windspine:survey-camp", "label": "Start from Rill's last logged waypoint at the survey camp" },
+    { "type": "collect", "target": "windspine:turbine-row", "count": 4, "label": "Recover 4 transponder fragments along the turbine row" },
+    { "type": "goto", "target": "windspine:ridge-crest", "label": "Follow the last broken signal up to the ridge crest" },
+    { "type": "dropoff", "target": "saltmouth:garage", "label": "Bring the fragments home to the garage" }
+  ],
+  "rewards": {
+    "credits": 360,
+    "rep": { "driftline": 12 },
+    "flags": ["ch3-rill-missing.done", "rill.missing"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Board's yours, kid. Missing courier. North loop, survey camp to the turbines. Pieces of her transponder are pinging along the row." },
+      { "who": "ash-varga", "text": "Ketch. That's the shortest briefing you've ever given. You okay?" },
+      { "who": "ketch", "text": "Ride." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Four pips on the row. Find them all. Don't improvise, don't hero, don't stop to read the weather. Flat salt." },
+      { "who": "tamsin-cho", "text": "Varga — off the record, which is a phrase the Guild charges for. Davenant's manifest was *clean*. No cargo worth robbing, no route worth racing. Whatever happened to her didn't want her freight. It wanted her route." },
+      { "who": "little-reverb", "text": "Courier. Reverb. The desert's been saying the tall one's name for two days, wrong, the way it does. Except today it's saying it past tense. Hurry up." }
+    ],
+    "complete": [
+      { "who": "ash-varga", "text": "Ketch. Four fragments, all from the port pannier. The beacon didn't die — it was *switched off*, gentle as a lamp. And the crest… I found her jacket. Tied to a tower leg like a flag. Knot-side facing the hollow." },
+      { "who": "ketch", "text": "…Copy." },
+      { "who": "ketch", "text": "Thirty years I told you kids the storms were the worst thing out there. Jacket's on my bench. Radio's off. Door's open. Come home whenever, kid. I'll be up." },
+      { "who": "static-warden-pem", "text": "Station. My radio carried something at dusk that was not a storm. It was counting couriers the way the Guild counts salt. It had a number for Davenant, station. It has a number for you." }
+    ]
+  }
+}

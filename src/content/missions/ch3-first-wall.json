@@ -1,0 +1,36 @@
+{
+  "id": "ch3-first-wall",
+  "title": "The First Wall",
+  "chapter": 3,
+  "type": "storm",
+  "giver": "ketch",
+  "region": "windspine",
+  "summary": "The old storm gauge past the ridge crest rang twice this morning — a bell that has been dead for sixty years — and the season's first wall of sand is standing up east of Windspine. Get eyes on the gauge, then run the face down to Saltmouth's east gate before it buries the road. Do not fight it. Do not photograph it. Move like the desert is billing you for the road.",
+  "requires": { "flags": ["ch2-first-word.done"] },
+  "objectives": [
+    { "type": "goto", "target": "windspine:storm-gauge", "label": "Check the storm gauge past the ridge crest" },
+    { "type": "storm", "target": "saltmouth:gate-east", "label": "Outrun the wall — Windspine to Saltmouth's east gate" }
+  ],
+  "rewards": {
+    "credits": 320,
+    "rep": { "driftline": 8, "guild": 2 },
+    "flags": ["ch3-first-wall.done", "lore:lore-windspine-field-guide"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Kid. Storm gauge out past the crest rang twice this morning. That bell's been dead since your grandmother's debt was young. Season's early, and it's starting on the wrong side of the spine." },
+      { "who": "ketch", "text": "Plainly: if the wall stands up while you're out there, you do not fight it, you do not photograph it, you run downhill of it to the east gate, and you do not stop for cargo, scenery, or personal growth." },
+      { "who": "ash-varga", "text": "Check the magic bell, then race a mountain of sand to breakfast. Understood, boss." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Gauge first. Tap the glass, read the needle, tell me what it says. Then get your nose pointed home. The wind's already tasting the turbines and the turbines are *leaning*." },
+      { "who": "tamsin-cho", "text": "Factor Cho on the official band: all east routes closed until further notice, all storm claims to be filed in advance, and Varga — the Guild notes, without any warmth whatsoever, that you are currently its fastest asset. Come back countable." },
+      { "who": "ash-varga", "text": "Copy. Checking the bell. If it rings a third time on its own, I'm billing the sky." }
+    ],
+    "complete": [
+      { "who": "ketch", "text": "Gate's shut behind you and the wall ate the old salt pan like a light lunch. Season's open, kid. Earlier than the almanac, angrier than the songs. I don't like either of those adjectives." },
+      { "who": "static-warden-pem", "text": "Pem on band nine. The wall was reciting as it crossed the spine, station. Deep weather, deep grammar. Nothing on Kessa-9 that talks that much stays weather. Plan accordingly." },
+      { "who": "ketch", "text": "One more thing. Rill Davenant took the north loop before the wall stood up. Her beacon's late. She's never late, kid. Rill Davenant is the reason 'late' has a number." }
+    ]
+  }
+}

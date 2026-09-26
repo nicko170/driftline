@@ -1,0 +1,37 @@
+{
+  "id": "ch2-first-word",
+  "title": "First Word",
+  "chapter": 2,
+  "type": "scout",
+  "giver": "static-warden-pem",
+  "region": "choirhollow",
+  "summary": "Pem's notebooks say the static is climbing out of the crater and onto the high ground: three summits, three frequencies, one pattern assembling itself like a traveller's first mouthful of language in a new land. Scout the Windspine ridge crest, the skydocks mesa top, and the glass chapel with your radio gain wide open — and listen to the desert try to finish a word it started two hundred years ago.",
+  "requires": { "flags": ["ch2-choir-offer.done", "ch2-lamp-convoy.done"] },
+  "objectives": [
+    { "type": "scout", "target": "windspine:ridge-crest", "label": "Tune in at the Windspine ridge crest" },
+    { "type": "scout", "target": "skydocks:mesa-top", "label": "Tune in at the skydocks mesa top" },
+    { "type": "scout", "target": "glassroad:glass-chapel", "label": "Tune in at the glass chapel" }
+  ],
+  "rewards": {
+    "credits": 380,
+    "rep": { "choir": 6, "driftline": 4 },
+    "flags": ["ch2-first-word.done", "mother.speaks", "lore:lore-mother-voice"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "static-warden-pem", "text": "Station. The signal has left the hollow. My dials point uphill — ridge crest, mesa top, glass chapel. Three stations of an instrument nobody built, tuned to a station nobody admitted owning. You, courier, are the needle." },
+      { "who": "static-warden-pem", "text": "Carry your gain wide open and your crate closer than usual. Hold still on each summit until the needle settles. What we are measuring, station, is whether the sky has begun answering itself in words." }
+    ],
+    "accept": [
+      { "who": "ash-varga", "text": "Ridge, mesa, chapel. Stand still on three mountaintops with a haunted crate and a radio. Pem, this is the most Choir job the Guild board has ever carried." },
+      { "who": "static-warden-pem", "text": "Factor Cho carried it because she knows the difference between weather and grammar. Ride high, station. Knock twice on static, and I'll know the second knock is you." },
+      { "who": "ketch", "text": "Ketch here. High ground in three regions, radio work, and Pem sounds *excited* — which in forty years has never once been a good sign. Flares are in the left pannier. Humour me and pack them." }
+    ],
+    "complete": [
+      { "who": "ash-varga", "text": "Ridge: rising tone. Mesa: the tone had a beat under it. Chapel… Ketch. The radio said my name. One word. Everything else in the desert went quiet so the radio could afford it." },
+      { "who": "static-warden-pem", "text": "We heard it in the hollow, station. Every lamp guttered at the first letter and stood tall at the second. Two hundred years of listening, and she began with a *courier*. The Cantor is weeping. Pem is recalibrating." },
+      { "who": "cantor-ilex", "text": "We hear you, Ash. That is no longer a greeting, courier. It is reportage. Sleep if you can. Storm season is early this year, and now we know what the sky was clearing its throat for." },
+      { "who": "ketch", "text": "…Come home, kid. Slow. I'll put the kettle on and we'll both agree it was interference, out loud, several times." }
+    ]
+  }
+}
