@@ -1,0 +1,8 @@
+{
+  "slug": "radio-weight-sandbox",
+  "name": "Relay Weight Soundstage",
+  "blurb": "Tuning bench, not a game region: a night salt flat soundstage where the shipped band-weighted radio chatter rollers are measured against theory. Anchors and center live outside the playable map.",
+  "center": [7600, 6000],
+  "radius": 4,
+  "danger": 0
+}
