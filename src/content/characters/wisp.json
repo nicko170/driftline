@@ -7,6 +7,7 @@
   "bio": "Flies the little ferry skiffs between Keel Town and the mesa moorage, and has never once been late — she arrives before the passengers, occasionally before the passengers decide to travel. Twenty years aloft over the Glass Desert has scrubbed all panic out of her; she has watched three storms eat a landscape while filing a snacks inventory. Her radio chatter is the couriers' favourite channel: aerial gossip, traffic reports, and calm so total it functions as weather.",
   "appearance": "Tall, serene pilot in a faded teal flight suit two sizes too big with the cuffs rolled, grey-streaked hair in a loose knot pinned with a spent flare casing, mirrored goggles pushed up into a permanent mild squint, deck gloves hanging from her belt, standing beside a skiff that's already idling.",
   "voice": "Unshakeably placid, weather-report cadence, gentle absurdity delivered flat. Refers to the sky as 'upstairs' and the desert as 'downstairs'. Everyone is 'friend' or 'traffic'. Never says 'hurry'; says 'when convenient, ideally soon-ish'. Her gossip is gossip-shaped data: always useful, never attributed.",
+  "portrait": "images/characters/wisp.jpg",
   "lines": {
     "greetings": [
       "Friend Varga. You're eleven minutes ahead of my schedule for you. Rude of me to be behind. Tea?",

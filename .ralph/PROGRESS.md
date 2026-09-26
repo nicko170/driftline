@@ -1,5 +1,52 @@
 # Progress
 
+## Status — iteration 10 (departure screen; portraits round 7 at 35/43; orphan sweep → 121 caches; backlog restock)
+
+**Done (typecheck/build/validate green; playtest green: 60.5 fps, 0 errors, 0 failed requests, 99% scene change after input):**
+- **Departure screen** (new signature moment, seen on every Play): a dispatch-office
+  manifest interstitial between ▸ Play and the first rideable frame. Three real
+  milestones stamp in order — ENGINE WARM (audio up) → ROUTES STREAMED
+  (`onWorldRegionsLoaded()`) → LAMPS LIT (first rendered frame via new
+  `src/game/frameBeacon.ts` `<FrameBeacon/>` inside the Canvas Suspense — fires
+  after shaders compile) — then CLEARANCE GRANTED after a 1.7 s min dwell
+  (blips per stamp, chime on clearance, 9.5 s failsafe so riders are never trapped;
+  auto-dismisses 1.4 s after clearance or on any key). Panel shows spawn region
+  name/blurb (saltmouth, eager via REGIONS), current chapter + logline from
+  CHAPTERS, a deterministic manifest №, and rotating dispatch tips (12, 2.6 s cadence).
+  New key art: `public/images/title/departure.jpg` (dawn hover-bike departure) at
+  50% under an ink/violet scrim. While visible it eats hop/interact/pause edges
+  (same leak rule as ChapterCard). z-50 above HUD; reduced-motion parks its pulses.
+- **Portraits round 7** — painted + wired five: `static-warden-pem` (appears in 20
+  missions — biggest missing face), `salt-singer-ila` (3 missions), `wisp` (2),
+  `gauge-keeper-dax`, `warden-of-the-span` (iconic elders). **35/43 painted.**
+- **Orphan-lore sweep (standing duty)** — writers landed **7 lore mid-iteration**
+  (153→160) in two waves; caches.json 117→**124**, 0 orphans (bell testimony →
+  choirhollow:listening-horn, guild heraldry → saltmouth:exchange, night-sky
+  guide → windspine:ridge-crest, repair hymns → cinderflats:crusher; then
+  message-board + driftline-origins → saltmouth:job-board, dune fauna →
+  canyon-slalom:spectator-ledge).
+- **Backlog restock** — 8 side-mission intents (heliograph express, still water,
+  static funeral, gate-tally audit, goat chase, lamps before dark, apology tea,
+  cable harvest), 6 lore, 2 demos (storm-outrun-sandbox, rep-reaction-atlas).
+
+**Next / known issues:**
+- Portraits remaining (8): caretaker-7, hollis-fenn, mags-delver, mose-adler,
+  ook, spence-sorrel, tally, verger-sann — the last two are writer-new this
+  iteration. 35/45 resolved. caretaker-7 (rover) + TALLY-9 (plate room) are
+  machines/interiors — allow object-portraits in the same square style.
+- **Re-run the orphan audit every iteration** (probe: caches.json lore ∪ mission
+  `lore:` flags vs lore dir). Writers land ~4–7 lore/iteration, sometimes twice
+  per builder iteration — audit again right before finishing.
+- Departure screen is per-/play-mount (always shows). If quit-to-title→play
+  feels slow later, consider a `<1s` skip for repeat visits — measure first.
+- Departure art is shared for all spawns; DESIGN.md's per-region art slot
+  (`public/images/regions/<slug>.jpg`) remains unfilled — the panel is wired
+  to saltmouth only because spawn is fixed; extend when respawn points move.
+- Chunk-size warning persists (rapier 2.2 MB) — known, lazy routes keep it off
+  the title path; revisit only if lab pages start to feel it.
+
+## STATUS ARCHIVE (older iterations preserved below)
+
 ## Status — iteration 9 (codex fully crackable: 0 orphan lore, 117 caches; 5 portraits; 30/43 painted; build health)
 
 **Done (typecheck/build green; playtests green: 60 fps day + 60 fps night `/#skyt=0.99`, 0 errors, 0 failed requests):**
@@ -913,3 +960,60 @@ See git history for detail.
   copy-spec-JSON export. Findings + mirror table in the folder's NOTES.md.
 - Concept art at public/images/work/signal-cache-bench.jpg.
 - typecheck + validate:content clean (30 regions).
+
+## Iteration 11 — night-beam-tuner (demo-region)
+- New lab bench `src/world/regions/night-beam-tuner/`: night headlight tuning rig.
+  Player-spec bike parked on a salt corridor between glass-canyon walls (game sky
+  palette + fog formula, teal glass veins, range gates every 5 m, teal-framed
+  20–30 m read band). Headlight mirrors Bike.tsx mount/ramp 1:1 with live sliders
+  (angle, intensity, decay, cutoff, penumbra, aim drop/ahead, dust cone, lamp glow,
+  fog gain). Analytic scanline (canvas-2D, exact three.js distAtt/spotAtt model)
+  charts forward throw + lateral spread @25 m with READ_OK threshold, pool-glare
+  zone and verdict strip ("sweet spot / searchlight / dim / long throw").
+  Exports paste-ready Bike.tsx props or JSON. Three camera presets
+  (chase/profile/footprint), day/dusk/twilight/night chips for clock scrub.
+- Concept art at public/images/work/night-beam-tuner.jpg (splash card).
+- typecheck clean (31 regions).
+
+## Writer iteration 26 (writer2) — four Saltmouth/Keel Town side jobs
+- `side-paints-and-salt` (deliver, saltmouth, giver brinemaster-ogo): pan-crew ochre
+  sacks → exchange wax-seal → Ketch's paint bench. Twist: the unmanifested fifth sack
+  is a gift the scale "finds" — Counterweight rules gifts under 2 kg outside tariff.
+  Unlocks `lore:guild-wax-seal-chemistry`. Pairs with Ketch's side-paint-primer arc.
+- `side-rope-and-ferro` (deliver, saltmouth, giver old-ferro): Ferro's 60-year
+  tally-line IS the registrar's demanded rigging list; Counterweight audits it as
+  testimony, leaves knot 53 "untranslatable, in good standing". Unlocks `lore:rope-tally`.
+- `side-hearing-seats` (timed 300 s, skydocks→saltmouth, giver sister-counterweight):
+  round up 3 subpoena-ducking witnesses at Keel Town ("storm knee / cargo wash / gone
+  vertical"), swear them in before the gavel. Unlocks `lore:hum-hearings`.
+- `side-calm-before` (storm, windspine, giver surveyor-kest; requires
+  side-storm-window.done): turbine-row medicine cache → outrun a *turning* wall into
+  the camp shelter trench. Quiet gut-punch: the unmarked ink bottle for Kest's night
+  column. Unlocks `lore:storm-almanac`.
+- Hero art: public/images/articles/missions/side-calm-before.jpg (wall + turbines,
+  dusk violet/amber). Note: mission JSON carries no heroImage field (matches existing
+  missions); art follows the public/images/articles/missions/<slug>.jpg convention.
+- validate:content clean (32 regions, 43 characters, 82 missions, 153 lore, 117 caches).
+
+## Writer iteration 27 (writer2) — four lore entries (chants, seals, testimonies, stars)
+- `repair-hymn-cycle` (tract): complete Reclaimer dawn cycle — three waking calls
+  (yard-answer, footing count, spoken door knock), the working measures, the
+  red-underlined "keeps", and the long rule: never sing the full greeting over a
+  machine that still hums. Complements lore-reclaimer-hymn (noon pulling song) and
+  reclaimer-grace-prayers (meal prayers); nods to the null-crate hum via Vertex's chalk.
+- `guild-heraldry` (record): courier recognition card — ledger seal anatomy, flag
+  grades (incl. mourning protocol), the CARRIED ON FAITH stamp, and the Gull Post
+  banner ruling: a memory-stitched counterfeit certified senior over the original
+  after forty honest years. Cross-references guild-wax-seal-chemistry's rain-scent.
+- `bell-incident-testimony` (record): Appendix D of the lamp-books finally filed —
+  Decibel's deposition (lost the left ear's committee work), Pem's statement (the
+  Sleeve's Own, answered, nine-second echo with no reflector), the horn's own
+  testimony (birdsong / a nice laugh / the tone bent up a half-step into a question).
+  Pays off lore-choir-heretics' "attached as Appendix D and never discussed" and
+  brother-decibel's patch.
+- `night-sky-guide` (field-guide): Ketch's garage flat-chart — the half-strung
+  terraform Strand (211 lit of 404), three faithful satellites (Long Guile,
+  Pair-of-Sleeves, the Deacon), and the Choir's Breath Between Stars. Ties to
+  horizon cells being salvaged satellite stock (lore-bike-anatomy).
+- Hero art generated: public/images/articles/lore/night-sky-guide.jpg (courier under
+  the unfinished Strand); heroImage/heroAlt set in frontmatter.

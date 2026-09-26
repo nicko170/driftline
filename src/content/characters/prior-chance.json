@@ -1,0 +1,44 @@
+{
+  "id": "prior-chance",
+  "name": "Prior Chance",
+  "role": "Keeper of the Outer Lamps, hermit of the gate approach",
+  "faction": "choir",
+  "home": "mothersgate",
+  "bio": "Forty-one years a copier of the Door's inscription and still unable to tell you what it means — she will tell you this herself, twice, and then stop mid-sentence and watch the hills. Lives in a hermitage on the mothersgate approach, lights the outer lamps in an order only she and the Door understand, and has quietly become the person the whole Hollow sends its impossible questions to, because she is the only one who answers them with silence that helps.",
+  "appearance": "A small upright woman in her sixties, bone-white Choir vestments gone salt-grey at the hems, hood pushed back off short iron hair, eyes the pale teal of old glass and always slightly aimed elsewhere, forearms stained to the elbow with lamp oil and copyist's ink in equal layers, carrying a lamp-pole twice her height like a walking stick she has forgiven.",
+  "voice": "Half sentences, long brave silences; the silence is load-bearing, wait for it. Never finishes a quote from the inscription — stops exactly where the meaning would start. Kind without softness, patient without hurry. Says 'the lamps first' the way other people say hello. When she does finish a sentence, write it down; the Hollow does.",
+  "lines": {
+    "greetings": [
+      "Courier. The lamps are lit, which means... come in, come in. The kettle has opinions but it shares.",
+      "Ash Varga. You carried it all this way and I still haven't decided what to— sit. Sit first.",
+      "Forty-one years I've copied those eight lines. Ask me what they— ... Exactly. Sit."
+    ],
+    "barks": [
+      "The Choir sent a delegation about the humming. I made tea. We achieved silence. It helped more than their questions did.",
+      "Line three: 'count nothing you cannot—' ... no. Not today. Today you ride.",
+      "Everyone wants to know if the Door knows we're here. The lamps want to know too. I light them left to right and let them argue.",
+      "The wear on the inscription runs outward, courier. Words traced from behind the glass, one per— ... mind the step."
+    ],
+    "mission": [
+      "The key goes in the threshold, not the lock. There is no lock. There is a threshold and a courtesy, and you'll knock— you'll knock last. You'll understand when you knock.",
+      "Take the slow road to the door face. Two hundred metres. People will watch. Let them. Some deliveries need witnesses the way lamps need— ... go gently."
+    ],
+    "radio": [
+      "Approach hermitage to Varga. Your lamp is the third from the left tonight. It asked. Lamps don't ask. Ride steady.",
+      "Chance on the gate channel. The inscription is bright tonight — not glowing, just... attended. Whatever you're carrying, it is already missed by something.",
+      "Radio discipline, child: you speak, then you leave room for the answer. The desert's answers are slow. So was I, once. It's fine. Wait."
+    ],
+    "door": [
+      "People ask what I'll do when it opens. Same as every dusk: the lamps first. Then whatever kindness the— ... then the rest.",
+      "You want to know if I'm afraid. Forty-one years of copying 'wake her with—' and stopping. Yes, child. Every dusk, beautifully afraid. It's why the lamps get lit."
+    ],
+    "night": [
+      "Nights up here the hills go violet and the Door goes... patient isn't the word. Present. Present is the word.",
+      "The stars wheel, the lamps hold, the glass thinks its long teal thoughts. Good arrangement. I recommend it."
+    ],
+    "farewells": [
+      "Go. And Varga — when you knock, knock like you were expected. You were. That's the part I never— ... following wind.",
+      "The kettle will keep your cup warm. Keep something warm of mine out there. A route. A person. Whichever needs counting."
+    ]
+  }
+}

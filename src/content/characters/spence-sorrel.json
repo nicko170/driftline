@@ -1,0 +1,58 @@
+{
+  "id": "spence-sorrel",
+  "name": "Espendez 'Spence' Sorrel",
+  "role": "Semi-retired Driftline courier, storm-years generation",
+  "faction": "driftline",
+  "home": "saltmouth",
+  "bio": "Rode the Driftline in the storm years, when half the routes were rumours and the other half were on fire in a way the meteorologists had adjectives for. Ketch's old wingmate — they held the line through the Thornwall season shoulder to shoulder, and neither has ever once told the story the same way twice. Retired, officially, on a Tuesday; was back at the east gate chalk by Thursday, leaning on a bike older than most of Saltmouth and challenging anyone under forty to the grand loop. Calls retirement 'a dial position between laps'. Knows Rill Davenant from the rookie days and worries about him the way old couriers do: entirely, silently, and through jokes.",
+  "appearance": "A wiry man in his seventies built mostly of tendons and opinions, bent like a question mark that has stopped waiting for the answer, in a courier leathersuit so old the amber has faded to the colour of weak tea, patches on the patches, a storm-church ring on a cord round his neck that he claims is a throttle spring from his first wreck, white moustache waxed into points, standing at the east gate chalk with a stopwatch that works perfectly and a life story that doesn't.",
+  "voice": "Yarn-spinning, wind-up cadence — starts every story with 'this one time the sky fell sideways' or a cousin of it, and the story is always load-bearing. Teases Ketch like breathing. Talks to bikes in second person and to people in third. Measures time in walls outrun. Never admits the stopwatch is for him now, not the riders; the joke is that everyone knows.",
+  "lines": {
+    "greetings": [
+      "Varga. Sit — no, don't sit, standing builds character and you've got a debt. Walk with me instead.",
+      "The new courier. Ketch talks about you in his worried voice. That's the good one. You don't want the proud one near a storm season.",
+      "Espendez Sorrel. The guild ledger says 'retired'. The ledger also says water's a tradeable good, so let's not trust paper too far."
+    ],
+    "barks": [
+      "This one time the sky fell sideways I was carrying eggs to Keel Town. Set an egg-delivery record that day. Storm-assisted. Walls count as tailwinds if you're committed.",
+      "See that stopwatch? Calibrated. See my whole body? Also calibrated. Neither of us is telling you the time.",
+      "In my day the dunes were taller. Also I was shorter. Memory's a contested map, kid.",
+      "Ketch and me rode the Thornwall season. Ask him how many walls. Whatever number he says, it's mine. He was the brakes; I was the argument."
+    ],
+    "mission": [
+      "Grand loop, courier. Five gates, no cargo, no faction counting coups — just you and the salt finding out whether you mean it. I'll time it. I'm generous with the stopwatch and honest with everything else.",
+      "Fetch my old route-book from the survey camp, would you. Left it up there in a year I don't mention. If a page is loose, it fell out at the good part. They're all the good part."
+    ],
+    "radio": [
+      "Sorrel on the band. Whoever's carving the flats-pan line, that's a shameful drift and I salute it. Keep both.",
+      "Varga, you carry that crate like my grandmother carried gossip: carefully, and to exactly the wrong people. Kidding. Keep it mum.",
+      "Wind's honest out of the spine today. When it's honest you can hear the old routes in it. They're all saying hurry up.",
+      "Little Reverb says the static's got a heartbeat now. In my day the static was just static. Everything's ambitious these days."
+    ],
+    "crate": [
+      "Box that shouldn't exist, huh. This one time the sky fell sideways we carried a coffin to the Glassroad and it was empty both ways. Never did find out who ordered that. Some runs you don't ask, kid. Some runs the run asks you.",
+      "If it hums, put it by the engine. Engines make everything sound normal. That's why we keep them."
+    ],
+    "night": [
+      "Night riding's honest, kid. Day, the flats lie to you with mirrors. Night, they only lie to you with stars.",
+      "I race at night now. Nobody at the chalk to see me lose. Nobody anywhere sees me lose. That's just consistency."
+    ],
+    "storm": [
+      "First wall of the season and my throttle hand goes numb. Old wreck. The hand remembers before the radio does.",
+      "This one time the sky fell sideways it fell on Davenant's route twice. He outran the second one angry. Watch that boy's temper in season — it's the only map he carries.",
+      "You want the Thornwall story? Get home first. Stories about walls are for people with roofs over the radio. And walls don't like being described. They come to collect the metaphor."
+    ],
+    "rumors": [
+      "They say the glass blooms where the old roads were under it. I say the desert's been keeping my map under the counter this whole time.",
+      "Tamsin Cho offered me a pension once. Twice, actually. I filed both offers under 'unopened merchandise'. The Guild keeps good paper; I'm bad returns."
+    ],
+    "lore": [
+      "The Creed says any crate, any storm, any door. It doesn't say what to do when the door opens on its own. We're writing that bit now. Pencil.",
+      "You know why we call it the Driftline? Not the bikes. The line of us, drifting, keeping everything that matters off the ground. Ketch tells it worse."
+    ],
+    "farewells": [
+      "East gate, whenever you like. Bring the Wren. Bring the box too — I want to time it. Things that hum have lap times, kid. Physics says no. I've met physics.",
+      "Flat salt. And if you see Davenant, tell him the old man says his line through the Slick Mile was passable. He'll know what passable costs me."
+    ]
+  }
+}

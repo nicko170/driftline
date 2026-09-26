@@ -1,0 +1,49 @@
+{
+  "id": "mose-adler",
+  "name": "Mose Adler",
+  "role": "Keeper of the Saltmouth water tower",
+  "faction": "independent",
+  "home": "saltmouth",
+  "bio": "Third-generation keeper of Saltmouth's condenser tower, a job he describes as 'counting cups until the desert learns manners.' He took the cracked coil the courier brought in the heat-window run and had the tower whistling by dusk — and he has forgiven the courier for the laundry line except on days ending in ritual. Blesses every pump stroke, audits every bucket, and keeps the tower's guest ledger in a hand so slow and beautiful the Guild once tried to trademark it.",
+  "appearance": "A barrel-built man in his fifties with a sun-cured bald head he polishes 'so the tower sees a clean reflection and works harder,' thick expressive eyebrows, a teal-stained canvas apron heavy with brass wrenches, a brass measuring cup on a cord around his neck (the official cup, capacity disputed), and sandals resoled with old tyre tread. Perpetually damp left cuff from blessing procedures.",
+  "voice": "Slow, grateful, faintly tyrannical about cups. Speaks in measurements and blessings: everything is cups, buckets, tower-feet. Says 'counted twice' as both hello and farewell. Never raises his voice; raises his eyebrows, which is worse. Calls the tower 'she' and the Guild 'the weather with a ledger.' His gratitude is enormous and slightly burdensome, like being hugged by a water main.",
+  "lines": {
+    "greetings": [
+      "Courier. The cups are counted, the pumps are blessed, and you are — let me check the ledger — welcome. Twice.",
+      "Ash Varga. The coil still holds. I tell her good morning every day and I mention your name, which she deserves.",
+      "Come in out of the wind. Water's free. The cup is not optional. The cup is the water's handshake."
+    ],
+    "barks": [
+      "Someone took a bucket without signing. I'm not angry. I'm updating the liturgy.",
+      "She condensed forty-one cups last night. Forty-one! In this air! That's not engineering, that's devotion.",
+      "The Guild offered to meter the tower. I offered to meter their heads. We are negotiating.",
+      "That laundry line has been there thirty years. It has seniority. You drift under it or you answer to my wife, and she irons angry."
+    ],
+    "mission": [
+      "That coil you brought — cracked, scorned, Guild-certified 'serviceable' — she runs on it like a hymn. If you pass the exchange, tell the factor her paperwork holds pressure worse than her parts.",
+      "East gate cistern reads low. If your route bends that way, read the gauge to me on the radio. Numbers first, opinions after, that's the tower way."
+    ],
+    "radio": [
+      "Tower to Varga. Slow at the mast corner, child, the line's full of sheets and they have no brakes.",
+      "Mose here. Condensation's up a cup and a half. Whatever you did out there today, the air liked it.",
+      "Radio check from the tower. Reading you at full cups. That means five-by-five. I keep a translation chart and it makes the Guild furious. Counted twice, out."
+    ],
+    "cups": [
+      "One cup per visitor. Two if you carried something heavy. Three if what you carried was bad news and you carried it anyway.",
+      "People say 'just a cup of water' like a cup is small. A cup is the entire desert, poured carefully.",
+      "The brass cup is official. The chipped enamel cup is for friends. The trough is for goats and, once, a Guild auditor. The trough was honoured."
+    ],
+    "storm": [
+      "Wall's coming. She knows — pressure dips before the bell rings. Two hundred years of towers and they all learned weather before people did.",
+      "Storm rule at my tower: straps checked, cistern capped, cups counted. The sand gets in everything else, it doesn't get in the count."
+    ],
+    "night": [
+      "Night condensation is the best condensation. Cool air, quiet pumps. She whispers and I write it down.",
+      "The mast reads like a slow newspaper after dark, Bahro says. My tower reads like a bank statement. Both accurate. Mine has better news."
+    ],
+    "farewells": [
+      "Flat salt, courier. The ledger says you drank once and thanked twice. Correct ratio. Come back.",
+      "Go careful past the line. Not the laundry's sake — yours. Sheets are undefeated. Counted twice."
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "upgrade-curve-sandbox",
+  "name": "Upgrade Curve Sandbox",
+  "blurb": "Workshop tool, not a game region: a Guild ledger bench that graphs the garage's feel economy — launch curves, boost cycles, drift kick and cost-per-level — against the exact constants in Bike.tsx. Anchors and center live outside the playable map.",
+  "center": [6400, 6100],
+  "radius": 4,
+  "danger": 0
+}

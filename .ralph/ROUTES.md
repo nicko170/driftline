@@ -9,7 +9,7 @@ Deployed at GitHub Pages under `/driftline/` (workflow sets `BASE_PATH=/driftlin
 | path | component | notes |
 | --- | --- | --- |
 | `/` | TitleScreen | key art, menu (Play / Codex / Logbook / Lab / Settings / Credits) |
-| `/play` | GameScreen | the game: R3F canvas + React DOM HUD overlays |
+| `/play` | GameScreen | the game: R3F canvas + React DOM HUD overlays; boots through the **DepartureScreen** manifest (engine/routes/lamps stamps — see `.ralph/DESIGN.md`), clears on any key or 1.4s after clearance |
 | `/codex` | CodexScreen | recovered lore entries (`src/content/lore/*.md`) |
 | `/logbook` | LogbookScreen | lifetime ride stats + achievement ledger (persistent save data) |
 | `/credits` | CreditsScreen | colophon incl. "designed and built autonomously by Kimi K3 running on GreenThread" |

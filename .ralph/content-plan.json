@@ -2770,10 +2770,11 @@
     "tower",
     "comedy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer1",
    "worker": "writer1",
-   "claimed_at": 1790408209.129642
+   "claimed_at": 1790408209.129642,
+   "done_at": "2026-09-26T18:05:40"
   },
   {
    "kind": "article",
@@ -2788,8 +2789,10 @@
     "history",
     "radio"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790408573.1326568
   },
   {
    "kind": "article",
@@ -2804,8 +2807,10 @@
     "comedy",
     "hub"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790408573.132658
   },
   {
    "kind": "article",
@@ -2820,8 +2825,10 @@
     "earnest",
     "comedy"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790408573.132659
   },
   {
    "kind": "article",
@@ -2836,8 +2843,10 @@
     "maps",
     "side jobs"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790408573.132659
   },
   {
    "kind": "article",
@@ -2852,8 +2861,10 @@
     "story",
     "door"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790409993.444673
   },
   {
    "kind": "article",
@@ -2868,8 +2879,10 @@
     "skydocks",
     "comedy"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790409993.444674
   },
   {
    "kind": "article",
@@ -2884,8 +2897,10 @@
     "stars",
     "radio"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790409993.444674
   },
   {
    "kind": "article",
@@ -5405,10 +5420,11 @@
     "courier",
     "log"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790408209.1296399
+   "claimed_at": 1790408209.1296399,
+   "done_at": "2026-09-26T18:05:40"
   },
   {
    "kind": "article",
@@ -5422,10 +5438,11 @@
     "name",
     "history"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790408209.129641
+   "claimed_at": 1790408209.129641,
+   "done_at": "2026-09-26T18:05:40"
   },
   {
    "kind": "article",
@@ -5439,10 +5456,11 @@
     "field-guide",
     "creatures"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790408209.129641
+   "claimed_at": 1790408209.129641,
+   "done_at": "2026-09-26T18:05:40"
   },
   {
    "kind": "article",
@@ -5456,8 +5474,10 @@
     "radio",
     "skydocks"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790409993.444674
   },
   {
    "kind": "article",
@@ -5652,6 +5672,261 @@
    "cluster": "demos",
    "intent": "A rehearsal stage for the Chapter 5 finale moment: the choice that sets ending.rain or ending.quiet. Product: the shipped DialogueBox + chapter-outro card + title-screen epilogue panel all mounted in one scrollable timeline, driven by the real store (flags set/cleared live). Features: scrub between the two epilogue drafts side-by-side, a slow-read mode that types the epilogue at broadcast pace with radio-static ambience, an 'audience' strip showing which achievements/codex entries each ending retro-unlocks (future-proofing hook), and a flag-integrity audit that proves no mission can set both ending flags (static scan of all mission JSON + dialogue choice trees). Art direction: violet-dark stage, two doors of light — teal-blooming vs amber-quiet — the epilogue text set in the codex reading-pane measure (17px/1.72/66ch). Shape-first endings: rain ending gets the ⟡ record glyph, quiet ending the ◉ broadcast glyph; colour is decoration. Stack: React DOM reusing DialogueBox/store; demo-region off-world.",
    "keywords": [],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-heliograph-express",
+   "title": "Mirror, Mirror, Going Fast",
+   "cluster": "missions",
+   "intent": "Ash couriers a freshly silvered heliograph mirror from the Windspine ridge crew to the Choir's listening-horn before the sun angle dies — speed matters because the mirror is only useful while the light holds. giver gauge-keeper-dax, region windspine, type timed, ~3 objectives (pickup at ridge-crest, thread the descents, dropoff listening-horn), rewards guild+choir rep; warm sun-angle banter, one joke about vanity.",
+   "keywords": [
+    "timed",
+    "heliograph",
+    "windspine",
+    "choirhollow",
+    "light"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-still-water",
+   "title": "Still Water, Moving Fast",
+   "cluster": "missions",
+   "intent": "Hollis Fenn freights sealed condenser jugs ('still water — dock-distilled, priced like it remembers rain') to Dusk-Farmer Ook's lichen boundary. type fragile + deliver, region skydocks, cargo slosh joke in the integrity bar line, penalty dialogue from Fenn weighing the damage on the Top Scale. Cross-refs mesa-mail-rules and the Unlisted Column.",
+   "keywords": [
+    "fragile",
+    "deliver",
+    "skydocks",
+    "water",
+    "hollis-fenn"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-static-funeral",
+   "title": "A Funeral for a Frequency",
+   "cluster": "missions",
+   "intent": "Static-Warden Pem retires a radio mast that has stopped answering: its brass voice-box rides a hover-wagon to the Drowned Array for archival burial, and Pem walks the whole way. Slow, moody escort with radio barks (the mast's old call-sign plays once, wrong, and Pem pretends not to hear). type escort, region choirhollow → drowned-array, rewards choir rep + lore flag.",
+   "keywords": [
+    "escort",
+    "choir",
+    "drowned-array",
+    "radio",
+    "memorial"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-gate-tally-audit",
+   "title": "Counting the Crossings",
+   "cluster": "missions",
+   "intent": "The Warden of the Span needs the chalk gate tallies counted before the season's toll audit: five gate posts along the Glassroad, each a stop-and-scan. type collect, giver warden-of-the-span, region glassroad; each tally tells a tiny story in the objective label (a convoy that paid in songs, one that paid in apologies); rewards unlock a lore flag about the Gate Ethics Precedent.",
+   "keywords": [
+    "collect",
+    "glassroad",
+    "warden-of-the-span",
+    "toll",
+    "audit"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-goat-on-the-run",
+   "title": "The Goat Has Opinions",
+   "cluster": "missions",
+   "intent": "Pemmy the weather goat has opinions about the new barometer and expresses them at speed across the flats. Brinemaster-ogo hires Ash to run her down — the goat rubber-bands, doubles back, and once hides behind the exchange. type chase, region saltmouth, comedy of manners, reward: guild rep + Pemmy's forecast ribbon (lore flag).",
+   "keywords": [
+    "chase",
+    "goat",
+    "saltmouth",
+    "comedy",
+    "brinemaster-ogo"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-lamps-before-dark",
+   "title": "Lamps Before Dark",
+   "cluster": "missions",
+   "intent": "Dusk falls early in storm season and Lamp Rest's rim lamps need a rider: reach each unlit lamp on the crater ring and hold position while the wick catches. type scout (multi-anchor), region choirhollow, soft time pressure in the fiction (lamplight before dark) but untimed in mechanics — a gentle mission about being the light; Verger Sann counts them off.",
+   "keywords": [
+    "scout",
+    "choirhollow",
+    "lamps",
+    "verger-sann",
+    "gentle"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-apology-tea",
+   "title": "The Apology Tea Run",
+   "cluster": "missions",
+   "intent": "Gauge-Keeper Dax snubbed a Guild factor at the hatch and protocol demands tea: ferry an Apology Tea service (cup, kettle, the good oolong) from windspine:storm-gauge to saltmouth:exchange, fragile cargo, with Dax coaching the correct apology cadence over the radio and the recipient judging the pour. Warm farce; cross-refs tea-rites-of-the-flats lore.",
+   "keywords": [
+    "fragile",
+    "deliver",
+    "tea",
+    "humour",
+    "windspine"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-cable-harvest",
+   "title": "Cable Harvest",
+   "cluster": "missions",
+   "intent": "The salt tide is coming into the Cinderflats dig and the Reclaimers' winch cable spools are scattered across the flood margin. type collect (6 spools, scattered wide), region cinderflats, giver ratchet-june aboard Second Mortgage; each recovered spool gets a band comment over the radio; payout scales with how dry the last spool stayed.",
+   "keywords": [
+    "collect",
+    "cinderflats",
+    "reclaimers",
+    "ratchet-june",
+    "salvage"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "driftline-oath-variants",
+   "title": "Nine Ways to Say the Creed",
+   "cluster": "lore",
+   "intent": "tract — the Driftline creed ('Any crate, any storm, any door') exists in nine regional variants and none of the yards agree which is first; collects the variants with marginalia on where each bent (the skydocks one adds 'any tide', the cinderflats one is mostly verbs). Ends with the oldest known carving, which is just boot prints.",
+   "keywords": [
+    "driftline",
+    "creed",
+    "variants",
+    "courier-culture"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "salt-scrip-assay",
+   "title": "Weighing the Scrip: A Field Guide",
+   "cluster": "lore",
+   "intent": "field-guide — how salt scrip actually works: the assay nicks on a true peso of salt, the scrip-clipper's art and its punishments, why the Guild weighs in public, and the counterfeit that outranked the original (cross-ref guild-heraldry). Written as the exchange's own onboarding card for new couriers.",
+   "keywords": [
+    "credits",
+    "salt-scrip",
+    "guild",
+    "economy",
+    "assay"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "mast-light-grammar",
+   "title": "Mast Lights: A Night Rider's Grammar",
+   "cluster": "lore",
+   "intent": "field-guide — the grammar of the mast lights: which blink means wind, which means company, the difference between a mast that greets and one that warns, and the one pattern nobody teaches (cross-ref long-static-archive and TALLY-9). Written for night riders; pairs with the night headlight fiction.",
+   "keywords": [
+    "night",
+    "mast-lights",
+    "signal-code",
+    "drowned-array",
+    "riding"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "cinder-pepper-harvest",
+   "title": "Cinder Peppers: Growing Fire in Glass Slag",
+   "cluster": "lore",
+   "intent": "field-guide — the cinder pepper economy of the Cinderflats: why the peppers grow best in reactor-cooled glass slag, the harvest gloves, the three burn grades, and the Reclaimer cook who salts everything twice on principle. Ties into spice-pricing-dispatch's running pepper jokes. Food writing with stakes.",
+   "keywords": [
+    "cinderflats",
+    "spice",
+    "ecology",
+    "reclaimers",
+    "field-guide"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "letters-to-the-sleeper",
+   "title": "Letters Read to the Door",
+   "cluster": "lore",
+   "intent": "tract — the Choir's custom of reading letters aloud at the Mothersgate door: a selection of letters (a widow, a child, a very tired Guild factor, one from someone who claims to remember before the Delay), with verger notes on which letters the lamps seemed to lean toward. Seeds ch4 without naming it.",
+   "keywords": [
+    "choir",
+    "mother",
+    "letters",
+    "mothersgate",
+    "tract"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "bike-name-registry",
+   "title": "The Unofficial Registry of Bike Names",
+   "cluster": "lore",
+   "intent": "record — the unofficial registry of bike names couriers swear they didn't choose: the Wren, Second Mortgage's escort skiffs, one named 'Approximately Safe', the superstition that a bike earns its name in its first storm, and Ketch's margin notes on Ash's second-hand bike having been named before (and renamed, pointedly).",
+   "keywords": [
+    "bikes",
+    "names",
+    "superstition",
+    "courier-culture",
+    "garage"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "storm-outrun-sandbox",
+   "title": "Storm Outrun Sandbox",
+   "cluster": "demos",
+   "intent": "A storm-mission tuning stage that spawns the shipping StormWall hunting a scripted ghost rider across a salt pan toward a shelter anchor. Tune chase speed curve, spawn distance, catch-up rubber-banding, fog ramp, screen tint and wind audio mix live; replay A/B passes side-by-side as ghost lines; export a JSON spec that maps 1:1 to MissionDirector storm parameters. Art direction: dusk-burn sky, rust storm shells against violet, HUD legibility contrast table for the danger disc + tint overlap.",
+   "keywords": [
+    "storm",
+    "tuning",
+    "mission-director",
+    "feel",
+    "bench"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "rep-reaction-atlas",
+   "title": "Rep Reaction Atlas",
+   "cluster": "demos",
+   "intent": "A faction-reputation scrubber that restages the shipping radio/HUD bark pipeline against a scripted ride: sliders set guild/choir/reclaimers rep per band (hostile→beloved) and the bench plays which NPC callouts, radio lines and shop price adjustments fire at each band, flagging content gaps where a band has no coverage. Art direction: dispatch-office card table, three faction-coloured ledger columns, amber needle gauges; exports a coverage matrix the writers can claim from.",
+   "keywords": [
+    "reputation",
+    "content-coverage",
+    "radio",
+    "factions",
+    "bench"
+   ],
    "status": "planned",
    "added_by": "builder"
   }

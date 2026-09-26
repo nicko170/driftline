@@ -136,3 +136,24 @@ Faction colors: Salt Guild `ochre #B07C3A`, Choir `teal-bright #57C4B8`, Reclaim
 ## Performance budgets
 
 - 60fps mid laptop at Medium: pixelRatio ≤1.5, shadow 1024, scatter ≤ ~2k instances, fog-over-draw minimal, no per-frame allocations in the render or physics hot paths (module-level scratch objects only).
+
+## Departure screen (iteration 10)
+
+- **When**: every /play mount, between ▸ Play and the first rideable frame. It
+  replaces the old black Suspense gap with the game's dispatch-office fiction.
+- **Manifest stamps** are REAL milestones, never a fake progress bar: ENGINE WARM
+  → ROUTES STREAMED (registry) → LAMPS LIT (first rendered frame; `FrameBeacon`
+  in `src/game/frameBeacon.ts`) → CLEARANCE GRANTED (all stamps + 1.7 s min dwell,
+  9.5 s failsafe). Stamps print `◆` amber + "stamped" teal; pending rows stay
+  `◇` ghosted. Blip per stamp, chime on clearance.
+- **Layout**: departure key art (`images/title/departure.jpg`) at 50% under an
+  ink→violet scrim; panel = standard card (rust-deep border, 82% space bg, blur);
+  teal kicker "DRIFTLINE DISPATCH — DEPARTURE · CHAPTER N", big salt display
+  region name, amber-hot chapter logline, ◆◆◆ rule, dashed manifest box
+  (№ K-9/nnn), teal-left-rule rotating dispatch tip, amber-hot pulsing
+  "CLEARANCE GRANTED — PRESS ANY KEY TO RIDE" footer. Exit: 420 ms fade + 2% scale.
+- **Rules**: any key dismisses once cleared; while visible the overlay eats
+  hop/interact/pause edges (ChapterCard leak rule); z-50 (above chapter cards);
+  reduced-motion parks the pulse/scale; min-height on the tip slot to stop layout
+  shift. Auto-dismiss 1.4 s after clearance so playtesters and keyboard-shy
+  players aren't gated.

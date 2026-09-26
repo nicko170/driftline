@@ -585,6 +585,41 @@
       "id": "cache-mesa-mail-rules",
       "lore": "mesa-mail-rules",
       "anchor": "skydocks:keel-town"
+    },
+    {
+      "id": "cache-bell-incident-testimony",
+      "lore": "bell-incident-testimony",
+      "anchor": "choirhollow:listening-horn"
+    },
+    {
+      "id": "cache-guild-heraldry",
+      "lore": "guild-heraldry",
+      "anchor": "saltmouth:exchange"
+    },
+    {
+      "id": "cache-night-sky-guide",
+      "lore": "night-sky-guide",
+      "anchor": "windspine:ridge-crest"
+    },
+    {
+      "id": "cache-repair-hymn-cycle",
+      "lore": "repair-hymn-cycle",
+      "anchor": "cinderflats:crusher"
+    },
+    {
+      "id": "cache-courier-message-board",
+      "lore": "courier-message-board",
+      "anchor": "saltmouth:job-board"
+    },
+    {
+      "id": "cache-driftline-origins",
+      "lore": "driftline-origins",
+      "anchor": "saltmouth:job-board"
+    },
+    {
+      "id": "cache-dune-fauna-notes",
+      "lore": "dune-fauna-notes",
+      "anchor": "canyon-slalom:spectator-ledge"
     }
   ]
 }

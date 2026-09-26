@@ -24,7 +24,9 @@ import PauseMenu from '../ui/PauseMenu';
 import TouchControls from '../ui/TouchControls';
 import ChapterCard from '../ui/ChapterCard';
 import ChapterOutroCard from '../ui/ChapterOutroCard';
+import DepartureScreen from '../ui/DepartureScreen';
 import Effects from './Effects';
+import { FrameBeacon } from './frameBeacon';
 import { currentChapter } from '../missions/chapters';
 import { bindInput, consume } from '../input/input';
 import { useGameStore, useSaveStore } from '../state/store';
@@ -93,6 +95,7 @@ export default function GameScreen() {
         gl={{ antialias: quality !== 'low', powerPreference: 'high-performance' }}
       >
         <Suspense fallback={null}>
+          <FrameBeacon />
           <Sky />
           <Physics paused={physicsPaused} timeStep={1 / 60} gravity={[0, -9.81, 0]}>
             <Terrain />
@@ -114,6 +117,7 @@ export default function GameScreen() {
       <TouchControls />
       <ChapterCard />
       <ChapterOutroCard />
+      <DepartureScreen />
       {mode === 'board' && <MissionBoard />}
       {mode === 'garage' && <GaragePanel />}
       {mode === 'exchange' && <ExchangePanel />}

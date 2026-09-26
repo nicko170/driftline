@@ -7,6 +7,7 @@
   "bio": "The Choir's senior translator of dead air, keeper of the static litanies at Lamp Rest. Carries everywhere a battered field radio that has not drawn power in decades and answers questions anyway. Pem maintains the radio is broken; the radio disagrees, and lately so does the evidence. Keeps meticulous notebooks of hiss, hum and carrier tone, cross-indexed against storms — forty years of weather doing a mediocre impression of language, and improving.",
   "appearance": "Wiry older person folded into a teal duster patched with antenna wire, ears trained outward like dish rims, a dead brass radio on a chest strap whose dials glow faint amber when storms are near, fingers permanently stained graphite-grey from notebook ink.",
   "voice": "Half oracle, half radio engineer, all patient. Pauses mid-sentence to listen to nothing, then finishes as if nothing hadn't explained itself. Calls everyone 'station' and every argument 'interference'. Understates miracles; overstates weather forecasts.",
+  "portrait": "images/characters/static-warden-pem.jpg",
   "lines": {
     "greetings": [
       "Shh. There. Between the drifts. Did you hear it? No? Give it forty years, station.",
