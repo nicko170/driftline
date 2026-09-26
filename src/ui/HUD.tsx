@@ -33,6 +33,29 @@ function radioCast(): string[] {
   return out.length ? out : ['ketch'];
 }
 
+/** Achievement / unlock toasts — one at a time from the game store queue. */
+function AchToasts() {
+  const toasts = useGameStore((s) => s.toasts);
+  const shiftToast = useGameStore((s) => s.shiftToast);
+  const current = toasts[0];
+  useEffect(() => {
+    if (!current) return;
+    const id = window.setTimeout(() => useGameStore.getState().shiftToast(), 4800);
+    return () => window.clearTimeout(id);
+  }, [current]);
+  if (!current) return null;
+  return (
+    <div className="ach-toast panel" role="status" onClick={shiftToast}>
+      <span className="ach-toast-icon" aria-hidden>{current.icon}</span>
+      <span className="ach-toast-body">
+        <span className="ach-toast-kicker">Log entry unlocked</span>
+        <strong>{current.title}</strong>
+        <span className="ach-toast-desc">{current.desc}</span>
+      </span>
+    </div>
+  );
+}
+
 export default function HUD() {
   const [, force] = useState(0);
   const minimap = useRef<HTMLCanvasElement>(null);
@@ -234,6 +257,9 @@ export default function HUD() {
           <strong>{character(radioLine.who)?.name ?? radioLine.who}:</strong> {radioLine.text}
         </div>
       )}
+
+      {/* achievement / unlock toasts */}
+      <AchToasts />
     </div>
   );
 }

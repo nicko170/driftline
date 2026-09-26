@@ -8,15 +8,30 @@ Deployed at GitHub Pages under `/driftline/` (workflow sets `BASE_PATH=/driftlin
 
 | path | component | notes |
 | --- | --- | --- |
-| `/` | TitleScreen | key art, menu (Play / Codex / Lab / Settings / Credits) |
+| `/` | TitleScreen | key art, menu (Play / Codex / Logbook / Lab / Settings / Credits) |
 | `/play` | GameScreen | the game: R3F canvas + React DOM HUD overlays |
 | `/codex` | CodexScreen | recovered lore entries (`src/content/lore/*.md`) |
+| `/logbook` | LogbookScreen | lifetime ride stats + achievement ledger (persistent save data) |
 | `/credits` | CreditsScreen | colophon incl. "designed and built autonomously by Kimi K3 running on GreenThread" |
-| `/lab` | LabIndex | auto-discovers demos from `src/lab/*/index.tsx` (import.meta.glob) |
-| `/lab/:slug` | LabDemo | renders one demo in a shell |
+| `/lab` | LabIndex | auto-discovers demos from `src/lab/*/index.tsx` AND demo-regions (see below) |
+| `/lab/:slug` | LabDemo | renders one demo in a shell, wrapped in an error boundary |
 
 SPA fallback: Pages serves `404.html` — we copy `index.html` to `404.html` in `postbuild`.
 `.nojekyll` is emitted from `public/`.
+
+## Labs / demos (dual-source discovery)
+
+Demos can live in **two places** — both are picked up automatically by `/lab`:
+1. `src/lab/<slug>/index.tsx` (classic): default-exports a component, optional named
+   `meta = { title, blurb, tags }`.
+2. **Demo-regions** `src/world/regions/<slug>/index.tsx`: a React component default export
+   that *also* satisfies the region contract (meta.json + anchors.json for a harmless
+   off-world centre, attached as statics `mod.meta`/`mod.anchors`) and re-exports a named
+   `meta` with a `title` — that's what makes the Lab list it. Pure world regions (no named
+   `meta` export with a title) are never listed as demos.
+The registry (`src/world/registry.ts`) eager-globs all region index.tsx, so demo-region
+folders must always compile; `npm run validate:content` skips region folders that have no
+`meta.json` yet (mid-flight parallel builds) with a warning instead of failing.
 
 ## Content pipeline
 
@@ -126,10 +141,29 @@ summary: "1-2 sentences"
 ```
 Body ≥ 250 words, in-world voice. Unlock: mission reward flag `lore:<slug>`.
 
+## Progression systems (iteration 3)
+
+- **Ride stats** — persisted `save.stats` (RideStats in `src/state/store.ts`): distanceM,
+  topSpeedKmh, jumps, driftTimeS, bestDriftS, boostsUsed, stormsOutrun, missionsDone,
+  airTimeS, biggestAirS. The physics loop accumulates into the mutable `ride` pending
+  bucket in `src/game/rideStats.ts` and calls `flushRideStats()` every ~2s (Bike useFrame)
+  and on mission completion — no per-frame zustand churn.
+- **Achievements** — `src/game/achievements.ts` defines ACHIEVEMENTS (24 defs) with a
+  `test(stats, save)` predicate; `evaluateAchievements()` runs after every stats flush,
+  on mission completion and on GameScreen mount. New unlocks persist to
+  `save.achievements`, chime, and queue a toast (`game.toasts`) shown by `AchToasts` in
+  the HUD (4.8s, click to dismiss). Hidden defs (story endings) show as static until unlocked.
+- **Logbook** — `/logbook` renders the stats panel + the full achievement grid.
+- **Ambient traffic** — `src/game/AmbientTraffic.tsx`: 6 NPC vehicles (2 couriers, 2 guild
+  haulers, 2 choir skiffs) cruise fixed polyline loops between settlements, hovering over
+  the analytic terrain with bob + banked turns. Visual-only (no colliders); ~6 groups.
+
 ## Demo contract — `src/lab/<slug>/index.tsx`
 
 Default-exports a React component; optional named export `meta = { title, blurb, tags }`.
-Auto-listed at `/lab`. Demo builders only touch their own folder.
+Auto-listed at `/lab`. Demo builders only touch their own folder. **Demo-regions** are the
+same but live in `src/world/regions/<slug>/` (see "Labs / demos" above). The Lab wraps each
+demo in an error boundary so a broken bench never crashes the app.
 
 ## Scripts
 

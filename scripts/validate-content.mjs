@@ -18,8 +18,17 @@ const readJson = (p) => { try { return JSON.parse(readFileSync(p, 'utf8')); } ca
 const regionDir = join(root, 'src/world/regions');
 const regions = new Map(); // slug -> { meta, anchors }
 for (const slug of existsSync(regionDir) ? readdirSync(regionDir) : []) {
-  const meta = readJson(join(regionDir, slug, 'meta.json'));
-  const anchors = readJson(join(regionDir, slug, 'anchors.json'));
+  const folder = join(regionDir, slug);
+  const metaPath = join(folder, 'meta.json');
+  const anchorsPath = join(folder, 'anchors.json');
+  if (!existsSync(metaPath)) {
+    // mid-flight demo-region folder (parallel workers commit incrementally) —
+    // don't fail the build; it becomes a full region when meta.json lands.
+    warn(`region ${slug}`, 'no meta.json yet — in-progress folder, skipping');
+    continue;
+  }
+  const meta = readJson(metaPath);
+  const anchors = readJson(anchorsPath);
   if (!meta) { err(`region ${slug}`, 'missing meta.json'); continue; }
   for (const f of ['slug', 'name', 'blurb', 'center', 'radius']) if (!(f in meta)) err(`region ${slug}`, `meta.json missing "${f}"`);
   if (meta.slug !== slug) err(`region ${slug}`, `meta.slug "${meta.slug}" != folder name`);

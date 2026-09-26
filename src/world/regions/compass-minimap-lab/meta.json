@@ -1,0 +1,8 @@
+{
+  "slug": "compass-minimap-lab",
+  "name": "Compass & Minimap Lab",
+  "blurb": "HUD navigation bench — off-world workshed for tuning the compass and minimap.",
+  "center": [6200, 6200],
+  "radius": 120,
+  "danger": 0
+}

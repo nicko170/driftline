@@ -42,6 +42,7 @@ export default function TitleScreen() {
           )}
           {confirmNew && <button className="btn" onClick={() => setConfirmNew(false)}>Keep my save</button>}
           <Link className="btn" to="/codex">Codex</Link>
+          <Link className="btn" to="/logbook">Logbook</Link>
           <Link className="btn" to="/lab">Lab</Link>
           <Link className="btn" to="/credits">Credits</Link>
         </nav>

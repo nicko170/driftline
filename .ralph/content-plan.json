@@ -456,8 +456,10 @@
     "settlements",
     "vote"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384490.682661
   },
   {
    "kind": "article",
@@ -473,8 +475,10 @@
     "rain",
     "quiet"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384490.682663
   },
   {
    "kind": "article",
@@ -489,8 +493,10 @@
     "saltmouth",
     "loop"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384490.682663
   },
   {
    "kind": "article",
@@ -504,8 +510,10 @@
     "choir",
     "skydocks"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384490.682664
   },
   {
    "kind": "article",

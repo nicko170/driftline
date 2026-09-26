@@ -1,8 +1,10 @@
 /**
  * /lab — auto-discovering demo registry. Demos live in src/lab/<slug>/index.tsx
- * and are picked up here automatically (demo builders own their folders).
+ * OR in src/world/regions/<slug>/index.tsx as "demo-regions" (a component
+ * default export carrying a named `meta` export with {title, blurb, tags}).
+ * Both are picked up here automatically (demo builders own their folders).
  */
-import { Suspense, lazy, useEffect, useState } from 'react';
+import React, { Suspense, lazy, useEffect, useState } from 'react';
 import { Link, Route, Routes, useParams } from 'react-router-dom';
 
 interface DemoMeta {
@@ -11,27 +13,52 @@ interface DemoMeta {
   tags?: string[];
 }
 
-const modules = import.meta.glob('./*/index.tsx');
+type DemoModule = { default: React.ComponentType; meta?: DemoMeta };
 
-const loaders = Object.fromEntries(
-  Object.entries(modules).map(([path, loader]) => [path.split('/')[1], loader]),
-);
+const labModules = import.meta.glob('./*/index.tsx');
+// demo-regions: a region folder counts as a demo only if its module exports
+// a named `meta` with a title — pure world regions (saltmouth, …) don't.
+const regionModules = import.meta.glob('../world/regions/*/index.tsx');
+
+const loaders: Record<string, () => Promise<unknown>> = {};
+for (const [path, loader] of Object.entries(regionModules)) {
+  const slug = path.split('/')[3];
+  loaders[slug] = loader;
+}
+for (const [path, loader] of Object.entries(labModules)) {
+  loaders[path.split('/')[1]] = loader; // src/lab wins on collision
+}
+const LAB_SLUGS = new Set(Object.keys(labModules).map((p) => p.split('/')[1]));
 
 export function LabIndex() {
-  const slugs = Object.keys(loaders).sort();
   const [metas, setMetas] = useState<Record<string, DemoMeta>>({});
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     let live = true;
-    for (const slug of slugs) {
-      void loaders[slug]().then((m) => {
-        if (!live) return;
-        const meta = (m as { meta?: DemoMeta }).meta;
-        if (meta) setMetas((prev) => ({ ...prev, [slug]: meta }));
-      });
-    }
+    Promise.all(
+      Object.entries(loaders).map(async ([slug, loader]) => {
+        try {
+          const m = (await loader()) as DemoModule;
+          return [slug, m.meta] as const;
+        } catch {
+          return [slug, undefined] as const;
+        }
+      }),
+    ).then((entries) => {
+      if (!live) return;
+      const map: Record<string, DemoMeta> = {};
+      for (const [slug, meta] of entries) if (meta) map[slug] = meta;
+      setMetas(map);
+      setLoaded(true);
+    });
     return () => { live = false; };
-  }, [slugs]);
+  }, []);
+
+  // show: src/lab demos always; region demos only once their meta proves them
+  const slugs = Object.keys(loaders)
+    .filter((slug) => LAB_SLUGS.has(slug) || metas[slug]?.title)
+    .sort();
 
   return (
     <div className="lab-screen">
@@ -44,10 +71,11 @@ export function LabIndex() {
       </header>
       {slugs.length === 0 ? (
         <div className="panel lab-empty">
-          <h2>Nothing mounted yet</h2>
+          <h2>{loaded ? 'Nothing mounted yet' : 'Loading the benches…'}</h2>
           <p>
-            The benches are clean and the tools are warm. Demos land here automatically as they're
-            built — check back after the next wind.
+            {loaded
+              ? "The benches are clean and the tools are warm. Demos land here automatically as they're built — check back after the next wind."
+              : 'Warming up the workshed.'}
           </p>
         </div>
       ) : (
@@ -86,11 +114,40 @@ function LabDemo() {
       <div className="lab-demo-bar">
         <Link className="btn" to="/lab">← Lab</Link>
       </div>
-      <Suspense fallback={<div className="boot">LOADING</div>}>
-        <Demo />
-      </Suspense>
+      <ErrorBoundary slug={slug ?? ''}>
+        <Suspense fallback={<div className="boot">LOADING</div>}>
+          <Demo />
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
+}
+
+/** Demos are built by parallel workers — a crashing bench must not take the app down. */
+class ErrorBoundary extends React.Component<{ slug: string; children: React.ReactNode }, { failed: boolean }> {
+  constructor(p: { slug: string; children: React.ReactNode }) {
+    super(p);
+    this.state = { failed: false };
+  }
+  static getDerivedStateFromError() {
+    return { failed: true };
+  }
+  componentDidUpdate(prev: { slug: string }) {
+    if (prev.slug !== this.props.slug && this.state.failed) this.setState({ failed: false });
+  }
+  render() {
+    if (this.state.failed) {
+      return (
+        <div className="lab-screen">
+          <div className="panel lab-empty">
+            <h2>“{this.props.slug}” blew a gasket</h2>
+            <p>This bench is mid-rebuild. <Link to="/lab">← Back to the Lab</Link></p>
+          </div>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
 }
 
 export function LabRoutes() {

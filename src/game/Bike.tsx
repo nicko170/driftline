@@ -20,6 +20,7 @@ import { telemetry, addShake } from '../telemetry';
 import { audio } from '../audio/audio';
 import { useSaveStore, useGameStore } from '../state/store';
 import { getAnchor } from '../world/registry';
+import { ride, flushRideStats } from './rideStats';
 
 /* scratch (no per-frame allocations) */
 const _fwd = new THREE.Vector3();
@@ -50,8 +51,10 @@ export default function Bike() {
     boost: 1,
     driftTime: 0,
     wasDrifting: false,
+    prevBoosting: false,
     hopCooldown: 0,
     airTime: 0,
+    flushT: 0,
   });
 
   useBeforePhysicsStep(() => {
@@ -76,6 +79,7 @@ export default function Bike() {
     const hoverH = 1.25;
     const above = pos.y - ground;
     c.hopCooldown = Math.max(0, c.hopCooldown - dt);
+    const prevAir = c.airTime; // captured before reset — used by landing feedback + stats
     const grounded = above < hoverH * 1.45 && c.hopCooldown <= 0;
     c.airTime = grounded ? 0 : c.airTime + dt;
 
@@ -100,10 +104,19 @@ export default function Bike() {
         body.applyImpulse({ x: _fwd.x * kick, y: 0, z: _fwd.z * kick }, true);
         audio.blip(520, 0.1);
       }
+      if (c.driftTime > 0.4) {
+        ride.bestDriftS = Math.max(ride.bestDriftS, c.driftTime);
+        ride.dirty = true;
+      }
       c.wasDrifting = false;
       c.driftTime = 0;
     }
     const boosting = !freeze && input.boost && c.boost > 0.02 && input.throttle > 0;
+    if (boosting && !c.prevBoosting) {
+      ride.boostsUsed += 1;
+      ride.dirty = true;
+    }
+    c.prevBoosting = boosting;
     if (boosting) c.boost = Math.max(0, c.boost - dt * (0.26 - up.boost * 0.035));
     else c.boost = Math.min(1, c.boost + dt * (0.07 + up.boost * 0.02 + (grounded ? 0 : 0.01)));
 
@@ -147,6 +160,8 @@ export default function Bike() {
         input.hop = false;
         vy = Math.min(vy + 8.6, 11.5);
         c.hopCooldown = 0.28;
+        ride.jumps += 1;
+        ride.dirty = true;
         addShake(0.12);
         audio.blip(300, 0.08);
       }
@@ -170,10 +185,24 @@ export default function Bike() {
 
     body.setLinvel({ x: vx, y: vy, z: vz }, true);
 
-    // landing feedback
-    if (grounded && c.airTime > 0.55) {
-      addShake(Math.min(0.5, 0.12 + c.airTime * 0.2));
-      audio.thud(Math.min(1, c.airTime * 0.5));
+    // landing feedback (prevAir — airTime has already been reset this step)
+    if (grounded && prevAir > 0.55) {
+      addShake(Math.min(0.5, 0.12 + prevAir * 0.2));
+      audio.thud(Math.min(1, prevAir * 0.5));
+    }
+    if (grounded && prevAir > 0.8) {
+      ride.biggestAirS = Math.max(ride.biggestAirS, prevAir);
+      ride.dirty = true;
+    }
+
+    /* ---------- ride stats accumulation ---------- */
+    if (!freeze) {
+      const newSpeed = Math.hypot(vx, vz);
+      ride.distanceM += newSpeed * dt;
+      if (!grounded) ride.airTimeS += dt;
+      if (drifting) ride.driftTimeS += dt;
+      if (newSpeed * 3.4 > ride.topSpeedKmh) ride.topSpeedKmh = newSpeed * 3.4;
+      ride.dirty = ride.dirty || newSpeed > 0.5;
     }
 
     /* ---------- rotation (manual, smoothed) ---------- */
@@ -211,10 +240,16 @@ export default function Bike() {
     if (audio.ready) audio.updateVehicle(telemetry.speed, freeze ? 0 : input.throttle, boosting);
   });
 
-  // engine glow follows throttle
-  useFrame(() => {
+  // engine glow follows throttle; stats flush ticks here (per rendered frame)
+  useFrame((_, delta) => {
     if (glow.current) {
       glow.current.emissiveIntensity = 0.9 + Math.min(1, telemetry.speed / 30) * 1.6 + (telemetry.boosting ? 1.6 : 0);
+    }
+    const c = ctrl.current;
+    c.flushT += delta;
+    if (c.flushT > 2) {
+      c.flushT = 0;
+      flushRideStats();
     }
   });
 

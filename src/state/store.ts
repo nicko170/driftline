@@ -28,6 +28,33 @@ export interface MissionRewards {
   flags?: string[];
 }
 
+/** Lifetime ride statistics (persisted; feed the Logbook + achievements). */
+export interface RideStats {
+  distanceM: number;
+  topSpeedKmh: number;
+  jumps: number;
+  driftTimeS: number;
+  bestDriftS: number;
+  boostsUsed: number;
+  stormsOutrun: number;
+  missionsDone: number;
+  airTimeS: number;
+  biggestAirS: number;
+}
+
+export const emptyStats = (): RideStats => ({
+  distanceM: 0,
+  topSpeedKmh: 0,
+  jumps: 0,
+  driftTimeS: 0,
+  bestDriftS: 0,
+  boostsUsed: 0,
+  stormsOutrun: 0,
+  missionsDone: 0,
+  airTimeS: 0,
+  biggestAirS: 0,
+});
+
 interface SaveState {
   version: number;
   credits: number;
@@ -39,6 +66,9 @@ interface SaveState {
   missionsDone: string[];
   /** Story chapters whose intro card has been shown. */
   chaptersSeen: number[];
+  stats: RideStats;
+  /** Unlocked achievement ids (definitions in src/game/achievements.ts). */
+  achievements: string[];
   settings: Settings;
   hasSave: boolean;
 
@@ -50,6 +80,10 @@ interface SaveState {
   purchase: (key: keyof Omit<Upgrades, 'paint'>, cost: number) => void;
   setPaint: (hex: string) => void;
   markChapterSeen: (n: number) => void;
+  /** Merge lifetime stat deltas/maxes (called from the ride-stats flusher). */
+  bumpStats: (patch: Partial<RideStats>) => void;
+  /** Record an achievement unlock; returns true if it was new. */
+  unlockAchievement: (id: string) => boolean;
   updateSettings: (s: Partial<Settings>) => void;
   newGame: () => void;
 }
@@ -71,6 +105,8 @@ const initialProgress = {
   codex: ['glass-desert-field-guide'],
   missionsDone: [] as string[],
   chaptersSeen: [] as number[],
+  stats: emptyStats(),
+  achievements: [] as string[],
 };
 
 export const useSaveStore = create<SaveState>()(
@@ -125,13 +161,35 @@ export const useSaveStore = create<SaveState>()(
         if (get().chaptersSeen.includes(n)) return;
         set({ chaptersSeen: [...get().chaptersSeen, n], hasSave: true });
       },
+      bumpStats: (patch) => {
+        const cur = get().stats;
+        const next = { ...cur };
+        // maxima vs accumulators
+        for (const k of ['topSpeedKmh', 'bestDriftS', 'biggestAirS'] as const) {
+          const v = patch[k];
+          if (v !== undefined) next[k] = Math.max(cur[k], v);
+        }
+        for (const k of ['distanceM', 'jumps', 'driftTimeS', 'boostsUsed', 'stormsOutrun', 'missionsDone', 'airTimeS'] as const) {
+          const v = patch[k];
+          if (v !== undefined) next[k] = cur[k] + v;
+        }
+        set({ stats: next });
+      },
+      unlockAchievement: (id) => {
+        if (get().achievements.includes(id)) return false;
+        set({ achievements: [...get().achievements, id], hasSave: true });
+        return true;
+      },
       updateSettings: (patch) => set({ settings: { ...get().settings, ...patch } }),
-      newGame: () => set({ ...initialProgress, flags: [], codex: ['glass-desert-field-guide'], missionsDone: [], hasSave: true }),
+      newGame: () => set({ ...initialProgress, stats: emptyStats(), achievements: [], flags: [], codex: ['glass-desert-field-guide'], missionsDone: [], hasSave: true }),
     }),
     {
       name: 'driftline-save',
-      version: 1,
-      migrate: (state) => state as SaveState,
+      version: 2,
+      migrate: (state) => {
+        const s = state as Partial<SaveState>;
+        return { ...s, stats: s.stats ?? emptyStats(), achievements: s.achievements ?? [] } as SaveState;
+      },
       partialize: (s) => ({
         version: s.version,
         credits: s.credits,
@@ -142,6 +200,8 @@ export const useSaveStore = create<SaveState>()(
         codex: s.codex,
         missionsDone: s.missionsDone,
         chaptersSeen: s.chaptersSeen,
+        stats: s.stats,
+        achievements: s.achievements,
         settings: s.settings,
         hasSave: s.hasSave,
       }),
@@ -163,6 +223,13 @@ export interface DialogueChoice {
 
 export type RideMode = 'riding' | 'board' | 'garage' | 'dialogue' | 'paused';
 
+export interface UnlockToast {
+  id: string;
+  title: string;
+  desc: string;
+  icon: string;
+}
+
 interface GameState {
   mode: RideMode;
   /** Pause the physics world (pause menu only). */
@@ -179,6 +246,8 @@ interface GameState {
   dialogue: DialogueLine[] | null;
   dialogueChoices: DialogueChoice | null;
   radioLine: { who: string; text: string; t: number } | null;
+  /** Achievement/unlock toasts waiting to be displayed. */
+  toasts: UnlockToast[];
 
   setMode: (m: RideMode) => void;
   setPhysicsPaused: (p: boolean) => void;
@@ -195,6 +264,8 @@ interface GameState {
   openDialogue: (lines: DialogueLine[], choices?: DialogueChoice) => void;
   closeDialogue: () => void;
   say: (who: string, text: string) => void;
+  queueToast: (t: UnlockToast) => void;
+  shiftToast: () => void;
 }
 
 export const useGameStore = create<GameState>()((set, get) => ({
@@ -209,6 +280,7 @@ export const useGameStore = create<GameState>()((set, get) => ({
   dialogue: null,
   dialogueChoices: null,
   radioLine: null,
+  toasts: [],
 
   setMode: (mode) => set({ mode }),
   setPhysicsPaused: (physicsPaused) => set({ physicsPaused }),
@@ -256,4 +328,6 @@ export const useGameStore = create<GameState>()((set, get) => ({
   openDialogue: (dialogue, dialogueChoices) => set({ dialogue, dialogueChoices: dialogueChoices ?? null, mode: 'dialogue' }),
   closeDialogue: () => set({ dialogue: null, dialogueChoices: null, mode: 'riding' }),
   say: (who, text) => set({ radioLine: { who, text, t: Date.now() } }),
+  queueToast: (t) => set({ toasts: [...get().toasts, t] }),
+  shiftToast: () => set({ toasts: get().toasts.slice(1) }),
 }));

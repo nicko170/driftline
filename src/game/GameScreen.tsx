@@ -13,6 +13,7 @@ import DustTrail from './DustTrail';
 import MissionDirector from './MissionDirector';
 import InteractionSystem from './InteractionSystem';
 import RegionStream, { RegionColliders } from './RegionStream';
+import AmbientTraffic from './AmbientTraffic';
 import HUD from '../ui/HUD';
 import MissionBoard from '../ui/MissionBoard';
 import GaragePanel from '../ui/GaragePanel';
@@ -25,6 +26,7 @@ import { currentChapter } from '../missions/chapters';
 import { bindInput, consume } from '../input/input';
 import { useGameStore, useSaveStore } from '../state/store';
 import { audio } from '../audio/audio';
+import { evaluateAchievements } from './achievements';
 
 export default function GameScreen() {
   const navigate = useNavigate();
@@ -35,6 +37,7 @@ export default function GameScreen() {
   useEffect(() => {
     bindInput();
     audio.resume();
+    evaluateAchievements(); // catch any save-state unlocks from a previous session
   }, []);
 
   // pause key handling (edge-triggered, polled lightly)
@@ -90,6 +93,7 @@ export default function GameScreen() {
             <Bike />
           </Physics>
           <RegionStream />
+          <AmbientTraffic />
           <MissionDirector />
           <InteractionSystem />
           <DustTrail />

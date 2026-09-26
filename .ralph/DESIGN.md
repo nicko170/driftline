@@ -63,8 +63,20 @@ Faction colors: Salt Guild `ochre #B07C3A`, Choir `teal-bright #57C4B8`, Reclaim
 - UI transitions ≤180ms ease-out; menus fade+4px rise; no layout shift.
 - Bike feel targets: hover bob ~2Hz at idle, drift lean ≤14°, boost FOV 60→74, hop land squash 90ms.
 
-## Mission/moment language (iteration 2)
+## Progression & world-life language (iteration 3)
 
+- **Log toasts** (achievements): top-centre panel, amber border, teal kicker "LOG ENTRY
+  UNLOCKED", amber-hot title, bone description; icon is a *shape glyph* from the HUD set
+  (◆ ▲ ◉ ✦ ⟡ ▣ …), colour is decoration — never the only signal. 220ms slide-in, click to dismiss.
+- **Logbook**: `/logbook` screen — stats panel (sand labels, amber-hot tabular values) beside
+  an achievement grid; locked cards ghost at 55%, hidden story cards show `▯▯▯ signal not recovered`.
+- **Ambient traffic**: NPC vehicles use the same flat-shaded prim language as the player bike;
+  couriers wear rust/amber (Driftline), haulers ochre/grey deck with bone cargo (Guild), skiffs
+  teal with bone sail panels (Choir). Under-glow planes in faction colour mark them at distance.
+- **Portraits** (canonical): `public/images/characters/<id>.jpg` — illustrated low-poly
+  head-and-shoulders, square crop, warm flat shading, long-shadow desert backdrop, painted finish.
+
+## Mission/moment language (iteration 2)
 - **Waypoint beams** colour by objective: amber default/`pickup`/`dropoff`/`race`; teal for escort/scout; danger-red `#E4572E` for chase/storm. HUD keeps shape+colour pairs (amber diamond objective, teal square convoy, rust triangle chase target, red disc storm on minimap).
 - **Storm wall**: 3 nested open cylinder shells (sand `#C98F4E`→`#8A5335`, opacities 0.22→0.05) + churn band; screen tint = radial rust gradient from bottom; fog lerps sand and densifies with proximity.
 - **Chapter cards**: full-screen violet-dark overlay, teal kicker "Chapter N", big salt display title, amber ◆◆◆ rule; dismissible with E/Enter/Esc.

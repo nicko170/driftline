@@ -1,0 +1,10 @@
+/* Compass & Minimap Lab — panel styles (stub; expanded by the bench's owner). */
+.cml-root { min-height: 100vh; padding: 20px; background: var(--space); color: var(--bone); }
+.cml-head { margin-bottom: 16px; }
+.cml-controls { display: flex; flex-wrap: wrap; gap: 12px; margin: 12px 0; }
+.cml-ctl { display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+.cml-ctl-inline { flex-direction: row; align-items: center; }
+.cml-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 14px; align-items: start; }
+.cml-col { display: flex; flex-direction: column; gap: 14px; }
+.cml-copy { font-family: var(--font-display); }
+@media (max-width: 900px) { .cml-grid { grid-template-columns: 1fr; } }

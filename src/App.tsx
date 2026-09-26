@@ -7,6 +7,7 @@ import { audio } from './audio/audio';
 
 const GameScreen = lazy(() => import('./game/GameScreen'));
 const CodexScreen = lazy(() => import('./ui/CodexScreen'));
+const LogbookScreen = lazy(() => import('./ui/LogbookScreen'));
 
 function Splash() {
   return <div className="boot">DRIFTLINE</div>;
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/" element={<TitleScreen />} />
           <Route path="/play" element={<GameScreen />} />
           <Route path="/codex" element={<CodexScreen />} />
+          <Route path="/logbook" element={<LogbookScreen />} />
           <Route path="/credits" element={<CreditsScreen />} />
           <Route path="/lab/*" element={<LabRoutes />} />
           <Route path="*" element={<TitleScreen />} />

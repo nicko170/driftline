@@ -24,6 +24,7 @@ import { audio } from '../audio/audio';
 import { pickLine } from '../dialogue/library';
 import { mulberry32 } from '../lib/noise';
 import { terrainHeight } from '../lib/terrain';
+import { ride, flushRideStats } from './rideStats';
 
 const REACH = 8;          // objective capture radius
 const SLOW = 20;          // must be slower than this to pick up / drop off
@@ -607,6 +608,11 @@ export default function MissionDirector() {
       rewards.credits = scaled;
     }
     save.completeMission(mission.id, rewards);
+    // lifetime stats + achievement check (flushRideStats evaluates unlocks)
+    ride.missionsDone += 1;
+    if (mission.objectives.some((o) => o.type === 'storm')) ride.stormsOutrun += 1;
+    ride.dirty = true;
+    flushRideStats();
     game.clearMission();
     spawnKey.current = '';
     setCollected([]);
