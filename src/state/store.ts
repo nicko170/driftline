@@ -66,6 +66,8 @@ interface SaveState {
   missionsDone: string[];
   /** Story chapters whose intro card has been shown. */
   chaptersSeen: number[];
+  /** Story chapters whose completion debrief card has been shown. */
+  outrosSeen: number[];
   stats: RideStats;
   /** Unlocked achievement ids (definitions in src/game/achievements.ts). */
   achievements: string[];
@@ -80,6 +82,9 @@ interface SaveState {
   purchase: (key: keyof Omit<Upgrades, 'paint'>, cost: number) => void;
   setPaint: (hex: string) => void;
   markChapterSeen: (n: number) => void;
+  markOutroSeen: (n: number) => void;
+  /** Move credits into the Guild debt. Returns the amount actually paid. */
+  payDebt: (amount: number) => number;
   /** Merge lifetime stat deltas/maxes (called from the ride-stats flusher). */
   bumpStats: (patch: Partial<RideStats>) => void;
   /** Record an achievement unlock; returns true if it was new. */
@@ -105,6 +110,7 @@ const initialProgress = {
   codex: ['glass-desert-field-guide'],
   missionsDone: [] as string[],
   chaptersSeen: [] as number[],
+  outrosSeen: [] as number[],
   stats: emptyStats(),
   achievements: [] as string[],
 };
@@ -161,6 +167,31 @@ export const useSaveStore = create<SaveState>()(
         if (get().chaptersSeen.includes(n)) return;
         set({ chaptersSeen: [...get().chaptersSeen, n], hasSave: true });
       },
+      markOutroSeen: (n) => {
+        if (get().outrosSeen.includes(n)) return;
+        set({ outrosSeen: [...get().outrosSeen, n], hasSave: true });
+      },
+      payDebt: (amount) => {
+        const s = get();
+        const pay = Math.max(0, Math.min(Math.floor(amount), s.credits, s.debt));
+        if (pay <= 0) return 0;
+        const debt = s.debt - pay;
+        const cleared = debt === 0 && s.debt > 0;
+        if (cleared) {
+          const flags = new Set(s.flags);
+          flags.add('debt.cleared');
+          set({
+            credits: s.credits - pay,
+            debt,
+            flags: [...flags],
+            rep: { ...s.rep, guild: s.rep.guild + 12 },
+            hasSave: true,
+          });
+        } else {
+          set({ credits: s.credits - pay, debt, hasSave: true });
+        }
+        return pay;
+      },
       bumpStats: (patch) => {
         const cur = get().stats;
         const next = { ...cur };
@@ -185,10 +216,15 @@ export const useSaveStore = create<SaveState>()(
     }),
     {
       name: 'driftline-save',
-      version: 2,
+      version: 3,
       migrate: (state) => {
         const s = state as Partial<SaveState>;
-        return { ...s, stats: s.stats ?? emptyStats(), achievements: s.achievements ?? [] } as SaveState;
+        return {
+          ...s,
+          stats: s.stats ?? emptyStats(),
+          achievements: s.achievements ?? [],
+          outrosSeen: s.outrosSeen ?? [],
+        } as SaveState;
       },
       partialize: (s) => ({
         version: s.version,
@@ -200,6 +236,7 @@ export const useSaveStore = create<SaveState>()(
         codex: s.codex,
         missionsDone: s.missionsDone,
         chaptersSeen: s.chaptersSeen,
+        outrosSeen: s.outrosSeen,
         stats: s.stats,
         achievements: s.achievements,
         settings: s.settings,
@@ -221,7 +258,7 @@ export interface DialogueChoice {
   options: { text: string; setsFlag: string }[];
 }
 
-export type RideMode = 'riding' | 'board' | 'garage' | 'dialogue' | 'paused';
+export type RideMode = 'riding' | 'board' | 'garage' | 'exchange' | 'dialogue' | 'paused';
 
 export interface UnlockToast {
   id: string;
@@ -248,6 +285,8 @@ interface GameState {
   radioLine: { who: string; text: string; t: number } | null;
   /** Achievement/unlock toasts waiting to be displayed. */
   toasts: UnlockToast[];
+  /** Pending chapter-completion debrief (chapter number), shown once dialogue closes. */
+  chapterOutro: number | null;
 
   setMode: (m: RideMode) => void;
   setPhysicsPaused: (p: boolean) => void;
@@ -266,6 +305,7 @@ interface GameState {
   say: (who: string, text: string) => void;
   queueToast: (t: UnlockToast) => void;
   shiftToast: () => void;
+  setChapterOutro: (n: number | null) => void;
 }
 
 export const useGameStore = create<GameState>()((set, get) => ({
@@ -281,6 +321,7 @@ export const useGameStore = create<GameState>()((set, get) => ({
   dialogueChoices: null,
   radioLine: null,
   toasts: [],
+  chapterOutro: null,
 
   setMode: (mode) => set({ mode }),
   setPhysicsPaused: (physicsPaused) => set({ physicsPaused }),
@@ -330,4 +371,5 @@ export const useGameStore = create<GameState>()((set, get) => ({
   say: (who, text) => set({ radioLine: { who, text, t: Date.now() } }),
   queueToast: (t) => set({ toasts: [...get().toasts, t] }),
   shiftToast: () => set({ toasts: get().toasts.slice(1) }),
+  setChapterOutro: (chapterOutro) => set({ chapterOutro }),
 }));

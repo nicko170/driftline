@@ -7,6 +7,7 @@ import { useEffect, useMemo } from 'react';
 import { useSaveStore } from '../state/store';
 import { chapterMeta, currentChapter } from '../missions/chapters';
 import { audio } from '../audio/audio';
+import { input } from '../input/input';
 
 const ROMAN = ['I', 'II', 'III', 'IV', 'V'];
 
@@ -28,6 +29,7 @@ export default function ChapterCard() {
       const k = e.key.toLowerCase();
       if (k === 'enter' || k === 'e' || k === 'escape') {
         audio.chime();
+        input.pause = false; // Esc closes the card, never opens the pause menu
         markChapterSeen(pending);
       }
     };
@@ -41,6 +43,7 @@ export default function ChapterCard() {
 
   const dismiss = () => {
     audio.chime();
+    input.pause = false;
     markChapterSeen(pending);
   };
 

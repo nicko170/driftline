@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
+import { useSaveStore } from '../state/store';
+import { endingFor } from '../missions/endings';
 
 export default function CreditsScreen() {
+  const ending = useSaveStore((s) => endingFor(s.flags));
   return (
     <div className="credits-screen">
       <div className="sheet">
@@ -19,6 +22,11 @@ export default function CreditsScreen() {
             Web Audio API. No art assets were downloaded; images are generated, every sound is
             synthesised, and the world is procedural.
           </p>
+          {ending && (
+            <p className="credits-epilogue">
+              <em>{ending.title}:</em> {ending.text}
+            </p>
+          )}
           <p className="dim">
             For the couriers who ride between the lights. Flat salt and a following wind.
           </p>

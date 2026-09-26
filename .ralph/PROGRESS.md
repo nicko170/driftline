@@ -1,5 +1,30 @@
 # Progress
 
+## Status — iteration 4 (economy: Guild exchange & debt; chapter outros; endings flow; climate blending; portraits round 2)
+
+**New systems (build green, playtest green: 60.5fps, 0 console errors):**
+- **Guild exchange + debt paydown**: third interaction spot at `saltmouth:exchange`
+  (E → mode `'exchange'` → `src/ui/ExchangePanel.tsx`). `save.payDebt()` clamps/floors
+  payments; milestone barks from tamsin-cho at 25/50/75%; clearing sets flag
+  `debt.cleared`, +12 guild rep, ketch radio follow-up, `clean-ledger` achievement
+  (25 defs now), and unlocks the earned **Guild Gold paint** at Ketch's garage.
+- **Chapter outro debrief**: `CHAPTERS[n].outro` text per chapter; finishing a chapter's
+  last story mission sets `game.chapterOutro` → `ChapterOutroCard` shows once dialogue
+  closes (persists `save.outrosSeen`, save version **3** with migrate backfill; add
+  `outrosSeen` to any future newGame resets). Esc/pause gating respects the outro.
+- **Endings flow**: `src/missions/endings.ts` EPILOGUES for `ending.rain`/`ending.quiet`.
+  Title shows an epilogue panel, credits print the stanza; hidden ending achievements
+  fire on the flag. Ready for ch5 content to set the flags.
+- **Region climate blending** (Sky): fog colour/density, horizon tint and hemisphere
+  ground lerp toward the nearest region's `meta.climate` by proximity (squared falloff,
+  radius+140m skirt, capped/accumulated); off-world lab benches (centres beyond ±1800m)
+  are excluded. No per-frame allocations (zones parsed once, module scratch colors).
+- **Portraits round 2**: generated cantor-ilex + dockmaster-devanna; copied
+  rill-davenant + solder from the writer path to canonical `public/images/characters/`
+  and rewired their JSON `portrait` fields. Eight characters now have portraits.
+- Backlog: added 3 demo intents (cargo-shake-lab, handling-curve-lab, roster-review-bench)
+  — planned demos back to 8.
+
 ## Status — iteration 3 (progression: ride stats, achievements, Logbook; ambient traffic; portraits; lab discovery)
 
 **New systems (all live, playtest green: 60fps, 0 console errors):**
@@ -69,14 +94,16 @@ See git history for detail.
 - Build: `tsc && vite build && postbuild` (404.html + .nojekyll). BASE_PATH supported.
 
 ## Next iterations (priority order)
-1. **Portraits round 2**: remaining key givers (cantor-ilex, jett-marrows, brinemaster-ogo,
-   dockmaster-devanna, sister-counterweight if budget allows) — DialogueBox + radio wear them.
-2. **Region props density pass**: skydocks sparse (masts/gantries); drowned-array sunken detail;
-   climate tint blending in Sky (region `climate` lerps fog/sky by proximity).
-3. **Endings flow for ch5**: `ending.rain`/`ending.quiet` flags → title-screen epilogue card +
-   credits sequence upgrade; chapter-outro debrief beat when a chapter completes.
-4. **Debt mechanic**: pay down the 8,000 cr debt at the Guild exchange → "debt-free" beat.
-5. Perf: consider moving terrain build to a worker; rapier chunk is large but lazy (route-gated).
+1. **Portraits round 3**: remaining givers (jett-marrows, brinemaster-ogo,
+   sister-counterweight, factor-marn-phlox, static-warden-pem, brother-decibel,
+   aunt-vertex, compass, rill-davenant…) — rotate 2-3 `generate_image` calls per builder
+   iteration until all 17+ have canonical portraits.
+2. **Region props density pass**: skydocks sparse (masts/gantries); drowned-array sunken
+   detail. Climate blending is DONE (Sky lerps by proximity).
+3. **Ch5 story support**: endings flow is ready (flags → epilogue + achievements); when
+   writers ship ch5 missions, verify the choice → `ending.rain`/`ending.quiet` path and
+   the post-ending free-ride. Consider a title-screen "epilogue seen" badge.
+4. Perf: consider moving terrain build to a worker; rapier chunk is lazy (route-gated).
 
 ## Known issues / watch-items
 - Rapier chunk (2.28MB) lazy-loads with /play — fine, keep it out of manualChunks (cycle risk).
@@ -139,3 +166,73 @@ See git history for detail.
   - `lore-moorage-stories` (log): three DIVIDEND: NARRATIVE ledger entries per water-rights Article Five — docked ghost (Kestrel's Debt callback), race with the wind, mailbag that sang (Third Bell litany link; Little Reverb cameo).
 - New named minor characters (fictional, safe to reference): Pell Anyanwu (retired windspine survey tech), Mele 'Half-Lap' Sorren (retired Glassroad courier), Bric (Keel Town mooring gang six).
 - Validator gotcha reaffirmed: lore bodies need ≥1 `## ` H2 section to pass finish_article.
+
+## Demo log — demo2, iteration 3 (2026-09-26): compass-minimap-lab
+- Built the HUD navigation bench: fake 1200 m canvas-2D pan with draggable player/waypoint/convoy/
+  chase/storm anchors driving the real compass pill + projected waypoint diamond (exact HUD.tsx/
+  CameraRig.tsx formulas, mirrored in navmath.ts), four candidate minimap palettes with live
+  measured WCAG contrast, and a deutan/protan/tritan simulation strip proving the shape+colour
+  accessibility rule. 10-check invariant suite fuzzes the shipped math (marker clamp survived raw
+  projections of ±6e7; all palettes ≥6:1 contrast).
+- ⚠ Finding for the app builder (WARN, not patched — lab does not touch game code): Bike.tsx:234
+  writes heading = atan2(fwd.x, −fwd.z) (true bearing, 0 = north) but CameraRig.tsx:28
+  reconstructs forward as (sin h, 0, cos h) — z-mirrored. Compass/minimap are consistent with the
+  bearing form; the chase camera flips it. See src/world/regions/compass-minimap-lab/NOTES.md.
+- A coordinating worker wrote placeholder stubs in the folder mid-build; superseded by full panels,
+  kept their off-world centre [6200, 6200]. typecheck + validate:content clean; key art at
+  public/images/work/compass-minimap-lab.jpg. finish_demo passed first call.
+
+## Writer log — writer2, iteration 9 (2026-09-26): ch5 finale pair + 2 sides
+- `ch5-skyship-ballot` (race, 300s, giver dockmaster-devanna): the settlements vote the Choice
+  Warrant via skyship-beacon tally light (static too loud for voice radio). Pickup at the
+  Dockmaster's hut, race gates windspine:storm-gauge → turbine-row → skydocks:winch-base →
+  saltmouth:gate-east → job-board. Requires ch4-glass-blooms.done; sets ballot.cast, unlocks
+  lore-choice-warrant. Sister Counterweight audits the count; Jett Marrows heckles.
+- `ch5-last-delivery` (deliver + storm leg): pickup the choice-core at saltmouth:garage, then a
+  storm objective to mothersgate:the-door — the season's last wall hunts the final ~1.5 km run.
+  Requires ch5-skyship-ballot.done + ballot.cast. Dialogue choice at the threshold sets
+  ending.rain / ending.quiet (matches achievements.ts hidden defs); unlocks lore-broadcast-finale.
+  Rill Davenant cameo-line resolves her ch3 arc ("the coordinates were a permission").
+- `side-dune-mail` (deliver, no clock): four-drop outskirts loop (gate-east → flats-pan →
+  overlook → moorage); texture: a letter franked "to the east wind".
+- `side-glassware` (fragile, giver cantor-ilex, requires ch2-choir-offer.done): six singing-glass
+  chimes lamp-ring → salt-pan line → keel-town shrine; payout scales with surviving chord;
+  unlocks lore-choir-litany-1. Brother Decibel tuned them; avoid F-naturals (Choir feud joke).
+- validate:content clean (34 missions, 53 lore). Ch5 now has 2 story missions; 4 more planned —
+  future ch5 writers: chain requires from `ch5-skyship-ballot.done` before the finale, and keep
+  `ch5-last-delivery` last (it requires ballot.cast).
+
+## Demo log — demo2, iteration 4 (2026-09-26): Portrait Booth
+- Built `src/world/regions/portrait-booth/` — a contact-sheet viewer for every character in
+  `src/content/characters/*.json`: filterable grid (faction chips with shape+colour, search),
+  lightbox with bio / voice notes / sample lines / keyboard nav (Esc, ←/→), and a re-roll prompt
+  composer stitching each character's `appearance` into the shared DESIGN.md style block with a
+  copy button (clipboard API + legacy fallback).
+- Live art-gap tracker: entries declaring a `portrait` start PAINTED and demote to FRAME STALE
+  on img 404 (rill-davenant + solder currently stale — JSON references files not yet painted);
+  undeclared entries sit at AWAITING SITTING. Header shows a painted tally.
+- Off-world region contract satisfied (meta.json + anchors.json at [6800,6800], meta.ts with
+  client/caseStudy, statics on the default export). Header art at
+  public/images/work/portrait-booth.jpg. finish_demo passed.
+- ⚠ Note: src/missions/endings.ts had an unescaped apostrophe (`someone's`) breaking typecheck
+  mid-flight; harness forbids demo builders editing shared code — the owning worker must fix
+  (line 23).
+
+## Writer log — writer2, iteration 11 (2026-09-26)
+- Validated and finished two pre-existing character files (built by a parallel worker) and
+  extended their line buckets to pass the ≥8-bucket rule: `rill-davenant` (added night/storm/
+  crate/farewells) and `jett-marrows` (added night/storm/crate/farewells).
+- Wrote two new characters: `quicklime-kid` (masked one-word rival; ties to the Drowned Array
+  caretaker mystery — parcels marked CARETAKER, ARRAY, chalk cairn code) and `madame-traction`
+  (skydocks fixer, sells rumours; seeded the "ledger-entry that wrote itself" and Rill's settled
+  debt as hook material; note her home slug is `skydocks`, Keel Town).
+- Validator note: character `lines` requires ≥8 **buckets** (keys), not ≥8 strings.
+- Wrote four lore pieces: `yard-rules` (Reclaimer tract, Cinderflats; hands-off list includes
+  the cradle door per Aunt Vertex), `listening-schedule` (Choirhollow rota; Little Reverb's
+  pencil column keeps being right; Cantor Ilex arc), `caretaker-log` (TALLY-9, Drowned Array,
+  200 years of degrading "nominal"; ends "all systems absent, spirits high"), `mothersgate-survey`
+  (the pre-seal survey, distinct from `lore-mothersgate-survey`'s self-completing form — this
+  one is Okafor-Bligh's original "seal it, bill it, forget it", two of three completed).
+- Continuity threads now available for future writers: TALLY-9's entry lights + lamp frequency
+  (the crate's hum "answered my lamp-frequency"), the Quicklime Kid ferrying water to caches,
+  Madame Traction's drawer, the west horn "two short revs, one long" answer = Kid's own greeting.

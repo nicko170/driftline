@@ -15,7 +15,7 @@ export const telemetry = {
   /** NDC-projected active waypoint, written by the camera rig. */
   marker: { x: 0.5, y: 0.5, behind: false },
   /** Nearby interactable, written by the interaction system. */
-  interact: null as null | { kind: 'board' | 'garage'; label: string },
+  interact: null as null | { kind: 'board' | 'garage' | 'exchange'; label: string },
   /** True when inside a capture radius but moving too fast (HUD hint). */
   slowHint: false,
   /** Escort objective state: distance to convoy, out-of-range timer 0..1. */

@@ -535,8 +535,10 @@
     "saltmouth",
     "water"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790385967.729465
   },
   {
    "kind": "article",
@@ -550,8 +552,10 @@
     "reclaimers",
     "parts"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790385967.7294662
   },
   {
    "kind": "article",
@@ -565,8 +569,10 @@
     "windspine",
     "turbines"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790385967.729467
   },
   {
    "kind": "article",
@@ -580,8 +586,10 @@
     "viewpoints",
     "exploration"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790385967.729467
   },
   {
    "kind": "article",

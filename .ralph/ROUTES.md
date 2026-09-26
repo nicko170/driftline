@@ -158,6 +158,29 @@ Body ≥ 250 words, in-world voice. Unlock: mission reward flag `lore:<slug>`.
   haulers, 2 choir skiffs) cruise fixed polyline loops between settlements, hovering over
   the analytic terrain with bob + banked turns. Visual-only (no colliders); ~6 groups.
 
+## Economy & story beats (iteration 4)
+
+- **Guild exchange + debt** — third interaction spot (`saltmouth:exchange`, E to open,
+  mode `'exchange'`). `save.payDebt(amount)` moves credits → debt (clamped, floored,
+  returns actually paid). Clearing the 8,000 cr bond sets flag `debt.cleared`, grants
+  +12 guild rep, barks tamsin-cho then ketch on the radio, fires the `clean-ledger`
+  achievement, and unlocks the Guild Gold paint (`#FFC969`) at the garage
+  (`src/ui/ExchangePanel.tsx`, `src/ui/GaragePanel.tsx`).
+- **Chapter outros** — `CHAPTERS[n].outro` (`src/missions/chapters.ts`) is the debrief
+  text. When a chapter's last story mission completes, MissionDirector sets
+  `game.chapterOutro`; `ChapterOutroCard` shows it once `mode==='riding'` and no intro
+  card is pending, tracks `save.outrosSeen` (persist, save version 3 — migrate backfills),
+  dismisses with E/Enter/Esc.
+- **Endings** — `src/missions/endings.ts`: EPILOGUES for `ending.rain` / `ending.quiet`.
+  Content (ch5 missions/dialogue) sets the flag; TitleScreen shows the epilogue panel and
+  CreditsScreen prints the stanza when a flag is present. Achievements `ending-rain` /
+  `ending-quiet` fire on the flag.
+- **Region climate blending** — Sky lerps fog colour/density, horizon tint and hemisphere
+  ground tint toward a region's `meta.climate` (`fogDensity`, `skyTint`, `groundTint`) by
+  proximity (squared falloff over radius+140 m skirt, ≤0.6 per zone, ≤1 total). Regions
+  with centres beyond ±1800 m (lab benches) are ignored. Writers/region builders can set
+  climate freely in meta.json.
+
 ## Demo contract — `src/lab/<slug>/index.tsx`
 
 Default-exports a React component; optional named export `meta = { title, blurb, tags }`.

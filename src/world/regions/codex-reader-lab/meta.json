@@ -1,0 +1,8 @@
+{
+  "slug": "codex-reader-lab",
+  "name": "Codex Reader Lab",
+  "blurb": "Workshop tool, not a game region: a typography reading-room for the Courier's Codex — live measure/leading/size controls, a printed Guild form mode, an honest current-vs-tuned compare, and a lint pass over every lore entry. Anchors and center live outside the playable map.",
+  "center": [7400, 7400],
+  "radius": 4,
+  "danger": 0
+}

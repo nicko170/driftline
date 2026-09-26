@@ -4,13 +4,16 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useSaveStore } from '../state/store';
 import { useGameStore } from '../state/store';
 import { withBase } from '../lib/base';
+import { endingFor } from '../missions/endings';
 import { audio } from '../audio/audio';
 
 export default function TitleScreen() {
   const navigate = useNavigate();
   const hasSave = useSaveStore((s) => s.hasSave);
+  const flags = useSaveStore((s) => s.flags);
   const newGame = useSaveStore((s) => s.newGame);
   const [confirmNew, setConfirmNew] = useState(false);
+  const ending = endingFor(flags);
 
   const play = () => {
     audio.resume();
@@ -30,6 +33,14 @@ export default function TitleScreen() {
           Any crate. Any storm. Any door. — You're Ash Varga: a new courier with a second-hand
           hover-bike, a debt, and a package that shouldn't exist.
         </p>
+        {ending && (
+          <aside className="title-epilogue panel">
+            <span className="title-epilogue-kicker">{ending.kicker}</span>
+            <strong className="title-epilogue-title">{ending.title}</strong>
+            <p>{ending.text}</p>
+            <p className="dim">{ending.coda}</p>
+          </aside>
+        )}
         <nav className="title-menu" aria-label="Main menu">
           {hasSave && !confirmNew && (
             <button className="btn primary big" onClick={play}>▶ Play — continue the run</button>

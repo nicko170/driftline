@@ -563,13 +563,67 @@ kbd {
 .ach-card p { margin: 2px 0 0; font-size: 12.5px; line-height: 1.45; opacity: 0.85; }
 .ach-card.locked h4 { color: var(--bone); }
 
+/* ============ iteration 4: exchange, chapter outro, epilogue ============ */
+
+.exchange-grid { display: grid; grid-template-columns: minmax(250px, 1.2fr) 1fr; gap: 14px; }
+.exchange-ledger { padding: 16px 18px; }
+.exchange-ledger-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.exchange-seal {
+  font-family: var(--font-display); font-size: 11px; letter-spacing: 0.14em;
+  color: var(--sand); border: 1px dashed color-mix(in srgb, var(--bone) 30%, transparent);
+  border-radius: 999px; padding: 3px 10px; white-space: nowrap;
+}
+.exchange-seal.cleared {
+  color: var(--amber-hot); border: 1px solid color-mix(in srgb, var(--amber) 65%, transparent);
+  box-shadow: 0 0 14px rgba(255, 180, 84, 0.18);
+}
+.exchange-outstanding {
+  font-family: var(--font-display); font-weight: 700; font-size: 42px; line-height: 1.1;
+  color: var(--salt); font-variant-numeric: tabular-nums; margin: 12px 0 10px;
+}
+.exchange-bar {
+  height: 9px; border-radius: 5px; overflow: hidden;
+  background: color-mix(in srgb, var(--bone) 14%, transparent);
+}
+.exchange-bar-fill {
+  height: 100%; border-radius: 5px;
+  background: linear-gradient(90deg, var(--ochre), var(--amber));
+  transition: width 260ms ease-out;
+}
+.exchange-ledger-note { margin: 12px 0 0; font-size: 13px; line-height: 1.55; }
+.exchange-pay { padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; }
+.exchange-pay-buttons { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.sheet-actions { display: flex; justify-content: flex-end; margin-top: 18px; }
+
+.chapter-outro-kicker { color: var(--amber); }
+.chapter-outro-card { border-top: 1px solid color-mix(in srgb, var(--amber) 40%, transparent); }
+
+.title-epilogue {
+  max-width: 520px; margin: 18px auto 0; padding: 14px 18px; text-align: left;
+  border-color: color-mix(in srgb, var(--teal) 55%, var(--rust-deep));
+  animation: rise 260ms ease-out;
+}
+.title-epilogue-kicker {
+  display: block; font-family: var(--font-display); font-size: 10px;
+  letter-spacing: 0.32em; color: var(--teal-bright); text-transform: uppercase;
+}
+.title-epilogue-title {
+  display: block; font-family: var(--font-display); color: var(--amber-hot);
+  letter-spacing: 0.06em; margin: 4px 0 6px;
+}
+.title-epilogue p { margin: 0 0 8px; font-size: 13.5px; line-height: 1.6; }
+
+.credits-epilogue {
+  border-left: 3px solid var(--teal); padding: 4px 0 4px 14px; font-size: 14px; line-height: 1.6;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hud-marker, .hud-mission-time.urgent { animation: none; }
   .btn, .lab-card { transition: none; }
 }
 
 @media (max-width: 720px) {
-  .board-body, .codex-body, .logbook-body { grid-template-columns: 1fr; }
+  .board-body, .codex-body, .logbook-body, .exchange-grid { grid-template-columns: 1fr; }
   .controls-list { grid-template-columns: 1fr; }
   .hud-speed-value { font-size: 34px; }
   .hud-minimap { width: 118px; height: 118px; }

@@ -36,6 +36,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
   { id: 'skyhook', title: 'Skyhook', desc: 'Stay airborne for 2 seconds in one go.', icon: '⟡', test: (s) => s.biggestAirS >= 2 },
   { id: 'wall-runner', title: 'Wall Runner', desc: 'Outrun a storm wall and live to file the report.', icon: '◉', test: (s) => s.stormsOutrun >= 1 },
   { id: 'salt-money', title: 'Salt Money', desc: 'Hold 5,000 credits at once.', icon: '¤', test: (_s, save) => save.credits >= 5000 },
+  { id: 'clean-ledger', title: 'Clean Ledger', desc: 'Pay off the 8,000-credit Driftline bond. The Guild counts it twice and smiles both times.', icon: '◈', test: (_s, save) => save.flags.includes('debt.cleared') },
   { id: 'tuned', title: 'Tuned to the Teeth', desc: 'Max out any one bike upgrade.', icon: '✦', test: (_s, save) => Math.max(save.upgrades.engine, save.upgrades.handling, save.upgrades.boost, save.upgrades.shield) >= 3 },
   { id: 'guild-friend', title: 'Counted Twice', desc: 'Reach 25 reputation with the Salt Guild.', icon: '▣', test: (_s, save) => save.rep.guild >= 25 },
   { id: 'choir-friend', title: 'Heard on the Static', desc: 'Reach 25 reputation with the Choir.', icon: '◍', test: (_s, save) => save.rep.choir >= 25 },

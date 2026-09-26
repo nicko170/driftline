@@ -9,6 +9,7 @@ import { useFrame, useThree } from '@react-three/fiber';
 import { Stars } from '@react-three/drei';
 import { useGameStore } from '../state/store';
 import { telemetry } from '../telemetry';
+import { REGIONS } from '../world/registry';
 
 /** 0..1, 0.30 = mid-morning at spawn. Advances slowly. */
 export const sky = { t: 0.32 };
@@ -32,8 +33,38 @@ const _horizon = new THREE.Color();
 const _fog = new THREE.Color();
 const _sun = new THREE.Color();
 const _bg = new THREE.Color();
+const _groundColor = new THREE.Color();
 const _sandHaze = new THREE.Color('#C98F4E');
 let stormFog = 0; // smoothed 0..1
+
+/** Region climate overrides, parsed once (see meta.json `climate`). */
+interface ClimateZone {
+  x: number; z: number; r: number;
+  fogDensity: number | null;
+  sky: THREE.Color | null;
+  ground: THREE.Color | null;
+}
+let climates: ClimateZone[] | null = null;
+function getClimates(): ClimateZone[] {
+  if (climates) return climates;
+  climates = [];
+  for (const mod of REGIONS.values()) {
+    const m = mod.meta;
+    const c = m.climate;
+    if (!c) continue;
+    // skip off-world lab benches (centres kilometres beyond the world edge)
+    if (Math.abs(m.center[0]) > 1800 || Math.abs(m.center[1]) > 1800) continue;
+    climates.push({
+      x: m.center[0],
+      z: m.center[1],
+      r: Math.max(80, m.radius) + 140, // soft falloff skirt
+      fogDensity: c.fogDensity ?? null,
+      sky: c.skyTint ? new THREE.Color(c.skyTint) : null,
+      ground: c.groundTint ? new THREE.Color(c.groundTint) : null,
+    });
+  }
+  return climates;
+}
 
 function sampleSky(t: number) {
   let i = 0;
@@ -69,6 +100,27 @@ export default function Sky() {
       sky.t = (sky.t + dt / DAY_LEN) % 1;
     }
     const { sunI, ambI } = sampleSky(sky.t);
+    _groundColor.set('#B07C3A').lerp(_fog, 0.4);
+
+    // region climate: fog/sky/ground tint lerp toward the nearest region's
+    // climate as you ride into it (crater teal, canyon dusk, storm-glass sand)
+    let fogBias = 0;
+    let wSum = 0;
+    const baseFogDensity = 0.0013 + nightFactor() * 0.0009;
+    for (const c of getClimates()) {
+      const d = Math.hypot(c.x - telemetry.x, c.z - telemetry.z);
+      let w = 1 - d / c.r;
+      if (w <= 0) continue;
+      w = Math.min(w * w * 1.2, 0.6, 1 - wSum); // squared falloff, capped per zone
+      if (w <= 0) continue;
+      wSum += w;
+      if (c.sky) {
+        _fog.lerp(c.sky, w * 0.42);
+        _horizon.lerp(c.sky, w * 0.5);
+      }
+      if (c.ground) _groundColor.lerp(c.ground, w * 0.55);
+      if (c.fogDensity !== null) fogBias += (c.fogDensity - baseFogDensity) * w;
+    }
 
     // storm haze: fog thickens and goes sand-coloured as the wall closes in
     const stormTarget = telemetry.storm ? Math.min(1, Math.max(0, 1 - telemetry.storm.dist / 500)) : 0;
@@ -84,7 +136,7 @@ export default function Sky() {
     if (!scene.fog) scene.fog = new THREE.FogExp2(_fog.getHex(), 0.0018);
     const fog = scene.fog as THREE.FogExp2;
     fog.color.copy(_fog);
-    fog.density = 0.0013 + nightFactor() * 0.0009 + stormFog * 0.0042;
+    fog.density = Math.max(0.0005, baseFogDensity + fogBias + stormFog * 0.0042);
 
     if (sun.current) {
       // sun circles the world; snapped to the player so shadows stay crisp
@@ -104,7 +156,7 @@ export default function Sky() {
     if (hemi.current) {
       hemi.current.intensity = 0.22 + ambI * 0.34;
       (hemi.current.color as THREE.Color).copy(_skyTop).lerp(new THREE.Color('#FFFFFF'), 0.4);
-      (hemi.current.groundColor as THREE.Color).set('#B07C3A').lerp(_fog, 0.4);
+      (hemi.current.groundColor as THREE.Color).copy(_groundColor);
     }
   });
 

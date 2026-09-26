@@ -17,10 +17,12 @@ import AmbientTraffic from './AmbientTraffic';
 import HUD from '../ui/HUD';
 import MissionBoard from '../ui/MissionBoard';
 import GaragePanel from '../ui/GaragePanel';
+import ExchangePanel from '../ui/ExchangePanel';
 import DialogueBox from '../ui/DialogueBox';
 import PauseMenu from '../ui/PauseMenu';
 import TouchControls from '../ui/TouchControls';
 import ChapterCard from '../ui/ChapterCard';
+import ChapterOutroCard from '../ui/ChapterOutroCard';
 import Effects from './Effects';
 import { currentChapter } from '../missions/chapters';
 import { bindInput, consume } from '../input/input';
@@ -52,6 +54,8 @@ export default function GameScreen() {
       })();
       if (pendingChapter !== null) return;
       const g = useGameStore.getState();
+      // a chapter-outro debrief card owns Esc too
+      if (g.chapterOutro !== null && g.mode === 'riding') return;
       if (g.mode === 'riding') {
         g.setMode('paused');
         g.setPhysicsPaused(true);
@@ -105,8 +109,10 @@ export default function GameScreen() {
       <HUD />
       <TouchControls />
       <ChapterCard />
+      <ChapterOutroCard />
       {mode === 'board' && <MissionBoard />}
       {mode === 'garage' && <GaragePanel />}
+      {mode === 'exchange' && <ExchangePanel />}
       {mode === 'dialogue' && <DialogueBox />}
       {mode === 'paused' && (
         <PauseMenu

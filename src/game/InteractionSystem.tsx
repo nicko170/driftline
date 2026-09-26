@@ -9,9 +9,10 @@ import { consume } from '../input/input';
 import { audio } from '../audio/audio';
 import { useGameStore } from '../state/store';
 
-const SPOTS: { ref: string; kind: 'board' | 'garage'; label: string }[] = [
+const SPOTS: { ref: string; kind: 'board' | 'garage' | 'exchange'; label: string }[] = [
   { ref: 'saltmouth:job-board', kind: 'board', label: 'Job board' },
   { ref: 'saltmouth:garage', kind: 'garage', label: "Ketch's garage" },
+  { ref: 'saltmouth:exchange', kind: 'exchange', label: 'Guild exchange' },
 ];
 
 const RADIUS = 15;
@@ -23,7 +24,7 @@ export default function InteractionSystem() {
       telemetry.interact = null;
       return;
     }
-    let best: { kind: 'board' | 'garage'; label: string } | null = null;
+    let best: { kind: 'board' | 'garage' | 'exchange'; label: string } | null = null;
     let bestD = RADIUS * RADIUS;
     for (const spot of SPOTS) {
       const a = getAnchor(spot.ref);

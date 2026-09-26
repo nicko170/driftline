@@ -18,6 +18,7 @@ import * as THREE from 'three';
 import { useFrame } from '@react-three/fiber';
 import { useGameStore, useSaveStore } from '../state/store';
 import { missionsById, type Mission, type Objective } from '../missions/library';
+import { storyByChapter } from '../missions/chapters';
 import { getAnchor, type ResolvedAnchor } from '../world/registry';
 import { telemetry, addShake } from '../telemetry';
 import { audio } from '../audio/audio';
@@ -608,6 +609,15 @@ export default function MissionDirector() {
       rewards.credits = scaled;
     }
     save.completeMission(mission.id, rewards);
+    // chapter completion → one-time debrief card (after the completion dialogue)
+    if (mission.chapter !== 'side') {
+      const n = mission.chapter as number;
+      const after = useSaveStore.getState();
+      const list = storyByChapter().get(n) ?? [];
+      if (list.length && list.every((m) => after.missionsDone.includes(m.id)) && !after.outrosSeen.includes(n)) {
+        game.setChapterOutro(n);
+      }
+    }
     // lifetime stats + achievement check (flushRideStats evaluates unlocks)
     ride.missionsDone += 1;
     if (mission.objectives.some((o) => o.type === 'storm')) ride.stormsOutrun += 1;

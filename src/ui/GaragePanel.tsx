@@ -14,6 +14,8 @@ const PARTS = [
 ] as const;
 
 const PAINTS = ['#B3502E', '#2E8C8C', '#B07C3A', '#E4D7BE', '#4A2E55', '#3A4A3A'];
+/** Earned, not bought — paying off the Driftline bond unlocks Guild Gold. */
+const GUILD_GOLD = '#FFC969';
 
 export default function GaragePanel() {
   const close = () => useGameStore.getState().setMode('riding');
@@ -22,6 +24,8 @@ export default function GaragePanel() {
   const purchase = useSaveStore((s) => s.purchase);
   const setPaint = useSaveStore((s) => s.setPaint);
   const debt = useSaveStore((s) => s.debt);
+  const debtCleared = useSaveStore((s) => s.flags.includes('debt.cleared'));
+  const paints = debtCleared && !PAINTS.includes(GUILD_GOLD) ? [...PAINTS, GUILD_GOLD] : PAINTS;
 
   return (
     <div className="overlay">
@@ -57,7 +61,7 @@ export default function GaragePanel() {
           <div className="garage-part panel">
             <div className="garage-part-head"><strong>Paint</strong></div>
             <div className="garage-paints">
-              {PAINTS.map((hex) => (
+              {paints.map((hex) => (
                 <button
                   key={hex}
                   className={`paint-swatch ${upgrades.paint === hex ? 'selected' : ''}`}
@@ -67,7 +71,7 @@ export default function GaragePanel() {
                 />
               ))}
             </div>
-            <p className="dim">Free. Ketch judges you either way.</p>
+            <p className="dim">{debtCleared ? 'Free. The gold one you earned at the Exchange.' : 'Free. Ketch judges you either way.'}</p>
           </div>
         </div>
       </div>

@@ -83,6 +83,23 @@ Faction colors: Salt Guild `ochre #B07C3A`, Choir `teal-bright #57C4B8`, Reclaim
 - **Board ribbons**: chapter pips 26px; done = teal outline, current = solid amber with glow; locked postings dashed ghost rows with reason text in sand.
 - **Fragile cargo bar** in the mission tracker: teal→red under 35%; payout note at completion.
 
+## Economy & story-beat language (iteration 4)
+
+- **Guild Exchange**: ledger sheet — big tabular outstanding figure (salt 42px), debt
+  progress bar in ochre→amber, seal chip `◈` dashed sand while on the books → solid amber
+  glow ring when CLEAR TITLE. Payment buttons chunky; "All I can" is the primary action.
+- **Chapter outro**: same chapter-card language as intros, but the kicker is amber
+  ("Chapter N complete — debrief") instead of teal; card gains a 1px amber top border.
+  Debrief voice: past-tense, warm, one image + one hook forward.
+- **Ending epilogue** (title screen): panel card under the tagline, teal kicker
+  "LAST DELIVERY — MADE", amber-hot ending title, bone body text; also a teal-left-rule
+  stanza on the credits screen.
+- **Guild Gold paint** (`#FFC969` amber-hot) is an earned paint, never in the free row —
+  unlocks with `debt.cleared`.
+- **Region climate**: skylight should feel different per region — teal haze in the Choir
+  crater, dusk violet in the canyon slalom, denser dry air at Mothersgate. Blends by
+  proximity; the base day/night keyframes always dominate.
+
 ## Performance budgets
 
 - 60fps mid laptop at Medium: pixelRatio ≤1.5, shadow 1024, scatter ≤ ~2k instances, fog-over-draw minimal, no per-frame allocations in the render or physics hot paths (module-level scratch objects only).
