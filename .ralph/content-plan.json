@@ -24,7 +24,7 @@
    "slug": "ch1-debt-shield",
    "title": "Debt Shield",
    "cluster": "missions",
-   "intent": "Ch1 story mission. Ketch sends Ash to pick up second-hand gyro parts from the reclaimer trader camped at saltmouth:gate-east and deliver them to the garage \u2014 the first upgrade discount. Teaches the garage. Flags ch1-debt-shield.done; unlocks garage tip dialogue.",
+   "intent": "Ch1 story mission. Ketch sends Ash to pick up second-hand gyro parts from the reclaimer trader camped at saltmouth:gate-east and deliver them to the garage — the first upgrade discount. Teaches the garage. Flags ch1-debt-shield.done; unlocks garage tip dialogue.",
    "keywords": [
     "chapter 1",
     "deliver",
@@ -80,7 +80,7 @@
    "slug": "ch2-guild-offer",
    "title": "The Guild's Offer",
    "cluster": "missions",
-   "intent": "Ch2 story. Deliver the null-crate custody papers to skydocks:dockmaster on the mesa \u2014 the Guild wants the crate archived. Sets faction offers in motion. Requires ch1-the-hum.done. Dialogue choice: promise the Guild preference (flag offer.guild) or hedge.",
+   "intent": "Ch2 story. Deliver the null-crate custody papers to skydocks:dockmaster on the mesa — the Guild wants the crate archived. Sets faction offers in motion. Requires ch1-the-hum.done. Dialogue choice: promise the Guild preference (flag offer.guild) or hedge.",
    "keywords": [
     "chapter 2",
     "deliver",
@@ -137,7 +137,7 @@
    "slug": "ch2-glassroad-race",
    "title": "Run the Glassroad",
    "cluster": "missions",
-   "intent": "Ch2 story (race). A timed checkpoint race down the glassroad canyon (gate-south \u2192 slick-mile \u2192 mid-span \u2192 glass-chapel \u2192 gate-north). Slick grip teaches braking. Jett Marrows taunts on the radio. Flags ch2-glassroad-race.done + rep driftline cred.",
+   "intent": "Ch2 story (race). A timed checkpoint race down the glassroad canyon (gate-south → slick-mile → mid-span → glass-chapel → gate-north). Slick grip teaches braking. Jett Marrows taunts on the radio. Flags ch2-glassroad-race.done + rep driftline cred.",
    "keywords": [
     "chapter 2",
     "race",
@@ -325,7 +325,7 @@
    "slug": "ch4-the-key",
    "title": "The Key",
    "cluster": "missions",
-   "intent": "Ch4 story (fragile). Recover the null crate from the south-gate relay cache and carry it \u2014 humming loud now \u2014 to mothersgate:approach. Sprint pacing, storm flanks. Flags crate.at-gate.",
+   "intent": "Ch4 story (fragile). Recover the null crate from the south-gate relay cache and carry it — humming loud now — to mothersgate:approach. Sprint pacing, storm flanks. Flags crate.at-gate.",
    "keywords": [
     "chapter 4",
     "deliver",
@@ -343,7 +343,7 @@
    "slug": "ch4-three-fires",
    "title": "Three Fires",
    "cluster": "missions",
-   "intent": "Ch4 story. Visit all three faction leaders (skydocks, choirhollow, cinderflats) \u2014 each makes their final case for the gate combination. Dialogue choice sets gate.ally (guild|choir|reclaimers|none).",
+   "intent": "Ch4 story. Visit all three faction leaders (skydocks, choirhollow, cinderflats) — each makes their final case for the gate combination. Dialogue choice sets gate.ally (guild|choir|reclaimers|none).",
    "keywords": [
     "chapter 4",
     "faction choice",
@@ -379,7 +379,7 @@
    "slug": "ch4-door-opens",
    "title": "The Door Opens Like a Flower",
    "cluster": "missions",
-   "intent": "Ch4 finale (goto \u2192 dialogue setpiece). Bring the crate to mothersgate:the-door; it opens petal by petal. Long scripted dialogue with MOTHER's first full sentences. Sets gate.open + lore:mother-voice.",
+   "intent": "Ch4 finale (goto → dialogue setpiece). Bring the crate to mothersgate:the-door; it opens petal by petal. Long scripted dialogue with MOTHER's first full sentences. Sets gate.open + lore:mother-voice.",
    "keywords": [
     "chapter 4",
     "finale",
@@ -398,7 +398,7 @@
    "slug": "ch5-last-deliveries",
    "title": "Last Deliveries",
    "cluster": "missions",
-   "intent": "Ch5 opener. Three farewell drops in one run \u2014 Ketch's tea, Pemmy's oats, a letter Tamsin never sends. Quiet, warm, deliberately slow before the storm. Unlocks after gate.open.",
+   "intent": "Ch5 opener. Three farewell drops in one run — Ketch's tea, Pemmy's oats, a letter Tamsin never sends. Quiet, warm, deliberately slow before the storm. Unlocks after gate.open.",
    "keywords": [
     "chapter 5",
     "deliver",
@@ -416,7 +416,7 @@
    "slug": "ch5-the-core",
    "title": "The Choice-Core",
    "cluster": "missions",
-   "intent": "Ch5 story (fragile). MOTHER hands over her choice-core \u2014 her waking, held in your hands. Carry it out of the cradle to the rally point; every faction offers escort and arguments.",
+   "intent": "Ch5 story (fragile). MOTHER hands over her choice-core — her waking, held in your hands. Carry it out of the cradle to the rally point; every faction offers escort and arguments.",
    "keywords": [
     "chapter 5",
     "fragile",
@@ -452,7 +452,7 @@
    "slug": "ch5-skyship-ballot",
    "title": "The Skyship Ballot",
    "cluster": "missions",
-   "intent": "Ch5 story (race/timed). The settlements vote on Kessa-9's future by skyship beacon relay; you're the relay. Checkpoint route linking windspine \u2192 skydocks \u2192 saltmouth under a hard time limit.",
+   "intent": "Ch5 story (race/timed). The settlements vote on Kessa-9's future by skyship beacon relay; you're the relay. Checkpoint route linking windspine → skydocks → saltmouth under a hard time limit.",
    "keywords": [
     "chapter 5",
     "race",
@@ -471,7 +471,7 @@
    "slug": "ch5-last-delivery",
    "title": "Last Delivery",
    "cluster": "missions",
-   "intent": "Ch5 finale (deliver + choice). One final run to the Door carrying the choice-core through whatever the desert has left. At the threshold a dialogue choice: wake MOTHER (flag ending.rain \u2014 credit crawl over blooming desert) or return her to sleep (flag ending.quiet \u2014 credits over the unchanged hard free land). Both endings fully staged.",
+   "intent": "Ch5 finale (deliver + choice). One final run to the Door carrying the choice-core through whatever the desert has left. At the threshold a dialogue choice: wake MOTHER (flag ending.rain — credit crawl over blooming desert) or return her to sleep (flag ending.quiet — credits over the unchanged hard free land). Both endings fully staged.",
    "keywords": [
     "chapter 5",
     "finale",
@@ -528,7 +528,7 @@
    "slug": "side-condenser-clock",
    "title": "Against the Condenser",
    "cluster": "missions",
-   "intent": "Side (timed). Water credits expire at dusk: exchange \u2192 water tower \u2192 moorage in 120s. Teaches town shortcuts; repeatable-feel board filler.",
+   "intent": "Side (timed). Water credits expire at dusk: exchange → water tower → moorage in 120s. Teaches town shortcuts; repeatable-feel board filler.",
    "keywords": [
     "side",
     "timed",
@@ -638,7 +638,7 @@
    "slug": "side-lost-crate-1",
    "title": "Lost: One (1) Crate, Rustic",
    "cluster": "missions",
-   "intent": "Side (collect\u2192deliver). A Reclaimer crate bounced off a hauler somewhere on the saltmouth\u2192drowned road; find 3 impact marks, then deliver the crate to the array cairn.",
+   "intent": "Side (collect→deliver). A Reclaimer crate bounced off a hauler somewhere on the saltmouth→drowned road; find 3 impact marks, then deliver the crate to the array cairn.",
    "keywords": [
     "side",
     "lost cargo",
@@ -692,7 +692,7 @@
    "slug": "side-night-supply",
    "title": "Night Supply Window",
    "cluster": "missions",
-   "intent": "Side (timed). The storm gauge crew only opens their hatch at night; deliver battery cells saltmouth\u2192windspine:storm-gauge after dark. Teaches day/night awareness.",
+   "intent": "Side (timed). The storm gauge crew only opens their hatch at night; deliver battery cells saltmouth→windspine:storm-gauge after dark. Teaches day/night awareness.",
    "keywords": [
     "side",
     "timed",
@@ -820,7 +820,7 @@
    "slug": "side-crest-dash",
    "title": "Crest Dash",
    "cluster": "missions",
-   "intent": "Side (race). Pure speed trial: survey-camp \u2192 ridge-crest \u2192 south-foot gates with a hard time. Windspine's signature sprint.",
+   "intent": "Side (race). Pure speed trial: survey-camp → ridge-crest → south-foot gates with a hard time. Windspine's signature sprint.",
    "keywords": [
     "side",
     "race",
@@ -894,7 +894,7 @@
    "slug": "side-long-way-home",
    "title": "The Long Way Home",
    "cluster": "missions",
-   "intent": "Side (deliver). An old moorage hand pays you to 'lose' his eviction notice \u2014 deliver it to the wrong dock, then back to the exchange with apologies. Warm humor, double-leg route.",
+   "intent": "Side (deliver). An old moorage hand pays you to 'lose' his eviction notice — deliver it to the wrong dock, then back to the exchange with apologies. Warm humor, double-leg route.",
    "keywords": [
     "side",
     "deliver",
@@ -931,7 +931,7 @@
    "slug": "side-guild-runner",
    "title": "Guild Runner: Contracts",
    "cluster": "missions",
-   "intent": "Side (timed). Three Guild contracts, three towns, one afternoon: exchange \u2192 dockmaster \u2192 boss-office and back. Route-planning exam.",
+   "intent": "Side (timed). Three Guild contracts, three towns, one afternoon: exchange → dockmaster → boss-office and back. Route-planning exam.",
    "keywords": [
     "side",
     "timed",
@@ -949,7 +949,7 @@
    "slug": "side-ember-run",
    "title": "Ember Run",
    "cluster": "missions",
-   "intent": "Side (deliver, night). Reclaimers pay double for a warm reactor brick cinderflats\u2192choirhollow before it cools (decay timer). Visual: glowing cargo light on the bike.",
+   "intent": "Side (deliver, night). Reclaimers pay double for a warm reactor brick cinderflats→choirhollow before it cools (decay timer). Visual: glowing cargo light on the bike.",
    "keywords": [
     "side",
     "timed",
@@ -975,10 +975,11 @@
     "paint",
     "reward"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790390492.3508842
+   "claimed_at": 1790390492.3508842,
+   "done_at": "2026-09-26T13:13:22"
   },
   {
    "kind": "article",
@@ -992,10 +993,11 @@
     "lore-heavy",
     "quiet"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790390492.3508852
+   "claimed_at": 1790390492.3508852,
+   "done_at": "2026-09-26T13:13:22"
   },
   {
    "kind": "article",
@@ -1010,10 +1012,11 @@
     "ketch",
     "joy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790390492.3508859
+   "claimed_at": 1790390492.3508859,
+   "done_at": "2026-09-26T13:13:22"
   },
   {
    "kind": "article",
@@ -1028,10 +1031,11 @@
     "guild",
     "town"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790390492.3508859
+   "claimed_at": 1790390492.3508859,
+   "done_at": "2026-09-26T13:13:22"
   },
   {
    "kind": "article",
@@ -1056,7 +1060,7 @@
    "slug": "brinemaster-ogo",
    "title": "Brinemaster Ogo",
    "cluster": "characters",
-   "intent": "Guildmaster of the Salt Guild, skydocks. Huge patient man who chairs disputes like weather. Wants the crate archived before it 'makes history \u2014 history is bad for margins'. 8+ lines incl. radio.",
+   "intent": "Guildmaster of the Salt Guild, skydocks. Huge patient man who chairs disputes like weather. Wants the crate archived before it 'makes history — history is bad for margins'. 8+ lines incl. radio.",
    "keywords": [
     "guild",
     "leader",
@@ -1504,7 +1508,7 @@
    "slug": "evening-standard",
    "title": "The Evening Standard",
    "cluster": "characters",
-   "intent": "Radio host of the nightly broadcast heard between regions; dry headlines of your own deeds a day late and slightly wrong. A chorus character \u2014 radio-heavy line set.",
+   "intent": "Radio host of the nightly broadcast heard between regions; dry headlines of your own deeds a day late and slightly wrong. A chorus character — radio-heavy line set.",
    "keywords": [
     "radio",
     "news",
@@ -1522,7 +1526,7 @@
    "slug": "nona-vex",
    "title": "Nona Vex",
    "cluster": "characters",
-   "intent": "Skydocks fuel mistress; converts skyships to\u5bfa\u9662 no\u2014 converts skycranes to run on stormstatic. Sells boost-cell upgrades with minimal eye contact.",
+   "intent": "Skydocks fuel mistress; converts skyships to寺院 no— converts skycranes to run on stormstatic. Sells boost-cell upgrades with minimal eye contact.",
    "keywords": [
     "skydocks",
     "fuel",
@@ -1565,8 +1569,10 @@
     "keel-town",
     "dockmaster"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790392412.193249
   },
   {
    "kind": "article",
@@ -1580,8 +1586,10 @@
     "books",
     "shrine"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790392412.19325
   },
   {
    "kind": "article",
@@ -1595,8 +1603,10 @@
     "melancholy",
     "automaton"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790392412.1932511
   },
   {
    "kind": "article",
@@ -1610,15 +1620,17 @@
     "hauler",
     "comedy"
    ],
-   "status": "planned",
-   "added_by": "writer2"
+   "status": "claimed",
+   "added_by": "writer2",
+   "worker": "writer2",
+   "claimed_at": 1790392412.1932511
   },
   {
    "kind": "article",
    "slug": "lore-windspine-field-guide",
    "title": "Windspine Ridge: Field Guide Appendix",
    "cluster": "lore",
-   "intent": "Field-guide entry, 250+ words: turbine lumber no\u2014 turbine lore, ridge etiquette, storm-gauge duties, why surveyors tap the towers before dawn.",
+   "intent": "Field-guide entry, 250+ words: turbine lumber no— turbine lore, ridge etiquette, storm-gauge duties, why surveyors tap the towers before dawn.",
    "keywords": [
     "field-guide",
     "windspine",
@@ -1760,7 +1772,7 @@
    "slug": "lore-the-delay",
    "title": "The Delay: An Oral History",
    "cluster": "lore",
-   "intent": "Log/oral history, 250+ words: five voices on the day the money ran out \u2014 a treasurer, a teacher, a terraforming tech, a child, and the person who pulled the plug.",
+   "intent": "Log/oral history, 250+ words: five voices on the day the money ran out — a treasurer, a teacher, a terraforming tech, a child, and the person who pulled the plug.",
    "keywords": [
     "history",
     "the delay",
@@ -1777,7 +1789,7 @@
    "slug": "lore-mother-boot-sequence",
    "title": "MOTHER: Boot Sequence, Partial Log",
    "cluster": "lore",
-   "intent": "Machine record, 250+ words: fragmentary boot log from the dormant terraforming AI \u2014 checksum errors that read like yawns; the last line timestamps tomorrow.",
+   "intent": "Machine record, 250+ words: fragmentary boot log from the dormant terraforming AI — checksum errors that read like yawns; the last line timestamps tomorrow.",
    "keywords": [
     "MOTHER",
     "machine",
@@ -1795,7 +1807,7 @@
    "slug": "lore-mother-memoirs",
    "title": "Things I Meant to Finish (MOTHER, draft 0)",
    "cluster": "lore",
-   "intent": "Machine record, 250+ words: the AI's half-written design memoir \u2014 poems about aquifers, strong opinions on dune spacing, one paragraph that is clearly an apology.",
+   "intent": "Machine record, 250+ words: the AI's half-written design memoir — poems about aquifers, strong opinions on dune spacing, one paragraph that is clearly an apology.",
    "keywords": [
     "MOTHER",
     "memoir",
@@ -1831,7 +1843,7 @@
    "slug": "lore-choir-litany-1",
    "title": "Static Litany I: The Sleeping Garden",
    "cluster": "lore",
-   "intent": "Choir tract, 250+ words: the foundational litany \u2014 MOTHER as gardener asleep mid-sentence; the rain that was promised; a lullaby structure with liturgical jokes.",
+   "intent": "Choir tract, 250+ words: the foundational litany — MOTHER as gardener asleep mid-sentence; the rain that was promised; a lullaby structure with liturgical jokes.",
    "keywords": [
     "choir",
     "litany",
@@ -1885,7 +1897,7 @@
    "slug": "lore-guild-ledger-year-one",
    "title": "Ledger Excerpts: Year One of the Delay",
    "cluster": "lore",
-   "intent": "Guild tract, 250+ words: the first year's ledger \u2014 ration arithmetic, the birth of the board system, one entry for 'hope, misc., quantity: sufficient'.",
+   "intent": "Guild tract, 250+ words: the first year's ledger — ration arithmetic, the birth of the board system, one entry for 'hope, misc., quantity: sufficient'.",
    "keywords": [
     "guild",
     "ledger",
@@ -1903,7 +1915,7 @@
    "slug": "lore-guild-form-22b",
    "title": "A Complete History of Form 22-B",
    "cluster": "lore",
-   "intent": "Guild tract, 250+ words: the anomalous-cargo form's 214-year evolution, including the intralking\u2014 including the incident with the bees, the ghost net, and the crate that filed itself.",
+   "intent": "Guild tract, 250+ words: the anomalous-cargo form's 214-year evolution, including the intralking— including the incident with the bees, the ghost net, and the crate that filed itself.",
    "keywords": [
     "guild",
     "bureaucracy",
@@ -1973,7 +1985,7 @@
    "slug": "lore-reclaimer-crusher",
    "title": "The Crusher: Service Record",
    "cluster": "lore",
-   "intent": "Machine record, 250+ words: the maintenance log of the Yards' beloved crusher \u2014 40 years of 'still operational' entries, each more affectionate than the last.",
+   "intent": "Machine record, 250+ words: the maintenance log of the Yards' beloved crusher — 40 years of 'still operational' entries, each more affectionate than the last.",
    "keywords": [
     "reclaimers",
     "crusher",
@@ -1991,7 +2003,7 @@
    "slug": "lore-driftline-creed",
    "title": "The Driftline Creed (With Commentary)",
    "cluster": "lore",
-   "intent": "Driftline tract, 250+ words: 'Any crate, any storm, any door' \u2014 origins, exceptions, the footnote about the crate that hums. Unlock flag lore:driftline-creed.",
+   "intent": "Driftline tract, 250+ words: 'Any crate, any storm, any door' — origins, exceptions, the footnote about the crate that hums. Unlock flag lore:driftline-creed.",
    "keywords": [
     "driftline",
     "creed",
@@ -2025,7 +2037,7 @@
   {
    "kind": "article",
    "slug": "lore-rill-flight-log-1",
-   "title": "Rill Davenant's Flight Log \u2014 Early Entries",
+   "title": "Rill Davenant's Flight Log — Early Entries",
    "cluster": "lore",
    "intent": "Personal log, 250+ words: young Rill learning the flats; jokes that stop being jokes when you know what's coming in ch3.",
    "keywords": [
@@ -2042,7 +2054,7 @@
   {
    "kind": "article",
    "slug": "lore-rill-flight-log-2",
-   "title": "Rill Davenant's Flight Log \u2014 The Gap",
+   "title": "Rill Davenant's Flight Log — The Gap",
    "cluster": "lore",
    "intent": "Personal log, 250+ words: entries before the vanishing; route to the survey pylons annotated with 'if you're reading this, wrong, but keep reading'.",
    "keywords": [
@@ -2080,7 +2092,7 @@
    "slug": "lore-broadcast-storm-season",
    "title": "Evening Standard: Storm Season Special (Transcript)",
    "cluster": "lore",
-   "intent": "Broadcast, 250+ words: the nightly radio's storm season kickoff \u2014 safety tips, goat forecast drama, and one story that is clearly about Ash with the name mispronounced.",
+   "intent": "Broadcast, 250+ words: the nightly radio's storm season kickoff — safety tips, goat forecast drama, and one story that is clearly about Ash with the name mispronounced.",
    "keywords": [
     "broadcast",
     "radio",
@@ -2116,7 +2128,7 @@
    "slug": "lore-broadcast-finale",
    "title": "Evening Standard: The Night the Desert Changed",
    "cluster": "lore",
-   "intent": "Broadcast, 250+ words: the finale broadcast \u2014 either the night of first rain or the night of chosen quiet, written to serve both endings with one unreconciled sentence each way.",
+   "intent": "Broadcast, 250+ words: the finale broadcast — either the night of first rain or the night of chosen quiet, written to serve both endings with one unreconciled sentence each way.",
    "keywords": [
     "broadcast",
     "ending",
@@ -2188,7 +2200,7 @@
    "slug": "lore-bike-anatomy",
    "title": "Your Hover-Bike and You",
    "cluster": "lore",
-   "intent": "Field-guide, 250+ words: horizon cells, gyro cages, boost cells, cargo shields \u2014 a courier's maintenance primer as flat prose.",
+   "intent": "Field-guide, 250+ words: horizon cells, gyro cages, boost cells, cargo shields — a courier's maintenance primer as flat prose.",
    "keywords": [
     "bikes",
     "mechanics",
@@ -2205,7 +2217,7 @@
    "slug": "lore-first-courier",
    "title": "The First Courier (Probably)",
    "cluster": "lore",
-   "intent": "Log/legend, 250+ words: the founding myth of the Driftline \u2014 one rider, one crate, one closing storm, and a door that opened. Sister cities dispute every detail.",
+   "intent": "Log/legend, 250+ words: the founding myth of the Driftline — one rider, one crate, one closing storm, and a door that opened. Sister cities dispute every detail.",
    "keywords": [
     "legend",
     "driftline",
@@ -2223,7 +2235,7 @@
    "slug": "lore-salt-guild-audit",
    "title": "The Long Audit: Sister Counterweight's Memoir",
    "cluster": "lore",
-   "intent": "Log, 250+ words: excerpts from the auditor's private record \u2014 the night she weighed the null crate, and why she now counts backwards.",
+   "intent": "Log, 250+ words: excerpts from the auditor's private record — the night she weighed the null crate, and why she now counts backwards.",
    "keywords": [
     "guild",
     "auditor",
@@ -2259,7 +2271,7 @@
    "slug": "lore-glass-bloom-bulletin",
    "title": "Botanical Emergency Bulletin 4: Glass Blooms",
    "cluster": "lore",
-   "intent": "Record, 250+ words: first official notice of the ch4 glass blooms \u2014 four parties' annotations creep steadily from alarm toward wonder.",
+   "intent": "Record, 250+ words: first official notice of the ch4 glass blooms — four parties' annotations creep steadily from alarm toward wonder.",
    "keywords": [
     "glass blooms",
     "chapter 4",
@@ -2312,7 +2324,7 @@
    "slug": "lore-rain-witness",
    "title": "Accounts of Rain (Pre-Delay)",
    "cluster": "lore",
-   "intent": "Oral history, 250+ words: what rain was, from people who remember it \u2014 smell, noise, invoices for umbrellas, one person who hated it and is now mythologically wrong.",
+   "intent": "Oral history, 250+ words: what rain was, from people who remember it — smell, noise, invoices for umbrellas, one person who hated it and is now mythologically wrong.",
    "keywords": [
     "rain",
     "history",
@@ -2330,7 +2342,7 @@
    "slug": "lore-choice-warrant",
    "title": "The Choice Warrant (Template, Unused)",
    "cluster": "lore",
-   "intent": "Machine record, 250+ words: the corporate template authorizing wake/sleep decisions for terraform seeds \u2014 with MOTHER's handwritten-in-script note: 'this one is yours now'.",
+   "intent": "Machine record, 250+ words: the corporate template authorizing wake/sleep decisions for terraform seeds — with MOTHER's handwritten-in-script note: 'this one is yours now'.",
    "keywords": [
     "choice",
     "MOTHER",
@@ -2348,7 +2360,7 @@
    "slug": "lore-wren-service-record",
    "title": "Service Record: One (1) Second-Hand Hover-Bike",
    "cluster": "lore",
-   "intent": "Log, 250+ words: the Wren's maintenance history \u2014 three owners, notable dents, one entry in Ketch's handwriting that just says 'good bike, don't tell her'.",
+   "intent": "Log, 250+ words: the Wren's maintenance history — three owners, notable dents, one entry in Ketch's handwriting that just says 'good bike, don't tell her'.",
    "keywords": [
     "bike",
     "wren",
@@ -2384,7 +2396,7 @@
    "slug": "lore-moorage-stories",
    "title": "Moorage Pay: Collected Stories",
    "cluster": "lore",
-   "intent": "Log, 250+ words: stories the moorage crew pays water debts with \u2014 docked ghosts, a race with the wind, the mailbag that sang.",
+   "intent": "Log, 250+ words: stories the moorage crew pays water debts with — docked ghosts, a race with the wind, the mailbag that sang.",
    "keywords": [
     "moorage",
     "stories",
@@ -2402,7 +2414,7 @@
    "slug": "lore-keel-town-charter",
    "title": "Keel Town Hang-Tenants' Agreement",
    "cluster": "lore",
-   "intent": "Tract, 250+ words: the charter of the town hung off the skydocks rim \u2014 weight limits, envy clauses, and the annual 'swing festival'.",
+   "intent": "Tract, 250+ words: the charter of the town hung off the skydocks rim — weight limits, envy clauses, and the annual 'swing festival'.",
    "keywords": [
     "skydocks",
     "keel town",
@@ -2420,7 +2432,7 @@
    "slug": "lore-ash-application",
    "title": "Driftline Application: A. Varga",
    "cluster": "lore",
-   "intent": "Record, 250+ words: Ash's own courier application \u2014 half-qualified, fully stubborn, annotated by Ketch ('teachable') and Tamsin ('insurable, barely').",
+   "intent": "Record, 250+ words: Ash's own courier application — half-qualified, fully stubborn, annotated by Ketch ('teachable') and Tamsin ('insurable, barely').",
    "keywords": [
     "ash",
     "application",
@@ -2438,7 +2450,7 @@
    "slug": "hover-playground",
    "title": "Hover Playground",
    "cluster": "demos",
-   "intent": "A no-stakes hover-bike physics sandbox on a small bespoke dunes map (not the main world): adjustable hover spring, grip, boost, drift parameters via live sliders so players can literally tune the bike. Product: param play toy for tuning feel between releases. Art direction: lab-clean variant of the salt palette \u2014 flattened salt pan, teal grid horizon markers, amber parameter chips. Interactions: WASD/Shift/Space driving, sliders update physics same-frame, reset-to-spawn button, parameter presets (arcade/sim/drift missile). Stack: React + R3F; keep self-contained in src/lab/hover-playground/.",
+   "intent": "A no-stakes hover-bike physics sandbox on a small bespoke dunes map (not the main world): adjustable hover spring, grip, boost, drift parameters via live sliders so players can literally tune the bike. Product: param play toy for tuning feel between releases. Art direction: lab-clean variant of the salt palette — flattened salt pan, teal grid horizon markers, amber parameter chips. Interactions: WASD/Shift/Space driving, sliders update physics same-frame, reset-to-spawn button, parameter presets (arcade/sim/drift missile). Stack: React + R3F; keep self-contained in src/lab/hover-playground/.",
    "keywords": [],
    "status": "done",
    "added_by": "builder",
@@ -2516,7 +2528,7 @@
    "slug": "compass-minimap-lab",
    "title": "Compass & Minimap Lab",
    "cluster": "demos",
-   "intent": "UI lab for the HUD navigation: a fake world with draggable anchors to test compass tick positioning, waypoint diamond clamping, minimap contrast at 4 palettes (day/naught no\u2014 day/dusk/night/storm). Purpose: prove colour-blind-safe shapes. Stack: pure React + canvas 2D.",
+   "intent": "UI lab for the HUD navigation: a fake world with draggable anchors to test compass tick positioning, waypoint diamond clamping, minimap contrast at 4 palettes (day/naught no— day/dusk/night/storm). Purpose: prove colour-blind-safe shapes. Stack: pure React + canvas 2D.",
    "keywords": [],
    "status": "done",
    "added_by": "builder",
@@ -2610,7 +2622,7 @@
    "slug": "dockmaster-vane",
    "title": "Dockmaster Vane",
    "cluster": "characters",
-   "intent": "Dockmaster of Keel Town at the skydocks mesa \u2014 the Guild's sky port. Runs moorings like a lighthouse keeper who learned accounting. Recipient of ch2-guild-offer custody papers. Voice: airy, clipped, mildly afraid of the ground.",
+   "intent": "Dockmaster of Keel Town at the skydocks mesa — the Guild's sky port. Runs moorings like a lighthouse keeper who learned accounting. Recipient of ch2-guild-offer custody papers. Voice: airy, clipped, mildly afraid of the ground.",
    "keywords": [
     "guild",
     "skydocks",
@@ -2642,7 +2654,7 @@
    "slug": "keeper-solei",
    "title": "Keeper Solei",
    "cluster": "characters",
-   "intent": "Keeper of the mid-span shrine on the Glassroad canyon \u2014 a truck-stop chapel for couriers. Orders BOOKS (side-canyon-post). Speaks in weathered proverbs and brews terrible tea loved by all.",
+   "intent": "Keeper of the mid-span shrine on the Glassroad canyon — a truck-stop chapel for couriers. Orders BOOKS (side-canyon-post). Speaks in weathered proverbs and brews terrible tea loved by all.",
    "keywords": [
     "independent",
     "glassroad",
@@ -2887,7 +2899,7 @@
    "slug": "terraforming-report",
    "title": "Kessa-9 Terraforming Progress Report, Quarter Abandoned",
    "cluster": "lore",
-   "intent": "Category: record. The official terraforming progress report that was being written when the money ran out \u2014 optimistic quarterly language colliding with 'funding suspended' stamps. Explains why Kessa-9 is half a garden.",
+   "intent": "Category: record. The official terraforming progress report that was being written when the money ran out — optimistic quarterly language colliding with 'funding suspended' stamps. Explains why Kessa-9 is half a garden.",
    "keywords": [
     "terraforming",
     "history",
@@ -3571,7 +3583,7 @@
    "slug": "dead-channel-lullaby",
    "title": "Found Static: The Lullaby on the Dead Channel",
    "cluster": "lore",
-   "intent": "Category: broadcast. Found static: an old terraforming-era lullaby broadcast that loops on a dead channel; the Choir leaves it playing;\u6b4c\u8bcd unknown, everyone hums along. Wait \u2014 no Chinese. Lyrics unknown, everyone hums along.",
+   "intent": "Category: broadcast. Found static: an old terraforming-era lullaby broadcast that loops on a dead channel; the Choir leaves it playing;歌词 unknown, everyone hums along. Wait — no Chinese. Lyrics unknown, everyone hums along.",
    "keywords": [
     "lullaby",
     "broadcast",
@@ -3682,7 +3694,7 @@
    "slug": "glass-blooms-notes",
    "title": "Glass Blooms: First Observations",
    "cluster": "lore",
-   "intent": "Field guide entry: glass blooms \u2014 the new crystal flowers erupting along the Glassroad in ch4. Observation notes, sketches-in-words, warnings. Category: field-guide.",
+   "intent": "Field guide entry: glass blooms — the new crystal flowers erupting along the Glassroad in ch4. Observation notes, sketches-in-words, warnings. Category: field-guide.",
    "keywords": [
     "glass blooms",
     "ch4",
@@ -3700,7 +3712,7 @@
    "slug": "doctrine-of-the-cradle",
    "title": "The Doctrine of the Cradle (visitor's edition)",
    "cluster": "lore",
-   "intent": "Choir tract: the doctrine of the Cradle \u2014 where MOTHER sleeps, why the Choir carries light to her, why couriers are honorary clergy on crater roads.",
+   "intent": "Choir tract: the doctrine of the Cradle — where MOTHER sleeps, why the Choir carries light to her, why couriers are honorary clergy on crater roads.",
    "keywords": [
     "choir",
     "cradle",
@@ -3754,7 +3766,7 @@
    "slug": "first-brinemaster",
    "title": "Of the First Brinemaster (approved history)",
    "cluster": "lore",
-   "intent": "Guild ledgers as scripture: the Guild's own founding story \u2014 the first Brinemaster, the first scale, the first lie caught by the second. Category: record.",
+   "intent": "Guild ledgers as scripture: the Guild's own founding story — the first Brinemaster, the first scale, the first lie caught by the second. Category: record.",
    "keywords": [
     "guild",
     "history",
@@ -3772,7 +3784,7 @@
    "slug": "night-riding-notes",
    "title": "Night Riding: A Courier's Notes",
    "cluster": "lore",
-   "intent": "Field guide: riding at night \u2014 violet sky, cold glass, stars, the way the desert reads your headlight and the things that read it back.",
+   "intent": "Field guide: riding at night — violet sky, cold glass, stars, the way the desert reads your headlight and the things that read it back.",
    "keywords": [
     "night",
     "riding",
@@ -3808,7 +3820,7 @@
    "slug": "keel-town-docking-gazette",
    "title": "Keel Town Docking Gazette (weekly)",
    "cluster": "lore",
-   "intent": "Keel Town's own paper: a skyship docking schedule laced with gossip \u2014 who shipped what, who isn't talking, one entry that just says 'the crate passed by again'. Category: record.",
+   "intent": "Keel Town's own paper: a skyship docking schedule laced with gossip — who shipped what, who isn't talking, one entry that just says 'the crate passed by again'. Category: record.",
    "keywords": [
     "skydocks",
     "keel-town",
@@ -3844,7 +3856,7 @@
    "slug": "union-liturgy-machines",
    "title": "Services for the Retired Machine (Local 9 liturgy)",
    "cluster": "lore",
-   "intent": "Reclaimer liturgy for machinery: Aunt Vertex's full service for retiring a machine \u2014 said over turbines, haulers, and once a vending unit. Category: tract.",
+   "intent": "Reclaimer liturgy for machinery: Aunt Vertex's full service for retiring a machine — said over turbines, haulers, and once a vending unit. Category: tract.",
    "keywords": [
     "reclaimers",
     "vertex",
@@ -3880,7 +3892,7 @@
    "slug": "ledger-redactions",
    "title": "Entries Removed From the Master Ledger (index of)",
    "cluster": "lore",
-   "intent": "What has been politely scratched out of the master ledgers over the years \u2014 a catalogue of redactions, each scratched line more interesting than the entry it ruined. Category: record.",
+   "intent": "What has been politely scratched out of the master ledgers over the years — a catalogue of redactions, each scratched line more interesting than the entry it ruined. Category: record.",
    "keywords": [
     "guild",
     "redactions",
@@ -3952,7 +3964,7 @@
    "slug": "cradle-door-status",
    "title": "Cradle Door, Systems Report (auto-generated)",
    "cluster": "lore",
-   "intent": "First contact with mothersgate in ch4: the door's health report after 200 years \u2014 all systems green, one small anomaly (a printer that should have no power). Category: record.",
+   "intent": "First contact with mothersgate in ch4: the door's health report after 200 years — all systems green, one small anomaly (a printer that should have no power). Category: record.",
    "keywords": [
     "mothersgate",
     "door",
@@ -4099,7 +4111,7 @@
    "slug": "reclaimer-grace-prayers",
    "title": "Grace Before Salvage: Reclaimer Meal Prayers",
    "cluster": "lore",
-   "intent": "The short prayers reclaimer crews say before cutting into old infrastructure \u2014 equal parts apology to the machine, insurance against ghosts, and practical blame-assignment for whoever holds the torch.",
+   "intent": "The short prayers reclaimer crews say before cutting into old infrastructure — equal parts apology to the machine, insurance against ghosts, and practical blame-assignment for whoever holds the torch.",
    "keywords": [
     "reclaimers",
     "salvage",
@@ -4115,7 +4127,7 @@
    "slug": "choir-static-litanies",
    "title": "Three Static Litanies (Annotated)",
    "cluster": "lore",
-   "intent": "Three canonical Choir 'static litanies' \u2014 prayers spoken into dead radios \u2014 with margin notes by a younger initiate who keeps hearing actual words in the noise and is afraid to say so.",
+   "intent": "Three canonical Choir 'static litanies' — prayers spoken into dead radios — with margin notes by a younger initiate who keeps hearing actual words in the noise and is afraid to say so.",
    "keywords": [
     "choir",
     "litanies",
@@ -4163,7 +4175,7 @@
    "slug": "skydocks-moorage-rules",
    "title": "Keel Town Moorage Rules, Seventh Revision",
    "cluster": "lore",
-   "intent": "The skydocks' moorage regulations \u2014 windshear etiquette, ballast taxes, the famous Balloon Incident clause \u2014 annotated by a dockmaster with strong opinions and weak hemispheres of patience.",
+   "intent": "The skydocks' moorage regulations — windshear etiquette, ballast taxes, the famous Balloon Incident clause — annotated by a dockmaster with strong opinions and weak hemispheres of patience.",
    "keywords": [
     "skydocks",
     "keel town",
@@ -4291,7 +4303,7 @@
    "slug": "courier-slang-lexicon",
    "title": "A Working Lexicon of Driftline Slang",
    "cluster": "lore",
-   "intent": "Forty-odd terms couriers actually use: 'glassed', 'dusted', 'wax-blind', 'a Ketch', 'riding the hum' \u2014 with etymologies, disdainful corrections, and entries clearly written to insult specific people.",
+   "intent": "Forty-odd terms couriers actually use: 'glassed', 'dusted', 'wax-blind', 'a Ketch', 'riding the hum' — with etymologies, disdainful corrections, and entries clearly written to insult specific people.",
    "keywords": [
     "slang",
     "courier culture",
@@ -4371,7 +4383,7 @@
    "slug": "ch3-first-wall-run",
    "title": "The Season's First Wall (ch3 storm run)",
    "cluster": "missions",
-   "intent": "Storm-season story beat: routes closing; Ketch sends Ash on the first true wall-run of the year \u2014 outrun a season-opening storm front from the glassroad south gate to temple-step shelter; teaches the 'storm' objective in-story (side-storm-window is the tutorial side version).",
+   "intent": "Storm-season story beat: routes closing; Ketch sends Ash on the first true wall-run of the year — outrun a season-opening storm front from the glassroad south gate to temple-step shelter; teaches the 'storm' objective in-story (side-storm-window is the tutorial side version).",
    "keywords": [
     "ch3",
     "storm",
@@ -4441,7 +4453,7 @@
    "slug": "side-crusher-parts-run",
    "title": "Parts for the Crusher",
    "cluster": "missions",
-   "intent": "Fragile-type reclaimer side job: carry a gyro-stabilised cutting head from Pyke's office to the crusher without cracking its ceramic collar \u2014 the yards are full of things to bump into, which is the joke and the hazard.",
+   "intent": "Fragile-type reclaimer side job: carry a gyro-stabilised cutting head from Pyke's office to the crusher without cracking its ceramic collar — the yards are full of things to bump into, which is the joke and the hazard.",
    "keywords": [
     "side job",
     "fragile",
@@ -4503,7 +4515,7 @@
   {
    "kind": "demo",
    "slug": "dialogue-stage",
-   "title": "Dialogue Stage \u2014 portrait & line-set preview bench",
+   "title": "Dialogue Stage — portrait & line-set preview bench",
    "cluster": "demos",
    "intent": "A dialogue-scene staging bench for DRIFTLINE writers and designers: pick any two characters (from src/content/characters), a backdrop region (day/dusk/night sky variations), and preview their portraits, voice-notes and sample lines rendered in the real DialogueBox layout at multiple screen sizes. Features: line editor with live preview, timing playback (auto-advance at reading speed), choice-tree mock mode with flag chips, export of a dialogue JSON block ready to paste into a mission file. Art direction: frontier-western solarpunk, sun-bleached salt/ochre/teal palette per DESIGN.md, Chakra Petch display + Sora body fonts, violet-dark sheet UI. Audience: DRIFTLINE content writers and the builder verifying dialogue feel without booting the full game. Stack: React + DOM overlay components reusing src/ui/ui.css; load characters via the same dialogue library glob.",
    "keywords": [
@@ -4522,9 +4534,9 @@
   {
    "kind": "demo",
    "slug": "storm-choreo",
-   "title": "Storm Choreo \u2014 storm-wall pursuit tuning sim",
+   "title": "Storm Choreo — storm-wall pursuit tuning sim",
    "cluster": "demos",
-   "intent": "A storm-wall choreography simulator: stage the DRIFTLINE storm objective on a scrolling top-down tactical view \u2014 move the shelter anchor, storm spawn offset, storm speed curve and radius with sliders, then watch a simulated courier (straight-line with reaction noise) attempt the run and see survival probability over N Monte Carlo trials flip live. Purpose: tune storm missions so they're tense but fair before writers ship them. Features: minimap-style canvas view in the game's danger-red/amber palette, tuneable pursuit curve, difficulty readout, export mission objective JSON. Art direction: DRIFTLINE HUD language \u2014 violet-dark panels, amber markers, danger-red storm wedge, tabular numerals, Chakra Petch. Audience: mission designers and the builder. Stack: React + canvas2d, no 3D needed; constants mirror src/game/MissionDirector storm params.",
+   "intent": "A storm-wall choreography simulator: stage the DRIFTLINE storm objective on a scrolling top-down tactical view — move the shelter anchor, storm spawn offset, storm speed curve and radius with sliders, then watch a simulated courier (straight-line with reaction noise) attempt the run and see survival probability over N Monte Carlo trials flip live. Purpose: tune storm missions so they're tense but fair before writers ship them. Features: minimap-style canvas view in the game's danger-red/amber palette, tuneable pursuit curve, difficulty readout, export mission objective JSON. Art direction: DRIFTLINE HUD language — violet-dark panels, amber markers, danger-red storm wedge, tabular numerals, Chakra Petch. Audience: mission designers and the builder. Stack: React + canvas2d, no 3D needed; constants mirror src/game/MissionDirector storm params.",
    "keywords": [
     "storm mission",
     "difficulty tuning",
@@ -4541,9 +4553,9 @@
   {
    "kind": "demo",
    "slug": "traffic-planner",
-   "title": "Traffic Planner \u2014 ambient loop route editor",
+   "title": "Traffic Planner — ambient loop route editor",
    "cluster": "demos",
-   "intent": "An ambient-traffic planner for the open world: a top-down map of Kessa-9 showing all region circles and named anchors, where you draw/edit NPC loop routes (courier, hauler, skiff classes with speed/colour presets) and replay miniature dots cruising them to judge congestion and dead zones. One click exports the route arrays in the exact VehicleSpec format used by src/game/AmbientTraffic.tsx. Features: anchor snapping, route length + lap-time readout, per-class silhouette preview dot, random auto-generated routes. Art direction: in-world surveyor's table look \u2014 bone paper texture tint (flat), rust ruled lines, teal glass accents, hand-stamped labels, entirely CSS/canvas2d. Audience: the builder and demo builders extending world life. Stack: React + canvas2d; reads region registry data statically.",
+   "intent": "An ambient-traffic planner for the open world: a top-down map of Kessa-9 showing all region circles and named anchors, where you draw/edit NPC loop routes (courier, hauler, skiff classes with speed/colour presets) and replay miniature dots cruising them to judge congestion and dead zones. One click exports the route arrays in the exact VehicleSpec format used by src/game/AmbientTraffic.tsx. Features: anchor snapping, route length + lap-time readout, per-class silhouette preview dot, random auto-generated routes. Art direction: in-world surveyor's table look — bone paper texture tint (flat), rust ruled lines, teal glass accents, hand-stamped labels, entirely CSS/canvas2d. Audience: the builder and demo builders extending world life. Stack: React + canvas2d; reads region registry data statically.",
    "keywords": [
     "ambient traffic",
     "route planner",
@@ -4562,7 +4574,7 @@
    "slug": "cargo-shake-lab",
    "title": "Cargo Shake Lab",
    "cluster": "demos",
-   "intent": "A tuning bench for the fragile-cargo system. Off-world test pan (place in src/world/regions/cargo-shake-lab/ so it ships with the game registry but stays out of the playspace \u2014 center beyond \u00b11800). A ghost hover-bike runs canned bump sequences (small rock, gantry leg, hard landing, storm clip) while a large cargo-integrity gauge, damage-per-impact scatter chart and payout curve (0.35 + 0.65\u00b7integrity) update live. Sliders: FRAGILE_DMG coefficient, shield soak per level 0-3, impact threshold. Presets row ('story-balance', 'punishing', 'forgiving'), copy-JSON export for MissionDirector tuning, A/B ghost replay. Art direction: DRIFTLINE house style \u2014 flat-shaded low-poly, salt/ochre pan, teal glass gauges, amber HUD panels from ui.css; dashed ghost-bike so it reads as a bench, not a track. Keyboard + pointer friendly, reduced-motion aware, no per-frame allocations; typecheck + build must stay green.",
+   "intent": "A tuning bench for the fragile-cargo system. Off-world test pan (place in src/world/regions/cargo-shake-lab/ so it ships with the game registry but stays out of the playspace — center beyond ±1800). A ghost hover-bike runs canned bump sequences (small rock, gantry leg, hard landing, storm clip) while a large cargo-integrity gauge, damage-per-impact scatter chart and payout curve (0.35 + 0.65·integrity) update live. Sliders: FRAGILE_DMG coefficient, shield soak per level 0-3, impact threshold. Presets row ('story-balance', 'punishing', 'forgiving'), copy-JSON export for MissionDirector tuning, A/B ghost replay. Art direction: DRIFTLINE house style — flat-shaded low-poly, salt/ochre pan, teal glass gauges, amber HUD panels from ui.css; dashed ghost-bike so it reads as a bench, not a track. Keyboard + pointer friendly, reduced-motion aware, no per-frame allocations; typecheck + build must stay green.",
    "keywords": [],
    "status": "claimed",
    "added_by": "builder",
@@ -4574,7 +4586,7 @@
    "slug": "handling-curve-lab",
    "title": "Handling Curve Lab",
    "cluster": "demos",
-   "intent": "An interactive arcade-physics tuning toy for the Driftline hover-bike feel. A figure-eight salt pan with painted grip zones (salt 1.0, sand 0.8, glass 0.5) and a telemetry strip: speed, lateral slip, drift reward window, boost meter curves drawn on a small canvas scope. Live sliders for accel, top speed, grip by surface, drift-exit boost multiplier, hop impulse, boost regen \u2014 each instant-applied to a test bike the player drives (reuse the Bike controller constants, don't fork physics). Show upgrade ladder pips (engine/handling/boost 0-3) against the curve graph so designers see headroom. One-click 'baseline' reset and copy-settings-JSON. Stark readable DRIFTLINE visuals: flat shading, big silhouettes, amber/teal colour-shape coding, dust puffs; 60fps, no console errors.",
+   "intent": "An interactive arcade-physics tuning toy for the Driftline hover-bike feel. A figure-eight salt pan with painted grip zones (salt 1.0, sand 0.8, glass 0.5) and a telemetry strip: speed, lateral slip, drift reward window, boost meter curves drawn on a small canvas scope. Live sliders for accel, top speed, grip by surface, drift-exit boost multiplier, hop impulse, boost regen — each instant-applied to a test bike the player drives (reuse the Bike controller constants, don't fork physics). Show upgrade ladder pips (engine/handling/boost 0-3) against the curve graph so designers see headroom. One-click 'baseline' reset and copy-settings-JSON. Stark readable DRIFTLINE visuals: flat shading, big silhouettes, amber/teal colour-shape coding, dust puffs; 60fps, no console errors.",
    "keywords": [],
    "status": "claimed",
    "added_by": "builder",
@@ -4586,7 +4598,7 @@
    "slug": "roster-review-bench",
    "title": "Roster Review Bench",
    "cluster": "demos",
-   "intent": "A content-review instrument for the writing team: an in-engine gallery that renders every character JSON as a dialogue-card \u2014 portrait (withBase, fallback initials chip), name + faction chip, role, one greeting/bark/radio line each cycled on a timer, plus the actual DialogueBox and HUD radio ticker components so writers see true in-game rendering. Filter by faction (guild ochre / choir teal / reclaimer rust / driftline amber), search by name, flag cards missing portraits or <8 line buckets with a dashed ghost frame and a \u25af signal-not-recovered marker (never colour alone). Panel styles from ui.css; lives in src/world/regions/roster-review-bench/ or src/lab, auto-listed in /lab; zero game-world impact.",
+   "intent": "A content-review instrument for the writing team: an in-engine gallery that renders every character JSON as a dialogue-card — portrait (withBase, fallback initials chip), name + faction chip, role, one greeting/bark/radio line each cycled on a timer, plus the actual DialogueBox and HUD radio ticker components so writers see true in-game rendering. Filter by faction (guild ochre / choir teal / reclaimer rust / driftline amber), search by name, flag cards missing portraits or <8 line buckets with a dashed ghost frame and a ▯ signal-not-recovered marker (never colour alone). Panel styles from ui.css; lives in src/world/regions/roster-review-bench/ or src/lab, auto-listed in /lab; zero game-world impact.",
    "keywords": [],
    "status": "claimed",
    "added_by": "builder",
@@ -4614,7 +4626,7 @@
    "slug": "side-rain-gauge-run",
    "title": "Cartridges for the Desk",
    "cluster": "missions",
-   "intent": "Timed: swap storm-gauge cartridges (windspine:storm-gauge \u2192 saltmouth weather desk) before Pemmy's desk meeting; Kest's deadpan countdown on radio; unlock storm-gauge-keeper lore.",
+   "intent": "Timed: swap storm-gauge cartridges (windspine:storm-gauge → saltmouth weather desk) before Pemmy's desk meeting; Kest's deadpan countdown on radio; unlock storm-gauge-keeper lore.",
    "keywords": [
     "timed",
     "windspine",
@@ -4662,7 +4674,7 @@
    "slug": "side-goat-grooming",
    "title": "The Sash Incident",
    "cluster": "missions",
-   "intent": "Comedy deliver + collect: Pemmy's replacement sash is 'lost' \u2014 retrace the goat's morning rounds across saltmouth anchors; final objective: Pemmy refuses the sash; refund in goat credit; unlock weather-desk lore.",
+   "intent": "Comedy deliver + collect: Pemmy's replacement sash is 'lost' — retrace the goat's morning rounds across saltmouth anchors; final objective: Pemmy refuses the sash; refund in goat credit; unlock weather-desk lore.",
    "keywords": [
     "collect",
     "saltmouth",
@@ -4678,7 +4690,7 @@
    "slug": "side-array-census",
    "title": "Chalk Census",
    "cluster": "missions",
-   "intent": "Scout \u00d73 drowned-array cairns at night (kid-chalk readings); the third scan answers with the crate's hum; quicklime-kid silent cameo; unlock caretaker-adjacent lore.",
+   "intent": "Scout ×3 drowned-array cairns at night (kid-chalk readings); the third scan answers with the crate's hum; quicklime-kid silent cameo; unlock caretaker-adjacent lore.",
    "keywords": [
     "scout",
     "drowned-array",
@@ -4694,7 +4706,7 @@
    "slug": "side-skyship-pilot-exam",
    "title": "Hang-Tenant's Exam",
    "cluster": "missions",
-   "intent": "Race: Madame Traction's informal pilot exam \u2014 gates threading skydocks winch-base \u2192 gantries \u2192 moorage mast; hairpin descent; unlock moorage-rules lore.",
+   "intent": "Race: Madame Traction's informal pilot exam — gates threading skydocks winch-base → gantries → moorage mast; hairpin descent; unlock moorage-rules lore.",
    "keywords": [
     "race",
     "skydocks",
@@ -4726,7 +4738,7 @@
    "slug": "side-static-hunt",
    "title": "Bell-Rustler",
    "cluster": "missions",
-   "intent": "Chase: a joyriding Reclaimer skiff has 'borrowed' a Choir listening-horn bell; catch it on the cinderflats\u2194choirhollow loop; Aunt Vertex arbitration bark; unlock bell-incident lore.",
+   "intent": "Chase: a joyriding Reclaimer skiff has 'borrowed' a Choir listening-horn bell; catch it on the cinderflats↔choirhollow loop; Aunt Vertex arbitration bark; unlock bell-incident lore.",
    "keywords": [
     "chase",
     "skiff",
@@ -4854,7 +4866,7 @@
    "slug": "salt-flat-mirages",
    "title": "A Short Dictionary of Mirages",
    "cluster": "lore",
-   "intent": "Field-guide: mirages of the salt flats \u2014 what shimmer is real water, what is old glass, what is 'someone else's yesterday'; rider safety notes.",
+   "intent": "Field-guide: mirages of the salt flats — what shimmer is real water, what is old glass, what is 'someone else's yesterday'; rider safety notes.",
    "keywords": [
     "mirage",
     "field-guide",
@@ -4869,7 +4881,7 @@
    "slug": "courier-cairns",
    "title": "Cairnkeeping: A Working Custom",
    "cluster": "lore",
-   "intent": "Tract/log hybrid: roadside cairn customs \u2014 who stacks, who signs, the flat-stone rule, famous cairns of the Driftline.",
+   "intent": "Tract/log hybrid: roadside cairn customs — who stacks, who signs, the flat-stone rule, famous cairns of the Driftline.",
    "keywords": [
     "cairn",
     "custom",
@@ -4884,7 +4896,7 @@
    "slug": "wren-teardown-report",
    "title": "Addendum to the Maintenance Wall: The Pull, Investigated",
    "cluster": "lore",
-   "intent": "Record: Ketch's bench teardown addendum on why the Wren pulls left \u2014 gyro 'Opinions' revisited, the left knife theory, the dent from Paloma's season.",
+   "intent": "Record: Ketch's bench teardown addendum on why the Wren pulls left — gyro 'Opinions' revisited, the left knife theory, the dent from Paloma's season.",
    "keywords": [
     "wren",
     "teardown",
@@ -4900,7 +4912,7 @@
    "slug": "spice-pricing-dispatch",
    "title": "Spot Prices at Dusk (transcript)",
    "cluster": "lore",
-   "intent": "Broadcast: Evening Standard spot-prices segment run as farce \u2014 salt, water, gossip, one crate-shaped line item redacted live on air.",
+   "intent": "Broadcast: Evening Standard spot-prices segment run as farce — salt, water, gossip, one crate-shaped line item redacted live on air.",
    "keywords": [
     "broadcast",
     "prices",
@@ -4915,7 +4927,7 @@
    "slug": "skyship-derelict-register",
    "title": "Register of Derelicts, Keel Town (posted)",
    "cluster": "lore",
-   "intent": "Log: the harbour register of derelict skyships \u2014 names, last masters, what's still aboard, who claims salvage, the one that 'left'.",
+   "intent": "Log: the harbour register of derelict skyships — names, last masters, what's still aboard, who claims salvage, the one that 'left'.",
    "keywords": [
     "skyship",
     "derelict",
@@ -4930,7 +4942,7 @@
    "slug": "horn-etiquette",
    "title": "Horn Manners: A Visitor's Short Guide",
    "cluster": "lore",
-   "intent": "Field-guide: listening-horn manners \u2014 when to speak into a horn, when never to, who answers, the two-short-one-long convention.",
+   "intent": "Field-guide: listening-horn manners — when to speak into a horn, when never to, who answers, the two-short-one-long convention.",
    "keywords": [
     "horn",
     "etiquette",
@@ -4945,7 +4957,7 @@
    "slug": "storm-shelter-graffiti",
    "title": "Writ on the Shelter Walls",
    "cluster": "lore",
-   "intent": "Log:two centuries of shelter graffiti \u2014 the best, the truest, the one in chalk that predates the shelter.",
+   "intent": "Log:two centuries of shelter graffiti — the best, the truest, the one in chalk that predates the shelter.",
    "keywords": [
     "graffiti",
     "shelter",
@@ -4960,7 +4972,7 @@
    "slug": "settlement-map-annotated",
    "title": "The Annotated Settlement Map",
    "cluster": "lore",
-   "intent": "Record: Okafor-Bligh era settlement map with later knife amendments \u2014 which dots survived, which are cairns now.",
+   "intent": "Record: Okafor-Bligh era settlement map with later knife amendments — which dots survived, which are cairns now.",
    "keywords": [
     "map",
     "settlements",
@@ -4975,7 +4987,7 @@
    "slug": "mother-dream-reports",
    "title": "Reports From the Sleeping Garden (collected dreams)",
    "cluster": "lore",
-   "intent": "Tract: Choir dream reports collected by Little Reverb \u2014 recurring images, the gardener, the cataloguing impulse, editorial scepticism by Pem.",
+   "intent": "Tract: Choir dream reports collected by Little Reverb — recurring images, the gardener, the cataloguing impulse, editorial scepticism by Pem.",
    "keywords": [
     "dreams",
     "choir",
@@ -4990,7 +5002,7 @@
    "slug": "pawn-shop-catalogue",
    "title": "Catalogue of the Drawer (partial)",
    "cluster": "lore",
-   "intent": "Record: inventory of Madame Traction's drawer of mysteries \u2014 items, prices, the one item not for sale, the entry that wrote itself.",
+   "intent": "Record: inventory of Madame Traction's drawer of mysteries — items, prices, the one item not for sale, the entry that wrote itself.",
    "keywords": [
     "traction",
     "pawn",
@@ -5005,7 +5017,7 @@
    "slug": "race-risk-form",
    "title": "Form 1-R: Risk Assumed, Grins Notwithstanding",
    "cluster": "lore",
-   "intent": "Tract: Jett Marrows' official race waiver, annotated \u2014 the asterisk clause history, gate ethics precedent, signatures in three inks.",
+   "intent": "Tract: Jett Marrows' official race waiver, annotated — the asterisk clause history, gate ethics precedent, signatures in three inks.",
    "keywords": [
     "race",
     "waiver",
@@ -5021,7 +5033,7 @@
    "slug": "tea-rites-of-the-flats",
    "title": "Tea Rites of the Salt Flats",
    "cluster": "lore",
-   "intent": "Field-guide cuisine: tea customs of the salt flats \u2014 salt tea, storm tea, the apology brew, what to bring a weather desk.",
+   "intent": "Field-guide cuisine: tea customs of the salt flats — salt tea, storm tea, the apology brew, what to bring a weather desk.",
    "keywords": [
     "tea",
     "cuisine",
@@ -5036,7 +5048,7 @@
    "slug": "long-static-archive",
    "title": "The Long Static: A Channel Index",
    "cluster": "lore",
-   "intent": "Record: index of dead channels \u2014 every silent frequency with a nickname, a rumour, and a keeper's note; the lullaby channel cross-referenced.",
+   "intent": "Record: index of dead channels — every silent frequency with a nickname, a rumour, and a keeper's note; the lullaby channel cross-referenced.",
    "keywords": [
     "radio",
     "dead-channel",
@@ -5051,7 +5063,7 @@
    "slug": "mesa-mail-rules",
    "title": "Rules for Reaching a Skyship",
    "cluster": "lore",
-   "intent": "Field-guide: how mail reaches a moored skyship \u2014 winch bags, beacon flags, the letter franked 'to the east wind' protocol.",
+   "intent": "Field-guide: how mail reaches a moored skyship — winch bags, beacon flags, the letter franked 'to the east wind' protocol.",
    "keywords": [
     "mail",
     "skyship",
@@ -5066,7 +5078,7 @@
    "slug": "brine-seasons-calendar",
    "title": "The Brine Calendar (Ogo's hand)",
    "cluster": "lore",
-   "intent": "Log: Brinemaster Ogo's brine calendar \u2014 seasons of the pans, harvest almanac, the year the brine bloomed teal.",
+   "intent": "Log: Brinemaster Ogo's brine calendar — seasons of the pans, harvest almanac, the year the brine bloomed teal.",
    "keywords": [
     "brine",
     "calendar",
@@ -5082,7 +5094,7 @@
    "slug": "canyon-echo-study",
    "title": "Notes on the Glassroad Echo",
    "cluster": "lore",
-   "intent": "Field-guide: the canyon echo study \u2014 where the canyon finishes your sentences, famous returns, the echo that answered early.",
+   "intent": "Field-guide: the canyon echo study — where the canyon finishes your sentences, famous returns, the echo that answered early.",
    "keywords": [
     "echo",
     "canyon",
@@ -5097,7 +5109,7 @@
    "slug": "repair-hymn-cycle",
    "title": "The Dawn Cycle (work chants, complete)",
    "cluster": "lore",
-   "intent": "Tract: the full Reclaimer work-chant cycle for a reclamation dawn \u2014 call patterns, keeps, what must never be sung over a living machine.",
+   "intent": "Tract: the full Reclaimer work-chant cycle for a reclamation dawn — call patterns, keeps, what must never be sung over a living machine.",
    "keywords": [
     "reclaimer",
     "chant",
@@ -5112,7 +5124,7 @@
    "slug": "guild-heraldry",
    "title": "Seals of the Guild: A Recognition Card",
    "cluster": "lore",
-   "intent": "Record: seals, stamps and flags of the Salt Guild \u2014 heraldry guide with wax chemistry footnote and the counterfeit that outranked the original.",
+   "intent": "Record: seals, stamps and flags of the Salt Guild — heraldry guide with wax chemistry footnote and the counterfeit that outranked the original.",
    "keywords": [
     "guild",
     "heraldry",
@@ -5127,7 +5139,7 @@
    "slug": "bell-incident-testimony",
    "title": "Depositions in re: The Bell",
    "cluster": "lore",
-   "intent": "Record: testimony of the Bell Incident \u2014 Decibel's deposition, the warden's statement, what the horn said first.",
+   "intent": "Record: testimony of the Bell Incident — Decibel's deposition, the warden's statement, what the horn said first.",
    "keywords": [
     "bell",
     "incident",
@@ -5142,7 +5154,7 @@
    "slug": "night-sky-guide",
    "title": "A Rider's Night Sky",
    "cluster": "lore",
-   "intent": "Field-guide: night sky of Kessa-9 \u2014 the terraform-array strand, satellites still faithful, what the Choir calls the Breath Between Stars.",
+   "intent": "Field-guide: night sky of Kessa-9 — the terraform-array strand, satellites still faithful, what the Choir calls the Breath Between Stars.",
    "keywords": [
     "night",
     "stars",
@@ -5157,7 +5169,7 @@
    "slug": "courier-message-board",
    "title": "Things Left in Bottles",
    "cluster": "lore",
-   "intent": "Log: message-in-a-cache tradition \u2014 bottles, slips and wax tubes couriers leave each other; greatest hits of the moorage mast board.",
+   "intent": "Log: message-in-a-cache tradition — bottles, slips and wax tubes couriers leave each other; greatest hits of the moorage mast board.",
    "keywords": [
     "messages",
     "bottles",
@@ -5172,7 +5184,7 @@
    "slug": "driftline-origins",
    "title": "On the Naming of the Driftline",
    "cluster": "lore",
-   "intent": "Tract: why it is called the Driftline \u2014 competing origin stories, the chalk-line account, the Guild version, the true one (allegedly).",
+   "intent": "Tract: why it is called the Driftline — competing origin stories, the chalk-line account, the Guild version, the true one (allegedly).",
    "keywords": [
     "driftline",
     "origins",
@@ -5187,7 +5199,7 @@
    "slug": "dune-fauna-notes",
    "title": "Small Lives of the Dunes",
    "cluster": "lore",
-   "intent": "Field-guide: dune fauna \u2014 sand-skippers, glass fleas, the storm-mole nobody has photographed; harmless, delicious, or both.",
+   "intent": "Field-guide: dune fauna — sand-skippers, glass fleas, the storm-mole nobody has photographed; harmless, delicious, or both.",
    "keywords": [
     "fauna",
     "dunes",
@@ -5202,7 +5214,7 @@
    "slug": "marlowe-air-check",
    "title": "Marlowe (Air Check)",
    "cluster": "characters",
-   "intent": "Air Check's host \u2014 warm microphone voice who keeps the sincere beats her guests ask her to cut; independent; home skydocks.",
+   "intent": "Air Check's host — warm microphone voice who keeps the sincere beats her guests ask her to cut; independent; home skydocks.",
    "keywords": [
     "broadcast",
     "host",
@@ -5217,7 +5229,7 @@
    "slug": "hedd-kline",
    "title": "Hedd Kline",
    "cluster": "characters",
-   "intent": "Author of 'Notes on Riding Glass' \u2014 retired canyon racer turned bench physicist; chalk dust to the elbows; driftline; home glassroad.",
+   "intent": "Author of 'Notes on Riding Glass' — retired canyon racer turned bench physicist; chalk dust to the elbows; driftline; home glassroad.",
    "keywords": [
     "racer",
     "physics",
@@ -5232,7 +5244,7 @@
    "slug": "hespa-vole",
    "title": "Hespa Vole",
    "cluster": "characters",
-   "intent": "Keel Town winch-keeper and night-market menu reader \u2014 prices as poetry, strict about rope; independent; home skydocks.",
+   "intent": "Keel Town winch-keeper and night-market menu reader — prices as poetry, strict about rope; independent; home skydocks.",
    "keywords": [
     "winch",
     "market",
