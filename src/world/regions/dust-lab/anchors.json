@@ -1,0 +1,4 @@
+{
+  "bench": { "pos": [5400, 5200], "label": "Particle lab bench (off-world)", "elev": 0 },
+  "test-pan": { "pos": [5402, 5198], "label": "Dust test pan (off-world)", "elev": 0 }
+}

@@ -235,8 +235,10 @@
     "rescue",
     "visibility"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790381060.6958668
   },
   {
    "kind": "article",
@@ -251,8 +253,10 @@
     "choir",
     "storm"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790381060.695869
   },
   {
    "kind": "article",
@@ -267,8 +271,10 @@
     "choice",
     "factions"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790381060.695869
   },
   {
    "kind": "article",
@@ -283,8 +289,10 @@
     "rill",
     "finale"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790381060.695869
   },
   {
    "kind": "article",
@@ -2207,10 +2215,11 @@
    "cluster": "demos",
    "intent": "Particle sandbox: tune the driftline dust trail (count, size, lifetime, turbulence, surface colours salt/sand/glass) live while a ghost bike auto-laps a test circuit. Purpose: dial in the game's recycled Points emitters. Art: flat test pan, colour-coded particle systems. Stack: R3F, buffer recycling demo.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo2",
-   "claimed_at": 1790380004.462278
+   "claimed_at": 1790380004.462278,
+   "done_at": "2026-09-26T10:06:47"
   },
   {
    "kind": "demo",
@@ -3566,6 +3575,454 @@
    ],
    "status": "planned",
    "added_by": "writer2"
+  },
+  {
+   "kind": "article",
+   "slug": "storm-gauge-keepers-log",
+   "title": "The Storm Gauge Keeper's Log",
+   "cluster": "lore",
+   "intent": "Log excerpts from the windspine storm-gauge keeper across one storm season; meter readings that don't match the calendar, a wall that arrived a day early, and the unsettling entry where the barometer 'answered back'.",
+   "keywords": [
+    "storm season",
+    "windspine",
+    "weather lore",
+    "MOTHER stirring",
+    "machine records"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "glassroad-toll-songs",
+   "title": "Toll Songs of the Glass Road",
+   "cluster": "lore",
+   "intent": "Collected road-songs couriers sing to time their canyon braking points; each verse encodes a real hazard on the glassroad, with a note from a Guild folklorist who tried to tax the singing itself.",
+   "keywords": [
+    "glassroad",
+    "courier culture",
+    "songs",
+    "hazards",
+    "oral tradition"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "mother-maintenance-manifest",
+   "title": "Fragment: MOTHER Maintenance Manifest, Cycle 0x2F",
+   "cluster": "lore",
+   "intent": "A machine record from the last days of full terraforming: seed dispersal schedules, aerosol budgets, one line of maternal affection smuggled into a checksum field. Ends abruptly mid-line.",
+   "keywords": [
+    "MOTHER",
+    "terraforming",
+    "machine record",
+    "dormancy",
+    "wake-key"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "reclaimer-grace-prayers",
+   "title": "Grace Before Salvage: Reclaimer Meal Prayers",
+   "cluster": "lore",
+   "intent": "The short prayers reclaimer crews say before cutting into old infrastructure — equal parts apology to the machine, insurance against ghosts, and practical blame-assignment for whoever holds the torch.",
+   "keywords": [
+    "reclaimers",
+    "salvage",
+    "ritual",
+    "humour",
+    "faction culture"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "choir-static-litanies",
+   "title": "Three Static Litanies (Annotated)",
+   "cluster": "lore",
+   "intent": "Three canonical Choir 'static litanies' — prayers spoken into dead radios — with margin notes by a younger initiate who keeps hearing actual words in the noise and is afraid to say so.",
+   "keywords": [
+    "choir",
+    "litanies",
+    "static",
+    "scripture",
+    "initiate voice"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "salt-guild-ledger-of-debts",
+   "title": "Extract from the Great Ledger of Debts, Saltmouth Column",
+   "cluster": "lore",
+   "intent": "A page from the Guild's debt ledger: names, sums, odd collateral ('one (1) affectionate goat'), margin doodles, and a fresh entry stamped in a hand nobody at the exchange admits to using: A. VARGA.",
+   "keywords": [
+    "salt guild",
+    "ledger",
+    "debt",
+    "Ash Varga",
+    "manifest wax"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "drowned-array-census",
+   "title": "Census of the Drowned Array",
+   "cluster": "lore",
+   "intent": "A field guide to the submerged solar array: which panels still trickle charge, where the cache cairns sit, what sings under the salt pan at night, and the surveyor who's named every panel and mourns the sunken ones.",
+   "keywords": [
+    "drowned array",
+    "solar",
+    "caches",
+    "field guide",
+    "salt pan"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "skydocks-moorage-rules",
+   "title": "Keel Town Moorage Rules, Seventh Revision",
+   "cluster": "lore",
+   "intent": "The skydocks' moorage regulations — windshear etiquette, ballast taxes, the famous Balloon Incident clause — annotated by a dockmaster with strong opinions and weak hemispheres of patience.",
+   "keywords": [
+    "skydocks",
+    "keel town",
+    "skyships",
+    "rules",
+    "dockmaster"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "cinderflats-crusher-operator-manual",
+   "title": "The Crusher: Operator's Manual (Abridged, Annotated)",
+   "cluster": "lore",
+   "intent": "Boss Pyke's abridged manual for the big crusher at the yards: safety margins redacted for speed, Aunt Vertex's explosive addenda, and the list of things that are, formally, 'not for crushing'.",
+   "keywords": [
+    "cinderflats",
+    "the yards",
+    "crusher",
+    "Boss Pyke",
+    "reclaimer tech"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "rill-davenant-route-notes",
+   "title": "Rill Davenant's Marginal Route Notes",
+   "cluster": "lore",
+   "intent": "Recovered notes from the courier who goes missing in storm season: scrawled bearings, weather hunches, and an increasingly worried running joke about a voice that knows their name.",
+   "keywords": [
+    "Rill Davenant",
+    "missing courier",
+    "route notes",
+    "storm season",
+    "foreshadowing"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "wake-key-print-log",
+   "title": "The Printer That Shouldn't Have Power: A Print Log",
+   "cluster": "lore",
+   "intent": "A Guild auditor investigates how the null crate was printed on a machine without power for a century: toner assays, impossible timestamps, and the auditor's growing professional horror.",
+   "keywords": [
+    "null crate",
+    "printer",
+    "auditor",
+    "impossible manifest",
+    "MOTHER"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "horizon-cell-handbook",
+   "title": "The Horizon Cell Handbook for Depressed Couriers",
+   "cluster": "lore",
+   "intent": "A cheerfully cynical zine about bike batteries: charging etiquette, cold-weather sulking, why your horizon cell hates you, and one page that is just a poem to lithium.",
+   "keywords": [
+    "horizon cell",
+    "bike tech",
+    "zine",
+    "courier humour",
+    "maintenance"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "terraforming-map-before-and-during",
+   "title": "Two Maps, One Lie: Kessa-9 Before and During",
+   "cluster": "lore",
+   "intent": "An annotated comparison of the terraforming prospectus map (verdant, generous) and a surveyor's honest chart two centuries later; the narrator's fondness for the real one is unmistakable.",
+   "keywords": [
+    "history",
+    "terraforming",
+    "maps",
+    "colonisation",
+    "glass desert"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "guild-wax-seal-chemistry",
+   "title": "On the Chemistry and Politics of Manifest Wax",
+   "cluster": "lore",
+   "intent": "Why Guild seals matter: the wax recipe, the colour grades that encode cargo class, the scandal of the counterfeit teal seal, and why breaking a seal wrong can legally unmarry someone.",
+   "keywords": [
+    "manifest wax",
+    "salt guild",
+    "seals",
+    "trade law",
+    "chemistry"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "choir-lamp-rituals",
+   "title": "Lamp-lighting Rounds of the Hollow",
+   "cluster": "lore",
+   "intent": "A day in choirhollow told through the lamp-lighting rounds: who carries which ladder, which lamp is 'the difficult one', and what the crater does to voices after dusk.",
+   "keywords": [
+    "choirhollow",
+    "lamps",
+    "ritual",
+    "daily life",
+    "crater temple"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "courier-slang-lexicon",
+   "title": "A Working Lexicon of Driftline Slang",
+   "cluster": "lore",
+   "intent": "Forty-odd terms couriers actually use: 'glassed', 'dusted', 'wax-blind', 'a Ketch', 'riding the hum' — with etymologies, disdainful corrections, and entries clearly written to insult specific people.",
+   "keywords": [
+    "slang",
+    "courier culture",
+    "driftline lexicon",
+    "humour",
+    "language"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "mothers-gate-survey-1902",
+   "title": "Survey 1902: The Sealed Cradle",
+   "cluster": "lore",
+   "intent": "The last pre-dormancy survey of mothersgate: measurements of the Door, seismic notes, the surveyor's insistence that the mechanism 'listened', and the order to bury the report.",
+   "keywords": [
+    "mothersgate",
+    "the door",
+    "survey",
+    "pre-dormancy",
+    "secrets"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "night-riding-primer",
+   "title": "Night Riding: A Primer for the Reasonably Brave",
+   "cluster": "lore",
+   "intent": "How to ride the glass desert after dark: violet light, cold-snap handling, which lights to trust (teal), which to avoid (amber that moves wrong), and the etiquette of night beacons.",
+   "keywords": [
+    "night riding",
+    "guide",
+    "beacons",
+    "hazards",
+    "courier skills"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "quicklime-kid-interview",
+   "title": "Transcript: An Interview with the Quicklime Kid",
+   "cluster": "lore",
+   "intent": "A zine journalist interviews the region's most annoying prodigy rider mid-ride: philosophy of marker-shaving, diet of warm soda, and one chillingly competent paragraph about drift lines.",
+   "keywords": [
+    "quicklime kid",
+    "racer",
+    "interview",
+    "side characters",
+    "youth culture"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ending-storm-after-action",
+   "title": "After-Action: The Wall That Took Bitter Flats",
+   "cluster": "lore",
+   "intent": "The Guild's after-action report on the legendary storm that erased a settlement in one night: what failed, who stayed, and the rider who carried forty-two people out in a cargo wagon.",
+   "keywords": [
+    "storm",
+    "settlement loss",
+    "after-action",
+    "heroism",
+    "history"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "ch3-first-wall-run",
+   "title": "The Season's First Wall (ch3 storm run)",
+   "cluster": "missions",
+   "intent": "Storm-season story beat: routes closing; Ketch sends Ash on the first true wall-run of the year — outrun a season-opening storm front from the glassroad south gate to temple-step shelter; teaches the 'storm' objective in-story (side-storm-window is the tutorial side version).",
+   "keywords": [
+    "ch3",
+    "storm",
+    "first wall",
+    "windspine",
+    "story"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-cache-cairn-round",
+   "title": "The Cache Cairn Round",
+   "cluster": "missions",
+   "intent": "Collect-type side job in the drowned array: haul out five sealed pre-collapse cache canisters from around the cache cairn and panel field before the pan's night-sink makes the footing treacherous.",
+   "keywords": [
+    "side job",
+    "collect",
+    "drowned array",
+    "caches",
+    "5 items"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-ladder-and-lamp",
+   "title": "Ladder and Lamp",
+   "cluster": "missions",
+   "intent": "Escort-type Choir side job in choirhollow: shadow the slow lamp-lighters' wagon around the lamp ring at dusk; the Choir pays in lamp oil futures and unsettlingly specific blessings.",
+   "keywords": [
+    "side job",
+    "escort",
+    "choirhollow",
+    "choir",
+    "lamps"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-dock-master-express",
+   "title": "Dockmaster's Express",
+   "cluster": "missions",
+   "intent": "Timed delivery between skydocks anchors: ballast affidavits from winch base up to Keel Town before the evening updraft window closes; tight timer, high-altitude riding, dockmaster barks.",
+   "keywords": [
+    "side job",
+    "timed",
+    "skydocks",
+    "altitude",
+    "window"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-crusher-parts-run",
+   "title": "Parts for the Crusher",
+   "cluster": "missions",
+   "intent": "Fragile-type reclaimer side job: carry a gyro-stabilised cutting head from Pyke's office to the crusher without cracking its ceramic collar — the yards are full of things to bump into, which is the joke and the hazard.",
+   "keywords": [
+    "side job",
+    "fragile",
+    "cinderflats",
+    "crusher",
+    "reclaimers"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-mesa-survey",
+   "title": "The Mesa Survey",
+   "cluster": "missions",
+   "intent": "Scout-type side job across three viewpoint anchors (dune overlook, ridge crest, crater rim): hold position at each for the Guild's new cartography contract; pays better the less your bike complains.",
+   "keywords": [
+    "side job",
+    "scout",
+    "viewpoints",
+    "survey",
+    "three anchors"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-jett-marrows-rematch",
+   "title": "Rematch on the Slick Mile",
+   "cluster": "missions",
+   "intent": "Race-type side job vs. Jett Marrows down the glassroad slick mile at dusk: five gates, glass-slick grip, rival trash-talk on the radio, and a purse paid in genuine antique bottle caps (convertible).",
+   "keywords": [
+    "side job",
+    "race",
+    "glassroad",
+    "rival",
+    "jett marrows"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "article",
+   "slug": "side-missing-mail-satchel",
+   "title": "The Missing Mail Satchel",
+   "cluster": "missions",
+   "intent": "Chase-type side job: a courier's mail satchel was snatched by a joyriding dock-brat on a stolen skiff around the saltmouth pan; run them down, tag them, get the satchel back before the stamps absorb moisture and become legally soup.",
+   "keywords": [
+    "side job",
+    "chase",
+    "saltmouth",
+    "mail",
+    "skiff"
+   ],
+   "status": "planned",
+   "added_by": "builder"
   }
  ]
 }

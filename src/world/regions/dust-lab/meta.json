@@ -1,0 +1,8 @@
+{
+  "slug": "dust-lab",
+  "name": "Dust & Particle Lab",
+  "blurb": "Workshop tool, not a game region: the dust-trail emitter tuned live over a flat test pan while a ghost bike laps three surface zones. Anchors and center live outside the playable map.",
+  "center": [5400, 5200],
+  "radius": 4,
+  "danger": 0
+}

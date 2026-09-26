@@ -1,0 +1,134 @@
+/* Dust & Particle Lab — scoped styles (dlp-). Palette tokens come from ui.css. */
+
+.dlp-root {
+  position: relative;
+  flex: 1;
+  min-height: 68vh;
+  display: flex;
+  background: var(--space, #14101F);
+}
+.dlp-canvas { position: absolute; inset: 0; }
+.dlp-canvas canvas { display: block; }
+
+.dlp-hint {
+  position: absolute; top: 12px; right: 14px; z-index: 2;
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE); opacity: 0.55; pointer-events: none;
+}
+
+.dlp-panel {
+  position: absolute; left: 14px; bottom: 14px; z-index: 2;
+  width: min(390px, calc(100% - 28px));
+  max-height: calc(100% - 28px);
+  overflow-y: auto;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--rust-deep, #7E3320);
+  background: color-mix(in srgb, var(--space, #14101F) 84%, transparent);
+  backdrop-filter: blur(6px);
+  animation: rise 180ms ease-out;
+}
+
+.dlp-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.dlp-head h2 {
+  margin: 0; font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--amber, #FFB454);
+}
+.dlp-icon {
+  border: none; background: transparent; color: var(--bone, #E4D7BE);
+  font-size: 18px; cursor: pointer; line-height: 1; padding: 2px 6px;
+}
+.dlp-reopen {
+  position: absolute; left: 14px; bottom: 14px; z-index: 2;
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE);
+  background: color-mix(in srgb, var(--space, #14101F) 84%, transparent);
+  border: 1px solid var(--rust-deep, #7E3320); border-radius: 8px;
+  padding: 8px 14px; cursor: pointer; backdrop-filter: blur(6px);
+}
+.dlp-reopen:hover, .dlp-reopen:focus-visible { border-color: var(--amber, #FFB454); }
+
+.dlp-stats {
+  display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 10px 0 4px;
+  font-size: 11.5px; color: var(--bone, #E4D7BE);
+  font-variant-numeric: tabular-nums;
+}
+.dlp-stats b { color: var(--salt, #F3EEE2); font-family: var(--font-display, 'Chakra Petch', sans-serif); }
+.dlp-surf { display: inline-flex; align-items: center; gap: 5px; text-transform: capitalize; }
+.dlp-surf i { width: 9px; height: 9px; border-radius: 2px; }
+.dlp-surf.is-salt i { background: #EFE8D4; }
+.dlp-surf.is-sand i { background: #D9B077; }
+.dlp-surf.is-glass i { background: #7FD4C9; }
+
+.dlp-panel h3 {
+  margin: 14px 0 4px; font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--teal-bright, #57C4B8);
+}
+
+.dlp-slider { display: grid; grid-template-columns: 92px 1fr 52px; align-items: center; gap: 8px; margin: 5px 0; }
+.dlp-slider-label { font-size: 11.5px; color: var(--bone, #E4D7BE); opacity: 0.85; }
+.dlp-slider-val {
+  font-size: 11px; text-align: right; color: var(--amber-hot, #FFC969);
+  font-variant-numeric: tabular-nums;
+}
+.dlp-slider input[type='range'] {
+  width: 100%; height: 4px; appearance: none; border-radius: 2px;
+  background: linear-gradient(90deg, var(--ochre, #B07C3A), var(--amber, #FFB454));
+  outline-offset: 3px; cursor: pointer;
+}
+.dlp-slider input[type='range']::-webkit-slider-thumb {
+  appearance: none; width: 13px; height: 13px; border-radius: 3px;
+  background: var(--salt, #F3EEE2); border: 1px solid var(--rust-deep, #7E3320);
+  transform: rotate(45deg);
+}
+.dlp-slider input[type='range']:focus-visible { outline: 2px solid var(--amber, #FFB454); }
+
+.dlp-check {
+  display: flex; align-items: baseline; gap: 8px; margin: 8px 0 2px;
+  font-size: 11.5px; color: var(--bone, #E4D7BE); cursor: pointer;
+}
+.dlp-check em { opacity: 0.55; font-style: normal; font-size: 10.5px; }
+.dlp-check input { accent-color: var(--amber, #FFB454); }
+
+.dlp-colour { display: flex; align-items: center; gap: 10px; margin: 5px 0; cursor: pointer; }
+.dlp-colour input[type='color'] {
+  width: 34px; height: 22px; padding: 0; border: 1px solid var(--rust-deep, #7E3320);
+  border-radius: 5px; background: transparent; cursor: pointer;
+}
+.dlp-colour-label {
+  font-size: 11.5px; color: var(--bone, #E4D7BE); text-transform: capitalize;
+  display: flex; align-items: baseline; gap: 8px;
+}
+.dlp-colour-label code { color: var(--amber-hot, #FFC969); font-size: 10.5px; }
+.dlp-colour-label em { opacity: 0.45; font-style: normal; font-size: 10px; }
+
+.dlp-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+
+.dlp-btn, .dlp-chip {
+  font-family: var(--font-display, 'Chakra Petch', sans-serif);
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--bone, #E4D7BE);
+  background: transparent;
+  border: 1px solid var(--rust-deep, #7E3320);
+  border-radius: 8px;
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: border-color 140ms, background 140ms, color 140ms;
+}
+.dlp-btn:hover, .dlp-chip:hover { border-color: var(--amber, #FFB454); }
+.dlp-btn:focus-visible, .dlp-chip:focus-visible { outline: 2px solid var(--amber, #FFB454); outline-offset: 2px; }
+.dlp-btn.primary {
+  background: color-mix(in srgb, var(--amber, #FFB454) 16%, transparent);
+  border-color: var(--amber, #FFB454);
+  color: var(--amber-hot, #FFC969);
+}
+
+.dlp-note { margin: 4px 0 0; font-size: 10.5px; line-height: 1.5; color: var(--bone, #E4D7BE); opacity: 0.55; }
+.dlp-note code { color: var(--teal-bright, #57C4B8); }
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
