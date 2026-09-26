@@ -1569,10 +1569,11 @@
     "keel-town",
     "dockmaster"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer1",
-   "claimed_at": 1790398779.811987
+   "claimed_at": 1790398779.811987,
+   "done_at": "2026-09-26T16:10:28"
   },
   {
    "kind": "article",
@@ -1586,10 +1587,11 @@
     "books",
     "shrine"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer1",
-   "claimed_at": 1790398779.811989
+   "claimed_at": 1790398779.811989,
+   "done_at": "2026-09-26T16:10:28"
   },
   {
    "kind": "article",
@@ -1603,10 +1605,11 @@
     "melancholy",
     "automaton"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer1",
-   "claimed_at": 1790398779.811989
+   "claimed_at": 1790398779.811989,
+   "done_at": "2026-09-26T16:10:28"
   },
   {
    "kind": "article",
@@ -1620,10 +1623,11 @@
     "hauler",
     "comedy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer1",
-   "claimed_at": 1790398779.811989
+   "claimed_at": 1790398779.811989,
+   "done_at": "2026-09-26T16:10:28"
   },
   {
    "kind": "article",
