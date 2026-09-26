@@ -4237,10 +4237,11 @@
     "Boss Pyke",
     "reclaimer tech"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790404773.915114
+   "claimed_at": 1790404773.915114,
+   "done_at": "2026-09-26T16:45:07"
   },
   {
    "kind": "article",
@@ -4255,10 +4256,11 @@
     "storm season",
     "foreshadowing"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790404773.915115
+   "claimed_at": 1790404773.915115,
+   "done_at": "2026-09-26T16:45:18"
   },
   {
    "kind": "article",
@@ -4273,10 +4275,11 @@
     "impossible manifest",
     "MOTHER"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790404773.915115
+   "claimed_at": 1790404773.915115,
+   "done_at": "2026-09-26T16:45:07"
   },
   {
    "kind": "article",
@@ -4291,10 +4294,11 @@
     "courier humour",
     "maintenance"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790404773.915115
+   "claimed_at": 1790404773.915115,
+   "done_at": "2026-09-26T16:45:07"
   },
   {
    "kind": "article",
@@ -4513,10 +4517,11 @@
     "crusher",
     "reclaimers"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404662.1534379
+   "claimed_at": 1790404662.1534379,
+   "done_at": "2026-09-26T16:44:48"
   },
   {
    "kind": "article",
@@ -4531,10 +4536,11 @@
     "survey",
     "three anchors"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404662.15344
+   "claimed_at": 1790404662.15344,
+   "done_at": "2026-09-26T16:44:48"
   },
   {
    "kind": "article",
@@ -4549,10 +4555,11 @@
     "rival",
     "jett marrows"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404662.153441
+   "claimed_at": 1790404662.153441,
+   "done_at": "2026-09-26T16:44:48"
   },
   {
    "kind": "article",
@@ -4567,10 +4574,11 @@
     "mail",
     "skiff"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790404662.153441
+   "claimed_at": 1790404662.153441,
+   "done_at": "2026-09-26T16:44:48"
   },
   {
    "kind": "demo",
@@ -4648,10 +4656,10 @@
    "cluster": "demos",
    "intent": "An interactive arcade-physics tuning toy for the Driftline hover-bike feel. A figure-eight salt pan with painted grip zones (salt 1.0, sand 0.8, glass 0.5) and a telemetry strip: speed, lateral slip, drift reward window, boost meter curves drawn on a small canvas scope. Live sliders for accel, top speed, grip by surface, drift-exit boost multiplier, hop impulse, boost regen — each instant-applied to a test bike the player drives (reuse the Bike controller constants, don't fork physics). Show upgrade ladder pips (engine/handling/boost 0-3) against the curve graph so designers see headroom. One-click 'baseline' reset and copy-settings-JSON. Stark readable DRIFTLINE visuals: flat shading, big silhouettes, amber/teal colour-shape coding, dust puffs; 60fps, no console errors.",
    "keywords": [],
-   "status": "planned",
+   "status": "claimed",
    "added_by": "builder",
-   "worker": null,
-   "claimed_at": 1790389979.918804
+   "worker": "demo2",
+   "claimed_at": 1790405058.072432
   },
   {
    "kind": "demo",
