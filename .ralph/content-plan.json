@@ -3293,10 +3293,11 @@
     "nav",
     "field guide"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer1",
    "worker": "writer1",
-   "claimed_at": 1790387132.565612
+   "claimed_at": 1790387132.565612,
+   "done_at": "2026-09-26T11:47:54"
   },
   {
    "kind": "article",
@@ -3311,10 +3312,11 @@
     "reviews",
     "comedy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer1",
    "worker": "writer1",
-   "claimed_at": 1790387132.565613
+   "claimed_at": 1790387132.565613,
+   "done_at": "2026-09-26T11:47:54"
   },
   {
    "kind": "article",
@@ -3329,10 +3331,11 @@
     "skyship",
     "culture"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer1",
    "worker": "writer1",
-   "claimed_at": 1790387132.565614
+   "claimed_at": 1790387132.565614,
+   "done_at": "2026-09-26T11:47:54"
   },
   {
    "kind": "article",
@@ -3347,10 +3350,11 @@
     "salt",
     "crate"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer1",
    "worker": "writer1",
-   "claimed_at": 1790387132.565614
+   "claimed_at": 1790387132.565614,
+   "done_at": "2026-09-26T11:47:54"
   },
   {
    "kind": "article",
@@ -3365,8 +3369,10 @@
     "driftline",
     "saltmouth"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790387190.906604
   },
   {
    "kind": "article",
@@ -3381,8 +3387,10 @@
     "choir",
     "mystery"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790387190.906605
   },
   {
    "kind": "article",
@@ -3397,8 +3405,10 @@
     "hum",
     "comedy"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790387190.906605
   },
   {
    "kind": "article",
@@ -3413,8 +3423,10 @@
     "hope",
     "keeltown"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer2",
+   "claimed_at": 1790387190.906605
   },
   {
    "kind": "article",
