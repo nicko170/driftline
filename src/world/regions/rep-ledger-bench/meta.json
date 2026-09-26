@@ -1,0 +1,8 @@
+{
+  "slug": "rep-ledger-bench",
+  "name": "Rep Ledger Bench",
+  "blurb": "Workshop tool, not a game region: a faction-reputation flow review reading every mission JSON live — chapter-to-faction ribbons on canvas, standing-tier rails (wary/neutral/friendly/kin), a net-rep-per-chapter waterfall, completionist journey sparklines, and flags for factions stranded under their next rail and story missions whose rep deltas fight each other. Anchors and center live outside the playable map.",
+  "center": [8800, 7000],
+  "radius": 4,
+  "danger": 0
+}

@@ -1,0 +1,302 @@
+/* ============ Rep Ledger Bench — scoped bench styles (prefix rlb-) ============ */
+/* Design rules (.ralph/DESIGN.md): panels, buttons, tokens come from ui.css —
+   this file never redefines them. Faction/tier markers are glyph + colour
+   pairs; the shape carries the news, colour only decorates. */
+
+.rlb-root {
+  min-height: calc(100vh - 60px);
+  padding: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ---------------- header ---------------- */
+
+.rlb-head {
+  position: relative;
+  min-height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--violet);
+  background-size: cover;
+  background-position: center 42%;
+  border: 1px solid var(--panel-border);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+.rlb-head-veil {
+  flex: 1;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 52px 24px 16px;
+  background: linear-gradient(180deg, rgba(20, 16, 31, 0.18) 0%, rgba(20, 16, 31, 0.82) 74%);
+}
+.rlb-kicker {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: var(--teal-bright);
+}
+.rlb-head h2 {
+  margin: 0;
+  color: var(--salt);
+  font-size: clamp(26px, 4vw, 38px);
+  letter-spacing: 0.04em;
+}
+.rlb-head p {
+  margin: 6px 0 0;
+  max-width: 68ch;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--bone);
+}
+.rlb-tally {
+  align-self: flex-end;
+  margin: 0 18px 16px 0;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--panel-border);
+  background: color-mix(in srgb, var(--space) 82%, transparent);
+  backdrop-filter: blur(6px);
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--bone);
+}
+.rlb-tally strong {
+  color: var(--amber-hot);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+.rlb-tally-flag { color: var(--danger); }
+
+/* ---------------- toolbar ---------------- */
+
+.rlb-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+}
+.rlb-tiers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.rlb-tier {
+  font-family: var(--font-display);
+  font-size: 11.5px;
+  letter-spacing: 0.07em;
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+  color: var(--bone);
+  background: color-mix(in srgb, var(--violet) 55%, transparent);
+  border: 1px solid var(--panel-border);
+  border-radius: 7px;
+  padding: 5px 11px;
+}
+.rlb-tier i { font-style: normal; color: var(--tc, var(--bone)); font-size: 11px; }
+.rlb-tier b { color: var(--sand); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.rlb-copy {
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--amber);
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 120ms, transform 120ms;
+}
+.rlb-copy:hover { background: var(--amber-hot); transform: translateY(-1px); }
+.rlb-copy:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+/* ---------------- sheets ---------------- */
+
+.rlb-sheet {
+  border: 1px solid var(--panel-border);
+  background: var(--panel-bg);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 16px 18px 18px;
+}
+.rlb-sheet-head h3 {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  color: var(--salt);
+  display: flex;
+  gap: 9px;
+  align-items: baseline;
+}
+.rlb-sheet-head h3 i {
+  font-style: normal;
+  color: var(--amber);
+  font-size: 13px;
+}
+.rlb-sheet-head p {
+  margin: 5px 0 12px;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--bone);
+  max-width: 78ch;
+}
+.rlb-sheet-head code {
+  font-size: 11.5px;
+  color: var(--sand);
+}
+
+.rlb-canvas-wrap {
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--rust-deep) 55%, transparent);
+  background:
+    radial-gradient(120% 140% at 50% -20%, color-mix(in srgb, var(--violet) 55%, transparent), transparent 60%),
+    var(--ink);
+  overflow: hidden;
+}
+.rlb-canvas-wrap canvas { display: block; }
+
+/* tooltip — DOM, so the numbers aren't canvas-only */
+.rlb-tip {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 220px;
+  padding: 7px 11px;
+  border-radius: 7px;
+  border: 1px solid var(--amber);
+  background: color-mix(in srgb, var(--space) 92%, transparent);
+  backdrop-filter: blur(4px);
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--bone);
+  pointer-events: none;
+  z-index: 2;
+}
+.rlb-tip strong { font-family: var(--font-display); font-size: 12px; letter-spacing: 0.04em; }
+.rlb-tip span { font-variant-numeric: tabular-nums; }
+
+/* flow table (details) */
+.rlb-flowtable { margin-top: 10px; font-size: 12.5px; color: var(--bone); }
+.rlb-flowtable summary {
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--sand);
+}
+.rlb-flowtable summary:hover { color: var(--amber-hot); }
+.rlb-flowtable table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  width: 100%;
+  font-variant-numeric: tabular-nums;
+}
+.rlb-flowtable th, .rlb-flowtable td {
+  text-align: left;
+  padding: 5px 12px 5px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--rust-deep) 45%, transparent);
+  font-weight: 400;
+}
+.rlb-flowtable thead th {
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--bone);
+}
+.rlb-flowtable tbody th { color: var(--sand); }
+
+/* ---------------- flags ---------------- */
+
+.rlb-flags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
+}
+.rlb-flag {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border-radius: 9px;
+  border: 1px solid var(--panel-border);
+  background: color-mix(in srgb, var(--violet) 42%, transparent);
+}
+.rlb-flag-warn { border-left: 3px solid var(--danger); }
+.rlb-flag-note { border-left: 3px solid var(--sand); border-style: dashed; }
+.rlb-flag-glyph {
+  font-size: 15px;
+  line-height: 1.3;
+  flex: none;
+  width: 22px;
+  text-align: center;
+}
+.rlb-flag-warn .rlb-flag-glyph { color: var(--danger); }
+.rlb-flag-note .rlb-flag-glyph { color: var(--sand); }
+.rlb-flag h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  color: var(--salt);
+}
+.rlb-flag p {
+  margin: 5px 0 0;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--bone);
+}
+.rlb-flag-marks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.rlb-flag-marks span {
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  color: var(--fc, var(--bone));
+  border: 1px solid color-mix(in srgb, var(--fc, var(--bone)) 45%, transparent);
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+.rlb-flag-marks code {
+  font-size: 10.5px;
+  color: var(--sand);
+  border: 1px solid color-mix(in srgb, var(--sand) 35%, transparent);
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+/* ---------------- footer ---------------- */
+
+.rlb-foot {
+  padding: 4px 8px 0;
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: var(--bone);
+  max-width: 96ch;
+}
+.rlb-foot p { margin: 0; }
+.rlb-foot code { font-size: 11.5px; color: var(--sand); }

@@ -5,7 +5,7 @@
  */
 import { useEffect, useRef, useState } from 'react';
 import { telemetry } from '../telemetry';
-import { useGameStore, useSaveStore } from '../state/store';
+import { useGameStore, useSaveStore, type Faction } from '../state/store';
 import { missionsById } from '../missions/library';
 import { REGIONS } from '../world/registry';
 import { WORLD_HALF } from '../world/layout';
@@ -28,10 +28,71 @@ function angDiff(a: number, b: number): number {
 }
 
 /** Everyone with radio lines can chime in, weighted by who's alive in content. */
-function radioCast(): string[] {
-  const out: string[] = [];
-  for (const c of characters.values()) if (c.lines.radio?.length) out.push(c.id);
-  return out.length ? out : ['ketch'];
+interface BandVoice {
+  id: string;
+  home: string;
+  faction: string;
+}
+let bandVoices: BandVoice[] | null = null;
+function radioCast(): BandVoice[] {
+  if (bandVoices) return bandVoices;
+  const out: BandVoice[] = [];
+  for (const c of characters.values()) {
+    if (c.lines.radio?.length) out.push({ id: c.id, home: c.home, faction: c.faction });
+  }
+  bandVoices = out.length ? out : [{ id: 'ketch', home: 'saltmouth', faction: 'driftline' }];
+  return bandVoices;
+}
+
+/** On-world region the rider is inside (centre + radius + skirt), nearest wins. */
+export function localBandRegion(): { slug: string; name: string } | null {
+  let slug: string | null = null;
+  let name = '';
+  let bestD = Infinity;
+  for (const mod of REGIONS.values()) {
+    const m = mod.meta;
+    // skip off-world lab benches (centres kilometres beyond the world edge)
+    if (Math.abs(m.center[0]) > 1800 || Math.abs(m.center[1]) > 1800) continue;
+    const d = Math.hypot(telemetry.x - m.center[0], telemetry.z - m.center[1]);
+    if (d < m.radius + 260 && d < bestD) {
+      bestD = d;
+      slug = m.slug;
+      name = m.name;
+    }
+  }
+  return slug ? { slug, name } : null;
+}
+
+const REP_FACTIONS = new Set(['guild', 'choir', 'reclaimers']);
+const _weights: number[] = [];
+
+/**
+ * Band-weighted voice pick — the relay band sounds like where you are and who
+ * owes you a favour: locals talk loudest on their home band (+6), factions
+ * you've earned rep with key up more (up to +8), and the Driftline always
+ * keeps a little extra airtime (+1). Long-range voices stay possible, just
+ * fainter — it's one desert, one sky.
+ */
+function pickRadioVoice(local: string | null, rep: Record<Faction, number>): string {
+  const cast = radioCast();
+  _weights.length = 0;
+  let total = 0;
+  for (const v of cast) {
+    let w = 1;
+    if (local && v.home === local) w += 6;
+    if (v.faction === 'driftline') w += 1;
+    if (REP_FACTIONS.has(v.faction)) {
+      w += Math.min(8, Math.max(0, (rep[v.faction as Faction] ?? 0) * 0.12));
+    }
+    _weights.push(w);
+    total += w;
+  }
+  let roll = Math.random() * total;
+  for (let i = 0; i < cast.length; i++) {
+    roll -= _weights[i];
+    if (roll <= 0) return cast[i].id;
+  }
+  return cast[cast.length - 1].id;
 }
 
 /** Achievement / unlock toasts — one at a time from the game store queue. */
@@ -83,11 +144,11 @@ export default function HUD() {
   // ambient radio chatter while riding (subtitles are always on)
   useEffect(() => {
     if (mode !== 'riding') return;
-    const cast = radioCast();
     const id = window.setInterval(() => {
       const g = useGameStore.getState();
       if (g.mode !== 'riding' || g.radioLine || Math.random() > 0.3) return;
-      const who = cast[Math.floor(Math.random() * cast.length)];
+      const band = localBandRegion();
+      const who = pickRadioVoice(band?.slug ?? null, useSaveStore.getState().rep);
       const line = pickLine(who, 'radio');
       if (line) {
         g.say(who, line);
@@ -258,10 +319,15 @@ export default function HUD() {
         {debt > 0 && <span className="hud-debt">· debt {debt.toLocaleString()}</span>}
       </div>
 
-      {/* radio ticker */}
+      {/* radio ticker — tag names the local band when you're inside one */}
       {radioLine && Date.now() - radioLine.t < 7000 && (
         <div className="hud-radio panel">
-          <span className="hud-radio-tag">RADIO</span>
+          <span className="hud-radio-tag">
+            {(() => {
+              const band = localBandRegion();
+              return band ? `RADIO · ${band.name.toUpperCase()}` : 'RADIO · LONG STATIC';
+            })()}
+          </span>
           <strong>{character(radioLine.who)?.name ?? radioLine.who}:</strong> {radioLine.text}
         </div>
       )}

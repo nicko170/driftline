@@ -1,0 +1,8 @@
+{
+  "slug": "portrait-station",
+  "name": "Portrait Station",
+  "blurb": "Workshop tool, not a game region: the character-art QC booth in Ketch's garage — every painted portrait hung on a rust pegboard wall, graded by canvas readback (warm-key luminance band, faction-palette drift, silhouette readability, the real 64px dialogue-card crop), with side-by-side grading, faction-wall context hangs, a Vienot colour-vision pass and a paste-ready shot-list generator for re-sittings. Anchors and center live outside the playable map.",
+  "center": [9600, 7000],
+  "radius": 4,
+  "danger": 0
+}

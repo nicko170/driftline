@@ -1,0 +1,5 @@
+{
+  "bench": { "pos": [8800, 7000], "label": "Rep ledger bench (off-world)", "elev": 0 },
+  "chart-wall": { "pos": [8804, 6996], "label": "Faction flow chart wall (off-world)", "elev": 0 },
+  "rail-desk": { "pos": [8796, 7004], "label": "Standing-tier rail desk (off-world)", "elev": 0 }
+}

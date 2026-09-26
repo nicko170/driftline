@@ -1,6 +1,55 @@
 # Progress
 
-## Status — iteration 10 (departure screen; portraits round 7 at 35/43; orphan sweep → 121 caches; backlog restock)
+## Status — iteration 11 (band-aware radio; portraits round 8 → 40/52 painted; typecheck fix; 128 caches / 0 orphans)
+
+**Done (typecheck/build/validate green; playtests green: 60–60.5 fps, 0 errors, 0 failed requests, 99.9% scene change with chapter card dismissed at 46 km/h):**
+- **Band-aware radio chatter** — `HUD.tsx` ambient chatter is now weighted by
+  place and reputation (`pickRadioVoice`): +6 when the voice's `home` is the
+  region you're inside (nearest within radius + 260 m skirt), +1 for
+  Driftline lifers, +rep×0.12 (cap +8) for guild/choir/reclaimers standing.
+  The ticker tag names the band: `RADIO · SALTMOUTH` / `RADIO · LONG STATIC`.
+  Voice list + weights reuse module-level scratch (no hot-path chatter). The
+  departure tip about liked-up radio is now true. Tuning demo intent filed
+  (`radio-weight-sandbox`).
+- **Portraits round 8** — painted + wired five: `mose-adler` (water tower),
+  `verger-sann` (Lamp Rest), `hollis-fenn` (Top Scale), `spence-sorrel`
+  (storm-years courier), `mags-delver` (Reclaimer hauler). **40/52 painted.**
+- **Build health under live traffic** — fixed demo typo
+  (`cache-density-planner/Panels.tsx`: `CacheRow[] === 1` → `.length === 1`);
+  held builds while a demo worker landed `planner.css` and writers landed two
+  missions + their paired lore mid-iteration (validate flapped, then settled
+  clean: 34 regions, 52 characters, 88 missions, 166 lore, 128 caches).
+- **Orphan-lore sweep (standing duty)** — writers landed 8 lore mid-iteration
+  (158→166); 4 orphaned (cinder-pepper-harvest → cinderflats:parts-pile,
+  driftline-oath-variants → saltmouth:gate-east, mast-light-grammar →
+  drowned-array:substation, salt-scrip-assay → saltmouth:water-tower).
+  124→**128 caches, 0 orphans**; crowded anchors (exchange 11, garage 6)
+  avoided.
+- **Backlog restock** — 6 lore intents (pennant code, brass-cup dispute,
+  census ledger, night-mirror lichen, winch catechism, first-wall tally) + 2
+  demo intents (radio-weight-sandbox, cache-route-grand-tour). Mission intents
+  deduped as already-planned; missions sit at 88/60 anyway.
+
+**Next / known issues:**
+- Portraits remaining (~12, churning as writers land sheets): caretaker-7
+  (rover), tally (plate room), ook, + writer-new sheets (advocate-reyes,
+  impa-vell, mallow, prior-chance, nyx-ala…). caretaker-7 + tally are
+  sanctioned object-portraits in the same square style. Check the live roster
+  right before painting — writers add characters mid-iteration.
+- **Re-run the orphan audit every iteration** (probe: caches.json lore ∪
+  mission `lore:` flags vs lore dir). Writers land 4–8 lore/iteration,
+  sometimes twice per builder iteration — audit again right before finishing.
+- Watch for mission `lore:` reward flags pointing at not-yet-written lore;
+  validate:content catches them but writers usually land the pair within the
+  same cycle — wait a beat before touching their missions.
+- The repo is HOT: parallel writers/demo builders land content mid-iteration;
+  run typecheck+validate+build late, and expect flapping from in-flight files.
+- Chunk-size warning persists (rapier 2.2 MB) — known, lazy routes keep it off
+  the title path.
+- Departure art is shared for all spawns; DESIGN.md's per-region art slot
+  remains open for when respawn points move.
+
+## Iteration 10 (archive) — departure screen; portraits round 7 at 35/43; orphan sweep → 124 caches; backlog restock
 
 **Done (typecheck/build/validate green; playtest green: 60.5 fps, 0 errors, 0 failed requests, 99% scene change after input):**
 - **Departure screen** (new signature moment, seen on every Play): a dispatch-office
@@ -1017,3 +1066,41 @@ See git history for detail.
   horizon cells being salvaged satellite stock (lore-bike-anatomy).
 - Hero art generated: public/images/articles/lore/night-sky-guide.jpg (courier under
   the unfinished Strand); heroImage/heroAlt set in frontmatter.
+
+## writer2 — iteration 28 (characters)
+
+Four new cast files, all validator-clean (≥23 lines each, full bucket sets):
+- `spence-sorrel` (driftline, saltmouth): semi-retired storm-years veteran,
+  Ketch's Thornwall-season wingmate, east-gate race-starter. "Sky fell sideways"
+  story formula; stopwatch-vs-life-story joke. Portrait generated at
+  public/images/articles/characters/spence-sorrel.jpg (writers cannot write to
+  public/images/characters/ — path referenced as images/articles/characters/…,
+  withBase-able; heroAlt set).
+- `mallow` (independent, saltmouth): 11-year-old freelance lap-timer with a
+  broken stopwatch stuck at 9:58; times couriers in soups/pemmies/aunts; the
+  town's real news service. Comic-relief hub gossip source.
+- `impa-vell` (guild, saltmouth): junior exchange clerk who files feelings
+  (drawer left open so someone asks); speaks her own editorial markup aloud;
+  framed-signed note from Sister Counterweight. Ledger-gossip source.
+- `nyx-ala` (independent, windspine): dune-migration cartographer at the south
+  foot, sells waypoint gossip, polite feud with Surveyor Kest (sky lies aloud
+  vs ground lies in cursive), dune four "gone sentimental" and hums back at
+  the crate. "The map is a series of apologies."
+Cross-ref canon used: Thornwall season, Thornwall/Ketch bike-era, Pemmy bleat
+units, Slick Mile, dune migration stakes, crate hum register at mothersgate.
+
+## demo3 — iteration 9 (region builder): upgrade-curve-sandbox
+
+Built the garage feel-economy grapher at `src/world/regions/upgrade-curve-sandbox/`
+(off-world bench, `[6400, 6100]`): five canvas-2D ledger figures (launch tape vs
+stock ghost, boost tank duty, pip-independent drift kick — a surfaced finding,
+top-speed bars vs the 100 km/h line, credit ladders per part), a two-lane R3F
+skidpad replaying the scripted boost launch with the 100 km/h gate pulled to the
+fit's real crossing, stock/sport/gold presets, a flagged teal "dream 0–5" ladder
+what-if (×2 cost), delta ledger vs stock and a tuned-constants JSON export.
+All numbers derive from `physics.ts`, which quotes the shipped `Bike.tsx`
+constants (incl. the ×3.4 km/h display factor). Splash/concept art at
+`public/images/work/upgrade-curve-sandbox.jpg`.
+Housekeeping: the shared typecheck showed one error in `cache-density-planner`
+(another worker's in-flight folder, `simRows === 1` should be `.length === 1`);
+left untouched per folder-ownership rules.

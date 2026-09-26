@@ -620,6 +620,26 @@
       "id": "cache-dune-fauna-notes",
       "lore": "dune-fauna-notes",
       "anchor": "canyon-slalom:spectator-ledge"
+    },
+    {
+      "id": "cache-cinder-pepper-harvest",
+      "lore": "cinder-pepper-harvest",
+      "anchor": "cinderflats:parts-pile"
+    },
+    {
+      "id": "cache-driftline-oath-variants",
+      "lore": "driftline-oath-variants",
+      "anchor": "saltmouth:gate-east"
+    },
+    {
+      "id": "cache-mast-light-grammar",
+      "lore": "mast-light-grammar",
+      "anchor": "drowned-array:substation"
+    },
+    {
+      "id": "cache-salt-scrip-assay",
+      "lore": "salt-scrip-assay",
+      "anchor": "saltmouth:water-tower"
     }
   ]
 }

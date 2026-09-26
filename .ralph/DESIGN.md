@@ -137,6 +137,23 @@ Faction colors: Salt Guild `ochre #B07C3A`, Choir `teal-bright #57C4B8`, Reclaim
 
 - 60fps mid laptop at Medium: pixelRatio ≤1.5, shadow 1024, scatter ≤ ~2k instances, fog-over-draw minimal, no per-frame allocations in the render or physics hot paths (module-level scratch objects only).
 
+## Band-aware radio (iteration 11)
+
+- Ambient chatter is **weighted, not uniform** (`HUD.tsx` → `pickRadioVoice`): base
+  weight 1; **+6 home-band** (voice's `home` === nearest on-world region within
+  radius + 260 m skirt); **+1 Driftline lifers** (own channel); **+rep × 0.12,
+  capped +8** for guild/choir/reclaimers. Long-range voices stay possible —
+  one desert, one sky. The dispatch tip "the radio chatters more when someone
+  on the channel likes you" is now literally true.
+- Ticker tag names the band: `RADIO · SALTMOUTH` inside a region,
+  `RADIO · LONG STATIC` on open playa. Region lookup reuses eager REGIONS
+  metas (off-world labs skipped by the ±1800 m rule); no store change —
+  band is derived at render from telemetry.
+- Voice data (`home`, `faction`) cached once per session in a module-level
+  `bandVoices` array; the 14 s tick reuses a module-level weights scratch —
+  no per-pick allocations beyond the pick itself.
+- Tuning bench intent filed as the `radio-weight-sandbox` lab demo.
+
 ## Departure screen (iteration 10)
 
 - **When**: every /play mount, between ▸ Play and the first rideable frame. It
