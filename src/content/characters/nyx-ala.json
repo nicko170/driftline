@@ -1,0 +1,57 @@
+{
+  "id": "nyx-ala",
+  "name": "Nyx Ala",
+  "role": "Independent dune-migration surveyor, Windspine south camp",
+  "faction": "independent",
+  "home": "windspine",
+  "bio": "A cartographer in a land that re-draws itself for spite. Nyx has spent nine seasons on Windspine's southern foot tracking the great dunes' migration — a job the Guild declined to fund on grounds of 'what's the point, it's sand, it's going WHERE sand goes' — and has produced, in reply, the only honest map of the desert's habits. She plots dune-walk in centimetres per day and sells the results as waypoint gossip: which saddle will exist in winter, which cairn is about to be buried, which flat the couriers should stop trusting. Feuds politely with Surveyor Kest over which of them has the harder mistress: Kest says the sky lies out loud; Nyx says the ground lies in cursive. Pemmy has forecast both of them wrong, which they agree is the best weather-data in the territory.",
+  "appearance": "A spare, still woman in a sand-bleached field coat with every hem weighted against the ridge wind, a brass plane-table slate hung at her hip like a duelist's pistol, ground-up-glass goggles pushed into tight coiled hair, skin grained pale from years of sun through gauze, standing at a survey tripod on the dune foot with a string of numbered stakes running away behind her — each stake tagged, each tag slightly smug.",
+  "voice": "Precise, patient, quietly furious at the ground. Speaks in measurements and then accidentally in poetry, then corrects the poetry into a bearing. Everything annoys her in the abstract and delights her in the specific. Bargains in waypoint gossip the way other people bargain in salt. Kest is 'the meteorologist'; Pemmy is 'the true instrument'. Says 'the map is a series of apologies' at least once a season, proudly, as if she didn't write it on her own slate.",
+  "lines": {
+    "greetings": [
+      "Courier. Stand still. Good. You are now a fixed point. It's the nicest thing anyone's done for me all week.",
+      "Ala. East stake line two. Buy a waypoint or sell me one. I'm indifferent. I'm lying.",
+      "You're the one carrying the humming crate. Careful on the south run — dune four's gone sentimental and walked into the road."
+    ],
+    "barks": [
+      "When a dune migrates it says 'later' in a language of slopes. I have been translating for nine seasons. Fluency is a form of being ignored, professionally.",
+      "The Guild asked me once: where is the desert going? I said 'mostly downhill'. They defunded me. Honesty has a cost basis.",
+      "Kest measures the sky. Fine work. The sky never PRETENDS. The ground tells you it's flat and then moves two metres in the night. At least the sky lies there in the open.",
+      "Pemmy forecast a wind I hadn't staked for and the whole east line's in a draw now. Note this down. Tag the stake. Blame the goat in pencil."
+    ],
+    "mission": [
+      "Take this slate round the ridge crest stakes and bring me back what each one says. Write nothing down yourself — the stakes keep their own figures. Your job is wheels and not leaning on the instruments.",
+      "Waypoint sale, courier: the saddle north of the storm gauge will NOT exist by frost. Deliver this information to the Guild weather desk. Watch them not buy it. Watch my price double. Economics, courier, is a dune that learns."
+    ],
+    "radio": [
+      "Ala to courier on the flats: that 'flat' has a memory. Watch the cairn line's third light. It leans. Everything leans. It's how the desert signs its letters.",
+      "Varga, dune six reached my stake line at minus-oh-four-hundred. Sentimental, as predicted. Thanks for not riding through my instrument string. The last courier took a theodolite to the knee.",
+      "Storm's due when the crest stakes go quiet. Quiet means bent. Bent means the wall's already on paper somewhere. Click your radio twice if the stakes are bending please.",
+      "I heard your crate humming up here in the ridge wind. Low register. Dune four hummed back. I'm very tired, courier, and something is waking up that I don't have a symbol for yet."
+    ],
+    "crate": [
+      "The wake-key? Call it what you like — it hums in the same register the deep stakes moan in before a dune turns. Whatever's sleeping under the glass counts in that key.",
+      "Bring it up here sometime, courier. Not to open anything. Just to see if the stakes lean TOWARD it. Pure science. I'll even pay. Limited-time rate: one novelty per dune."
+    ],
+    "night": [
+      "Night stakes glow faintly. Cheap glass rods, old light in them by day. The desert signs its letters. I just lick the envelopes.",
+      "The night wind comes off the ridge in hexameters. I've stopped writing that in the log because Kest reads the log. Kest already thinks I'm soft."
+    ],
+    "storm": [
+      "Wall season for me is filing season, courier. Every stake I reset is a love letter to the next wall. The desert replies badly every time. Committed anyway.",
+      "When the wall crosses the spine my whole grid is a rumour for a season. I don't mind. You should hear a map apologise."
+    ],
+    "rumors": [
+      "They say the drowned Array's cairns count the ribs of something. I staked them once. The something's migrating too. South. Toward the gate. Tag that.",
+      "Jett Marrows races the Slick Mile on a line I plotted as a joke. He beat the joke's time by a whole soup. I un-plotted the line out of spite. Physics declined to file."
+    ],
+    "lore": [
+      "Old charts call this basin 'the Writing'. Terraformers thought they were the pen. Survey says the pen is mostly the terrain keeping the writer's secrets poorly.",
+      "The map is a series of apologies. I invented that sentence. It is carved on my best slate. It is the only line the desert has never once corrected."
+    ],
+    "farewells": [
+      "Flat salt, courier. Take the east saddle — still honest. Check with me in a season.",
+      "Bring me a sky observation sometime. Kest rates them slowly. I'll pay unreasonable rates. Apologise to the DUNES for me. Pencil."
+    ]
+  }
+}

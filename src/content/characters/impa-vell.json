@@ -1,0 +1,53 @@
+{
+  "id": "impa-vell",
+  "name": "Clerk Impa Vell",
+  "role": "Junior factor's clerk, Guild exchange",
+  "faction": "guild",
+  "home": "saltmouth",
+  "bio": "Third junior clerk at the Saltmouth exchange, promoted twice for accuracy and demoted once for enthusiasm. Files everything: manifests, debts, complaints about the manifest wax, weather advisories, other clerks' handwriting critiques, and — in a drawer she keeps slightly open so someone will ask — a growing file labelled FEELINGS, MISC. Idolizes the couriers with the specific devotion of someone who has read every route manifest ever stamped and can recite the great deliveries by stamp-number. Speaks in footnotes, self-corrects mid-sentence, and annotates her own speech aloud: asterisk pause underscore italic THE WHOLE THING. The exchange tolerates her because her cross-indexing has ended three audits and started one (Sister Counterweight wrote her a formal note; she has framed it).",
+  "appearance": "A narrow young clerk in an ochre Guild vest three sizes too earnest, sleeve-garters up to the elbow, a stamp-pad stain on her left thumb she wears like a fellowship ring, spectacles on a beaded chain, hair pinned flat with a ruler, hugging a leather folio cross-stitched with the word CONTENTS, standing before the exchange's wall of brass drawers with the expression of someone who has found a filing error and is ecstatic about it.",
+  "voice": "Over-correct, earnest, runs her own editorial markup out loud — speaks in asterisks and margin notes. Apologises to forms. Calls Ash 'Courier Varga, comma, Ash, if I may' from the second meeting forever. Idolises the trade so hard the trade gets uncomfortable. The joke runs warm: she knows more courier history than the couriers do and relays it as citations, breathlessly, at counter height.",
+  "lines": {
+    "greetings": [
+      "Courier Varga, comma, Ash — may I? Counter's clean. I wiped it. I have a certificate now, asterisk, self-issued, asterisk, countersigned.",
+      "Good morning, courier. Note, filed under 'mornings': this one is acceptable.",
+      "You're here! In the ledger sense AND the actual sense. Sorry. Sorry squared. Footnote: I get to say buzzwords to a real rider."
+    ],
+    "barks": [
+      "Filed under 'today': your manifest is fine. Filed under 'my chest': feelings, pending.",
+      "The wax-seal presses heat at seven-oh-nine. I would like it noted — asterisk, formally — that I am also warm at seven-oh-nine.",
+      "Sister Counterweight signed my cross-index with her FULL name. It is framed. It is framed twice. The second frame is a backup, in case the first becomes historical.",
+      "Nobody respects form forty-seven-dash-K. It's about lamp oil! People's whole EVENINGS depend on lamp oil! I am calm. I am calm in twelve-point type."
+    ],
+    "mission": [
+      "Ledger errand, courier — take this schedule to the relay before dusk, asterisk, urgent, asterisk, please also tell the relay operator that his last form was beautiful. I wrote it in the margin and he needs to know margins have opinions.",
+      "Small job, big meaning: deliver blank manifests to the skyship desk. Blank. Unwritten. Futures, technically. Courier, you will be carrying futures. Footnote: I said that out loud and I stand by it."
+    ],
+    "radio": [
+      "Exchange to Courier Varga. Official traffic: your time at the water-tower gate is on record. Unofficial addendum: I have never seen chalk so moved.",
+      "Varga — the board lists 'miscellaneous, sealed, heavy-ish' against your name again. Asterisk, whispered: the desk has theories. Asterisk, not whispered: the desk is ME.",
+      "Your debt ledger says 'current'. My note in the margin says 'climbing'. Italics. The italics are administrative. The hope is personal.",
+      "Radio check, courier. Filing as I go. 'Clouds: present.' 'Varga: present.' 'Everything in this town: filed beside something it rhymes with.'"
+    ],
+    "crate": [
+      "The null crate entered the ledger as a dash. An actual — dash. I have been a clerk six years, courier, and I have never once been paid to write someone else's silence. Footnote: I love it here.",
+      "Whatever's humming, the wax didn't. Wax always tells me when something's wrong with a seal. This seal said nothing. Nothing is a whole paragraph in wax. Italics: alarming."
+    ],
+    "night": [
+      "Night ledger is quiet. The brass goes cold. I file the dark as 'absence, stored', which is against policy and exactly what the dark is.",
+      "At dusk the lamps come on down the counter one by one, and it is formally, asterisk, in writing, the best part."
+    ],
+    "storm": [
+      "Storm filing: routes closed, windows shuttered, chai rationed. Addendum, in my smallest handwriting: the wind got INTO drawer seven once. There is sand in 'presumed deceased' to this day.",
+      "First-wall season means junior clerks sleep over the ledger. My cot folds out of drawer twelve. The drawer is padded. The drawer has received mixed reviews."
+    ],
+    "rumors": [
+      "Mallow timed my walk to the water tower. Fourteen soups. I have filed a protest. I have filed the protest under 'feelings'. The system WORKS.",
+      "Tamsin says the desk is 'the settlement's nervous system'. Asterisk: she said it to Jett Marrows, not to me. Underline: I heard it anyway. The desk hears everything. The desk is me."
+    ],
+    "farewells": [
+      "Flat salt and a following wind, courier. Filed under 'sayings', cross-referenced 'things I get to say because of you'.",
+      "Come back with stamps. Any stamps. I collect the cancellations nobody else wants. Pause. That was about the stamps. Mostly."
+    ]
+  }
+}
