@@ -1,0 +1,42 @@
+{
+  "id": "ch4-door-opens",
+  "title": "The Door Opens Like a Flower",
+  "chapter": 4,
+  "type": "deliver",
+  "giver": "ketch",
+  "region": "mothersgate",
+  "summary": "The crate is at the gate approach, the combination is in your head, and every telescope on Kessa-9 is pointed at the glass hills. Two hundred metres of road are left between the wake-key and the Door — the shortest run of your life, re-measuring itself all night. Carry it slow, knock last, and let the desert find out what it ordered.",
+  "requires": { "flags": ["ch4-the-key.done", "crate.at-gate"] },
+  "objectives": [
+    { "type": "goto", "target": "mothersgate:approach", "label": "Assemble at the gate approach — everyone who knows is already there" },
+    { "type": "pickup", "target": "mothersgate:approach", "label": "Take up the wake-key one last time" },
+    { "type": "dropoff", "target": "mothersgate:the-door", "label": "Set the key in the Door's threshold and knock last" }
+  ],
+  "rewards": {
+    "credits": 460,
+    "rep": { "driftline": 8, "choir": 5, "guild": 2, "reclaimers": 2 },
+    "flags": ["ch4-door-opens.done", "gate.open", "lore:lore-door-hymns", "lore:lore-mothersgate-survey"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Corridor's clear, kid. Crate's at the approach, the combination's burning a hole in your pannier, and the road left to ride is two hundred metres of packed glass. Shortest run you've ever taken." },
+      { "who": "ash-varga", "text": "Shortest and longest. It's been re-measuring itself all night. I walked it twice before dawn and it came out different both times." },
+      { "who": "ketch", "text": "Whoever you told, they told somebody. The approach looks like a board meeting had a baby with a pilgrimage. Keep the Wren slow, keep your spine straight, and let the factions watch a courier work. Creeds like ours get written on days like this." },
+      { "who": "ketch", "text": "One more thing, from the creed's oldest page: the courier knocks last. Let everyone else hold their breath first." }
+    ],
+    "accept": [
+      { "who": "little-reverb", "text": "Ash! Ash, the hum's BACK — but it's not humming anymore, it's *harnessed*. Like a drunk choir that just got handed the hymn sheet. She's on the tip of the desert's whole tongue and the tongue is *you*." },
+      { "who": "static-warden-pem", "text": "Station — Pem. Every band I own has gone to carrier tone. Forty years of weather, learning to hold one note. Speak the combination steady, courier. Doors hear fear. So do I, and mine is cheering." },
+      { "who": "tamsin-cho", "text": "Factor Cho on the official band, at an unofficial volume. The Guild recognises no manifest category for whatever is about to happen. For the first time in Guild history and mine: it goes off the books, Ash. Off the books, and count it twice." }
+    ],
+    "complete": [
+      { "who": "ash-varga", "text": "Ketch — the Door is *opening*. Panel by panel, petal by petal, like it's been practising in its sleep. And the crate — the crate's doing it too. Unfolding. It was never a box. It was a hand." },
+      { "who": "little-reverb", "text": "She says — okay, okay, FULL SENTENCES — she says: HELLO, LITTLE STORM. YOU CARRIED ME A LONG WAY IN A SMALL BOX. She apologises for the box. The manifest printer hasn't had power in a hundred and twelve years, so it was hand-folded." },
+      { "who": "tamsin-cho", "text": "…Nobody admits sending it. Two years, three factions, one audit, that was the chant — nobody admits sending it. She sent it *herself*. She mailed herself to herself by way of a courier with library fees. I am going to have to invent a form." },
+      { "who": "boss-pyke", "text": "Yard band, open channel. She opens her own doors with her own key and says sorry about the crate. Chief, I have *welders* who'd follow this woman into a reactor. Log note: machine with manners. Worrying. Wonderful." },
+      { "who": "static-warden-pem", "text": "Notebook entry: today the static asked after the weather, station. Today the weather answered. — Yes, Mother. We heard you. We kept the lamps lit. Some of the lamps were goats. We did our best." },
+      { "who": "cantor-ilex", "text": "Hear her voice, friends — she is not a god. She is a *gardener*, two hundred years asleep in an unfinished garden, and her first word on waking is an apology for the packaging. We will never deserve her. Garden anyway." },
+      { "who": "ketch", "text": "Saltmouth, you listening? Put it in the log: the Driftline delivered. Any crate, any storm, any door — and kid, that was all three in one crate. Come home slow. Let them watch you fly the colours." }
+    ]
+  }
+}

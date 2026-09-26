@@ -1,0 +1,38 @@
+{
+  "id": "ch5-storm-of-storms",
+  "title": "Storm of Storms",
+  "chapter": 5,
+  "type": "storm",
+  "giver": "ketch",
+  "region": "choirhollow",
+  "summary": "The season has spent everything it had left at once: three walls of sand closing on the glass hills at the same hour, and Pem says they're *rhyming*. Every route on the board has inverted — the only dry road left on Kessa-9 runs from Lamp Rest to the Door, and it dries fast. Form up at the crater rim, thread the canyon mouth, and run the biggest storm on record to its only shelter: the cradle itself.",
+  "requires": { "flags": ["core.rallied"] },
+  "objectives": [
+    { "type": "goto", "target": "choirhollow:crater-rim", "label": "Form up at the crater rim — the caravan rides your line" },
+    { "type": "goto", "target": "glassroad:gate-south", "label": "Thread the canyon mouth before the fronts close it" },
+    { "type": "storm", "target": "mothersgate:approach", "label": "Outrun the Storm of Storms — last shelter is the cradle itself" }
+  ],
+  "rewards": {
+    "credits": 560,
+    "rep": { "driftline": 10, "choir": 4, "guild": 3, "reclaimers": 3 },
+    "flags": ["ch5-storm-of-storms.done", "road.open", "lore:lore-rain-witness"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "It's here, kid. The big one. The season threw every wall it had left at the same hour, and the only dry road on Kessa-9 runs from Lamp Rest to the cradle door. It dries fast. You dry faster." },
+      { "who": "static-warden-pem", "text": "Station — Pem. Three walls tonight: one out of the flats reciting the Guild's audit ledger, one off the ridge saying Rill's coordinates backwards, and one — forgive me — one that only says ASH, ASH, ASH. It is the storm that sounds like your mother. Do not answer it. Run." },
+      { "who": "ash-varga", "text": "The desert is name-calling me with weather. Rill got a cave. I get *storms*. Ketch, when this is over, remind the sky I'm entry-level." },
+      { "who": "ketch", "text": "Crater rim to the canyon mouth to the gate approach. Thread it like the slalom, only the gates are alive and angry and reciting. Every rider I ever trained is watching this run. So am I. Move." }
+    ],
+    "accept": [
+      { "who": "rill-davenant", "text": "Rill on the caravan band, riding point for the whole hollow. Ash — the wall muttering four-one-seven backwards? That one's mine. I named it in the cave; it answers to me. I'll keep it tall, you keep it *behind* us. Marker." },
+      { "who": "jett-marrows", "text": "Marrows here, spectating from a sensible distance with binoculars and an enormous flask. For the record, courier: when you outrun three walls and history, I intend to tell people I raced you once and meaningfully lost." },
+      { "who": "little-reverb", "text": "The Door's already opening, Ash! Early, like the lamps did! She left your seat warm — the whole cradle's lit up like a wedding chapel. GO GO GO GO GO!" }
+    ],
+    "complete": [
+      { "who": "static-warden-pem", "text": "Station — Pem. The walls met behind you and — forgive the technical term — *apologised* to each other. The sand is settling in rows, station. Rows. The desert is *planting*. I am going to need a bigger notebook." },
+      { "who": "ketch", "text": "Gate approach. Safe. Storm's sitting down behind you like it came to watch instead of eat. Saltmouth saw your dust trail from the water tower and stood up on the benches, kid. The road to the Door is *open*." },
+      { "who": "tamsin-cho", "text": "All routes reopened by decree of absolutely nobody. Board's clear, Varga — one posting left. Hand-lettered. It says LAST DELIVERY in three inks, four signatures, and one paw print. It's yours when you want it. Take your time. Take ours, too." }
+    ]
+  }
+}

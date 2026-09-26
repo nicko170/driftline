@@ -387,10 +387,11 @@
     "door",
     "cinematic"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790384304.977311
+   "claimed_at": 1790384304.977311,
+   "done_at": "2026-09-26T11:10:58"
   },
   {
    "kind": "article",
@@ -404,10 +405,11 @@
     "farewell",
     "character beats"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790384304.977312
+   "claimed_at": 1790384304.977312,
+   "done_at": "2026-09-26T11:10:58"
   },
   {
    "kind": "article",
@@ -421,10 +423,11 @@
     "MOTHER",
     "choice-core"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790384304.977312
+   "claimed_at": 1790384304.977312,
+   "done_at": "2026-09-26T11:10:58"
   },
   {
    "kind": "article",
@@ -438,10 +441,11 @@
     "gauntlet",
     "endgame"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790384304.977312
+   "claimed_at": 1790384304.977312,
+   "done_at": "2026-09-26T11:10:58"
   },
   {
    "kind": "article",
@@ -456,10 +460,11 @@
     "settlements",
     "vote"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790384490.682661
+   "claimed_at": 1790384490.682661,
+   "done_at": "2026-09-26T11:12:27"
   },
   {
    "kind": "article",
@@ -475,10 +480,11 @@
     "rain",
     "quiet"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790384490.682663
+   "claimed_at": 1790384490.682663,
+   "done_at": "2026-09-26T11:12:27"
   },
   {
    "kind": "article",
@@ -493,10 +499,11 @@
     "saltmouth",
     "loop"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790384490.682663
+   "claimed_at": 1790384490.682663,
+   "done_at": "2026-09-26T11:12:27"
   },
   {
    "kind": "article",
@@ -510,10 +517,11 @@
     "choir",
     "skydocks"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790384490.682664
+   "claimed_at": 1790384490.682664,
+   "done_at": "2026-09-26T11:12:27"
   },
   {
    "kind": "article",
@@ -2411,8 +2419,10 @@
    "cluster": "demos",
    "intent": "Contact-sheet viewer for all generated character portraits: grid, individual lightbox with the character's voice notes, faction colour framing, and a 'generate prompt' preview of the appearance text (to re-roll art later). Stack: React only, images via withBase.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo2",
+   "claimed_at": 1790384721.283526
   },
   {
    "kind": "demo",

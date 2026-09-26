@@ -1,0 +1,41 @@
+{
+  "id": "ch5-the-core",
+  "title": "The Choice-Core",
+  "chapter": 5,
+  "type": "fragile",
+  "giver": "ketch",
+  "region": "mothersgate",
+  "summary": "She wants to hand it over in person. Deep in the cradle, past the open Door, MOTHER keeps the part that decides: the choice-core — her waking, her sleeping, both switches in one warm nineteen-kilo package that hums in perfect fifths. She is giving it to a courier, and the factions are giving each other nosebleeds about it. Carry it out of the cradle, gently, to the rally at the dune overlook. Everyone will be waiting. Everyone will have opinions.",
+  "requires": { "flags": ["gate.open"] },
+  "objectives": [
+    { "type": "pickup", "target": "mothersgate:the-door", "label": "Take the choice-core from the cradle's open hand" },
+    { "type": "goto", "target": "mothersgate:approach", "label": "Cross the threshold — gently, it dreams" },
+    { "type": "dropoff", "target": "saltmouth:overlook", "label": "Rally the core at the dune overlook — all of Saltmouth is coming" }
+  ],
+  "cargo": { "fragile": true, "label": "choice-core" },
+  "rewards": {
+    "credits": 640,
+    "rep": { "driftline": 10 },
+    "flags": ["ch5-the-core.done", "core.rallied", "lore:lore-mother-memoirs"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "ketch", "text": "Rally call, kid. She wants to hand it over in person — the choice-core. Her waking, she calls it. The part that decides whether she finishes the sky or goes back to sleep. She's giving it to *you*, and the factions are giving each other nosebleeds about it." },
+      { "who": "ash-varga", "text": "She's handing me the on-switch and the off-switch in the same box, and everyone is just going to *let me ride around with it*?" },
+      { "who": "static-warden-pem", "text": "Station, it is not a box any more than the last one was. Nineteen kilos, hums in perfect fifths, and — my notebooks insist on this wording — it is *worried about you*. Carry accordingly." },
+      { "who": "ketch", "text": "It rides fragile. It dreams. Treat it like newborn teeth. And kid — everybody out there's about to offer you an escort and an argument. You know the creed: couriers carry, everybody else talks." }
+    ],
+    "accept": [
+      { "who": "cantor-ilex", "text": "The Choir will ride your flanks, lamp-side out. Whatever the core decides, let it decide in a world it recognises. We will sing softly. Take that as a promise, and as a threat aimed entirely at our own volume." },
+      { "who": "dockmaster-devanna", "text": "Skydocks to courier Varga: the Guild offers a skyship escort, high and — countrified. Correction: *counted*. The Brinemaster frets. The dockmaster wagers four days' salt you wave us all off." },
+      { "who": "boss-pyke", "text": "Yard convoy's hitched and armoured, chief. We'll screen your road — any storm-happy sand castle wants to audition today, it auditions against a welded union." },
+      { "who": "ash-varga", "text": "Appreciated, all. Escorts ride *behind*. Arguments ride on the radio. The core rides with me. That's the whole arrangement — and Dockmaster, you're out four days' salt." }
+    ],
+    "complete": [
+      { "who": "little-reverb", "text": "She's not scared! That's the thing nobody gets — Ash, the core is *not scared*. She says: I FINISHED PACKING. EVERYTHING AFTER THIS IS WEATHER. Whatever we pick — she already picked *us*." },
+      { "who": "ketch", "text": "Core's racked, the cradle shut behind you like a book at bedtime, and all of Saltmouth's out on this overlook like it's a wedding and an election. Kid, I've watched couriers carry salt, mail, contraband and one live goat. You are carrying *tomorrow*. Sits good on the Wren." },
+      { "who": "tamsin-cho", "text": "The board has nothing posted — everyone is too busy watching the horizon do that. For the record, Varga: the going rate on tomorrow is your debt, times zero. Somebody finally counted right." },
+      { "who": "ash-varga", "text": "It's quiet out here. Whole desert holding the rail like an amphitheatre. All right, core. Sleep light. Tomorrow we find out what weather's for." }
+    ]
+  }
+}

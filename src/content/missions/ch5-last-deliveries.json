@@ -1,0 +1,37 @@
+{
+  "id": "ch5-last-deliveries",
+  "title": "Last Deliveries",
+  "chapter": 5,
+  "type": "deliver",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "The Door is open and the whole desert is waiting on whatever comes next — so the board is closing early, and Tamsin has one last quiet round that will not trust itself to just anyone. A tin of tea for Ketch. A sack of oats for the weather desk's senior goat. And a wax-sealed letter, nine years unsent, for the dockmaster of the skydocks. No rush. That's the whole point.",
+  "requires": { "flags": ["gate.open"] },
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:exchange", "label": "Collect the farewell round from Tamsin at the exchange" },
+    { "type": "dropoff", "target": "saltmouth:garage", "label": "Deliver Dockmaster's Blend to Ketch — insist on a brewed cup" },
+    { "type": "dropoff", "target": "saltmouth:water-tower", "label": "Deliver Pemmy's oats to the weather desk — brass chart, senior goat" },
+    { "type": "dropoff", "target": "skydocks:dockmaster", "label": "Deliver the letter. Rate inquiry. Nine years. Don't ask." }
+  ],
+  "rewards": {
+    "credits": 160,
+    "rep": { "driftline": 4, "guild": 4 },
+    "flags": ["ch5-last-deliveries.done", "lore:lore-goat-forecast"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "Board's closing early today. Before — whatever happens up in the glass hills happens — I need three small things carried, and I need them carried by somebody who does not read other people's mail. Sit. This takes a minute off your life and gives back two." },
+      { "who": "tamsin-cho", "text": "Item one: a tin of Dockmaster's Blend, for Ketch. Item two: a sack of rolled oats for Pemmy at the weather desk — senior goat, brass chart. The forecast has been eerily kind since the Door opened, and the Guild pays *its* debts." },
+      { "who": "tamsin-cho", "text": "Item three is a letter. The wax says RATE INQUIRY. It has said rate inquiry for nine years. It goes to Dockmaster Shore at the skydocks. You will not read it. If you read it I will know, because you will blush at the exchange rate, which is affection, which I do not discuss." }
+    ],
+    "accept": [
+      { "who": "ketch", "text": "Ketch here. Tamsin closed the board, Pemmy's getting oats, and I've been told to expect tea. Kid, when the Guild starts mailing *feelings*, either the world's ending or it's finally starting. Same ride home, either way." },
+      { "who": "ash-varga", "text": "Copy. One farewell round: tea, oats, and nine years of thermally sealed subtext. Any crate, any storm, any door. Even the emotional ones." }
+    ],
+    "complete": [
+      { "who": "dockmaster-devanna", "text": "Varga. A sealed — hand me that voice pipe — a sealed rate inquiry, nine years in transit. Hm. *Hm.* Tell the factor: the rate is accepted. Quote her sky-to-salt terms, standing, no surcharge, effective nine years ago. Log it personal. Personal is not a log category. Log it anyway." },
+      { "who": "tamsin-cho", "text": "Factor Cho on the extremely official band. The board acknowledges the dockmaster's counter-offer of — terms as stated. The board also acknowledges nothing else, ever, and would like the record to show that the record shows nothing. Thank you, Ash. For all three deliveries. Especially the ones I didn't make." },
+      { "who": "ketch", "text": "Kid, this tea is *real*. Nine years of subtext and it steeps like sunlight. Whatever you decide at that Door — this, right here, this is the thing worth delivering. Come home when it's done." }
+    ]
+  }
+}
