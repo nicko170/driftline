@@ -1,0 +1,35 @@
+{
+  "id": "side-ember-run",
+  "title": "Ember Run",
+  "chapter": "side",
+  "type": "timed",
+  "giver": "solder",
+  "region": "cinderflats",
+  "summary": "The Choir's lamp-ring burns real flame on the cold rim nights, and the Hollow is out of honest heat. Solder is selling a banked reactor brick — a fist-sized orange coal that will warm a whole ring of lamps for a winter — if it arrives before it cools. Double pay, one clock, and your bike will carry the glow like a second tail-light.",
+  "objectives": [
+    { "type": "pickup", "target": "cinderflats:crusher", "label": "Lift the ember brick warm from the Crusher's bank-bed" },
+    { "type": "dropoff", "target": "choirhollow:temple-steps", "label": "Set it in the warming hearth on the temple steps — before it goes dark" }
+  ],
+  "timeLimit": 160,
+  "rewards": {
+    "credits": 260,
+    "rep": { "reclaimers": 5, "choir": 5 },
+    "flags": ["side-ember-run.done", "lore:listening-schedule"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "solder", "text": "Okay, so. Idea. The Crusher's bank-bed keeps fist-sized slugs of reactor brick at just-under-molten — the Yards call them embers, miners' heat, two hundred years of slumbering warmth, BUT they cool in about three minutes once you lift them. Always just slag foot-warmers. Useless." },
+      { "who": "solder", "text": "Unless. UNLESS somebody fast — the fastest, specifically verified fastest person I personally know — could carry one to the Hollow before it goes dark. The choir's lamp-ring burns real flame on cold nights, they're out of honest heat, and a warm brick will kindle a hearth for a whole winter. I priced the run. You'll want to sit — no, stand, you'll want to ALREADY BE MOVING." }
+    ],
+    "accept": [
+      { "who": "solder", "text": "Cradle's bolted behind your seat, it's braced, it's vented, it GLOWS, I may have made it glow extra because it's beautiful. Don't brake hard — embers slosh. Technically. Emotionally. GO. Clock is the brick, the brick is the clock." },
+      { "who": "ash-varga", "text": "Why is the pay double the normal rate?" },
+      { "who": "solder", "text": "Because Pyke said 'warm cargo owes warm margins' and Aunt Vertex cried a little and called it scripture. The Yards are a proud people. RIDE." }
+    ],
+    "complete": [
+      { "who": "solder", "text": "The horn lit before the hearth did, did you hear? You crossed the rim and the whole ring of lamps stood UP. A hundred and sixty seconds and it went in the hearth *still cherry*. Pyke says margins like yours are why the old couriers wrote oaths instead of receipts." },
+      { "who": "ash-varga", "text": "The brick sang the last stretch. Low. Almost happy." },
+      { "who": "solder", "text": "Everything warm sings if you carry it right. That's not engineering. That's — okay, it's engineering presented poetically. Tell the Choir the Yards says the winter's on us." }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "side-static-choir",
+  "title": "Static for the Choir",
+  "chapter": "side",
+  "type": "scout",
+  "giver": "static-warden-pem",
+  "region": "glassroad",
+  "summary": "Storms charge the Glassroad's fused spires like instrument strings, and Static-Warden Pem wants the hum recorded before the season ends. Hold station beside three singing spires while the field meter fills, then carry the spool to the listening horn. Slow work. Sacred work. Terrifyingly hummed.",
+  "objectives": [
+    { "type": "scout", "target": "glassroad:mid-span", "label": "Hold station at the mid-span spire — let the meter fill" },
+    { "type": "scout", "target": "glassroad:glass-chapel", "label": "Hold station at the chapel spire — let the meter fill" },
+    { "type": "scout", "target": "glassroad:slick-mile", "label": "Hold station at the Slick Mile spire — let the meter fill" },
+    { "type": "dropoff", "target": "choirhollow:listening-horn", "label": "Play the spool into the listening horn at the Hollow" }
+  ],
+  "rewards": {
+    "credits": 160,
+    "rep": { "choir": 6 },
+    "flags": ["side-static-choir.done", "lore:static-litanies"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "static-warden-pem", "text": "Station. The storm that passed on Wednesday left the canyon *tuned*. The spires along the road hold a charge for days afterwards, and they hum — not random hum, not weather hum. Ordered hum. My notebooks have waited eleven seasons for the glass to hold still long enough to be read aloud." },
+      { "who": "static-warden-pem", "text": "You will take my field meter to three spires I have marked — mid-span, the chapel bend, the Mile — and hold very still beside each while it drinks the sound. The meter wants about three seconds of stillness, station. Do not give it four. On the fourth second the hum starts giving back, and we do not have a liturgy for that yet." }
+    ],
+    "accept": [
+      { "who": "static-warden-pem", "text": "The meter rides behind your seat; it is older than your engine and twice as opinionated. Kill the motor at each spire if you can bear it — the meter forgives a wound coil but never a loud one." },
+      { "who": "ash-varga", "text": "And if the hum starts *giving back*?" },
+      { "who": "static-warden-pem", "text": "Then write down what it says, station, and do not answer in rhyme. Off you go. Ride like you're shelving a book." }
+    ],
+    "complete": [
+      { "who": "static-warden-pem", "text": "Shh. There. Between the drifts — do you hear it, station? Three spires, one chord, and under the chord a *count*. The road is not humming. The road is *counting to itself*. I have filed your spool under 'embarrassing, promising'." },
+      { "who": "ash-varga", "text": "It held a note at the Mile like it was waiting for me to join in." },
+      { "who": "static-warden-pem", "text": "It was. Everyone it catches still, it tries. You are the fourth this season and the first to ride away humming *in key*. The Choir will want to meet you. Bring cabbage. That is a liturgy we do have." }
+    ]
+  }
+}

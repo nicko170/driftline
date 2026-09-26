@@ -1,0 +1,36 @@
+{
+  "id": "side-long-way-home",
+  "title": "The Long Way Home",
+  "chapter": "side",
+  "type": "deliver",
+  "giver": "old-bahro",
+  "region": "saltmouth",
+  "summary": "The Guild has served Old Bahro an eviction notice for forty years of sitting on a crate he insists is a footrest. His legal strategy is simple and ancient: the notice must be delivered to the wrong dock, returned with apologies, and served again next season. Ride the paper on its traditional long way home.",
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:moorage", "label": "Accept the earnest brown envelope from Old Bahro" },
+    { "type": "dropoff", "target": "skydocks:keel-town", "label": "Deliver it to the wrong dock — Keel Town, Hang-Tenant Services" },
+    { "type": "dropoff", "target": "saltmouth:exchange", "label": "Return it to the Guild exchange, stamped UNDELIVERABLE, with the Guild's compliments" }
+  ],
+  "rewards": {
+    "credits": 150,
+    "rep": { "driftline": 4, "guild": 2 },
+    "flags": ["side-long-way-home.done", "lore:keeltown-tariffs"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "old-bahro", "text": "Young'un. The Guild has served me a paper. It says my crate is an unlawful dwellment, my mast is encroached, and my person is to vacate. Forty-first time they've sent it. I treasure the series; I have opinions on the binding." },
+      { "who": "old-bahro", "text": "Now. Longstanding arrangement. You take the paper, you ride it all the way out to Keel Town — the wrong dock, very wrong, beautifully wrong — where a clerk of my acquaintance stamps it UNDELIVERABLE and writes something kind in the margin. Then you walk it back to the exchange with apologies. By the time the Guild re-serves it, soup season. Every year. Like weather." },
+      { "who": "old-bahro", "text": "Is it legal? The paper has survived six audits, two acting factors, and a fire I am legally required to describe as adjacent. At this point the Guild doesn't want me gone, young'un. The notice *is* the tenancy. Evicting me would bankrupt the form." }
+    ],
+    "accept": [
+      { "who": "old-bahro", "text": "Envelope's earnest and brown, stamped FIRST and FINAL for the fortieth time. Mind you deliver it wrong properly — Hang-Tenant Services, window three, ask for Dessa, tell her the mast still creaks in E-flat. She'll know the paper." },
+      { "who": "ash-varga", "text": "So to be clear: I'm being paid to misdeliver government mail, on retainer, annually." },
+      { "who": "old-bahro", "text": "You're being paid to preserve a tradition older than the road that built it. The misdelivery is merely folk customs. Over." }
+    ],
+    "complete": [
+      { "who": "ash-varga", "text": "Delivered wrong, stamped, margin-noted, and walked home to the exchange. Dessa says hello. The exchange clerk sighed in a way I can only describe as *heritage*." },
+      { "who": "old-bahro", "text": "Forty-one for forty-one, then. The Guild gets its motion, clerk Dessa gets her hello, I get my mast, and you, young'un, get paid in honest credits and honorary soup. The system's perfect. Nobody touch it." },
+      { "who": "tamsin-cho", "text": "Courier. Whatever the old man's envelope says, the Guild's official position is that it was handled with *uncharacteristic* thoroughness. We've billed the round trip to an account called TRADITIONAL MAINTENANCE. Do not ask me whose tradition. The account predates me." }
+    ]
+  }
+}

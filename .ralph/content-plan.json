@@ -827,8 +827,10 @@
     "windspine",
     "time trial"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790388435.334645
   },
   {
    "kind": "article",
@@ -842,8 +844,10 @@
     "skydocks",
     "vista"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790388435.334646
   },
   {
    "kind": "article",
@@ -858,8 +862,10 @@
     "comedy",
     "saltmouth"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790388435.334647
   },
   {
    "kind": "article",
@@ -874,8 +880,10 @@
     "night",
     "mystery"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790388435.334647
   },
   {
    "kind": "article",
@@ -889,8 +897,11 @@
     "comedy",
     "moorage"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790388515.88046,
+   "done_at": "2026-09-26T12:20:16"
   },
   {
    "kind": "article",
@@ -905,8 +916,11 @@
     "glassroad",
     "choir"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790388515.880461,
+   "done_at": "2026-09-26T12:20:16"
   },
   {
    "kind": "article",
@@ -920,8 +934,11 @@
     "guild",
     "route planning"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790388515.880461,
+   "done_at": "2026-09-26T12:20:16"
   },
   {
    "kind": "article",
@@ -935,8 +952,11 @@
     "reclaimers",
     "night cargo"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "done",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790388515.880461,
+   "done_at": "2026-09-26T12:20:16"
   },
   {
    "kind": "article",
@@ -3619,10 +3639,11 @@
     "machine",
     "log"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer2",
-   "claimed_at": 1790387893.097437
+   "claimed_at": 1790387893.097437,
+   "done_at": "2026-09-26T12:08:26"
   },
   {
    "kind": "article",
@@ -3636,10 +3657,11 @@
     "melancholy",
     "abandonment"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer2",
-   "claimed_at": 1790387893.0974379
+   "claimed_at": 1790387893.0974379,
+   "done_at": "2026-09-26T12:07:55"
   },
   {
    "kind": "article",
@@ -3653,10 +3675,11 @@
     "world change",
     "field guide"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer2",
-   "claimed_at": 1790387893.0974379
+   "claimed_at": 1790387893.0974379,
+   "done_at": "2026-09-26T12:07:55"
   },
   {
    "kind": "article",
@@ -3670,10 +3693,11 @@
     "doctrine",
     "mothersgate"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer2",
    "worker": "writer2",
-   "claimed_at": 1790387893.0974379
+   "claimed_at": 1790387893.0974379,
+   "done_at": "2026-09-26T12:07:55"
   },
   {
    "kind": "article",

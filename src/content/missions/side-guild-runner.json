@@ -1,0 +1,37 @@
+{
+  "id": "side-guild-runner",
+  "title": "Guild Runner: Contracts",
+  "chapter": "side",
+  "type": "timed",
+  "giver": "tamsin-cho",
+  "region": "saltmouth",
+  "summary": "The Guild's route-planning exam, run live: three contracts, three settlements, one afternoon. Take the sealed folio from the exchange, countersign with the dockmaster at Keel Town, witness at the Yards' boss office, and be home before the folio's wax thinks about softening. Direct lines are for people who don't understand weather.",
+  "objectives": [
+    { "type": "pickup", "target": "saltmouth:exchange", "label": "Take the sealed contract folio from the exchange" },
+    { "type": "dropoff", "target": "skydocks:dockmaster", "label": "Countersign with Dockmaster Devanna at the skydocks" },
+    { "type": "dropoff", "target": "cinderflats:boss-office", "label": "Get Boss Pyke's witness mark at the Yards" },
+    { "type": "dropoff", "target": "saltmouth:exchange", "label": "Bring the folio home before the wax softens" }
+  ],
+  "timeLimit": 300,
+  "rewards": {
+    "credits": 240,
+    "rep": { "guild": 7 },
+    "flags": ["side-guild-runner.done", "lore:lore-guild-form-22b"]
+  },
+  "dialogue": {
+    "offer": [
+      { "who": "tamsin-cho", "text": "Ash. Sit — no, stand, this is an examination. Every Guild factor learns the triangle: Saltmouth paper, dockmaster countersignature, Reclaimer witness, home before the wax softens. Ninety years we've run it, and exactly no one has taken the same route twice, which the Guild maintains is the entire lesson." },
+      { "who": "tamsin-cho", "text": "Clock starts when the folio leaves my desk. It ends at my desk. Everything in between — the flats, the wind farm, whatever the sky is doing that day — is between you and your reputation. Choose your line. Budget your boost. And Ash? The folio knows when it's been opened. It *tells* people. Nobody will say how." }
+    ],
+    "accept": [
+      { "who": "tamsin-cho", "text": "Clock's running, courier. Devanna signs fast if you compliment the mooring lines, Pyke signs fast if you don't touch anything, and I sign fast if you hurry. Three signatures, two of them real. Go." },
+      { "who": "ash-varga", "text": "Any tips on the line?" },
+      { "who": "tamsin-cho", "text": "Yes — it's behind you. Everything profitable always is." }
+    ],
+    "complete": [
+      { "who": "tamsin-cho", "text": "Wax's firm, seals intact, timestamps *plausible* — which, in Guild, is a standing ovation. Congratulations, Ash: you're now the kind of courier the Guild trusts with paper worth more than your bike. A dangerous animal. Keep it fed." },
+      { "who": "ash-varga", "text": "So did I pass?" },
+      { "who": "tamsin-cho", "text": "The exam has no passing grade. It has a *next* folio. It arrives Thursday. Try to be sick." }
+    ]
+  }
+}
