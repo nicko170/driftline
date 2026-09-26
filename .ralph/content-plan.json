@@ -5145,8 +5145,10 @@
     "mother",
     "reverb"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790406257.05482
   },
   {
    "kind": "article",
@@ -5160,8 +5162,10 @@
     "drawer",
     "mystery"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790406257.054822
   },
   {
    "kind": "article",
@@ -5176,8 +5180,10 @@
     "tract",
     "law"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790406257.054822
   },
   {
    "kind": "article",
@@ -5191,8 +5197,10 @@
     "custom",
     "field-guide"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790406257.054822
   },
   {
    "kind": "article",
@@ -5480,10 +5488,11 @@
    "cluster": "demos",
    "intent": "Title-screen motion bench: key-art parallax layers, menu entrance choreography, epilogue-panel reveal and font-loading states under simulated slow networks; export timing tokens for the shipped TitleScreen.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo3",
-   "claimed_at": 1790405536.626921
+   "claimed_at": 1790405536.626921,
+   "done_at": "2026-09-26T17:05:00"
   },
   {
    "kind": "demo",
