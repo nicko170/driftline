@@ -1,0 +1,8 @@
+{
+  "slug": "radio-static-visualizer",
+  "name": "Band Seven Bench",
+  "blurb": "Workshop art toy, not a game region: a recovered longwave radio set with a cathode scope. Anchors and center live outside the playable map.",
+  "center": [5600, 5600],
+  "radius": 4,
+  "danger": 0
+}

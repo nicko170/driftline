@@ -1099,10 +1099,11 @@
     "leader",
     "cinderflats"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790383727.20977
+   "claimed_at": 1790383727.20977,
+   "done_at": "2026-09-26T10:54:54"
   },
   {
    "kind": "article",
@@ -1116,10 +1117,11 @@
     "young",
     "parts"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790383727.209771
+   "claimed_at": 1790383727.209771,
+   "done_at": "2026-09-26T10:53:28"
   },
   {
    "kind": "article",
@@ -1133,10 +1135,11 @@
     "comic",
     "dangerous"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790383727.209771
+   "claimed_at": 1790383727.209771,
+   "done_at": "2026-09-26T10:54:54"
   },
   {
    "kind": "article",
@@ -1149,10 +1152,11 @@
     "navigator",
     "maps"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790383727.209771
+   "claimed_at": 1790383727.209771,
+   "done_at": "2026-09-26T10:53:28"
   },
   {
    "kind": "article",
@@ -2036,10 +2040,11 @@
     "mechanics",
     "tutorial-lore"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790383567.143043
+   "claimed_at": 1790383567.143043,
+   "done_at": "2026-09-26T10:53:27"
   },
   {
    "kind": "article",
@@ -2053,10 +2058,11 @@
     "origin",
     "myth"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790383567.143044
+   "claimed_at": 1790383567.143044,
+   "done_at": "2026-09-26T10:53:27"
   },
   {
    "kind": "article",
@@ -2070,10 +2076,11 @@
     "null crate",
     "memoir"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790383567.1430452
+   "claimed_at": 1790383567.1430452,
+   "done_at": "2026-09-26T10:53:27"
   },
   {
    "kind": "article",
@@ -2087,10 +2094,11 @@
     "comedy",
     "guild"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790383567.1430452
+   "claimed_at": 1790383567.1430452,
+   "done_at": "2026-09-26T10:53:27"
   },
   {
    "kind": "article",
@@ -2103,8 +2111,10 @@
     "chapter 4",
     "world change"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384020.5357819
   },
   {
    "kind": "article",
@@ -2118,8 +2128,10 @@
     "corporate",
     "eerie"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384020.5357828
   },
   {
    "kind": "article",
@@ -2133,8 +2145,10 @@
     "mothersgate",
     "hymns"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384020.535784
   },
   {
    "kind": "article",
@@ -2148,8 +2162,10 @@
     "memory",
     "ending setup"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790384020.535784
   },
   {
    "kind": "article",
@@ -2300,10 +2316,11 @@
    "cluster": "demos",
    "intent": "Audio-reactive art toy: procedural WebAudio noise tuned through 'stations' (Choir static, Guild dispatch beeps, storm band, MOTHER's sleep-breath), driving a cathode-ray-style line scope. Choir-teal scope glow on ink background. Interactions: dial the frequency, hold to 'listen', occasional ghost-harmonics. Stack: Web Audio + canvas 2D.",
    "keywords": [],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "demo3",
-   "claimed_at": 1790380076.4269
+   "claimed_at": 1790380076.4269,
+   "done_at": "2026-09-26T10:55:43"
   },
   {
    "kind": "demo",
@@ -2337,8 +2354,10 @@
    "cluster": "demos",
    "intent": "Feel-lab for boost juice: synthetic bike telemetry drives candidate boost feedbacks (FOV curves, screen shake amps, engine pitch curves, boost-bar drain styles) side by side. Interactions: hold-to-boost on a straight track, A/B toggles. Stack: R3F minimal + HUD prototypes.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo1",
+   "claimed_at": 1790383937.521614
   },
   {
    "kind": "demo",
@@ -4095,6 +4114,54 @@
     "saltmouth",
     "mail",
     "skiff"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "dialogue-stage",
+   "title": "Dialogue Stage — portrait & line-set preview bench",
+   "cluster": "demos",
+   "intent": "A dialogue-scene staging bench for DRIFTLINE writers and designers: pick any two characters (from src/content/characters), a backdrop region (day/dusk/night sky variations), and preview their portraits, voice-notes and sample lines rendered in the real DialogueBox layout at multiple screen sizes. Features: line editor with live preview, timing playback (auto-advance at reading speed), choice-tree mock mode with flag chips, export of a dialogue JSON block ready to paste into a mission file. Art direction: frontier-western solarpunk, sun-bleached salt/ochre/teal palette per DESIGN.md, Chakra Petch display + Sora body fonts, violet-dark sheet UI. Audience: DRIFTLINE content writers and the builder verifying dialogue feel without booting the full game. Stack: React + DOM overlay components reusing src/ui/ui.css; load characters via the same dialogue library glob.",
+   "keywords": [
+    "dialogue bench",
+    "portraits",
+    "writer tooling",
+    "mission dialogue",
+    "driftline"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "storm-choreo",
+   "title": "Storm Choreo — storm-wall pursuit tuning sim",
+   "cluster": "demos",
+   "intent": "A storm-wall choreography simulator: stage the DRIFTLINE storm objective on a scrolling top-down tactical view — move the shelter anchor, storm spawn offset, storm speed curve and radius with sliders, then watch a simulated courier (straight-line with reaction noise) attempt the run and see survival probability over N Monte Carlo trials flip live. Purpose: tune storm missions so they're tense but fair before writers ship them. Features: minimap-style canvas view in the game's danger-red/amber palette, tuneable pursuit curve, difficulty readout, export mission objective JSON. Art direction: DRIFTLINE HUD language — violet-dark panels, amber markers, danger-red storm wedge, tabular numerals, Chakra Petch. Audience: mission designers and the builder. Stack: React + canvas2d, no 3D needed; constants mirror src/game/MissionDirector storm params.",
+   "keywords": [
+    "storm mission",
+    "difficulty tuning",
+    "simulation",
+    "mission design",
+    "driftline"
+   ],
+   "status": "planned",
+   "added_by": "builder"
+  },
+  {
+   "kind": "demo",
+   "slug": "traffic-planner",
+   "title": "Traffic Planner — ambient loop route editor",
+   "cluster": "demos",
+   "intent": "An ambient-traffic planner for the open world: a top-down map of Kessa-9 showing all region circles and named anchors, where you draw/edit NPC loop routes (courier, hauler, skiff classes with speed/colour presets) and replay miniature dots cruising them to judge congestion and dead zones. One click exports the route arrays in the exact VehicleSpec format used by src/game/AmbientTraffic.tsx. Features: anchor snapping, route length + lap-time readout, per-class silhouette preview dot, random auto-generated routes. Art direction: in-world surveyor's table look — bone paper texture tint (flat), rust ruled lines, teal glass accents, hand-stamped labels, entirely CSS/canvas2d. Audience: the builder and demo builders extending world life. Stack: React + canvas2d; reads region registry data statically.",
+   "keywords": [
+    "ambient traffic",
+    "route planner",
+    "world sim",
+    "npc loops",
+    "driftline"
    ],
    "status": "planned",
    "added_by": "builder"
