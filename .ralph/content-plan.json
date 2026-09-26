@@ -2111,10 +2111,11 @@
     "chapter 4",
     "world change"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790384020.5357819
+   "claimed_at": 1790384020.5357819,
+   "done_at": "2026-09-26T10:57:41"
   },
   {
    "kind": "article",
@@ -2128,10 +2129,11 @@
     "corporate",
     "eerie"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790384020.5357828
+   "claimed_at": 1790384020.5357828,
+   "done_at": "2026-09-26T10:57:50"
   },
   {
    "kind": "article",
@@ -2145,10 +2147,11 @@
     "mothersgate",
     "hymns"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790384020.535784
+   "claimed_at": 1790384020.535784,
+   "done_at": "2026-09-26T10:57:41"
   },
   {
    "kind": "article",
@@ -2162,10 +2165,11 @@
     "memory",
     "ending setup"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790384020.535784
+   "claimed_at": 1790384020.535784,
+   "done_at": "2026-09-26T10:57:41"
   },
   {
    "kind": "article",
@@ -2179,8 +2183,10 @@
     "warrant",
     "ending"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384225.0112078
   },
   {
    "kind": "article",
@@ -2194,8 +2200,10 @@
     "garage",
     "heart"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384225.0112078
   },
   {
    "kind": "article",
@@ -2209,8 +2217,10 @@
     "radio",
     "physics"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384225.011209
   },
   {
    "kind": "article",
@@ -2224,8 +2234,10 @@
     "saltmouth",
     "folk"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790384225.011209
   },
   {
    "kind": "article",
