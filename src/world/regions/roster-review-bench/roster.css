@@ -1,0 +1,385 @@
+/* ============ Roster Review Bench — scoped bench styles (prefix rrb-) ============ */
+/* Design rules (.ralph/DESIGN.md): panels, buttons, dialogue classes come from
+   ui.css — this file never redefines them. Faction/flag markers are glyph +
+   colour pairs; the ▯ ghost marker carries audit news, colour only decorates. */
+
+.rrb-root {
+  min-height: calc(100vh - 60px);
+  padding: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ---------------- header ---------------- */
+
+.rrb-head {
+  position: relative;
+  min-height: 210px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--violet);
+  background-size: cover;
+  background-position: center 42%;
+  border: 1px solid var(--panel-border);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+.rrb-head-veil {
+  flex: 1;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 48px 24px 16px;
+  background: linear-gradient(180deg, transparent 0%, rgba(20, 16, 31, 0.74) 72%);
+}
+.rrb-head h2 {
+  margin: 0;
+  color: var(--salt);
+  font-size: clamp(26px, 4vw, 38px);
+  letter-spacing: 0.04em;
+}
+.rrb-head p {
+  margin: 6px 0 0;
+  max-width: 66ch;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--bone);
+}
+.rrb-tally {
+  align-self: flex-end;
+  margin: 0 18px 16px 0;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--panel-border);
+  background: color-mix(in srgb, var(--space) 82%, transparent);
+  backdrop-filter: blur(6px);
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--bone);
+}
+.rrb-tally strong { color: var(--amber-hot); font-size: 14px; }
+.rrb-tally-flag { color: var(--danger); }
+
+/* ---------------- toolbar ---------------- */
+
+.rrb-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+}
+.rrb-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.rrb-fchip {
+  font-family: var(--font-display);
+  font-size: 11.5px;
+  letter-spacing: 0.07em;
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+  color: var(--bone);
+  background: color-mix(in srgb, var(--violet) 55%, transparent);
+  border: 1px solid var(--panel-border);
+  border-radius: 7px;
+  padding: 5px 11px;
+  cursor: pointer;
+  transition: border-color 120ms, background 120ms;
+}
+.rrb-fchip i { font-style: normal; color: var(--fc, var(--bone)); font-size: 10px; }
+.rrb-fchip b { color: var(--fc, var(--bone)); font-weight: 700; }
+.rrb-fchip:hover { border-color: var(--fc, var(--amber)); }
+.rrb-fchip.on {
+  border-color: var(--fc, var(--amber));
+  background: color-mix(in srgb, var(--fc, var(--amber)) 16%, var(--space));
+}
+.rrb-fchip-work:not(.on) { border-style: dashed; }
+.rrb-fchip-work b { color: var(--danger); }
+
+.rrb-search {
+  margin-left: auto;
+  background: color-mix(in srgb, var(--violet) 55%, transparent);
+  border: 1px solid var(--panel-border);
+  border-radius: 7px;
+  color: var(--bone);
+  padding: 7px 12px;
+  font: inherit;
+  font-size: 12.5px;
+  min-width: min(260px, 100%);
+}
+.rrb-search:focus-visible { outline: 2px solid var(--amber); outline-offset: 1px; }
+
+.rrb-empty { padding: 26px 30px; margin: 0; font-size: 14px; line-height: 1.6; }
+
+/* ---------------- card wall ---------------- */
+
+.rrb-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+  align-content: start;
+}
+
+.rrb-card {
+  /* panel styling by hand so the whole card stays a single <button> */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font: inherit;
+  color: var(--bone);
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: border-color 140ms ease-out, transform 140ms ease-out;
+}
+.rrb-card:hover { border-color: var(--fc, var(--amber)); transform: translateY(-2px); }
+.rrb-card:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.rrb-card.on {
+  border-color: var(--amber);
+  box-shadow: 0 0 0 1px var(--amber), 0 6px 22px rgba(255, 180, 84, 0.12);
+}
+
+/* flagged sheets redraw as a dashed ghost frame — shape is the signal */
+.rrb-card-flagged {
+  border-style: dashed;
+  border-color: color-mix(in srgb, var(--danger) 55%, var(--panel-border));
+  background: color-mix(in srgb, var(--space) 78%, var(--danger) 4%);
+}
+.rrb-card-flagged:hover { border-color: var(--danger); }
+
+.rrb-card-head { display: flex; gap: 12px; align-items: flex-start; }
+
+.rrb-portrait {
+  flex: 0 0 64px;
+  position: relative;
+  display: block;
+}
+.rrb-portrait img,
+.rrb-portrait .dialogue-initials {
+  /* matches the game's portrait treatment; ui.css supplies the base style */
+  border-radius: 9px;
+}
+
+.rrb-stamp {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-family: var(--font-display);
+  font-size: 8.5px;
+  letter-spacing: 0.14em;
+  padding: 1px 6px;
+  border-radius: 5px;
+  border: 1px solid var(--panel-border);
+  background: color-mix(in srgb, var(--space) 88%, transparent);
+}
+.rrb-stamp-painted { color: var(--teal-bright); border-color: color-mix(in srgb, var(--teal-bright) 55%, transparent); }
+.rrb-stamp-stale { color: var(--danger); border-style: dashed; }
+.rrb-stamp-unsat { color: var(--sand); border-style: dashed; }
+
+.rrb-plate { display: flex; flex-direction: column; gap: 2px; min-width: 0; margin-bottom: 6px; }
+.rrb-name { font-size: 15px; line-height: 1.35; }
+.rrb-name .dialogue-faction, .rrb-plate .dialogue-faction { align-self: flex-start; margin: 2px 0 0; }
+.rrb-role { font-size: 12px; line-height: 1.45; opacity: 0.85; }
+.rrb-meta {
+  font-size: 11px;
+  opacity: 0.72;
+  margin-top: 2px;
+}
+.rrb-meta i { font-style: normal; color: var(--fc, var(--bone)); font-size: 10px; }
+.rrb-meta strong { color: var(--amber-hot); }
+
+/* ---------------- per-card line buckets ---------------- */
+
+.rrb-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.rrb-line {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--bone) 5%, transparent);
+  border-left: 3px solid color-mix(in srgb, var(--fc, var(--ochre)) 70%, transparent);
+}
+.rrb-line-tag {
+  flex: 0 0 54px;
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal-bright);
+  padding-top: 2px;
+}
+.rrb-line-text { flex: 1; min-width: 0; }
+.rrb-line-miss { border-left-style: dashed; opacity: 0.75; }
+.rrb-line-ghost { color: var(--sand); font-style: italic; }
+
+.rrb-card-foot {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding-top: 6px;
+  border-top: 1px dashed color-mix(in srgb, var(--panel-border) 80%, transparent);
+  font-size: 11px;
+}
+.rrb-flag { color: var(--danger); letter-spacing: 0.03em; }
+.rrb-ok { color: var(--teal-bright); }
+.rrb-extra { margin-left: auto; opacity: 0.7; font-family: var(--font-display); font-size: 10px; letter-spacing: 0.1em; }
+
+/* ---------------- live stage ---------------- */
+
+.rrb-stage { padding: 14px 16px 16px; }
+.rrb-stage-head {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.rrb-stage-title h3 {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sand);
+}
+.rrb-stage-title p { margin: 4px 0 0; font-size: 12.5px; opacity: 0.85; }
+.rrb-stage-actions { flex: none; }
+
+.rrb-stage-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.rrb-celllabel {
+  margin: 0 0 6px;
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--teal-bright);
+}
+.rrb-cellnote {
+  margin: 8px 0 0;
+  font-size: 11.5px;
+  line-height: 1.55;
+  opacity: 0.72;
+}
+
+.rrb-frame {
+  position: relative; /* the real .dialogue box is absolutely positioned against this */
+  min-height: 210px;
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--violet) 40%, transparent), rgba(20, 16, 31, 0.85)),
+    repeating-linear-gradient(45deg, transparent 0 14px, color-mix(in srgb, var(--bone) 3%, transparent) 14px 15px);
+  overflow: hidden;
+}
+.rrb-frame[data-onair] { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--amber) 35%, transparent); }
+/* the mounted DialogueBox fills this frame instead of the game viewport */
+.rrb-frame .dialogue { bottom: 14px; width: min(640px, calc(100% - 16px)); }
+
+.rrb-offair {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  padding: 18px;
+}
+.rrb-offair-glyph {
+  font-size: 26px;
+  color: color-mix(in srgb, var(--bone) 55%, transparent);
+  line-height: 1;
+}
+.rrb-offair strong {
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  color: var(--sand);
+}
+.rrb-offair span:last-child {
+  font-size: 12px;
+  line-height: 1.55;
+  max-width: 40ch;
+  opacity: 0.78;
+}
+.rrb-frame[data-onair] .rrb-offair strong { color: var(--amber); }
+
+.rrb-live-radio .rrb-frame { min-height: 150px; padding: 14px; }
+/* the ticker here is the HUD's own markup at rest — no overlay positioning */
+.rrb-live-radio .hud-radio {
+  position: static;
+  transform: none;
+  opacity: 1;
+  max-width: none;
+  margin: 0;
+}
+.rrb-microw {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.rrb-micnote { font-size: 11px; opacity: 0.68; }
+
+/* ---------------- footer ---------------- */
+
+.rrb-foot {
+  margin-top: 2px;
+  padding: 0 4px;
+}
+.rrb-foot p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.65;
+  opacity: 0.75;
+  max-width: 96ch;
+}
+.rrb-foot code { font-size: 11px; }
+
+/* ---------------- small viewports ---------------- */
+
+@media (max-width: 900px) {
+  .rrb-stage-body { grid-template-columns: 1fr; }
+  .rrb-head { flex-direction: column; align-items: stretch; }
+  .rrb-tally { margin: 0 14px 14px; align-self: flex-start; }
+  .rrb-search { margin-left: 0; width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rrb-card, .rrb-fchip { transition: none; }
+  .rrb-card:hover { transform: none; }
+}

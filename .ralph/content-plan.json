@@ -4684,10 +4684,11 @@
    "cluster": "demos",
    "intent": "A content-review instrument for the writing team: an in-engine gallery that renders every character JSON as a dialogue-card — portrait (withBase, fallback initials chip), name + faction chip, role, one greeting/bark/radio line each cycled on a timer, plus the actual DialogueBox and HUD radio ticker components so writers see true in-game rendering. Filter by faction (guild ochre / choir teal / reclaimer rust / driftline amber), search by name, flag cards missing portraits or <8 line buckets with a dashed ghost frame and a ▯ signal-not-recovered marker (never colour alone). Panel styles from ui.css; lives in src/world/regions/roster-review-bench/ or src/lab, auto-listed in /lab; zero game-world impact.",
    "keywords": [],
-   "status": "planned",
+   "status": "done",
    "added_by": "builder",
-   "worker": null,
-   "claimed_at": 1790390619.523545
+   "worker": "demo1",
+   "claimed_at": 1790405198.8603032,
+   "done_at": "2026-09-26T16:50:13"
   },
   {
    "kind": "article",
