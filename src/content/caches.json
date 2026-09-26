@@ -1,5 +1,5 @@
 {
-  "$comment": "Signal caches \u2014 derelict data obelisks scattered across the Glass Desert. Riding close recovers a codex entry (lore slug) and pays a 15 cr Guild archival bounty. 'anchor' is '<regionSlug>:<anchorId>'; caches sharing an anchor are fanned out deterministically. Placement is thematic: field guides live in their regions, Guild paper in Saltmouth, Choir texts in the Hollow, MOTHER lore at Mothersgate.",
+  "$comment": "Signal caches — derelict data obelisks scattered across the Glass Desert. Riding close recovers a codex entry (lore slug) and pays a 15 cr Guild archival bounty. 'anchor' is '<regionSlug>:<anchorId>'; caches sharing an anchor are fanned out deterministically. Placement is thematic: field guides live in their regions, Guild paper in Saltmouth, Choir texts in the Hollow, MOTHER lore at Mothersgate.",
   "caches": [
     {
       "id": "cache-auditor-memos",
@@ -385,6 +385,206 @@
       "id": "cache-windspine-survey-notes",
       "lore": "windspine-survey-notes",
       "anchor": "windspine:turbine-row"
+    },
+    {
+      "id": "cache-choir-lamp-rituals",
+      "lore": "choir-lamp-rituals",
+      "anchor": "choirhollow:lamp-ring"
+    },
+    {
+      "id": "cache-choir-static-litanies",
+      "lore": "choir-static-litanies",
+      "anchor": "choirhollow:listening-horn"
+    },
+    {
+      "id": "cache-crusher-operator-manual",
+      "lore": "cinderflats-crusher-operator-manual",
+      "anchor": "cinderflats:crusher"
+    },
+    {
+      "id": "cache-courier-slang-lexicon",
+      "lore": "courier-slang-lexicon",
+      "anchor": "saltmouth:spawn"
+    },
+    {
+      "id": "cache-delver-odes",
+      "lore": "delver-odes",
+      "anchor": "cinderflats:yard-gate"
+    },
+    {
+      "id": "cache-drowned-array-census",
+      "lore": "drowned-array-census",
+      "anchor": "drowned-array:cache-cairn"
+    },
+    {
+      "id": "cache-ending-storm-after-action",
+      "lore": "ending-storm-after-action",
+      "anchor": "saltmouth:exchange"
+    },
+    {
+      "id": "cache-glass-desert-field-guide",
+      "lore": "glass-desert-field-guide",
+      "anchor": "saltmouth:flats-pan"
+    },
+    {
+      "id": "cache-glassroad-toll-songs",
+      "lore": "glassroad-toll-songs",
+      "anchor": "glassroad:glass-chapel"
+    },
+    {
+      "id": "cache-guild-wax-seal-chemistry",
+      "lore": "guild-wax-seal-chemistry",
+      "anchor": "saltmouth:exchange"
+    },
+    {
+      "id": "cache-horizon-cell-handbook",
+      "lore": "horizon-cell-handbook",
+      "anchor": "saltmouth:garage"
+    },
+    {
+      "id": "cache-mother-first-notice",
+      "lore": "mother-first-notice",
+      "anchor": "mothersgate:the-door"
+    },
+    {
+      "id": "cache-mother-maintenance-manifest",
+      "lore": "mother-maintenance-manifest",
+      "anchor": "mothersgate:survey-point"
+    },
+    {
+      "id": "cache-mothers-gate-survey-1902",
+      "lore": "mothers-gate-survey-1902",
+      "anchor": "mothersgate:approach"
+    },
+    {
+      "id": "cache-night-riding-primer",
+      "lore": "night-riding-primer",
+      "anchor": "saltmouth:gate-east"
+    },
+    {
+      "id": "cache-quicklime-kid-interview",
+      "lore": "quicklime-kid-interview",
+      "anchor": "canyon-slalom:finish-line"
+    },
+    {
+      "id": "cache-reclaimer-grace-prayers",
+      "lore": "reclaimer-grace-prayers",
+      "anchor": "cinderflats:crusher"
+    },
+    {
+      "id": "cache-rill-davenant-route-notes",
+      "lore": "rill-davenant-route-notes",
+      "anchor": "saltmouth:overlook"
+    },
+    {
+      "id": "cache-salt-guild-ledger-of-debts",
+      "lore": "salt-guild-ledger-of-debts",
+      "anchor": "saltmouth:exchange"
+    },
+    {
+      "id": "cache-skydocks-moorage-rules",
+      "lore": "skydocks-moorage-rules",
+      "anchor": "skydocks:winch-base"
+    },
+    {
+      "id": "cache-skyship-moorage-log",
+      "lore": "skyship-moorage-log",
+      "anchor": "skydocks:mesa-top"
+    },
+    {
+      "id": "cache-storm-gauge-keepers-log",
+      "lore": "storm-gauge-keepers-log",
+      "anchor": "windspine:storm-gauge"
+    },
+    {
+      "id": "cache-terraforming-map",
+      "lore": "terraforming-map-before-and-during",
+      "anchor": "mothersgate:survey-point"
+    },
+    {
+      "id": "cache-wake-key-print-log",
+      "lore": "wake-key-print-log",
+      "anchor": "saltmouth:job-board"
+    },
+    {
+      "id": "cache-courier-cairns",
+      "lore": "courier-cairns",
+      "anchor": "glassroad:mid-span"
+    },
+    {
+      "id": "cache-salt-flat-mirages",
+      "lore": "salt-flat-mirages",
+      "anchor": "saltmouth:overlook"
+    },
+    {
+      "id": "cache-wren-teardown-report",
+      "lore": "wren-teardown-report",
+      "anchor": "saltmouth:garage"
+    },
+    {
+      "id": "cache-mother-dream-reports",
+      "lore": "mother-dream-reports",
+      "anchor": "choirhollow:listening-horn"
+    },
+    {
+      "id": "cache-pawn-shop-catalogue",
+      "lore": "pawn-shop-catalogue",
+      "anchor": "skydocks:keel-town"
+    },
+    {
+      "id": "cache-race-risk-form",
+      "lore": "race-risk-form",
+      "anchor": "glassroad:gate-south"
+    },
+    {
+      "id": "cache-tea-rites-of-the-flats",
+      "lore": "tea-rites-of-the-flats",
+      "anchor": "windspine:storm-gauge"
+    },
+    {
+      "id": "cache-horn-etiquette",
+      "lore": "horn-etiquette",
+      "anchor": "choirhollow:listening-horn"
+    },
+    {
+      "id": "cache-settlement-map-annotated",
+      "lore": "settlement-map-annotated",
+      "anchor": "saltmouth:exchange"
+    },
+    {
+      "id": "cache-skyship-derelict-register",
+      "lore": "skyship-derelict-register",
+      "anchor": "skydocks:dockmaster"
+    },
+    {
+      "id": "cache-spice-pricing-dispatch",
+      "lore": "spice-pricing-dispatch",
+      "anchor": "saltmouth:job-board"
+    },
+    {
+      "id": "cache-storm-shelter-graffiti",
+      "lore": "storm-shelter-graffiti",
+      "anchor": "canyon-slalom:marshal-post"
+    },
+    {
+      "id": "cache-brine-seasons-calendar",
+      "lore": "brine-seasons-calendar",
+      "anchor": "saltmouth:water-tower"
+    },
+    {
+      "id": "cache-canyon-echo-study",
+      "lore": "canyon-echo-study",
+      "anchor": "canyon-slalom:spectator-ledge"
+    },
+    {
+      "id": "cache-long-static-archive",
+      "lore": "long-static-archive",
+      "anchor": "choirhollow:temple-steps"
+    },
+    {
+      "id": "cache-mesa-mail-rules",
+      "lore": "mesa-mail-rules",
+      "anchor": "skydocks:keel-town"
     }
   ]
 }

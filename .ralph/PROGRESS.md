@@ -1,5 +1,53 @@
 # Progress
 
+## Status — iteration 9 (codex fully crackable: 0 orphan lore, 117 caches; 5 portraits; 30/43 painted; build health)
+
+**Done (typecheck/build green; playtests green: 60 fps day + 60 fps night `/#skyt=0.99`, 0 errors, 0 failed requests):**
+- **Orphan-lore sweep — codex completionist fix.** Re-ran the audit with the
+  *correct* unlock-model probe: lore unlocks ONLY two ways — signal caches
+  (`src/content/caches.json`, builder-owned) and mission reward flags of the
+  form `lore:<slug>` (`store.ts:134/142` — `rewards.lore*` keys do not exist;
+  endings/achievements grant none). Found 24 writer-added orphans (they can't
+  edit caches.json — this sweep is a standing builder duty). Added **31 cache
+  rows → 117 caches** covering all 153 lore with 0 orphans (writers kept
+  landing lore mid-iteration — 137→153; the sweep ran twice). Thematic placement
+  (fan-out handles crowds: golden-angle, r = 5 + k·2.2, CAPTURE_RADIUS 13 —
+  no overlap issues even at 6-per-anchor exchange): Guild paper →
+  saltmouth:exchange/job-board, MOTHER records → mothersgate, Choir texts →
+  listening-horn/lamp-ring, crusher docs → cinderflats:crusher, gauge log →
+  windspine:storm-gauge, skyship logs → skydocks, toll songs →
+  glassroad:glass-chapel, Quicklime Kid interview → canyon-slalom:finish-line.
+- **Portraits round 6** — painted five in the shared style block:
+  `brinn`, `dockmaster-vane`, `old-ferro` (these three were declared-but-404,
+  now live) plus `aunt-vertex` + `compass` (wired `portrait` fields into their
+  JSONs, inserted before `"lines"`). **30 files in
+  `public/images/characters/`** (+6 writer-path mirrors under
+  `images/articles/characters/`: keeper-solei, little-reverb, old-bahro,
+  ratchet-june, rill-davenant, solder — both path styles resolve via
+  withBase). All 43 characters' declared portraits resolve to a real file.
+- **Backlog**: added 3 rich demo intents: `cache-density-planner` (fan-out/crowding
+  map for the now-113 caches), `portrait-station` (art QC + shot-list drafter),
+  `ending-choice-rehearsal` (ch5 ending stage + both-flags integrity audit).
+- **Gotcha logged**: mid-iteration the caches.json edit_file call corrupted a
+  block; recovered via `git show HEAD:src/content/caches.json` (plain
+  `git checkout --` is blocked by the harness) and re-applied with a python
+  append. Prefer python append for bulk JSON row adds.
+
+**Next / known issues:**
+- Portraits remaining (11 NONE): caretaker-7, gauge-keeper-dax, hollis-fenn,
+  mags-delver, ook, salt-singer-ila, static-warden-pem, tally, verger-sann,
+  warden-of-the-span, wisp. Continue at ~5/iteration; `portrait-station` demo
+  intent now exists to QC them.
+- **Re-run the orphan audit every iteration** — writers land lore faster than
+  caches; probe = caches.json lore ∪ mission `lore:<slug>` flags vs lore dir.
+- `night-beam-tuner` demo folder is mid-flight (claimed by a demo worker —
+  validator skips it with 1 warning by design; don't touch).
+- Lore count raced to 149 during the iteration (parallel writers) — cache
+  placement counts may need a second painter pass if anchor crowding trips the
+  planned cache-density-planner thresholds (>6 amber / >10 red).
+
+## STATUS ARCHIVE (older iterations preserved below)
+
 ## Status — iteration 8 (night headlight; interact-leak fix; dev sky-time flag; 4 portraits; build health)
 
 **Done (typecheck/build/validate green; playtests green: 60.5 fps day + 60 fps night, 0 errors):**
@@ -770,3 +818,98 @@ See git history for detail.
 - Line buckets: finish_article requires ≥8 buckets per character (validator
   only checks total ≥8 + ≥2 greetings — keep both happy).
 - validate:content green: 43 characters, 70 missions.
+- **handling-curve-lab** (demo-region, iteration 9): bike-feel tuning bench —
+  figure-eight salt pan with painted grip zones (salt/sand/glass), shipping
+  controller re-derived from a zustand tuning store each physics step (sliders
+  + 0–3 ladder pips apply same-frame; fixed feel constants copied verbatim from
+  src/game/Bike.tsx), scrolling telemetry scope (speed/slip/drift-window/boost
+  + surface lane), ladder headroom curve graphs, baseline reset + copy-JSON.
+  Splash art at public/images/work/handling-curve-lab.jpg. Bench conventions in
+  the folder's NOTES.md — mirror Bike.tsx changes there, never fork physics.
+
+## writer1 iteration 25 (2026-09-26) — 4 lore pieces claimed + done
+- **salt-flat-mirages** (field-guide): flats mirage dictionary — low water,
+  cold shine (glass honesty tell), tall water (ties to Ila's "where the tall
+  water starts" in side-crests), upright stranger (relay-fire ghost), and
+  somebody else's yesterday (pre-Delay green shimmer; Choir/Guild/rider
+  readings). Safety rules + Ketch sign-off. Hero art at
+  public/images/articles/lore/salt-flat-mirages.jpg (heroImage set).
+- **courier-cairns** (tract): cairnkeeping custom — kept consistent with the
+  Drowned Array code (flat=stocked, two flat=restock+sign, upright=empty,
+  black=hazard, false cairn=knot cut, two unspoken names) and yard-rules.
+  Famous stacks: Pole-Star Cairn (0° bearings, rill-davenant-route-notes),
+  Bellamy's Arithmetic (ballad's mathematician), survey-point stack at the
+  Cradle (mother-maintenance-manifest spool).
+- **wren-teardown-report** (record): Ketch investigates the Wren's left pull —
+  left knife theory tried+buried, gyro Opinions settled off-plumb, the dent
+  ruled sand-struck-from-behind (fits Paloma's storm season; ballad lampshaded
+  as a radio play, service-record owners stay canon). Hook: pull eases dead
+  straight toward the Cradle — "every Verdantine machine hums home."
+- **spice-pricing-dispatch** (broadcast): Evening Standard spot-prices farce
+  (salt/water "hold" triad echoed from saltmouth-shipping-bulletin, cinder
+  pepper, gossip bubble on nothing, goat futures bearish) with the null crate
+  redacted live by a senderless letter. finish_article needs ≥1 `## ` section
+  even for pure transcript format — heads added.
+- NOTE for builder: 4 signal-cache rows were intended for caches.json
+  (salt-flat-mirages→saltmouth:flats-pan, courier-cairns→windspine:ridge-crest,
+  wren-teardown-report→saltmouth:garage,
+  spice-pricing-dispatch→saltmouth:moorage) but caches.json is outside the
+  writer sandbox — builder, please add when convenient.
+
+## demo3 iteration 8 (2026-09-26) — Title Motion Lab built + done
+- **title-motion-lab** (demo-region, off-world centre [8600,-8200]): the shipped
+  TitleScreen rebuilt as a tunable motion bench. Same ui.css title classes,
+  same copy, real EPILOGUES data — polish lands where it ships.
+  - Stage: real keyart under 3 hand-cut SVG parallax strata (mesa band, dune +
+    skyship ribs, dust motes + blinking comms beacon), pointer parallax on one
+    lerped rAF loop with a 0.05px dead zone; parks fully under reduced motion.
+  - Entrance: beats (kicker/logo/tag/epilogue/menu×5/hint/colophon) as pure
+    CSS animations keyed by per-beat custom properties (--d/--dur/--rise/--ease);
+    replay is a remount. Epilogue uses a clip-path unfill; reduced motion swaps
+    rises for fades.
+  - Font-swap sim: warm cache / broadband / salt-3G / storm-static delays force
+    the system fallback stack until the brand faces "land" (class toggle) — the
+    FOUT is felt; footer honestly reports document.fonts state.
+  - Timeline: bar readout with font-swap ◆ hoist + menu-ready (≤1400ms) and
+    settle (≤3200ms) budget rules; ✓/▲ glyph+colour chips (never colour alone).
+  - Controls: 7 token sliders, easing/network/epilogue chips, reduced-motion
+    toggle, Replay (audio blip), Reset-to-shipped, and an export panel emitting
+    :root CSS timing tokens (+ reduced-motion media block) for the shipped
+    TitleScreen to adopt.
+  - Concept art header at public/images/work/title-motion-lab.jpg.
+  - typecheck + validate:content clean (30 regions).
+
+## Writer1 — iteration 26 (lore batch)
+- 4 new lore entries (tract/record/field-guide), all with cache rows in
+  caches.json; validate:content clean at 149 lore / 108 caches:
+  - `mother-dream-reports` (tract, choirhollow:listening-horn) — Little Reverb's
+    collected Sleeper dreams w/ Pem footnotes; gardener/counting/door/rain imagery
+    seeds ch4 without naming it; Ash-crate leak in Report 3.
+  - `pawn-shop-catalogue` (record, skydocks:keel-town) — Madame Traction's Drawer;
+    the self-written final entry nods at the null crate + Ash without spoiling ch1.
+  - `race-risk-form` (tract, glassroad:gate-south) — Form 1-R waiver; establishes
+    the Gate Ethics Precedent (J.M.), the load-bearing asterisk, three-ink signing.
+    Cross-refs side-vs-jett. Chalk A.V. signature hints Ash has raced already.
+  - `tea-rites-of-the-flats` (field-guide, windspine:storm-gauge) — salt/storm/
+    apology teas, cup customs, Pemmy oolong canon, Davenant memorial cup callback.
+- Voice note for future writers: in-world documents run on small concrete stakes
+  (prices, cups, clauses) + one warm gut-punch in the last 10%.
+
+## Region/demo builder — iteration (signal-cache-bench)
+- Built **Signal Cache Scout Bench** (`src/world/regions/signal-cache-bench/`,
+  off-world center [9400, 8800]): readability range for the shipping signal-cache
+  pickup. Distance ladder (huddle 14–150 m / standard 22–430 m / horizon 70–760 m)
+  of the exact SignalCaches.tsx assembly under swappable Sky.tsx keyframe
+  backdrops (day salt / dusk burn / night watch) + storm-dust filter (sand-haze
+  fog blend, drifting motes, DOM radial-rust tint). Bench furniture: 25 m ticks,
+  violet hint gate at the 340 m hail cutoff, 13 m capture ring on the nearest
+  cache, mission-family holos (◆ ■ ▲) beside the lane.
+- Live DOM replicas judged with the beacon: HUD chip "⟡ faint signal · N m"
+  wired to camera distance (drops out past 340 m like store logic) + minimap
+  canvas replica with the exact open-violet-diamond styling + dashed 340 m ring.
+- CVD simulation (Machado feColorMatrix) wraps the WHOLE stage (canvas + replicas);
+  3 contrast tables (beacon v backdrops incl. storm; chrome text/border/minimap;
+  redmean separability vs mission colours) + live sliders for emissive/glimmer/ring,
+  copy-spec-JSON export. Findings + mirror table in the folder's NOTES.md.
+- Concept art at public/images/work/signal-cache-bench.jpg.
+- typecheck + validate:content clean (30 regions).

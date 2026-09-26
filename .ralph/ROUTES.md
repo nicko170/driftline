@@ -157,7 +157,11 @@ category: "field-guide | broadcast | tract | log | record"
 summary: "1-2 sentences"
 ---
 ```
-Body ≥ 250 words, in-world voice. Unlock: mission reward flag `lore:<slug>`.
+Body ≥ 250 words, in-world voice. **Unlock (only two paths exist)**: mission reward
+flag `lore:<slug>` (`store.ts:134/142` — there is no `rewards.lore` key) or a signal
+cache row in `src/content/caches.json` (builder-owned file). Endings/achievements grant
+none. Builders: re-run the orphan audit each iteration —
+`lore dir − (cache lore ∪ mission lore: flags)` — and add cache rows for the orphans.
 
 ## Progression systems (iteration 3)
 

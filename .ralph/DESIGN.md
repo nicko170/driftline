@@ -128,6 +128,10 @@ Faction colors: Salt Guild `ochre #B07C3A`, Choir `teal-bright #57C4B8`, Reclaim
 - Heading convention (documented once): `telemetry.heading` is a true bearing,
   0 = north (−z); world forward = (sin h, 0, −cos h). Camera, dust and HUD all
   follow this.
+- Scale note (iteration 9): 117 caches across 11 on-world regions; fan-out
+  (golden-angle, r = 5 + k·2.2 m, capture 13 m) tolerates ~6 per anchor with
+  clean spacing — beyond that, spread placements to a neighbouring anchor.
+  Crowding thresholds live in the `cache-density-planner` demo intent.
 
 ## Performance budgets
 

@@ -7,6 +7,7 @@
   "bio": "Walks the old infrastructure ahead of the strip crews and decides what's scrap, what's landmark, and what's load-bearing historically — their phrase, patented, framed above the map table. Has been wrong twice; both times are carved into the yard gate as a reminder and a boast. Their charts of the glass-hill approaches are the only ones the Driftline trusts, mostly because Compass annotates them with what the map refuses to promise.",
   "appearance": "Weather-mapped person of indeterminate age in layered survey ponchos the colour of old bone, a folding theodolite worn like a sidearm, boot soles ink-stamped with grid references, hair cropped short and grey at the temples, and a voice dry enough to qualify as shade.",
   "voice": "Bone-dry cartographer humour. Speaks in coordinates and qualifications. Corrects other people's shortcuts. Never raises their voice; ruins come to order anyway. Calls Ash 'Waypoint'.",
+  "portrait": "images/characters/compass.jpg",
   "lines": {
     "greetings": [
       "Waypoint. You're ahead of schedule, which on my charts makes you a rounding error.",
