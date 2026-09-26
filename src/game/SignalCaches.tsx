@@ -94,7 +94,7 @@ export default function SignalCaches() {
             {/* faint vertical glimmer so caches read at range against the sky */}
             <mesh position={[0, 11, 0]}>
               <cylinderGeometry args={[0.14, 0.5, 22, 6, 1, true]} />
-              <meshBasicMaterial color={CACHE_VIOLET} transparent opacity={0.09} side={THREE.DoubleSide} depthWrite={false} />
+              <meshBasicMaterial color={CACHE_VIOLET} transparent opacity={0.13} side={THREE.DoubleSide} depthWrite={false} />
             </mesh>
           </group>
         </group>

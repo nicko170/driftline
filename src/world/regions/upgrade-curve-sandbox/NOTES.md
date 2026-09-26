@@ -13,8 +13,12 @@ derive from it. `KMH = 3.4` matches the game's own display factor (ride stats).
   ~103 then *sags* when the tank runs dry — visible on Fig 01 and the skidpad.
 - On the shipped ladder nobody crosses 100 unboosted; dream L4 is the first —
   the Fig 04 bars show the dashed hundred line clearing at L4.
-- Drift-exit kick + meter refund are pip-independent (Fig 03). If handling
-  should matter there, hook `kickCap`/`kickPerS` to a level.
+- ~~Drift-exit kick + meter refund are pip-independent (Fig 03). If handling
+  should matter there, hook `kickCap`/`kickPerS` to a level.~~ **Applied,
+  builder iter 12:** shipped Bike.tsx now scales exits as
+  `driftGain = 1 + handling*0.14`, `kick = min(4.5+0.9·L, t·2.4·gain)`,
+  `refund = min(0.35+0.05·L, t·0.1·gain)`. Fig 03, the delta ledger row and
+  the export notes here were re-mirrored to match.
 
 **Dream ladder (0–5):** a flagged what-if — same linear gains, cost ×2 per step
 past 1800 (3600, 7200). Teal/dashed everywhere it appears; never presented as

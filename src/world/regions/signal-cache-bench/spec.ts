@@ -22,7 +22,7 @@ export interface BenchConfig {
   ladder: LadderId;
   /** octahedron emissive intensity (shipped 1.5) */
   emissive: number;
-  /** glimmer beam opacity (shipped 0.09) */
+  /** glimmer beam opacity (shipped 0.13 — builder iter 12 storm/dusk tune) */
   glimmer: number;
   /** ground ring opacity (shipped 0.3) */
   ring: number;
@@ -35,7 +35,7 @@ export const DEFAULT_CONFIG: BenchConfig = {
   storm: 'off',
   ladder: 'standard',
   emissive: 1.5,
-  glimmer: 0.09,
+  glimmer: 0.13,
   ring: 0.3,
   motion: true,
   cvd: 'none',
@@ -66,7 +66,7 @@ export const SHIPPED = {
     y: 0.7,
   },
   ring: { inner: 1.5, outer: 2.1, opacity: 0.3, y: 0.12 },
-  glimmer: { height: 22, rTop: 0.14, rBottom: 0.5, opacity: 0.09, yOff: 11 },
+  glimmer: { height: 22, rTop: 0.14, rBottom: 0.5, opacity: 0.13, yOff: 11 },
   captureRadius: 13, // caches.ts CAPTURE_RADIUS
   hintRange: 340, // caches.ts HINT_RANGE — hail cutoff for chip/minimap feed
   bounty: 15,

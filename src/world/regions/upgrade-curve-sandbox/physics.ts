@@ -10,7 +10,9 @@
  *   steer  = (1.9 + handling*0.22) / (1 + speed/30)
  *   drain  = 0.26 - boost*0.035   per second while boosting (meter > 0.02)
  *   regen  = 0.07 + boost*0.02 (+0.01 airborne) per second otherwise
- *   kick   = min(4.5, driftT*2.4) impulse, refund = min(0.35, driftT*0.1)
+ *   driftGain = 1 + handling*0.14 (builder iter 12 — gyros now reap drift exits)
+ *   kick   = min(4.5 + handling*0.9, driftT*2.4*driftGain) impulse
+ *   refund = min(0.35 + handling*0.05, driftT*0.1*driftGain) meter
  *
  * The launch sim integrates the grounded straight-line slice of the physics
  * loop (throttle pinned, salt-pan grip 1) so the graphs, the skidpad replay
@@ -35,6 +37,10 @@ export const PHYS = {
   boostMin: 0.02,
   kickPerS: 2.4, kickCap: 4.5,
   refundPerS: 0.1, refundCap: 0.35,
+  // builder iter 12: handling ladder now scales drift-exit returns (was Fig 03's finding)
+  driftGainPerHandling: 0.14,
+  kickCapPerHandling: 0.9,
+  refundCapPerHandling: 0.05,
 } as const;
 
 export const SHIPPED_MAX = 3;
@@ -87,8 +93,12 @@ export const terminalMs = (e: number, boosting: boolean) => {
 export const steerRateAt = (kmh: number, h: number) =>
   (PHYS.steerBase + PHYS.steerPerHandling * h) / (1 + kmh / KMH / PHYS.steerFalloff);
 
-export const kickOf = (driftT: number) => Math.min(PHYS.kickCap, driftT * PHYS.kickPerS);
-export const refundOf = (driftT: number) => Math.min(PHYS.refundCap, driftT * PHYS.refundPerS);
+export const kickCapOf = (handling: number) => PHYS.kickCap + handling * PHYS.kickCapPerHandling;
+export const kickOf = (driftT: number, handling = 0) =>
+  Math.min(kickCapOf(handling), driftT * PHYS.kickPerS * (1 + handling * PHYS.driftGainPerHandling));
+export const refundCapOf = (handling: number) => PHYS.refundCap + handling * PHYS.refundCapPerHandling;
+export const refundOf = (driftT: number, handling = 0) =>
+  Math.min(refundCapOf(handling), driftT * PHYS.refundPerS * (1 + handling * PHYS.driftGainPerHandling));
 export const KICK_CAP_T = PHYS.kickCap / PHYS.kickPerS; // 1.875 s
 
 export const HUNDRED_MS = 100 / KMH; // 100 km/h in m/s, on the game's own factor
@@ -227,7 +237,7 @@ export function exportPayload(pips: Pips, ladder: Ladder, m: Metrics, stock: Met
     },
     notes: [
       'Flat salt pan, grip 1, throttle pinned; launch script boosts from t=0.7 s.',
-      'Drift-exit kick and meter refund are pip-independent constants in the shipped build (kick cap 4.5 @ 1.875 s).',
+      'Drift-exit returns scale with the handling ladder since builder iter 12 (gain ×(1+0.14·level); caps 4.5+0.9·level kick impulse, 0.35+0.05·level meter refund).',
       ladder === 'dream'
         ? 'DREAM LADDER: levels 4–5 extrapolate shipped linear per-level gains; costs double past 1800. Not shipped.'
         : 'Shipped ladder 0–3, cost ladder [400, 900, 1800] per part (GaragePanel.tsx).',

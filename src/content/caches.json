@@ -640,6 +640,36 @@
       "id": "cache-salt-scrip-assay",
       "lore": "salt-scrip-assay",
       "anchor": "saltmouth:water-tower"
+    },
+    {
+      "id": "cache-brass-cup-dispute",
+      "lore": "brass-cup-dispute",
+      "anchor": "saltmouth:water-tower"
+    },
+    {
+      "id": "cache-first-wall-tally",
+      "lore": "first-wall-tally",
+      "anchor": "saltmouth:spawn"
+    },
+    {
+      "id": "cache-mother-census-ledger",
+      "lore": "mother-census-ledger",
+      "anchor": "choirhollow:crater-rim"
+    },
+    {
+      "id": "cache-night-mirror-harvest",
+      "lore": "night-mirror-harvest",
+      "anchor": "mothersgate:approach"
+    },
+    {
+      "id": "cache-skyship-pennant-code",
+      "lore": "skyship-pennant-code",
+      "anchor": "skydocks:mesa-top"
+    },
+    {
+      "id": "cache-winch-safety-catechism",
+      "lore": "winch-safety-catechism",
+      "anchor": "skydocks:winch-base"
     }
   ]
 }

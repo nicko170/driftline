@@ -7,6 +7,7 @@
   "bio": "Keeps the Keel Town cargo winch by day — the oldest machine on the mesa and the only one that has never dropped a soul, which Hespa attributes to manners — and reads the night-market menu over the gantry speakers by night, prices rhymed so the market can correct her by ear. Third-generation rigger; the grease-pencil hand on the Winch Catechism is her grandmother's, and Hespa maintains the tradition of shouting the articles in progressively less patient margins. Believes a market runs on rope and rhyme, and that a price sung twice is a price kept.",
   "appearance": "A compact winch-keeper in a sky-dock harness worn over a market apron heavy with price tags knotted like ornaments, one glove on and one off for reading line by feel, a speaking trumpet hung on the belt next to a belaying pin, hair pinned up with a tally of fishhooks, framed against the great winch drum at dusk with market lamps coming on amber below the mesa rim.",
   "voice": "Speaks in two registers and switches without warning: the menu cadence — prices as poetry, everything scanned and rhymed — and the winch voice, flat and final, which ends conversations. Calls rope 'she', riggers 'cousins', and customers 'the payable'. Insults are priced. 'Friend rate' is her highest honour and still includes tax.",
+  "portrait": "images/characters/hespa-vole.jpg",
   "lines": {
     "greetings": [
       "Evening, courier! Salt fish, five; loaf of pan-bread, six; courier's welcome, priceless, taxable — come in, come in.",

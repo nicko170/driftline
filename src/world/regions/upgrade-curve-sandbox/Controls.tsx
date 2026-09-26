@@ -7,14 +7,14 @@
 import { useMemo, useState } from 'react';
 import {
   PHYS, STOCK, PRESETS, KMH, HUNDRED_MS,
-  computeMetrics, levelCost, maxLevel, totalSunk,
+  computeMetrics, kickCapOf, levelCost, maxLevel, totalSunk,
   exportPayload, AVG_MISSION_CR,
   type Ladder, type Pips, type PartKey, type Metrics,
 } from './physics';
 
 const PARTS: { key: PartKey; name: string; moves: string }[] = [
   { key: 'engine', name: 'Engine coils', moves: `accel +${PHYS.accPerEngine}/lvl · cap +${PHYS.vmaxPerEngine}/lvl` },
-  { key: 'handling', name: 'Gyro cage', moves: `steer +${PHYS.steerPerHandling}/lvl · grip +1.6/lvl` },
+  { key: 'handling', name: 'Gyro cage', moves: `steer +${PHYS.steerPerHandling}/lvl · grip +1.6/lvl · drift ×1.14/lvl` },
   { key: 'boost', name: 'Boost cell', moves: `drain −${PHYS.drainPerBoost}/lvl · regen +${PHYS.regenPerBoost}/lvl` },
 ];
 
@@ -31,7 +31,7 @@ function fmtDelta(cur: number | null, stock: number | null, unit: string, invert
 
 /* --------------------------------------------------------- delta ledger */
 
-function DeltaLedger({ m, stock }: { m: Metrics; stock: Metrics }) {
+function DeltaLedger({ m, stock, handling }: { m: Metrics; stock: Metrics; handling: number }) {
   const rows: { label: string; cur: string; ref: string; delta: { s: string; cls: string } }[] = [
     {
       label: '0→100 km/h · boost tape',
@@ -67,8 +67,8 @@ function DeltaLedger({ m, stock }: { m: Metrics; stock: Metrics }) {
     },
     {
       label: 'drift-exit kick cap',
-      cur: `${PHYS.kickCap} impulse`, ref: `${PHYS.kickCap} impulse`,
-      delta: { s: '±0 · free', cls: '' },
+      cur: `${kickCapOf(handling).toFixed(1)} impulse`, ref: `${kickCapOf(0).toFixed(1)} impulse`,
+      delta: fmtDelta(kickCapOf(handling), kickCapOf(0), ''),
     },
   ];
   return (
@@ -185,7 +185,7 @@ export function BenchPanel({ pips, ladder, onPips, onLadder }: BenchPanelProps) 
         {ladder === 'dream' && <em className="ucs-dream-note">dream ladder — same linear gains, ×2 cost. Not shipped.</em>}
       </div>
 
-      <DeltaLedger m={m} stock={stock} />
+      <DeltaLedger m={m} stock={stock} handling={pips.handling} />
 
       <div className="ucs-bench-row">
         <button

@@ -1,0 +1,5 @@
+{
+  "card-table": { "pos": [9200, 7400], "label": "Dispatch card table (off-world)", "elev": 0 },
+  "gauge-rack": { "pos": [9204, 7396], "label": "Standing needle-gauge rack (off-world)", "elev": 0 },
+  "map-wall": { "pos": [9196, 7404], "label": "Ten-band survey map wall (off-world)", "elev": 0 }
+}

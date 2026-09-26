@@ -8,7 +8,7 @@ import { audio } from '../audio/audio';
 const PART_COSTS = [400, 900, 1800];
 const PARTS = [
   { key: 'engine', name: 'Engine coils', blurb: '+accel, +top speed' },
-  { key: 'handling', name: 'Gyro cage', blurb: '+steering, +grip' },
+  { key: 'handling', name: 'Gyro cage', blurb: '+steering, +grip, +drift returns' },
   { key: 'boost', name: 'Boost cell', blurb: '+capacity, +regen' },
   { key: 'shield', name: 'Cargo shield', blurb: 'soaks impacts for fragile cargo' },
 ] as const;

@@ -128,7 +128,7 @@ Faction colors: Salt Guild `ochre #B07C3A`, Choir `teal-bright #57C4B8`, Reclaim
 - Heading convention (documented once): `telemetry.heading` is a true bearing,
   0 = north (−z); world forward = (sin h, 0, −cos h). Camera, dust and HUD all
   follow this.
-- Scale note (iteration 9): 117 caches across 11 on-world regions; fan-out
+- Scale note (iteration 12): 134 caches across 11 on-world regions; fan-out
   (golden-angle, r = 5 + k·2.2 m, capture 13 m) tolerates ~6 per anchor with
   clean spacing — beyond that, spread placements to a neighbouring anchor.
   Crowding thresholds live in the `cache-density-planner` demo intent.
@@ -174,3 +174,25 @@ Faction colors: Salt Guild `ochre #B07C3A`, Choir `teal-bright #57C4B8`, Reclaim
   reduced-motion parks the pulse/scale; min-height on the tip slot to stop layout
   shift. Auto-dismiss 1.4 s after clearance so playtesters and keyboard-shy
   players aren't gated.
+
+## Drift economy (iteration 12)
+
+- **Handling now pays at drift exit** (upgrade-curve-sandbox Fig 03 finding applied):
+  `driftGain = 1 + handling·0.14` scales both the exit refund rate and the kick rate;
+  caps rise per level — kick `4.5 + 0.9·L` impulse, refund `0.35 + 0.05·L` meter.
+  Stock (L0) feel is unchanged; L3 reaps the full slide at 1.26 s held vs 1.875 s stock.
+  The exit blip rises slightly with the ladder (520+40·L Hz) — a subtle "my gyros are
+  better" cue. Garage blurb: "Gyro cage — +steering, +grip, +drift returns".
+- **Cache glimmer shipped at 0.13** (was 0.09): signal-cache-bench storm/dusk contrast
+  finding applied to `SignalCaches.tsx`; bench mirrors (spec/panel/meta/NOTES) updated
+  in the same pass — the bench's SHIPPED table must always mirror the game.
+
+## Portraits — full house (iteration 12)
+
+- All 56 characters now have painted portraits on disk: 50 in
+  `public/images/characters/` + 7 writer-painted in `public/images/articles/characters/`
+  (spence-sorrel et al.; both paths are `withBase`-able from the `portrait` field).
+- Object-portraits are sanctioned for non-human cast: caretaker-7 (rover on a moonlit
+  pan of half-drowned panels) and tally (the amber-lit archive room itself) sit in the
+  same square storybook style. Writers add characters constantly — re-run the roster
+  probe (characters dir vs both portrait dirs) before finishing any iteration.

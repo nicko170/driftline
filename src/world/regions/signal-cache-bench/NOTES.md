@@ -21,9 +21,10 @@ emissive climbs), not a renderer inverse — the tables say so.
 
 - Core glow vs sky: comfortable everywhere except **storm-wall fog** — violet
   on `#C48A5A-ish` sand barely clears the relaxed bar. During storm missions
-  the ground ring + HUD chip + minimap ◇ carry detection; if a tuning pass
+  the ground ring + HUD chip + minimap ◇ carry detection; ~~if a tuning pass
   ever bumps `glimmer` from 0.09 → ~0.13, dusk/storm rows improve without
-  hurting the night silhouette.
+  hurting the night silhouette.~~ **Shipped (builder iter 12):** glimmer is
+  now 0.13 in `SignalCaches.tsx` and mirrored above.
 - Glimmer deliberately fails its 1.25 bar in most backdrops — it is a
   *motion* aid (bob 1.7 rad/s + spin), not a luminance beacon. Correct.
 - Chip text `#B8A7E8` on the panel composite passes 4.5:1 in all CVDs.

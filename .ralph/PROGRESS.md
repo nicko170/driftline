@@ -1,5 +1,58 @@
 # Progress
 
+## Status — iteration 12 (drift economy tuned from lab findings; portraits FULL HOUSE 56/56; 134 caches / 0 orphans)
+
+**Done (typecheck/build/validate green: 36 regions, 56 characters, 94 missions, 176 lore, 134 caches; playtest green: 60.5 fps, 0 errors, 0 failed requests, 31.6% scene change, signal chip live in HUD):**
+- **Lab→game: drift economy** (upgrade-curve-sandbox Fig 03 finding shipped) —
+  `src/game/Bike.tsx` drift-exit returns now scale with the handling ladder:
+  `driftGain = 1 + handling·0.14` on refund + kick rates; caps `4.5 + 0.9·L`
+  impulse / `0.35 + 0.05·L` meter; exit blip pitch rises 40 Hz per level. Stock
+  feel unchanged; gyro cage finally buys drift economy, not just steering.
+  Garage blurb "+steering, +grip, +drift returns". The sandbox was re-mirrored
+  per its own NOTES procedure (physics.ts constants + header, Fig 03 now draws
+  stock ghost vs current fit with handling-aware caps, delta-ledger kick-cap row
+  live, export note + Controls moves line + its NOTES addendum).
+- **Lab→game: cache glimmer 0.09 → 0.13** (signal-cache-bench storm/dusk contrast
+  finding shipped) in `SignalCaches.tsx`; bench mirrors updated (spec.ts ×3,
+  Panel.tsx shipped label, meta.ts, NOTES addendum marks the finding shipped).
+- **Portraits rounds 9+10 → FULL HOUSE 56/56** — painted + wired 14 this pass:
+  advocate-reyes, caretaker-7 (rover object-portrait), impa-vell, mallow,
+  marlowe-air-check, nyx-ala, ook, prior-chance, sable, tally (archive-room
+  object-portrait) — then writers landed 4 new sheets mid-iteration
+  (dusk-marron-kell, hedd-kline, hespa-vole, sera-vann), painted + wired those
+  too. Roster probe re-run at the end: NONE unpainted.
+- **Orphan sweep (standing duty)** — writers landed 6 lore this cycle (the exact
+  6 intents restocked last iteration!); placed all: brass-cup-dispute →
+  saltmouth:water-tower, first-wall-tally → saltmouth:spawn (courier berth),
+  mother-census-ledger → choirhollow:crater-rim, night-mirror-harvest →
+  mothersgate:approach, skyship-pennant-code → skydocks:mesa-top,
+  winch-safety-catechism → skydocks:winch-base. 128→**134 caches, 0 orphans**;
+  no anchor pushed past 5 (crowding budget ~6, exchange stays the max at 11).
+  Final audit re-run right before finishing: still 0 orphans.
+- **Backlog restock** — 11 intents: 4 missions (mallow soup-standard lap,
+  impa-vell ledger job, nyx-ala dune scout, advocate-reyes pennant race w/
+  kindness flag), 4 lore (riding-black field guide, open-drawer audit trail,
+  Air Check three-new-beads broadcast, forty-years-of-one-groan tract),
+  3 demos (portrait-gallery-bench, drift-economy-bench, night-radio-bench).
+
+**Next / known issues:**
+- **Portrait roster discipline**: full house today, but writers landed 4 sheets
+  inside one builder iteration. Re-run the roster probe (characters dir vs both
+  portrait dirs + bad `portrait` refs) at the START of every iteration and once
+  more before finishing. New-sheet paint batches of ~5 keep rate limits calm.
+- **Re-run the orphan audit every iteration** (probe: caches.json lore ∪
+  mission `lore:` flags vs lore dir) — run it again right before finishing.
+- Anchor crowding: saltmouth:exchange sits at 11 (above the ~6 fan-out comfort
+  line); future saltmouth placements should prefer spawn/gate-east/water-tower
+  (<5) or spread to flats-pan/overlook. cache-density-planner has the map.
+- The repo is HOT: writers land content mid-iteration (4 characters + 6
+  missions + 6 lore this pass); run typecheck+validate+build LATE, and re-run
+  the audits right before finishing.
+- Chunk-size warning persists (rapier 2.2 MB) — known, lazy routes keep it off
+  the title path.
+- Departure art is shared for all spawns; DESIGN.md's per-region art slot
+  remains open for when respawn points move.
+
 ## Status — iteration 11 (band-aware radio; portraits round 8 → 40/52 painted; typecheck fix; 128 caches / 0 orphans)
 
 **Done (typecheck/build/validate green; playtests green: 60–60.5 fps, 0 errors, 0 failed requests, 99.9% scene change with chapter card dismissed at 46 km/h):**

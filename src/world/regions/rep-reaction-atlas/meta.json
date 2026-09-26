@@ -1,0 +1,8 @@
+{
+  "slug": "rep-reaction-atlas",
+  "name": "Rep Reaction Atlas",
+  "blurb": "Dispatch-office card table, not a game region: a faction-reputation scrubber that restages the shipping radio/HUD bark pipeline against a scripted ten-band survey ride. Sliders stand in for guild/choir/reclaimers standing from hostile to kin; the bench shows which voices key up, which surfaces stay silent (gates, prices, callouts), and flags coverage gaps for the writers. Anchors and center live outside the playable map.",
+  "center": [9200, 7400],
+  "radius": 4,
+  "danger": 0
+}

@@ -8,7 +8,7 @@ import React, { useEffect, useRef } from 'react';
 import {
   PHYS, STOCK, KMH, TAPE_S, BOOST_ON_T,
   runLaunch, terminalMs, boostHoldS, boostRefillS,
-  kickOf, refundOf, levelCost, levelCosts, maxLevel,
+  kickOf, refundOf, kickCapOf, refundCapOf, levelCost, levelCosts, maxLevel,
   type Ladder, type Pips, type Run,
 } from './physics';
 
@@ -197,16 +197,19 @@ function boostDutyPct(level: number) {
 
 /* ------------------------------------------------- FIG 3 drift-exit kick */
 
-function drawKick(ctx: Ctx, w: number, h: number) {
+function drawKick(ctx: Ctx, w: number, h: number, pips: Pips, ladder: Ladder) {
   const xMax = 4;
+  const L = maxLevel(ladder);
+  const kMax = Math.ceil((kickCapOf(L) * 1.15) / 2) * 2; // headroom past the top cap
+  const rMax = refundCapOf(L) * 1.18;
   const b = bounds(w, h);
   const X = (t: number) => b.x0 + (t / xMax) * (b.x1 - b.x0);
-  const Y = (k: number) => b.y1 - (k / 5) * (b.y1 - b.y0);
-  const Y2 = (m: number) => b.y1 - (m / 0.35) * (b.y1 - b.y0);
+  const Y = (k: number) => b.y1 - (k / kMax) * (b.y1 - b.y0);
+  const Y2 = (m: number) => b.y1 - (m / rMax) * (b.y1 - b.y0);
 
   frame(ctx, b,
     [0, 1, 2, 3, 4].map((t) => ({ v: t, label: `${t}s` })),
-    [0, 1.25, 2.5, 3.75, 5].map((v) => ({ v, label: v.toFixed(v % 1 ? 2 : 0) })), X, Y);
+    [0, 0.25, 0.5, 0.75, 1].map((f) => ({ v: f * kMax, label: (f * kMax).toFixed(f * kMax % 1 ? 1 : 0) })), X, Y);
   txt(ctx, 'kick impulse →', ML - 42, MT - 8, INK_SOFT, 'left', 9);
 
   ctx.save();
@@ -214,22 +217,33 @@ function drawKick(ctx: Ctx, w: number, h: number) {
   ctx.fillRect(b.x0, b.y0, b.x1 - b.x0, b.y1 - b.y0);
   ctx.restore();
 
-  // drift hold curve
+  // stock ghost (handling 0)
+  const ghost: [number, number][] = [];
+  for (let t = 0; t <= xMax; t += 0.05) ghost.push([X(t), Y(kickOf(t, 0))]);
+  line(ctx, ghost, 'rgba(27,21,38,0.35)', 1.6);
+  line(ctx, [[b.x0, Y(kickCapOf(0))], [b.x1, Y(kickCapOf(0))]], 'rgba(27,21,38,0.28)', 1, [3, 4]);
+
+  // current fit drift-hold curve
+  const cap = kickCapOf(pips.handling);
   const pts: [number, number][] = [];
-  for (let t = 0; t <= xMax; t += 0.05) pts.push([X(t), Y(kickOf(t))]);
+  for (let t = 0; t <= xMax; t += 0.05) pts.push([X(t), Y(kickOf(t, pips.handling))]);
   line(ctx, pts, RUST, 2.4);
-  line(ctx, [[b.x0, Y(PHYS.kickCap)], [b.x1, Y(PHYS.kickCap)]], OCHRE_TXT, 1, [5, 4]);
-  dot(ctx, X(PHYS.kickCap / PHYS.kickPerS), Y(PHYS.kickCap));
-  txt(ctx, `caps at ${PHYS.kickCap} · ${(PHYS.kickCap / PHYS.kickPerS).toFixed(2)} s held`, X(2.0), Y(PHYS.kickCap) - 11, RUST_DEEP);
+  line(ctx, [[b.x0, Y(cap)], [b.x1, Y(cap)]], OCHRE_TXT, 1, [5, 4]);
+  dot(ctx, X(cap / (PHYS.kickPerS * (1 + pips.handling * PHYS.driftGainPerHandling))), Y(cap));
+  txt(ctx, `L${pips.handling} caps at ${cap.toFixed(1)} · ${(cap / (PHYS.kickPerS * (1 + pips.handling * PHYS.driftGainPerHandling))).toFixed(2)} s held`, X(2.0), Y(cap) - 11, RUST_DEEP);
 
-  // meter refund (right axis)
+  // meter refund (right axis) — stock ghost then current
+  const ghost2: [number, number][] = [];
+  for (let t = 0; t <= xMax; t += 0.05) ghost2.push([X(t), Y2(refundOf(t, 0))]);
+  line(ctx, ghost2, 'rgba(46,140,140,0.35)', 1.2, [3, 4]);
+  const rcap = refundCapOf(pips.handling);
   const pts2: [number, number][] = [];
-  for (let t = 0; t <= xMax; t += 0.05) pts2.push([X(t), Y2(refundOf(t))]);
+  for (let t = 0; t <= xMax; t += 0.05) pts2.push([X(t), Y2(refundOf(t, pips.handling))]);
   line(ctx, pts2, TEAL, 1.8, [6, 4]);
-  dot(ctx, X(PHYS.refundCap / PHYS.refundPerS), Y2(PHYS.refundCap), 2.8, '#9ADBD4');
-  txt(ctx, 'meter refund 0.35 @ 3.5 s', b.x1 - 4, Y2(0.35) - 10, TEAL, 'right', 9.5);
+  dot(ctx, X(rcap / (PHYS.refundPerS * (1 + pips.handling * PHYS.driftGainPerHandling))), Y2(rcap), 2.8, '#9ADBD4');
+  txt(ctx, `refund ${rcap.toFixed(2)} @ ${(rcap / (PHYS.refundPerS * (1 + pips.handling * PHYS.driftGainPerHandling))).toFixed(1)} s`, b.x1 - 4, Y2(rcap) - 10, TEAL, 'right', 9.5);
 
-  txt(ctx, 'NOTHING HERE COSTS A CREDIT — kick & refund are pip-independent in the shipped build.',
+  txt(ctx, 'The gyro cage pays at the exit — same slide, fatter kick, deeper refund.',
     (b.x0 + b.x1) / 2, b.y1 - 12, TEAL, 'center', 9.5);
 }
 
@@ -424,14 +438,15 @@ export function LedgerFigures({ pips, ladder, avgCr }: { pips: Pips; ladder: Lad
       />
       <Figure
         n="03" title="Drift-exit — kick & refund"
-        aria="Drift exit impulse and boost-meter refund against drift hold time; identical at every upgrade level."
-        deps={[]}
+        aria="Drift exit impulse and boost-meter refund against drift hold time, stock versus the current handling fit."
+        deps={[pips.handling, ladder]}
         legend={<>
-          <Swatch kind="rust" label="kick impulse" />
-          <Swatch kind="teal" label="meter refund" />
+          <Swatch kind="rust" label={`kick · handling L${pips.handling}`} />
+          <Swatch kind="teal" label="meter refund · current" />
+          <Swatch kind="ghost" label="stock (L0)" />
         </>}
-        foot={<>Skill pays here, not credits. If handling is to matter at the exit, hook the cap (4.5) or the per-second rate (2.4) to a pip.</>}
-        draw={(ctx, w, h) => drawKick(ctx, w, h)}
+        foot={<>Since builder iter 12 the gyro cage reaps exits: rate ×(1+0.14·level), caps 4.5+0.9·level impulse and 0.35+0.05·level meter — handling now buys drift economy, not just steering.</>}
+        draw={(ctx, w, h) => drawKick(ctx, w, h, pips, ladder)}
       />
       <Figure
         n="04" title="Top speed per coil level"

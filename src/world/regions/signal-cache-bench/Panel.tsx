@@ -210,7 +210,7 @@ export function BenchPanel({ cfg, onChange }: { cfg: BenchConfig; onChange: (c: 
         />
       </label>
       <label className="scb-slider">
-        <span>glimmer opacity <b>{cfg.glimmer.toFixed(3)}</b><em>shipped 0.090</em></span>
+        <span>glimmer opacity <b>{cfg.glimmer.toFixed(3)}</b><em>shipped 0.130</em></span>
         <input
           type="range" min={0} max={0.3} step={0.005} value={cfg.glimmer}
           onChange={(e) => onChange({ ...cfg, glimmer: +e.target.value })}

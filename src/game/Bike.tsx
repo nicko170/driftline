@@ -97,13 +97,15 @@ export default function Bike() {
       c.driftTime += dt;
       c.wasDrifting = true;
     } else if (c.wasDrifting) {
-      // boost-on-exit reward
-      const reward = Math.min(0.35, c.driftTime * 0.1);
+      // boost-on-exit reward — a tuned gyro cage reaps more from the same slide
+      // (upgrade-curve-sandbox Fig 03: refund cap/rate + kick were pip-independent)
+      const driftGain = 1 + up.handling * 0.14;
+      const reward = Math.min(0.35 + up.handling * 0.05, c.driftTime * 0.1 * driftGain);
       if (reward > 0.04) {
         c.boost = Math.min(1, c.boost + reward);
-        const kick = Math.min(4.5, c.driftTime * 2.4);
+        const kick = Math.min(4.5 + up.handling * 0.9, c.driftTime * 2.4 * driftGain);
         body.applyImpulse({ x: _fwd.x * kick, y: 0, z: _fwd.z * kick }, true);
-        audio.blip(520, 0.1);
+        audio.blip(520 + up.handling * 40, 0.1);
       }
       if (c.driftTime > 0.4) {
         ride.bestDriftS = Math.max(ride.bestDriftS, c.driftTime);
