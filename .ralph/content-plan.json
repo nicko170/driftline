@@ -1195,8 +1195,10 @@
     "rescue",
     "chapter 3"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790385441.2884202
   },
   {
    "kind": "article",
@@ -1210,8 +1212,10 @@
     "race",
     "salt flats"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790385441.2884212
   },
   {
    "kind": "article",
@@ -1225,8 +1229,10 @@
     "race",
     "mysterious"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790385441.2884219
   },
   {
    "kind": "article",
@@ -1240,8 +1246,10 @@
     "rumors",
     "skydocks"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790385441.2884219
   },
   {
    "kind": "article",
@@ -2279,10 +2287,11 @@
     "charter",
     "comedy"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790385159.942318
+   "claimed_at": 1790385159.942318,
+   "done_at": "2026-09-26T11:17:35"
   },
   {
    "kind": "article",
@@ -2296,10 +2305,11 @@
     "avatar",
     "origin"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer1",
-   "claimed_at": 1790385159.9423192
+   "claimed_at": 1790385159.9423192,
+   "done_at": "2026-09-26T11:18:01"
   },
   {
    "kind": "demo",
@@ -2717,10 +2727,11 @@
     "terraforming",
     "ch2"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer1",
    "worker": "writer1",
-   "claimed_at": 1790385159.9423192
+   "claimed_at": 1790385159.9423192,
+   "done_at": "2026-09-26T11:17:40"
   },
   {
    "kind": "article",
@@ -2735,10 +2746,11 @@
     "ch4",
     "finale"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer1",
    "worker": "writer1",
-   "claimed_at": 1790385159.9423192
+   "claimed_at": 1790385159.9423192,
+   "done_at": "2026-09-26T11:18:01"
   },
   {
    "kind": "article",
