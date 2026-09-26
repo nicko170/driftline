@@ -31,7 +31,8 @@
     "complete": [
       { "who": "ketch", "text": "Hatch log says you made the window with room to spare, and the camp says you checked in like a professional. Two good habits in one night. The garage kettle's on if you're ever within smell of it." },
       { "who": "ash-varga", "text": "The flats were silver the whole way, Ketch. Like riding on the back of a mirror. You could have mentioned that part." },
-      { "who": "ketch", "text": "Mentioning it doesn't help, kid. You either see it or you read about it. Congratulations on seeing it." }
+      { "who": "ketch", "text": "Mentioning it doesn't help, kid. You either see it or you read about it. Congratulations on seeing it." },
+      { "who": "gauge-keeper-dax", "text": "Hatch log, storm gauge: cells received warm, needles back on payroll. Your name stays out of the register of politely mentioned couriers, courier — first clean page all season. Pressure's holding." }
     ]
   }
 }

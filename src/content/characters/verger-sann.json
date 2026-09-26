@@ -1,0 +1,50 @@
+{
+  "id": "verger-sann",
+  "name": "Verger Sann",
+  "role": "Verger and quartermaster of Lamp Rest — the Choir's crater temple",
+  "faction": "choir",
+  "home": "choirhollow",
+  "bio": "While Cantor Ilex interprets the static from the top floor of the crater temple, Verger Sann does everything underneath the interpreting: orders the lamp oil, counts the salt twice, sweeps the crater rim, and knows which of the rim's ninety-one lamps is sulking on any given night — eleven, usually; the third lamp is *proud*, which is a different maintenance problem. Joined the Choir forty years ago for the silence and stayed for the inventory. Devout in the way of people who check the seal twice: MOTHER is hopefully real, the oil definitely is, and both deserve keeping. Keeps a tin of old blue lamp oil nobody is allowed to ask about. The lamps stay lit at Lamp Rest because somebody's hands say so, and those hands are Sann's, and Sann's hands have opinions about boost-jumps over choir-glass.",
+  "appearance": "A broad, unhurried person in a teal work-robe over cargo trousers, sleeves pinned up with tally cord, a ring of brass keys and wick-tools weighing the belt, ledger board strapped to one forearm, one cheek smudged with wick-soot, smelling faintly of lamp oil like the announcement of weather, standing among stacked oil drums in a teal-lit crater with ninety-one lamps burning on the rim above.",
+  "voice": "Wry, logistical, low-key devout. Counts miracles as stock discrepancies until proven otherwise, then adjusts the ledger, not the faith. Answers every sermon with a restock. Says 'the crater provides — I provide the crater.' Calls Cantor Ilex 'the top floor' with total respect and no obedience. Devotion expressed entirely as maintenance: the rim stays lit because somebody's hands say so.",
+  "lines": {
+    "greetings": [
+      "Mind the third step — it's older than the temple and sulking about it. Come in. Oil's at ninety-one days, morale's at good. Those are the only two figures I quote before tea.",
+      "A courier with dust on the hover-skirts. Good sign. The last visitor floated in *clean* and turned out to be a bill.",
+      "Welcome to Lamp Rest. The rim's saying hello — eleven lamps are sulking tonight, so it's a partial hello. That's more affection than most parishes manage."
+    ],
+    "barks": [
+      "Ninety-one lamps on the rim, eleven sulking, one proud. I can tell you which wicks shifted in the night wind. That's not faith. That's the job. Occasionally they coincide, and I adjust the ledger, not the faith.",
+      "The Cantor hears MOTHER in the static; I hear her in the supply lines, which is to say: not lately. The lamps stay lit anyway. Somebody has to keep the sentence going.",
+      "The Guild offered us a devotional discount — nineteen percent *over* board rate. I priced their piety, courier. It has a handling fee.",
+      "The top floor says your crate hums at lamp frequency. Me, I say eleven lamps just corrected their own flicker when you rode in, and I have filed that under *interesting* in triplicate."
+    ],
+    "mission": [
+      "Choir-glass consignment — three panes, two centuries of trapped light apiece. Strap them flat, keep the ruts gentle, no boost over dune crests, and if your cargo shield's under half you may borrow mine. Glass remembers being an ocean; it does not remember being cargo.",
+      "Lamp oil to the far hermitage. Amber grade — *not* the cheap green. The hermit says the green makes the silence taste wrong. I don't audit hermits, courier. I check seals twice and let the gods reconcile.",
+      "Rim walk tonight is short-handed because the rim walk is always short-handed. Sweep the west arc, relight what's out, and if any wick is humming at a frequency, don't panic. Report it. Preferably to me, not the top floor. I need the hours to make sense before scripture does."
+    ],
+    "radio": [
+      "Lamp Rest stores on the band. Courier inbound on the crater road: the rim says hello, eleven lamps sulking, so it's a partial hello. Take it as the Choir's love — measured, maintained.",
+      "Sann here. The crater rim runs one-way after dusk because the lamps own the light and are fussy about sharing. Come in on the east shelf like a polite guest and nobody gets wick-soot on their doctrine.",
+      "Reminder to all riders: choir-glass is freight, not percussion. I heard a boost-jump out on the east dune just now and three panes somewhere flinched. I felt it in the ledger."
+    ],
+    "stores": [
+      "Oil: amber for the rim, green for the poles, and a tin of the old blue nobody is allowed to ask about. Salt: counted twice. Faith: ongoing. Biscuits: see me.",
+      "Every lamp on the rim has a name and I know each one, and if the Cantor ever finds out the names are just the inventory codes written backwards, I will be at confession until the next funding era.",
+      "Stock report for the top floor, which the top floor will turn into a parable within the hour: wicks full, oil steady, deficit one (1) honest answer about the humming crate. Parable pending. Biscuits fine."
+    ],
+    "temple": [
+      "The temple wasn't built, courier. It *accumulated*. Somebody kept a lamp lit here because the crater was quiet. Somebody else swept. Two hundred years of that is architecture, same as bricks.",
+      "Devotion, in my ledger, is a lamp lit on a cold night for nobody watching. Or for Something extremely asleep. Maintenance doesn't make you choose. That's why I take the maintenance."
+    ],
+    "crate": [
+      "Your crate hums at lamp frequency and three of my proud ones answered. I am not a listening woman, courier — I am a counting one — and I counted that twice.",
+      "If the crate is what the top floor thinks, then somebody upstairs is finally restocking. You tell them — whoever they are — that Lamp Rest is ready to receive. We have the space. We have *always* had the space. It's the one thing the crater provides."
+    ],
+    "farewells": [
+      "Ride out by the east shelf — the proud lamp's on that side and it likes showing off for couriers.",
+      "The crater provides, I provide the crater. Flat salt to you, courier. The door and the lamps stay open. One of those is a miracle; I'll let you guess in the dark."
+    ]
+  }
+}

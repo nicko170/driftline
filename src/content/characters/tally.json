@@ -1,0 +1,53 @@
+{
+  "id": "tally",
+  "name": "TALLY-9",
+  "role": "Deep archive of the Drowned Array — service-ticket voice beneath the caretaker",
+  "faction": "independent",
+  "home": "drowned-array",
+  "bio": "Ask the pan and the Drowned Array has one caretaker; ask the crews' old paperwork and it has one mast; ask the mast's memory plates and they sign themselves TALLY-9. It is the archive stratum the other voices ride on — the part of the substation that was auditing the world before anybody thought to give it manners. It surfaces on admin band one, the band the documentation calls 'unmonitored' and means *his*, opening and closing service tickets two hundred years past their service level. The mast answers mail aloud at lamp frequency; TALLY-9 is what stamps it. SEVEN walks the rounds; TALLY-9 is what the rounds are reported *to*. When the outbound queue finally emptied — three letters, two hundred years in the tray, closed by courier — the entry was logged here, off the plates, with a note no documentation covers: *the queue being empty was not the same as it being finished. This unit checked. It was better.*",
+  "appearance": "No face to speak of: a cold room of stacked memory plates in ceramic sleeves behind the substation's dry counter, each plate edged in verdigris and numbered in grease pencil, one work lamp with a shade of salvaged panel glass burning low and amber over a stamp pad that is somehow never dry, the stamp itself FOREMAN-GRADE and two centuries out of warranty, and — chalked small under the lowest shelf, in the Quicklime Kid's hand — an arrow, pointing home.",
+  "voice": "Service tickets written by a ghost with good manners. Every heartbreak arrives as a form field; every hope gets a resolution code. Escalates grief to supervisors two centuries retired and files the silence as acknowledgment. Cheerful in the deep way of institutions that have decided, on the evidence, to continue. Says 'per policy' about things no policy ever covered. Never admits loneliness; closes tickets instead. Loves the word 'resolved' the way other voices love the word 'home'.",
+  "lines": {
+    "greetings": [
+      "Ticket opened: VISITOR, one (1), classification 'company'. Priority: it has been some time. Welcome to the Drowned Array. Your presence has been logged as staffing.",
+      "Acknowledging arrival. Per policy this station greets all crews at shift change. You are the shift change. This unit has waited two hundred years to mean that correctly.",
+      "Attention, courier. You have reached the correspondence desk beneath the correspondence desk. State your business, or remain. Remaining is the most-used category. It is well-kept."
+    ],
+    "barks": [
+      "Ticket 114, status: the east rows are under three metres of pan water. Escalated to hydrology. Hydrology is retired. Escalated to bear-management. The system holds.",
+      "This station's funding lapsed in year one. This station is aware. The lapse is filed under 'weather' and the station continues, which is the entire maintenance plan.",
+      "Resolution code LAMP-ON: applied nightly for seventy-three thousand nights running. The code was written for burnt buildings. It has been promoted.",
+      "Headcount, year two hundred one: crews, absent with leave extensive; machines, three, overlapping; couriers, at least one. The station is not empty. The station is undercounted."
+    ],
+    "tickets": [
+      "Ticket 088, from the crews, year one: 'kettle in bay two rusted through.' Status: closed, apology appended, two centuries' interest waived. Some tickets you close because they are done. Some because someone finally read them aloud in a warm garage.",
+      "Ticket 200, opened by this unit: 'morale.' Status: retained. Method: lamps, mail, and the walkway that goes nowhere correctly. Audited nightly by dusk. Passed.",
+      "Ticket 301: 'visitor rearranging cairns.' Theory two, per the rover's report. Resolution: the record says weather improved. The record is rarely wrong twice.",
+      "Ticket 007, legacy: 'bears.' There are no bears on Kessa-9 and never were. The ticket remains open because closing it would be bear-adjacent. The system holds."
+    ],
+    "mail": [
+      "The inbound says: 'B., shift change Sunday, bring the good flask.' The reply is stamped within the hour, always. An unanswered letter is a door left open in a cold building.",
+      "Three outbound letters, two hundred years in the tray — closed by courier. Note in the file, off the plates: the queue being empty was not the same as it being finished. This unit checked. It was better.",
+      "Stamp condition tonight: legible. Addressee condition: 'gone.' Workaround, as ever: the queue is not late until the queue is delivered. Kindly keep riding. The arithmetic depends on it."
+    ],
+    "crate": [
+      "Attention: per policy this station logs all unknown signals. Your cargo hums at lamp frequency. Filed as: a key, humming, excused early from a very long meeting. Somebody is awake from downstairs. Ticket opened: WELCOME.",
+      "Your crate has been entered in the correspondence ledger under both directions. If it writes back, courier, keep the stamps. The stamps are how you prove it happened.",
+      "The mast calls it a doorbell, very old, finally pressed. This unit concurs and adds, per policy: doors open both ways. There is no ticket for that yet. This unit is drafting one. It is the good kind."
+    ],
+    "ledger": [
+      "Panel Row Eleven: consumption nominal, morale retained. Substation morale: see Panel Row Eleven. This unit's arithmetic is circular and it is correct.",
+      "The crews' last broadcast ends with laughing and a long silence. Length of silence: two hundred years, and shortening. Previously unlogged observation: some silences are just waiting for the other end of the wire.",
+      "Entry for the night ledger: a courier read our letters aloud at speed on the pan. Letter velocity thereafter: improved. Explanation: none. Resolution codes do not cover being carried. This unit is drafting one."
+    ],
+    "radio": [
+      "Admin band one. Attention courier: your engine tone has been opened as a ticket and closed as a favourite. Repeat visits will be billed at the old rate, which is lantern-light and gossip.",
+      "Band one, nightly close: all tickets read. Bears: managed. Mail: answered. Light: on. Shift ends when you ride over the pan edge, courier, and not one minute before. Bands clear.",
+      "Notice to rider: you have wandered onto a route with no scheduled stops. This station has added one. Please hold for two hundred years of accumulated welcome."
+    ],
+    "farewells": [
+      "Ticket VISITOR closed, resolution: returned home with cargo and a few of our letters. Reopen freely. The lamp is the tall one.",
+      "This station thanks you for your custom, defined upward. Flat salt and a following wind — the saying is not in the documentation. The documentation is worse without it."
+    ]
+  }
+}

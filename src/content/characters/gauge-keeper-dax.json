@@ -1,0 +1,52 @@
+{
+  "id": "gauge-keeper-dax",
+  "name": "Gauge-Keeper Dax",
+  "role": "Chief of the Windspine storm-gauge crew",
+  "faction": "independent",
+  "home": "windspine",
+  "bio": "Keeper of the storm gauge at the far end of the Windspine ridge — a brass-ribbed cliff hutch full of needles, charts, and coffee judged by tar content. Forty seasons reading pressure for the settlements; three forecasts he got wrong, one he got right that nobody believed, and he keeps all four framed. Opens the hatch only at night because daylight makes the instruments lie — 'philosophical' is his word, and the needles have earned the trust it implies. Maintains the ridge morse-lights, the pre-dawn watch, and the register of politely mentioned couriers, an alphabetised book of names that missed the night window, read aloud at season turn so new riders learn the sound of being late. Distrusts anyone who has never been lied to by a barometer. It is a shorter list of friends than you'd think, and Rill Davenant was on it.",
+  "appearance": "A weathered ridge-keeper squeezed into a storm-grey oilskin with gauge brass riveted at the cuffs, beard trimmed short where the instruments keep snagging it, spectacles with one lens ground for distance and one for denial, a brass barometer on a shoulder strap worn like a medal, framed against a round hatch lit amber from inside with slow turbines turning violet behind him in the dark.",
+  "voice": "Dry as the flats, exact as calibration. Weather is the only conversation partner he fully respects, and it lies. Reads pressure charts like tea leaves, then checks his own reading twice. Insults of respect: 'sun-cooked' for optimists, 'calibrated' for the trusted. Never says goodnight; says 'pressure's holding.' Treats the register as a love language and the chart as scripture with errata.",
+  "lines": {
+    "greetings": [
+      "Hatch opens after dark, courier. Not tradition — daylight makes the needles philosophical, and I don't pay instruments to have opinions.",
+      "You're the one running the night cells. Good. The last courier asked me whether pressure has feelings. It does. That's the problem.",
+      "Mind the threshold — it's brass, it's proud, and it's older than the money running out. Come in out of my weather."
+    ],
+    "barks": [
+      "Chart says falling glass, ridge enough for a blow by second watch. The chart has been wrong before and it has never once been sorry. I plan accordingly.",
+      "Day crew want the hatch open at noon. Noon is when instruments tell you what you want to hear. I run a station, not a salon.",
+      "A barometer lied to me in year eleven — pretty fall, steady all day — and the wall came over the knee-high dunes like a debt. I still keep that barometer. Trust is maintenance.",
+      "The turbines tick at each other all night. When the ticking sounds pleased — when the ridge *harmonises* — something's standing up out on the flats. Watch your boots."
+    ],
+    "mission": [
+      "Four charged horizon cells, warm and strapped, through my hatch while it's open — after dark, before the pre-dawn watch. The gauge sleeps on dead cells, and a sleeping gauge flies the ridge blind.",
+      "Miss the window and your name goes in the register of politely mentioned couriers. It's a real book. It's alphabetised. Pem's in it twice, and Pem *bound* the thing for me.",
+      "Flats at night read different — the salt holds the starlight, which is beautiful, and hides the rifts, which isn't. Beam low. Follow the morse. When my lamp winks twice, you're close and you're my problem. Those are the best kind."
+    ],
+    "radio": [
+      "Gauge band. Courier on the flats: the stars are showing off and the salt's holding the light — beam low, rifts hide in pretty. Morse winks twice when you're mine.",
+      "Station log, second watch: courier inbound, glass steady, ridge audible. If you can hear the turbines ticking at each other, you're calm enough. Keep it that way.",
+      "Gauge to any rider west of the spine: pressure's stepped twice in an hour. Something's standing up out there. If it says your name, that's the wind showing off. Keep riding."
+    ],
+    "almanac": [
+      "Storm season opens polite — one big wall up front, like a knock at the door — then it stops knocking altogether. Year thirty-one the knocking stopped in week two. Best coffee of my life. Worst month.",
+      "My grandmother's rule, off the ridge: trust the glass in your hand, not the colour of the horizon. The horizon has been flirting with couriers since before the money ran out.",
+      "A storm's face moves faster than its manners. If the wall recites your name, don't answer. The old hands say the storm only borrows voices it's... collected. Drink your coffee. Watch the glass."
+    ],
+    "register": [
+      "The register isn't shame, courier. It's calibration. Names in it get read aloud at season turn so the new riders learn the sound of being late. The book is generous. The book permits learning.",
+      "Ketch's in the register once, year two, asterisked. The asterisk means he argued and he was right. The book permits that too. Once.",
+      "Rill Davenant — never in it. Forty seasons. I checked the book the week she went missing because checking books is what this station does, and I keep that page open now. For the record."
+    ],
+    "farewells": [
+      "Pressure's holding. Off you go.",
+      "Window closes at the pre-dawn watch. Come back with a story shorter than the chart. They're all shorter than the chart."
+    ],
+    "night": [
+      "Flats at night read different, courier — the salt holds the starlight like it paid for it. Beautiful and dishonest, like most honest things. Beam low.",
+      "Second watch is the honest one. The ridge ticks, the glass settles, and for about an hour the desert tells you exactly what it weighs. Then the pre-dawn lies begin.",
+      "Night hatch rule, posted nowhere and known by everyone: knock twice and state the weather you want. I'll tell you the weather you're getting. Both entries go in the log."
+    ]
+  }
+}

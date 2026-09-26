@@ -2695,10 +2695,11 @@
     "caretaker",
     "lore"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer1",
    "worker": "writer1",
-   "claimed_at": 1790405151.533225
+   "claimed_at": 1790405151.533225,
+   "done_at": "2026-09-26T16:54:42"
   },
   {
    "kind": "article",
@@ -2713,10 +2714,11 @@
     "night",
     "weather"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer1",
    "worker": "writer1",
-   "claimed_at": 1790405151.533226
+   "claimed_at": 1790405151.533226,
+   "done_at": "2026-09-26T16:54:58"
   },
   {
    "kind": "article",
@@ -2730,10 +2732,11 @@
     "choirhollow",
     "logistics"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer1",
    "worker": "writer1",
-   "claimed_at": 1790405151.533226
+   "claimed_at": 1790405151.533226,
+   "done_at": "2026-09-26T16:54:42"
   },
   {
    "kind": "article",
@@ -2748,10 +2751,11 @@
     "radio",
     "songs"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "writer1",
    "worker": "writer1",
-   "claimed_at": 1790405151.533226
+   "claimed_at": 1790405151.533226,
+   "done_at": "2026-09-26T16:54:42"
   },
   {
    "kind": "article",
@@ -4333,10 +4337,11 @@
     "colonisation",
     "glass desert"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405526.1270778
+   "claimed_at": 1790405526.1270778,
+   "done_at": "2026-09-26T16:55:12"
   },
   {
    "kind": "article",
@@ -4351,10 +4356,11 @@
     "trade law",
     "chemistry"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405526.127079
+   "claimed_at": 1790405526.127079,
+   "done_at": "2026-09-26T16:55:12"
   },
   {
    "kind": "article",
@@ -4369,10 +4375,11 @@
     "daily life",
     "crater temple"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405526.127079
+   "claimed_at": 1790405526.127079,
+   "done_at": "2026-09-26T16:55:14"
   },
   {
    "kind": "article",
@@ -4387,10 +4394,11 @@
     "humour",
     "language"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790405526.127079
+   "claimed_at": 1790405526.127079,
+   "done_at": "2026-09-26T16:55:14"
   },
   {
    "kind": "article",
@@ -4405,8 +4413,10 @@
     "pre-dormancy",
     "secrets"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405716.040191
   },
   {
    "kind": "article",
@@ -4421,8 +4431,10 @@
     "hazards",
     "courier skills"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405716.040192
   },
   {
    "kind": "article",
@@ -4437,8 +4449,10 @@
     "side characters",
     "youth culture"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405716.040192
   },
   {
    "kind": "article",
@@ -4453,8 +4467,10 @@
     "heroism",
     "history"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer2",
+   "claimed_at": 1790405716.040192
   },
   {
    "kind": "article",
@@ -5427,8 +5443,10 @@
    "cluster": "demos",
    "intent": "Title-screen motion bench: key-art parallax layers, menu entrance choreography, epilogue-panel reveal and font-loading states under simulated slow networks; export timing tokens for the shipped TitleScreen.",
    "keywords": [],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "demo3",
+   "claimed_at": 1790405536.626921
   },
   {
    "kind": "demo",

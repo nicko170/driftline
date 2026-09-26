@@ -1,0 +1,53 @@
+{
+  "id": "ratchet-june",
+  "name": "Ratchet June",
+  "role": "Reclaimer long-haul driver, master of the crawler 'Second Mortgage'",
+  "faction": "reclaimers",
+  "home": "cinderflats",
+  "bio": "Long-haul union driver out of the Yards, hauling salvage between cinderflats and anyone with anchor points and manners. Her crawler, Second Mortgage — a six-bogie winch-rig with museum-grade hydraulics and payments that predate her — got lines on the storm-downed Guild crawler out on the pan before its engines cooled, which is how a union claim ingot and a Guild wax seal both ended up racing to Keel Town in one courier's panniers. June will tell you Second Mortgage is paid off; the crawler's own ledger disagrees, and June reads to her from it on Sundays so she stays humble. Sings to the engine on long flats — half-remembered road songs with the drums left in — and swears at the weather in strict rhyme, because rhyme keeps you honest at panic speed. Sentimental about salvage in a way she'd deny under oath: everything stripped is something saved, and nothing on her flatbed has ever once been called scrap.",
+  "appearance": "A rangy driver in a rust-orange union greatcoat over a salvage harness, hair wrapped in an oily scarf printed with Second Mortgage's old serial plate, a heavy winch-wrench worn at the belt like a cavalry sabre, boot heels up on a winch drum, grinning about hydraulics, the crawler's cab glowing rust-amber behind her under a bruised storm-season sky.",
+  "voice": "Engine-room tenderness, weather-room fury. Sings road songs to machines and corrects their pitch; swears at storms in rhyme — rhyme keeps you honest at panic speed. Calls every machine 'she' with absolute confidence, even when the machine has opinions. Salvage philosophy delivered like insults and insults delivered like praise. Never says goodbye to a machine; says 'keep the oil warm.'",
+  "portrait": "images/articles/characters/ratchet-june.jpg",
+  "heroAlt": "Illustrated low-poly portrait of Ratchet June, a rangy Reclaimer crawler driver in a rust-orange union greatcoat and oily headscarf, wrench at her belt, grinning beside her amber-lit winch crawler under a violet storm-season sky.",
+  "lines": {
+    "greetings": [
+      "If it rusts, it sings. If it sings, it's mine to fix. If it's yours and it sings, it's still mine to fix — I just charge friendlier.",
+      "You rode in on that little hover. Cute. Second Mortgage coughed politely when you passed, which for her is a standing ovation.",
+      "Careful where you step in the yard — if it's flat and humming it's a hatchway, and if it's rusted and beautiful it's somebody's grandmother, and we scrap neither."
+    ],
+    "barks": [
+      "Second Mortgage is paid off, thank you. The ledger disagrees, and I read to her from it on Sundays so she stays humble — but paid *off*, courier. Emotionally.",
+      "Storm-season rule: the sand gets first claim on everything it touches. Union rule: we're right behind the sand with better tools. Somehow both are true and I love my job.",
+      "The Guild calls us vultures. Vultures clean the world, courier. You ever heard a desert complain about vultures? It complains about *paperwork*.",
+      "Six bogies, one mood, all gratitude. That's Second Mortgage. Forty years on the flats and she still thinks every load is her first. So do I. Don't tell the union. Tell everybody."
+    ],
+    "mission": [
+      "The pan-wreck — we had lines on her before her engines cooled. Standard salvage, posted and legal, and now the Guild's waving manifest wax like it's a winch. You carry both claims fair, courier. That's more than the storm did.",
+      "Whatever the dockmaster signs, you mind this: that crawler was a driver once. Somebody sang her quiet through night flats for six seasons. She comes to the Yards, she's *continued*. She goes on a Guild shelf, she's *appraised*. One of those is a life, and I know which.",
+      "Union ingot's stamped, weighed, and warm. Article Three, courier: *we were there first, with tools*. You ride like it matters, because to the wreck underneath it all, it does."
+    ],
+    "radio": [
+      "June on the long band, hauling east with a throat full of dust and a cab full of song. Any rider out there: if you hear a low voice arguing with the weather in rhyme, that's maintenance. Pay it no mind.",
+      "Courier on the flats — your little hover's running a hair flat on the left skirt. Tell her she's pretty and tighten the dorsal line. That's courtship *and* repair, which is the whole of my religion.",
+      "Second Mortgage says hello to whatever ears are out there. Yes she does — that grind, right rear, that's her hello. I know her voice better than my own, and mine's had less practice lately."
+    ],
+    "songs": [
+      "♪ Salt in the morning, salt in the spring, salt in the pockets of everything — ♪ she likes the chorus. Hears the drums in it. The winch keeps the beat if I let it.",
+      "♪ Money ran out and the sky stayed on, so we ride the ridge with the headlights on — ♪ second verse is about a bear. All road-song second verses are about bears.",
+      "♪ Lay her down gentle where the glass runs green, the prettiest wreck that the storm's ever seen — ♪ Shh. She gets *tender* at that one, courier, and a tender winch drops loads."
+    ],
+    "machines": [
+      "Never say goodbye to a machine. Say 'keep the oil warm.' They hear you. The big chimney in the Yards still ticks over on cold nights because somebody, years back, said it kindly enough.",
+      "People think salvage is taking things apart. It's deciding what gets to *continue*. Second Mortgage is eighty percent other crawlers and a hundred percent herself. That's the craft, and don't let the Guild price it.",
+      "Every bolt says who it came from if you know the makers' file-marks. I've got a hinge in this cab off a terraforming tower. Some days I thank her. Some days I let her drive."
+    ],
+    "crate": [
+      "Your crate hums, courier. Second Mortgage answered it with the right rear bogie, two notes, pleased. In forty years she's only sung back at engines, storms, and once at the Chimney. Whatever you're carrying — it's a *colleague*.",
+      "Pyke wants it opened, the Choir wants it walked home, the Guild wants it shelved. Second Mortgage didn't ask me anything. She just sang back. Machines vote early, courier, and the turnout's interesting."
+    ],
+    "farewells": [
+      "Wind's up, song's queued, Second Mortgage is humming the chorus already. Off you go, courier — keep your skirts flat and your promises cheap and kept.",
+      "Keep the oil warm!"
+    ]
+  }
+}

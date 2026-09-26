@@ -28,7 +28,8 @@
     "accept": [
       { "who": "boss-pyke", "text": "Claim ingot's stamped and weighed, chief. Article Three: *we were there first, with tools*. Remember — the Guild wants that crawler shelved next to their conscience. We want it working. One of those is a *life*." },
       { "who": "tamsin-cho", "text": "The Guild's counter-claim is in manifest wax. Do not read it, do not hum near it, and do not believe the bit where it calls the Reclaimers 'weather-adjacent'. …Personally, courier, I price arguments, not winners. But do ride *fast*." },
-      { "who": "ketch", "text": "Ketch here. Word of advice from the last courier who ran double claims — me, thirty years ago. Both tokens ride in separate panniers. Metal remembers what it's touching, and the desert loves a bribe." }
+      { "who": "ketch", "text": "Ketch here. Word of advice from the last courier who ran double claims — me, thirty years ago. Both tokens ride in separate panniers. Metal remembers what it's touching, and the desert loves a bribe." },
+      { "who": "ratchet-june", "text": "June on the band, hand raised. I ran the winch on that wreck, courier — Second Mortgage had lines on her before her engines cooled. Whatever order the tokens land in, you ride it honest. The storm didn't, and somebody should." }
     ],
     "complete": [
       { "who": "dockmaster-devanna", "text": "Both claims received, weighed, and warm from the road. Pen's ready, courier. Before I sign anything — log note for the record: I ran a crawler like her for six seasons. Whatever I sign, *somebody's* going to remember this order at every mooring from here to the gate. So choose like the desert's watching. It is." },
