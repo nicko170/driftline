@@ -2770,8 +2770,10 @@
     "tower",
     "comedy"
    ],
-   "status": "planned",
-   "added_by": "writer1"
+   "status": "claimed",
+   "added_by": "writer1",
+   "worker": "writer1",
+   "claimed_at": 1790408209.129642
   },
   {
    "kind": "article",
@@ -5331,10 +5333,11 @@
     "work-song",
     "tract"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790407449.707076
+   "claimed_at": 1790407449.707076,
+   "done_at": "2026-09-26T17:38:11"
   },
   {
    "kind": "article",
@@ -5348,10 +5351,11 @@
     "seals",
     "flags"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790407449.707077
+   "claimed_at": 1790407449.707077,
+   "done_at": "2026-09-26T17:38:11"
   },
   {
    "kind": "article",
@@ -5365,10 +5369,11 @@
     "decibel",
     "testimony"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790407449.707078
+   "claimed_at": 1790407449.707078,
+   "done_at": "2026-09-26T17:38:11"
   },
   {
    "kind": "article",
@@ -5382,10 +5387,11 @@
     "sky",
     "field-guide"
    ],
-   "status": "claimed",
+   "status": "done",
    "added_by": "builder",
    "worker": "writer2",
-   "claimed_at": 1790407449.707078
+   "claimed_at": 1790407449.707078,
+   "done_at": "2026-09-26T17:38:11"
   },
   {
    "kind": "article",
@@ -5399,8 +5405,10 @@
     "courier",
     "log"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790408209.1296399
   },
   {
    "kind": "article",
@@ -5414,8 +5422,10 @@
     "name",
     "history"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790408209.129641
   },
   {
    "kind": "article",
@@ -5429,8 +5439,10 @@
     "field-guide",
     "creatures"
    ],
-   "status": "planned",
-   "added_by": "builder"
+   "status": "claimed",
+   "added_by": "builder",
+   "worker": "writer1",
+   "claimed_at": 1790408209.129641
   },
   {
    "kind": "article",
